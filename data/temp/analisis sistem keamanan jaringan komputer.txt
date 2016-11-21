@@ -1,0 +1,428 @@
+ANALISIS SISTEM KEAMANAN JARINGAN KOMPUTER PADA PT.MALINDO
+FEEDMILL TBK MENGGUNAKAN FRAMEWORK COBIT 4.1 PADA DOMAIN
+DS5 (Ensure System Sequrity)
+ZULIA SHARA SANTI Program Studi Sistem Informasi ­S1, Fakultas Ilmu Komputer,
+Universitas Dian Nuswantoro Semarang Url : http://dinus.ac.id/
+Email : 112201003860@mhs.dinus.ac.id
+ABSTRAK
+PT.Malindo Feedmill Tbk merupakan salah satu perusahaan besar yang sudah lama bergerak dibidang Industri Pakan terutama pakan ayam. Dengan kapasitas yang cukup luas, tentu saja peran TI sangat berpengaruh dalam pelaksanaan segala aktifitas kerja, terutama dalam pengelolaan data, dimana kemananan sistem yang ada harus benar-benar aman. Namun pada kenyataannya keamanan sistem TI dinilai masih kurang optimal. Penelitian ini untuk mengevaluasi Tata Kelola TI Ensure System Security (DS5) PT.Malindo Feedmill Tbk menggunakan standar COBIT 4.1. Data diperoleh melalui wawancara dan penyebaran kuisioner serta pemilihan responden yang disesuaikan berdasarkan struktur RACI Chart proses DS5 dengan metode Purposive Sampling, data kemudian akan diolah untuk mendapatkan tingkat kematangan (Maturity Level) kondisi saat ini (As Is) dan kondisi yang diharapkan (To Be), serta melakukan analisa kesenjangan terhadap kedua kondisi untuk dijadikan dasar dalam menetukan strategi perbaikan Tata Kelola TI secara bertahap menuju tingkat kematangan (maturity level) serta menentukan kondisi yang diharapkan (To Be) berdasarkan framework COBIT 4.1. Hasil penelitian menunjukan bahwa Tata Kelola TI dalam Ensure System Security (DS5) menunjukan kondisi saat ini (As Is) berada pada level 2 (Berulang tapi intuitif), sedangkan kondisi yang diharapkan (To Be) berada pada level 3 (Proses Terdefinisi). Perbaikan akan dilakukan secara bertahap dengan melakukan perbaikan yang disesuaikan dengan 6 atribut kematangan COBIT 4.1.
+Kata Kunci : Tata Kelola TI, Ensure System Security, COBIT 4.1, RACI Chart, Maturity Level
+
+Latar Belakang
+Teknologi informasi memiliki peran penting dalam sebuah perusahaan atau organisasi untuk dapat bertahan dan meraih keunggulan kompetitif. Melalui TI, banyak keuntungankeuntungan serta peluang yang didapatkan dalam suatu misi dan visi sebuah perusahaan atau organisasi. Namun dalam pengelolaannya, TI membutuhkan penanganan yang profesional karena TI memiliki resiko dan biaya yang tidak kecil.
+Gangguan yang sering dihadapi dalam TI yaitu terjadinya gangguan error pada TI yang digunakan serta peran SDM yang lemah cukup membuat perusahaan menghadapi kendala, oleh karena itu dibutuhkan sumber daya yang handal untuk mengelola suatu TI dalam sebuah organisasi atau perusahaan. Meskipun begitu, TI dapat digunakan secara maksimal dalam suatu organisasi atau perusahaan, oleh karena itu dibutuhkan pemahaman yang tepat dalam mengelola sistem yang berlaku dalam perusahaan atau organisasi tersebut.
+PT.Malindo Feedmill Tbk merupakan salah satu industri pangan yang bergerak di bidang produksi pakan ayam, dimana perusahaan ini memiliki banyak office base yang sudah tersebar di banyak daerah di Indonesia. Perusahaan ini menyediakan jasa berupa investasi saham dalam bidang peternakan ayam, dan memproduksi pakan ayam sendiri bagi banyak peternak yang tergabung dalam kemitraan ini.
+Dengan kapasitas yang cukup luas, tentu saja peran TI sangat berpengaruh dalam pelaksanaan segala aktifitas kerja, terutama dalam pengelolaan data, dimana kemananan sistem yang ada harus benar-benar sudah teruji. Namun pada kenyataannya keamanan sistem yang ada belum memenuhi standart seperti contoh, pada setiap admin perusahaan memiliki tugas dalam pengelolaan data termasuk menginput data dalam sebuah program Linux, dimana data-data ini nantinya akan di input untuk dikirimkan ke perusahaan pusat melalui E-mail. Aplikasi ini, merupakan aplikasi lama yang sudah digunakan dalam jangka lama, jadi tampilan dan sistemnya pun bisa dibilang masih sangat lawas.
+Begitu juga keamanan sistem ini masih belum maksimal. Tidak adanya jangka waktu penggatian password, tidak adanya ketentuan dalam pembuatan password, dan apabila terjadi kesalahan pada menginput password saat melakukan login, maka akan terjadi error dan pihak perusahaan harus menggunakan jasa orang TI untuk mengatasi permasalahan tersebut.
+Dengan keadaan yang seperti itu terus-menerus maka akan sangat berbahaya bagi perusahaan apabila terjadi pembongkaran pada sistem oleh pihak lain, karena kerahasiaan data perusahaan ada pada sistem yang ada di perusahaan tersebut. Oleh sebab itu perlu
+
+adanya audit untuk memerika sejauh mana tata kelola TI (IT Governance) yang ada pada perusahaan tersebut terutama dalam keamanan sistem yang ada pada perusahaan tersebut.
+Pada penelitian ini, framework yang digunakan yaitu framework COBIT 4.1 COBIT dipilih karena merupakan sebuah model framework tata kelola yang representative dan menyeluruh yang mencakup masalah perencanaan, implementasi, operasional dan dan pengawasan terhadap seluruh proses TI. COBIT merupakan sekumpulan dokumentasi dan panduan yang mengarahkan pada IT Governance yang dapat membantu auditor, manajemen, dan pengguna untuk menjembatani pemisah antar resiko bisnis, kebutuhan kontrol, dan permasalahan-permasalahan tentang IT .
+
+Metode Penelitian
+
+Untuk dapat memahami penggunaan konsep kedua variable yang digunakan dalam penelitian ini, yaitu Framework COBIT 4.1 dengan Memastikan Keamanan Sistem Pengelolaan Data maka variable dan parameternya dapat dilihat dalam Tabel berikut ini :
+
+Variabel (X) Pengaruh COBIT 4.1
+
+Sudut pandang Kriteria Fokus Keamanan sistem pengelolaan data.
+
+Parameter 1. Proses Login 2. Penyimpanan Data. 3. Keamanan komputer dari virus.
+
+(Y) Kinerja Pegawai
+
+Karakteristik Pegawai Pendidikan Pelatihan
+
+1. Usia
+
+2. Pendidikan
+
+3. Masa Kerja
+
+4. Komptensi dasar
+
+5. Latar
+
+belakang
+
+pendidikan.
+
+Metode Pengumpulan Data Dalam penelitian ini, penulis menggunakan beberapa metode untuk
+menghimpun data yang berasal dari narasumber, yaitu :
+1. Metode pengumpulan data yang terdiri dari: a. Studi Literatur Sejenis
+
+Mendapatkan gambaran yang menyeluruh tentang apa yang sudah dikerjakan orang lain dan bagaimana orang mengerjakannya, kemudian seberapa berbeda penelitian yang akan kita lakukan (Jogiyanto 2008). b. Metode Observasi Melalui pengamatan secara langsung atau observasi yang dilakukan di perusahaan guna mendapatkan data yang di maksud(Jogiyanto 2008). c. Metode Wawancara Wawancara memungkinkan untuk mendapatkan data secara lebih mendalam karena bertepatan langsung dengan narasumber (Jogiyanto 2008). 2. Metode Audit Sistem Informasi a. Metode Kuisioner Berupa kumpulan pertanyaan yang dibuat untuk responden dalam rangka untuk pengumpulan data agar sesuai dengan tujuan penelitian (Surendro 2009). b. COBIT Framework Framework merupakan alat yang digunakan sebagai alat yang komprehensif untuk menciptakan dan mengefektifkan implementasi IT Governance pada suatu perusahaan (ITGI 2007).
+
+Berikut adalah langkah-langkah menentukan nilai maturity level dari kuisioner yang sudah dibuat:
+
+1. Untuk mendapatkan nilai pencapaian dari setiap pernyataan maka diajukan pertanyaan: "Berdasarkan kondisi organisasi yang sesungguhnya, seberapa setujukah anda dengan pernyataan-pernyataan berikut?" Lalu disediakan empat jawaban yang memungkinkan yaitu tidak sama sekali, sedikit, cukup banyak, atau sepenuhnya setuju. Kemudian setiap jawaban diberikan bobot masingmasingskala yaitu 0-0,33-0,66-1. Masing-masing bobot dari nilai-nilai pemenuhan tersebut menunjukan tingkat persetujuan terhadap satu pernyataan, seperti pada tabel berikut ini: Tabel Compliance Value untuk persetujuan terhadap pernyataan
+
+Skala Jawaban atas pertanyaan Nilai Pemenuhan
+
+1 Tidak Setuju
+
+0
+
+2 Kurang Setuju
+
+0,33
+
+3 Setuju
+
+0,66
+
+4 Sangat Setuju
+
+1
+
+2. Nilai pemenuhan dari masing-masing level atas jawaban dari pertanyaan yang
+
+diberikan dijumlah kemudian dihitung perolehan Maturity Level Compliance
+
+Value dengan cara membagi total nilai pemenuhan dari level [A] dengan jumlah
+
+pertanyaan yang diberikan [B], seperti yang dapat dilihat pada tabel berikut ini:
+
+Tabel Contoh perhitungan Maturity Level Compliance Values
+
+Maturity
+
+Total Nilai
+
+Jumlah
+
+Maturity Level
+
+Level [M] Pemenuhan [A] Pertanyaan [B] Compliance Value [A/B]
+
+0 0,00 1 0,00 2 3,00 3 8,63 4 6,97 5 6,31
+
+2 9 6 11 9 8
+
+0,00 0,00 0,50 0,78 0,77 0,79
+
+3. Setiap angka pada Maturity Level Compliance Value [C] kemudian dibagi dengan total keseluruhan perolehan Maturity Level Compliance Value, sehingga akan diperoleh Normalized Maturity Level Compliance Value (Perhitungan Normalisasi Vektor Pencapaian), seperti yang dpat dilihat pada tabel berikut ini:
+
+Tabel Contoh perhitungan Normalized Maturity Level Compliance Value
+
+Maturity Level [M]
+0 1 2 3
+
+Maturity Level Compliance Value [C]
+0,00 0,00 0,50 0,78
+
+Normalized Maturity Level Compliance Value (C/Sum[C])
+0,000 0,000 0,176 0,275
+
+4 5 Total
+
+0,77 0,79 2,84
+
+0,272 0,277
+1
+
+4. Setiap Maturity Level [M] kemudian dikaitkan dengan Normalized Mturity Level Copliance Value dari masing-masing Maturity Level [D] sehingga nantinya akan dapat diperoleh nilai kontribusi untuk setiap level Maturity Level, seperti tertera pada tabel berikut ini:
+
+Tabel Perhitungan Nilai Akhir Maturity Level
+
+Maturity Level [M] 0 1 2 3 4 5
+
+Normalized Maturity Level Compliance Value [D] 0,000 0,000 0,176 0,275 0,272 0,277
+Total Maturity Level
+
+Kontribusi [M]x[D]
+0,00 0,00 0,35 0,83 1,09 1,38 3,65
+
+Rumus Perhitungan Maturity Level
+
+=
+f =Responden, = Pertanyaan, fx =Hasil bobot dari pertanyaan. Perhitungan rata-rata tiap Maturity Level
+ML =
+p = Hasil perhitungan pertanyaan dari tiap responden.
+Total Maturity Level = 
+
+Hasil dan Pembahasan
+Proses perhitungan maturity level tingkat keamanan pada pengolahan data menggunkan jaringan komputer pada DS5 dilakukan dengan metode kuisioner, pemilihan sampel menggunakan metode Purposive Sampling yang artinya menentukan sampel sesuai tujuan dan kebutuhan yang diinginkan dimana sampel yang ditentukan tersebut tidak keluar dari ruang lingkup pemetaan responden sesuai RACI Chart pada proses pengelolaan data dan insiden DS5 yang telah ditentukan sebelumnya. Penyebaran kuisioner hanya disebarkan pada salah kantor cabang yang berada di Semarang yaitu bagian yang sudah ditentukan sesuai dengan insiden DS5 yaitu dibagian admin perusahaan.
+
+Adapun hasil perhitungan dari kuisioner yang dilakukan, terlihat pada tabel dibawah ini :
+
+Tabel Hasil Perhitungan Kuisioner
+
+Kode
+
+Responden Total Rata-rata
+R1 R2 R3 R4 R5 R6 R7
+
+1 0 0 0,33 0 0,66 0 0,33 1,32 0,18
+
+2 0 0 0,33 0 0,33 0 0,33 0,99 0,14
+
+ML-0 3 0 0 0 0 0 0 0 0
+
+0
+
+40 0 0 0 0 0 0 0
+
+0
+
+5 0,33 0,66 0,66 0 0,66 0 0,66 2,97 0,42
+
+1 0,33 0 0,66 1 1 0,66 0,66 4,31 0,61
+
+2 0,33 0,33 0,66 1 0,66 0,66 0,66 4,3 0,61
+
+3 0,66 0,66 0,33 1 0,66 1 0,33 4,64 ML-1
+4 0 0,66 0,33 1 1 0,33 0,33 3,65
+
+0,66 0,52
+
+5 0,33 0,66 0,66 1 0,66 0,33 0 3,64 0,52
+
+6 0 1 0,33 0,66 0,33 0 0,33 2,35 0,34
+
+1 0 0,66 0,66 0,66 1 0,66 0 3,64 0,52
+
+2 0,33 0,66 0,66 0,66 0,66 0,66 0 3,63 0,52
+
+ML-2 3 0 0 0,33 0 0,66 0 0 0,99 0,14
+
+4 0,33 0,66 0,66 0 0,33 0 0,33 2,31 0,33
+
+5 0 1 0,66 0 0,33 0,66 0,33 2,98 0,42
+
+6 0 0 0,66 0 0,66 0 0,33 1,65 7 0,33 0,66 0,33 0 0,33 0,33 0,66 2,64 8 0 1 0,66 0 0,33 0 0,66 2,65 1 0,33 0,66 0,66 0,66 0,66 0,33 0,66 3,96 2 0,66 0,66 0,33 0,66 0,66 0,66 0,66 4,29 3 0,33 1 0,33 0,66 1 0 0,66 3,98 ML-3 4 0,33 0,66 0,66 0,66 1 0,66 0,33 4,3 5 0 0 0 0,66 1 0 0,33 1,99 6 0,33 0,66 0,33 0,66 0,66 0 0,33 2,97 7 0,33 0,66 0,66 0,66 0,66 0 0,66 3,63 1 0 0,66 0,33 0,66 0,33 0,66 0,33 2,97 2 0,33 0 0,66 0,66 0,66 0,66 0,33 3,3 3 0 0 0,66 0,66 0,33 0,66 0 2,31 4 0,66 0,66 0,33 0,66 0,66 0,66 0,33 3,96 5 0,66 0,66 0,66 0,66 0,66 0,66 0,33 4,29 6 0,66 0 0,33 0,66 0,33 0,66 0,66 3,3 ML-4 7 0,66 0,66 0,66 0,66 0,33 0,66 0,66 4,29 8 0,66 0,66 0,33 0,66 1 0,66 0,66 4,63 9 0,66 0,66 0,66 0,66 0,33 0,66 0,66 4,29 10 0,66 0,66 0,66 0,66 0,33 0,66 0,66 4,29 11 0,66 0 0,66 0,66 1 0,66 0,66 4,3 12 0 0,66 0,33 0 1 0,33 0,33 2,65 1 0,66 0,66 0,33 0,66 0,66 0,66 0,33 3,96 2 0,66 0,66 0.66 0,66 0,33 0,66 0,33 3,96 3 0,66 0,33 0,33 0,66 0,66 0,66 0,33 3,63 4 0,66 0 0 0,66 0,66 0 0,33 2,31 ML-5 5 0,66 0 0,33 0,66 0,66 0,66 0,66 3,63 6 0,66 0 0,33 0,66 0,66 0,66 0,33 3,3 7 0,66 0,66 0,66 0,66 0,33 0,66 0,33 3,96 8 0,66 0,33 0,33 0,66 0,33 0,66 0,33 3,3 9 0,66 0,66 0,66 0,66 0,33 0,66 0,66 4,29
+
+0,23 0,38 0,38 0,56 0,61 0,57 0,61 0,28 0,42 0,52 0,42 0,47 0,33 0,56 0,61 0,47 0,61 0,66 0,61 0,61 0,61 0,38 0,56 0,56 0,52 0,33 0,52 0,47 0,56 0,47 0,61
+
+Hasil Perhitungan Maturity Level (As Is)
+
+Maka dari hasil perhitungan maturity level per tingkat kematangan tersebut, selanjutnya dapat dilakukan perhitungan secara keseluruhan dari maturity level pada proses pengelolaan data dan memastikan keamanan sistem DS5 PT.Malindo Feedmill Tbk kondisi saat ini, yang dapat dilihat mealului tabel berikut ini :
+
+Tabel Perhitungan Akhir Maturity Level
+
+Mturitu Level 0 1 2 3 4 5
+Total
+
+Rata-rata 0,15 0,52 0,35 0,50 0,53 0,51 2,56
+
+Normalisasi 0,05 0,20 0,14 0,19 0,21 0,20
+
+Kontribusi 0
+0,20 0,28 0,57 0,84
+1 2,89
+
+Berdasarkan dari hasil perhitungan marturity level yang telah dilakukan, maka didapatkan hasil 2,89 yang berarti masih dalam kisaran tingkat kematangan pada level 2 sementara standar kenaikan level pada COBIT 4.1 adalah 0,5 yang artinya Pada framework COBIT tingkat kematangan pada level ini menunjukan bahwa :
+1. Pihak PT.Malindo Feedmill Tbk telah memiliki kesadaran perlunya dukungan fungsi dari ensure system security dalam meningkatkan keamanan sistem TI bagi perusahaan.
+2. Dukungan keamanan sistem TI yang diberikan oleh pihak TI perusahaan pusat kepada para karyawan officebase masih dilakukan secara informal yang artinya berdasarkan pengetahuan masing-masing personil disetiap bagian persahaan dalam menangani setiap mitra dan olah data.
+3. Dukungan keamanan sistem TI yang diberikan oleh perusahaan kepada karyawan officebase menggunakan alat bantu umum yang tersedia.
+4. Belum adanya pelatihan yang formal kepada setiap personil bagian pengolahan data perusahaan terutama dalam menjaga keamanan sistem.
+
+5. Sudah ada prosedur namun tidak seluruhnya telah didokumentasikan serta tidak seluruhnya dikomunikasikan kepada setiap personil bagian pengolahan data di perusahaan dalam memberikan dukungan keamanan sistem komputer tepatnya memastikan keamanan sistem olah data.
+
+Hasil Tingkat Kematangan (To Be)
+
+Setelah dilakukan survei kuisioner II Maturity Level, diperoleh hasil bahwa tingkat kematangan yang diharapkan berada pada level 3 (Repeatable but Intuitive). Dapat dilihat dari tabel berikut ini, yang dimana tabel dibawah merupakan hasil kuisisoner yang telah diisi oleh pihak manager area PT.Malindo Feedmill Tbk :
+
+Tabel Hasil Kuisioner II tingkat kematangan (to be)
+
+No Atribut
+1 AC 2 PSP 3 TA 4 SE 5 RA 6 GSM
+Rata-rata
+
+Tingkat kematangan
+3 3 3 4 3 3 3,16
+
+Keterangan :
+
+Rata-rata =
+
+= =3,16
+
+AC = Kepedulian dan Komunikasi PSP = Kebijakan, Standar dan Prosedur TA = Penetapan Tujuan dan Pengukuran SE = Keterampilan dan Keahlian RA = Pertanggungjawaban dan Akuntabilitas GSM = Penetapan Tujuan dan Pengukuran
+Tabel Pemetaan tingkat kematangan kuisioner II
+
+No Jawaban
+1A 2B 3C 4D
+
+Nilai kematangan
+0,00 1,00 2,00 3,00
+
+Tingkat Kematangan
+Level 0 Non-Existent Level 1 Initial/Ad Hoc Level 2 Repeatable but intuitive Level 3 Defined Process
+
+5E 6F
+
+4,00 Level 4 Managed and Measurable 5,00 Level 5 Optimized
+
+Dari tabel diatas dapat dilihat bahwa hasil tingkat kematangan adalah 3,16 yang artinya ada di level 3 Definded Process yang artinya proses keamanan sistem yang diharapkap perusahaan (to be) berada pada level 3.
+Dari hasil perhitungan maturity level pada keamanan sistem komputer tepatnya dalam proses pengelolaan data saat ini (As Is) didapatkan masih berada dikisaran level 2 yang dimana standar kenaikan level pada COBIT adalah 0,5 sehingga jika dilihat dari hasil perhitungan yang telah dilakukan, menunjukan dari nilai rata-rata yaitu 2,56 ke 2,89 yang artinya yaitu tingkat keamanan sistem berada pada kisaran level 2.
+Sehingga untuk mendapatkan gambaran yang lebih jelas terhadap tingkat kematangan yang dimiliki sekarang (As Is) dan diharapkan (To Be) serta malakukan upaya perbaikan yang dilakuakn untuk menutup tingkat kesenjangan yang terjadi, dapat dibuat sebuah diagram Risisng Star yang digunakan untuk mempresentasikan tingkat kematangann kondisi saat ini (As Is) maupun kondisi yang diharapkan (To Be). Berikut adalah gambar diagram Rising Star :
+Gambar Diagram Rising Star Proses DS5
+Sumber : (Sumber:ISACA, Cobit 4.1, 2007)
+5
+
+Tingkat Kesenjangan
+
+4
+
+3
+
+2
+
+1
+
+0
+
+Kondisi Saat Ini Kondisi yang
+
+(As Is)
+
+diharapkan (To
+
+Be)
+
+Tindakan Perbaikan Proses DS5 pencapaian level 3
+
+Tabel Tindakan Perbaikan Level 3
+
+No Atribut
+
+Tindakan Perbaiakan
+
+1. Kepedulian
+
+dan Pihak pimpinan yang berkaitan sebagai
+
+Komunikasi (AC)
+
+pemeberi layanan TI kepada para personil
+
+harus mengetahui kebutuhan akan pentingnya
+
+dukungan dari perangkat lunak bantu/tools
+
+dalam menjaga dan memastikan keamanan TI
+
+seperti : Firewall yang fungsinya untuk
+
+melindungi setiap sistem komputer dari
+
+ancaman pembobolan data dan memfilter
+
+serta mengontrol lalu lintas data sehingga
+
+mampu mendeteksi aplikasi tertentu yang
+
+spesifikasi.
+
+2. Kebijakan, Standar dan Pihak pimpinan setiap bagian terkait tentang
+
+Prosedur (PSP)
+
+keamanan sistem khususnya bagian
+
+pengolahan data perusahaan mulai melakukan
+
+pembuatan prosedur sebagai pedoman dalam
+
+memberikan keamanan sistem yang baik
+
+seperti :
+
+- Prosedur dalam membuat password
+
+login yang sesuai standar keamanan TI.
+
+- Prosedur dalam menentukan jangka
+
+waktu berapa lama password harus
+
+diperbarui atau diupdet.
+
+- Prosedur dalam membatasi akses ke
+
+jaringan komputer.
+
+- Prosedur penanganan setiap masalah
+
+yang ada di perusahaan.
+
+- Dan lain-lain.
+
+3. Penetapan Tujuan dan Pihak pimpinan disetiap bagian terkait
+
+Pengukuran
+
+pengolahan data selalu
+
+melakukan
+
+pemantauan terhadap kecenderungan insiden
+
+pada sistem keamanan data.
+
+4. Perangkat Bantu dan Pada setiap sistem yan ada di perusahaan,
+
+Otomtisasi (TA)
+
+terutama sistem pengolahan data harus
+
+dilengkapi dengan perngkat bantu/tools yang
+
+menunjang terjaminnya keamanan sistem
+
+seperti menggunakan Firewall.
+
+5. Keterampilan
+
+dan Setiap pimpinan disetiap bagian perusahaan
+
+Keahlian (SE)
+
+melakukan identifikasi kriteria-kriteria
+
+kemampuan personil pengguna TI yang
+
+dibutuhkan dibagian tersebut terutama pada
+
+bagian-bagian olah data-data penting
+
+perusahaan seperti :
+
+- Kemampuan berkomunikasi yang baik
+
+dalam memberikan dukungan
+
+keamanan sistem TI pada setiap
+
+6. Pertanggungjawaban dan Akuntabilitas.(GSM)
+
+karyawan. - Kemampuan menyelesaikan dan
+menangani setiap insisden TI yang terjadi secara cepat dan tepat. Pihak pimpinan disetiap bagian harus bisa menetapkan staff atau personil yang dapat benar-benar bertanggungjawab dalam bertugas dibagian yang ditentukan.
+
+Kesimpulan Dari hasil penelitian dan pembahasan yang telah dilakukan pada proses
+keamanan sistem TI pada DS5 PT.Malindo Feedmill Tbkberdasarkan framework COBIT 4.1 maka dapat disimpulkan sebagai berikut:
+
+1. Tingkat kematangan (maturity level) memastikan keamanan sistem teknologi informasi (DS5) PT.Malinndo Feedmill Tbk untuk kondisi saat ini (As Is) berada pada level 2 (Berulang tapi Intuitif). Kondisi ini menunjukan bahwa pihak manajemen sudah memiliki kesadaran dan kepedulian akan pentingnya menjaga keamanan sistem jaringan komputer, belum mendokumentasikan standar prosedur yang digunakan dalam memastikan keamanan sistem. Dan juga belum dilakukannya pelatihan secara formal kepada para staff perusahaan tentang pentingnya menjaga keamanan sistem serta dukungan dan pertanggungjawaban masih bersifat individual. Alat bantu yang digunakan pada sistem masih sangat umum dan belum terstandar menurut standar keamanan TI. Belum adanya pengukuran kinerja secara rutin oleh pihak manajemen. Sedangkan kondisi yang diharapkan (To Be) pada keamanan sistem PT.Malindo Feedmill Tbk yaitu pada level 3.
+2. Strategi perbaikan untuk mencapai tingkat kematangan (maturity level) yang diharapkan (To Be) dilakukan secara bertahap :
+
+Tindakan pencapaian pada level 3
+ Kepedulian dan Komunikasi (AC) Pihak manajemen PT.Malindo Feedmill Tbk harus memahami setiap permasalahan serta pentingnya memastikan keamanan sistem yang ada di perusahaan terutama untuk keamanan dan menjaga kerahasiaan data perusahaan.  Kebijakan, Standar dan Prosedur (PSP) Pihak manajemen PT.Malindo Feedmill Tbk melakukan pembuatan dan pendokumentasian prosedur keamanan sistem.  Perangakat Bantu dan Otomatisasi (TA) Pihak manajemen PT.Malindo Feedmill Tbk menyediakan alat bantu/tools yang membantu dalam proses menjaga keamanan sistem.  Ketrampilan dan Keahlian (SE) Pihak manajemen PT.Malindo Feedmill Tbk melakukan pelatihan formal kepada setiap personil perusahaan terutama pada bagian olah data.  Peneapan Tujuan dan Pengukuran (GSM) Pihak manajemen PT.Malindo Feedmill Tbk melakukan pengawasan dan pengukuran kinerja sistem TI.
+
+Saran
+1. Memeberikan pemetaan secara menyeluruh terkait dengan pengelolaan TI pada domain yang lainya tidak hanya berfokus pada satu domain saja DS5 (Memastikan Keamanan Sistem), artinya pada semua sasaran yang tidak terpenuhi dapat ditelusuri secara detil dan dapat ditemukan penyebabnya untuk selanjutnya diputuskan apakah segera diperbaiki atau tidak.
+2. Untuk peneliti selanjutnya sebaiknya dilakukan dilakukan audit pada semua domain dan semua fokus area agar diketahui proses TI yang dilakukan selama ini sudah mendukung tujuan perusahaan atau belum.
+3. Menciptakan tools audit sendiri untuk mempermudah dalam melakukan audit sistem informasi.
+
+DAFTAR PUSTAKA
+[1] Weber, Ron, 2000. Information Systems Control And Audit, USA: Prentice Hall
+[2] Syitisyaroh, Didit N UtamadanEllensyahKurniawan, 2011.
+[3] Axclon Samuel Renyaan (682007077), Johan Tambotoh, SE., MTI, 2013
+[4] Drs.Sanyoto Gondodiyoto SE.., Mkom., Mcomm. (IS)., MM (SI)., PIA., Akuntan. Audit Sistem Informasi + Pendekatan CobIT. Jakarta: Mitra Wacana Media. [5] Sarno Riyanarto, 2009 Strategi Sukses Bisnis dengan TI, ITS Press.
+[6] ISACA. 2007. IS Standards, Guidelines and Procedures for Auditing and Control Professionals. Information System Audit and Control Association,February 2007.
+[7]http://khair2120.wordpress.com/2011/01/31/cobit-dan-it-governance/diaksespadatanggal 27Maret 2014, pukul 12:48
+[8] http://ienoenk.web.id. Diaksespadatanggal 6 April 2014, pukul 12:50 [9] IT Governance Institute. (2005). COBIT 4.0: IT Governance Institute. [10] (Pederiva, Andrea. (2003). The COBIT Maturity Model in a Vendor Evaluation Case.
+Current issues in Information System Control Journal, Volume 3, 2003. [11] Gultom, Manorang (2012), ,,Audit Tatakelola teknologi informasi pada PTPN 13
+Pontianak Menggunakan Framwork COBIT'. Socioscieta. Jurnal ilmu-ilmu sosial.
+
+

@@ -1,0 +1,166 @@
+30
+JURNAL Augmented Reality Panduan Belajar Sholat
+Berdasarkan Buku Teks Belajar Sholat Menggunakan Android
+Disusun oleh : Nama : Septri Elvrilla NPM : 50407798 Email : Elvrilla_septri@yahoo.com
+UNIVERSITAS GUNADARMA 2011
+
+2
+ABSTRAKSI
+Septri Elvrilla. 50407798. AUGMENTED REALITY PANDUAN BELAJAR SHOLAT BERDASARKAN BUKU TEKS BELAJAR SHOLAT MENGGUNAKAN ANDROID Skripsi. Jurusan Teknik Informatika. Fakultas Teknologi Industri. Universitas Gunadarma. 2011 Kata Kunci : Augmented Reality, Android, marker
+(xix + 117+ Lampiran)
+Sholat merupakan ibadah utama dalam agama islam tentunya setelah syahadat, dalam tata cara pengerjaanya ibadah ini harus tertib dan sesuai dengan tata cara yang telah ditentukan. Zaman dahulu ibadah ini hanya bisa dipelajari dari orang-orang yang mengerti agama dan mengetahui tata cara gerakan sholat yang benar dan tertib beserta doanya. Tapi di zaman sekarang sudah banyak media yang mendukung setiap orang untuk mempelajari tata cara sholat yang benar, yang paling umum adalah melalui buku. Sudah banyak sekali buku-buku yang dibuat khusus untuk membahas dan mempelajari hal ini. Bukan hanya melalui buku, dengan berkembangnya zaman dan teknologi maka pembelajaran sholat pun menjadi semakin mudah dicerna bahkan dengan belajar sendiri, beberapa media di zaman modern yang muncul untuk mempermudah pembelajaran ini antara lain melalui artikel, CD tutorial serta internet. Segala sesuatunya bersifat multimedia dan dapat dipahami secara jelas. Namun pada saat ini telah ada satu metode pembelajaran terbaru yang lebih real lagi secara 3 dimensi dan lebih mempermudah pembelajaran tata cara gerakan solat yaitu menggunakan teknologi Augmented Reality. Dimana dijalankan menggunakan system operasi Android, dimana Android merupakan operating system paling baru yang banyak ditanamkan pada handphone yang smartphone yang mendukung adanya gambar, dan animasi bergerak untuk mempermudah pembelajaran dan terlihat lebih real dibanding media lainnya. Dengan handphone ini, pengguna dapat mengetahui setiap gerakkan sholat secara 3D dengan lebih dekat, real dan mudah dipahami melalui marker yang disorot dengan kamera handphone android.
+Daftar Pustaka (1976 ­ 2011)
+
+3
+BAB I PENDAHULUAN
+1.1Latar Belakang Saat ini pembelajaran tata cara gerakan sholat sudah bisa dilakukan dengan
+berbagai media, dengan semua teknologi dan peralatan yang mendukungnya, dari yang paling tradisional hingga yang modern yaitu dari buku, artikel, CD tutorial serta internet. Dalam tata cara gerakan solat, umat muslim sering mengalami kesulitan karena harus membaca dengan seksama tata cara yang biasanya berupa buku, terutama umat muslim yang baru mengenal islam seperti mualaf. Jika masih terasa sulit mendapatkan pemahaman dalam membaca buku maka sudah tersedia media selanjutnya yaitu CD tutorial yang bersifat lebih multimedia yang lebih mudah untuk dipelajari. Namun pada saat ini telah ada satu metode pembelajaran terbaru yang lebih real lagi secara 3 dimensi dan untuk lebih mempermudah awal pembelajaran tata cara gerakan solat kita bisa menggunakan Augmented Reality. Augmented Reality merupakan penggabungan antara dua dunia, yaitu dunia maya ke dunia nyata, dalam kata lain benda dalam dunia maya dapat kita tampilkan ke dunia nyata. Augmented reality memiliki banyak peluang untuk terus dikembangkan dalam bidang apapun. Dalam pembahasan kali ini AR (Augmented reality) akan digunakan untuk menampilkan gerakkan dan bacaan dari solat fardhu agar para umat muslim lebih mudah memahaminya langsung dari pada membaca buku atau mengikuti CD tutorial. Pada saat ini banyak sekali metode yang digunakan untuk Augmented Reality, antara lain adalah metode marker. Jadi program akan membaca object dari sebuah marker gambar, dan dari gambar tersebut akan ditampilkan object yang bergerak atau output yang sudah ada pada data sebelumnya. Dalam pembuatan aplikasi ini menggunakan OS Android dan aplikasi penunjang
+
+4 utama yaitu Blender 3D dan Unity 3D. Dimana Android merupakan operating system paling baru yang banyak ditanamkan pada smartphone kelas atas, serta open soure, Blender 3D yang juga open source, serta Unity 3D yang mempunyai trial version selama 30 hari. Jadi penulis tidak membutuhkan biaya mahal untuk membangun aplikasi ini, selain itu juga Android ini mendukung adanya gambar, animasi bergerak untuk memperindah dalam tampilan aplikasi dibandingkan dengan yang lainnya. Dari uraian diatas maka diambil topik untuk penulisan skripsi berjudul " Augmented reality panduan belajar sholat berdasarkan Buku Teks Belajar Sholat menggunakan Android" menggunakan bahasa pemrograman yang dapat menunjang pembuatan aplikasi Augmented reality ini. 1.2 Perumusan dan Batasan Masalah Membaca gambar gerakkan, kemudian jika kamera smartphone memilih salah satu marker akan keluar salah satu animasi gerakkan solat. Tidak ada batasan umur dalam penggunaan aplikasi ini, namun user hanya dapat melihat objek yang telah melakukan gerakan sholat langkah demi langkah dan objek manusia dalam bentuk 3 dimensi yang tidak dapat diproses secara interaktif. Smartphone yang bisa digunakan hanya yang ber-spesifikasi ARmV 7 seperti Smartphone Android Samsung Galaxy S I dan Tab, sedangkan untuk Samsung Galaxy Ace, Fit, Gio dan Mini tidak dapat digunakan karena spesifikasinya yang hanya ARmV 6 tidak sesuai dengan Unity 3D.
+1.3 Tinjauan Pustaka 1.3.1 Augmented Reality Augmented reality merupakan suatu teknik untuk menggabungkan object dari dunia maya ke dunia nyata. Dalam hal ini diperlukan webcam atau kamera handphone untuk menangkap suatu pola atau gambar sehingga dapat ditampilkan informasinya. Augmented reality ini hampir bisa dikatakan seperti image proccesing.
+
+5 1.3.2 Android Android adalah sistem operasi untuk telepon seluler yang berbasis Linux. Android menyediakan platform terbuka bagi para pengembang buat menciptakan aplikasi mereka sendiri untuk digunakan oleh bermacam peranti bergerak. Awalnya, Google Inc. membeli Android Inc., pendatang baru yang membuat peranti lunak untuk ponsel. Kemudian untuk mengembangkan Android, dibentuklah Open Handset Alliance, konsorsium dari 34 perusahaan peranti keras, peranti lunak, dan telekomunikasi, termasuk Google, HTC, Intel, Motorola, Qualcomm, T-Mobile dan Nvidia. Pada saat perilisan perdana Android, 5 November 2007, Android bersama Open Handset Alliance menyatakan mendukung pengembangan standar terbuka pada perangkat seluler. Di lain pihak, Google merilis kode­kode Android di bawah lisensi Apache, sebuah lisensi perangkat lunak dan standar terbuka perangkat seluler. Di dunia ini terdapat dua jenis distributor sistem operasi Android. Pertama yang mendapat dukungan penuh dari Google atau Google Mail Services (GMS) dan kedua adalah yang benar­benar bebas distribusinya tanpa dukungan langsung Google atau dikenal sebagai Open Handset Distribution (OHD). 1.3.2.1 Fitur Android Fitur yang tersedia di Android adalah:
+ Dalvik mesin virtual: mesin virtual dioptimalkan untuk perangkat mobile.  Grafik: grafik di 2D dan grafis 3D berdasarkan pustaka OpenGL.  Mendukung media: audio, video, dan berbagai format gambar (MPEG4, H.264, MP3, AAC, AMR, JPG, PNG, GIF)  GSM, Bluetooth, EDGE, 3G, dan WiFi (hardware dependent)  Kamera, Global Positioning System (GPS), kompas, dan accelerometer (tergantung hardware) 1.3.3 Metode Marker
+
+6 Salah satu metode Augmented Reality yang saat ini sangat umum adalah metode "Marker". Marker yang dimaksud disini adalah pola yang dibuat, dalam bentuk gambar yang akan dikenali oleh kamera. Pola marker dapat dibuat dengan Paint ataupun Photoshop. Untuk marker standar, pola yang dikenali adalah pola marker dengan bentuk persegi dengan kotak hitam di dalamnya. Tetapi saat ini sudah banyak pengembang marker yang membuat tanpa bingkai hitam seperti Foto pada umumnya yang bisa dibuat marker pengenal. Tahapan dalam metode ini antara lain:
+1. membuat satu objek dari gerakkan-gerakan yang akan ditampilkan menggunakan blender 2. membuat project dengan unity 3D untuk membaca pola gambar dari
+gerakkan solat yang telah di download sebelumnya 3. mencoba dengan menggunakan kamera handphone android yang memiliki aplikasi augmented reality ini dengan menginstall *.apk program android tersebut. 1.4 Tujuan Penelitian Membuat aplikasi Gerakan Sholat Berdasarkan Buku Teks Belajar Sholat Menggunakan Android agar mempermudah umat muslim ataupun para mualaf dalam mempelajari tata cara solat yang benar dan tertib serta dapat meningkatkan kepahaman umat muslim dalam mempelajari tata cara solat dengan mudah. 1.5 Metode Penelitian Perancangan panduan pembelajaran untuk tata cara ibadah ini dilakukan dalam tiga tahap aktivitas utama, yakni : 1.5.1 Tahap Perencanaan Tahap pertama yang akan dilakukan adalah perencanaan, yang akan dimulai dengan melakukan analisis instruksional. Dalam hal ini penulis membuat perancangan dari aplikasi Augmented reality baik dalam rancangan tampilan serta modul-modul yang diperlukan dalam pembuatan aplikasi Augmented reality dan mempelajari metode marker agar dapat dipergunakan. Serta implementasinya
+
+menggunakan Android.
+
+7
+
+1.5.2 Tahap Pemrograman Tahap pemrograman dimulai dengan merancang interface button dan memasukkan fungsi-fungsi yang diperlukan pada bahasa pemrograman Javascript dan C#. 1.5.3 Tahap Evaluasi Program Tahap terakhir dalam penyisipan file ke dalam host serta pengujian dari hasil objek blender di Android yang telah diberi watermarking dengan program tambahan. 1.6 Sistematika Penulisan Untuk mempermudah pemahaman penulisan, dan memberikan suatu gambaran secara menyeluruh serta terperinci tentang materi penulisan ini, dalam penulisan skripsi ini terdiri dari 5 bab, yaitu sebagai berikut : BAB I : PENDAHULUAN Memperjelas mengenai latar belakang dari aplikasi Augmented reality menggunakan Android yang akan dibahas, perumusan masalah dari pembuatan aplikasi ini, tujuan dari pembuatan aplikasi Augmented reality menggunakan Android, menentukan metodologi pemecahan masalah dari aplikasi yang dibuat, serta sistematika penulisan. BAB II : LANDASAN TEORI Menguraikan teori-teori Augmented Reality dan metode marker, Blender 3D, bahasa pemrograman yang digunakan oleh OS Android, Unity 3D, dan penjelasan lainnya tentang software utama Augmented Reality dan software tambahan yang digunakan. BAB III: METODOLOGI PENELITIAN Berisi perancangan dan pembuatan aplikasi Augmented reality dengan menggunakan metode marker. Kemudian setelah digunakan di Android. Dengan awal membuat model, kemudian mengimport marker, rancangan marker buku panduan dan aplikasi, serta beberapa proses penginstallan perangkat lunak utama.
+
+8 BAB IV : IMPLEMENTASI DAN ANALISIS HASIL Bab ini berisi tentang melakukan uji coba program pada smartphone OS Android, menganalisa aplikasi dan membahas tahapan-tahapan dalam proses penggunaan aplikasi Augmented reality di Smartphone Android. BAB V : KESIMPULAN Bab ini berisi tentang kesimpulan serta saran-saran untuk pengembangan aplikasi Augmented reality panduan belajar sholat berdasarkan Buku Teks Belajar Sholat menggunakan Android dimasa yang akan datang.
+
+9
+BAB II LANDASAN TEORI
+2.1Buku Panduan Gerakkan Sholat Pada aplikasi ini penulis akan menggunakan Buku panduan sholat yang umum yaitu Risalah Tuntunan Shalat Lengkap, dan sekilas tentang gambaran umum dari buku ini. Risalah Tuntunan Shalat Lengkap adalah buku yang berisikan tata cara dan sah shalat buat insan yang beragama islam dalam melaksanakan ibadah yang lebih sempurna dan sesuai dengan ketentuan Al-quran dan hadist serta cocok dengan ajaran yang diajarkan oleh Rasulullah SAW.
+Buku yang bersampul ungu dan bergambarkan orang yang sedang sholat,rukuk dan sujud ini ditulis oleh Drs. Moh. Rifa'i serta diterbitkan oleh PT.Karya Toha Putra Semarang.
+Bagaimana bersikap dalam sholat merupakan pelajaran yang kita pelajari sejak kecil. Buku inilah yang selalu penulis buku gunakan untuk melihat apakah sholat dan segala hal yang berhubungan dengannya sudah benar atau masih ada yang kurang.
+Kemudian, di dalam buku ini juga dijelaskan dalam 3 bahasa,yaitu arab, Terjemahan dan cara mengeja (Bahasa Arab di Bahasa Indonesiakan). 2.2Augmented Reality Augmented Reality (AR) atau dalam bahasa Indonesia disebut realitas tertambah adalah teknologi yang menggabungkan benda maya dua dimensi dan ataupun tiga dimensi ke dalam sebuah lingkungan nyata lalu memproyeksikan benda-benda maya tersebut dalam waktu nyata. Benda-benda maya berfungsi menampilkan informasi yang tidak dapat diterima oleh manusia secara langsung. Hal ini membuat realitas tertambah berguna sebagai alat untuk membantu persepsi dan interaksi penggunanya dengan dunia nyata. Informasi yang ditampilkan oleh benda maya membantu pengguna melaksanakan kegiatan-kegiatan dalam dunia nyata. Menurut definisi Ronald Azuma (1997:1), ada tiga prinsip dari Augmented Reality. Yang pertama yaitu Augmented Reality merupakan Penggabungan dunia nyata dan virtual, yang kedua berjalan secara interaktif dalam waktu nyata (realtime), dan terdapat integrasi antar benda dalam tiga dimensi, yaitu benda maya terintegrasi dalam dunia nyata. Dalam perkembangannya saat ini
+
+10 Augmented Reality tidak hanya bersifat visual saja, tapi sudah dapat diaplikasikan untuk semua indera, termasuk pendengaran, sentuhan, dan penciuman. Selain digunakan dalam bidang-bidang seperti kesehatan, militer, industri manufaktur, Augmented Reality juga telah diaplikasikan dalam perangkat-perangkat yang digunakan orang banyak, seperti pada telepon genggam. Milgram dan Kishino dalam Billinghurst (2002:3) menjelaskan konsep Augmented Reality dalam teori mereka yang disebut dengan virtuality continuum yang dapat dilihat dalam gambar berikut ini:
+Gambar 2.1 Virtuality Continuum Sumber: Michael Haller., et al., Emerging Technologies Of Augmented Reality Interfaces and Design, Idea Group Publishing, Inited States Of America, 2007. 2.3 Blender 3D Blender adalah perangkat lunak untuk grafis 3 dimensi yang gratis dan populer di kalangan desainer. Blender dapat digunakan untuk membuat animasi 3 dimensi. Perangkat lunak ini juga memiliki fitur untuk membuat permainan. Blender tersedia untuk berbagai sistem operasi, seperti: - Microsoft Windows - Mac OS X - Linux - IRIX - Solaris - NetBSD - FreeBSD - OpenBSD. Perangkat lunak ini berlisensi GPL dan kemudian kode sumbernya tersedia dan dapat diambil siapa saja. 2.4 Android Android merupakan sebuah sistem operasi untuk perangkat mobile berbasis Linux yang dikeluarkan oleh Google Inc pada bulan November 2007. Sistem operasi ini bersifat open source sehingga para pengembang dapat membuat
+
+aplikasi sendiri untuk perangkat mobile sesuai dengan kebutuhan. Versi Android yang beredar saat ini :
+
+11
+
+ Eclair (2.0 / 2.1) Versi Android awal yang mulai dipakai oleh banyak smartphone, fitur utama Eclair yaitu perubahan total struktur dan tampilan user Interface dan merupakan versi Android yang pertama kali mendukung format HTML5.  Froyo (2.2) Android 2.2 dirilis dengan 20 fitur baru, antara lain peningkatan kecepatan, fitur Wi-Fi hotspot tethering dan dukungan terhadap Adobe Flash.  Gingerbread (2.3) Perubahan utama di versi 2.3 ini termasuk update UI, peningkatan fitur soft keyboard & copy/paste, power management, dan support Near Field Communication.  Ice Cream Sandwich (2.4 atau 4.0) Diumumkan secara resmi pada 10 Mei 2011 di ajang Google I/O Developer Conference (San Francisco), pihak Google mengklaim "Android Ice Cream Sandwich" akan dapat digunakan baik di smartphone ataupun tablet.  Honeycomb (3.0, 3.1 dan 3.2) Merupakan versi Android yang ditujukan untuk gadget / device dengan layar besar seperti Tablet PC; Fitur baru Honeycomb yaitu dukungan terhadap prosessor multicore dan grafis dengan hardware acceleration. Tablet pertama yang memakai Honeycomb adalah tablet Motorola Xoom yang dirilis bulan Februari 2011.
+2.4 Android SDK (Software Development Kit) Android SDK merupakan paket starter yang berisi tools, sample code, dan dokumentasi penggunaan yang berguna untuk pengembangan aplikasi Android. Android SDK (software Development kit) sebagai alat bantu dan API diperlukan untuk mulai mengembangkan aplikasi pada platform Android menggunakan bahasa pemrograman Java.
+
+12
+Gambar 2.4 AVD manager 2.5 Qualcomm Developer Network (Augmented Reality) Qualcomm Developer Network (QDevNet) adalah tentang penciptaan perkembangan mobile yang luar biasa, menggapai seluruh jaringan dan platform serta memungkinkan untuk masuk ke pasaran dan modal bisnis yang kuat akan ekosistem wireless. Didirikan oleh para insinyur Qualcomm dan manajer produk, QdevNet menyatukan sebuah perkembangan jaringan, insinyur, manajer produk dan penerbit yang mengubah dunia mobile dan perubahan yang melewati teknologi Qualcomm, QDevNet menyatukan komunitas pengembang global dan membagi sumber, keahlian, hubungan yang bisa membuat kita terdepan dalam dunia mobile.
+Gambar 2.3 QDevNeet 2.6 C # C# (dibaca: C sharp) merupakan sebuah bahasa pemrograman yang berorientasi objek yang dikembangkan oleh Microsoft sebagai bagian dari inisiatif kerangka .NET Framework. Bahasa pemrograman ini dibuat berbasiskan bahasa C++ yang telah dipengaruhi oleh aspek-aspek ataupun fitur bahasa yang terdapat pada bahasa-bahasa pemrograman lainnya seperti Java, Delphi, Visual Basic, dan lain-lain) dengan beberapa penyederhanaan. Menurut standar ECMA-334 C# Language Specification, nama C# terdiri atas sebuah huruf Latin C
+
+13
+(U+0043) yang diikuti oleh tanda pagar yang menandakan angka # (U+0023). Tanda pagar # yang digunakan memang bukan tanda kres dalam seni musik (U+266F), dan tanda pagar # (U+0023) tersebut digunakan karena karakter kres dalam seni musik tidak terdapat di dalam keyboard standar.
+
+14
+BAB III PERANCANGAN
+Pada bab 3 ini akan membahas pembuatan Augmented reality panduan belajar sholat berdasarkan Buku Teks Belajar Sholat menggunakan Android yang terdiri dari beberapa tahap yaitu, gambaran umum Buku teks belajar sholat yang digunakan, Diagram Alur (Flowchart), rancangan gambar marker, pembuatan objek, membuat armature animasi, pembuatan marker, upload dan download marker, membuat Project Android Baru di Unity, serta instalasi dan konfigurasi program pendukung utama. 3.1Gambaran Umum Buku Panduan Pada aplikasi ini penulis akan menggunakan Buku panduan sholat yang umum yaitu Risalah Tuntunan Shalat Lengkap, dan sekilas tentang gambaran umum dari buku ini. Risalah Tuntunan Shalat Lengkap adalah buku yang berisikan tata cara dan sah shalat buat insan yang beragama islam dalam melaksanakan ibadah yang lebih sempurna dan sesuai dengan ketentuan Al-quran dan hadist serta cocok dengan ajaran yang diajarkan oleh Rasulullah SAW.
+Buku yang bersampul ungu dan bergambarkan orang yang sedang sholat,rukuk dan sujud ini ditulis oleh Drs. Moh. Rifa'i serta diterbitkan oleh PT.Karya Toha Putra Semarang.
+Kemudian, didalam buku ini juga dijelaskan dalam 3 bahasa, yaitu arab, terjemahan dan cara mengeja (Bahasa Arab di Bahasa Indonesiakan).
+Gambar 3.1 Cover Buku 3.2 Diagram Alur ( Flowchart )
+Flowchart adalah penggambaran secara grafik dari langkah-langkah dan urutan-urutan prosedur dari suatu aplikasi. Untuk mempermudah dalam pembuatan aplikasi, penulis merancang diagram alur (flowchart) sehingga
+
+15 pembuatan program aplikasi dapat dilakukan secara terurut. Dibawah ini merupakan diagram alur dari aplikasi ini :
+Gambar 3.2 Flowchart augmented reality Gerakan Sholat
+Penjelasan Flowchart augmented reality Gerakan Sholat, yaitu : 1. Mulai Merupakan untuk memulai suatu program yang akan dijalankan 2. Splash Merupakan tampilan awal apabila program dijalankan 3. Mencari Markers Merupakan proses pencarian marker yang ingin dikenali 4. Identifikasi Markers Merupakan deteksi marker yang diinginkan apabila marker tersebut sesuai maka akan melakukan proses selanjutnya, apabila pendeteksian marker salah maka akan mencari marker yang sesuai. 5. Posisi dan arah objek Merupakan penentuan posisi dan arah objek dengan sesuai agar dapat muncul objek yang diinginkan. 6. Render Objek Merupakan proses merender objek yang diinginkan setelah melakukan proses sebelumnya. 7. Tampil Objek 3D Merupakan munculnya objek 3D yang diinginkan 8. Keluar Merupakan pilihan yang tersedia, apabila tidak tetap pada tampilan 3D, namun jika ya maka aplikasi akan keluar ke menu handphone 9. Selesai
+Merupakan selesai atau keluarnya program yang telah dilakukan 3.3.1 Pembuatan Objek Manusia Lengkap Objek ini terdiri dari satu objek cube yang nanti akan di kembangkan hingga menjadi sebuah objek orang yang utuh.
+
+16
+Gambar 3.48 Bone (2) 3.3.2 Pembuatan Objek Sajadah. Untuk membuat objek sajadah sedikit lebih mudah karena kita hanya akan menempelkan material image pada objek.
+
+Gambar 3.46 Lebarkan selection
+
+3.4 Membuat Project Android di Unity
+
+Kita buat projek pada unity dan setelah software tersebut terinstall dengan
+
+benar, maka untuk membuat project baru berikut ini adalah langkah-
+
+langkahnya:
+
+1.mengklik double icon unity
+
+atau bisa juga mengklik start >
+
+program > unity > unity seperti berikut.
+
+17
+Gambar 3.80 Cara pilih Unity Setelah itu maka akan muncul seperti berikut :
+Gambar 3.81 Unity 2.Dari unity, memilih File > New Project.
+Gambar 3.82 Menu unity 3.Setelah itu maka akan muncul seperti berikut. Pada kotak dialog dibawah maka memilih create new project, kemudian mengaktifkan QCAR-1.0.0.unitypackage kemudian mengklik tombol create.
+Gambar 3.83 Unity-project windows
+
+18
+4.Setelah semua sudah dilakukan maka akan muncul seperti berikut.
+13 5
+24
+Gambar 3.84 Tampilan bagian-bagian unity
+Disini ada 5 workspace kosong yang mempunyai fungsi masing-masing yaitu :
+1) Sce ne Window, adalah posisi objek-objek yang diinginkan. 2) Ga mes Window, menunjukkan pilihan apa saja yang akan digunakan. Ketika Anda mengklik tombol Play untuk menguji hasil dalam window ini. 3) Hier archy Panel, daftar semua objek yang digunakan. Seperti Game Objects--cameras,lights, models, and prefabs adalah hal-hal yang untuk membuat program. 4) Proj ect Panel, daftar semua elemen yang akan gunakan untuk membuat objek game. 5) Insp ector Panel, Inspektur adalah context-sensitive panel, yang berarti bahwa perubahan tergantung pada apa yang ingin dipilih dalam Unity. Ini adalah di mana dapat mengatur posisi, rotasi, dan skala objek yang tercantum dalam panel Hirarki.
+
+19 5.Langkah selanjutnya adalah mengimport package dari web unity yang telah upload sebelumnya dengan cara mengklik asset > import package > custom package. seperti berikut :
+Gambar 3.85 Import 6. Maka akan mucul untuk mencari lokasi dimana tempat penyimpan package tersebut seperti ini :
+Gambar 3.86 Import Package 7. Setelah mengklik open maka selanjutnya diminta memilih package mana saja yang akan digunakan dalam hal ini mengklik all > import.
+Gambar 3.87 Importing Package
+
+20 8. Setelah itu maka pada bagian hierarchy maka menghapus main camera dengan cara mengklik kanan memilih delete.
+Gambar 3.88 Main Camera 9. Pada Project panel mendrag ARCamera dan ImageTarget dari project > Prefab ke dalam hierarchy seperti berikut.
+Gambar 3.89 Drag 10. Mengklik imagetarget pada hierarchy kemudian melihat pada bagian inspector, merubah marker dengan yang inginkan dengan cara memilih ImageTarget di scene window atau Hierarchy Panel, atau dapat melihat properti ImageTarget yang ditampilkan dalam panel Inspektur. Mengklik the-EMPTY- Image Target dalam Image Target Behaviour, untuk memilih objek dapat temukan di Image Target dalam menu popup, seperti ini.
+
+21
+Gambar 3.90 ImageTargetBehaviour 11. Kita lihat di window scene texture objek ImageTarget telah berubah. Kemudian semua file objek gerakan sholat, sajadah, gambar icon dan splash image dimasukkan dalam folder Assets dan model, dan scene terakhir yang tersimpan juga ada pada folder ini.
+Gambar 3.91 Drag marker
+Gambar 3.92 Assets
+
+22
+Gambar 3.93 Model 12. Lalu program akan otomatis mengimpor objek ke ruang project workspace. Dapat melihat di Panel Projek.
+Gambar 3.94 Model objek 13. Mendrag objek ke scene windows atau hierarchy panel. Mengatur posisi objek. Membuat objek child dari ImageTarget, ia akan kehilangan prefab connection, cukup tekan tombol continue, seperti berikut :
+Gambar 3.95 Drag objek
+
+23
+Gambar 3.96 Hasil dari drag objek 14. Hasil akhir setelah semua marker dan objek dimasukkan.
+Gambar 3.97 Hasil semua drag object
+
+BAB IV IMPLEMENTASI DAN UJI COBA
+
+24
+
+Pada pembahasan proses pembuatan Augmented Reality Panduan Belajar Sholat Berdasarkan Buku Teks Belajar Sholat Menggunakan Android, penulis hanya akan menjelaskan implementasi dan langkah mulai dari uji coba Unity 3D pada 6 smartphone Android sebagai perbandingan sampai menyorot lembaran buku panduan yang telah berisi marker hingga object yang telah dibuat akan tampil. 4.1Uji Coba Aplikasi pada Smartphone Uji coba aplikasi dilakukan setelah menghasilkan *.apk dan mengkopi atau menjalankannya pada 6 smartphone ini. Setelah itu install *.apk. Pada smartphone yang berhasil di install bisa langsung arahkan kamera ke marker maka akan terlihat semua objek animasi yang telah kita buat.
+
+Gambar 4.11 Installing
+
+25 Gambar 4.12 Icon Gambar 4.13 Splash Image
+
+26 Gambar 4.14 Uji Coba Gerakan (1)
+Gambar 4.15 ­ Uji Coba Gerakan (2)
+
+27 Gambar 4.16 ­ Uji Coba Gerakan (3) Gambar 4.17 ­ Uji Coba Gerakan (4)
+
+28 Gambar 4.18 ­ Uji Coba Gerakan (5) Gambar 4.19 ­ Uji Coba Gerakan (6)
+
+29
+BAB V PENUTUP
+5.1 Kesimpulan Rancangan dan tampilan buku panduan dapat dilihat dari buku umum panduan sholat yaitu Risalah tuntunan sholat lengkap. Untuk pembuatan objek nya dibuat dengan Blender 3D 2.58a. Dibutuhkan tiga objek dalam pembuatan aplikasi ini, yaitu objek manusia lengkap dengan material warna baju dan celana, kopiah hitam, dan sajadah. Untuk marker diambil seluruhnya dari buku panduan. Untuk membaca objek, tes aplikasi dengan kamera handphone android, dan keseluruhan dari jalannya aplikasi ini agar objek tampil adalah dengan menggunakan Unity 3D. Objek akan tampil bergantian sesuai dengan marker yang disorot dengan kamera handphone. Dari beberapa smartphone yang di uji hanya Samsung Galaxy S I dan Samsung Galaxy Tab yang berhasil menjalankan aplikasi karena spesifikasi mereka yang sudah memenuhi spesifikasi dari Unity 3D yaitu ARmV 7, sedangkan Samsung Galaxy Ace, Samsung Galaxy Fit, Samsung Galaxy Gio dan Samsung Galaxy Mini tidak berhasil menjalankan aplikasi karena spesifikasi mereka yang hanya ARmV 6 tidak memenuhi spesifikasi dari Unity 3D yaitu ARmV 7. 5.2 Saran Penulis menyadari bahwa masih terdapat banyak peluang dalam mengembangkan aplikasi ini untuk membuatnya lebih menarik dan bermanfaaat. Maka dari itu perlu dilakukan penelitian lanjutan dengan memasukkan audio atau suara, membuat objek menjadi jauh lebih interaktif dan mengganti marker menjadi lebih menarik atau mungkin dengan tanpa marker atau markerless.
+
+30
+DAFTAR PUSTAKA
+[1] http://habybpalyoga.blogspot.com/2010/12/risalah-tuntunan-shalat-lengkapfor.html.
+[2] Georgios Sylaios, Frederic Bouchette, Vassilios A. Tsihrintzis, dan Clea Denamiel.2008. Augmenetd Reality Tutorial
+[3] http://cubeholic.wordpress.com/2010/12/22/sedikit-penjelasan-tentangsejarah-blender-3d-animation-creator-software/
+[4] http://yusromuhtadi.wordpress.com/2010/10/22/augmented-reality-danaplikasinya-3/
+[5] http://id.wikipedia.org/wiki/Realitas_tertambah [6] http://thetechnologist.tv/blog/qualcomm-augmented-reality-qcar-sdk-released [7] http://candle-dee.blogspot.com/2011/04/augmented-reality.html [8] http://bayduaenam.blogspot.com/2011/06/eclipse.html [9] http://habybpalyoga.blogspot.com/2010/12/risalah-tuntunan-shalat-lengkap-
+for.html [10] Rifa'I, MOH.1976. Risalah Tuntunan Sholat Lengkap [11] http://pocketnow.com/android/awesome-hidden-feature-samsung-kies [12] http://en.wikipedia.org/wiki/Samsung_Kies [13]http://www.samsung.com/ca/support/mobilesoftwaremanual/mobilesoftwarem
+anual.do?page=MOBILE.SOFTWARE.MANUAL [14] http://en.wikipedia.org/wiki/Qualcomm
+
+31
+[15] http://www.fundinguniverse.com/company-histories/QUALCOMMIncorporated-Company-History.html
+[16] https://developer.qualcomm.com/press/qualcomm-announces-commercialrelease-its-augmented-reality-platform
+[17] http://www.qualcomm.com/products-services/developer-network
+
+

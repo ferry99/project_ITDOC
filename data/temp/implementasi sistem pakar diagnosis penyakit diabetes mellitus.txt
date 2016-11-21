@@ -1,0 +1,476 @@
+IMPLEMENTASI SISTEM PAKAR DIAGNOSIS PENYAKIT DIABETES MELLITUS MENGGUNAKAN METODE FUZZY LOGIC BERBASIS WEB
+Tesis untuk memenuhi sebagian persyaratan mencapai derajat Sarjana S-2 Program Studi
+Magister Sistem Informasi
+Fauzan Masykur 24010410400022
+PROGRAM PASCASARJANA UNIVERSITAS DIPONEGORO
+SEMARANG 2012
+
+ABSTRAK
+Jumlah penderita Diabetes Mellitus meningkat dari tahun ke tahun. Hal ini dikarenakan keterlambatan diagnosis penyakit dan juga karena gaya hidup yang tidak sehat. Penderita penyakit tersebut biasanya tidak menyadari kalau menderita penyakit Diabetes Mellitus. Pada penelitian ini, dibuat suatu sistem penegakan penyakit Diabetes Mellitus dengan Metode Sugeno. Variabel-variabel pendukung penegakan diagnosis penyakit tersebut digunakan dalam pembentukan himpunan fuzzy. Himpunan fuzzy itu akan diproses dengan Metode Sugeno sehingga menghasilkan suatu keputusan. Aplikasi yang dirancang telah diuji dengan melibatkan rekam medik diagnosa dari dokter, hasil keputusan yang dihasilkan aplikasi adalah sama dengan diagnosa dokter yang tertera di rekam medik. Secara umum aplikasi berbasis web ini bisa digunakan sebagai alat bantu dalam penegakan diagnosis penyakit Diabetes Mellitus).
+Kata-kunci: logika fuzzy, sistem pakar, diabetes mellitus, web
+
+ABSTRACT
+Number of patients with Diabetes Mellitus increases from year to year. This is due to late diagnosis of disease and also because of an unhealthy lifestyle. The disease usually does not realize that the disease Diabetes Mellitus. In this study, made an enforcement system diseases Diabetes Mellitus with the Sugeno method. The variables supporting the diagnosis of the disease are used in the formation of a fuzzy set. Fuzzy set will be processed by the Sugeno method to produce a decision. Designed application has been tested with the involvement of medical records from physician diagnosis, the decision of the resulting application is the same as physician diagnosis listed in medical records. In general, web-based applications can be used as a tool in the diagnosis of Diabetes Mellitus.
+Keyword : fuzzy logic, expert system, diabetes mellitus, web-based
+
+BAB I PENDAHULUAN
+1.1 Latar Belakang Setiap tahun, tren jumlah penderita diabetes kian meningkat. Berdasarkan
+data Organisasi Kesehatan Dunia (WHO), Indonesia kini menempati urutan ke-4 terbesar dalam jumlah penderita Diabetes. Pada 2006, jumlah penderita Diabetes Mellitus (DM) di Indonesia mencapai 14 juta orang. Dari jumlah itu, baru 50% penderita yang sadar mengidap dan sekitar 30% di antaranya melakukan pengobatan secara teratur. Menurut beberapa penelitian epidemiologi, prevalensi diabetes di Indonesia berkisar 1,5 sampai 2,3 kecuali di manado yang cenderung lebih tinggi yaitu 6,1% (Wahdah, 2011).
+Klasifikasi etiologis Diabetes Mellitus menurut ADA 2005 yaitu Diabetes Mellitus tipe 1, Diabetes Mellitus tipe 2, Diabetes Mellitus tipe lain dan Diabetes Kehamilan (Gestasional). Di Indonesia jumlah keseluruhan kasus penyakit Diabetes Mellitus tipe 1 belum diketahui secara pasti, tipe ini jarang ditemui. Hal ini disebabkan karena Indonesia terletak di khatulistiwa atau faktor genetik yang tidak mendukung. Lain halnya pada Diabetes Mellitus tipe 2 yang meliputi lebih dari 90% dari jumlah populasi penderita diabetes ­ untuk selanjutnya disebut diabetesi ­, faktor lingkungan sangat berperan (Sudoyo, 2006). Diabetes Mellitus ini kalau dibiarkan akan mengakibatkan gangguan kesehatan yang serius.
+Peningkatan jumlah diabetesi disebabkan keterlambatan penegakan diagnosis dan juga dikarenakan pola hidup yang tidak sehat. konsep Fuzzy logic sangat fleksibel dan mempunyai toleransi terhadap data-data yang tidak tepat serta didasarkan pada bahasa alami. Oleh karena itu diperlukan suatu sistem sebagai alat bantu dalam penentuan apakah pasien itu menderita Diabetes Mellitus atau tidak dengan konsep Fuzzy logic. Sistem yang digunakan sebagai alat bantu adalah sistem pakar
+Penggunaan sistem pakar dapat diimplementasikan dengan mudah ke
+dalam bahasa mesin secara mudah dan efisien dengan menggunakan fuzzy logic.
+Fuzzy logic telah menjadi area riset yang mengagumkan karena kemampuannya
+dalam menjembatani bahasa mesin yang serba presisi dengan bahasa manusia
+yang cenderung tidak presisi yaitu dengan menekankan pada makna atau arti
+(significance). Bisa dibayangkan bahwa sistem fuzzy adalah sebuah mesin
+penerjemah bahasa manusia sehingga bisa dimengerti oleh bahasa mesin dan juga
+sebaliknya (Naba, 2009).
+Sistem pakar dibuat hanya pada domain pengetahuan tertentu untuk suatu kepakaran tertentu yang mendekati kemampuan manusia di salah satu bidang saja.
+
+Sistem pakar mencoba mencari penyelesaian yang memuaskan yaitu sebuah penyelesaian yang cukup bagus agar pekerjaan dapat berjalan walaupun itu bukan penyelesaian yang optimal (Hartati dan Iswanti, 2008).
+Pada dasarnya sistem pakar diterapkan untuk mendukung aktivitas pemecahan masalah. Beberapa aktivitas pemecahan yang dimaksud antara lain: pembuatan keputusan (decision making), pemaduan pengetahuan (knowledge fusing), pembuatan desain (designing), perencanaan (planning), prakiraan (forecasting), pengaturan (regulating), pengendalian (controlling), diagnosis (diagnosing), perumusan (prescribing), penjelasan (explaining), pemberian nasihat (advising), dan pelatihan (tutoring). Selain itu sistem pakar juga dapat berfungsi sebagai asisten yang pandai dari seorang pakar.
+Sistem pakar fuzzy logic dapat diterapkan menggunakan aplikasi web karena dengan aplikasi web bisa mudah digunakan oleh semua pihak tanpa batasan waktu. Dengan digunakan aplikasi web, user dapat dengan mudah dan cepat mengakses sistem.
+1.2 RUMUSAN MASALAH Dari uraian di atas dapat di rumuskan permasalahan yang ditimbulkannya,
+yaitu Bagaimana membuat atau membangun suatu sistem untuk mendiagnosa penyakit Diabetes Mellitus melalui sistem pakar dengan metode fuzzy logic yang dapat digunakan bagi siapa saja dengan menggunakan metode Sugeno
+1.3 BATASAN MASALAH Dari pemaparan di bagian latar belakang diatas dapat dijadikan landasan untuk menentukan batasan masalah dalam penelitian yang akan dilakukan. Adapun batasan tersebut sebagai berikut :
+1. Sistem pakar yang peneliti rancang ini hanya untuk mendiagnosis penyakit Diabetes Mellitus.
+2. Sistem pakar ini nantinya berbasis web yang dapat digunakan siapa saja sebagai media pembelajaran khususnya dalam mendiagnosis penyakit Diabetes Mellitus.
+
+3. Output dari rancang bangun sistem ini nanti berupa negatif diabetes, prediabetes, positif diabetes tipe 1, positif diabetes tipe 2.
+1.4 KEASLIAN PENELITIAN Penelitian sebelumnya yang berkaitan dengan diagnosis penyakit yaitu
+yang dilakukan oleh Ali Keles, Ayturk Keles, Ugur Yavuz, pada tahun 2011. Expert system based on neuro-fuzzy rules for diagnosis breast cancer, namun pada penelitian ini dilakukan untuk mendiagnosis penyakit kanker payudara dengan menggunakan neuro fuzzy.
+Penelitian yang lain dari yang diatas adalah penelitian yang dilakukan oleh Daoliang Li, Zetian Fu, Yanqing Duan pada tahun 2002 yang berjudul "FishExpert: a web-based expert system for fish disease diagnosis", dalam penelitian yang mereka lakukan bahwa mereka melakukan penelitian mengenai kepakaran dalam mendiagnosis penyakit binatang yakni ikan.
+Sedangkan penelitian yang akan peneliti lakukan adalah sistem pakar yang menggunakan metode fuzzy logic yang berbasis web. Yang peneliti maksud disini adalah sistem pakar yang berkaitan dengan bidang kesehatan terutama pada penyakit Diabetes Mellitus. Basis web yang akan penulis lakukan menggunakan PHP dan XAMPP yang nantinya bisa diakses siapa saja.
+1.5 TUJUAN Tujuan dari penelitian ini adalah rancang bangun sebuah aplikasi dari
+sistem pakar dalam bidang kesehatan yaitu diagnosis penyakit Diabetes Mellitus. Aplikasi ini digunakan untuk mendiagnosis penyakit Diabetes Mellitus dengan metode fuzzy logic dan aplikasi ini berbasis web sehingga bisa digunakan masyarakat secara gratis.
+1.6 MANFAAT Penelitian ini bermanfaat bagi banyak kalangan antara lain :
+
+a. Untuk masyarakat Masyarakat menjadi lebih peduli terhadap kesehatan terutama pada penyakit Diabetes Mellitus.
+b. Untuk penulis Penulis bisa mengaplikasikan selama menuntu ilmu dalam perkuliahan terutama dalam bidang sistem pakar, fuzzy logic dan aplikasi web
+c. Untuk User Dengan adanya aplikasi ini, user menjadi lebih mudah dalam penegakan penyakit Diabetes Mellitus.
+
+BAB II TINJAUAN PUSTAKA
+2.1 Tinjauan Pustaka Menurut American Diabetes Association (ADA) tahun 2010, Diabetes
+Mellitus merupakan suatu kelompok penyakit metabolik dengan karakteristik hiperglikemia yang terjadi karena kelainan sekresi insulin, kerja insulin, atau kedua-duanya (Perkeni, 2011).
+Kematian terbesar di Indonesia, sedangkan epidemi penyakit menular juga belum tuntas, selain itu semakin banyak pula ditemukan penyakit infeksi baru dan timbulnya kembali penyakit infeksi yang sudah lama menghilang, Sehingga Indonesia memiliki beban kesehatan ganda yang berat. Berdasarkan studi epidemiologi terbaru, Indonesia telah memasuki epidemi diabetes melitus tipe 2. Perubahan gaya hidup dan urbanisasi nampaknya merupakan penyebab penting masalah ini, dan terus menerus meningkat pada milenium baru ini.
+Diperkirakan masih banyak (sekitar 50%) penyandang diabetes yang belum terdiagnosis di Indonesia. Selain itu hanya dua pertiga saja dari yang terdiagnosis yang menjalani pengobatan, baik non farmakologis maupun farmakologis. Dari yang menjalani pengobatan tersebut hanya sepertiganya saja yang terkendali dengan baik. Bukti-bukti menunjukkan bahwa komplikasi diabetes dapat dicegah dengan kontrol glikemik yang optimal. Kontrol glikemik yang optimal sangatlah penting, namun demikian di Indonesia sendiri target pencapaian kontrol glikemik belum tercapai, rerata HbA1c masih 8%, masih di atas target yang diinginkan yaitu 7%. Oleh karena itu diperlukan suatu pedoman pengelolaan yang dapat menjadi acuan penatalaksanaan Diabetes Mellitus (DM).
+Berbagai penelitian epidemiologi menunjukkan adanya kecenderungan peningkatan angka insidensi dan prevalensi DM tipe2 di berbagai penjuru dunia. WHO memprediksi adanya peningkatan jumlah penyandang diabetes yang cukup besar pada tahun-tahun mendatang. WHO memprediksi kenaikan jumlah penyandang DM di Indonesia dari 8,4 juta pada tahun 2000 menjadi sekitar 21,3 juta pada tahun 2030. Senada dengan WHO, International Diabetes Federation
+
+(IDF) pada tahun 2009, memprediksi kenaikan jumlah penyandang Diabetes Mellitus (DM) dari 7,0 juta pada tahun 2009 menjadi 12,0 juta pada tahun 2030. Meskipun terdapat perbedaan angka prevalensi, laporan keduanya menunjukkan adanya peningkatan jumlah penyandang Diabetes Mellitus (DM) sebanyak 2-3 kali lipat pada tahun 2030.
+Untuk uji glukosa darah puasa, penderita diminta berpuasa selama 10 jam sejak malam sebelum diambil darah (misalnya mulai puasa jam 9 malam). Selama berpuasa penderita tidak boleh melakukan akitifitas fisik yang berat, tidak boleh merokok, dan tetap diperbolehkan minum air putih. Pagi hari setelah puasa (misalnya jam jam 8 pagi), penderita diambil darah vena 3-5 ml dikumpulkan dalam tabung bertutup merah (tanpa antikoagulan) atau dalam tabung tutup abuabu (berisi NaF). NaF digunakan untuk mencegah glikolisis yang dapat mempengaruhi hasil laboratorium. Penderita diminta untuk makan dan minum seperti biasa, lalu puasa lagi selama 2 jam. Selama berpuasa penderita tidak boleh melakukan akitifitas fisik yang berat, tidak boleh merokok, dan tetap diperbolehkan minum air putih.
+Berbagai keluhan dapat ditemukan pada penyandang diabetes. Kecurigaan adanya Diabetes Mellitus (DM) perlu dipikirkan apabila terdapat keluhan klasik seperti di bawah ini (Perkeni, 2011) :
+ Keluhan klasik DM berupa: poliuria, polidipsia, polifagia, dan penurunan berat badan yang tidak dapat dijelaskan sebabnya
+ Keluhan lain dapat berupa: lemah badan, kesemutan, gatal, mata kabur, dan disfungsi ereksi pada pria, serta pruritus vulvae pada wanita
+2.2 Landasan Teori 2.2.1 Sistem Pakar
+Sistem pakar merupakan suatu sistem terkomputerisasi yang menggunakan pengetahuan bidang tertentu untuk mencapai solusi suatu masalah dari bidang tersebut. Solusi yang diberikan pada dasarnya sama seperti yang disimpulkan oleh seseorang yang banyak mengetahui masalah tersebut.
+
+Untuk membangun sistem pakar yang baik diperlukan beberapa komponen, antara lain (Hartati dan Iswanti, 2008) :
+1. Antar Muka Pengguna (User Interface) 2. Basis Pengetahuan (Knowledge Base) 3. Mekanisme Inferensi (Inference Machine) 4. Memori Kerja (Working Memory)
+Antar Muka Pengguna, sistem pakar menggantikan seorang pakar dalam situasi tertentu, maka sistem harus menyediakan pendukung yang diperlukan oleh pemakai yang tidak memahami masalah teknis. Sistem pakar juga menyediakan komunikasi antar sistem dan pemakainya (user) yang disebut sebagai antar muka. Antar muka yang efektif dan ramah penggunaan (user-friendly) penting sekali terutama bagi pemakai yang tidak ahli dalam bidang yang diterapkan pada sistem pakar.
+Basis pengetahun, merupakan kumpulan pengetahun bidang tertentu pada tingkatan pakar dalam format tertentu. Pengetahun ini diperoleh dari akumulasi pengetahuan pakar dan sumber-sumber pengetahuan lainnya. Pada sistem pakar ini basis pengetahuan terpisah dengan mesin inferensi. Pemisahan ini bermanfaat untuk pengembangan sistem pakar secara leluasa disesuaikan dengan perkembangan pengetahuan.
+Mesin Inferensi, merupakan otak dari sistem pakar berupa perangkat lunak yang melakukan tugas inferensi penalaran sistem pakar, biasa dikatakan sebagai mesin pemikir (thinking machine). Pada prinsipnya mesin inferensi inilah yang akan mencari solusi dari suatu permasalahan.
+Mesin inferensi sesungguhnya adalah program komputer yang menyediakan metodologi untuk melakukan penalaran tentang informasi pada basis pengetahuan dan memori kerja serta untuk merumuskan kesimpulankesimpulan. Komponen ini menyajikan arahan-arahan tentang bagaimana menggunakan pengetahuan dari sistem dengan membangun agenda yang mengelola dan mengontrol langkah-langkah yang diambil untuk menyelesaikan masalah ketika dilakukan konsultasi.
+
+Memori kerja, merupakan bagian sistem pakar yang menyimpan faktafakta yang diperoleh saat dilakukan proses konsultasi. Fakta-fakta inilah yang nantinya akan diolah oleh mesin inferensi berdasarkan pengetahuan untuk menentukan suatu keputusan pemecahan masalah.
+2.2.2 Fuzzy Logic Fuzzy Logic pertama kali diperkenalkan oleh Prof. Lotfi A. Zadeh pada
+tahun 1965. Dasar fuzzy logic adalah teori himpunan fuzzy. Pada teori himpunan fuzzy, peranan derajat keanggotaan sebagai penentu keberadaan elemen dalam suatu himpunan sangatlah penting. Nilai keanggotaan atau derajat keanggotaan atau membership function menjadi cirri utama dari penalaran dengan fuzzy logic tersebut (Kusumadewi dan Purnomo, 2010).
+Fuzzy Logic dapat diangggap sebagai kotak hitam yang menghubungkan antara ruang input dengan ruang output. Kotak hitam tersebut berisi cara atau metode yang dapat digunakan untuk mengolah data input menjadi output dalam bentuk informasi yang baik. Pada gambar 2.1 ditunjukkan pemetaan suatu inputoutput dalam bentuk informasi yang baik.
+Gambar 2.1 Pemetaan Input-Output (Kusumadewi dan Purnomo. 2010)
+Ada beberapa alasan mengapa orang menggunakan Fuzzy Logic, antara lain:
+
+1. Konsep Fuzzy Logic mudah dimengerti. Konsep matematis yang mendasari penalaran fuzzy sangat sederhana dan mudah dimengerti.
+2. Fuzzy Logic sangat fleksibel. 3. Fuzzy Logic memiliki toleransi terhadap data-data yang tidak tepat. 4. Fuzzy Logic mampu memodelkan fungsi-fungsi non linear yang sangat
+kompleks. 5. Fuzzy Logic dapat membangun dan mengaplikasikan pengalaman-
+pengalaman para pakar secara langsung tanpa harus melalui proses pelatihan. 6. Fuzzy Logic dapat bekerjasama dengan teknik-teknik kendali secara konvensional. 7. Fuzzy Logic didasarkan pada bahasa alami. Kalau himpunan tegas (crisp), nilai keanggotaan suatu item x dalam suatu himpunan A, yang sering ditulis dengan µA(x), memiliki dua kemungkinan, yaitu :  Satu (1), yang berarti bahwa suatu item menjadi anggota dalam suatu himpunan.  Nol (0), yang berarti bahwa suatu item tidak menjadi anggota dalam suatu himpunan Beberapa hal yang perlu diketahui dalam memahami sistem fuzzy, yaitu: a. Varibel Fuzzy Variabel fuzzy merupakan variabel yang hendak dibahas dalam suatu sistem fuzzy. Contoh: umur, temperatur, permintaan, dsb. b. Himpunan Fuzzy Himpunan fuzzy merupakan suatu grup yang mewakili suatu kondisi atau keadaan tertentu dalam suatu variabel fuzzy. c. Semesta Pembicaraan Semesta pembicaraan adalah keseluruhan nilai yang diperbolehkan untuk dioperasikan dalam suatu variabel fuzzy. Semesta pembicaraan merupakan himpunan bilangan real yang senantiasa naik (bertambah) secara monoton dari kiri ke kanan. Nilai semesta pembicaraan dapat
+
+berupa bilangan positif maupun negatif. Adakalanya nilai semesta pembicaraan ini tidak dibatasi batas akhirnya. d. Domain Domain himpunann fuzzy adalah keseluruhan nilai yang diijinkan dalam semesta pembicaraan dan boleh dioperasikan dalam suatu himpunan fuzzy.
+2.2.3 Fungsi Keanggotaan Fungsi keanggotaan adalah suatu kurva yang menunjukkan pemetaan titik-
+titik input ke dalam nilai keanggotaan yang memiliki interval 0 sampai 1. Salah satu cara yang dapat digunakan untuk mendapatkan nilai keanggotaan adalah dengan melalui pendekatan fungsi. Ada beberapa fungsi yang dapat digunakan, yaitu :
+a. Representasi linier Pada representasi linier, pemetaan input ke derajat keanggotaannya digambarkan sebagai garis lurus. Ada 2 keadaan himpunan fuzzy yang linier. Pertama, Kenaikan himpunan dimulai pada nilai domain yang memiliki derajat keanggotaan nol [0] bergerak ke kanan menuju nilai domain yang memilki derajat keanggotaan lebih tinggi.
+1
+Derajat keanggotan
+µ(x)
+0 a Domain b Gambar 2.2 Representasi Linier Naik (Kusumadewi dan Purnomo, 2010)
+
+Fungsi Keanggotaan :
+
+(2.1)
+
+Kedua, Garis lurus dimulai dari nilai domain dengan derajat keanggotaan tertinggi pada sisi kiri,kemudian bergerak menurun ke nilai domain yang memiliki derajat keanggotaan lebih rendah.
+
+1
+Derajat keanggotan
+
+µ(x)
+
+0a
+
+Domain b
+
+Gambar 2.3 Representasi Linier Turun (Kusumadewi dan Purnomo, 2010)
+
+Fungsi Keanggotaan :
+
+(2.2)
+
+b. Representasi kurva segitiga Kurva segitiga pada dasarnya merupakan gabungan antara 2 garis (linier) seperti terlihat pada gambar 2.3 di bawah ini.
+
+1
+Derajat keanggotan
+
+µ(x)
+
+0a
+
+b
+
+c Domain
+
+Gambar 2.4 Representasi Kurva Segitiga (Kusumadewi dan Purnomo, 2010)
+
+Fungsi keanggotaan :
+
+(2.3)
+
+c. Representasi kurva trapezium Kurva trapezium pada dasarnya seperti bentuk segitiga , hanya saja pada rentang tertentu ada beberapa titik yang memiliki nilai keanggotaan 1
+
+1
+Derajat keanggotan
+
+µ(x)
+
+0 a b Domain c
+
+d
+
+Gambar 2.5 Representasi Kurva Trapesium (Kusumadewi dan Purnomo,
+
+2010)
+
+Fungsi keanggotaan :
+
+(2.4 )
+
+2.2.4 Sistem Inferensi Fuzzy Sistem inferensi fuzzy merupakan kerangka komputasi yang didasarkan
+pada teori himpunan fuzzy, aturan fuzzy berbentuk IF-THEN, dan penalaran fuzzy. Sistem inferensi fuzzy menerima input crisp. Input ini kemudian dikirim ke basis pengetahuan yang berisi n aturan fuzzy dalam bentuk IF-THEN. Fire strength akan dicari pada setiap aturan. Apabila jumlah aturan lebih dari satu, maka akan dilakukan agregasi dari semua aturan. Selanjutnya, pada hasil agregasi akan dilakukan defuzzy untuk mendapatkan nilai crisp sebagai output sistem.
+Penerapan fuzzy logic dapat meningkatkan kinerja sistem kendali dengan menekan munculnya fungsi-fungsi liar pada keluaran yang disebabkan oleh fluktuasi pada variable masukannya. Pendekatan fuzzy logic secara garis besar diimplementasikan dalam tiga tahapan yang dapat dijelaskan sebagai berikut :
+1. Tahap pengaburan (fuzzification) yakni pemetaan dari masukan tegas ke himpunan kabur.
+2. Tahap inferensi, yakni pembangkitan aturan kabur. 3. Tahap penegasan (defuzzification), yakni tranformasi keluaran dari nilai
+kabur ke nilai tegas.
+
+Masukan Tegas
+
+Pengaburan
+
+Inferensi
+
+Penegasan
+
+Keluaran Tegas
+
+Gambar 2.6 Tahapan Proses Dalam Logika Kabur (Kurniawan, 2004)
+
+2.2.5 Rule IF ­ THEN Rule adalah sebuah struktur knowledge yang menghubungkan beberapa
+informasi yang sudah diketahui ke informasi lain sehingga dapat disimpulkan. Sebuah rule adalah sebuah bentuk knowledge yang procedural. Dengan demikian yang dimaksud dengan sistem pakar berbasis rule adalah sebuah program computer untuk memproses masalah dari informasi spesifik yang terdapat dalam memori aktif dengan sebuah set dari rule dalam knowledge base, dengan menggunakan inference engine untuk menghasilkan informasi baru.
+
+Struktur rule secara logika menghubungkan satu atau lebih antaseden (juga disebut premis) yang terletak dalam bagian IF dengan satu atau lebih konsekuen (juga disebut konklusi) yang terletak dalam bagian THEN. Secara umum, sebuah rule dapat menpunya premis jamak dihubungkan dengan pernyataan AND (konjungsi) pernyataan OR (disjungsi) atau kombinasi dari keduanya.
+Dalam sistem pakar berbasis rule domain knowledge ditampung dalam sebuah set dari rules dan dimasukkan dalam basis sistem pengetahuan. Sistem menggunakan aturan ini dengan informasi selama berada dalam memori aktif untuk memecahkan masalah. Sistem pakar berbasis rule mempunyai arsitektur yang dapat dijelaskan sebagai berikut :
+1. User interface Digunakan sebagai media oleh user untuk melihat dan berinteraksi dengan sistem.
+2. Developer interface Media yang digunakan untuk mengembangkan sistem oleh engineer.
+3. Fasilitas penjelasan Sub sistem yang berfungsi untuk menyediakan penjelesan dalam sistem reasoning.
+4. Program eksternal Program seperti database, spreadsheet, yang bekerja dalam mendukung keseluruhan sistem.
+2.2.6 Metode Sugeno Penalaran dengan metode Sugeno hampir sama dengan penalaran
+Mamdani, hanya saja output (konsekuen) system tidak berupa himpunan fuzzy, melainkan berupa konstanta atau persamaan linear. Metode ini diperkenalkan oleh Takagi-Sugeno Kang pada tahun 1985, sehingga ini sering juga dinamakan dengan metode TSK. Metode TSK terdiri dari 2 jenis, yaitu :
+a. Model fuzzy Sugeno Orde-Nol Secara umum bentuk model fuzzy Sugeno Orde-Nol adalah :
+
+IF (x1 is A1) o (x2 is A2) o (x3 is A3) o ... o (xN is AN) THEN z = k Dengan Ai adalah himpunan fuzzy ke-i sebagai anteseden dan k adalah suatu konstanta (tegas) sebagai konsekuen. b. Model fuzzy Sugeno Orde-Satu Secara umum bentuk model fuzzy Sugeno Orde-Satu adalah : IF (x1 is A1) o ... o (xN is AN) THEN z = p1 * x1 + ... + pN * xN + q Dengan Ai adalah himpunan fuzzy ke-i sebagai anteseden dan pi adalah suatu konstanta (tegas) ke-i dan q juga merupakan konstanta dalam konsekuen. Apabila komposisi aturan menggunakan metode Sugeno maka deffuzifikasi dilakukan dengan cara menilai rata-ratanya (Weight Average). Adapun persamaannya dapat dilihat di bawah ini.
+(2.5)
+2.2.7 World Wide Web World Wide Web atau WWW adalah jaringan beribu-ribu computer yang
+diketagorikan menjadi dua : Client dan Server dengan menggunakan Software khusus membentuk sebuah jaringan yang disebut jaringan client-server. Dalam cara kerja dari WWW ada dua hal yang terpenting yaitu software web server dan software web browser (Sutarman, 2003).
+Server menyimpan/menyediakan informasi dan memproses permintaan dari client, apabila ada client yang meminta informasi maka server mengirimkannya. Informasi yang diakses dapat berupa teks, gambar, suara. Server juga mengirimkan perintah-perintah ke client tentang bagaimana cara menampilkan semua informasi tersebut.
+HTTP (HyperText Transfer Protocol) adalah suatu protokol yang menentukan aturan dan perlu diikuti oleh web browser dalam meminta atau mengambil suatu dokumen dan oleh web server dalam menyediakan dokumen yang diminta web browser. Protokol ini merupakan protokol standar yang digunakan untuk mengakses dokumen html.
+
+Protokol transfer adalah suatu protokol yang digunakan untuk pengiriman informasi di internet. HTTP adalah protokol standar untuk suatu dokumen web. Selain HTTP di internet juga dikenal beberapa protokol lain diantaranya (sutarman, 2003) :
+1. FTP (File Transfer Protocol), protokol ini dirancang untuk memungkinkan pemakaian dalam hal transfer file dalam format text atau binary dalam suatu server komputer di internet.
+2. Gopher, protokol ini dirancang untuk mengakses server gopher yang menyediakan informasi dengan menggunakan suatu sistem menu atau melalui hubungan telnet.
+3. News NNTP (Network News Transfer Protocol), adalah protokol yang digunakan untuk mendistribusikan berita di USENet. USENet adalah suatu sistem yang dirancang sebagai forum diskusi dengan berdasarkan pad topik-topik yang disebut newsgroup.
+Homepage (situs web) adalah merupakan alamat (URL) yang berfungsi sebagai tempat penyimpanan data dan informasi dengan berdasarkan topik tertentu.
+Web Page (halaman web) merupakan halaman khusus dari situs web tertentu yang tersimpan dalam bentuk file. Dalam web page tersimpan berbagai informasi dan link yang menghubungkan suatu informasi ke informasi lain baik itu dalam page yang sama atau page yang berbeda.
+Homepage merupakan halaman pertama atau sampul dari suatu website yang biasanya berisi tentang apa dan siapa dari perusahaan atau instansi atau organisasi pemilik website tersebut.
+Web adalah fasilitas hypertext untuk menampilkan data berupa teks, gambar, suara, animasi dan data multimedia lainnya.
+Pada pemrograman website dapat dikategorikan menjadi 2 kategori : 1. Server ­ side Programming
+Pada server-side programming perintah-perintah program dijalankan di web server kemudian hasilnya dikirimkan ke browser dalam bentuk
+
+HTML. Pada gambar 2. 7 ditunjukkan ilustrasi pemrograman pada sisi server.
+Gambar 2.7 Server-Side Programming (Sutarman, 2003) 2. Client ­ side Programming
+Sedangkan client-side programming, perintah-perintah program dijalankan di web browser sehingga ketika client meminta dokumen yang mengandung script maka script tersebut akan di download dari server-nya kemudian dijalankan di browser yang bersangkutan. Pada gambar 2.8 ditunjukkan ilustrasi pemrograman di sisi client.
+Gambar 2.8 Client ­ Side Programming (Sutarman, 2003) 2.2.8 PHP (Hypertext PreProcessor)
+PHP merupakan bahasa web server-side yang bersifat open source. Bahasa PHP menyatu dengan script HTML yang sepenuhnya dijalankan pada server. File yang hanya berisi kode HTML yang dirancang tidak mendukung pembuatan aplikasi yang melibatkan database karena HTML dirancang untuk menyajikan informasi yang bersifat statis (tampilan yang isinya tetap hingga webmaster atau
+
+penanggung jawab web melakukan perubahan isi). Oleh karena itu, muncul pemikiran untuk membuat suatu perantara yang memungkinkan aplikasi bias menghasilkan sesuatu yang bersifat dinamis dan berinteraksi dengan database. Akhirnya lahirlah berbagai perantara seperti PHP, ASP dan JSP. Gambar 2.9 memperlihatkan skema yang memungkinkan suatu aplikasi berinteraksi dengan database menggunakan PHP.
+
+Di sisi server
+Web Server
+
+File sesuatu.php
+
+Mesin PHP
+
+Database Server
+
+Permintaan (sesuatu.php)
+User
+Gambar 2.9 Pemanggilan Aplikasi Web Bertipe PHP (Kadir. 2009)
+Pada gambar 2.9, setelah web server menemukan file yang diminta user (sesuatu.php), file tersebut diserahkan ke mesin PHP untuk diproses. Bila PHP mendeteksi adanya interaksi dengan database maka PHP akan melakukan permintaan pada database server dan hasil dari database server diproses lebih lanjut. Setelah semua isi file diproses, maka hasilny berupa diserahkan ke web server yang selanjutnya web server mengirimkan kode HTML kepada user.
+Kode sumber PHP (sesuatu.php) tidak akan diketahui oleh user karena user hanya menerima kode hasil pemrosesannya. Dengan cara seperti ini,
+
+kerahasiaan kode sumber bisa terjaga. Tidak perlu ada kekhawatiran bahwa pemakai bisa melihat password yang digunakan untuk mengakses database.
+Pada level dasar, PHP dapat melakukan semua apa yang dapat dilakukan oleh pemrograman berbasis CGI lainnya, dan juga kekuatan utamanya adalah dalam pembuatan apalikasi web database. Hampir sebagian besar produk software DBMS dapat didukung oleh PHP baik yang berjalan pada sistem operasi Windows, Linux maupun system operasi lainnya.
+Berikut ini contoh penulisan script PHP yang terdapat dalam kode html.
+<html> <head> <title>Contoh</title> </head> <body> <?php echo "Hai, Aku adalah skrip PHP!"; ?> </body> </html>
+Script PHP dapat disisipakan pada kode html sehingga PHP sangat fleksibel. Dalam contoh di atas script PHP adalah :
+<?php echo "Hai, Aku adalah skrip PHP!"; ?>
+Fungsi echo adalah untuk menampilkan suatu output.
+
+BAB III METODE PENELITIAN
+3.1 Alat dan Bahan Penelitian Perangkat lunak yang dibutuhkan untuk pengembangan dan implementasi
+sistem untuk penegakan diagnosis penyakit Diabetes Mellitus adalah : 1. Windows 7 Sistem operasi yang digunakan dalam pengimplementasian perangkat lunak yang dibangun. 2. Macromedia Dreamweaver CS4 Untuk mengatur tampilan dan tata letak data serta sebagai manual editor untuk bahasa pemrograman PHP, Javascript, dan HTML. 3. XAMPP Dalam aplikasi ini tersedia tiga macam aplikasi lainnya, yaitu:  PHP Sebagai Script Engine untuk menerjemahkan bahasa pemrograman PHP pada sistem operasi windows XP.  Apache Sebagai web server untuk pengetesan website.  MySQL Sebagai media basis data untuk penyimpanan data. 4. Mozilla Firefox. Browser yang digunakan untuk melakukan tes terhadap website. Adapun kebutuhan perangkat keras yang digunakan untuk menjalankan
+aplikasi sistem pakar tersebut minimal harus memenuhi spesifikasi sebagai berikut :
+1. Komputer dengan prosesor intel Pentium 4, 2. Monitor VGA dengan resolusi min. 800 x 600, 3. 256 MB RAM, 4. Harddisk kapasitas 40 Gigabyte atau lebih, 5. CD-ROM drive,
+
+6. Mouse, 7. Keyboard
+3.2 Metode Penelitian Suatu proses rancang bangun sistem diperlukan adanya analisa untuk
+mengetahui proses berjalannya sistem. Analisa sistem diperlukan untuk mengetahui permasalahan dan kebutuhan dalam perancangan sistem. Dalam analisa ini dibagi dalam 2 bagian, yaitu analisa data sistem dan analisa kebutuhan sistem.
+3.2.1 Analisa Data Sistem Aplikasi sistem pakar fuzzy logic berikut ini merupakan diagnosa penyakit
+dengan menggunakan mesin inferensi fuzzy berdasarkan metode sugeno. Proses diagnosis dalam sistem pakar ini didasarkan dari hasil laboratorium.
+Masukan atau inputan dari sistem berikut ini adalah : 1. Biodata pasien, yang teridiri dari :
+Username, Password, Nama, Jenis Kelamin, Alamat, Email, No telp. 2. Data hasil laboratorium, yang terdiri dari :
+Glukosa darah puasa (GDP), Glukosa plasma puasa (GPP), Glukosa plasma tidur (GPT), Glukosa darah 2 jam PP (GD), Kadar HbA1c, Kadar HDL, Kadar trigliserida, Kadar insulin.
+3.2.2 Analisa Kebutuhan Sistem Proses mendapat pengetahuan dapat dilakukan dengan berbagai macam
+jalan, yakni pengetahuan dari pakar, buku, jurnal ilmiah, laporan dan sebagainya. Sumber pengetahuan tersebut dikumpulkan dan kemudian direpresentasikan ke dalam basis pengetahuan menggunakan kaidah JIKA ­ MAKA (IF ­ THEN).
+Model yang dipakai dalam implementasi sistem pakar diaognosis penyakit adalah model logika fuzzy dengan metode Sugeno. Gambar 3.1 di bawah ini merupakan gambaran langkah-langkah yang digunakan dalam metode Sugeno.
+
+Mulai
+Input nilai himpunan Fuzzy
+Menentukan derajat keanggotaan
+Menghitung Predikat aturan
+Defuzzifikasi
+Output hasil keputusan
+Selesai
+Gambar 3.1 Flowchart Fuzzy metode sugeno
+Adapun penjelasan dari flowchart pada gambar 3.1 di atas adalah sebagai berikut :
+1. Input himpunan fuzzy Dalam perancangan sistem pakar ini menggunakan inputan dari hasil pemeriksaan laboratorium. Hasil pemeriksaan tersebut merupakan variabel-variabel yang digunakan dalam penegakan diagnosis penyakit Diabetes Mellitus (DM). Variabel-variabel tersebut yaitu kadar glukosa
+
+darah puasa, kadar glukosa darah 2 jam PP, kadar glukosa plasma puasa, kadar glukosa darah saat tidur, kadar insulin, kadar HbA1c, kadar kolesterol HDL, kadar trigliserida. 2. Menentukan derajat keanggotaan himpunan fuzzy Setiap variabel sistem dalam himpunan fuzzy ditentukan derajat keanggotaannya (). Dimana derajat keanggotaan tersebut menjadi nilai dalam himpunan fuzzy. 3. Menghitung predikat aturan () Variabel-variabel yang telah dimasukkan dalam himpunan fuzzy, dibentuk aturan-aturan yang diperoleh dengan mengkombinasikan setiap variabel dengan variabel yang satu dengan atribut lingusitiknya masing-masing. Aturan-aturan yang telah diperoleh akan dihitung nilai predikat aturannya dengan proses implikasi. Dalam metode Sugeno proses implikasi dilakukan dengan operasi Min. Predikat aturan tersebut diperoleh dengan mengambil nilai minimum dari derajat keanggotaan variabel yang satu dengan variabel yang lain, yang telah dikombinasikan dalam aturan yang telah ditentukan sebelumnya. 4. Defuzifikasi Pada tahap defuzifikasi ini dilakukan penghitungan rata-rata (Weight Average / WA) dari setiap predikat pada setiap variabel dengan menggunakan persamaan berikut ini :
+Keterangan n = nilai predikat aturan ke-n Zn = indeks nilai output ke-n
+
+5. Hasil keputusan Pada bagian ini merupakan hasil keputusan dari rangkaian proses dalam penegakan diagnosis penyakit Diabetes Mellitus (DM) berdasarakan hasil pemeriksaan di laboratorium. Adapun hasil pemeriksaan dan diagnosis dari dokter bisa dilihat pada rekam medic yang terdapat pada bagian lampiran.
+
+3.2.3 Perancangan Sistem Dalam perancangan sistem yang akan dibuat menggunakan representasi
+kurva untuk mencari derajat keanggotaan pada tiap variabel fuzzy. Representasi kurva tersebut dapat di buat flowchart untuk memudahkan aliran proses dalam mencari derajat keanggotaan.
+1. Representasi kurva trapesium
+
+1
+Derajat keanggotan
+
+µ(x)
+
+0 a b Domain c
+
+d
+
+Gambar 3.2 Representasi kurva trapesium
+
+Gambar 3.9 di atas menjelaskan bahwa masukan awal adalah x atau
+
+sebagai nilai keanggotaan, kemudian akan diproses menjadi sebuah keputusan jika
+
+dan maka derajat keanggotaan
+
+, jika
+
+maka
+
+derajat keanggotaan dihitung dengan menggunakan rumus
+
+, jika
+
+maka derajat keanggotaan
+
+, jika
+
+derajat
+
+keanggotaan di hitung menggunakan rumus
+
+. Adapun flowchart dari
+
+representasi kurva trapesium ini dapat dilihat pada gambar 3.3 di bawah ini.
+
+Mulai Input nilai x
+F dan
+T
+
+F T
+
+F T
+
+Output
+Selesai
+Gambar 3.3 Flowchart representasi kurva trapezium
+2. Representasi kurva bahu Representasi kurva bahu ini digunakan untuk mengakhiri suatu daerah variabel fuzzy. Untuk kurva bahu kiri bergerak dari pernyataan benar ke pernyataan salah sedangkan kurva bahu kanan bergerak dari pernyataan salah ke pernyataan benar.
+
+Bahu Kiri
+
+Bahu Kanan
+
+1
+Derajat keanggotan
+µ(x)
+0
+
+ab
+
+ab
+
+Gambar 3.4 Representasi kurva bahu
+
+3.2.4 Perancangan Inferensi Fuzzy Sebagai langkah awal dari perancangan mesin inferensi fuzzy adalah
+menentukan himpunan fuzzy dari tiap-tiap variabel fuzzy. Adapun variabel fuzzy disini yang digunakan adalah hasil pemeriksaan laboratorium yang nantinya difungsikan sebagai inputan dari mesin inferensi fuzzy. Tabel 3.1 di bawah ini memaparkan batasan varibel dan himpunan fuzzy sebagai inputan di mesin inferensi fuzzy.
+
+Tabel 3.1 Variabel dan himpunan fuzzy
+
+No Variabel Fuzzy
+
+Rendah
+
+Himpunan Fuzzy
+
+Sedang
+
+Tinggi
+
+1. Gula Darah Puasa (mg/dl) 2. Gula Plasma Puasa (mg/dl) 3. Gula Plasma Tidur (mg/dl) 4. Gula Darah 2 jam PP (mg/dl) 5. Kadar HbA1c (mg/dl) 6. Kadar HDL (mg/dl) 7. Kadar Trigliserida (mg/dl) 8. Kadar Insulin (%)
+
+< 75 < 79 < 115 < 90 <3 < 30 < 35 <5
+
+75  GDP  125 79  GPP  120 115  GPT  140
+90  GD  130 3  HbA1c  9 30  HDL  75 35  Tri  165
+5  In  9
+
+125  GDP  145 120  GPP  135 140  GPP  185 130  GD  190
+>9 > 75 > 165 >9
+
+Sangat Tinggi > 145 > 135 > 185 >190
+
+1. Variabel Gula Darah Puasa (GDP) Variabel Gula darah puasa ini dibagi dalam 4 kategori yaitu rendah (< 75), sedang (75  GDP  125 ), tinggi (125  GDP  145), sangat tinggi (> 145). Dari pembagian kategori ini nantinya dapat diketahui fungsi keanggotaannya pada setiap himpunan fuzzy rendah, sedang, tinggi, sangat tinggi. Adapun penjelasannya dapat diuraikan sebagai berikut :
+
+1 0,8 0,6 0,4 0,2
+
+20 40
+
+60 80
+
+100 120 140 160 180 200
+
+Gambar 3.5 Kurva himpunan fuzzy variabel gula darah puasa
+
+2. Variabel gula plasma puasa (GPP) Pada variabel gula plasma puasa ini dibagi dalam 4 kategori yaitu rendah (< 79), sedang (79  GPP  120 ), tinggi (120  GPP  135), sangat tinggi (> 135). Fungsi keanggotaan dari tiap himpunan fuzzy rendah, sedang, tinggi, sangat tinggi dapat diuraikan sebagai berikut :
+
+1 0,8 0,6 0,4 0,2
+
+20 40
+
+60 80
+
+100 120 140 160 180 200
+
+Gambar 3.6 Kurva himpunan fuzzy variabel gula plasma puasa
+
+3. Variabel gula plasma tidur (GPT) Pada variabel gula plasma tidur ini dibagi dalam 3 kategori yaitu rendah (< 115), sedang (115  GPT  140), tinggi (140  GPT  185)sangat tinggi (GPT > 185). Fungsi keanggotaan dari tiap himpunan fuzzy rendah, sedang, tinggi dapat diuraikan sebagai berikut :
+
+1 0,8 0,6 0,4 0,2
+
+20 40
+
+60 80
+
+100 120 140 160 180 200
+
+Gambar 3.7 Kurva himpunan fuzzy variabel gula plasma tidur
+
+4. Variabel Gula darah 2 jam PP (GD) Pada variabel gula darah 2 jam PP ini dibagi dalam 4 kategori yaitu rendah (< 90), sedang (90  GD  130 ), tinggi (130  GD  190), sangat tinggi (> 190). Fungsi keanggotaan dari tiap himpunan fuzzy rendah, sedang, tinggi, sangat tinggi dapat diuraikan sebagai berikut :
+
+1 0,8 0,6 0,4 0,2
+
+20 40
+
+60 80
+
+100 120 140 160 180 200 220
+
+Gambar 3.8 Kurva himpunan fuzzy variabel gula darah 2 jam PP
+
+5. Variabel kadar HbA1c Pada variabel kadar HbA1c ini dibagi dalam 3 himpunan fuzzy yaitu rendah (< 3), sedang (3  HbA1c  9 ), tinggi (> 9). Fungsi keanggotaan dari tiap himpunan fuzzy rendah, sedang, tinggi dapat diuraikan sebagai berikut :
+
+1 0,8 0,6 0,4 0,2
+
+12
+
+3 4 5 6 7 8 9 11 12
+
+Gambar 3.9 Kurva himpunan fuzzy variabel kadar HbA1c
+
+6. Variabel kadar HDL Pada variabel kadar HDL ini dibagi dalam 3 himpunan fuzzy yaitu rendah (< 30), sedang (30  HDL  75 ), tinggi (> 75). Fungsi keanggotaan dari tiap himpunan fuzzy rendah, sedang, tinggi dapat diuraikan sebagai berikut :
+1 0,8 0,6 0,4 0,2
+10 20 30 40 50 60 70 80 90
+Gambar 3.10 Kurva himpunan fuzzy variabel kadar HDL
+
+7. Variabel kadar Trigliserida Pada variabel kadar Trigliserida ini dibagi dalam 3 himpunan fuzzy yaitu rendah (< 35), sedang (35  Trigliserida  165 ), tinggi (> 165). Fungsi keanggotaan dari tiap himpunan fuzzy rendah, sedang, tinggi dapat diuraikan sebagai berikut :
+
+1 0,8 0,6 0,4 0,2
+
+20 40
+
+60 80
+
+100 120 140 160 180 200 220
+
+Gambar 3.11 Kurva himpunan fuzzy variabel kadar Trigliserida
+
+8. Variabel kadar Insulin Pada variabel kadar Insulin ini dibagi dalam 3 himpunan fuzzy yaitu rendah (< 5), sedang (5  Insulin  9), tinggi (> 9). Fungsi keanggotaan dari tiap himpunan fuzzy rendah, sedang, tinggi dapat diuraikan sebagai berikut :
+
+1 0,8 0,6 0,4 0,2
+
+12
+
+34
+
+56
+
+7 8 9 10
+
+Gambar 3.12 Kurva himpunan fuzzy variabel kadar Insulin
+
+3.2.5 Basis Pengetahuan Basis pengetahuan dalam perancangan sistem ini sangatlah diperlukanyang
+berisi aturana-aturan atau rule yang berguna dalam penentuan keputusan sebagai hasil output sistem. Perancangan aturan-aturan ini merupakan langkah setelah pembentukan himpunan fuzzy. Aturan-aturan dalam perancangan sistem dapat di lihat di tabel 3.2 di bawah ini.
+
+Tabel 3.2 Aturan-aturan dalam perancangan sistem
+P1 IF GDP rendah and HDL sedang and GPT rendah P2 IF GDP rendah and GPP rendah and GD Sedang P3 IF GPT rendah and HDL sedang and GPT rendah P4 IF GDP rendah and Insulin sedang and HDL tinggi P5 IF GDP rendah and HbA1c rendah Tg tinggi P6 IF GDP rendah and Tg rendah and GD Sedang P7 IF GDP rendah and GD rendah and GPT rendah P8 IF GPP rendah and GD rendah and HDL tinggi P9 IF GPT rendah and GD rendah and GD Sedang P10 IF GPT rendah and GPP rendah Tg tinggi P11 IF GPP rendah and HDLsedang and GPT rendah P12 IF GPP rendah and Tg rendah and GD Sedang P13 IF GPT rendah and Tg rendah and GPT rendah P14 IF GPT rendah and HbA1c rendah and Tg tinggi P15 IF GD rendah and HDLsedang and GPT rendah P16 IF GPP rendah and HbA1c rendah and GD Sedang P17 IF GPT rendah and Insulin sedang and HDL tinggi P18 IF GDP rendah and GPT rendah and GPT rendah P19 IF GD rendah and HbA1c rendah and GD Sedang P20 IF HbA1c rendah and HDL sedang Tg tinggi P21 IF HbA1c rendah and Tg rendah and GPT rendah
+
+THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN
+
+Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes Negatif Diabetes
+
+P22 IF P23 IF P24 IF P25 IF P26 IF P27 IF P28 IF P29 IF P30 IF P31 IF P32 IF P33 IF P34 IF P35 IF P36 IF
+
+GD rendah and Tg rendah and GPT rendah GDP sedang and GPT sedang and HDL tinggi GDP sedang and GD tinggi and insulin rendah GDP sedang and GPP sedang and insulin rendah HbA1c tinggi and Tg tinggi and trigliserida tinggi GDP sgt tinggi and Insulin rendah and GPT tinggi HbA1c tinggi and Insulin rendah insulin rendah GDP sgt tinggi and HDL rendah and GD tinggi HbA1c tinggi and HDL rendah trigliserida tinggi GDP tinggi and Insulin rendah and GD tinggi GDP tinggi and GPP tinggi trigliserida tinggi GDP sgt tinggi and GPP tinggi and GD tinggi GDP tinggi and GPP sgt tinggi trigliserida tinggi GDP sgt tinggi and Trigliserida tinggi and GPT tinggi GDP rendah and GPP tinggi trigliserida tinggi
+
+THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN THEN
+
+Negatif Diabetes PraDiabetes PraDiabetes PraDiabetes Positif Diabetes tipe 1 Positif Diabetes tipe 1 Positif Diabetes tipe 1 Positif Diabetes tipe 2 Positif Diabetes tipe 2 Positif Diabetes tipe 2 PraDiabetes Positif Diabetes tipe 2 Positif Diabetes tipe 2 Positif Diabetes tipe 2 Pradiabetes
+
+Dari aturan yang telah disusun diatas nantinya dapat digunakan sebagai penentuan keputusan dalam diagnosis penyakit Diabetes Mellitus (DM).
+
+

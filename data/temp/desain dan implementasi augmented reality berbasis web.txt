@@ -1,0 +1,317 @@
+DESAIN DAN IMPLEMENTASI AUGMENTED REALITY BERBASIS WEB PADA APLIKASI FURNITURE SHOPPING MANAGER SEBAGAI ALAT BANTU BELANJA ONLINE
+(Design And Implementation Of Web-Based Augmented Reality Furniture Shopping In Application Manager As A Tool For Online Shopping)
+
+Basworo Ardi Pramono Fakultas Teknologi Informasi dan Komunikasi Universitas Semarang
+
+Abstract
+
+In this paper will be discussed a development of Furniture Shopping Manager (FSM) application as a tool that can be used by the owners of the site or online furniture stores to sell its product. FSM is designed as a web-based application that is integrated into an online shopping site with features that are expected to provide a new, unique and interesting in online furniture shopping activities.
+FSM applications developed with the implement Augmented Reality (AR) and 3D engine technology components. The whole component is designed to deliver an exciting shopping atmosphere in the presence of a digital user. Thus the user can try out whether the furniture purchased fits in with the room. By using the FSM, the user can try the 3D models of furniture, choose a model office furniture to take a photo with the results of visualization 3D furniture models are preferred to the next can be saved.
+
+Keyword : 3D, augmented reality, marker detection,online shopping , user experience.
+
+I. PENDAHULUAN Internet yang semula hanya sebagai
+salah satu cara membagikan (sharing) filedata dari suatu ke tempat lain, saat ini berkembang sehingga banyak aplikasi yang dapat dilakukan menggunakan internet seperti mencari informasi, mengirimkan surat, dan sekarang internet telah menjadi salah satu cara bersosialisasi (social netwoking) pada
+aplikasi jejaring sosial seperti facebook/twitter. Banyak orang yang mulai melakukan transaksi secara online melalui koneksi internet. Beragam cara untuk melakukan transaksi ini ebay, amazon, dan beberapa menggunakan cara pembayaran seperti, internet-banking, paypal atau kaspay. Semakin maraknya online trading, memberikan inspirasi untuk membangun aplikasi terpadu dalam berbelanja di internet dengan menggunakan Augmented Reality (AR) yang disebut aplikasi Furniture Shopping Manager (FSM). AR adalah suatu
+
+lingkungan yang memasukkan obyek virtual3D kedalam lingkungan nyata secara real-time.
+E-Commerce merupakan satu set dinamis teknologi, aplikasi, dan proses bisnis yang menghubungkan perusahaan, konsumen, dan komunitas tertentu melalui transaksi elektronik dan perdagangan barang, pelayanan, dan informasi yang dilakukan secara elektronik. Salah satu usaha yang
+memanfaatkan aplikasi ini adalah penjualan furniture secara online, dalam penjualan furniture online terdapat aktifitas yang tidak dapat dilakukan seperti pada penjualan konvensional yaitu mencoba furniture dan kesesuaiannya dengan ruangan, oleh karena itu penjualan furniture online dapat didukung oleh aplikasi FSM agar pembeli dapat mencoba furniture secara virtual agar cocok dengan ruangan.
+Online shopping yang mengambil tema mengenai furniture telah banyak dibuat,
+
+26 Desain dan Implementasi Augmented... (B. Adi Pramono)
+
+namun aplikasi tersebut masih terbatas pada sistem komputer konvensional menggunakan layar monitor untuk display-nya dan interaksi menggunakan keyboard dan mouse, sehingga kesan yang didapat kurang realistis. Oleh karena untuk lebih memberikan efek nyata maka aplikasi FSM dibangun dengan mengimplementasikan teknologi AR. Selain untuk menarik minat untuk membeli furniture juga untuk memberikan pengalaman yang lebih nyata kepada user. Khususnya dalam hal kebebasan user dalam menentukan pilihan
+furniture yang sesuai dengan ruangannya. Interaksi yang dilakukan dalam aplikasi FSM merupakan representasi yang mendekati kenyataan mengenai kegiatan yang sebenarnya dilakukan dalam pembelian furniture, agar kita tidak salah pilih dalam membeli furniture dengan mencoba kesesuaian furniture dengan kondisi ruangan pribadi kita.
+Secara umum, aplikasi FSM ini merupakan perantara dalam online trading. Dimana pembeli tidak hanya dapat melihat dan
+memilih produk furniture, namun juga dapat melakukan berinteraksi dengan aplikasi, sehingga pembeli dapat memilih furniture dan mencoba furniture secara on-line melalui web. Pemilihan furniture dapat dicoba dengan sehingga ukuran dan model dapat diganti yang merupakan integrasi dari fitur yang tersedia dalam FSM.
+Penelitian ini akan memasukkan teknologi AR ke dalam sistim penjualan furnitureonline sehingga user seolah-olah sedang menata ruangan rumah secara virtual.
+
+Aplikasi AR ini memerlukan image ruangan yang diambil dari kamera sebagai sumber masukan, kemudian aplikasi ini akan melacak dan mendeteksi marker (penanda) dengan menggunakan sistem tracking, setelah marker dideteksi, furniture3D digambar di atas marker seolah-olah model furniture tersebut nyata.
+II. TINJAUAN PUSTAKA a. Augmented Reality
+Augmented reality (AR) adalah sebuah istilah untuk lingkungan yang menggabungkan dunia nyata dan dunia virtual yang dibuat oleh komputer sehingga batas antara keduanya menjadi sangat tipis. Sistem ini lebih dekat kepada lingkungan nyata. Karena itu, reality lebih diutamakan pada sistem ini. Sistem ini berbeda dengan virtual reality, yang sepenuhnya merupakan lingkungan virtual.
+Benda-benda maya menampilkan informasi yang tidak dapat diterima oleh pengguna dengan inderanya sendiri. Hal ini membuat AR sesuai sebagai alat untuk membantu persepsi dan interaksi penggunanya dengan dunia nyata. Informasi yang ditampilkan oleh benda maya membantu pengguna melaksanakan kegiatan-kegiatan dalam dunia nyata. AR dapat diaplikasikan untuk semua indera, termasuk pendengaran, sentuhan, dan penciuman. Milgram dan Kishino (1994) merumuskan kerangka kemungkinan penggabungan dan peleburan dunia nyata dan dunia maya ke dalam sebuah continuum virtuality[1].
+
+Gambar 1: Continuum Virtuality oleh Milgram dan Kishino[1].
+
+Sisi yang paling kiri adalah lingkungan nyata yang hanya berisi benda nyata, dan sisi paling kanan adalah lingkungan maya yang berisi benda maya. Dalam AR, yang lebih dekat ke sisi kiri, lingkungan bersifat nyata dan benda
+
+bersifat maya, sementara dalam AR, yang lebih dekat ke sisi kanan, lingkungan bersifat maya dan benda bersifat nyata. AR digabungkan menjadi mixed reality atau realitas campuran.
+
+JURNAL TRANSFORMATIKA, Volume 10, No. 1, Juli 2012 : 26 ­ 33
+
+27
+
+b. Model Tiga Dimensi
+
+Pemodelan Tiga Dimensi (3D)
+
+(3Dmodeling atau dikenal juga dengan
+
+meshing) adalah proses pembuatan
+
+representasi matematis permukaan tiga
+
+dimensi dari suatu obyek dengan software
+
+tertentu. Produk hasil pemodelan itu disebut
+
+model 3D. Model 3D tersebut dapat
+
+ditampilkan sebagai citra dua dimensi melalui
+
+sebuah proses yang disebut 3D rendering.
+
+Model 3D direpresentasikan dari kumpulan titik
+
+dalam 3D, terhubung oleh berbagai macam
+
+entitas geometri, seperti segitiga, garis,
+
+permukaan lengkung, dan lain sebagainya.
+
+Berdasarkan hal tersebut, model 3D dapat
+
+dibuat manual (seperti seni memahat), secara
+
+algoritma (pemodelan prosedural), atau
+
+scanning. Hasil akhir dari citra 3D adalah
+
+sekumpulan poligon. Model dengan jumlah
+
+poligon yang lebih banyak memerlukan waktu
+
+yang lebih lama untuk di render oleh komputer,
+
+karena setiap permukaan memiliki tekstur dan
+
+shading tersendiri.
+
+c. FLARManager
+
+FLARManajer adalah
+
+sebuah
+
+framework untuk mengembangkan augmented
+
+reality menggunakan Flash dengan mudah
+
+dan bersifat open-source. FLARManajer
+
+dibuat oleh Eric Socolofsky berdasar
+
+pengembangan flash, flartoolkit dan away3D,
+
+seorang developer game pendidikan di
+
+GameLab New York, dan mengajar di New
+
+York University dan Pratt University. Versi
+
+rilisnya pertama kali diluncurkan pada Maret
+
+2009. FLARManager menggunakan teknik visi
+
+komputer untuk menghitung posisi kamera
+
+nyata dan hubungannya terhadap marker, sehingga memungkinkan para programmer untuk menampilkan obyek virtual ke marker ini. Cepat dan tanpa adanya proses mendownload, adalah ciri dari sistem pelacakan (tracking) yang disediakan oleh FLARManager.
+FLARManager sendiri merupakan versi AS3 dan pengembangan dari FLARToolkit. FLARManager didukung oleh beberapa framework3D seperti : Away3D, Away3D Lite, Alternativa3D, Sandy3D dan Papervision3D .
+pada aplikasi ini penulis menggunakan 3DframeworkAway3D untuk visualisasi 3D nya. d. Marker
+Fiducial images atau yang lebih dikenal dengan marker adalah sebuah penanda yang di dalamnya terdiri dari kumpulan titik acuan untuk memudahkan komputasi dari pengukuran parameter-parameter yang dibutuhkan dalam pengolahan citra. Marker menjadi salah satu metoda yang umum digunakan sebagai media estimasi posisi
+kamera dalam aplikasi AR dengan video based tracking. Marker dapat berupa warna atau dapat berupa gambar. Sudah banyak penelitian tentang penanda untuk keperluan AR. Penanda yang paling sederhana dan bekerja dengan sangat baik adalah penanda matrix(lihat Gambar 2). Penanda matriks menggunakan 2D barcode sederhana, yang dipakai untuk mengenali sebuah obyek dan untuk mengetahui hubungan antara posisi kamera dengan penanda tersebut.
+
+Gambar 2. Contoh marker 2D yang digunakan untuk sistem tracking
+
+III. ANALISIS DAN DESAIN Di dalam bab ini, akan dibahas
+mengenai perencanaan aplikasi sistem dari perangkat lunak augmented reality FSM.
+
+a.
+
+Spesifikasi Aplikasi AR Furniture Shopping Manager (FSM) Spesifikasi dari aplikasi FSM adalah sebagai berikut.
+
+28 Desain dan Implementasi Augmented... (B. Adi Pramono)
+
+1. Dengan aplikasi FSM, user (pelanggan toko furnitureonline) dapat mencoba beragam model furniture yang ditawarkan dengan tampilan model 3 dimensi (3D) yang dipasangkan pada ruangan pribadi dengan menggunakan teknologi AR.
+2. Dengan aplikasi FSM, user dapat berinteraksi dan menavigasi seluruh menu utama pada aplikasi FSM.
+3. Aplikasi FSM memiliki fitur marker tracking,user dapat mengambil gambar foto ruangan dengan menambahkan multi marker. Berdasarkan marker tracking tersebut objek 3D dapat ditempatkan diatas marker.
+4. Objek 3D yang sudah ditempatkan diatas marker dapat digeser kekanan dan kekiri setiap sudut ruangan.
+b. Analisis Kebutuhan Software Untuk dapat mengunakan aplikasi FSM,
+penguna memerlukan fasilitas pendukung software minimal: 1. Browser :
+ Microsoft Windows® 7 : Microsoft Internet Explorer 8.0+, Mozilla Firefox 3.0+,
+ Microsoft Windows Vista® : Microsoft Internet Explorer 7.0+, Mozilla Firefox 2.0+, Google Chrome 2.0+2, Safari 3.0+, Opera 9.5+, AOL 9+,
+ Microsoft Windows XP : Microsoft Internet Explorer 7.0+, Mozilla Firefox 2.0+, Google Chrome 2.0+2, Safari 3.0+, Opera 9.5+, AOL 9+.
+2. Plugin flash player 10. c. Analisis Kebutuhan Hardware
+Komputer dengan spesifikasi:
+ Processor Intel Pentium III 800MHz atau yang setara
+ Memory 512 MB
+ Ruang harddisk minimal 750 MB
+ Kamera digital
+ Printer
+
+ Mouse dan keyboard
+ Monitor Resolusi 1024x768 d. Perancangan sistem Augmented
+Reality Furniture Sistem Manager (FSM) Aplikasi yang dirancang merupakan aplikasi berbasis web atau disebut juga Rich Internet Applications (RIAs), tujuannya agar mudah diakses dari komputer atau juga handheld tanpa perlu instalasi aplikasi., penulis memilih Adobe Flash Builder sebagai Framework RIA's dengan SDK (software Development Kit ) Adobe Flex. Bahasa script yang digunakan adalah ActionScript yang merupakan bahasa pemrograman berorientasi objek. ActionScript mendukung event driven programming (Pemrograman berbasis event ). Event driven programming merupakan paradigma pemrograman yang alur program ditentukan dari event, input sensor atau pesan dari program lain. Paradigma ini sangat cocok untuk pengembangan aplikasi ini, dikarenakan aplikasi menerima input dari kamera.
+1. Deskripsi Sistem FSM FSM dikembangkan sebagai sebuah
+aplikasi berbasis web yang terintegrasi ke dalam suatu situs belanja online yang dapat dimanfaatkan oleh para pemilik toko furniture sebagai alat bantu penjualan mereka secara mudah dan menarik.Dengan Augmentedreality diharapkan dapat memberikan pengalaman yang baru, unik dan menarik kepada user dengan menghadirkan suasana ruang ganti pakaian yang sebenarnya secara digital.
+User dapat mengakses aplikasi FSM pada suatu situs belanja online dengan bantuan perangkat kamera digitaldan sebuah marker (penanda) berupa kertas dengan pola tertentu yang dapat dicetak melalui menu yang terdapat pada aplikasi FSM. Dengan bantuan marker, user cukup mangambil gambar ruangan dari kamera yang sudah terdapat marker untuk menghasilkan visualisasi AR 3D produk-produk furniture yang ditawarkan pada layar monitor user . 2. Arsitektur Sistem FSM
+FSM dirancang sebagai sebuah aplikasi berbasis web agar memungkinkan untuk dapat
+
+JURNAL TRANSFORMATIKA, Volume 10, No. 1, Juli 2012 : 26 ­ 33
+
+29
+
+diakses oleh banyak user secara bersamaan dan pada kurun waktu yang sama. Kelebihan lainnya adalah aplikasi ini dapat dijalankan pada beragam bentuk sistem operasi, hanya dengan syarat yakni komputer user memiliki aplikasi web browser dan flash player plugin di dalamnya. Aplikasi FSM dirancang menggunakan arsitektur zachman framework dengan server basis data. Server bertugas dalam melakukan manajemen data yang diperlukan baik oleh web server maupun browser, misalnya seperti
+
+mengatur jalannya aliran data pada basis data, mengatur integritas data, menyediakan metoda penyimpanan, perubahan dan penghapusan data pada basis data, sorting data, pengindeksan data, dan sebagainya. Dikarenakan basis data aplikasi ini diletakkan pada web server, maka user tidak perlu melakukan instalasi program apapun yang kemungkinan tidak kompatibel dengan komputernya. Rancangan arsitektur sistem FSM digambarkan pada Gambar 3 berikut ini.
+
+APLIKASI FSM
+
+engine AR 3D CMS
+
+Client Browser
+
+Menu aplikasi (user interface)
+Image Loader
+
+marker detection
+
+Database FSM
+
+Gambar 3 Arsitektur sistem FSM.
+
+Fungsi kamera dalam penelitian ini adalah sebagai media visi bagi aplikasi AR untuk mendapatkan input gambar. Kamera mengambil gambar ruangan dengan marker di dalamnya. Kemudian gambar ini yang akan
+digunakan untuk memproses citra digital yang diakuisisi oleh kamera. Sebuah tracking sistem library untuk aplikasi AR seperti FLARManager diperlukan untuk dapat mendeteksi marker dan menghitung letak koordinat yang ada pada gambar tersebut. Tetapi tracking sistem library memiliki kelemahan dalam hal rendering model. Sehingga sebuah library yang dapat me-render model furniture3D dengan kualitas tinggi seperti Away3Dengine diperlukan. Untuk dapat menutupi kelemahan yang dimiliki tracking sistem library, proses rendering model
+
+furniture harus ditangani oleh Away3Dengine agar hasil yang didapat maksimal. Engine Away3D yang dipadukan dengan FLARManager akan dapat membuat aplikasi FSM yang diharapkan.
+IV. IMPLEMENTASI a. Implementasi Augmented Reality
+FSM Teknologi AR yang di aplikasikan pada sistem FSM menggunakan bahasa pemrograman Action Script 3.0 dan Framework FlarManager Aplikasi FSA diintegrasikan ke browser dengan memanfaatkan teknologi RIA (Rich Internet Application) yaitu menggunakan Adobe
+
+30 Desain dan Implementasi Augmented... (B. Adi Pramono)
+
+Flash/Flex plugin yang sudah banyak terinstal disetiap komputer. b. Implementasi marker detection FSM
+Implementasi marker detection pada menu utama dilakukan dengan memperoleh input gambar dari kamera pengguna. Untuk dapat membaca posisi marker, maka sistem harus dilengkapi dengan sistem tracking. FLARToolKit telah menyediakan kelas tersendiri yang disebut tracker untuk mengatasi masalah tracking ini. Setelah
+
+tracker dari FLARToolKit di-load, tracker akan dihubungkan dengan picture plugin untuk dapat menerima input dan mendeteksi marker. Dengan marker ini maka FSM akan mengetahui letak model 3D furniture akan diletakkan. c. Implementasi FSM pada situs belanja
+online Tampilan aplikasi FSM pada situs online dibuat semenarik mungkin agar mudah diakses dan menarik perhatian pelanggan.
+
+Gambar 4. Gambar ruangan dengan marker dalam aplikasi FSM.
+Pengguna mencetak marker yang sudah kemudian mengupload gambar ruangan yang disediakan aplikasi kemudian memfoto sebelumnya sudah diberi marker ke aplikasi. ruangan pribadi dengan marker ditengahnya
+
+JURNAL TRANSFORMATIKA, Volume 10, No. 1, Juli 2012 : 26 ­ 33
+
+31
+
+Gambar 5. User memilih model 3D furniture dalam aplikasi FSM.
+
+Gambar 6. Model 3D yang sudah ditaruh diatas marker.
+
+Setelah pengguna memilih model 3D maka ia dapat menggeser kekanan dan kekiri, merotasikannya, membesar dan mengecilkan skala model 3D. d. Pengujian Sistem
+Dalam pengujian aplikasi ini, cara pengujian yaitu dengan PC notebook dan hp yang terdapat kamera. Untuk menjalankan
+
+aplikasi ini, diperlukan web browser yang sudah terintegrasi plugin flash player versi 10. Spesifikasi sistem yang penulis gunakan dalam pengujian ini adalah sebagai berikut. Platform Perangkat keras
+ Prosesor AMD Turion X2 2100 Mhz,
+ Memori 1 Gb,
+ Hp SonyEricsson dengan kamera digital 2 MP terintegrasi,
+
+32 Desain dan Implementasi Augmented... (B. Adi Pramono)
+
+ Video Card: NVIDIA GeForce 9100M G, Platform Perangkat Lunak
+ Adobe Flex Builder / Flash Builder,
+ FLARManager,  Away3D,
+ Sistem Operasi: Windows 7 Ultimate,  web browser Mozilla Firefox versi 3.6.10,
+ plugin flash player 10. Pengujian dilakukan untuk mengetahui apakah sistem telah berjalan sesuai dengan fungsinya. Pengujian pada sistem aplikasi Augmented Reality didasarkan pada kemampuan untuk memunculkan objek 3D diatas marker pada aplikasi web FSM, kemudian dengan mengunakan fitur FSM dapat menggerakkan model 3D ke kanan, kekiri, maju kedepan, belakang, merotasikan, membesarkan dan mengecilkan volume objek 3D.
+V. KESIMPULAN DAN SARAN Perancangan aplikasi Augmented
+Reality Furniture Shopping manager dilakukan setelah dilakukan penelitian tentang perkembangan belanja furniture online di indonesia. Aplikasi ini diciptakan sebagai alat bantu yang dapat dimanfaatkan oleh para pemilik situs jual beli furniture online dalam menjual produknya. Dengan fitur yang dimiliki aplikasi ini diharapkan dapat memberikan pengalaman yang baru, unik dan menarik dalam kegiatan belanja furniture secara online dengan menghadirkan ruangan pribadi. a. Kesimpulan
+1. Karena aplikasi ini berbasis web maka dapat diakses oleh siapa saja dan kapan saja tanpa melakukan proses install software.
+2. Pengguna dapat memilih beragam desain furniture yang sesuai dengan ruangan pribadinya sehingga tidak takut salah beli.
+3. Aplikasi dapat merender objek 3D sesuai dengan marker yang dideteksi dan menaruh hasilnya di halaman web.
+Sebagai penutup dari bagian kesimpulan, aplikasi AR FSM yang diimplementasikan saat ini masih membutuhkan banyak perbaikan dan penyempurnaan di masa yang akan datang.
+
+Semoga hasil yang dicapai perancangan aplikasi FSM yang dibahas pada penulisan ini dapat diterima keberadaannya. b. Saran
+Saran untuk penelitian ini dan tambahan
+untuk kedepannya adalah Perangkat keras
+yang digunakan tidak lagi PC tapi smartphone
+android atau blackberry yang mendukung flash
+player 10.
+
+VI. DAFTAR PUSTAKA
+
+Azuma, R. ,A Survey of Augmented Reality,
+
+PRESENCE: Teleoperators and Virtual
+
+Environments, 6, pp.355-385,1997.
+
+Bateman, Rob and Richard, OlessonThe
+
+Essensial Guide to 3D in Flash , Apress,
+
+New York.2010.
+
+Kaufmann, H., Geometry Education with
+
+Augmented Reality, Dissertation, Vienna
+
+University of Technology, Vienna,2004.
+
+Wright, Richard S, II Lipchak , Benjamin,III
+
+Haemel, Nicholas, OpenGL SUPERBIBLE
+
+Fourth Edition Comprehensive Tutorial and
+
+Reference, Addison-Weasley, USA, 2007.
+
+Socolofsky,
+
+Eric,
+
+http://words.transmote.com/wp/flarmanager
+
+, 11 Desember 2010, 24.00 WIB.
+
+Molofee,
+
+Jeff,
+
+http://nehe.gamedev.net/data/lessons/lesso
+
+n.asp-lesson=27.htm, 7 Januari 2011,
+
+13.25 WIB.
+
+Tomohiko, Koyama. (2009), Introduction to
+
+FLARToolKit.
+
+http://saqoosha.net/lab/FLARToolKit/Introd
+
+uction-to-FLARToolKit.pdf, 28 Desember
+
+2010, 07.00 WIB.
+
+Govil-Pai, Shalin,Principles of Computer
+
+Graphic: Theory and Practice, Springer,
+
+Sunnyvale, CA, U S A.
+
+____________,
+
+http://groups.google.com/group/away3D-
+
+dev/topics, 11 February 2011, 03.30 WIB.
+
+____________,
+
+http://away3D.com/livedocs/3.6.0_lib , 01
+
+February 2011, 01.30 WIB
+
+JURNAL TRANSFORMATIKA, Volume 10, No. 1, Juli 2012 : 26 ­ 33
+
+33
+
+

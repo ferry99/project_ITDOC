@@ -1,0 +1,639 @@
+PENGENALAN HEWAN AUGMENTED REALITY BERBASIS ANDROID
+TUGAS AKHIR Disusun Sebagai Salah Satu Syarat Menyelesaikan Program Studi Strata 1
+Jurusan Elektro Fakultas Teknik Universitas Muhammadiyah Surakarta
+Disusun Oleh : PRIMA ROSYAD
+D400 090 045 JURUSAN ELEKTRO FAKULTAS TEKNIK UNIVERSITAS MUHAMMADIYAH SURAKARTA
+2014
+
+PENGENALAN HEWAN
+AUGMENTED REALITY BERBASIS ANDROID
+Prima Rosyad
+Jurusan Elektro, Fakultas Teknik, Universitas Muhammadiyah Surakarta
+E-mail : 135dmk@gmail.com
+Pengenalan hewan kepada anak dapat merangsang otak untuk berimajinasi dan melatih kreatifitas. Dengan berkembangnya teknologi informasi, sarana pengenalan hewan dapat dilakukan menggunakan perangkat berupa personal computer, Laptop maupun smartphone. Perkembangan teknologi Augmented Reality pada smartphone akan mempermudah anak usia taman kanak-kanak (TK) dalam mengenal beberapa jenis hewan. Tujuan penulisan Tugas Akhir ini adalah membuat aplikasi Pengenalan Hewan menggunakan teknologi Augmented Reality berbasis Android.
+Metode yang dilakukan dalam pembuatan aplikasi Pengenalan Hewan ini adalah study literature, eksperimen, sampling dan interview. Pembuatan diawali dengan mengumpulkan data hewan yang akan dibuat sebagai model menggunakan software Blender. Perancangan aplikasi Augmented Reality menggunakan software Unity dengan merancang marker yang dibuat menggunakan Inkscape, suara yang diedit menggunakan Audacity dan model hewan yang telah dibuat. Fitur yang ada dalam aplikasi ini adalah beberapa jenis hewan yang ditampulkan secara 3D dengan suara dan animasi menggunakan teknologi Augmented Reality.
+Hasil dari pengujian aplikasi Pengenalan Hewan dapat berjalan pada berbagai perangkat mobile Android. Jarak normal yang dapat terdeteksi oleh kamera adalah 6cm sampai 4m dengan ukuran marker 20 x 22cm. Kemiringan yang dapat terdeteksi dengan normal antara 20  - 90 . Berdasarkan prosentase marker yang terhalang dapat berjalan antara 0-87%. Berdasarkan hasil kuesioner materi yang terdapat pada aplikasi Pengenalan Hewan menggunakan Augmented Reality berbasis android ini cocok untuk mengenalkan hewan kepada anak usia taman kanak-kanak. Masih banyak kekurangan yang dapat dikembangkan, misalnya memperbanyak objek 3D hewan dan membuat animasi yang lebih baik, agar aplikasi lebih menarik, interaktif, dan mudah dipahami.
+Kata kunci :Multimedia Pengenalan Hewan.
+
+LEMBAR PENGESAHAN
+Tugas Akhir dengan judul "PENGENALAN HEWAN AUGMENTED REALITY BERBASIS ANDROID" ini diajukan oleh:
+Nama : Prima Rosyad NIM : D 400 090 045 Guna memenuhi salah satu syarat untuk menyelesaikan program Sarjana jenjang pendidikan Strata Satu (S1) pada Jurusan Teknik Elektro Fakultas Teknik Universitas Muhammadiyah Surakarta. Telah diperiksa dan disetujui pada:
+
+1. PENDAHULUAN
+
+Pengenalan hewan kepada anak
+
+usia taman kanak-kanak (TK)
+
+sangat berpengaruh untuk
+
+membantu merangsang imajinasi
+
+dan kreatifitas.Perkembangan
+
+teknologi yang pesat akan sangat
+
+berguna jika dapat diaplikasikan
+
+pada system pengenalan hewan.
+
+Pemahaman tentang pengenalan
+
+hewan dapat lebih mudah
+
+dipahami dan dimengerti dengan
+
+media yang menarik dan
+
+menyenangkan.
+
+Teknologi
+
+Augmented Reality merupakan
+
+teknologi yang sedang
+
+berkembang dan menarik untuk
+
+mengenalkan beberapa jenis
+
+hewan kepada anak usia taman
+
+kanak-kanak.
+
+Dengan media smartphone
+
+untuk menampilkan teknologi
+
+Augmented Reality akan sangat
+
+membantu bagi guru TK atau
+
+orang tua untuk mengenalkan
+
+kepada anak.
+
+1.1 Batasan Masalah
+
+Penelitian ini akan dibatasi
+
+pada hal-hal berikut:
+
+1. Pembangunan tiga dimensi
+
+hewan dibuat dengan software
+
+Blender dengan metode
+
+markless augmented reality
+
+menggunakan vuforia SDK dan
+
+Unity 3D.
+
+2. Aplikasi akan ditujukan untuk
+
+anak usia Taman Kanak-kanak
+
+3. Aplikasi akan berjalan pada
+
+smartphone dengan system
+
+operasi android versi minimal
+
+Ice Cream Sandwich
+
+4. jumlah hewan yang akan
+
+ditampilkan adalah delapan
+
+macam
+
+5. fitur yang ada pada aplikasi
+
+multimedia
+
+adalah
+
+menampilkan model 3D,
+
+animasi sederhana, dan suara
+
+binatang tersebut
+
+1.2 Tujuan Penelitian
+
+Tujuan Tugas Akhir ini adalah
+
+untuk mengembangkan aplikasi
+
+AR yang dapat berjalan pada
+
+smartphone dengan system
+
+operasi android untuk membantu
+
+pengenalan hewan kepada anak
+
+usia Taman Kanak-kanak
+
+1.3 Manfaat Penelitian
+
+Adapun manfaat dari penelitian
+
+Tugas Akhir pengenalan hewan
+
+augmented reality berbasis
+
+android ini adalah :
+
+1. Mempermudah Guru Taman
+
+kanak-kanak dan orangtua
+
+untuk
+
+memperkenalkan
+
+macam-macam hewan kepada
+
+anak
+
+2. Mempermudah anak untuk
+
+mengenal
+
+macam-macam
+
+hewan dengan metode
+
+pengenalan
+
+yang
+
+menyenangkan menggunakan
+
+teknologi AR
+
+2. METODE PENELITIAN
+
+2.1 Peralatan Utama
+
+Perancangan
+
+aplikasi
+
+pengenalan hewan dengan AR ini
+
+membutuhkanbeberapa perangkat
+
+keras dan perangkat lunak yang
+
+harus dipenuhi. Peralatan dalam
+
+perancangan aplikasi ini
+
+diantaranya adalah:
+
+1. Perangkat Keras
+
+a) Komputer dengan processor
+
+minimal 2Ghz
+
+b) RAM 512 MB
+
+c) VGA 128 MB
+
+d) Smartphone Android
+
+2. Perangkat Lunak
+
+a) Sistem Operasi Windows 7
+
+b) Android dengan versi
+
+minimal 4.0 (ICS)
+
+c) Vuvoria SDK
+
+d) Game Engine Unity 3D
+
+dengan plug-in NGUI
+
+e) Blender
+
+f) Inkscape
+
+g) audacity
+
+2.2 Alur Perancangan Sistem
+
+Pembuatan aplikasi media pem-
+
+belajaran ini difungsikan untuk
+
+pembelajaran bagi siswa TK yang
+
+menggunakan media komputer.
+
+2.3.Alur Penelitian a. Flowchart Penelitian
+Alur penelitian dimulai dengan mencari data dari yang berhubungan dengan penelitian.
+
+Setelah data terpenuhi, peneliti melakukan tahap pembuatan aplikasi pengenalan hewan dengan AR berbasis Android.
+Tahap selanjutnya adalah menguji aplikasi dengan berbagai perangkat dan parameter uji. Kemudian penulis melakukan penyusunan laporan.
+Gambar 2.1. Alur Penelitian 2.4.Perancangan Aplikasi
+Data hewan yang penulis masukkan pada alikasi ini adalah sapi, anjing, kuda, badak, macan, serigala, penguin, dan gajah.
+
+Setelah semua data didapat, peneliti membuat model 3D, membuat marker, editing suara dan menggabungkan hasil tersebut kedalam bentuk Augmented Reality yang berjalan pada system operasi android. 2.4.1. Perancangan Model 3D
+Pembuatan objek 3D, pewarnaan model dan animasi menggunakan Software blender.
+
+Gambar 2.3. Pembuatan marker menggunakan Inkscape
+
+Gambar 2.2. Pembuatan 3D,
+
+pewarnaan dan animasi
+
+2.4.2. Pembuatan Marker
+
+Pembuatan
+
+marker
+
+menggunakan Software inkscape
+
+dengan mengedit gambar. Setelah
+
+gambar selesai, upload gambar
+
+pada website vuforia dan
+
+download untuk di export
+
+kedalam unity 3D
+
+Gambar 2.4. marker yang selesai di upload pada website vuforia 2.4.3. Pembuatan Suara
+Suara yang didapat, diseleksi untuk mendapatkan suara yang dibutuhkan dengan menggunakan Software Audacity
+
+3D. penulis mengedit cuntuh yang sudah disediakan.
+
+Gambar 2.5. Editing suara
+
+menggunakan Inkscape
+
+2.4.4. Perancangan AR
+
+Penulis
+
+menggunakan
+
+Unity3D untuk merancang AR
+
+dengan menggabungkan bahan
+
+yang sudah jadi. Dengan
+
+membuat project baru dan
+
+menyusun menjadi AR yang dapat
+
+berjalan pada perangkat android.
+
+Gambar 2.7. Pembuatan tampilan menu
+3. HASIL DAN PEMBAHASAN 3.1. Hasil Aplikasi Dalam percobaan, penulis mengunakan perangkat android dengan merek Lenovo a390 menggunakan kamera 5MP, Ram 512 dan processor dual core 1GHz.tampilan awal program terdapat penjelasan tentang pengertian AR, pengenalan Hewan, petunjuk penggunaan, informasi perancang dan refrensi.
+
+Gambar 2.6. Perancangan AR
+2.4.5. Pembuatan menu Pembuatan menu penulis
+lakukan dengan menggunakan plug-in NGUI pada software unity
+
+Gambar 3.1. Tampilan awal program pada perangkat Android
+
+Marker yang digunakan dalam aplikasi AR Hewan dapat didownload pada alamat http://www.4shared.com/office/Q DefjCZ1ba/MARKER__1_.html.
+
+Gambar 3.3. Tampilan objek pada AR
+Pada tombol keluar jika disentuh akan tampil sebuah peringatan.
+
+Gambar 3.2. Marker aplikasi AR Hewan
+Hasil AR hewan ditampilkan dalam bentuk 3D dengan suara dan animasi hewan tersebut.
+
+Gambar 3.4. Tampilan
+
+peringatan Keluar
+
+3.2. Pengujian Aplikasi
+
+Pengujian dilakukan dengan
+
+beberapa parameter uji
+
+.
+
+Parameter jarak dapat terdeteksi
+
+normal antara jarak 6 cm sampai
+
+4 m. Berdasarkan kepiringan dapat terdeteksi antara sudut 20 
+
+sampai 90. berdasarkan
+
+prosentase
+
+halangan yang
+
+tertutup, marker dapat terdeteksi
+
+antara 0% sampai 87%.
+
+Berdasarkan beberapa jenis
+
+smartphone bias menjalankan
+
+aplikasi AR Hewan.
+
+4. KESIMPULAN dan SARAN
+
+4.1. Kesimpulan
+
+a. Aplikasi AR untuk
+
+pengenalan hewan sudah
+
+berhasil dibangun dengan
+
+perangkat lunak Blender, Inkscape, Audacity dan
+
+Unity. Fitur yang ada dalam aplikasi AR Hewan antara
+
+lain menampilkan model 3D, animasi dan suara hewan
+
+tersebut. Hasil pengujian dengan mencoba pada
+
+berbagai
+
+smartphone,
+
+pencahayaan, kemiringan
+
+dengan sudut yang dapat terdeteksi antara 20  - 90  ,
+
+jarak maksimal 4 m
+
+menggunakan
+
+marker
+
+berukuran 20 x 22 cm dan halangan dengan persentase
+
+marker yang tertutup sebesar 87%.
+
+b. Hasil pengujian berdasarkan
+
+calon
+
+pengguna
+
+menunjukkan bahwa aplikasi ini dapat memberikan
+
+pengenalan hewan yang menarik, menyenangkan dan
+
+layak digunakan untuk pengenalan hewan kepada
+
+anak usia TK. Prosentase sangat layak sebesar 33,75%,
+
+prosentase layak sebesar
+
+65,25 %, prosentase cukup
+
+layak sebesar 10%, dan
+
+prosentase tidak layak
+
+sebesar 0%.
+
+4.2. Saran
+
+a. Tugas Akhir ini hanyalah
+
+Augmented Reality dengan
+
+image
+
+target
+
+yang
+
+menampilkan obyek tiga
+
+dimensi (3D), animasi dan
+
+suara. Penelitian selanjutnya
+
+penulis menyarankan agar
+
+membuat aplikasi AR yang
+
+lebih interaktif.
+
+b. Model hewan 3D hewan
+
+diperbanyak lagi supaya anak
+
+dapat mengerti lebih banyak
+
+tentang hewan.
+
+c. Aplikasi dapat berjalan pada
+
+perangkat selain android
+
+supaya dapat dinikmati
+
+banyak
+
+pengguna
+
+Smartphone.
+
+d. Blender 3D selain untuk
+
+membuat objek 3D ternyata
+
+juga mampu dikembangkan
+
+untuk model virtualisasi,
+
+augmented reality dan game.
+
+Semoga dengan adanya
+
+penelitian ini di masa yang
+
+akan datang pengembangan-
+
+pengembangan yang lain
+
+dengan
+
+menggunakan
+
+blender akan muncul.
+
+5. DAFTAR PUSTAKA
+
+Alone, Daniel (2013). "Suara Binatang
+
+Untuk
+
+Anak-anak".
+
+https://www.youtube.com/watch?v
+
+=3hSuvlob_ww (diakses tanggal 10
+
+April 2014)
+
+Andriyadi, Anggi (2010). "Sejarah Augmented Reality". Sumber : http://belajar-
+ar.blogspot.com/2010/05/sejarahaugmented-reality_28.html
+(diakses tanggal 19 Maret 2014)
+
+Arya (2014). "Apa itu Inkscape".
+
+Sumber
+
+:
+
+http://inkstutor.blogspot.com/2014/
+
+01/apa-itu-inkscape.html (diakses
+
+tanggal 19 Maret 2014)
+
+Dentya, Denny (2014). "Apa itu
+
+Vuforia"
+
+Sumber
+
+:
+
+http://dentyagame.blogspot.com/20
+
+14/03/apa-itu-vuforia.html (diakses
+
+tanggal 19 Maret 2014)
+
+Dewi, Ghea Putri Fatma (2012). Pengembangan Game Edukasi Pengenalan Hewan Dalam Bahasa Inggris. Universitas Negri Yogyakarta
+
+Eko (2012). "Augmented Reality".
+
+Sumber
+
+:
+
+http://tautaninformasi.blogspot.co
+
+m/2012/01/augmented-reality.html
+
+(diakses tanggal 19 Maret 2014)
+
+Habibie, Muhammad (2012). "Unity3D : cross-Platfrom Game Engine" sumber : http://blog-
+habibie.blogspot.com/2012/04/unit
+y3d-cross-platform-game-
+
+engine.html (diakses tanggal 10 April 2014)
+
+Kirana, Ratih Candra (2013). "BAB 2 Penggolongan Makhluk Hidup".
+
+Sumber
+
+:
+
+http://ratih2701.wordpress.com/ba
+
+b-1-ciri-ciri-dan-kebutuhan-
+
+makhluk-hidup/bab-2-
+
+penggolongan-makhluk-hidup/
+
+(diakses tanggal 19 Maret 014)
+
+L (2010). "Augmented Reality
+
+(markless)".
+
+Sumber
+
+:
+
+http://www.lm3labs.com/museum/a
+
+rchives/41 (diakses tanggal 29
+
+April 2014)
+
+Peny (2013). "Audacity, membuat editing audio menjadi mudah"
+
+Sumber
+
+:
+
+http://www.vedcmalang.com/ppppt
+
+kboemlg/index.php/menuutama/tek
+
+nologi-informasi/571-audacity
+
+(diakses tanggal 19 Maret 2014)
+
+Rachel (2012). "Pengertian android, apa itu android". Sumber : http://www.updatekeren.com/2012/
+07/pengertian-android-apa-ituandroid.html (diakses tanggal 19
+Maret 2014)
+
+Satrioadi, Reza Bayu (2014). Aplikasi
+
+Pengenalan Budaya Papua dengan
+
+Augmented Reality Berbasis
+
+Android.
+
+Universitas
+
+Muhammadiyah Surakarta
+
+Wahyudi, Andri (2012). Perancangan
+
+Aplikasi Ensiklopedia Pengenalan
+
+Hewan dan Habitatnya
+
+Menggunakan
+
+Macromedia
+
+Director MX. STIMIK AMIKOM ogyakarta
+
+Wirawan, Pandu aji (2011). "Kelebihan Blender" Sumber :
+
+http://ilmukomputer.org/2011/11/2
+
+9/kelebihan-blender/
+
+(diakses
+
+tanggal 19 Maret 2014)
+
+Yudhastara, Brian (2012). Teknologi
+
+Augmented Reality Untuk Buku
+
+Pembelajaran Hewan pada Anak
+
+Usia Dini Secara Virtual. STIMIK
+
+AMIKOM
+
+Yogyakart
+
+

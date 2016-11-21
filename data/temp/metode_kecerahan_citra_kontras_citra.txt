@@ -1,0 +1,521 @@
+METODE KECERAHAN CITRA KONTRAS CITRA DAN PENAJAMAN CITRA UNTUK PENINGKATAN
+MUTU CITRA
+Mukhamad Nurkamid 1 Sutejo 2
+ABSTRACT
+Capabilities increasingly powerful computers in various fields, especially in helping the field of digital image processing through the process of improving the image quality is felt enormous. Empowerment so that every time the computer needs to improve.
+The image quality improvement can be done with various techniques, namely one with Improved Image Quality with Image Brightness method, Stretch Contrast and sharpening images.
+The process begins with an arrest followed by image-processing process of adding the intensity of the brightness, contrast and sharpening the image of the image with a value using arithmetic operations.
+The results of image processing is indicated by a change in the resulting image and the image histogram changes.
+Keywords : method brightness image, image contrast, image sharpening.
+ABSTRAK
+Kemampuan komputer yang semakin handal dalam berbagai bidang, terlebih lagi dalam membantu bidang pengolahan citra digital melalui proses perbaikan kualitas citra yang besar sekali dirasakan. Sehingga pemberdayaan komputer setiap saat perlu di tingkatkan.
+Perbaikan Kualitas Citra bisa dilakukan dengan berbagai teknik, salah satunya yaitu dengan Peningkatan Mutu Citra dengan metode Kecerahan Citra, Peregangan Kontras dan Penajaman Citra.
+Proses diawali dengan melakukan penangkapan citra diteruskan dengan melakukan proses-proses penambahan intensitas kecerahan, kontras citra maupun penajaman citra dengan suatu nilai menggunakan operasi aritmatika.
+Hasil dari pengolahan citra ditunjukkan dengan adanya perubahan citra yang dihasilkan dan perubahan histogram citra.
+Kata kunci : metode kecerahan citra, kontras citra, penajaman citra.
+
+1 Staf Pengajar Program Studi Teknik Informatika Universitas Muria Kudus 2 Staf Pengajar Program Studi Teknik Informatika STMIK Tunas Bangsa Banjarnegara
+
+APLIKASI Highly Crosslinked UHMWPE PADA Artificial Hip Joint System MENGGUNAKAN METODE ELEMEN HINGVGerAonBicAa NJIR Rochmad Winarso
+
+1
+
+PENDAHULUAN a. Latar Belakang
+Kemampuan komputer yang semakin handal dalam berbagai bidang, terlebih lagi dalam membantu bidang pengolahan citra digital melalui proses perbaikan kualitas citra yang besar sekali dirasakan. Sehingga pemberdayaan komputer setiap saat selalu di tingkatkan.
+Dengan didukung oleh perangkat lunak dan perangkat keras serta device lainnya sehingga komputer dimungkinkan bisa membantu menyelesaikan permasalahan-permasalahan yang dihadapi oleh manusia.
+Citra (image) adalah gambar pada bidang dwimatra (dua dimensi). Pengolahan citra (image processing) merupakan suatu sistem dimana proses dilakukan dengan masukan citra (image) dan hasilnya juga berupa citra (image).
+Peningkatan kualitas citra merupakan salah satu proses awal dalam peningkatan mutu citra. Peningkatan mutu citra diperlukan karena seringkali citra yang dijadikan objek pembahasan mempunyai kualitas yang buruk, misalnya citra mengalami derau, kabur, dan sebagainya .
+Peningkatan mutu citra adalah suatu proses mendapatkan citra yang lebih mudah diinterpretasikan oleh mata manusia. Proses pengolahan citra yang termasuk dalam kategori peningkatan mutu citra terdiri dari proses-proses yang bertujuan memperbaiki mutu citra untuk memperoleh keindahan gambar, untuk kepentingan analisis citra, dan untuk mengoreksi citra .
+Dalam meningkatkan mutu citra ada beberapa teknik yang digunakan,yaitu antara lain image enhancement, berupa proses perbaikan citra dengan meningkatkan kualitas citra baik kontras maupun kecerahan. image restoration, proses memperbaiki model citra, color image processing, sutau proses yang melibatkan citra berwarna, baik berupa image enhancement, image restoration atau yang lainnya. Dan masih banyak lagi teknik-teknik yang lain.
+Dari latar belakang diatas penulis mengambil judul untuk penelitian ini dengan judul "Metode Kecerahan Citra Kontras Citra dan Penajaman Citra untuk Peningkatan Mutu Citra".
+b. Permasalahan Dari latar belakang yang dikemukakan diatas, maka yang menjadi rumusan masalah
+dalam penelitian ini adalah bagaimana merancang suatu aplikasi yang dapat membantu dalam peningkatan mutu citra dengan baik dan mudah untuk citra gambar warna (RGB colour) atau hitam-putih (grey scale).
+
+c. Ruang Lingkup Penelitian 1. Kecerahan Citra (image brightness), 2. Kontras (contrast), 3. Penajaman (sharpening) untuk gambar-gambar warna (RGB colour) dan hitam-putih (grey scale) dan 4. Histogram secara Luminans
+TINJAUAN PUSTAKA 1.1. Definisi 1.1.1. Citra
+Citra adalah gambar pada bidang dwimatra (dua dimensi). Ditinjau dari sudut pandang matematis, citra merupakan fungsi menerus dan intensitas cahaya pada bidang dwimatra (Munir, 2004).
+1.1.2. Pengolahan Citra Pengolahan Citra adalah pemrosesan citra, khususnya dengan menggunakan komputer,
+menjadi citra yang kualitasnya lebih baik. Pengolahan citra bertujuan memperbaiki kualitas citra agar mudah diinterpretasi oleh manusia atau mesin (dalam hal ini komputer). Teknikteknik pengolahan citra mentransformasikan citra menjadi citra lain. Jadi, masukannya adalah citra dan keluarannya juga citra yang berkualitas lebih baik daripada citra masukan (Munir, 2004).
+1.1.3. Warna Warna adalah persepsi yang dirasakan oleh sistem visual manusia terhadap panjang
+gelombang cahaya yang dipantulkan oleh objek. Setiap warna mempunyai panjang gelombang yang berbeda. Warna merah mempunyai panjang gelombang paling tinggi, sedangkan warna ungu mempunyai panjang gelombang paling rendah.
+Warna-warna yang diterima oleh mata merupakan hasil kombinasi cahaya dengan panjang gelombang berbeda. Kombinasi warna yang memberikan rentang warna yang paling lebar adalah red(R), green(G) dan blue(B) (Munir, 2004) dan warna bukan merupakan besaran fisik tetapi warna merupakan suatu sensasi yang dihubungkan dengan sistem saraf kita, seperti halnya rasa maupun bau. Sensasi warna diperoleh dengan adanya interaksi antara warna dengan sistem saraf sensitive warna kita (Santosa, 1997).
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+3
+
+1.1.4. Citra Grey Scale Citra Grey Scale disebut juga citra satu kanal, karena warnanya hanya ditentukan oleh
+satu fungsi intensitas saja. Artinya mempunyai skala abu dari 0 sampai 255, yang dalam hal ini nilai intensitas 0 menyatakan hitam, nilai intensitas 255 menyatakan putih (Munir, 2004).
+1.1.5. Luminans Luminans adalah banyaknya cahaya yang dipantulkan oleh permukaan objek. Semakin
+besar luminans dari sebuah objek, rincian objek yang dapat dilihat oleh mata juga akan semakin bertambah (Santosa, 1997).
+1.2. Lingkup Proses Perbaikan Kualitas Citra 1.2.1. Kecerahan Gambar ( Image Brightness )
+Kecerahan/kecermelangan gambar dapat diperbaiki dengan menambahkan atau mengurangkan sebuah konstanta kepada atau dari setiap pixel didalam citra. Nilai pixel hasil pengubahan mungkin lebih kecil atau sama dengan derajat keabuan minimum (0) atau lebih besar sama dengan derajat keabuan maksimum. Karena itu, pixel tersebut perlu dilakukan clipping ke nilai keabuan minimum atau ke nilai keabuan maximum (Munir, 2004)
+2.1.1. Peregangan Kontras (Contrast Stretching) 2.1.1.1.Citra Kontras-Rendah
+Citra Kontras-Rendah dicirikan dengan sebagian besar komposisi citranya adalah terang atau sebagian besar gelap. Tetapi, mungkin saja suatu citra tergolong Kontras-Rendah meskipun tidak terlalu terang atau tidak terlalu gelap bila semua pengelompokan nilai keabuan berada ditengah-tengah. Citra Kontras-Rendah dapat diperbaiki kualitasnya dengan operasi peregangan kontras. Melaui operasi ini, nilai-nilai keabuan pixel akan merentang dari 0 sampai 255 ( pada citra 8-bit ).
+2.1.1.2. Citra Kontras-Bagus Citra Kontras-Bagus memperlihatkan jangkauan nilai keabuan yang lebar tanpa ada
+niali keabuan yang mendominasi.
+2.1.1.3. Citra Kontras-Tinggi Citra Kontras-Tinggi memilki nilai jangkauan nilai keabuan yang lebar, tetapi terdapat
+area yang lebar yang didominasi oleh warna gelap dan area yang lebar yang didominasi oleh warna terang (Munir, 2004)
+
+2.1.2. Penajaman (Image Sharpening) Penajaman Citra bertujuan memperjelas tepi pada objek didalam citra. Penajaman
+Citra dilakukan dengan melewatkan citra pada penapis lolos-tinggi (high-pass filter). Karena penajaman citra lebih berpengaruh pada tepi (edge) objek, maka penajaman citra disebut juga penajaman tepi (edge sharpening) atau peningkatan kualitas tepi (edge enhancement). Akibatnya, pinggiran objek terlihat lebih tajam dibandingkan sekitarnya (Munir, 2004)
+TUJUAN PENELITIAN Membuat suatu aplikasi yang dapat membantu dalam peningkatan mutu citra dengan
+baik dan mudah untuk citra dengan gambar warna (RGB colour) atau hitam-putih (grey scale) .
+METODA PENELITIAN Metodologi penelitian meliputi sumber dan jenis data yang digunakan dalam
+pengumpulan data serta analisis datanya.
+1. Sumber Data Sumber data yang digunakan penulis dalam penulisan skripsi ini adalah data sekunder, yaitu data yang diperoleh dengan cara studi kasus, sehingga mendapatkan landasan teori yang jelas mengenai permasalahan dalam penelitian. Hal tersebut dilakukan dengan cara membaca dan mempelajari teori-teori yang ada dan sesuai dengan topik yang diambil oleh penulis. Literatur yang diambil diantaranya dari buku-buku yang relevan sebagai pedoman untuk menyusun skripsi ini.
+2. Jenis Data Jenis data yang digunakan adalah data kualitatif, yaitu sekumpulan data yang diperoleh berdasarkan kenyataan yang terjadi disekitar kita.
+3. Teknik Pengumpulan Data Dalam memperoleh datanya penulis menggunakan metode pengumpulan data melalui library research, yaitu dengan mempelajari berbagai macam literature yang terdapat di perpustakaan yang berhubungan dengan topik yang diambil oleh penulis.
+4. Metode Pengembangan Sistem Dalam menyusun skripsi ini penulis menggunakan metode Prototiping , dengan fase yang terdiri dari:
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+5
+
+1. Analisis Merupakan proses menganalisa keperluan yang terdapat pada permasalahan yang ada.
+2. Desain Tahap ini merupakan proses perancangan dari model permasalahan yang ada. Titik beratnya dalam hal format pemasukan data yang diharapkan.
+3. Membuat Prototipe Adalah pembuatan model secara keseluruhan dari rencana pemecahan masalah.
+4. Evaluasi dan Perbaikan Merupakan evaluasi yang dilakukan terhadap prototipe yang telah dibuat, apabila ada perubahan maka akan dilakukan perbaikan.
+5. Implementasi Hasil Langkah akhir dalam metode penyusunan program adalah implementasi program, yaitu bagaimana suatu aplikasi program dipergunakan sebagaimana mestinya.
+HASIL DAN PEMBAHASAN
+I.1. Algoritma Proses dan Pseudocode Proses I.1.1. Algoritma Penangkapan Citra Menurut Ahmad Basuki, dkk (Pengolahan Citra Digital menngunakan Visual Basic :2005:28) Untuk menangkap citra yang ada pada picture digunakan perintah point yang dikenakan pada objek picture yaitu :
+Namapicture.Point(x,y)
+Perintah ini menangkap warna dalam 224 warna yang terdiri dari RGB. Untuk mengambil warna R,G, dan B dapat digunakan cara pembagian dengan 256 sebagai berikut.
+
+For i =1 to namaPicture.Width For j=1 to namaPicture.Height variabel=namaPicture.point(i,j) r = variable and RGB(255,0,0) g = int((variable and RGB(0,255,0))/256) b = int(int((variable and
+RGB(0,0,255))/256/256) next j
+next i
+
+Untuk namaPicture.Point (i, j) bisa digantikan dengan GetPixel (namaPicture.Hdc, i, j).
+I.1.2. Algoritma mencari derajat keabuan Pada dasarnya suatu warna terdiri dari 3 layer matrik, yaitu R-
+Layer, G-Layer dan B-Layer. Bila setiap proses perhitungan menngunakan tiga layer, berarti dilakukan tiga perhitungan yang sama. Maka harus dilakukan pengubahan 3 layer tersebut dengan 1 (satu) layer gray-scale. Sehingga dalam citra ini tidak lagi ada warna, yang ada adalah derajat keabuan.
+Dengan demikian algoritma untuk mencari derajat keabuan adalah dengan mengambil rata-rata dari nilai r, g dan b ke sebuah variable, yang dinotasikan sebagai berikut:
+Namavariabe l= ( r + g + b ) / 3
+
+I.1.3. Menampilkan Citra ke Layar Citra di tampilkan ke layar peraga jika card grafik tersedia pada
+computer dan card tersebut mampu menghasilkan warna untuk setiap komponen RGB (Red, Green, Blue). Fungsi baku untuk menampilkan citra adalah SETPIXEL. Pengolahan Citra Digital dengan Pendekatan Algoritmik (Rinaldi Munir:2004:34).
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+7
+
+Algoritma menampilkan citra adalah sebagai berikut
+
+For i = 0 To namaPicture.Width
+
+For j = 0 To namaPicture.Height
+
+SetPixel
+
+namaPicture.hdc,
+
+RGB(nilaiR,nilaiG,nilaiB)
+
+Next j
+
+i,
+
+j,
+
+I.1.4. Algoritma Contrast dan Pseudocode Contrast. I.1.4.1. Algoritma Contrast. a. Melakukan penangkapan Citra dari picture b. Mengalikan suatu nilai dengan derajat keabuan dari ketiga warna ( red (R), green (G) dan blue (B)) . c. Menampilkan kembali citra yang telah diproses dengan melakukan perubahan nilai untuk RGB dengan nilai pada variabel pada point b. Pengolahan Citra Digital menggunakan Visual Basic( Basuki, dkk, 2005) I.1.4.2. Pseudocode Contrast. Procedure menukontras
+Deklarasi varibel
+kontras, i, j, tCOL, r, g, b : integer
+deskripsi program
+kontras Val(Text1)\10
+For i 0 To namaPicture.Width
+For j 0 To namaPicture.Height
+tCOl = GetPixel(namaPicture.hdc, i, j)
+r tCOl Mod 256
+g (tCOl \ 256) Mod 256
+
+b tCOl \ 256 \ 256
+r r * kontras
+g g * kontras
+b b * kontras
+SetPixel namaPicture.hdc, i, j, RGB(r, g, b)
+Next j
+Next i
+I.1.4.3. Algoritma Brightness dan Pseudocode Brightness I.1.4.3.1. Algoritma Brightness.
+a. Melakukan penangkapan Citra dari picturebox b. Melakukan penambahan suatu nilai pada derajat keabuan
+dari ketiga warna ( red (R), green (G) dan blue (B)). c. Menampilkan kembali citra yang telah diproses dengan
+menggantikan nilai untuk RGB dengan nilai variabel dari point b. Pengolahan Citra Digital menggunakan Visual Basic (Basuki, dkk, 2005) I.1.4.3.2. Pseudocode Brightness. Prosedur menubrightness
+Deklarasi variabel
+Cerah, i, j, tCOL, r, g, b : integer
+Deskripsi program
+cerah Val(Text1)
+For i 0 To namaPicture.Width
+For j 0 To namaPicture.Height
+tCOl GetPixel(namaPicture.hdc, i, j)
+r tCOl Mod 256
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+9
+
+g (tCOl \ 256) Mod 256
+b tCOl \ 256 \ 256
+r r + cerah
+g g + cerah
+b b + cerah
+SetPixel namaPicture.hdc, i, j, RGB(r, g, b)
+Next j
+Next i
+I.1.5. Algoritma Sharpness dan Pseudocode Sharpness I.1.5.1.1. Algoritma Sharpness. a. Melakukan penangkapan citra pada picture untuk point(i, j). b. Melakukan penangkapan citra pada picture untuk point(i-1, j-1). c. Melakukan akumulasi penambahan untuk nilai red (R), green (G), Blue (B) dengan suatu nilai (penajaman) dikalikan prosentase pengurangan r, g, b untuk point a dengan r, g, b untuk point b (misalkan r1, g1, b1). r r + nilai ( r - r1 )\100
+g r + nilai ( g - g1 )\100
+b r + nilai ( b - g1 )\100
+d. Menampilkan kembali citra yang telah diproses dengan menggantikan nilai RGB dengan nilai r,g,b yang baru.
+I.1.5.1.2. Pseudocode Sharpness. Prosedur Sharpness
+Deklarasi Variabel
+tCOLA, tCOL, r, g, b, r1, g1, b1,tajam : integer
+
+Deskripsi program tajam Val(Text1.Text) For i 1 To namaPicture.Width For j 1 To namaPicture.Height tCOl GetPixel(namaPicture.hdc, i, j) r tCOl Mod 256 g (tCOl \ 256) Mod 256 b tCOl \ 256 \ 256 tColA GetPixel(namaPicture.hdc, i - 1, j - 1) r1 tColA Mod 256 g1 (tColA \ 256) Mod 256 b1 tColA \ 256 \ 256 r r + tajam * (r - r1)\100 g g + tajam * (g - g1)\100 b b + tajam * (b - b1)\100 SetPixel namaPicture.hdc, i, j, RGB(r, g, b) Next j Next i
+I.1.5.2. Algoritma Proses Lain 1. Air, dengan Pseudocode sebagai berikut
+Prosedure mnuAir {Deklarasi Variabel } i, j, r, g, b, tCol :integer
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+11
+
+{Penangkapan Citra} For i 0 To namaPicture.Width
+For j 0 To namaPicture.Height tCOl GetPixel(namaPicture.hdc, i, j) r tCOl Mod 256 g (tCOl \ 256) Mod 256 b tCOl \ 256 \ 256
+{setting untuk nilai r (red) dengan nilai pembagian integer dari pangkat 2 dari pengurangan nilai g (green) dengan nilai b (blue)} r (g - b) ^ 2 \ 125 {setting untuk nilai g (green) dengan nilai pembagian integer dari pangkat 2 dari pengurangan nilai r (red) dengan nilai b (blue)} g (r - b) ^ 2 \ 125 {setting untuk nilai b (blue) dengan nilai pembagian integer dari pangkat 2 dari pengurangan nilai r (red) dengan nilai g (green)} b (r - g) ^ 2 \ 125
+{menampilkan kembali Citra setelah proses} SetPixel.namaPicture.hdc, i, j, RGB(r, g, b) Next j Next i
+
+2. Komik, dengan Pseudocode sebagai berikut Prosedur mnuKomik
+{ Deklarasi variable } i, j, r, g, b, tCol : integer
+{ Penangkapan Citra} For i 0 To namaPicture.Width
+For j 0 To namaPicture.Height
+tCOl GetPixel(namaPicture.hdc, i, j)
+r Abs(tCOl Mod 256)
+g Abs((tCOl \256) Mod 256)
+b Abs(tCOl \ 256 \ 256)
+{set untuk nilai r dengan nilai hasil pembagian 256 pada nilai perkalian r dengan nilai dari pegurangan nilai g dikurangi jumlah r,g,b}
+r Abs(r * (g - b + g + r)) / 256
+{set untuk nilai g dengan nilai hasil pembagian 256 pada nilai perkalian r dengan nilai dari pegurangan nilai b dikurangi jumlah r,g,b}
+g Abs(r * (b - g + b + r)) / 256
+{set untuk nilai b dengan nilai hasil pembagian 256 pada nilai perkalian g dengan nilai dari pegurangan nilai b dikurangi jumlah r,g,b}
+b Abs(g * (b - g + b + r)) / 256
+{ menampilkan kembali Citra dengan setting RGB dengan nilai r,g,b baru}
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+13
+
+SetPixel picMain.hdc, i, j, RGB(r, g, b) Next j Next i
+3. Timbul, dengan Pseudocode sebagai berikut Prosedur mnuTimbul { Deklaarasi Variabel } i, j, r, g, b, r1, g1, b1, tCol, tColA :integer { Penangkapan Citra } For i 0 To namaPicture.Width - 1 For j 0 To namaPicture.Height - 1 tCOl GetPixel(namaPicture.hdc, i, j) tColA GetPixel(namaPicture.hdc, i + 1, j + 1) r tCOl Mod 256 g (tCOl \ 256) Mod 256 b tCOl \ 256 \ 256 r1 tColA Mod 256 g1 (tColA \ 256) Mod 256 b1 tColA \ 256 \ 256 { set untuk r (red) dengan nilai absolut dari pengurangan r dengan r1 ditambah 100 } r Abs(r - r1 + 100) { set untuk g (green) dengan nilai absolut dari pengurangan g dengan g1 ditambah 100 }
+
+g Abs(g - g1 + 128)
+{ set untuk b (blue) dengan nilai absolut dari pengurangan b dengan b1 ditambah 100 }
+b Abs(b - b1 + 100)
+
+{ Menampilkan kembali Citra} SetPixel namaPicture.hdc, i, j, RGB(r, g, b)
+Next j Next i
+
+4. Malam, dengan Pseudocode sebagai berikut Prosedur mnuMalam
+
+{ Deklarasi variable } i, j, r, g, b, tCol : integer
+
+{ Penangkapan Citra } For i = 0 To frmMain.picMain.Width
+
+For j = 0 To frmMain.picMain.Height tCOl = GetPixel(frmMain.picMain.hdc, i, j) r = tCOl Mod 256
+
+g = (tCOl \ 256) Mod 256 b = tCOl \ 256 \ 256
+
+r=r\5
+
+g=g\5
+
+b=b\5
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+15
+
+SetPixel picMain.hdc, i, j, RGB(r, g, b) Next j Next i
+I.1.6. Algoritma Histogram Prosedur Histogram {Deklarasi Variabel} i, j, r, g, b, x, warna, H,ht: integer XP:real { set untuk nilai H } For i 1 To 256 H(i) 0 Next i { Penangkapan Citra} For i 1 To namaPicture.Width For j 1 To namaPicture.Height WARNA GetPixel(frmMain.picMain.hdc, i, j) r WARNA And RGB(255, 0, 0) g Int((WARNA And RGB(0, 255, 0)) / 256) b Int(Int((WARNA And RGB(0, 0, 255)) / 256) / 256) X Int((r + g + b) / 3) H(X + 1) H(X + 1) + 1 Next j
+
+Next i {menggambar Histogram} ht namaPicture.Height For i 1 To 256 {set xp dengan hasil perkalian 15 dengan point (i -1) ditambah 1} XP 15 * (i - 1) + 1 namaPicture.Line (XP, ht - H(i))-(XP, ht) Next i
+Flowchart Program 1. Flowchart Menu Utama
+
+mulai
+A Baca Inputan Menu Utama
+
+B
+
+File Tidak
+
+Tentang Tidak
+
+A Tidak
+
+Keluar
+
+Ya 1
+Ya 2
+Ya 3
+
+Gambar 4.4
+DAN
+
+FlowcharMt EMTOenDuE
+PENAJAMAN CITRA
+
+KUUENtCaTEmURKaAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+17
+
+2. Flowchart Menu File
+1
+A Baca Inputan Menu File
+
+Baru Tidak
+Buka Tidak
+A
+
+Ya Ya
+
+Baru Buka
+
+Gambar 4.5 Flowchart Menu File
+
+Implementasi
+Implementasi merupakan suatu tahap penerapan dari program yang dibuat atau dirancang. Untuk melakukan penerapan tersebut diperlukan suatu media atau peralatan yang mendukung. Ada tiga macam kebutuhan dalam rangka implementasi ini yaitu kebutuhan akan hardware, software dan brainware.
+
+1. Kebutuhan Hardware
+
+Hardware merupakan perangkat keras dari suatu sistem komputer. Adapun spesifikasi
+
+kebutuhan hardware yang digunakan nanti adalah sebagai berikut :
+
+Processor
+
+: minimal Pentium III 400
+
+RAM
+
+: minimal 128 MB SDRAM
+
+HardDisk VGA Monitor
+
+: minimal 20 GB : minimal 32 MB : minimal 15" resolusi 600x800
+dengan periperal-periperal lain standard.
+
+2. Kebutuhan Software Software merupakan perangkat lunak dari suatu sistem komputer. Adapun kebutuhan software yang digunakan nanti adalah sistem Proses minimal windows 98se, serta Ms Visual Basic 6.0.
+
+3. Kebutuhan Brainware Brainware adalah orang yang mengoperasikan sistem komputer. Dalam sistem ini yang menjadi brainware adalah siapa saja yang menggunakan atau memakai sistem ini (pengguna) serta pembuat sistem ini sendiri. Untuk pembuat sistem ini diperlukan keahlian di bidang bahasa pemrograman Visual Basic dan mengerti sistem proses Windows. Sedangkan bagi pengguna tidak perlu adanya keahlian tertentu.
+
+Hasil 1. Eksekusi Program. 2.1 Form Menu
+Adalah form utama dalam program ini, dimana terdapat menu-menu pilihan kepada pemakai. Adapun tampilan Form Menu ini adalah sebagai berikut.
+
+Gambar 4.9. Form Menu
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+19
+
+2.2 Pilihan Menu File Didalam pilihan Menu pada form Menu, terdapat 2 (dua) pilihan yaitu sub menu baru dan sub menu buka.
+Gambar 4.10. Menu 2.3 Sub Menu File- Baru
+Jika dipilih untuk pilihan sub Menu file Baru, maka pemakai akan di suguhkan lembar kerja baru. Di lembar kerja baru ini pemakai bisa melakukan aktifitas yang diinginkan, dengan tampilan form sebagai berikut.
+Gambar 4.11. Form Baru 3.1 Pilihan proses-proses
+a. Pilihan Proses Dengan melakukan klik kiri pada combobox PROSES, maka akan ditampilkan pilihan-pilihan proses utama yaitu Kecerahan (Brightness), Kontras (Contrast) dan Ketajaman (Sharpness). Dengan tampilan sebagai berikut.
+
+Gambar 4.11(a) . Tampilan pilihan Proses
+b. Pilihan Proses Lain Dengan melakukan klik kiri pada combobox proses lain, maka akan ditampilkan pilihan-pilihan proses lain yang bersifat automatis (pengguna tidak bisa memasukan penambahan intensitas yang diinginkan secara manual) yaitu: Timbul, Air, Komik dan Malam. Yang ditampilkan oleh gambar berikut;
+
+Gambar 4.11(b). Tampilan pilihan Proses Lain
+c. Histogram Dengan melakukan klik kiri, pada combobox Histogram, makan akan ditampilkan pilihan menu berupa tampilan histogram dari citra yang diinputkan. Yang ditunjukkan oleh gambar berikut.
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+21
+
+Gambar 4.11(c). Tmpilan pilihan Histogram 2.4 Sub Menu File ­ Buka Sub Menu file Buka, akan menampilkan secara interaktif kepada pemakai untuk melakukan pemilihan gambar yang akan dilakukan modifikasi dengan pemanggilan common dialog yang disediakan oleh aplikasi Microsoft Visual Basic. Tampilan common dialog tersebut adalah sebagai berikut.
+Gambar 4.12. Tampilan Common Dialog Selanjutnya setelah pemakai melkukan pemilihan objek gambar yang diinginkan, maka gambar tersebut akan ditampilkan pada form.
+
+Gambar 4.13. Sub Menu file- Buka
+
+KESIMPULAN Dari hasil implementasi yang diujicobakan dalam penelitian ini, maka penulis dapat
+menyimpulkan : 1. Peningkatan mutu citra digunakan untuk memperbaiki kualitas gambar yang dihasilkan dari proses perekaman. 2. Peningkatan mutu citra yang digunakan pada penelitian ini menggunakan teknik pengubahan kecerahan gambar (image brightness), peregangan kontras (contrast stretching) dan penajaman tepi (edge sharpening) untuk gambar-gambar warna (RGB colour) maupun hitam-putih (grey scale). 3. Hasil pengolahan citra yang dilakukan hanya bisa digambarkan dengan tampilan histogram secara luminans baik untuk citra warna (RGB colour) maupun hitam-putih (grey scale).
+
+DAFTAR PUSTAKA
+
+Basuki, A., Palandi, J, F., Fatchurrochman, 2005, Pengolahan Citra menggunakan Visual Basic, Graha Ilmu, Yogyakarta
+
+Digital
+
+Kristanto, A., 2004, Rekayasa Perangkat Lunak (Konsep Dasar), Gava Media, Yogyakarta.
+
+Kusumo, A, S., 2000, Buku Latihan Visual Basic 6.0, PT. Elex Media Komputindo, Jakarta.
+
+Sutedjo, B., Michael A, N., 2003, Algoritma dan Teknik PemrogramanI, Andi Offset, Yogyakarta.
+
+Santoso, I., 1997, Interaksi Manuasia dan Komputer Teori dan Praktek, Adi Offset, Yogyakarta.
+
+Jogiyanto, H., Pengenalan Komputer, Adi Offset, Yogyakarta.
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+23
+
+Munir, R., 2004, Pengolahan Citra Digital dengan Pendekatan Algoritmik, Informatika, Bandung.
+Dewobroto, W., 2004, Aplikasi Sain dan Teknik dengan Visual Basic 6.0, PT. Elex Media Komputindo, Jakarta.
+
+DAFTAR RIWAYAT HIDUP
+
+Nama Lengkap dan Gelar Akademik Tempat dan Tanggal Lahir Jenis Kelamin Fakultas/Jurusan/Program Studi Pangkat/Golongan/NIDN Bidang Keahlian
+Alamat Kantor/Telepon/Faksimilil
+Alamat Rumah/Telepon
+
+: Mukhamad Nurkamid, S.Kom., M.Cs : Pati, 20-06-1983 : Laki-laki : Teknik/Teknik Informatika /Teknik Informatika : -/-/0620068302 : Teknik Informatika
+Fakultas Teknik UMK PO.BOX. 53 Gondang : Manis BAE Kudus/443844/
+(0291)437198 Ds.Jatimulyo, 3/1 Wedarijaksa, Pati/ : 08122510430
+
+Pengalaman Penelitian:
+
+No Judul
+
+Bln/Th
+
+1
+
+Pemanfaatan Teknologi Web Semantik untuk Bibliografi September
+
+Perpustakaan
+
+2009
+
+Pengalaman Pengabdian masyarakat:
+
+Dana APBU
+
+No Judul
+
+Bln/Th
+
+Dana
+
+1
+
+Melaksanakan pengabdian pada masyarakat (Pelatihan Web Blog dan Web Desain untuk SMK Assa'idiyah Kudus)
+
+Maret 2010
+
+APBU
+
+2
+
+Pelatihan internet untuk pendidikan (e-leraning) di SMK BTB Juwana
+
+Maret 2010
+
+Mandiri
+
+Pengalaman Jurnal:
+
+No Judul
+
+Bln/Th
+
+1
+
+Aplikasi Bibliografi Perpustakaan berbasis teknologi Semantic September Web 2010
+
+Pengalaman Majalah:
+
+Dana APBU
+
+No 1 Teknologi Google *)
+
+Judul
+
+Bln/Th
+September 2010
+
+Dana APBU
+
+DAN
+
+METODE PENAJAMAN CITRA
+
+KUENCTEURKAHPEANNINCGITKRAATAKNONMTVUReTrAoUSnicCCaIITTRRAA
+
+Mukhamad Nurkamid ; Sutejo
+
+25
+
+DAFTAR RIWAYAT HIDUP
+
+Nama Lengkap dan Gelar Akademik Tempat dan Tanggal Lahir Jenis Kelamin Fakultas/Jurusan/Program Studi Pangkat/Golongan/NIDN Bidang Keahlian
+Alamat Kantor/Telepon/Faksimilil
+Alamat Rumah/Telepon
+
+: Sutejo, S.Kom : Toroh Grobogan, 07 April 1979
+: Laki-laki
+: Teknik/Teknik Informatika /Teknik Informatika : -/-/0407047902
+: Teknik Informatika Fakultas Teknik UMK PO.BOX. 53 Gondang
+: Manis BAE Kudus/443844/ (0291)437198
+Jatimas, Manggarmas, Kec. Godong, Kab. : Grobogan/ 081 901 302 784
+
+

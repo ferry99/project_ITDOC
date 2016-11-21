@@ -1,0 +1,325 @@
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+DETEKSI KERUSAKAN NOTEBOOK DENGAN MENGGUNAKAN METODE SISTEM PAKAR
+A. Haris Rangkuti, Septi Andryana
+Jurusan Sistem Informasi, Fakultas Teknologi Komunikasi dan Informatika, Universitas Nasional Jl. Sawo Manila, Pejaten Pasar Minggu No.61, Jakarta 12520 E-mail ict@unas.ac.id
+ABSTRAK
+Sistem pakar dengan kemampuan diagnosa notebook adalah sistem pakar yang digunakan untuk mendiagnosa berbagai macam jenis kerusakan yang terjadi pada notebook. Jenis kerusakan notebook yang dapat didiagnosa oleh sistem pakar ini adalah kerusakan LCD, Motherboard, Hardisk, Fdd, CD/DVD/CDRW/DVDRAM, Keyboard, Modem, Ethernet, Processor, bloothooth, mouse, baterai dan lain sebagainya. Salah satu kelebihan dari sistem pakar diagnosa kerusakan notebook tidak membatasi penggunaan sistem, selain itu proses pemeriksaan kerusakan notebook mempertimbangkan munculnya gejala khas paska setiap kerusakan, sehingga menyebabkan proses pendiagnosaan memakan waktu yang relatif singkat dan tepat. Dalam proses penarikan kesimpulan sistem menggunakan teknik Certainty factor (CF), dimana penentuan nilai CF dilakukan oleh pakar dari domain yang bersangkutan. Sistem dapat menghasilkan lebih dari satu diagnosa yang disusun berdasarkan bobotnya, sesuai dengan gejala-gejala masalah yang diinputkan oleh user. Sistem juga dilengkapi dengan ilustrasi gambar yang mempermudah pemahaman user pada saat proses konsultasi serta animasi prosedure pengambilan sparepart yang rusak untuk diperbaiki. Sistem ini berjalan dalam lingkungan internet, sehingga dapat diakses oleh banyak orang yang memiliki kepentingan terhadap penggunaan sistem ini.
+Kata kunci : sistem pakar, Certainty factor
+I. PENDAHULUAN
+Pada dasarnya masalah kerusakan pada notebook, merupakan kasus yang paling sering ditemukan di setiap kantor-kantor. Kerusakan-kerusakan tersebut memerlukan penanganan yang cepat dan benar, karena hal ini akan sangat merugikan bagi pengguna, yang sebahagian besar pengguna notebook adalah pengambil keputusan strategis di perusahan. Sehingga jika tidak segera ditangani akan merugikan perusahaan secara keseluruhan. Proses diagnosa kerusakan notebook harus melalui tahapan pemeriksaan secara mendalam dan berurutan. Karena gejala ­ gejala kerusakan yang muncul sangat aneh dan membingungkan, sehingga suatu jenis kerusakan sulit untuk dibedakan dari kerusakan yang lain. Karena semuanya merupakan satu kesatuan sistem notebook.
+Pada penelitian ini data yang digunakan berupa : ilmu pengetahuan, fakta, sehingga sistem pakar merupakan salah satu perangkat lunak yang sesuai untuk pemecahan masalah ini. Karena sistem pakat menyajikan dan mengunakan data yang berbasis pengetahuan. Diharapkan dengan sistem ini dapat membantu para user notebook untuk dapat mendiagnosa kemungkinan kerusakan yang terjadi,
+75
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+sehingga dapat mempersingkat waktu untuk proses perbaikkannya. Dalam penerapan sistem ini mengunakan teknik yaitu teknik pelacakan kedepan (Forward Chaining) atau teknik pelacakan kebelakang atau teknik pelacakan lainnya tergantung dari masalah yang akan dibuat sistem pakarnya. Menurut Aziz (1994) bahwa untuk sebuah sistem pakar yang besar , dengan jumlah rule yang relatif banyak, maka teknik pelacakan kedepan akan dirasakan sangat lamban dalam pengambilan keputusan dan akan lebih baik jika mengunakan pelacakan kebelakang (Backward Chaining).
+
+Tujuan penelitian ini adalah Mengembangkan sistem pakar diagnosa kerusakan notebook, dan
+Implementasi termasuk uji coba penanganan kerusakan notebook secara cepat dan tepat. Sehingga
+dapat menjadi bahan pembanding dari keputusan ­ keputusan yang diambil oleh teknisi Notebook
+untuk memperbaikinya. Termasuk juga menjadi media informasi bagi pihak manapun yang ingin mengetahui cara mendiagnosa dan memahami kerusakan yang ada pada notebook.
+
+Sistem pakar dalam menentukan kerusakan yang terjadi pada Notebook dibatasi hanya dapat
+mendiagnosa 12 kerusakan notebook yang sering terjadi. Ke duabelas jenis kerusakan notebook tersebut adalah
+
+1. LCD
+2. Motherboard 3. Hardisk
+4. FDD (Drive A / Drive Disket)
+5. CD/DVD/CDRW/DVDRAM (External CD)
+6. Keyboard 7. Modem
+8. Ethernet (LAN Card)
+9. Processor (Intel)
+10. bloothooth (Infra Red) 11. Mouse (termasuk Mouse Pad)
+12. Baterai.
+
+Data ­ data yang diproses berupa gejala yang muncul pada notebook yang ditemukan selama pemeriksaan. Data-data tersebut selanjutnya akan dianalisis oleh sistem pakar untuk menghasilkan output. Output yang dihasilkan berupa kesimpulan jenis kerusakan notebook, beserta informasi mengenai kerusakan tersebut yang diantaranya meliputi penyebab kerusakan, cara perusakan, gejalagejalanya serta gambar-gambar ilustrasi kerusakan.
+Sistem yang dihasilkan diharapkan dapat memperbaiki kinerja penanganan service/ perbaikan notebook secara optimal. Termasuk juga sebagai media informasi bagi perusahaan dalam melakukan jasa perbaikan sekaligus membantu technical suppor/ IT support. Selain itu dengan sistem pakar ini dapat menjadi bahan perbandingan bagi teknisi reparasi dalam melakukan diagnosa terhadap kerusakan Notebook. Serta berperan dalam proses pembelajaran bagi mahasiswa di bidang ilmu komputer (Computer Science)
+
+76
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+2. LANDASAN TEORI
+2.1 Pengertian Sistem Pakar Sistem Pakar merupakan sistem yang menangani dunia nyata dan masalah-masalah kompleks
+yang pada umumnya memerlukan interpretasi dan seorang pakar (Weiss,(1983) dalam Permana, 1997). Sistem Pakar merupakan salah satu altematif terbaik untuk menyelesaikan berbagai persoalan dengan menggunakan komputer yang didukung oleh teknik-teknik kecerdasan buatan (Artificial Intelligence) (Marimin, 1992). Sistem Pakar digunakan sebagai alat untuk memecahkan persoalan yang bersifat analitis yaitu interpretasi dan diagnostik, sintesis dan integrasi. Sistem pakar mempunyai keuntungan dibandingkan dengan seorang pakar yang kepakarannya dapat dimanfaatkan oleh masyarakat tanpa kehadiran pakarnya. mencakup keseluruhan dari kepakaran tersebut. sistematis serta memungkinkan untuk menangani masalah komplek dengan lebih cepat. Kepakarannya tersebut dapat dimanfaatkan walau pakarnya telah tidak dapat bekerja (Permana, 1997). Sistem berbasis kaidah yaitu suatu sistem penalaran (reasoning system) yang membangun kaidah-kaidah yang digunakan untuk merepresentasikan pengetahuan (knowledge representation) dan kaidah-kaidah tersebut kemudian digunakan untuk pengambilan keputusan (Ignizio. 1991). Kaidah-kaidah yang terdapat didalam basis pengetahuan disusun berdasarkan pengetahuan yang diperoleh dari proses penerimaan pengetahuan.
+2.2 Komponen-Komponen Sistem Pakar Menurut Turban (1994), sistem pakar dapat dibagi dalam komponen-komponen sebagai berikut :
+1.Akuisisi Pengetahuan 2.Basis Pengetahuan 3.Mesin Inferensi Sedangkan menurut Aziz (1994). komponen-komponen sistem pakar terdiri dari : 1.Basis Pengetahuan 2.Basis data 3.Mesin Inferensi 4.Antarmuka pemakai (user interface)
+Strukur dari sistem pakar dapat dilihat pada gambar 1
+
+Inference Engine
+
+Knowledge Base Database
+
+User Interface
+
+Expert
+
+User
+
+Gambar 1 : Struktur Dari Sistem Pakar
+
+77
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+Keterangan :
+1. Knowledge Base : Basis Pengetahuan yang dimiliki oleh seorang pakar yang merupakan bagian terpenting dalam Sistem Pakar.
+2. Database : Basis data mencatat semua fakta ­ fakta baik dari awal pada saat sistem mulai
+beroperasi atau fakta yang didapat dari hasil kesimpulan.
+3. Inference Engine : Pembangkit inferensi merupakan mekanisme analisa dari sebuah masalah tertentu yan selanjutnya mencari jawaban dari kesimpulan terbaik.
+4. User Interface : Bagian ini merupakan sarana komunikasi antar pemakai dan sistem
+
+Sedangkan struktur sistem pakar menurut Prof Dr Marimin dapat dilihat pada Gambar 1 (Marimin, 1992).
+
+Penguna
+
+Akusisi Ilmu Pengetahuan
+
+Penghubung
+Sistem Berbasis Pengetahuan
+
+Mekanisme Inferensi
+
+Fasilitas Pengajaran
+Gambar 2. Struktur Sistem pakar Menurut Prof Marimin
+Basis Pengetahuan Basis Pengetahuan merupakan inti dan sistem pakar dimana basis pengetahuan merupakan representasi pengetahuan dan dapat juga untuk menyimpan, mengorganisasikan pengetahuan dari seorang pakar. Basis Pengetahuan ini tersusun atas fakta yang berupa informasi, tentang obyek dan kaiah (rule) yang merupakan informasi tentang cara bagaimana membangkitkan fakta baru dari fakta yang sudah diketahui. Menurut (Gondran (1986). Dalam Permana 1997) Basis pengetahuan merupakan representasi pengetahuan dari seorang pakar. Yang kemudian dapat dimasukkan kedalam bahasa pemograman khusus untuk kecerdasan buatan (misalnya prolog atau lips) atau cangkang (shell) sistem pakar (misalnya EXSYS, PC-PLUS, MATLAB atau CRISTAL)
+Basis data Basis data merupakan bagian yang mengandung semua fakta-fakta baik fakta awal pada saat sistem mulai beroperasi maupun fakta yang didapatkan pada saat pengambilan kesimpulan yang sedang dilaksanakan. Dalam prakteknya, Basis data berada di dalam memori komputer. Kebanyakan sistem pakar mengandung basis data untuk menyimpan data hasil observasi dan data lainnya yang dibutuhkan untuk pengolahan.
+78
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+Mesin Inferensi "Brain" pada sistem pakar adalah mesin inferensi. Mesin inferensi dikenal sebagai struktur kontrol atau interpreter dan rule (dalam rule-base sistem pakar). Komponen ini secara esensial merupakan program
+komputer yang mcnyediakan metodologi untuk reasoning tentang informasi dalam basis pengetahuan
+dan untuk kesimpulan (Turban, 1994). menurut Aziz (1994) mesin inferensi merupakan bagian dan
+sistem pakar yang mengandung mekanisme fungsi berpikir dan po1a-pola penalaran sistem yang digunakan oleh seorang pakar. Dengan demikian mesin inferensi merupakan komponen terpenting
+dalam sistem pakar. Di dalam mesin inferensi terjadi proses untuk memanipulasi dan mengarahkan
+kaidah, model dan fakta yang disimpan pada basis pengetahuan dalam rangka mencapai solusi atau
+kesimpulan. Dalam sistem pakar terdapat dua strategi dalam mesin inferensi, yaitu strategi penalaran dan strategi pengendahan.
+
+Terdapat 2 (dua) kelas strategi penalaran yaitu strategi penalaran pasti (exact reasoning mechanism) dan strategi penalaran tidak pasti (inexact reasoning mechanism). Berbagai contoh strategi penalaran pasti mencakup modus ponens. modus tollens. dan teknik resolusi.
+Kaidah modus ponens dapat digambarkan sebagai berikut: A--> B A
+B Artinya Apabila ada kaidah A dan B dan diketahui bahwa A benar, maka dapat diambil kesimpulan bahwa B benar.
+Kaidah modus tollens pada prinsipnva merupakan kebalikan dan kaidah modus ponens. A--> B
+NOT B NOT A
+Kaidah jika A maka B dan diketahui B salah, maka dapat disimpulkan bahwa A salah.
+
+2.3 Teknik Forward Chaining Teknik Forward Chaining merupakan teknik yang sering digunakan untuk proses inferensia
+yang memulai penalarannya dan sekumpulan data menuju kesimpulan yang dapat ditarik. Teknik
+Forward Chaining yaitu metode penalaran yang bergerak dan IF part menuju THEN part. Diagram
+Forward chaining dapat dilihat pada Gambar 2.
+
+Gambar 2. Pelacakan ( mata rantai) ke depan
+
+79
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+Dari gambar 2 dapat dijelaskan aturan dari foward chaining,Untuk Kaidah A menghasilkan fakta I dan fakta 2, maka fakta 1 dan 2 merupakan fakta baru atau kesimpulan Fakta 1 merupakan fakta baru untuk kaidah C. Untuk mengaktifkan bagian THEN yang merupakan kesimpulan dari kaidah C adalah dengan menggunakan fakta 1. kemudian fakta 2 merupakan fakta baru utau kesimpulan untuk kaidah D dan E. Untuk mengaktifkan bagian THEN yang merupakan kesimpulan dari kaidah D dan kaidah E adalah dengan menggunakan fakta 2. Untuk kaidah B menghasilkan fakta 3. dan fakta 3 ini merupakan fakta baru dan sekaligus sebagai kesimpulan kaidah B.
+2.4 Kerusakan Notebook 1. Urutan Pemeriksaan Setiap customer yang mempunyai masalah dengan Notebook, maka akan datang ketempat perbaikan notebook secara langsung. Proses pemeriksanaan awal adalah dengan melakukan pemeriksaan pendahuluan berdasarkan keluhan yang diberikan oleh user. Kemudian setelah dilakukan pemeriksaan akan setiap masalah maka akan diketahui anamnese (sejarah/riwayat kerusakan), dan keadaan umum (status praesens) notebook, untuk menentukan bisa tidaknya pemeriksaan dilakukan secara inspeksi pada satu bagian part saja, guna membuat diagnosa sementara. Menurut Ang Sing Biauw (1977) urutan pemeriksaan meliputi: 1.Signalement 2.Anamnese 3.Status Praesens - sinyal listrik - indikator lamp 4.Komponen motherboard 5.Komponen LCD 6.Komponen Processor 7.Komponen Memori 8.Komponen Hardisk 9.Komponen Optical 10.Komponen controller Tanda-tanda pengenal (Signalement) dari sebuah notebook penting dikenal pada permulaan pemeriksaan. Signalements meliputi Type notebook, model notebook, spesifikasi notebook dan ciri-ciri lain secara phisik misalnya casing retak/ pecah, LCD kotor/ pecah dan lain sebagainya.
+Selain sebagai identitas, signalements juga penting artinya dalam diagnosa. misalnya: Ada kerusakan yang hanya terjadi pada bagian komponen tertentu. Kemudian selain signalemeni. Anamnese juga diperlukan. Anamnese yaitu berita dari pemilik notebook mengenai sejarah perbaikan atau keluhan terhadap notebook. Anamnese dibutuhkan untuk memperoleh keterangan tentang gejala kerusakan yang timbul mula-mula, sudah berapa lama terjadinya. didalam keadaan apa dilihatnya. Anamnesee ini sangat penting untuk membuat diagnosa yang tepat.
+Dalam Anamnese ada beberapa pertanyaan yang biasanya selalu harus ditanyakan yaitu:
+a. Sudah berapa lama rusaknya ? b. Bagaimana gejalanya mula-mula ? c. Bagaimana Tegangan Listiknya ? d. Apakah ada data didalam hardisk ? d. Apakah penyebab kerusakan betul-betul diketahuti ataukah baru praduga ? e. Sudah pernah direparasi, oleh siapa dan penanggulangannya ?
+2. Penyebab Kerusakan Notebook Berbagai macam penyebab terjadinya kerusakan pada notebook sehingga mengakibatkan tidak
+bisa digunakan, seperti kerena hardware yang rusak atau karena operating system (software) yang
+80
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+terinfeksi virus, sehingga tidak dapat berjalan secara normal. Untuk kerusakan hardware sebahagian besar kerena disebabkan oleh tegangan listrik yang tidak stabil atau turun naik. Selain itu kerusakan hardware juga disebabkan karena perangkat (hardware) tidak berjalan dengan normal / baik. Untuk kerusakan ­ kerusakan yang timbul dapat digolongkan sebagai berikut : Software ( operating sistem, aplikasi, virus, bios dll) dan hardware (komponen/part pada notebook seperti : FDD, HDD, monitor, Modem, Ethernet dll).
+
+3. Gejala kerusakan pada Notebook Pada perangkat Notebook terdapat beberapa gejala kerusakan yang ditimbulkan, namun
+semuanya dapat digolongkan menjadi 2 (dua) bagian utama Yaitu : Software dan Hardware.
+
+Software Gejala kerusakan yang terlihat antara lain adalah, hang, tidak bias masuk operating sistem , jalannya system agak lambat, hilangnya beberapa perintah (command) yang ada didalam operting system sehingga ada pesan bahwa command is missing, Hardware
+Gejala kerusakan yang terlihat antara lain adalah, tidak ada tampilan, komponen berwarna hitam, tidak ada tegangan/arus, tidak berfungsi dengan baik perangkat / part tersebut.
+
+3. METODE PENELITIAN
+3.1 Kerangka Pemikiran Dalam mengindetifikasi kerusakan yang terjadi pada notebook harus dilakukan secara cepat,
+tepat guna dan tepat sasaran. Ini dilakukan mengingat kerusakan pada notebook dapat menghabat kinerja user yang berkepanjangan terutama jika data ­data yang terdapat didalam notebook adalah data ­data yagn sangat penting bagi perusahaan. Pengidentifikasian kerusakan pada noteboook dapat dilihat dan gejala umum kerusakan komputer, kelainan tegangan listrik, dan lamanya pengunaan. Dalam penelitian ini pengidentifikasian kerusakan hanya dilihat dari gejala umum yang terjadi pada notebook. Dalam proses pengidentifikasian pertama kali dilakukan tahap proses pemeriksaan umum. Selanjutnya dilakukan tahap proses pemeriksaan dokumentasi untuk mengetahui histori dari notebook , kemudian dilakukan tahap proses pemeriksaan seluruh bagian part, termasuk untuk melihat gejala-gejala komponen yang rusak yang muncul pada komponen. Untuk itu peranan perangkat lunak atau sistem pakar, untuk indetifikasi sangat diperlukan untuk membantu proses pengidetifikasian atau diagnosa kerusakan notebook. Sehingga diharapkan dengan melalui tahapan tersebut dapat diketahui secara jelas jenis kerusakan dan solusi perbaikkannya. 3.2 Pendekatan Sistem
+Pada tahap pendekatan sistem ini dilakukan analisis kebutuhan, formulasi masalah atau akuisisi pengetahuan dan identifikasi sistem. 3.3 Rancang Bangun Sistem Alur dari sistem Pakar diagnostik Kerusakan notebook dapat dilihat pada gambar berikut :
+
+81
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+Merk Notebook
+
+ISSN 1978-9491
+
+Pemeriksaan Umum
+Pemeriksaan Komponen
+Output
+Start
+
+Basis Pengetahuan
+
+Merk Notebook
+
+Pemeriksa Gejala Umum
+
+Sudah dapat Diperbaiki
+
+Blm
+
+Pemeriksa scr khusus
+
+Pengantian Tehadap perangkat dan Software
+
+Pemeriksaan Thd Peripheral
+
+Notebook yang sdh diperbaiki
+
+Selesai
+
+Gambar.4. Alur sistem diagnosa kerusakan notebook 82
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+Urutan proses dan sistem pakar mengikuti diagram alir seperti pada Gambar 5 Sistem pertama kali
+akan menampilkan menu untuk input data identitas notebook, setelah input data identitas maka sistem akan metakukan proses pemeriksaan gejala umum kerusakan. Apabila notebook terdeteksi
+rusak pada saat pemeriksaan gejala umum maka sistem akan melakukan pemeriksaan gejala khusus.
+
+Kemudian fakta yang dimasukkan pada setiap pertanyaan yang diajukan akan digunakan olehh sistem untuk mengambil keputusan, pengambilan keputusan mi berdasarkan kaidah-kaidah dalam
+basis pengetahuan yang dibuat. Kemudian sistem akan memberikan prediksi dan kerusakan yang
+menyerang notebook sebagai kesimpulan. Pada sistem mi dilengkapi juga informasi penyebab
+kerusakan notebook. Menurut (Frenzel, (1986) dalom Permana (1997)) secara ganis besar basis pengetahuan meliputi :
+
+1. Fakta (declarative knowledge) berupa inforrnasi tentang obyek dan peristiwa atau situasi.
+2. Kaidah (Procedure) berupa intormasi tentang cara bagaimana membangkitkan fakta baru dari fakta yang sudah ada
+
+Pada penelitian ini menggunakan metode kaidah produksi. Metode kaidah produksi dituliskan
+dalam bentuk JIKA-MAKA (if-ihen). Kaidah ini dapat dikatakan sebagai hubungan implikasi dua bagian yaitu bagian premise (JIKA) dan bagian kesimpulan (MAKA).
+
+4. HASIL PEMBAHASAN
+4.1. Pendekatan Sistem 1.Analisis Kebutuhan Pada tahap ini ditentukan user dan kebutuhan user. User dari sistern adalah scmua pihak yang rnemerlukan informasi tentang kerusakan notebook. Proses yang diinginkan oleh user adalah proses pemeriksaan yang efisien dan elektif untuk dapat mengidentifikasikan kerusakan notebook sejak dini. Dari permasalahan tersebut, maka diputuskan untuk membuat suatu sistem pakar untuk aplikasi diagnosa kerusakan pada notebook.
+2.Akuisisi Pengetahuan Sumber pengetahuan untuk membangun sistem pakar identifikasi kerusakan notebook berasal dan buku referensi dan ahli dalam bidang kerusakan notebook. Ahli teoritis dan praktisi yang terlibat berasal PT. Aneka Infokom (Autories Dealer Toshiba di Indonesia) dan PT. Masterdata Kharisma Mandiri ( Dealer Toshiba). Metode akuisisi pengetahuan yang dilakukan adalah wawancara, diskusi miasalah dan deskripsi masalah tentang pola berpikir ahli mulai dan pendeteksian gejala, serta penentuan penyebab dan penentuan pemecahan masalah.
+Dalam melakukan diagnosa terhadap kerusakan notebook dan sebuah notebook diperlukan pengetahuan mengenai:
+1. Bagaimana urutan proses pemeriksaan terhadap kerusakan notebook. 2. Gejala apa yang ditimbulkan dan masing-masing kerusakan Notebook
+Pengetahuan untuk mengetahui gejala ­ gejala tersebut didapat melalui : Buku teks atau buku yang membahas permasalahan tentang kerusakan notebook. Pelatihan dari para Ahli di bidang kerusakan notebook.
+83
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+Pengalaman selama menjadi Teknisi Notebook
+
+ISSN 1978-9491
+
+Salah satu contoh dan penerimaan pengetahuan dapat dilihar pada tabel 1. Tabel I. Proses Penerimaan pengetahuan
+Penerimaan Pengetahuan
+K E Kerusakan apa saja yang sering terjadi
+Ahli Motherboard, Hardisk
+K E Bagaimana urutan proses pemeriksaan terhadap kerusakan notebook
+Ahli Status praesent (keadaan umum). Mati total, indikator power lamp mati, LCD bank.
+Dan seterusnya
+KE = knowledge Engineer
+
+3. Identifikasi Sistem Sistem pakar diagnosa kerusakan notebook berfungsi untuk memberikan solusi bagi permasalahan
+user. Proses diagnosa yang dilakukan pertama kali adalah proses pemeniksaan umum kemudian
+dilanjutkan dengnn proses pemeniksaan seluruh komponen/ part notebook. Diagram alur proses
+pemeriksaan umum dapat dilihat pada Lampiran I. Diagram Alur Proses pemeniksaan seluru komponen/ part notebook badan dapat dilihat pada Lampiran 2.
+
+4.2 Rancang Bangun Sistem
+
+1. Model Sistem Sistem Pakar Diagnosa Kerusakan Notebook (SPDKN) dikembangkan dengan perangkat lunak
+EXSYS professional for microsoft Windows (WINEXSYS) versi 5.2. EXSYS professional adalah
+cangkang sistem pakar (expert system shell) yang menyediakan fasilitas dan mekanisme penanikan kesimpulan berdasarkan kaidah produksi (production rules) sehingga sistem pakarnya disebut ride-
+based expert system.Sistem pakar diagnosa kerusakan notebook yang telah dibangun terdiri dan 175
+kaidah (rules) dan delapan kerusakan notebook. Kaidah-kaidah yang didefanisikan dengan rule dinyatakan dalam bentuk IF-THEN dengan struktur umum:
+IF (kondisi)
+THEN (aksi)
+Bagian IF merupakan suatu kondisi atau aturan yang benisi fakta-fakta yang dapat dinyatakan sebagai kalimat atau ekspresi maternatika. Kondisi ini dapat berupa pernyataan benar atau salah.
+Bagian THEN merupakan aksi yang dilaksanakan jika kondisi pada bagian IF bernilai benar.
+
+Basis pengetahuan (knowledge-based) disusun dalam bentuk kaidah IF-THEN, satu kaidah IFTHEN disebut satu rule (IF merupakan premis dan THEN merupakan konklusi). Kaidah inferensia
+yang digunakan adalah modus ponens,. sccara keseluruhan kaidah-kaidah yang disusun dalam
+sistem terdiri dan pengkualifikasi (qualifier). peubah (variabel dan pilihan solusi (choice).
+Penkualifikasi adalah pernyataan interaktif untuk mengetahui data dan fakta beserta seluruh kemunkinan jawaban.
+
+84
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+Dalam pengembangan sistem pakar. EXSYS juga menyediakan fasilitas pemrograman berbasis
+logika (Logic-based programming), pemrograman berorientasi objek (object-oriented programming). dan didukung oleh Graphical User Interface (GUI) untuk memudahkan pengguna
+(User) berkomunikasii
+
+Gambar 6. Diagram Pohon Pembentukan Kaidah
+2. Desain Sistem a.Desain Input Desain input digunakan untuk memasukkan data pemilik notebook dan kerusakan notebook. Identitas pemilik notebook meliputi nama, alamat, no telp kantor, no. handphone. Identitas atau tanda pengenal pemilik notebook dikenal dengan nama signalement. Input data pemilik notebook dimaksudkan sebagai tanda pengenal karena identitas pemilik notebook selain sebagai pengenal juga sangat penting dalam membantu diagnosa. Misalnya notebook akibat benturan, salah voltage, slah pemograman yang sering terjadi. b.Desain Output Hasil pemeriksaan adalah jenis kerusakan. kemudian sistem melakukan proses pengendalian. Proses pengendalian yang berfungsi untuk membantu user yang membutuhkan informasi tentang kerusakan dan penvebabnva dalam mengambil suatu keputusan. Proses pengendalian berupa informasi tentang cara mencegah dan mengantisipasi kerusakan notebook yang merusak serta
+85
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+
+ISSN 1978-9491
+
+sistem juga menampilkan rekomendasi. Rekomendasi berisi uji manualbook sederhana. Rekomendasi pada sistem ini berguna sebagai himbauan kepada pengguna (user) bahwa untuk mendapatkan hasil yang maksimal perlu melakukan uji perbandingan dengan manual troubleshooting
+c.Desain Proses Desain proses dalam sistem pakan mi digunakan untuk menentukan unutan proses pemeriksaan sehingga dihasilkan keluaran dan masukan yang ada. Proses pemeriksaan pada sistem pakar mi bertujuan untuk melakukan pemeriksaan kerusahan notebook baik untuk pemeriksaan umum maupun pemeriksaan seluruh komponen. Proses pemeriksaan umum bertujuan untuk menentukan status notebook. Proses penarikan kesimpulan dan pemeniksaan umum terdiri atas tiga tahap yaitu tahap pemeriksaan tegangan listrik, tahap pemeriksaan arus listrik, dan tahap pemeriksaan i/o controler. Proses pemeriksaan seluruh komponen notebook bertujuan untuk mengidentifikasi status kerusakan notebook. Apabila notebook teridentifikasi rusak maka sistem akan melakukan proses pemeriksaan seluruh komponen/ part untuk mengetahui jenis kerusakan. Proses penarikan kesimpulan pada proses pemeriksaan seluruh komponen ada sembilan tahap terdiri atas tahap pemeriksaan
+Gambaran Struktur Data Sistem Pakar
+
+INPUT
+
+Pemilik Notebook
+
+Output
+
+No ID NAMA ALAMAT
+
+SISTEM PAKAR
+
+Informasi Part Yang Rusak dan step perbaikan.
+
+Nama Perusahaan
+
+Alamat Perusahaan
+
+Telephone
+HP Gambar 7. Struktur Input dan Output Sistem Pakar
+StatuDs aNroitegbaomokb:ar ini terlihat bahwa Input sebahagian besar merupakan informasi dari penguna / user dari Notebook. Dengan semakin jelas informasi yang diberikan, maka semakin mudah untuk menHgisettoarhi Kueirujesankiasankerusakan pada Notebook, termasuk menentukan perbaikkannya. Sehingga proses perb- aikTaenrjaatkuahn menjadi cepat dan tepat. Untuk Outpout berisi informasi tentang komponen ­ kom- ponLeisntrikyang rusak berdasarkan data yang diinputkan, termasuk action yang tepat untuk men-dapVairtuksan solusi perbaikan.
+
+86
+
+Jurnal Artificial, ICT Research Center UNAS Artificial, Vol.3 No.1 Januari 2009
+5. KESIMPULAN
+
+ISSN 1978-9491
+
+Proses Diagnosa Kerusakan pada Notebook diterapkan dalam sistem pakar yang berbasis pengezahuan. Ini dilakukan untuk dapat membantu pengguna dalam mengidentifikasi seluruh
+kerusakan pada notebooks sejak dini. Ini agar setiap kerusakan yang terjadi pada notebook dapat
+diselesaikan secara cepat dan tepat. Sehinga mengurangi kesulitan yang ditimbulkan sebagai akibat
+dari rusaknya notebook. Pada Sistem Pakar Diagnosa Kerusakan Notebook, Pengguna dapat memperoleh pengetahuan pada saat terjadinya proses input dan output. Pada proses input, pengguna
+memberikan keterangan sejelas ­ jelasnya mengenai penyebab terjadinya kerusakan pada notebook.
+Pada proses output, pengguna tidak hanya mengetahui kerusakan yang terjadi pada notebook, tetapi
+dapat juga menerima pengetahuan dari kejadian tersebut, termasuk mengenai tindakan yang harus dilakukan. Sistem pakar ini dirancang untuk memindahkan kemampuan seorang pakar lteknisi
+Notebook, untuk dipindahkan kedalam suatu sistem pakar. Sehingga diharapkan sistem tersebut
+dapat menyelesaikan masalah yang berhubungan dengan kerusakan pada Notebook. Selain itu
+sistem pakar ini diharapkan dapat dengan mudah digunakan oleh seorang, yang tidak mempunyai pengetahuan yang mendalam tentang kerusakan pada notebook, dapat mengunakan dan
+memanfaatkannya. Teknik yang digunakan dalam sistem pakar ini adalah teknik forward chaining.
+Teknik forward chaining merupakan teknik yang sesuai untuk proses diagnosa. Karena proses
+diagnosa forward chaining, penelusurannya menggunakan penelusuran ke depan yaitu untuk mendiagnosa setiap kerusakan pada notebook dimulai dari depan dengan mengetahui penyebab dari
+kerusakan. Informasi penyebab kerusakan diperoleh dari penguna yang sehari ­ hari mengunakan
+dan memanfaatkan notebook tersebut. Sehingga diharapkan informasi tersebut dapat memberikan
+solusi yang tepat,yang diberikan oleh sistem pakar.
+
+DAFTAR PUSTAKA
+[1]. Azis, F.994. Belajar Sendiri Pernrograrnan Sisiem Pakar. PT. Elex Media Komputindo. Jakarta.I [2]. Lucas P and van der hagg Princeple of Expert System, Addision Wesley, 1991 [3]. Marimin. 1992. Struktur dan Aplikasi Sistem Pakar TIN-Fateta. IPB. Bogor. [4]. McLeod Reymond. Sistem Informasi Manajemen, Studi Sistem Informasi berbasis Komputer
+Jilid II [5]. Turban, E. 1994. Decision support and expert system Prentice-Hall. Inc. New Jersey
+
+87
+
+

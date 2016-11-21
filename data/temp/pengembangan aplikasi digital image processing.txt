@@ -1,0 +1,684 @@
+PENGEMBANGAN APLIKASI DIGITAL IMAGE PROCESSING DENGAN MICROSOFT VISUAL BASIC
+Karnadi Jurusan Teknik Informatika STMIK Bani Saleh Bekasi
+Adiesp2006@yahoo.co.id
+Abstraksi Pengembangan aplikasi digital image processing dengan Microsoft visual basic
+merupakan sebuah aplikasi perbaikan kualitas citra (Image) yang dapat memanipulasi citra baik bentuk, posisi, dan warna yang ada pada citra yang berformat bmp dan jpg/jpeg.
+Dasar dari tampilan apliaski ini yaitu bahasa pemrograman visual basic 6.0 dan salh satu komponen untuk mendukung pembuatan aplikasi ini yaitu komponen osenxpsuite.
+Dari hasil analisa penulisan ini dengan aplikasi perangkat lunak yang penulis buat ini, menunjukan bahwa aplikasi ini sangat menunjang dalam pembelajaran pengolahan citra, dan aplikasi ini juga mempunyai tampilan warna yang berbeda dari system aplikasi lain, seperti aplikasi photoshop, dan aplikasi ini juga dapat digubakan dengan mudah.
+
+1. PENDAHULUAN
+
+Seiring dengan perkembangan ilmu
+
+computer, banyak sekali peneliti yang
+
+mencoba melakukan kajian pendefinisian
+
+terhadap ilmu computer. Ilmu computer
+
+memiliki dua komponen utama yaitu :
+
+pertama adalah model dan gagasan
+
+mendasar mengenaim komputasi, kedua
+
+teknik rekayasa untuk perancangan
+
+system komputasi, meliputi perangkat
+
+keras (Hardware) dan perangkat lunak
+
+(Software) . secara teoritis ilmu computer
+
+diawali darei sejumlah berbeda disiplin
+
+ilmu, misalnya ahli matematika bekerja
+
+berdasarkan logika, ahli biologi
+
+mempelajari jaringan syaraf, dan ahli
+
+bahasa menyelidiki tata bahasa yang
+
+akan digunakan dalam ilmu computer.
+
+Dalam ilmu computer data atau
+
+informasi tidak hanya disajikan dalam
+
+bentuk teks, tetapi dapat juga berupa
+
+gambar, audio (bunyi, suara, music), dan
+
+video. Keempat macam data ini sering
+
+disebut
+
+dengan
+
+multimedia.
+
+Perkembangan teknologi sekarang ini
+
+tidak dapat dipisahkan dari multimedia
+
+salah satu contohnya adalah situs web
+
+diinternet, situs ini dibuat semenarik
+
+mungkin dengan menyertakan visualisasi
+
+berupa image.
+
+Berbicara tentang image (citra)
+
+merupakan salah satu komponen
+
+multimedia yang memegang peranan
+
+sangat penting sebagai bentuk informasi
+
+visual. Ilmu matematika sangan banyak
+
+digunakan untuk aturan-aturan yang
+
+terdapat pada bahasa pemrograman,
+
+misalnya pada ekspresi aritmatika.
+
+Format citra yang biasa digunakan
+
+adalah BMP (windows Bitmap), GIF
+
+(Graphics Interchage Format), JPG/JPEG
+
+(Join Photograpic Expert Group). Ketiga
+
+jenis ini memiliki perbedaan-perbedaan,
+
+dari latar belakang masalah inilah yang
+
+membuat penulis untuk memilih judul
+
+"PENGEMBANGAN
+
+APLIKASI
+
+DIGITALBIMAGE
+
+PROCESSING
+
+DENGAN MICROSOFT VISUAL BASIC".
+
+Dengan mengolah data yang masih
+
+lengkap atau belum dimampatkan
+
+diharapkan lebih optimal dalam
+
+pencapaian hasil citra yang lebih berkualitas.
+
+2. Identifikasi Masalah Citra yang baik adalah citra yang
+memiliki kualitas tinggi dan sesuai dengan gambar aslinya serta memiliki informasi yang lengkap dan jelas sesuai dengan apa yang kita inginkan. Namun seringkali citra mengalami penurunan kualitas citra misalnya, terjadinya cacat pada citra (derau), terlalu kontras, kurang tajam warnanya, terlalu lembut dan lain sebagainya. Citra yang seperti ini lebih sulit untuk diinterpretasikan, karena informasi yang disampaikan menjadi kurang sempurna atau berkurang kualitasnya. Dengan adanya kekurangankekurangan ini maka citra tersebut harus dimanipulasi menjadi citra baru yang kualitasnya lebih baik dari citra sebelumnya.
+
+3. Batasan Masalah Didalam pembatasan masalah
+tentang penulisan skripsi ini, penulis membatasi masalah yang berkaitan dengan ruang lingkup perbaikan kualitas citra.
+
+4. Tujuan Penelitian
+
+Adapun tujuan penelitian ini adalah
+
+sebagai berikut :
+
+1. Merancang perangkat lunak
+
+pengembangan aplikasi digital image
+
+processing dengan Microsoft visual
+
+basic.
+
+2. Menggali dan mengembangkan ilmu
+
+pengetahuan dan teknologi perangkat
+
+lunak perbaikan kualitas citra
+
+(image).
+
+3. Membangun system aplikasi digital
+
+image processing dengan Microsoft
+
+visual basic agar gampang digunakan
+
+(easy to use) oleh para pengembang
+
+(developer) maupun orang awam
+
+sekali pun.
+
+4. Mengoperasikan perangkat lunak ini
+
+agar dapat berinteraksi dengan
+
+komputer.
+
+5. Untuk
+
+menciptakan
+
+sebuah
+
+perangkat lunak digital image
+
+processing yang memiliki tampilan yang lebih menarik.
+
+5. Manfaat Penelitian
+Adapun manfaat penelitian ini adalah sebagai berikut : 1. Tersedianya perangkat lunak
+pengembangan apliakasi digital image processing dengan Microsoft visual basic yang sangat bermanfaat bagi para pengembang (developer) maupun orang awam yang ingin menggunakan source program ini. 2. Terciptanya system aplikasi perbaikan kualitas citra dengan visual basic agar gampang digunakan (easy to use) oleh para pengembang (developer) maupun orang awam sekalipun. 3. Memberikan gambaran mengenai implementasi analisa matematis, algoritma dan pemrograman computer dalam perbaikan kulaitas citra yang lebih sempurna atau lebih baik. 4. Untuk menemukan teknik-teknik memanipulasi dan memperbaiki kualitas citra supaya bisa mendapatkan kualitas yang lebih baik.
+
+6. Metodologi Penelitian
+
+Dalam
+
+pembuatan
+
+dan
+
+pengembangan software yang akan
+
+dibuat langkah-langkah yang akan
+
+diambil yaitu metodologi sebagai satu
+
+cara atau metode untuk mencapai satu
+
+tujuan. Untuk mendaptkan data yang
+
+kongkrit dan akurat penulis menggunakan
+
+metode analisis dan metode
+
+perancangan.
+
+7. Metode Analisi a. Metode pengamatan (survei) b. Metode analisis hasil pengamatan c. Metode analisa kjebutuhan informasi
+
+8. Metode Perancangan Metode perancangan dalam
+penulisan skripsi ini adalah metode
+
+perancangan terstruktur, perancangan dengan cara :
+a. Perancangan perangkat lunak b. Studi Keperpustakaan c. Metode Browsing d. Dan sumber-sumber lainnya yang
+relevan.
+2. LANDASAN TEORI
+2.1. Definisi Dasar Tentang Citra Secara harfiah citrah (image) adalah
+gambar pada bidang dwimatra (dua dimensi). Citra terdiri dua jenis yaitu citra continu dan citra diskrit. Citra continu dihasilkan dari sistem optik yang menerima sinyal analog. misalnya mata manusia dan kamera analog. Sedangkan citra diskrit dihasilkan melalui proses digitalisasi terhadap citra. Citra diskrit ini disebut dengan citra digital.
+Sedangkan definisi citra menurut kamus Webster, citra (image) ada;llah suatu representasi , kemiripan, atau imitasi dari suatu objek atau benda.
+2.2. Pengertian Citra Digital Citra digital adalah gambar dua
+dimensi yang dihasilkan dari gambar analog dua dimensi yang kontinus menjadi gambar diskrit melalui proses sampling. Agar dapat direpresentasikan secara numeric dengan nilai-nilai diskrit. Representasi citra dari fungsi malar (kontinu) menjadi nilai-nilai diskrit disebut digitalisasi. Citra yang dihasilkan inilah yang disebut digital (Digital Image).
+2.3. Pengertian Pengolahan Citra Digital Citra yang baik adalah citra yang
+memiliki kualitas tinggi dan sesuai dengan gambar aslinya serta memiliki informasi yang lengkap dan jelas sesuai dengan apa yang kita inginkan. Namun seringkali citra mengalami penurunan kualitas citra misalnya, terjadinya cacat pada citra (derau), terlalu kontras, kurang tajam warnanya, terlalu lembut dan lain sebagainya. Pengolahan citra adalah pemrosesan citra, khusunya dengan menggunakan computer, menjadi citra yang kualitasnya lebih baik.
+
+2.4. Elemen Sistem Pemrosesan citra Digital Secara umum, elemen yang terlibat
+dalam pemrosesan citra dapat dibagi menjadi empat komponen :
+a. Digitizer b. Computer digital c. Piranti tampilan d. Piranti penyimpanan
+
+Media Penyimpanan
+
+Citra Digitizer
+
+Komputer Digital
+
+Piranti Tampilan
+Gambar 2.1 Elemen Pemrosesan Citra
+2.2 Operasi Dasr Pengolahan Citra
+Operasi pada citra digital pada dasarnya adalah manipulasi elemen-elemen matriks. Elemen matriks yang dimanipulasi dapat berupa elemen tunggal (sebuah pixel), sekumpulan elemen yang berdekatan, atau keseluruhan elemen matriks. Operasi dasar pengolahan citra digital diantaranya adalah aras komputasi, operasi aritmatika, dan operasi geometri.
+2.2.1 Aras Komputasi
+Dalam pengolahan citra, dilakukan operasi terhadap citra asli menjadi citra baru berdasarkan citra asli. Operasi yang dilakukan pada citra dikategorikan sebagai berikut :
+
+a. Aras Titik, yaitu operasi yang menghasilkan output dimana setiap pixel hanya dipengaruhi oleh pixel pada posisi yang sama dari citra asli.
+b. Aras Lokal, yaitu operasi yang menghasilkan output dimana setiap pixelnya dipengaruhi oleh pixel-pixel tetangganya pada citra asli.
+c. Aras Global, Yaitu yaitu operasi yang menghasilkan output dimana setiap pixelnya dipengaruhi oleh semua pixel yang ada dalam citra asli.
+d. Aras Objek, Yaitu operasi ini hanya dilakukan pada objek tertentu dalam citra, tujuan operasi ini untuk mengenali objak tersebut.
+2.2.2 Operasi Aritmatika
+Karena citra digital berupa matriks, maka operasi-operasi aritmatika matriks juga berlaku pada citra, operasi-operasi yang dilakukan adalah operasi penjumlahan, operasi pengurangan, operasi perkalian, operasi penjumlahan dan pengurangan dengan skalar, operasi perkalian dan pembagian dengan scalar.
+
+2.2.2.1 Operasi penjumlahan dan pengurangan citra A dan B
+
+C(x,y) = A(x,y) + B(x,y)
+
+(2,1)
+
+C(x,y) = A(x,y) - B(x,y)
+
+(2,2)
+
+Operasi penjumlahan citra dapat digunakan untuk mengurangi pengaruh derau (noise) dalam citra, dengancara merata-ratakan derajat keabuan tiap pixel dari citra yang sama. Operasi pengurangan citra dapat digunakan untuk memperoleh suatu objek dari dua buah citra.
+
+2.2.2.2 Perkalian Citra A dan B C(x,y) = A(x,y) B(x,y)
+
+(2,3)
+
+Digunakan untuk mengoreksi kelinieran sensor dengancara mengalikan matriks citra dengan matriks koreksi.
+
+2.2.2.3 Penjumlahan dan Pengurangan citra dengan nilai Skalar.
+
+C(x,y) = A(x,y) + C
+
+(2,4)
+
+C(x,y) = A(x,y) - C
+
+(2,5)
+
+Operasi ini dapat digunkana pada saat pencerahan citra.
+
+2.2.2.4 Perkalian dan pembagian citra dengan skalar
+B(x,y) =C. A(x,y) dan B(x,y)=A(x,y)/C (2,6)
+Contoh pada operasi perkalian yaitu untuk kalibrasi kecerahan (calibration of brighness). Sedangkan pada operasi pembagian, misalnya untuk normalisasi kecerahan (normalization of brightness).
+
+2.2.3 Operasi Geometri Pada Citra
+
+Pada operasi geometri, koordinat pixel
+
+berubah akibat transformasi, sedangkan
+
+intensitasnya tetap, ini berbeda denga
+
+operasi aritmatika yang mana koordinat
+
+pixel tetap tetapi intensitasnya berubah.
+
+Operasi tersebut adalah Translasi,
+
+Rotasi,
+
+Penskalaan
+
+(zooming),
+
+Pencerminan (flipping).
+
+2.2.3.1 Translasi
+
+Translasi dapat digunakan untuk memindahkan atau menggeser koordinat citra.
+
+Rumus Translasi citra adalah :
+
+x' = x + m
+
+y' = y + n
+
+(2.7)
+
+Dimana :
+
+x' = ordinat hasil
+
+y' = absis hasil
+
+x = ordinat semula
+
+y = absis semula m = besar pergeseran dalam arah x n = besar pergeseran dalam arah y
+
+2.2.3.2 Rotasi
+
+Rumus rotasi citra adalah : x' = x cos() ­ y sin () y' = x sin () + y cos ()
+
+(2.8)
+
+Dimana :
+
+x' = ordinat hasil
+
+y' = absis hasil
+
+x = ordinat semula
+
+y = absis semula  = sudut rotasi berlawanan jarum
+
+Jam
+
+Jika citra semula adalah A dan citra hasil rotasi adalah B, maka rotasi citra dari A ke B:
+
+B[x'][y']=B[x cos()-y sin()][x cos()+y
+
+cos()]= A[x][y]
+
+(2.9)
+
+2.2.3.3 Penskalaan (Zooming)
+
+Penskalaan citra disebut juga dengan image zooming, yaitu pengubahan ukuran citra, baik membesarkan atau mengecilkan citra (zoom out/zoom in). Pada operasi pembesaran citra setiap pixel diperbesar menjadi SX kali Sy pixel. Operasi perbesaran diimplementasikan dengan menyalin setiap pixel sebanyak SX kali Sy.
+
+Pada operasi pengecilan citra sejumlah SX kali Sy pixel yang bertetangga diperkecil menjadi satu pixel. Operasi pengecilan diimplementasikan dengan merata-ratakan setiap pixel pada daerah SX kali Sy pixel kemudian menyalin hasil ratarata kedalam sebuah pixel.
+
+Rumus penskalaan citra :
+
+x' = sx.x
+
+y' = sy.y dimana :
+
+(2.10)
+
+x' = ordinat hasil
+
+y' = absis hasil
+
+x = ordinat semula
+
+y = absis semula
+
+sx = faktor skala dalam arah x
+
+sy = faktor skala dalam arah y
+
+2.3 Microsoft Visual Basic 6
+Visual basic adalah salah satu bahasa pemrograman computer. Bahasa pemrograman adalah perintah-perintah yang dimengerti oleh computer untuk melakukan tugas-tugas tertentu. Bahasa pemrograman visual basic, yang dikembangkan oleh mocrosoft sejak tahun 1991, merupakan pengembangan dari pendahulunya yaitu bahasa pemrograman BASIC (Beginner's AllPurpose Symbolic Instruction Code) yang dikembangkan pada era 1950 an.
+
+2.4 Osenxpsuite 2006
+
+Osenxpsuite ini adalah komponen-
+
+komponen yang bias digunakan dalam
+
+aplikasi Microsoft visual basic 6 untuk
+
+merancang suatu aplikasi bagi
+
+programmer. Komponen-komponen yang
+
+ada dalam program Microsoft visual basic
+
+6 adalah komponen yang standar atau
+
+bias dikatakan default (bawaan dari
+
+aplikasi) Microsoft visual basic 6.
+
+Komponen-komponen
+
+Osenxpsuite
+
+merupakan tambahan yang berupa tool-
+
+tool pada apliaski Microsoft visual basic
+
+6. Tool-tool Osenxpsuite memiliki
+
+kelebihan-kelebihan yang ada di dalam
+
+nya diantaranya yaitu :
+
+a.Tampilan dari Osenxpsuite ini menyerupai warna windows XP.
+b.Mudah dan simple dalam menggunakan propertisnya dan event dalam program.
+
+Berikut gambar dari komponen Osenxpsuite :
+
+Komponen default dari vb.6
+
+Pembatas
+Komponen OsenXpsuite.
+
+dari
+
+3. PERANCANGAN SISTEM
+3.1 Perancangan perangkat keras
+Pada perancangan perangkat keeras ini yang akan menguraikan bagaimana perangkat lunak yang telah dirancang dapat diterapkan pada hardware yang digunakan. Implementasi perangkat lunak ini menggunakan perangkat keras dengan spesifikasi sebagai berikut :
+1.Motherboard merek ECS 2.Hardisk berkapasitas 40 GB 3.Prosesor AMD sempron 2,60 GB 4.Ram kapasitas 256 MB 5.KArtu grafis G-Force 64 MB/AGP 6.CD Room LG kecepatan 52X Max 7.Monitor 17 Inc LG
+3.2 Perancangan Perangkat Lunak
+3.2.1 Sistem Operasi
+Sistem operasi yang digunakan dalam pembuatan perangkat lunak ini menggunakan windows XP Professional dan Microsoft visual basic 6.0. Untuk system operasi yang lain dapat mendukung perangkat ini adalah :
+1.Windows 98 2.Windows 98 second edition 3.Windows Millenium Edition
+
+4.Windows 2000 5.Windows Xp Professional 6.Windows 2003
+3.2.2 Perancangan Form
+Dalam pembuatan rancangan program ini menggunakan windows Xp professional dan dasar dari tampilan perangkat lunak ini yaitu bahasa pemrograman Microsoft visual basic 6.0 dan salah satu komponen untuk mendukung pembuatan perangkat ini yaitu komponen Osenxpsuite. Dalam tahapan perancangan ini dibuat menjadi beberapa layar-layar yang mempunyai peran fungsi masing-masing. Diantaranya layar-layar tersebut adalah :
+1.Menu utama 2.Menu file 3.Menu edit 4.Menu rotate 5.Menu flip 6.Menu zoom 7.Menu filter 8.Menu effect 9.Menu Colors 10. Menu Option 11. Menu About
+Berikut ini adalah gambar struktur rancangan program aplikasi :
+Gambar 3.1 Struktur Rancangan Program Aplikasi.
+3.2.2.2 Rancangan sub menu yang ada pada menu utama
+Rancangan Sub menu ini terdiri dari beberapa menu yaitu, menu file, menu edit, menu rotate, menu flip, menu zoom, menu filters, menu effects, menu colors, menu colorscheme, dan menu about.
+
+3.2.2.2.1 Menu File
+New Open Save Save As Exit
+3.2.2.2.2 Menu Edit
+Undo Redo Cut Copy Paste
+3.2.2.2.3 Menu Rotate
+Left Right
+3.2.2.2.4 Menu Flip
+Horizontal Vertikal
+3.2.2.2.5
+Menu Zoom
+Zoom In Zoom Out
+3.2.2.2.6 Menu Filters
+Blur Soften Sharpen Edge Detection Rink Filters Enhanced
+3.2.2.2.7 Menu Effects
+Add Noise Bath Room Caricature Fade Fish Eye Melt Negative Pixelize Relief Map Swirle
+
+3.2.2.2.8 Menu Colors
+Black and white Grayscale System-256 Clorize
+3.2.2.2.9 Menu Colorscheme
+XP-Blue XP-Green XP-Silver
+3.2.2.2.10 Menu About
+About me Help
+3.2.2.4 Rancangan menu Rotate Rancangan menu rotate ini
+berfungsi untuk menampilkan picture yang akan diproses dan akan menghasilkan file berupa picture yang baru, dimana hasil picturenya akan ditampilkan pada picture input dan output yang ada pada menu utama, rancangan formnya adalah sebagai berikut :
+Gambar 3.3 Rancangan menu rotate
+3.2.2.5 Rancangan Menu Flip Rancangan menu Flip ini berfungsi
+untuk menampilkan picture yang akan diproses dan akan menghasilkan file berupa picture yang baru, dimana hasil picturenya akan ditampilkan pada picture input dan output yang ada pada menu
+
+utama, rancangan formnya adalah sebagai berikut :
+Gambar 3.4 Rancangan Menu Flip
+3.2.2.6 Rancangan Menu Zoom Rancangan menu zoom ini
+berfungsi untuk menampilkan picture yang akan diproses dan akan menghasilkan file berupa picture yang baru, dimana hasil picturenya akan ditampilkan pada form zoomyang tertera pada rancangan form zoom dibawah ini : 3.2.2.7 Rancangan Menu Filters
+Pada rancangan menu filters ini terdiri dari bebrapa event yaitu : Proses blur, Soften, Sharfen, Edge, Detection, Rank Filters, dan Enhanced. RAncangan formnya hanya menggunakan rancangan form utama. Sedangkan untuk event rank filters, enhanced, dan autobalance terdiri dari beberapa event lagi yaitu sebagai berikut : a. Rank Filters
+Pada event rank filters terdiri dari beberapa proses yaitu : proses media, min, max, yang masing-masing formnya menggu akan form utama. b. Enhanced
+Pada event enhanced terdiri dari beberapa proses yaitu : proses detail, edges, dan focus. c. Autobalance Pada event autobalance terdiri dari beberapa proses yaitu proses brightness, proses kontras,dan proses Gamma. Berikut rancangan formnya :
+
+Gambar 3.6 Rancangan Menu Balance
+3.2.2.8 Rancangan Menu Effect
+Rancangan menu effect ini terdiri daari beberapa event yaitu : Add noise, bath room, caricature, fade, fish eye, melt, negative, pixelize, relief map, dan swirle. Dimana hasil picturenya akan ditampilkan pada picture input dan output yang ada pada rancangan menu dibawah ini :
+
+Gambar 3.8 Rancangan Menu Colors
+3.2.2.10 Rancangan Menu About Pada event rancangaan menu about
+terdiri dari dua proses event yaitu proses about dan help. 3.2.2.10.1 Rancangan form about me
+
+Gambar 3.7 Rancangan Menu Effect
+
+Gambar 3.9 Layar about 3.2.2.10.2 Rancangan form help
+
+3.2.2.9 Rancangan Menu Colors
+Rancangan menu colors ini berfungsi untuk menampilkan picture yang akan diproses dan akan menghasilkan file berupa picture yang baru, dimana hasil picturenya akan ditampilkan pada menu utama, rancangan form colors ditunjukan pada gambar dibawah ini.
+
+Gambar 3.10 Layar help
+3.2.3 Masukan Dan Keluaran Sistem
+Pada rancangan file masukan dan file keluaran memiliki keterbatasan yaitu hanya file-file tetentu saja yang dapat diproses pada rancangan program ini dan akan menghasilkan suatu file baru.
+3.2.3.1 Masukan Sistem
+File yang digunakan pada perangkat ini memakai masukan image yang
+
+berektensi BMP(Windows Bitmap), dan JPG/JPEG (Joint Photographic).
+3.2.3.2 Keluaran Sistem
+Keluaran system dari perangkat ini akan menghasilkan suatu file baru yang nama filenya sesuai dengan keinginan user dan berektensi JPG yang langsung dapat dilihat pada form utama yang ada pada rancangan program ini.
+3.3 PERANCANGAN ALGORITMA
+Rancangan algoritma pada perangkat lunak ini akan diuraikan berdasarkan pada rancangan form. Berikut ini adalah perancangan algoritma pada menu utama, dan akan lebih diperjelas dalam bentuk pseudocode pada masing-masing sub menu.
+Algoritma :
+Private sub TBar_PopUpMainMenu(Index As Integer,sText As String, x As Long, y As Long)
+Select Case Index Case 1
+PopupMenu Mnu_File,,x,y Case 2
+PopupMenu Mnu_Edit,,x,y Case 3
+PopupMenu Mnu_Rotate,,x,y Case 4
+PopupMenu Mnu_Flip,,x,y Case 5
+PopupMenu Mnu_Zoom,,x,y Case 6
+PopupMenu Mnu_Filters,,x,y Case 7
+PopupMenu Mnu_Effect,,x,y Case 8
+PopupMenu Mnu_Colors,,x,y Case 9
+PopupMenu Mnu_Colorscheme,,x,y Case 10
+PopupMenu Mnu_About,,x,y End Select End Sub
+Dari rancangan algoritma diatas akan diperjelas dalam bentuk pseudocode
+
+pada masing-masing sub menu adalah sebagai berikut :
+3.3.1 Pseudocode Rotate Pseudocode terdiri dari rotate left
+dan rotate right, adalah sebagai berikut : 3.3.1.1 Pseudocode Rotate Left
+Begin Input (k) K = M-1 For I =0 to (N-1) do Begin For j = 0 to (M-1) do B[k][i]=A[i][j] End K=k-1
+End. 3.3.1.2 Pseudocode Rotate Right
+Begin Input (k) K = M-1 For i =0 to (N-1) do Begin For j = 0 to (M-1) do B[j][k]=A[i][j] End K=k-1
+End.
+3.3.2 Pseudocode Flip
+Pseudocode flip terdiri dari flip horizontal dan flip vertical, adalah sebagai berikut :
+
+3.3.3 Pseudocode Zoom
+Pada Pseudocode zoom terdiri dari dua bagian yaitu Pseudocode zoom in dan Pseudocode zoom out.
+
+4. IMPLEMENTASI
+
+Gambar 4.2 menu file 4.3 Implementasi Perangkat LUnak 4.3.1 Hasil Proses Flip Dalam proses flip dilakukan proses flip horizontal dan vertikal. Berikut adalah hasil dari proses flip tersebut.
+Gambar 4.16 Car_cs.jpg sebelum dilakukan proses
+
+Gambar 4.1 Menu utama Pada Proses Open
+
+Gambar 4.17 Hasil Flip Horizontal
+
+Gambar 4.18 Hasil Flip Vertikal Gambar 4.19 Hasil rotate left Gambar 4.20 Hasil rotate right
+
+4.4 Uji Kualitas Perangkat Lunak Untuk mengetahui perangkat lunak
+tersebut mempunyai kinerja yang lebih baik dibandingkan dengan perangkat lunak yang lain, maka perlu diadakan uji kualitas dari perangkat lunak tersebut. Melihat dari hasil implementasi diatas, perangkat lunak sistem manipulasi kualitas citra memiliki kelebihankelebihan diantaranya, dapat memproses gambar-gambar yang berformat BMP, JPG, Gif, dan akan menghasilkan file baru yang bertype JPG. Sedangkan pada menu utamanya dapat diubah-ubah dari jenis warna yang diinginkan diantaranya Xp_Blue, XP_Green, dan warna XP_Silver.
+
+4.5 Analisis Hasil Percobaan
+
+Untuk menganalisa sistem
+
+manipulasi kualitas citra dengan software
+
+yang dipakai dapat disimpulkan dari
+
+analisa hasil percobaan, software yang
+
+dibuat ini dapat dijadikan alat dalam
+
+memanipulasi kualitas citra yang kita
+
+inginkan. Dari aplikasi software ini
+
+terdapat beberapa perbedaan dari
+
+program aplikasi yang lain misalnya
+
+diperbandingkan dengan aplikasi
+
+photoshop,
+
+perbedaan-perbedaan
+
+tersebut antara lain adalah sebagai
+
+berikut :
+
+4.5.1 Sintak Program 4.5.2 Kecepatan (Speed) 4.5.3 Input 4.5.4 Output
+
+5. SIMPULAN DAN SARAN
+
+5.1 Simpulan
+
+Setelah melakukan pembahasan
+
+secara teoritis, implementasi dan
+
+pengujian serta analisa pengujian, dapat
+
+disimpulkan sebagai berikut :
+
+a. Pada pengembangan aplikasi digital
+
+image processing ini memiliki
+
+tampilan warna yang sangat menarik
+
+seperti tampilan warna windows Xp.
+
+b. Aplikasi ini juga memiliki kelebihan
+
+yaitu
+
+dapat
+
+menampilkan
+
+pseudocode dari setiap proses yang akan dilakukan. c. Perangkat lunak ini merupakan pengembangan aplikasi digital image processing yang berguna untuk perbaikan kulaitas citra agar easy to use oleh para developer maupun orang awam sekalipun. d. Dengan menggunakan program ini, dapat membantu para design lebih mudah untuk dijadikan panduan dalam mempelajari aplikasi ini.
+
+5.2 Saran-Saran
+
+Untuk penyempurnaan dan
+
+pengembangan
+
+algoritma
+
+serta
+
+implementasi pada metode ini, adapun
+
+saran-saran demi penyempurnaan skripsi
+
+ini adalah sebagai berikut :
+
+a. Saran kepada akademik bani saleh
+
+agar menerapkan sistem pembelajaran
+
+image processing diikuti dengan
+
+pembuktian prakteknya dibidang
+
+perangkat lunak.
+
+b. Kepada para pembaca skripsi ini
+
+diharapkan dapat memberikan
+
+masukan untuk perbaikan penulisan
+
+tugas akhir mendatang.
+
+c. Kepada para pengembang aplikasi ini
+
+diharapkan
+
+supaya
+
+dapat
+
+menyempurnakan lagi dalam
+
+perancangan algoritmanya serta dapat
+
+memperjelas lebih detail lagi dari nilai-
+
+nilai yang dihasilkan. Karena aplikasi
+
+ini hanya menampilkan bentuk dan
+
+perubahan warna pada penampilan
+
+citranya saja.
+
+Osen Kusnadi, Component Osenxpsuite 2006, versi 11.24.0.94 Bekasi 2006
+
+Michael Halvorson, Step by Step Microsoft Visual Basic 6.0. Professional, 1999
+
+Pscode.com,
+
+Source
+
+Code
+
+Pemrograman, www.pscode.com
+
+Eddy Prahasta, Sistem Informasi Geografis, 2002
+
+DAFTAR PUSTAKA
+Rinaldi munir, Pengolahan Citra Digital Dengan Pendekatan Algoritmik, 2004.
+Riyanto Sigit, ST dkk, Step By Step Pengolahan Citra Digital, 2005.
+Adi Kurniadi, Cara Muda Menguasai Phtosop 7, 2003.
+
+

@@ -1,0 +1,359 @@
+PENERAPAN DATA MINING PADA PENJUALAN PRODUK MINUMAN DI PT. PEPSI COLA INDOBEVERAGES MENGGUNAKAN METODE CLUSTERING
+Enur Irdiansyah
+Universitas Komputer Indonesia (UNIKOM) Jl. Dipati Ukur No. 112-116, Bandung 40132
+Email : if10105140@yahoo.co.id
+
+ABSTRAK
+Dalam dunia bisnis yang selalu dinamis dan penuh persaingan, para pelakunya harus senantiasa memikirkan cara-cara untuk terus survive dan jika mungkin mengembangkan skala bisnis mereka.
+PT. Pepsi Cola Indobeverages merupakan perusahaan yang bergerak dalam bidang industri minuman. Tidak hanya PT. Pepsi Cola Indobeverages, masih cukup banyak perusahaanperusahaan lain yang bergerak dibidang serupa. Hal tersebut tentu saja menimbulkan persaingan bisnis antarperusahaan.
+Dalam rangka menghadapi persaingan bisnis dan meningkatkan pendapatan perusahaan, pihak terkait dalam perusahaan tersebut dituntut untuk dapat mengambil keputusan yang tepat dalam menentukan strategi pemasaran produk minuman yang akan dijualnya. Ketersediaan data yang melimpah, kebutuhan akan informasi (atau pengetahuan) sebagai pendukung pengambilan keputusan untuk membuat solusi bisnis, dan dukungan infrastruktur di bidang teknologi informasi merupakan cikal-bakal dari lahirnya teknologi data mining. Data mining dimaksudkan untuk memberikan solusi nyata bagi para pengambil keputusan di dunia bisnis, untuk mengembangkan bisnis mereka.
+Salah satu metode yang terdapat dalam data mining yang digunakan dalam penelitian ini adalah pengelompokan (Clustering) dimana metode tersebut mengidentifikasi objek yang memiliki kesamaan karakteristik tertentu, dan kemudian menggunakan karakteristik tersebut sebagai "vektor karakteristik" atau "centroid".
+Hasil dari penelitian ini adalah aplikasi yang dapat mempermudah menganalisis sejumlah data yang besar guna membantu memberikan informasi berharga sebagai gambaran dasar pengambilan keputusan perusahaan. Kata kunci : persaingan bisnis, solusi bisnis, teknologi informasi, data mining,
+pengelompokan(clustering)
+
+1. PENDAHULUAN 1.1 Latar Belakang Dalam dunia bisnis yang selalu dinamis dan penuh persaingan, para pelakunya harus senantiasa memikirkan cara-cara untuk terus survive dan jika mungkin mengembangkan skala bisnis mereka. Untuk mencapai hal itu, dapat diringkaskan tiga kebutuhan bisnis, yaitu penambahan jenis maupun peningkatan kapasitas produk, pengurangan biaya operasi perusahaan, dan peningkatan efektifitas pemasaran dan keuntungan. Untuk memenuhi kebutuhan-kebutuhan di atas, banyak cara yang dapat ditempuh. Salah satunya adalah dengan melakukan analisis data perusahaan.
+
+PT. Pepsi Cola Indobeverages merupakan perusahaan yang bergerak dalam bidang industri minuman. Tidak hanya PT. Pepsi Cola Indobeverages, masih cukup banyak perusahaanperusahaan lain yang bergerak di bidang serupa. Hal tersebut tentu saja menimbulkan persaingan bisnis antarperusahaan.
+Dalam rangka menghadapi persaingan bisnis dan meningkatkan pendapatan perusahaan, pihak terkait dalam perusahaan tersebut dituntut untuk dapat mengambil keputusan yang tepat dalam menentukan strategi pemasaran produk minuman yang akan dijualnya.
+
+Enur Irdiansyah 
+Jurnal TA/SKRIPSI 
+
+ 1 
+
+Untuk dapat melaksanakan hal itu, perusahaan memerlukan informasi yang cukup untuk dapat dianalisa lebih lanjut.
+Ketersediaan data yang melimpah, kebutuhan akan informasi (atau pengetahuan) sebagai pendukung pengambilan keputusan untuk membuat solusi bisnis, dan dukungan infrastruktur di bidang teknologi informasi merupakan cikal-bakal dari lahirnya teknologi data mining. Data mining dimaksudkan untuk memberikan solusi nyata bagi para pengambil keputusan di dunia bisnis, untuk mengembangkan bisnis mereka.
+Salah satu metode yang terdapat dalam data mining yang digunakan dalam penelitian ini adalah pengelompokan (Clustering) dimana metode tersebut mengidentifikasi objek yang memiliki kesamaan karakteristik tertentu, dan kemudian menggunakan karakteristik tersebut sebagai "vektor karakteristik" atau "centroid". Pengelompokan ini digunakan oleh perusahaan untuk membuat laporan mengenai karakteristik umum dari grup-grup konsumen yang berbeda. Proses Clustering yang akan dilakukan menggunakan Agglomerative Hierarchical Clustering Algorithm (AHC algorithm).
+1.2 Identifikasi Masalah Dengan mengacu pada latar belakang masalah diatas, maka permasalahan yang dibahas dan diteliti adalah : Bagaimana cara menerapkan Data Mining pada penjualan produk minuman di PT. PEPSI COLA INDOBEVERAGES menggunakan metode clustering.
+1.3 Maksud dan Tujuan Berdasarkan permasalahan yang diteliti, maka maksud dari penulisan tugas akhir ini adalah untuk membangun aplikasi Data Mining pada penjualan produk minuman di PT. Pepsi Cola Indobeverages menggunakan metode clustering. Sedangkan tujuan yang akan dicapai dalam penelitian ini antara lain : 1. Mempermudah menganalisis data yang besar
+
+2. Membantu memberikan informasi dari data penjualan yang diolah
+3. Memberikan gambaran dalam pengambilan keputusan
+
+2. MODEL, ANALISA, DESAIN, DAN
+
+IMPLEMENTASI
+
+2.1 Model
+
+Teknik analisis data dalam pembuatan
+
+perangkat lunak menggunakan
+
+pemodelan perangkat lunak dengan
+
+paradigma waterfall seperti terlihat pada
+
+Gambar 1.1, yang meliputi beberapa
+
+proses diantaranya:
+
+a. System / Information Engineering
+
+Merupakan bagian dari sistem yang
+
+terbesar dalam pengerjaan suatu proyek,
+
+dimulai dengan menetapkan berbagai
+
+kebutuhan dari semua elemen yang
+
+diperlukan
+
+sistem
+
+dan
+
+mengalokasikannya
+
+kedalam
+
+pembentukan perangkat lunak.
+
+b. Analisis
+
+Merupakan tahap menganalisis hal-hal
+
+yang diperlukan dalam pelaksanaan
+
+proyek pembuatan perangkat lunak.
+
+c. Design
+
+Tahap penerjemahan dari data yang
+
+dianalisis kedalam bentuk yang mudah
+
+dimengerti oleh user.
+
+d. Coding
+
+Tahap penerjemahan data atau
+
+pemecahan masalah yang telah
+
+dirancang keadalam bahasa
+
+pemrograman tertentu.
+
+e. Pengujian
+
+Merupakan tahap pengujian terhadap
+
+perangkat lunak yang dibangun.
+
+f. Maintenance
+
+Tahap akhir dimana suatu perangkat
+
+lunak yang sudah selesai dapat
+
+mengalami perubahan­perubahan
+
+atau penambahan sesuai dengan
+
+permintaan user.
+
+Gambar 1. Paradigma Waterfall
+
+Enur Irdiansyah 
+Jurnal TA/SKRIPSI 
+
+ 2 
+
+2.2 Analisa
+
+A. Analisa Sistem
+
+Analisis Sistem dapat didefinisikan
+
+sebagai penguraian dari suatu sistem
+
+informasi yang utuh ke dalam bagian-
+
+bagian komponennya dengan maksud
+
+untuk mengidentifikasikan dan
+
+mengevaluasi
+
+permasalahan-
+
+permasalahan, kesempatan-kesempatan,
+
+hambatan-hambatan yang terjadi dan
+
+kebutuhan-kebutuhan yang diharapkan
+
+sehingga dapat diusulkan perbaikan-
+
+perbaikan. Atau secara lebih mudahnya,
+
+analisis sistem adalah penelitian atas
+
+sistem yang telah ada dengan tujuan
+
+untuk merancang sistem yang baru atau
+
+diperbarui. Tahap analisis sistem ini
+
+merupakan tahap yang sangat kritis dan
+
+sangat penting, karena kesalahan di
+
+dalam tahap ini akan menyebabkan juga
+
+kesalahan di tahap selanjutnya. Tugas
+
+utama analis sistem dalam tahap ini
+
+adalah menemukan kelemahan-
+
+kelemahan dari sistem yang berjalan
+
+sehingga dapat diusulkan perbaikannya.
+
+B. Analisa Basis Data
+
+Struktur logika dari basis data dapat
+
+digambarkan dalam sebuah grafik
+
+dengan
+
+menggunakan
+
+Entity
+
+Relationship Diagram (ERD). ERD
+
+merupakan hubungan antara entitas yang
+
+digunakan dalam sistem untuk
+
+menggambarkan hubungan antara entitas
+
+atau struktur data dan relasi antar file.
+
+Komponen utama pembentukan ERD yaitu Entity (entitas) dan Relation (relasi) sehingga dalam hal ini ERD merupakan komponen-komponen himpunan entitas dan himpunan relasi yang dideskripsikan lebih jauh melalui sejumlah atributatribut (property) yang menggambarkan seluruh fakta dari sistem yang ditinjau. Adapun ERD dari aplikasi yang akan dibuat adalah sebagai berikut :
+
+Gambar 2 Entity Relationship Diagram (ERD)
+C. Analisa Kebutuhan Fungsional 1. Diagram Konteks
+Gambar 3 Diagram Konteks
+
+Enur Irdiansyah 
+Jurnal TA/SKRIPSI 
+
+ 3 
+
+2. DFD Level 1
+
+Gambar 4 DFD Level 1 3. Skema Relasi
+
+Gambar 6. Perancangan Struktur Menu
+B. Desain Menu Utama Aplikasi Berikut ini adalah gambar perancangan menu utama.
+
+Gambar 5. Skema Relasi
+2.3 Desain A. Desain Struktur Menu
+Dalam perancangan sebuah aplikasi dibutuhkan struktur menu yang berisikan menu dan submenu yang berfungsi untuk memudahkan user dalam menggunakan aplikasi tersebut. Berikut ini digambarkan mengenai stuktur menu dalam aplikasi ini :
+
+Gambar 7. Tampilan Menu Utama
+C. Desain Tampilan Proses Clustering Berikut ini adalah gambar perancangan analisa clustering.
+
+Enur Irdiansyah 
+Jurnal TA/SKRIPSI 
+
+ 4 
+
+Gambar 8. Tampilan Analisa Clustering
+2.4 Implementasi Pada tahap ini akan dilakukan implementasi terhadap sistem yang dibangun. Tahapan ini dilakukan setelah analisis dan perancangan selesai dilakukan, kemudian diimplementasikan pada bahasa pemrograman yang digunakan. A. Implementasi Sistem Tujuan implementasi adalah untuk mengkonfirmasikan modul program perancangan pada para pelaku sistem sehingga user dapat memberi masukan kepada pembangun sistem.
+B. Implementasi Perangkat Keras Perangkat keras yang digunakan untuk mengimplementasikan sistem adalah sebagai berikut :
+1. Processor : Pentium 4 2,66 GHz 2. Harddisk : 80 Gb 3. Memory : DDR 256 Mb 4. Monitor : 15" C. Implementasi Perangkat Lunak Perangkat lunak yang digunakan untuk mengimplementasikan sistem adalah sebagai berikut :
+1. Sistem Operasi Windows XP 2. MySQL 5 3. WAMP 5 4. SQLyog Enterprise ­ MySQL GUI
+v7.14 5. Delphi 7 6. Component Delphi 7
+D. Implementasi Form Implementasi form dilakukan untuk mengetahui setiap halaman program yang dibuat. Berikut ini adalah implementasi form yang dibuat.
+
+Tabel 1. Implementasi Form
+
+Menu Tampilan Awal
+Login User
+Main
+
+Deskripsi File program untuk menampilka n halaman awal aplikasi File program untuk menangani user login Proses keseluruhan sistem
+
+Nama File unPra_Login.pas
+unLogin.pas
+unMain.pas
+
+Data Master
+Ganti Password
+Import Data Clustering
+Data Modul
+
+Proses pengolahan data user, hak akses, input parameter kelas wilayah penjualan File program untuk mengubah password user File program untuk mengimpor data Proses pembuatan cluster, history, eksport, dan progress File program untuk mengumpulk an component connection, tabel, query, data source
+
+unUser.pas, unUser_Input.pas, unTrustee.pas, UnKelasWilayah. pas
+unGantiPassword. pas
+unImportPenjuala n.pas, unImportReturPe njualan.pas UnAnalisaPeringk atPerBulan.pas Unit1.pas UnProgress.pas
+UDM.pas
+
+3. HASIL DAN DISKUSI Dari analisa dan perancangan yang telah dilakukan, hasil dari aplikasi yang dibangun dapat terlihat seperti pada tampilan dibawah ini :
+
+Enur Irdiansyah 
+Jurnal TA/SKRIPSI 
+
+ 5 
+
+Gambar 9. Form Analisa Clustering
+Gambar 10. Laporan Hasil Analisa Clustering
+Gambar 11. Form Lihat Progress 4. KESIMPULAN DAN SARAN
+4.1 Kesimpulan Setelah melakukan analisis, perancangan, dan pengujian, maka dapat diperoleh kesimpulan sebagai berikut : 1. Aplikasi yang dibangun dapat
+membantu PT. PEPSI COLA INDOBEVERAGES sebagai gambaran bagi pengambilan keputusan perusahaan dalam rangka mendapatkan pola penjualan produk yang dihasilkan.
+
+2. Pengolahan data yang dilakukan dapat menghasilkan informasi yang cukup untuk dapat dianalisa lebih lanjut.
+3. Aplikasi yang dibangun dapat mengurangi penumpukan data yang kurang dimanfaatkan sebelumnya.
+
+4.2 Saran Berdasarkan kesimpulan di atas, hal yang diharapkan kedepan adalah agar aplikasi ini dapat dikembangkan lebih jauh dengan pengolahan data yang lebih besar dan luas sehingga aplikasi ini benar-benar dapat digunakan sebagai salah satu gambaran dalam pengambilan keputusan perusahaan yang lebih akurat dan berguna.
+
+5. DAFTAR PUSTAKA
+
+[1] Andi (Rabu, 4 Maret 2009), Data
+
+Mining dan Web Mining,
+
+http://andyku.wordpress.com/2008/04/
+
+17/data-mining-dan-web-mining/
+
+[2] Andri Heryandi, S.T. SQL (Structured
+
+Query Language) dengan delphi,
+
+Diktat Delphi, 1-55
+
+[3] Iko Pramudiono. (Rabu, 4 Maret
+
+2009), Pengantar Data Mining:
+
+Menambang Permata Pengetahuan di
+
+Gunung
+
+Data,
+
+http://ilmukomputer.org/2008/11/25/p
+
+engantardata-mining/
+
+[4] Kadir, Abdul,( 2001), Konsep Dan
+
+Tuntunan Basis Data , Yogyakarta :
+
+Andi.
+
+[5] Sandy Kurniawan, Taufiq Hidayat
+
+(Rabu, 5 Agustus 2009),
+
+PENERAPAN DATA MINING
+
+DENGAN METODE INTERPOLASI
+
+UNTUK MEMPREDIKSI MINAT
+
+KONSUMEN ASURANSI (Studi
+
+[6] Kasus
+
+Asuransi
+
+Metlife),
+
+http://journal.uii.ac.id/index.php/medi
+
+a-informatika/article/view/114/76/
+
+[7] Susanti, Azhar, (2003), Sistem
+
+Informasi Management, Yogyakarta:
+
+Andi.
+
+Yusta Noverison. (Selasa, 3 Maret
+
+2009),
+
+Data
+
+Mining,
+
+http://yustanoverison.blogspot.com/20
+
+08/05/data-mining.html
+
+Enur Irdiansyah 
+Jurnal TA/SKRIPSI 
+
+ 6 
+
+

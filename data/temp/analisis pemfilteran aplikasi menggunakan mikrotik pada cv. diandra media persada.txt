@@ -1,0 +1,170 @@
+Analisis Pemfilteran Aplikasi Menggunakan Mikrotik Pada CV. Diandra Media Persada Raga Pramudia Wardani A11.2008.04048
+Program Studi Teknik Informatika Universitas Dian Nuswantoro 2014
+Abstrak
+Pengguna jaringan komputer harus mengeluarkan investasi yang tidak sedikit untuk mengakses Internet. Internet telah memberikan pengaruh yang sangat besar pada penyebaran informasi, sehingga semakin banyak orang yang mengakses data melalui Internet. Permasalahan tersebut dapat diatasi menggunakan MikroTik sebagai pengatur lalu lintas data Internet serta melakukan pemfilteran beberapa aplikasi yang dapat mengganggu konektifitas jaringan komputer sesuai dengan aturan yang telah ditetapkan. Penelitian ini dilakukan menggunakan beberapa tahapan antara lain : analisis proses untuk menentukan alur lalulintas yang melewati proses pemfilteran menggunakan firewall, desain untuk mendapatkan cara yang paling efektif dan efisien mengimplementasikan router, implementasi serta pengujian yang dilakukan dengan metode stress test. Berdasarkan penelitian yang telah dilakukan aplikasi router menggunakan MikroTik yang di hasilkan dapat memenuhi kebutuhan sistem khususnya dalam melakukan pemfilteran aplikasi sesuai dengan kebutuhan pengguna.
+Kata kunci: Keamanan Jaringan, Pemfilteran, Aplikasi, Mikrotik, Router
+
+1.1 Latar Belakang
+Dewasa ini dunia informasi dan komunikasi semakin berkembang, dimana semakin canggih teknologi maka semakin mempermudah informasi yang ingin kita dapatkan. Sebagai contoh perkembangan informasi didukung dengan adanya media penyampaian berita yang tidak hanya melalui media surat kabar, radio ataupun televisi, tapi sekarang kita juga dapat mengakses melalui media internet. Dengan media internet kita dapat lebih mudah memproses dan mengolah data atau informasi. Perkembangan informasi yang semakin cepat menuntut pula adanya suatu media transmisi yang cepat pula. Sehingga informasi dapat kita peroleh dengan cepat, dimana informasi yang disampaikan dapat diterima pada waktu yang sama. Untuk dapat terhubung dari satu komputer ke komputer lain, atau dari komputer ke jaringan
+
+internet kita perlu membangun suatu jaringan komputer. Jaringan komputer merupakan sekelompok komputer otonom yang dihubungkan satu dengan yang lainnya dengan menggunakan protokol-protokol komunikasi melalui media transmisi atau media komunikasi sehinga dapat saling berbagi data. Tujuan dibangunnya suatu jaringan komputer adalah untuk membawa data informasi dari pengirim menuju penerima secara cepat dan tepat tanpa adanya kesalahan melalui media transmisi atau media komunikasi tertentu. Media transmisi atau media komunikasi itu sendiri ada yang menggunakan kabel ataupun tanpa kabel.
+1.2 Perumusan Masalah
+Berdasarkan latar belakang tersebut di atas, maka penulis menyimpulkan beberapa pokok
+
+1
+
+permasalahan yang akan dikaji lebih lanjut yaitu sebagai berikut : 1. Bagaimana cara memfilter suatu situs-situs
+tertentu yang mengganggu kinerja para karyawan di perusahaan ini.
+1.3 Batasan Masalah
+Pada pembahasan ini penulis akan membatasi masalah-masalah dalam keamanan jaringan yang menggunakan pemfilteran di CV. Diandra Media Persada diantaranya adalah : 1. Keamanan jaringan yang menggunakan
+pemfilteran aplikasi. 2. Perancangan dengan menggunakan mikrotik. 3. Merancang konfigurasi mikrotik yang meliputi
+VLAN.
+
+1.4 Tujuan Penulisan
+Tujuan dari optimalisasi keamanan jaringan dengan menggunakan pemfilteran aplikasi adalah sebagai berikut : 1. Merancang konfigurasi mikrotik pada jaringan
+CV. Diandra Media Persada yang meliputi pembagian bandwith, pengaturan proxy, firewall, security, dan network management (manajemen jaringan).
+
+1.5 Sistematika Penulisan
+
+Sistematika Penulisan dalam proyek akhir ini adalah: a) BAB I : Pendahuluan
+
+penyusunan
+
+Berisi tentang latar belakang, perumusan masalah, tujuan, batasan masalah, metodologi penelitian, sistematika penulisan, dan jadwal pelaksanaan. b) BAB II : Landasan Teori Bab ini memuat berbagai teori yang mendukung analisa pemfilteran aplikasi ini, khususnya teori yang mendukung dalam analisis. c) BAB III : Metode Penelitian Bab ini menjelaskan tentang metode yang digunakan dalam pemfilteran aplikasi menggunakan mikrotik. d) BAB IV : Hasil Penelitian Dan Pembahasan
+Bab ini berisi tentang analisis dari hasil penelitian yang telah dilakukan dalam Tugas Akhir ini dan membahas mengenai tutorial
+pemfilteran aplikasi.
+e) BAB V : Penutup
+Bab ini berisi kesimpulan atas hasil kerja yang telah dilakukan beserta rekomendasi dan saran untuk pengembangan dan perbaikan selanjutnya.
+BAB II
+Landasan Teori
+2.1 Jaringan Komputer
+Menurut Abdul kadir (2002 : 346) yang disebut jaringan komputer adalah hubungan dua buah simpul (umumnya berupa komputer) atau lebih yang tujuan utamanya adalah untuk melakukan pertukaran data dalam prakteknya, jaringan komputer memungkinkan untuk melakukan berbagi perangkat lunak, perangkat keras dan bahkan berbagi kekuatan pemrosesan.
+2.2 Local Area Network (LAN)
+
+2
+
+Local Area Network (LAN) merupakan jaringan milik pribadi di dalam sebuah gedung atau kampus yang berukuran sampai beberapa kilometer dengan tujuan memakai bersama sumber daya dan saling bertukar informasi (Tanenbaum, 1996). LAN diciptakan untuk menghemat biaya dalam penggunaan alat secara bersama-sama, tetapi lama kelamaan fungsinya makin bertambah. Sebuah saluran komunikasi dapat digunakan secara bersama oleh banyak komputer yang terhubung satu dengan yang lain. Penggunaan bersama saluran komunikasi menjadi kunci utama dalam pengefisienan jaringan komputer menjadi sebuah jaringan yang sangat besar seperti Internet (Pressman, 1992). Berdasarkan jenis jaringannya, teknologi LAN dapat dibedakan menjadi tiga karakteristik yakni: ukuran, teknologi transmisi, dan topologinya. LAN mempunyai ukuran yang terbatas, yang berarti waktu transmisi dalam keadaan terburuknya terbatas dan dapat diketahui sebelumnya. LAN seringkali menggunakan teknologi transmisi kabel. LAN tradisional beroperasi pada kecepatan 10 sampai dengan 100 Mbps dan mempunyai faktor kesalahan yang kecil. LAN modern dapat beroperasi pada kecepatan yang lebih tinggi, sampai ratusan megabit/detik.
+2.3 Metropolitan Area Network (MAN)
+Metropolitan Area Network (MAN), pada dasarnya merupakan versi LAN yang berukuran lebih besar dan biasanya menggunakan teknologi yang sama dengan LAN. MAN dapat mencakup kantor-kantor perusahaan yang letaknya berdekatan atau juga sebuah kota dan dapat dimanfaatkan untuk keperluan pribadi (swasta) atau umum. MAN mampu menunjang data dan suara, bahkan dapat berhubungan dengan jaringan televisi kabel.
+
+2.4 Traffic Pemfilteran Aplikasi Pada Jaringan
+(Lalu-Lintas Pemfilteran Aplikasi Pada
+Jaringan)
+Fungsi pertama yang dapat dilakukan oleh firewall adalah firewall harus dapat mengatur dan mengontrol lalu lintas jaringan yang diizinkan untuk mengakses jaringan privat atau komputer yang dilindungi oleh firewall. Firewall melakukan hal yang demikian, dengan melakukan inspeksi terhadap paket-paket dan memantau koneksi yang sedang dibuat, lalu melakukan penapisan (filtering) terhadap koneksi berdasarkan hasil inspeksi paket dan koneksi tersebut. Ketika sebuah firewall menggabungkan stateful inspection dengan packet inspection, maka firewall tersebut dinamakan dengan Stateful Packet Inspection (SPI). SPI merupakan proses inspeksi paket yang tidak dilakukan dengan menggunakan struktur paket dan data yang terkandung dalam paket, tapi juga pada keadaan apa host-host yang saling berkomunikasi tersebut berada. SPI mengizinkan firewall untuk melakukan penapisan tidak hanya berdasarkan isi paket tersebut, tapi juga berdasarkan koneksi atau keadaan koneksi, sehingga dapat mengakibatkan firewall memiliki kemampuan yang lebih fleksibel, mudah diatur, dan memiliki skalabilitas dalam hal penapisan yang tinggi.
+2.5 Konsep Pemfilteran Aplikasi
+Setiap switch dan router akan melakukan proses antrian, di mana paket akan disimpan sampai kapasitas tersedia untuk mengirimkannya ke suatu link. Waktu yang diperlukan untuk proses antrian akan menimbulkan delay, yang akan terakumulasi di setiap peralatan jaringan yang dilaluinya. Dalam Linux, dikenal 2 macam disiplin antrian, yaitu disiplin antrian dengan kelas-kelas (classful queuing discipline) dan disiplin antrian non kelas (classless queuing discipline).
+3
+
+2.6 Traffic Filtering Traffic filtering adalah teknik untuk mengontrol lalu lintas data yang diforward ke dan dari sebuah jaringan melintasi router (Rafiudin, 2006). Fungsi ini melibatkan perancangan policy keamanan. Jaringan berbeda seringkali memiliki level keamanan yang berbeda pula. Pada implementasinya pemfilteran lalu lintas data dapat dirancang untuk membentuk lingkungan firewall. Adapun implementasi sederhana, IP filtering dapat berupa sebuah rule access list yang mengizinkan ("permit") atau memblok ("deny") tipe data tertentu berdasarkan IP address sumbernya.
+BAB III
+METODOLOGI PENELITIAN 3.1 Kerangka Kerja Penelitian
+Identifikasi Permasalahan
+Studi Literatur
+Analisis dan Perancangan
+Pembuatan Laporan
+Gambar 3.1: Kerangka Kerja Penelitian
+Berdasarkan tahapan proses penelitian di atas, maka dapat diuraikan pembahasan masing-masing tahapan dalam penelitian sebagai berikut : 1. Identifikasi Permasalahan
+
+Jaringan komputer yang berada ada dalam CV. Diandra Media Persada ingin di filter penggunann situs-situs dalam internet agar meningkatkan kinerja para karyawan di dalam kantor. 2. Studi Literatur Pada tahap ini, penulis mempelajari konsepkonsep teoritis yang relevan dengan masalah yang diteliti yang diperoleh dari berbagai buku dan internet. Dengan mempelajari teoriteori tersebut, maka penulis akan lebih memahami bagaimana cara menerapkan pemfilteran aplikasi menggunakan jaringan internet dengan baik dan benar. 3. Analisis dan Perancangan Sekarang ini hampir semua oang mengenal internet dan internet tidak bisa berjalan tanpa adanya sebuah koneksi jaringan internet yang menghubungkan kita kedalam situs-situs atau beberapa informasi yang telah disediakan internet. Sehingga muncul ide untuk memfilter aplikasi yang terkoneksi dengan internet melalui jaringan komputer menggunakan mikrotik. 4. Pembuatan Laporan Pada tahap ini, penulis melakukan pembuatan laporan yang disusun berdasarkan hasil penelitian yang telah dilakukan.
+3.2 Metodologi Penelitian / Pengumpulan Data Metodologi Penelitian ini digunakan sebagai pedoman peneliti dalam pelaksanaan penelitian ini agar hasil yang dicapai tidak menyimpang dari tujuan yang telah ditentukan sebelumnya. Pengumpulan data merupakan langkah yang penting untuk metode ilmiah, karena pada umumnya data yang dikumpulkan digunakan untuk menguji hipotesis yang telah dirumuskan. Berikut adalah tahap dalam metode yang penulis lakukan :
+
+4
+
+Metode Observasi (Field Research)
+Metode Wawancara (Interview)
+Penelitian Kepustakaan (Library Research)
+Gambar 3.2 Kerangka Metode Penelitian
+a) Metode Observasi (field research) Survey langsung ke lapangan, pada tahap analisis juga dilakukan survey langsung ke lapangan untuk mendapatkan hasil sesungguhnya dan gambaran seutuhnya sebelum masuk ke tahap design. Gambaran yang didapatkan antara lain tentang hardware dan software yang digunakan. Hardware yang digunakan dalam sistem adalah Mikrotik RB1200, PPC460GT 1000MHz, Main Storage/NAND 64MB, RAM 512MB, Serial port DB9/RS232. 2 buah PC sebagai Computer client, P IV dual core,RAM 2 GB, HDD 80 & 120 GB dan NIC 10 Mbps. 1 buah Hub, 8 port hub 10Mbps. Kabel UTP, Cross Over. Software yang digunakan dalam sistem adalah operating sistem windows xp sp 2 untuk di personal computer (pc), operating sistem windows seven yang digunakan pada komputer karyawan lainnya. Linux Ubuntu 10.10 digunkan pada komputer client. Operating sistem mandiri pada Mikrotik router os. Iproute2, yang berisikan software untuk merouting dan memanage bandwidth.
+
+Iperf, merupakan perangkat lunak yang digunakan untuk mengukur performansi jaringan. Ping, yaitu perangkat lunak yang digunakan untuk mengukur response time.
+b) Metodologi Wawancara (interview) Wawancara, dilakukan dengan owner/pemilik perusahaan CV. Diandra Media Persada yaitu Bpk Dian Fairus, S.Pd agar mendapatkan data yang konkrit dan lengkap. Dalam proses wawancara data-data yang di dapat adalah penjelas tentang peralatan hardware yang telah dimiliki oleh kantor tersebut, serta memberikan informasi-informasi mengenai perangkat lunak yang berada di masingmasing device. Selain itu pemilik perusahaan juga menjelaskan keadaan masing-masing software dan hardware yang memililiki kelemahan dan kelebihan dalam kinerja, informasi yang didapat penulias juga menemukan beberapa kelemahan peralatan
+yang dimiliki.
+c) Penelitian Kepustakaan (library research) Membaca manual dokumentasi, pada analisis ini juga dilakukan dengan mencari informasi dari manual-manual atau dokumentasi yang mungkin pernah dibuat sebelumnya. Sudah menjadi keharusan dalam setiap pengembangan suatu sistem dokumentasi menjadi pendukung akhir dari penelitian ini, begitu juga pada project network ini.
+BAB IV ANALISIS HASIL PENELITIAN DAN
+PEMBAHASAN
+4.1 Alat dan Bahan Penelitian
+Kode program yang akan digunakan dapat diambil dari www.mikrotik.co.id sebagai bahan penelitian
+5
+
+utama. Pustaka-pustaka untuk melakukan konfigurasi MikroTik sebagai gateway dan manajemen jaringan komputer.
+(a) Peralatan Software  Mikrotik Router versi 4.4 Lisence 4 sebagai Router  Microsoft Windows XP SP 2 & Windows 7 Client  Linux Ubuntu 10.10 sebagai Client
+(b) Peralatan Hardware  PC dengan spesifikasi Pentium IV RAM 2GB, HD 120GB, terkoneksi pada sistem jaringan Intranet.  Notebook Compaq Toshiba Satelitte L645 sebagai Client
+(c) Peralatan Pendukung Pada saat penelitian ini dilakukan menggunakan layanan koneksi Internet CV. Diandra Media Persada menggunakan koneksi internet dari Telkom Indonesia dengan total bandwith 10 Mbps untuk terhubung dengan jaringan Internet.
+4.2 Analisis
+Proses analisis adalah proses untuk menentukan kebutuhan yang diperlukan untuk membangun jaringan komputer, sistem gateway sekaligus sebagai pemfilter beberapa aplikasi. Analisis dilakukan untuk membuat suatu bentuk rancangan jaringan komputer yang akan digunakan dalam penelitian ini. Pemilihan topologi yang tepat akan memberikan hasil yang maksimal. Topologi jaringan yang digunakan dalam penelitian ini menggunakan topologi star.
+
+Gambar 4.2 Desain topologi star yang digunakan 4.3 Perangkat Jaringan Pemilihan perangkat jaringan yang digunakan seperti terlihat dalam gambar 4.3 yang terdiri dari seperangkat pc dan laptop. Router board, hub, switch, router wireless. Perangkat jaringan tersebut
+memiliki kestabilan dan kehandalan yang tingi dalam proses pengerjaan dan implementasi.
+Gambar 4.3 Perangkat jaringan yang digunakan
+4.4 Pengujian Dalam tahap akhir dalam penelitian ini adalah penulis akan melakukan pengujian terhadap sistem pemfilteran aplikasi yang menggunakan MikroTik. Pengujian ini dilakukan untuk mengetahui apakah sistem telah berjalan dengan baik. Dalam pengujian ini dilakukan dengan metode stress test. Pengujian stress merupakan pengujian yang didesain untuk melawan sistem dalam keadaan yang tidak normal. Pengujian stress dilakukan dengan cara mengakses
+6
+
+beberapa alamat web yang telah difilter oleh MikroTik. Tutorial pemfilteran aplikasi :
+1. Seting winbox
+
+2. Selanjutnya Menambah rule Facebook pada list Layer 7 (L7)  IP > FIREWALL > Layer7 Protocols
+
+5. Selanjutnya, buat setting Mangle. Mangle berfungsi mengelompokkan akses yang menuju ke www.facebook.com untuk dimasukan ke rule illegal-url-connection.  IP > FIREWALL > MANGLE  Tambahkan mangle yang pertama, klik button + (Add)  Pada menu General > Chain: pilih Forward  Src Address : alamat jaringan dari client (172.16.10.0/24)
+
+3. Setelah masuk ke dalam layer 7 protocol, tambahakan script regaxp dengan cara, klik tanda + (Add)
+
+6. Pada menu Advanced > Layer7 Protocol: pilih www.face (sesuai yang kita isi di layer7)
+
+4. Selanjutnya beri nama rule facebook tersebut, dengan memasukkan script regexp ^.+(facebook.com).*$ . Lalu ok
+
+7. Pada menu Action > pilih mark connection, kemudian new mark connection isikan: markilegal-connection. Lalu tekan apply.
+
+7
+
+ Pada menu General > Chain : pilih forward, Packet Mark: pilih facebookpacket (sesuai isi dari new mark packet pada mangle).
+
+8. Tambahkan mangle kedua dengan klik tanda
+
++ (Add)  Pada General > Chain: pilih forward.
+
+Connection mark: pilih mark-ilegal-
+
+connection  Pada menu Action: pilih mark packet,
+
+new mark packet
+
+isikan dengan:
+
+facebook-packet
+
+11. Setting filter rule untuk membuat aturan penyaringan paket yang masuk melalui action, caranya :  Pada menu Action > Action: pilih jump, jump target isikan : ilegal-url
+
+9. Hasil setting Mangle selama proses :
+
+12. Menambahkan filter rule untuk drop di general, caranya :  Klik tanda + (Add)  Pada menu General > Chain: pilih ilegalurl
+
+10. Setting Filter Rule untuk membuat aturan penyaringan paket yang masuk melalui general. Caranya :  IP > FIREWALL > FILTER RULE  Silakan tambahkan filter rule, klik tanda + (Add).
+
+13. Menambahkan filter rule untuk drop di dalam advanced,caranya:  Pada menu Advanced > source dan destination address list centang tanda seru dan pilih exception (bertanda bahwa list exception tidak dikenakan drop action)
+8
+
+14. Menambahkan filter rule untuk drop di dalam action,caranya:
+ Pada menu Action > Action: pilih drop.
+15. Hasil setelah melakukan settingan proses di
+atas :
+16. Hasil tampilan setelah melalui proses pemfilteran
+BAB V PENUTUP 5.1 Kesimpulan 1. Aplikasi yang diterapkan manajemen bandwidth akan berakibat pada throughput yang tidak terkontrol. Hal ini dapat terlihat
+
+pada hasil eksperimen pra implementasi di mana bandwidth maksimal 9,6 Mbit/s terbagi menjadi rata-rata 4,8 Mbit/s untuk 2 client. 2. Aplikasi ini berhasil pula melakukan kategorisasi konteks sebuah halaman web apakah termasuk situs yang tidak diinginkan atau yang telah dinginkan berdasarkan pemfilteran, dengan metode stress test. Pengujian stress merupakan pengujian yang didesain untuk melawan sistem dalam keadaan yang tidak normal.
+5.2 Saran
+1. Agar kedepannya bisa memfilter aplikasi yang bervariasi dan dapat memfilter semua aplikasi bukan hanya tidak satu aplikasi.
+2. Penambahan fitur pada aplikasi pemfilteran, seperti pemfilteran data-data ada komputer antar client, agar para pengguna merasa lebih aman dengan data-data yang telah dimiliki.
+REFERENSI
+Pressman, R. S. (1992), Software Engineering, McGraw-Hill International.
+Rafiudin, R. (2006), Membangun Firewalll dan Traffic Filtering Berbasis Cisco, Yogyakarta: Penerbit Andi.
+Staff of Linux Journal (2004), Linux Journal Issue 126 October 2004, Build Your Own Router, SSC, Inc.
+Tanenbaum, A. S. (1996), Jaringan Komputer, edisi Bahasa Indonesia, edisi III, Jakarta: Prenhallindo.
+Tanutama, L. (1996), Jaringan Komputer, Jakarta: Elex Media Komputindo.
+Taringan, A. (2009), Bikin Gateway Murah Pakai Mikrotik, Yogyakarta: Penerbit Ilmu Komputer.
+9
+
+Werner, F. (1996), The Encyplopedia of Networking, 2nd ed., Alamanda, CA: Network Press, Sybex Inc.
+William Stalling. (2000). jaringan Komputer. Terjemahan Thamrin Abdul Hafedh AlHamdani. Jakarta, Indonesia: Penerbit Salemba Teknika.
+10
+
+

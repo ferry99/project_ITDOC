@@ -1,0 +1,813 @@
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+STRATEGI PEMBANGUNAN GAME EDUKASI BERBASIS DESKTOP UNTUK ANAK USIA 4-6 TAHUN
+
+Surati Surati.sekar@gmail.com
+
+ABSTRACT : Making this final project, the authors construct a based desktop educational game app for children aged 4-6 years. Before school, children should be introduced to the three basic skills: reading, writing and arithmetic. Children this age still like to play.
+Current computer technology can be a positive means of games with the appropriate approach in the study of child development. Learning undertaken in conditions that arouse and facilities for children to learn through concrete activities that are appropriate to their growth and development as well as the life of a child.
+This app is perfect educational game for kids learning tool in recognizing letters, numbers, and counting. The author uses Greenfoot application and JDK 6.
+Generated more innovative applications with multimedia elements, and can be used easily. Keyword : Educational games, multimedia
+
+ABSTRAKSI: Pembuatan proyek akhir ini, penulis membangun aplikasi game edukasi berbasis desktop untuk anak usia 4-6 tahun. Sebelum anak sekolah, sebaiknya anak dikenalkan dengan tiga ketrampilan dasar yaitu : membaca, menulis dan berhitung. Anak-anak usia tersebut masih lebih menyukai bermain.
+Teknologi komputer sekarang ini dapat menjadi sarana permainan yang positif dengan pendekatan sesuai tahap perkembangan anak dalam belajar. Pembelajaran dilaksanakan dalam kondisi yang menggugah dan memberi kemudahan bagi anak untuk belajar melalui aktivitas yang bersifat konkrit sesuai dengan pertumbuhan dan perkembangan serta kehidupan anak.
+Aplikasi game edukasi ini sangat cocok untuk sarana belajar anak dalam mengenal huruf, angka, dan berhitung. Penulis menggunakan aplikasi greenfoot dan JDK 6.
+Aplikasi yang dihasilkan lebih inovatif dengan adanya unsur multimedia, dan bisa digunakan dengan mudah. Kata kunci : Game Edukasi, Aplikasi
+
+1.1. Latar Belakang Masalah Teknologi komputer sekarang ini dapat menjadi sarana permainan yang positif dengan pendekatan sesuai tahap perkembangan anak dalam belajar. Pembelajaran dilaksanakan dalam kondisi yang menggugah dan memberi kemudahan bagi anak untuk belajar melalui aktivitas yang bersifat konkrit sesuai dengan pertumbuhan dan perkembangan serta kehidupan anak. Sebelum anak sekolah, sebaiknya anak dikenalkan dengan tiga ketrampilan dasar yaitu : membaca, menulis dan berhitung. Anak-anak usia tersebut masih lebih menyukai bermain.
+Perkembangan industri game di Indonesia sudah mulai meningkat drastis pada tahun 2011. Hal tersebut merupakan hal yang positif dan akan mempengaruhi pemetaan industri Teknologi Informasi di negara Indonesia. 1.2. Rumusan Masalah
+1. Belum adanya pemakaian alat bantu belajar sebagai media alternatif lain dalam proses belajar mengajar yang menggunakan teknologi seperti PC dan laptop.
+
+2. Bagaimana membuat rancang bangun game edukasi perndidikan dasar yaitu pengenalan huruf dan angka yang bisa menumbuhkan semangat belajar anak ?
+1.3. Batasan Masalah 1. Aplikasi yang dibuat berisi tentang pengenalan angka, huruf dan cara berhitung sederhana 2. Penyajian aplikasi ini bisa digunakan oleh orang tua dalam membantu belajar anak berbasis desktop. 3. Game ini dijalankan pada media PC, menekankan pada pembacaan dan perhitungan dengan materi yang sudah dipersiapkan.
+1.4. Tujuan Pembuatan aplikasi ini bertujuan untuk membantu anak-anak usia 4-6 tahun dalam belajar mengenal huruf, angka dan belajar berhitung.
+1.5. Manfaat Aplikasi ini bermanfaat bagi orang tua sebagai sarana memperkenalkan cara belajar yang
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+1
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+tidak membosankan karena adanya unsur multimedia.
+
+2.1 Landasan Teori Kegiatan belajar mengajar tidak
+hanya dalam keadaan seorang guru menjelaskan kepada murid, hanya mendengarkan atau dalam keadaan serius. Sekarang sudah banyak metode mengajar yang dapat membuat siswa lebih interaktif, misalnya melalui game edukasi ini.(http://infogue.com)
+
+2.1.1 Pengertian Game Game atau permainan adalah
+sebuah aktivitas kreasi dengan tujuan bersenang-senang, mengisi waktu luang, atau berolahraga ringan. Permainan biasanya dilakukan sendiri-sendiri atau kelompok. (http://id.wikipedia.org/wiki/Game)
+
+2.1.2 Jenis-jenis permainan interaktif
+
+1. Permainan interaktif menirukan binatang
+
+piaraan, adalah permainan yang
+
+mengajak para peserta menggunakan
+
+suara-suara binatang untuk menentukan
+
+identitas-identitas mereka.
+
+2. Permainan berfikir cepat, adalah
+
+permainan yanngmengajak peserta cepat
+
+menyebutkan suatu benda yang dimulai
+
+dengan huruf tertentu.
+
+3. Permainan menyusun kalimat dari
+
+sebuah nama, adalah permainan yang
+
+mengajak peserta berpasang-pasangan
+
+dan menyusun beberapa kata dari huruf
+
+pasangan
+
+masing-masing.
+
+(http://id.wikipedia.org/wiki/Permainan_int
+
+eraktif)
+
+2.1.3 Game Edukasi Permainan memenuhi sejumlah
+tujuan pendidikan. Beberapa permainan dirancang dengan tujuan pendidikan. Pendidikan game adalah permainan yang dirancang untuk mengajarkan orang tentang subjek tertentu, memperluas konsep, memperkuat pembangunan, memahami sebuah peristiwa historis atau budaya, atau membantu mereka dalam belajar ketrampilan karena mereka bermain. Jenis permainan meliputi : papan, kartu dan video game. (http://en.wikipedia.org/wiki/Educational_gam e)
+
+2.1.4 Pengertian Java
+
+Java adalah bahasa pemrograman
+
+yang dapat dijalankan diberbagai perangkat
+
+komputer, termasuk pada ponsel.
+
+Dikembangkan oleh Sun Mikrosystem dan
+
+dirilis pada 1995, berbeda dengan JavaScript.
+
+JavaScript adalah bahasa scripting yang
+
+disunakan oleh web. (Hendra
+
+Kurniawan,2011:3)
+
+Java merupakan development tools
+
+yang fleksibal dan powerful. Salah satu
+
+keunggulannya adalah platform independence
+
+adalah program yang kita tulis tidak
+
+bergantung pada sistem operasi saat program
+
+tersebut dibuat.(Setiyo Cahyono, 2006:16)
+
+Tipe data Java terbagi menjadi 3, yaitu
+
+tipe data numerik boolean, dan String. Tipe
+
+data numeric digunakan untuk menyimpan
+
+data-data berupa angka. Boolean digunakan
+
+untuk menyimpan data yang hanya mempunyai
+
+2 nilai, yaitu benar dan salah. String digunakan
+
+untuk menyimpan segala sesuatu yang dapat
+
+disimpan baik berupa angka, huruf, atau
+
+karakter khusus. (Wahana Komputer,
+
+2008:16)
+
+2.1.5 Pengertian Greenfoot
+
+Greenfoot
+
+adalah
+
+software
+
+pembelajaran pemrograman berorientasi objek,
+
+berbasis pemrograman java. Greenfoot
+
+diprakarsai oleh Michael Kolling dan Poul
+
+Hendrikson pada tahun 2003-2004.
+
+Pembangunan dilanjutkan pada tahun 2005
+
+oleh kelompok Blue J lain dari University Of
+
+Kent dan Deakin University.
+
+2.1.6 Unified Modeling Language Unified Modeling Language (UML)
+adalah keluarga notasi grafis yang didukung oleh meta model tunggal, yang membantu pendeskripsian dan desain sistem perangkat lunak, khususnya sistem yang dibangun menggunakan pemrograman berorientasi objek (OO).(Martin fowler: 2004,1) Diagram-diagram dalam UML antara lain
+1. Use case yaitu diagram yang menggambarkan interaksi antara sistem dengan sistem eksternal dan pengguna. Dengan kata lain, secara grafis menggambarkan siapa yang akan menggunakan sistem dan dengan cara apa pengguna mengharapkan untuk berinteraksi dengan sistem. (Martin fowler: 2004,257)
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+2
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+2. Activity yaitu teknik untuk menggambarkan logika prosedural, proses bisnis, dan alur kerja. Dalam beberapa hal diagram ini memainkan peran mirip sebuah diagram alir, tetapi perbedaan prinsip antara diagram ini dan notasi diagram alir adalah diagram ini mendukung behavior paralell. (Martin fowler: 2004,163)
+3. Class Diagram mendeskripsikan jenis-jenis objek dalam sistem dan berbagai macam hubungan status yang terdapat diantara kelas-kelas. (Martin fowler: 2004,163)
+4. Sequence Diagram, diagram UML yang memodelkan logika sebuah Use Case dengan cara menggambarkan sebuah interaksi pesan diantara objek-objek dalam rangkaian waktu. (Jeffery L Whitten:2004,650)
+2.2 Kajian Pustaka Jurnal penelitian PAUDIA Vol 1 No.1
+November 2011 Arri handayani, mengemukakan proses kehidupan manusia sejak bayi dalam rahim seorang ibu dan usia emas (golden ages) yaitu sampai usia 5 tahun terutama pada 2 tahun pertama kehidupannya merupakan tahap kritis dalam perkembangan manusia. Pada masa ini pertumbuhan dan perkembangan otak berlangsung dengan sangat cepat dan sangat dipengaruhi oleh rangsangan-rangsangan lingkungan terutama perawatan dan interaksi yang berkualitas yang diterima serta asupan zat gizi dan perawatan kesehatan.
+Penjelasan dari jurnal tersebut mendorong penulis untuk membuat game aplikasi ini dengan tujuan untuk membantu menciptakan lingkungan anak yang bermanfaat dalam masa pertumbuhan.
+Jurnal Informatika Mulawarman Vol 6 No.1 Feb 2011:2, Haviluddin mengemukakan tujuan dari penggunaan diagram seperti diungkapkan oleh Schmuller J (2004), "The purpose of the diagrams is to present multiple views is called a model ".
+Berikut tujuan utama dalam desain UML adalah (Sugrue J. 2009) : 1. Menyediakan bagi pengguna (analisis
+dan desain sistem) suatu bahasa pemodelan visual yang ekspresif sehingga mereka dapat mengembangkan
+
+dan melakukan pertukaran model data yang bermakna. 2. Menyediakan mekanisme yang spesialisasi untuk memperluas konsep inti. 3. Karena merupakan bahasa pemodelan visual dalam proses pembangunannya maka UML bersifat independen terhadap bahasa pemrograman tertentu. 4. Memberikan dasar formal untuk pemahaman bahasa pemodelan. 5. Mendorong pertumbuhan pasar terhadap penggunaan alat desain sistem yang berorientasi objek (OO). 6. Mendukung konsep pembangunan tingkat yang lebih tinggi seperti kolaborasi, kerangka, pola dan komponen terhadap suatu sistem. 7. Memiliki integrasi praktik terbaik.
+Uraian jurnal tersebut merupakan panduan dalam memvisualisasikan game, agar tersusun secara terstruktur.
+Menurut jurnal KOMPUTA Volume.1 No.2, oktober 2012,Nelly Indriani Membangun Game Edukasi Sejarah Walisongo, bahwa dengan membangun game edukasi ini diharapkan menarik minat siswa dalam belajar sejarah walisongo, sehingga game ini sebagai media alternatif pembelajaran sejarah khususnya sejarah walisongo.
+Jurnal tersebut memberikan gambaran kelebihan bahwa dengan game edukasi merupakan media alternatif dalam belajar anak-anak selain pertemuan tatap muka dan pemakaian alat-alat peraga.
+Noviyanto dalam Jurnal Informatika Vol 3, No. 2, (Juli 2009:1) aplikasi desktop memiliki banyak kelebihan dibandingkan dengan dengan aplikasi berbasis web, karena banyak operasi yang dapat dilakukan pada sisi client namun terbatas pada ruang lingkup pengaksesan.
+Kelebihan penelitian tersebut adalah bisa membuat sistem desktop yang membantu sistem lebih sederhana dan belum memerlukan banyak akses maupun menu-menu.
+3.1 Analisis Sistem Proses perancangan diperlukan utuk
+menghasilkan suatu rancangan sistem yang baik, karena dengan adanya rancangan yang tepat akan menghasilkan sistem yang detail dan mudah dikembangkan di masa mendatang.
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+3
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+Tahap perancangan disebut juga tahap pemecahan masalah, yaitu dengan menyusun suatu algoritma, alur sistem, masukan, prosedur proses, keluaran dan database. 3.1.1 Analisis SWOT
+Informasi yang dikumpulkan untuk merancang, dikelompokkan menjadi empat indikator yaitu kekuatan, kelemahan, peluang dan hambatan. Analisis SWOT merupakan alat kerangka kerja berdasarkan Value Based Manajement dan strategi formulasi dengan mengenali empat indikator tersebut. Kekuatan dan kelemahan merupakan internal value dari faktor pembentuk, kecakapan, atau sumber daya. Peluang dan hambatan merupakan external value dari faktor-faktor yang membentuk seperti, ekonomi, politik, sosial, hukum atau budaya.(Witarto, 2004:109)
+1. Kekuatan Analisis dari game dengan indikator kekuatan yaitu game ini mempunyai nilai untuk menambah semangat belajar anak-anak baik digunakan di dalam ruangan maupun belajar di rumah. Sebagai tambahan alat peraga, tidak hanya dilakukan secara manual tetapi juga memanfaatkan teknologi komputer.
+2. Kelemahan Indikator kelemahan ditunjukkan dengan keterbatasan pengadaan sarana atau media seperti komputer dan laptop, karena hanya ada beberapa anak yang mempunyai fasilitas tersebut. Minat belajar anak kurang, mereka lebih suka bermain bersama teman-teman dan bermain tradisional seperti petak umpet dan bermain bola.
+3. Peluang Peluang untuk mengenalkan game ini adalah dalam waktu-waktu tertentu, misalnya pada saat masuk kelas setelah anak-anak istirahat, baik itu dari lingkup TK maupun PAUD. Peluang waktu juga bisa dimanfaatkan pada sore hari ketika sudah lelah bermain, maka kita bisa memperkenalkan game ini sambil belajar.
+4. Ancaman Game ini bertujuan membantu belajar dan menumbuhkan minat belajar
+
+dengan fasilitas yang ada. Ancaman yang bisa terjadi adalah adanya acara televisi lebih menarik daripada belajar. Anak-anak juga cenderung memilih permainan yang lebih menantang khususnya untuk anak laki-laki dan tidak adanya unsur pendidikan dalam permainan tersebut.
+
+3.1.2 Analisis Kebutuhan Sistem 1. Hardware Kebutuhan hardware yang digunakan untuk membuat game ini adalah
+Tabel 3.1 Daftar Hardware
+
+No. Nama
+
+Type
+
+Jumlah
+
+1 Laptop 2 Printer
+
+ASUS K43U Canon Pixma MP287
+
+1 Unit 1 Unit
+
+3.2.1 Skenario Skenario yang dibuat adalah
+menampilkan menu-menu dari menu awal ada tiga tampilan yaitu, menu untuk permainan, menu petunjuk permainan, dan menu untuk melihat profil. Dalam menu permainan ada sub menu lagi yang berisi menu baca, yaitu menu pengenalan huruf, menu angka yaitu menu untuk pengenalan angka, menu vocal yaitu permainan yang berisi melengkapi salah satu huruf vocal yang kurang dan menu hitung, yaitu berisi menu untuk latihan menghitung. 3.2.2 Perancangan Proses
+Pembuatan perancangan desain menggunakan UML, yang menggunakan konsep berorientasi objek.
+1. Use case diagram Use case diagram mendeskripsikan sebuah interaksi antara aktor dengan sistem yang akan dibuat. Perancangan proses dengan use case diagram adalah sebagai berikut :
+BacaHuruf1
+
+MenuCaraBelajar
+
+BacaAngka
+
+LatihanVocal
+
+User LatihanHitung Tentangsaya
+
+PetunjukPermainan
+
+MengenalBentukWarna
+
+Gambar 3.1 Use Case Diagram
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+4
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+2. Skenario use case Skenario use case menggambarkan penggunaan sistem, yaitu interaksi antara aktor dengan perangkat yang dibuat.
+1. Skenario Use case menuutama
+
+Tabel 3.3 Skenario menuutama
+
+Identifikasi
+
+Urutan Tampilan
+
+1
+
+Nama
+
+Tampilan Menu utama
+
+Deskripsi Aktor
+
+Proses menampilkan menu utama
+User
+
+Skenario Utama
+
+Mulai Permainan Aksi
+
+Memilih menu utama Reaksi
+
+1. User Memilih MenuCaraB elajar
+
+3.Masukan
+
+User
+
+memilih
+
+Sub
+
+MenuCaraBelajar
+
+Akhir Permainan
+
+2.Menampilkan MenuCaraBelajar
+4.Menampilkan BacaHuruf1 Pilihan klik kembali ke Menu Cara Belajar
+
+2. Skenario use case menu tentangsaya
+Tabel 3.4 Skenario menu tentangsaya Identifikasi
+
+Urutan Tampilan Nama
+Deskripsi
+Aktor
+
+2
+
+Tampilan tentangsaya
+
+Menu
+
+Proses untuk menampilkan menu tentangsaya
+User
+
+Skenario Utama
+
+Mulai Permainan
+Aksi
+
+Memilih menu utama Reaksi
+
+1. User Memili h menu tentan gsaya
+Akhir Permainan
+
+2. Menampilkan Menu tentangsaya
+Pilihan klik kembali ke MenuCaraBelajar
+
+3. Skenario use case petunjuk Tabel 3.5 Skenario menu petunjuk Identifikasi
+
+Urutan Tampilan 3
+
+Nama Deskripsi Aktor
+
+Tampilan
+
+Menu
+
+PetunjukPermainan
+
+Proses menampilkan cara bermain User
+
+untuk petunjuk
+
+Skenario Utama
+
+Mulai Permainan Aksi
+1. User Memilih menu petunjuk
+Akhir Permainan
+
+Memilih menu utama Reaksi
+2. Menampilkan Menu petunjuk
+Pilihan klik kembali ke MenuCaraBelajar
+
+4. Skenario use case menu latihan hitung
+Tabel 3.6 Skenario menu LatihanHitung Identifikasi
+
+Urutan Tampilan
+
+4
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+5
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+Nama Deskripsi
+Aktor
+
+Tampilan Menu Latihan Hitung Proses menampilkan latihan berhitung
+User Skenario Utama
+
+Mulai Permainan
+
+Memilih utama
+
+menu
+
+Aksi 1.
+
+User Memilih MenuCaraB elajar
+
+2. Masukan User memilih Sub MenuCaraB elajar
+
+5.Masukan jawaban user
+
+Reaksi
+2.Menampilkan MenuCaraBelajar
+4.Menampilkan Soal 1
+
+6.Jawaban pertama
+
+salah
+
+maka
+
+mengeluarkan
+
+suara
+
+7.Masukan jawaban benar
+
+8.Menampilkan soal lanjutan
+
+Akhir permainan
+
+9.Jika
+
+jawaban
+
+benar maka soal
+
+selesai
+
+Kembali
+
+ke
+
+MenuCaraBelajar
+
+3. Activity Diagram Diagram aktivitas adalah gambaran langkahlangkah aliran kerja. Atau disebut juga aktivitas dari sebuah sistem. 1. Activity diagram menampilkan menu
+utama
+
+Memilih menu utama
+
+menampilkan MenuCaraBelajar Menampilkan tentangsaya menampilkan menu petunjuk
+
+Gambar 3.2 Gambar diagran aktivitas menuutama
+2. Activity diagram menampilkan Menu Cara Belajar bacahuruf1
+
+Memilih MenuCaraBelajar BacaHuruf
+
+Menampillkan huruf A-Z
+
+Gambar 3.3 MenuCaraBelajar bacahuruf1
+
+3. Activity
+
+diagram
+
+menampilkan
+
+MenuCaraBelajar bacaangka
+
+Memilih MenuCaraBelajar bacaangka
+
+menampilkan angka 1-10
+
+Gambar 3.4 MenuCaraBelajar bacaangka 4. Activity diagram menampilkan menu tentangsaya
+Menu tentangsaya
+
+Gambar 3.5 Menu tentangsaya 5. Activity diagram menampilkan menu
+petunjuk
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+6
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+Menu petunjuk
+
+Gambar 3.6 menu petunjuk
+4. Sequence Diagram Sequence diagram menggambarkan interaksi antar objek di dalam dan disekitar sistem. 1. Sequence diagram pada menu utama
+
+User MenuUtama
+
+MenuCaraBelajar
+
+1 : MenuCaraBelajar()
+
+Bacahuruf1
+
+2 : Home()
+
+3 : bacahuruf1()
+
+Bacaangka
+
+LatihanVocal Hitung
+
+Bentuk
+
+7 : Keluar()
+
+4 : MenuCaraBelaj5ar:()MenuCaraBelajar() 6 : MenuCaraBelajar() 8 : MenuCaraBelajar()
+9 : MenuCaraBelajar()
+
+Gambar 3.7 Sequence menuutama 2. Sequence diagram pada menu
+tentangsaya
+Menu tentangsaya
+
+1 : Home() 2 : MenuCaraBelajar()
+
+Gambar 3.8 Sequence giagram menu tentangsaya
+3. Sequence diagram pada menu petunjuk
+
+Menu petunjuk
+
+1 : Home()
+
+2 : MenuCaraBelajar()
+
+Gambar 3.9 Sequence diagram menu petunjuk
+
+5. Class Diagram Diagram kelas menggambarkan struktur sistem yang terdapat dalam sistem pembuatan game.
+
+1 -Click1 -Click2 +setImage() +getWorld()
+
+Bacaangka +act
+
+kembali
+
+Home +home +act()
+
+MenuCaraBelajar
+
+A -Click1 -Click2 +setImage() +getWorld()
+
+Bacahuruf +act
+
+tentangsaya -Click1 -Click2 +setImage()
+
+petunjuk -Click1 -Click2 +act() +setImage()
+
+Gambar 3.10 Diagram kelas
+
+3.2.3 Rancangan antar muka 1. Rancangan tampilan menu utama
+Klik MenuCaraBelaj
+
+Klik petunjuk
+
+Klik tentangsa
+
+Gambar 3.11 Tampilan menuutama
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+7
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+4.1 Implementasi Sistem Berdasarkan hasil analisis yang dilakukan ada BAB III, maka pembuatan program dapat dilaksanakan. Program tersebut sesuai dengan desainnya dan menghasilkan tampilan yang sesuai dengan kebutuhan pemakai sistem. Tujuan dari pengujian sistem ini adalah :
+1. Untuk mengetahui apakah sistem yang dibuat memudahkan pengguna.
+2. Memperkenalkan game ini kepada anak-anak sehingga, bisa menumbuhkan minat belajar anak.
+3. Memperkenalkan kepada anak, sebagai media alternatif lain dalam belajar.
+4.2 Pembahasan Program 4.2.1 Menu Utama Menu tampilan awal adalah menu yang langsung bisa dilihat, dan ada tiga gambar yang merupakan submenu.
+Gambar 4.1 Menu Utama
+4.2.2. Menu tentangsaya Tampilan menu ini berisi tentang keterangan dan gambar tentang penulis.
+
+Gambar 4.3 Menu Petunjuk permainan 4.2.4. Menu MenuCaraBelajar Tampilan menu utama jika diklik maka akan muncul submenu MenuCaraBelajar, yang mempunyai submenu-submenu.
+Gambar 4.4 Menu MenuCaraBelajar 4.2.5 Menu Bacahuruf
+Tampilan menu bacahuruf berisi tentang pengenalan huruf dari a ­ z, disertai dengan suara setiap diklik masing-masing huruf. Gambar tampak seperti dibawah.
+
+Gambar 4.2. Menu tentangsaya
+4.2.3. Menu petunjuk permainan Menu ini menampilkan petunjuk permainan
+
+Gambar 4.5 Menu bacahuruf
+4.2.6. Menu Bacaangka Tampilan menu bacaangka memuat tentang angka dari 1 ­ 10, disertai dengan suara jika diklik masing-masing angka.
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+8
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+4.2.9 Menu mengenal bentuk dan warna Menu mengenal bentuk dan warna ini berisi pengenalan bentuk yang sudah diberi warna dan disertai suara yang menyebutkan bentuk dan warna.
+
+Gambar 4.6 Menu bacaangka 4.2.7. Menu Hitung Menu hitung isi berisi contoh soal disertai gambar untuk menebak berapa jumlah gambar, disediakan pilihan jawaban, jika benar maka dilanjutkan soal kedua, jika salah maka akan ada suara.
+Gambar 4.7 Menu Hitung 4.2.8. Menu Latihan Vokal Menu ini berisi latihan untuk melengkapi huruf vocal yang kurang, soal tampak dengan gambar.
+Gambar 4.8 Menu latihan vocal Tampilan gambar jika jawaban salah adalah sebagai berikut :
+Gambar 4.9 Tampilan jawaban salah
+
+Gambar 4.10 Menu mengenal bentuk dan warna
+4.3 Uji Coba Sistem Aplikasi yang dibuat, sudah diujikan pada anak-anak Taman Kanak-Kanak dan PAUD. Hasil kuisioner juga memberikan gambaran bagaimana aplikasi ini bisa sebagai sarana alternatif lain bagi anak untuk menumbuhkan minat belajar anak. Sesuai dengan kuisioner yang diisi oleh guru TK, PAUD dan ibu dari salah satu anak bertempat di desa Sekar. Sehingga anak bisa belajar sambil bermain.
+
+Tabel 4.1. Hasil kuisioner
+
+Daftar
+
+Jelas
+
+Cukup
+
+Pertanyaan
+
+Apakah aplikasi 80% 20%
+
+ini bisa
+
+digunakan
+
+dengan
+
+mudah?
+
+Apakah
+
+100% -
+
+tampilan
+
+gambar dalam
+
+aplikasi
+
+ini
+
+menarik?
+
+Apakah menu 40% 60%
+
+yang
+
+ada
+
+membantu
+
+anak
+
+pendidikan
+
+dasar usia 4-6
+
+tahun?
+
+Pada menu 20% 80%
+
+latihan soal
+
+apaka anak-
+
+anak cukup
+
+K -
+-
+-
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+9
+
+IJCSS - Indonesian Jurnal on Computer Science - Speed - FTI UNSA - ijcss.unsa.ac.id
+
+mengerti? Apakah aplikasi ini membanti anak-anak belajar dirumah?
+
+80%
+
+20%
+
+5.1 Kesimpulan 1. Aplikasi yang dibuat memberikan gambaran lain bagaimana anakanak dalam meningkatkan minat belajar. 2. Memperkenalkan alat bantu berupa komputer bagi sebagian anak-anak yang belum pernah mengenal piranti tersebut. 3. Aplikasi ini dapat membantu anakanak belajar di rumah.
+
+5.2 Saran
+
+1. Pembangunan aplikasi yang
+
+dikembangkan yang lebih lengkap
+
+serta gambar-gambar yang lebih
+
+menarik untuk anak-anak.
+
+2. Pengembangan latihan soal yang
+
+lebih
+
+bervariasi,
+
+sehingga
+
+menimbuhkan semangat belajar
+
+anak.
+
+DAFTAR PUSTAKA
+
+[1] Fowler, Martin. UML Distilled
+
+Panduan singkat bahasa permodelan
+
+Objek Standart, Edisi 3,
+
+Yogyakarta:Andi Offset, 2004.
+
+[2] Huda, Miftakhul. Aplikasi Inventori
+
+Multi Store Plus Manajemen dengan
+
+Java. Jakarta:PT Elex Media
+
+Komputindo (2011)
+
+[3] Silaga Diar. Aku Pandai Membaca,
+
+Menulis, dan Berhitung. Cet-5
+
+Jakarta: WahyuMedia.( 2013).
+
+[4] Sutedjo, Budi. Perencanaan &
+
+Pembangunan Sistem Informasi.
+
+Yogyakarta:Andi Offset.(2006)
+
+[5] Taru, Andi. Pemrograman game
+
+berbasis web menggunakan
+
+javascript + html5. Yogyakarta: Andi
+
+Publisher. (2012).
+
+[6] Wahana Komputer. Shortcourse
+
+pengembangan aplikasi database
+
+berbasis
+
+JavaDB
+
+dengan
+
+NetBeans,Ed. I, Yogyakarta:Andi
+
+Offset, (2010).
+
+[7] Whitten,jeffery l. Metode Desain dan
+
+Analisis Sistem Jeffery L, Lonnie D
+
+Bentley & Kevin C. Pittman.
+
+Diterjemahkan oleh : Tim penterjemah
+
+andi edisi 6, Yogyakarta:Andi
+
+Offset,(2004).
+
+[8] Witarto. Memahami Sistem Informasi
+
+Pendekatan Praktis Rekayasa Sistem
+
+Informasi Melalui Kasus-Kasus Sistem
+
+Informasi Di Sekitar Kita.
+
+Bandung:Informatika Bandung. (2004).
+
+[9] Cara Membuat Game Berbasis Java
+
+Menggunakan Greenfoot bag 2.
+
+Http://muhidin.wordpress.com.(
+
+9
+
+Februari 2013)
+
+[10] Hasmoro Probo, Mata Kuliah : Java
+
+Game, Http://e-Learning Universitas
+
+Surakarta, (15 april 2013).
+
+[11] Haviluddin, Memahami Penggunaan
+
+UML (Unified Modeling Language).
+
+Jurnal Informatika Mulawarman Vol. 6
+
+No.1 .2011. (15 April 2013)
+
+[12] Indriani Nelly, Membangun Game
+
+Edukasi Sejarah Walisongo, Jurnal
+
+KOMPUTA, Vol.1 No.2, Oktober 2012,
+
+ISSN: 2089-9033.
+
+[13] Sularto, Tri Irianto Tjendro, Gesang
+
+Kristianto Nugroho, Pembuatan
+
+Aplikasi Game Sebagai Media
+
+Pendidikan Bagi Perkembangan Pola
+
+Pikir Anak, Jurnal on Computer
+
+Science - Speed 10 Vol 8 No 1 ­
+
+Februari 2011, ISSN 1979 ­ 9330
+
+[14] Wahyu Wibisono, Lies Yulianto,
+
+Perancangan Game Edukasi Untuk
+
+Media Pembelajaran Pada Sekolah
+
+Menengah Pertama Persatuan Guru
+
+Republik Indonesia Gondang
+
+Kecamatan Nawangan Kabupaten
+
+Pacitan, Indonesian Jurnal on
+
+Computer Science - Speed (IJCSS) 13
+
+Vol 9 No 2 ­ Agustus 2012, ISSN
+
+1979 ­ 9330
+
+[15] Dedy Sugiarto, Cicilia Puji Rahayu,
+
+Pembuatan Program Permainan
+
+Petualangan Tom Menggunakan
+
+Visual Basic 6.0, Indonesian Jurnal on
+
+Computer Science - Speed (IJCSS) 13
+
+Vol 9 No 2 ­ Agustus 2012, ISSN
+
+1979 ­ 9330
+
+ISSN : 1979-9330 (Print) - 2088-0154 (Online) - 2088-0162 (CDROM)
+
+10
+
+

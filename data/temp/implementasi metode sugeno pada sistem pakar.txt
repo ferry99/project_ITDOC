@@ -1,0 +1,276 @@
+Pelita Informatika Budi Darma, Volume : ViI, Nomor: 3, Agustus 2014
+
+ISSN : 2301-9425
+
+IMPLEMENTASI METODE SUGENO PADA SISTEM PAKAR PENENTUAN STADIUM PADA PENYAKIT TUBERCULOSIS (TBC)
+
+Muhammad Arsyad (12110633)
+
+Mahasiswa Program Studi Teknik Informatika, STMIK Budidarma Medan Jl. Sisingamangaraja No.338 Simpang Limun Medan
+www.stmik-budidarma.ac.id // Email : moch_4rsy4d@yahoo.co.id
+
+ABSTRAK
+Selama ini pengambilan keputusan untuk menentukan stadium tuberkulosis dilakukan secara manual sehingga keputusan yang diambil seringkali menjadi kurang obyektif. Dalam penelitian ini, penulis menerapkan Metode Sugeno untuk membuat suatu Sistem Pakar yang dipertimbangkan berdasarkan nilai-nilai keanggotaan. Dengan metode ini pengambilan keputusan untuk mendiagnosis dan menentuka stadium penyakit tuberkulosis dapat dilakukan lebih obyektif secara otomatis. Secara umum, sistem dapat memberikan diagnosis tingkat stadium penyakit tuberkulosis terhadap pasien sesuai dengan yang diharapkan.
+Sistem pakar diagnosa penyakit Tuberkulosis dibuat dengan tujuan untuk memberikan kemudahan kepada para pemakai (dokter muda dan atau perawat) dalam mendiagnosa suatu jenis penyakit berdasarkan gejala-gejala yang dimasukan. Selain itu sistem ini juga memberikan keterangan untuk setiap jenis penyakit yang terdeteksi. Dengan adanya sistem ini, diharapkan para pemakai dalam hal ini para praktisi dunia kesehatan khususnya para dokter muda atau perawat dapat dengan mudah mendiagnosa tingkat stadium penyakit Tuberkulosis dengan cepat dan akurat, seperti para dokter ahli Tuberkulosis.
+Sistem pakar diagnose penyakit Tuberkulosis ini diimplementasikan dengan menggunakan perangkat lunak, yaitu sistem operasi Microsoft Windows XP, dan aplikasi pembangun perangkat lunak yaitu VB.NET. Output yang dihasilkan dari system pakar ini adalah penentuan stadium dari penyakit Tuberkulosis.
+
+Kata kunci : Sistem pakar, logika fuzzy. Metode Sugeno, TBC
+
+1. Pendahuluan Sistem pakar adalah suatu program komputer
+yang dirancang untuk mengambil keputusan seperti keputusan yang diambil oleh seorang atau beberapa orang pakar. Sistem pakar mengkombinasikan kaidah-kaidah penarikan kesimpulan (inference rules) dengan basis pengetahuan tertentu yang diberikan oleh satu atau lebih pakar dalam bidang tertentu. Kombinasi dari kedua hal tersebut disimpan dalam komputer, yang selanjutnya digunakan dalam proses pengambilan keputusan untuk penyelesaian masalah tertentu. Kurangnya fasilitas yang memadai dan dokter ahli yang tidak selalu ada ditempat seringkali membuat diagnosis TBC terlambat , yang bisa mengancam kesehatan pasien. Maka dalam hal ini penulis ingin membuat suatu sistem pakar yang bisa membantu untuk melaksanakan diagnosis penyakit tuberculosis.
+2. Landasan Teori 2.1 Sistem Pakar
+Kecerdasan buatan sebagaimana telah diketahui, saat ini merupakan suatu inovasi baru dalam bidang ilmu pengetahuan. Kecerdasan buatan atau Artificial Intelligence merupakan salah satu bagian ilmu komputer yang membuat agar mesin (komputer) dapat melakukan pekerjaan seperti dan sebaik yang dilakukan oleh manusia.Teknologi
+Implementasi Metode Sugeno Pada Sistem Tuberculosis (TBC). Oleh : Muhammad Arsyad
+
+kecerdasan buatan dipelajari dalam bidang-bidang, seperti: robotika, penglihatan komputer (computer vision), jaringan saraf tiruan (artificial neural system), pengolahan bahasa alami (natural language
+processing), pengenalan suara (speech recognition) dan sistem pakar (expert system). Menurut Ignizio, James P, sistem pakar (expert system) adalah suatu metode artificial intelegence yang berguna untuk
+meniru cara berpikir dan penalaran seorang ahli
+dalam mengambil keputusan berdasarkan situasi
+yang ada. Program ini bertindak sebagai seorang
+konsultan yang cerdas dalam suatu keahlian tertentu. Sehingga seorang user dapat melakukan konsultasi
+kepada komputer, seolah-olah user tersebut
+berkonsultasi kepada seorang ahli.
+Dengan demikian seorang awam sekalipun bias
+menggunakan sistem pakar tersebut untuk
+menyelesaikan berbagai permasalahan yang
+dihadapi. Sistem pakar pertama kali dikembangkan
+oleh komunitas AI pada pertengahan tahun 1960.
+Sistem pakar yang muncul pertama kali adalah General-purpose Problem Solver (GPS) yang
+dikembangkan oleh Newel dan Simon. GPS (dan
+program-program serupa) ini mengalami kegagalan
+dikarenakan cakupannya terlalu luas sehingga
+terkadang justru meninggalkan pengetahuan-
+pengetahuan penting yang seharusnya disediakan.
+Pakar Penentuan Stadium Pada Penyakit 22
+
+Pelita Informatika Budi Darma, Volume : ViI, Nomor: 3, Agustus 2014
+
+ISSN : 2301-9425
+
+Ada beberapa keunggulan sistem pakar, diantaranya adalah dapat (Arhami, 2005): 1. Menghimpun data dalam jumlah besar 2. Menyimpan data tersebut untuk jangka waktu
+yang panjang dalam suatu bentuk tertentu. 3. Mengerjakan perhitungan secara cepat dan
+tepat tanpa jemu mencari kembali data yang tersimpan dengan kecepatan tinggi. Sementara kemampuan sistem pakar, di antaranya adalah (Arhami, 2005): 1. Menjawab berbagai pertanyaan yang menyangkut bidang keahliannya. 2. Bila diperlukan dapat menyajikan asumsi dan alur penalaran yang digunakan untuk sampai ke jawaban yang dikehendaki. 3. Menambah fakta kaidah dan alur penalaran sahih yang baru ke dalam otaknya. Sistem pakar (expert system) menggunakan basis pengetahuan (knowledge base) sebagai dasar pemikirannya. Knowledge base tersebut terdiri dari sejumlah rule-rule yang tersusun secara sistematis dan spesifik, juga relasi antara data dan aturan/rule dalam pengambilan kesimpulan. Knowledge base tersebut disimpan dalam sebuah basis data pada suatu tempat penyimpanan data. Sedangkan sebagai otak atau pusat pemrosesannya adalah inference engine, yaitu suatu rancangan aplikasi yang berfungsi untuk memberikan pertanyaan dan menerima input dari user, kemudian melakukan proses logika sesuai dengan knowledge base yang tersedia, untuk selanjutnya menghasilkan output berupa suatu kesimpulan atau bisa juga berupa keputusan/decision sebagai hasil akhir konsultasi.User memasukkan input dan menerima output melalui sebuah interface atau tampilan, yaitu sebagai sarana penghubung interaksi antara user dengan sistem.
+2.2 Konsep Dasar Sistem Pakar (Expert System) Konsep-konsep dasar dari sebuah sistem pakar
+menurut Turban (Turban, 1995) adalah: 1. Keahlian (Expertise)
+Keahlian merupakan pengetahuan khusus yang dimiliki oleh seseorang melalui latihan, belajar, serta pengalaman-pengalaman yang dialami pada suatu bidang tertentu dalam jangka waktu yang cukup lama. Dengan pengetahuan tersebut seorang pakar dapat memberikan keputusan yang lebih baik dan cepat dalam menyelesaikan suatu permasalahan yang sulit. 2. Ahli atau pakar (Expert) Seorang pakar harus memiliki kemampuan menyelesaikan permasalahan pada bidang tertentu yang ditanganinya, kemudian memberikan penjelasan mengenai hasil dan kaitannya dengan permasalahan yang ada. Untuk meniru kepakaran seorang manusia, perlu dibangun sebuah sistem komputer yang menunjukan seluruh karakteristik tersebut.
+Implementasi Metode Sugeno Pada Sistem Tuberculosis (TBC). Oleh : Muhammad Arsyad
+
+Namun hingga saat ini, pekerjaan dibidang
+
+sistem pakar terfokus pada aktifitas penyelesaian
+
+masalah dan memberikan penjelasan mengenai
+
+solusinya.
+3. Memindahkan Expertise)
+
+Keahlian
+
+(Transfering
+
+Tujuan dari sistem adalah memindahkan
+
+keahlian yang dimiliki oleh seorang pakar ke
+
+dalam sebuah sistem komputer, kemudian dari
+
+sebuah system computer kepada orang lain yang
+
+bukan pakar. Proses ini dapat meliputi empat
+
+kegiatan :
+a. Perolehan pengetahuan Acquistion).
+b. Representasi pengetahuan Representation).
+c. Menyimpulkan pengetahuan Inferencing).
+
+(Knowledge (Knowledge (Knowledge
+
+d. Memindahkan pengetahuan kepada pemakai (Knowledge Transfer to User).Pengetahuan
+
+tersebut ditempatkan ke dalam suatu
+
+komponen yang dinamakan pengetahuan (Knowledge Base). 4. Kesimpulan (Inference)
+
+basis
+
+Keistimewaan dari sistem pakar adalah
+
+kemampuannya dalam memberikan saran, yaitu
+
+dengan menempatkan keahlian ke dalam basis pengetahuan (Knowledge Base) dan membuat
+
+program yang mampu mengakses
+
+basis
+
+pengetahuan sehinggga sistem dapat
+
+memberikan kesimpulan. Kesimpulan dibentuk
+
+di dalam komponen yang dinamakan mesin pengambil kesimpulan (Inference Engine),
+
+dimana berisi aturan-aturan untuk menyelesaikan
+
+masalah. 5. Aturan (Rule)
+
+Umumnya sistem pakar adalah sistem berbasis
+
+aturan, yaitu pengetahuan yang terdiri dari
+
+aturan-aturan sebagai prosedur penyelesaian
+
+masalah. Pengetahuan tersebut digambarkan
+
+sebagai suatu urutan seri dari kaidah- kaidah
+
+yang sudah dibuat.
+6. Kemampuan Penjelasan Capability)
+
+(Explanation
+
+Keistimewaan lain dari sistem pakar adalah
+
+kemampuannya dalam memberikan saran atau
+
+rekomendasi serta menjelaskan mengapa
+
+tindakan tertentu tidak dianjurkan. Pemberian
+
+penerangan dan pendapat ini dilakukan dalam
+
+suatu subsistem yang dinamakan subsistem penjelasan (explanation subsystem).
+
+2.3 Metode Sugeno Penalaran dengan metode Sugeno hampir
+sama dengan penalaran Mamdani, hanya saja output (konsekuen) sistem tidak berupa himpunan fuzzy, melainkan berupa konstanta atau persamaan linear. Michio Sugeno mengusulkan penggunaan singleton sebagai fungsi keanggotaan dari konsekuen.
+Pakar Penentuan Stadium Pada Penyakit 23
+
+Pelita Informatika Budi Darma, Volume : ViI, Nomor: 3, Agustus 2014
+
+ISSN : 2301-9425
+
+Singleton adalah sebuah himpunan fuzzy dengan fungsi keanggotaan yang pada titik tertentu mempunyai sebuah nilai dan 0 di luar titik tersebut. Ada 2 model fuzzy metode Sugeno yaitu sebagai berikut: 1 Model Fuzzy Sugeno Orde-Nol
+Secara umum bentuk model fuzzy Sugeno Orde Nol adalah:
+IF (x1 is A1) o (x2 is A2) o (x3 is A3) o... o (xN is AN) THEN z=k
+dengan Ai adalah himpunan fuzzy ke-I sebagai antesenden, dan k adalah suatu konstanta sebagai konsekuen. 2 Model Fuzzy Sugeno Orde-Satu Secara umum bentuk model fuzzy Sugeno OrdeSatu adalah:
+IF (x1 is A1) o... o (xN is AN) THEN z = p1*x1+... + pN*xN+q
+dengan Ai adalah himpunan fuzzy ke-i sebagai antesenden, dan pi adalah suatu konstanta ke-i dan q juga merupakan konstanta dalam konsekuen. Berdasarkan model fuzzy tersebut, ada tahapantahapan yang harus dilakukan dalam implementasi metode Sugeno yaitu sebagai berikut: a. Pembentukan himpunan Fuzzy
+Pada tahapan ini variabel input dari sistem fuzzy ditransfer ke dalam himpunan fuzzy untuk dapat digunakan dalam perhitungan nilai kebenaran dari premis pada setiap aturan dalam basis pengetahuan. Dengan demikian tahap ini mengambil nilai-nilai tegas dan menentukan derajat di mana nilai-nilai tersebut menjadi anggota dari setiap himpunan fuzzy yang sesuai.
+Aplikasi fungsi implikasi b. Tiap-tiap aturan (proposisi) pada basis
+pengetahuan fuzzy akan berhubungan dengan suatu relasi fuzzy. Bentuk umum dari aturan yang digunakan dalam fungsi implikasi adalah sebagai berikut:
+IF x is A THEN y is B
+dengan x dan y adalah skalar, dan A dan B adalah himpunan fuzzy. Proposisi yang mengikuti IF disebut sebagai antesenden sedangkan proposisi yang mengikuti THEN disebut konsekuen. Proposisi ini dapat diperluas dengan menggunakan operator fuzzy seperti,
+IF(x1 is A1) o (x2 is A2) o (x3 is A3) o...o (xN is AN) THEN y is B
+Implementasi Metode Sugeno Pada Sistem Tuberculosis (TBC). Oleh : Muhammad Arsyad
+
+dengan o adalah operator (misal: OR atau AND). Secara umum fungsi implikasi yang dapat
+digunakan yaitu sebagai berikut: 1. Min (minimum)
+Fungsi ini akan memotong output himpunan fuzzy. 2. Dot (product) Fungsi ini akan menskala output himpunan fuzzy. Pada metode Sugeno ini , fungsi implikasi yang digunakan adalah fungsi min. 3. Defuzzifikasi ( Defuzzification ) Input dari proses defuzzifikasi adalah himpunan fuzzy yang dihasilkan dari proses komposisi dan output adalah sebuah nilai. Untuk aturan IFTHEN fuzzy dalam persamaan RU(k) = IF x1 is A1k and... and xn is Ank THEN y is Bk, dimana A1k dan Bk berturut-turut adalah himpunan fuzzy
+dalam Ui R (U dan V adalah domain fisik), i =
+1, 2, ... , n dan x = (x1, x2, ... , xn) U dan y V
+berturut-turut adalah variabel input dan output ( linguistik) dari sistem fuzzy (Li, 2006).
+Defuzzifier pada persamaan di atas didefenisikan sebagai suatu pemetaan dari himpunan fuzzy Bk dalam V R (yang merupakan output dari
+inferensi fuzzy) ke titik tegas y* V (Arhami,
+2005). Pada metode Sugeno defuzzification dilakukan dengan perhitungan Weight Average (WA) :
+
+1z1 + 2z2 + 3 z3 +... + nzn
+
+WA=
+
+1 + 2 + 3 +... + n
+
+Keterangan WA = Nilai rata-rata n = nilai predikat aturan ke-n zn = indeks nilai output (konstanta) ke-n
+
+3. Pembahasan Analisa adalah penguraian dari suatu sistem
+yang utuh ke dalam bagian-bagian komponennya dengan maksud untuk mengidentifikasikann dan mengevaluasi permasalahan, kesempatan, hambatan yang terjadi dan kebutuhan yang diharapkan sehingga dapat diusulkan perbaikan. Sistem pakar untuk mendiagnosa penyakit tuberculosis. ini merupakan sistem dengan basis pengetahuan yang dinamis. Dimana pengetahuan tersebut dapat berubah seiring berjalannya waktu sehingga harus dapat dilakukan pembaharuan, penghapusan maupun perubahan terhadap data yang sudah disimpan sebelumnya tanpa harus mengubah isi dari program secara keseluruhan.
+Perubahan hanya dilakukan pada bagian basis pengetahuan saja sehingga sistem pakar ini dapat dikembangkan lebih lanjut. Tahapan analisa terhadap suatu sistem dilakukan sebelum tahap perancangan, hal ini agar perangkat lunak yang dirancang sesuai dengan masalah yang akan
+Pakar Penentuan Stadium Pada Penyakit 24
+
+Pelita Informatika Budi Darma, Volume : ViI, Nomor: 3, Agustus 2014
+
+ISSN : 2301-9425
+
+diselesaikan.Untuk dapat melakukan diagnosa dengan menggunakan sistem ini, datagejala dan hasil-hasil tes harus sudah tersedia. Diagnosa dan data-data pasien yang terdapat di dalam basis pengetahuan dapat memberikan keputusan penyakit yang diderita pasien. Hasil diagnosa memungkinkan untuk diklasifikasikan oleh sistem ke dalam tingkatan stadium penyakit tuberculosis. Analisis sistem diperlukan untuk mengetahui permasalahan serta kebutuhan yang diperlukan dalam pembangunan sistem. Analisis sistem terdiri dari dua bagian yaitu analisis data sistem dan analisis komponen sistem yang diperlukan. Untuk mendapatkan data yang akurat dalam menentukan rule/gejala tuberculosis maka perlu dilakukan pemeriksaan laboratorium. Dalam skripsi ini untuk penegakan diagnosa penentuan stadium penyakit tuberculosis. Pemeriksaan laboratorium yang dilakukan untuk menentukan penyakit tuberculosis adalah sebagai berikut : 1. Laju Endapan Darah (LED)
+Laju Endapan Darah sering meningkat pada proses aktif, tetapi laju endapan darah normal tidak akan mengesampingkan proses tuberculosis aktif. 2. Leukosit dan limfosit Leukosit pada penderita TB Paru sering meningkat dan limfosit menurun 3. Test Sputum (dahak) Dahak merupakan material yang paling penting dan harus diperiksa karena hasil pemeriksaan mikroskopis dahak dapat membantu menegakkan diagnosis, malah ada dahak yang patomogenesis. Pemeriksaan mikroskopis dahak dapat membantu menemukan etiologi. Khusus pada tuberculosis paru, dahak yang mengandung basil tahan asam merupakan satu-satunya penegakan diagnosis yang dipakai dalam program pemberantasan penyakit tuberculosis. gejala penyakit tuberculosis dalam perancangan sistem pakar penentuan stadium penyakit tuberculosis di tentukan variabel-variabel yang digunakan dalam penentuan tingkat stadium penyakit tuberculosis. Kemudian akan ditentukan dan dihitung derajat keanggotaan dari tiap-tiap variable gejala-gejala penyakit tuberculosis, serta menghitung predikat aturan, kemudian melakukan proses deffuzzfikasi untuk menentukan tingkat stadium penyakit tuberculosis. Selanjutnya di tambahkan basis pengetahuan ke dalam sistem pakar yang akan dibangun nantinya. Basis Pengetahuan adalah Sekumpulan pengetahuan yang dihubungkan dalam suatu masalah yang berisi aturan-aturan yang berguna untuk penarikan suatu kesimpulan. Basis pengetahuan meliputi basis data dan aturan dasar yang mendefenisikan himpunan fuzzy atas sinyal input dan output yang digunakan.
+Implementasi Metode Sugeno Pada Sistem Tuberculosis (TBC). Oleh : Muhammad Arsyad
+
+Pengklasifikasian attribut lingusitik variable yang dibuat, berdasarkan konsultasi dengan pakar. Contoh : Pada variable Batuk (BT), nilai normal yang dimiliki adalah 7-21 hari. demikian variable ini bisa dibagi menjadi 4 kelompok atau atrribut linguistik yaitu Sebentar, Sedang, Lama, dan Sangat Lama. Himpunan fuzzy rendah akan memiliki domain [ 6, 10] dengan derajat keanggotaan rendah tertinggi (=1) terletak pada nilai ke 6. Apabila batuk semakin kurang dari 6 hari maka kondisi semakin mendekati sangat sebentar, dan keluar dari semesta pembicaraan data penelitian. Namun apabila batuk semakin melebihi 6 hari, maka kondisi batuk akan semakin mendekati sedang. Himpunan fuzzy rendah direpresentasikan dengan fungsi keanggotaan segitiga dengan derajat keanggotaan semakin tinggi apabila batuk semakin mendekati 6 hari. Fungsi keanggotaan rendah seperti terlihat pada persamaan berikut ini :
+µsebentar Himpunan fuzzy sedang akan memiliki domain [6,18], dengan derajat keanggotaan sedang tertinggi (=1), terletak pada nilai 13. Apabila batuk semakin kurang dari 14 dan mendekati 6 maka kondisi batu semakin sebentar , sehingga derajat keanggotaannya pada himpunan sedang akan semakin berkurang sedangkan derajat keanggotaannya pada himpunan sebentar akan semakin bertambah. Namun apabila batuk semakin mendekati tinggi . himpunan fuzzy sedang direpresentasikan dengan fungsi keanggotaan fuzzy segitiga dengan derajat keanggotaan semakin tinggi apabila batuk semakin mendekati 14. Fungsi keanggotaan untuk himpunan sedang seperti terlihat pada persamaan berikut ini :
+
+µsedang
+
+.
+
+Himpunan fuzzy lama akan memiliki domain [13,26], dengan derajat keanggotaan lama tertinggi (=1) terletak pada nilai 22, apabila batuk semakin kurang dari 22 dan mendekati 15, maka kondisi batuk sudah menjadi sedang, sehingga derajat keanggotaannya pada himpunan lama akan semakin berkurang sedangkan derajat keanggotaan nya pada himpunan sedang akan bertambah. Namun apabila batuk makin melebihi 22 maka kondisi sudah semakin mendekati lama. Himpunan fuzzy lama direpresentasikan dengan fungsi keanggotaan
+
+Pakar Penentuan Stadium Pada Penyakit 25
+
+Pelita Informatika Budi Darma, Volume : ViI, Nomor: 3, Agustus 2014
+
+ISSN : 2301-9425
+
+segitiga dengan derajat keanggotaan semakin lama apabila mendekati 26 hari. Fungsi keanggotaan untuk himpunan lama seperti terlihat pada persamaan dibawah ini.
+µlama
+Himpunan fuzzy sangat lama akan memiliki domain [22,26], dengan derajat keanggotaan sangat lama tertinggi (=1) terletak pada nilai 25. Apabila batuk semakin berkurang dari 26 hari dan mendekati 22 hari, maka kondisi batuk menjadi lama, sehingga derajat keanggotaannya pada himpunan sangat lama akan semakin berkurang sedangkan derajat keanggotaannya pada himpunan lama akan semakin bertambah. Namun apabila batuk makin melebihi 26 hari, maka kondisi batuk sudah semakin melebihi sangat lama dan keluar dari pembicaraan data penelitian. Himpunan fuzzy sangat lama direpresentasikan dengan fungsi keanggotaan segitiga dengan derajat keanggotaan semakin lama apabila batuk semakin mendekati 26 hari. Fungsi keanggotaan himpunan sangat lama seerti terlihat pada persamaan berikut ini :
+µsangat lama 1. Menentukan predikat aturan . Variable-variabel
+yang telah dimasukkan kedalam himpunan fuzzy, dibentuk menjadi aturan-aturan yang diperoleh dengan mengkombinasikan setiap variable dengan variable yang lain dengan attribut linguistik masing-masing. Aturan- aturan yang telah diperoleh akan dihitung nilai predikatnya dengan proses implikasi. Proses implikasi yang digunakan dalam metode sugeno adalah operasi Min, dimana nilai minimum dari derajat keanggotaan veriabel yang satu dengan yang lainnya yang telah dikombinsaikan yang akan di ambil. 2. Defuzzifikasi. Nilai defuzzifikasi dapat
+ditentukan dengan menghitung semua aturan yang telah dilakukan. Defuzzifikasi diperoleh dengan perhitungan Weight Avarage
+1z1 + 2z2 + 3 z3 +... + nzn WA = ---------------------------------------------
+1 + 2 + 3 +... + n 3. Hasil Analisis
+Hasil analisis adalah berupa keputusan yang diperoleh dengan mencari nilai kedekatan antara
+
+hasil defuzzifikasi dengan index output. Hasil
+analisis ini yang akan jadi penentu stadium penyakit Tuberculosis pada pasien.
+
+4. Kesimpulan Dan Saran 4.1 Kesimpulan
+Setelah melakukan implementasi dan pengujian Implementasi Metode Sugeno untuk Penentuan Stadium Penyakit Tuberkulosis (TB Paru), maka dapat ditarik kesimpulan sebagai berikut : 1. Dengan menggunakan Metode Sugeno
+didapatkan satu keputusan Diagnosis Penentuan Stadium Penyakit TB Paru dengan mempertimbangkan variable yang ada 2. Nilai defuzzifikasi yang dihasilkan merupakan sebagai kategori yang ditampilkan dalam bentuk persentasi hasil diagnosa stadium penyakit tuberkulosis.
+
+4.2 Saran Penulis menyarankan pengembangan
+penelitian lebih lanjut pada sistem pakar untuk diagnosis stadium penyakit tuberkulosis sebagai berikut : 1. Sistem Pakar Diagnosis Stadium Penyakit
+Tuberkulosis ini dapat dikembangkan lagi dengan metode metode matematika lain. 2. Untuk penelitian selanjutnya diharapkan metode Sugeno dapat dibandingkan dan dianalisis kinerjanya dengan metode lain pada data penelitian yang sama. 3. Sistem Pakar ini dapat dikembangkan lagi menjadi sebuah Sistem Rekomendasi untuk Penyakit TB Paru dan Sistem Penentuan Diagnosis Stadium untuk Penyakit TB Paru. 4. Variable yang digunakan masih bisa ditambah lagi seperti, batuk darah, nyeri dada, dan pemeriksaan anamnesis lainnya
+
+Daftar Pustaka
+
+[1] Kusumadewi, Sri dan Purnomo, Hari. 2004.
+
+Aplikasi Logika Fuzzy untuk Pendukung Keputusan. Penerbit Graha Ilmu. Yogyakarta
+
+[2] Arhami, Muhammad. 2005. Konsep Dasar
+
+Sistem Pakar. Penerbit Andi. Yogyakarta.
+
+[3] Iswari, 2005. Alat Bantu Sistem Inferensi Fuzzy
+
+Metode Sugeno Orde Satu. Seminar Nasional
+
+Aplikasi Teknologi Informasi. Yogyakarta
+
+[4] Perhimpunan Dokter Paru Indonesia. 2002.
+
+Pedoman Diagnosis dan Penatalaksanaan Di
+
+Indonesia. Jakarta.
+
+[5] Alsagaff, Hood dan Mukti, Abdul. 2010. Dasar-
+
+Dasar Ilmu Penyakit Paru. Airlangga
+
+University
+
+Press.
+
+Surabaya.
+
+Implementasi Metode Sugeno Pada Sistem Tuberculosis (TBC). Oleh : Muhammad Arsyad
+
+Pakar Penentuan Stadium Pada Penyakit 26
+
+Pelita Informatika Budi Darma, Volume : ViI, Nomor: 3, Agustus 2014
+
+ISSN : 2301-9425
+
+Implementasi Metode Sugeno Pada Sistem Tuberculosis (TBC). Oleh : Muhammad Arsyad
+
+Pakar Penentuan Stadium Pada Penyakit 27
+
+

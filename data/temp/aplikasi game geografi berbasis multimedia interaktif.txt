@@ -1,0 +1,1623 @@
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+APLIKASI GAME GEOGRAFI BERBASIS MULTIMEDIA INTERAKTIF (STUDI KASUS SISWA KELAS IX SMPN 1 RAO)
+Dony Novaliendry1
+ABSTRACT
+Application design is intended as a breakthrough in the form of instructional media. Instructional media designed using interactive multimedia-based educational game, where the interest of the students to learn not only from the multimedia course, but also interact by playing educational games designed. In this research, a Geography application designed based on subjects related to the earth's surface or the learning process of the regionalization study geography of an area of the earth in the form of knowledge and state maps. The game meant that more students can improve their creativity and introduce about computer technology.
+Keywords : Game, Geography, Multimedia.
+INTISARI
+Desain aplikasi ini dimaksudkan sebagai sebuah terobosan dalam bentuk media pembelajaran. Media pembelajaran dirancang dengan menggunakan game edukasi berbasis multimedia interaktif, di mana minat siswa untuk belajar tidak hanya dari kursus multimedia, tetapi juga berinteraksi dengan bermain game pendidikan yang dirancang. Dalam penelitian ini, sebuah aplikasi Geografi dirancang berdasarkan pelajaran yang terkait dengan permukaan bumi atau proses pembelajaran dari studi geografi regionalisasi daerah bumi dalam bentuk peta pengetahuan dan negara. Permainan berarti bahwa lebih banyak siswa dapat meningkatkan kreativitas mereka dan memperkenalkan tentang teknologi komputer.
+Kata Kunci: Game, Geografi, Multimedia.
+
+1 Dosen Jurusan Elektronika Fakultas Teknik Universitas Negeri Padang
+106
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+PENDAHULUAN
+
+Perkembangan
+
+teknologi
+
+informasi banyak mempengaruhi
+
+fungsi dan penggunaan multimedia.
+
+Fungsi multimedia dilibatkan untuk
+
+banyak bidang kegiatan, tidak hanya
+
+dunia hiburan tetapi juga bidang
+
+iklan, permainan komputer, bisnis,
+
+penerbitan elektronik, komunikasi
+
+hingga proses belajar mengajar.
+
+Salah satu elemen penting dari
+
+multimedia
+
+dalam
+
+bidang
+
+pembelajaran adalah animasi.
+
+Dalam upaya meningkatkan
+
+efisiensi penyediaan aplikasi yang
+
+mengandung unsur pendidikan,
+
+diperlukan
+
+berbagai macam
+
+alternatif dan inovasi baru sebagai
+
+media untuk mempermudah proses
+
+pembelajaran. Saat sekarang ada
+
+bermacam media pembelajaran
+
+interaktif yang digunakan untuk
+
+menunjang proses pembelajaran
+
+misalnya CD tutorial pembelajaran,
+
+game edukasi dan masíh banyak
+
+lagi. Game edukasi adalah
+
+permainan
+
+yang
+
+disertai
+
+pembelajaran dan merupakan media
+
+pembelajaran terbaru yang
+
+diharapkan dapat meningkatkan
+
+pemahaman dengan cepat karena
+
+didukung permainan yang menarik
+
+dan membuat siswa menjadi aktif.
+
+Dalam
+
+pemanfaatannya
+
+media pembelajaran game edukasi
+
+sangat penting untuk menunjang
+
+pembelajaran terhadap siswa,
+
+terutama yang berhubungan pada
+
+mata pelajaran hafalan yaitu
+
+geografi. Selama ini media
+
+pembelajaran yang digunakan
+
+bersifat monoton dan guru mengajar
+
+menggunakan metode konvensional,
+
+sehingga proses pembelajaran yang
+
+tidak efektif ini dapat ditanggulangi
+
+dengan menggunakan media
+
+pembelajaran interaktif.
+
+Game edukasi ini digunakan
+
+sebagai salah satu media
+
+pembelajaran yang memiliki pola
+
+pembelajaran learning by doing.
+
+Pola pembelajaran yang dilakukan
+
+dapat melalui tantangan-tantangan
+
+yang ada dalam permainan game
+
+ataupun faktor kegagalan yang
+
+dialami
+
+pemain,
+
+sehingga
+
+mendorong pemain untuk tidak
+
+mengulangi kegagalan dalam tahap
+
+berikutnya. Berdasarkan pola yang
+
+dimiliki oleh game tersebut, pemain
+
+dituntut untuk belajar sehingga dapat
+
+menyelesaikan permasalahan yang
+
+ada. Status game, instruksi, dan
+
+tools yang disediakan oleh game
+
+akan membimbing pemain secara
+
+aktif untuk menggali informasi
+
+sehingga dapat memperkaya
+
+pengetahuan dan strategi saat
+
+bermain.
+
+PENGEMBANGAN PEMECAHAN MASALAH Media Pembelajaran
+Media adalah perantara atau pengantar pesan dari pengirim ke penerima pesan. Apabila media tersebut digunakan untuk membawa pesan-pesan yang bertujuan instruksional atau mengandung maksud pengajaran maka media itu disebut Media Pembelajaran. Pembelajaran merupakan proses interaksi guru dengan siswa, baik interaksi secara langsung seperti kegiatan tatap muka maupun secara tidak langsung, yaitu dengan menggunakan berbagai media pembelajaran.
+Menurut Rusman (2012: 173), media pembelajaran dapat diklasifikasikan berdasarkan sifat, jangkauan dan teknik pemakaiannya. 1. Dari sifatnya, media dapat dibagi
+ke dalam: a. Media auditif, yaitu media
+yang hanya dapat didengar saja atau media yang mempunyai unsur suara. b. Media visual, yaitu media yang hanya dapat dilihat saja, tidak mengandung unsur suara.
+
+107
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+c. Media audiovisual, yaitu jenis
+
+media
+
+yang
+
+selain
+
+mengandung unsur suara
+
+juga mengandung unsur
+
+gambar yang dapat dilihat.
+
+2. Dari kemampuan jangkauannya,
+
+media dapat dibagi ke dalam:
+
+a. Media yang memiliki daya
+
+liput yang luas dan serentak
+
+b. Media yang mempunyai daya
+
+liput yang tidak terbatas
+
+ruang dan waktu
+
+3. Dari teknik pemakaiannya,
+
+media dapat dibagi ke dalam:
+
+a. Media yang diproyeksikan
+
+b. Media
+
+yang
+
+tidak
+
+diproyeksikan
+
+Salah satu ciri media
+
+pengajaran yaitu harus mengandung
+
+dan membawa pesan atau informasi
+
+kepada penerima yaitu siswa.
+
+Sebagian media dapat mengolah
+
+pesan dan respon siswa sehingga
+
+media tersebut dinamakan media
+
+interaktif. Komputer merupakan jenis
+
+media yang secara virtual dapat
+
+menyediakan respon yang segera
+
+terhadap hasil belajar siswa,
+
+sehingga proses belajar mengajar
+
+lebih efektif.
+
+Azhar
+
+(2011:
+
+26)
+
+menyatakan fungsi dari media
+
+pembelajaran dalam proses belajar
+
+mengajar sebagai berikut:
+
+1. Media pembelajaran dapat
+
+memperjelas penyajian pesan
+
+dan informasi.
+
+2. Media pembelajaran dapat
+
+meningkatkan
+
+dan
+
+mengarahkan perhatian anak
+
+sehingga
+
+menimbulkan
+
+motivasi.
+
+3. Media pembelajaran dapat
+
+mengatasi keterbatasan indera,
+
+ruang dan waktu.
+
+4. Media pembelajaran dapat
+
+memberikan
+
+kesamaan
+
+pengalaman kepada mahasiswa
+
+tentang peristiwa dilingkungan
+
+mereka.
+
+Pembelajaran Berbasis Komputer
+
+Menurut Rusman (2012:
+
+153), pembelajaran berbasis
+
+komputer merupakan program
+
+pembelajaran yang digunakan dalam
+
+proses pembelajaran dengan
+
+menggunakan software komputer
+
+(CD Pembelajaran) berupa program
+
+komputer yang berisi tentang
+
+muatan pembelajaran meliputi: judul,
+
+tujuan, materi pembelajaran, dan
+
+eveluasi pembelajaran. Hal tersebut
+
+sejalan dengan apa yang
+
+dikemukakan oleh Robert Heinick,
+
+dkk (1985: 226) yang menyatakan bahwa: "Sistem komputer dapat
+
+menyampaikan pembelajaran secara
+
+individual dan langsung kepada
+
+pada siswa dengan cara berinteraksi
+
+dengan mata pelajaran yang
+
+diprogramkan ke dalam sistem
+
+komputer, inilah yang disebut
+
+dengan pembelajaran berbasis komputer ".
+
+Penggunaan komputer dalam
+
+pembelajaran
+
+memungkinkan
+
+berlangsungnya
+
+proses
+
+pembelajaran secara individual,
+
+dengan menumbuhkan kemandirian
+
+dalam proses belajarnya sehingga
+
+siswa akan mengalami proses yang
+
+lebih bermakna dibanding dengan
+
+pembelajaran konvensional. Menurut
+
+Azhar (2011: 54-55), manfaat
+
+komputer untuk tujuan pendidikan
+
+yaitu:
+
+1. Komputer dapat mengakomodasi
+
+siswa yang lamban menerima
+
+pelajaran, karena ia dapat
+
+memberikan iklim yang lebih
+
+bersifat afektif dengan cara yang
+
+individual, tidak pernah lupa,
+
+tidak pernah bosan, sangat
+
+sabar dalam menjalankan
+
+instruksi seperti yang diingikan
+
+program yang dijalankan.
+
+2. Komputer dapat mendorong
+
+siswa untuk mengerjakan
+
+latihan, melakukan kegiatan
+
+laboratorium atau simulasi
+
+karena tersedianya animasi
+
+grafik, warna dan musik yang
+
+dapat menambah realisme.
+
+108
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+3. Kendali berada di tangan siswa sehingga tingkat kecepatan belajar siswa dapat disesuaikan dengan tingkat penguasaannya. Dengan kata lain komputer dapat berinteraksi dengan siswa secara perorangan misalnya dengan bertanya dan menilai jawaban.
+4. Kemampuan merekam aktivitas siswa selam menggunakan suatu program pembelajaran memberi kesempatan lebih baik untuk pembelajaran secara perorangan dan perkembangan setiap siswa selalu dapat dipantau.
+5. Dapat berhubungan dan mengendalikan peralatan lain seperti compact disc, video tape, dan lain-lain dengan program pengendali dari komputer. Pembelajaran Berbantuan
+Komputer diambil dari istilah Computer Aided Instruction (CAI), istilah CAI menunjuk pada semua software pendidikan yang diakses melalui komputer dimana anak didik dapat berinteraksi dengannya. Ada juga istilah-istilah lain, istilah-istilah itu antara lain Computer Based Instruction (CBI), Computer Assisted Learning (CAL), dan Computer Based Education (CBE).
+Menurut Azhar (2011: 158), dilihat dari situasi belajar dimana komputer digunakan untuk tujuan menyajikan isi pelajaran Tipe pembelajaran sesuai dengan kajian teori dalam Computer Based Instruction (CBI) adalah: 1. Tipe pembelajaran tutorial
+(sistem tutor yang dilukukan guru) Informasi atau pesan berupa suatu konsep disajikan dilayar komputer dengan teks, gambar atau grafik. 2. Tipe pembelajaran simulasi Mencoba untuk menyamai proses dinamis yang terjadi di dunia nyata, misalnya siswa menggunakan komputer untuk
+
+mensimulasikan penerbangan
+
+pesawat terbang, memanipulasi
+
+pengendalian pembangkait listrik
+
+tenaga nuklir dan lain
+
+sebagainya.
+
+3. Tipe pembelajaran permainan
+
+atau game
+
+Program permainan yang
+
+dirancang dengan baik dapat
+
+memotivasi
+
+siswa
+
+dan
+
+meningkatkan pengetahuan dan
+
+keterampilannya.
+
+4. Tipe pembelajaran latihan atau
+
+drill
+
+Komputer
+
+menyiapkan
+
+serangkaian soal atau
+
+pertanyaan yang serupa dengan
+
+yang biasa ditemukan dalam
+
+buku atau lembaran kerja.
+
+Kelabihan
+
+pembelajaran
+
+berbantuan komputer menurut
+
+Heinick dkk (1986) yang dikutip
+
+dalam Munir (2009: 90-91) adalah:
+
+1. Siswa belajar sesuai dengan
+
+kemampuan dan kecepatannya
+
+dalam memahami pengetahuan
+
+dan informasi.
+
+2. Siswa dapat melakukan kontrol
+
+terhadap aktivitas belajarnya.
+
+3. Siswa mementukan kecapatan
+
+belajar dan memilih urutan
+
+kegiatan sesuai dengan
+
+kebutuhan.
+
+4. Membantu siswa yang memiliki
+
+kecapatan belajar lambat (slow
+
+learner) agar belajar efektif
+
+karena kemampaun komputer
+
+untuk menanyangkan kembali
+
+informasi yang diperlukan.
+
+5. Memacu efektivitas belajar bagi
+
+siswa yang lebih cepat (fast
+
+learner).
+
+6. Memberi umpan balik terhadap
+
+hasil belajar
+
+7. Member
+
+penguatan
+
+(reinforcement)
+
+terhadap
+
+prestasi belajar siswa.
+
+8. Memeriksa dan member hasil
+
+belajar secara otomatis karena
+
+kemampuan komputer untuk
+
+merekam
+
+hasil
+
+belajar
+
+pemakainya (record keeping).
+
+109
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+9. Memberi kesempatan kepada
+
+siswa untuk melakukan kegiatan
+
+pembelajaran yang bersifat
+
+individual (individual learning).
+
+10. Menarik perhatian karena
+
+mampu
+
+mengintegrasikan
+
+komponen warna, musik dan
+
+animasi
+
+grafik
+
+(graphic
+
+animation)
+
+11. Mampu
+
+menyampaikan
+
+informasi dan pengetahuan yang
+
+nyata, sehingga dapat dilakukan
+
+kegiatan belajar yang bersifat
+
+simulasi.
+
+12. Mampu menanyangkan kembali
+
+hasil belajar yang telah dicapai
+
+sebelumnya karena kapasitas
+
+memori yang dimiliki oleh
+
+komputer, sehingga dijadikan
+
+dasar pertimbangan untuk
+
+melakukan kegiatan belajar
+
+selanjutnya.
+
+13. Meningkatkan hasil belajar
+
+dengan penggunaan waktu dan
+
+biaya yang relative kecil.
+
+Multimedia
+
+Azhar
+
+(2011:
+
+170)
+
+mengemukakan "meskipun definisi
+
+multimedia masih belum jelas,
+
+secara sederhana diartikan sebagai
+
+lebih dari satu media. Multimedia
+
+bisa berupa kombinasi antara teks,
+
+grafik, animasi, suara dan gambar.
+
+Namun pada bagian ini perpaduan
+
+dan kombinasi dua atau lebih jenis
+
+media ditekankan kepada kendali
+
+komputer sebagai penggerak keseluruhan gabungan media ini".
+
+Dengan demikian arti multimedia
+
+yang umumnya dikenal dewasa ini
+
+adalah berbagai macam kombinasi
+
+grafik, teks, suara, video, dan
+
+animasi. Penggabungan ini
+
+merupakan suatu kesatuan yang
+
+secara bersama-sama menampilkan
+
+informasi, pesan atau isi pelajaran.
+
+Munir menyatakan
+
+(2009:
+
+213)
+
+bahwa
+
+"istilah
+
+multimedia sekarang ini digunakan
+
+untuk memberi gambaran terhadap
+
+suatu sistem yang menggunakan
+
+komputer dimana semua media
+
+seperti teks, grafik, suara, animasi
+
+dan video berada dalam satu software komputer".
+
+Dari pendapat beberapa ahli
+
+tersebut dapat disimpulkan
+
+multimedia adalah pemanfaatan
+
+komputer untuk membuat dan
+
+menggabungkan teks, grafik, audio,
+
+video dan animasi, dimana hasil
+
+penggabungan unsur-unsur tersebut
+
+akan menampilkan informasi yang
+
+lebih interaktif.
+
+Suatu media interaktif yang
+
+dikembangkan harus memenuhi
+
+beberapa kriteria. Thorn (dalam
+
+Munir 2009: 219-220) mengajukan
+
+enam kriteria multimedia untuk
+
+menilai multimedia interaktif, yaitu:
+
+1. Kriteria penilaian pertama adalah
+
+kemudahan navigasi. Sebuah
+
+CD interaktif harus dirancang
+
+sesederhana mungkin sehingga
+
+pelajar dapat mempelajarinya
+
+tanpa harus dengan kemampuan
+
+yang kompleks tentang media .
+
+2. Kriteria kedua adalah kandungan
+
+kognisi. Dalam arti adanya
+
+kandungan pengetahuan yang
+
+jelas.
+
+3. Kriteria ketiga adalah presentasi
+
+informasi, yang digunakan untuk
+
+menilai isi dan program CD
+
+interaktif itu sendiri
+
+4. Kriteria keempat adalah integrasi
+
+media, dimana media harus
+
+mengintegrasikan
+
+aspek
+
+pengetahuan dan keterampilan.
+
+5. Kriteria kelima adalah artistik dan
+
+estetika. Untuk menarik minat
+
+belajar, maka program harus
+
+mempunyai tampilan yang
+
+menerik dan estetia yang baik.
+
+6. Kriteria penilaian yang terakhir
+
+adalah
+
+fungsi
+
+secara
+
+keseluruhan, dengan kata lain
+
+program yang dikembangkan
+
+harus memberikan pembelajaran
+
+yang diinginkan oleh peserta
+
+belajar.
+
+Menurut Munir (2009: 214)
+
+multimedia mempunyai beberapa
+
+kelebihan yang tidak dimiliki oleh
+
+110
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+media lain. Diantara kelebihan itu
+
+adalah:
+
+1. Multimedia menyediakan proses
+
+interaktif dan memberikan
+
+kemudahan umpan balik.
+
+2. Multimedia memberikan kepada
+
+pembelajar dalam mementukan
+
+topik proses belajar
+
+3. Multimedia
+
+memberikan
+
+kemudahan kontrol yang
+
+sistematis dalam proses belajar.
+
+Game Menurut Retno (2011: 1)
+"Game berasal dari kata bahasa Inggris yang memiliki arti dasar permainan. Permainan dalam hal ini merujuk pada pengertian kelincahan intelektual (intellectual playability)". Game juga bisa diartikan sebagai arena keputusan dan aksi pemainnya, ada targettarget yang ingin dicapai pemainnya. Kelincahan intelektual pada tingkat tertentu merupakan ukuran sejauh mana game itu menarik untuk dimainkan secara maksimal. Game juga secara nyata mempertajam daya analisis para penggunanya untuk mengolah informasi dan mengambil keputusan cepat yang jitu.
+
+Platform Game
+
+Platform game merupakan
+
+game yang akan dikembangkan
+
+untuk dijalankan. Game secara
+
+umum banyak dimuat di
+
+beberapa platform (Wiwik, 2009:
+
+1)
+
+a. Disk Operating System
+
+(DOS)
+
+Masa
+
+keemasan
+
+platform ini sudah selesai.
+
+Namun kini sudah tidak
+
+dikembangkan lagi karena
+
+perpindahan sistem operasi
+
+yang beralih ke windows atau
+
+konsol yang lain. Akan
+
+tetapai masih banyak lagi
+
+resource di internet yang
+
+masih
+
+menyediakan
+
+pembahasan
+
+dan
+
+programming dengan DOS
+
+b. Windows
+
+Saat ini game yang
+
+berjalan di platform ini sangat
+
+mendominasi
+
+pasar.
+
+Memamfaatkan kemampuan
+
+windows untuk tampilan yang
+
+menarik dengan kemampuan
+
+DirectX yang disediakan
+
+Microsoft, menjadikan para
+
+pengembang
+
+game
+
+umumnya di platform ini.
+
+Tools dan software untuk
+
+membuat game sangat
+
+banyak tersedia di platform
+
+windows.
+
+c. Linux
+
+Pengembang game di
+
+platform ini masih sedikit.
+
+Tetapi kemudahan lain
+
+adalah tersedianya berbagai
+
+aplikasi yang gratis, sehingga
+
+walaupun
+
+komunitasnya
+
+sedikit, namun bisa membuat
+
+berbagai game yang tidak
+
+kalah dari platform windows.
+
+d. Macintosh
+
+Mac atau Macintosh
+
+merupakan sistem operasi
+
+yang dikeluarkan Apple yang
+
+stabil dan fitur yang sangat
+
+baik. Dari awal macintosh
+
+tidak terlalu banyak
+
+bersinggungan dengan dunia
+
+game, walaupun salah satu
+
+kelebihan platform ini adalah
+
+fitur grafik dan suara yang
+
+sangat baik dibandingkan
+
+windows.
+
+e. Console
+
+Persaingan platform
+
+windows adalah mesin
+
+konsol, seperti Playstation
+
+dan Xbox pada masa kini.
+
+Pemrograman di mesin
+
+konsol hampir sama dengan
+
+platform windows, namun
+
+terdapat tingkat kesulitan
+
+dalam
+
+mengembangkan
+
+game di platform ini. Secara
+
+individu, peralatan dan lisensi
+
+yang ada pada studio
+
+111
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+pengembang
+
+harganya
+
+sangat mahal karena demi
+
+menjaga mutu dan hak
+
+ciptanya.
+
+f. Mobile atau Handphone
+
+Mulai banyak mobile
+
+game yang akan dibuat dan
+
+dirancang khusus di platform
+
+ini. Bahkan sudah menjadi
+
+pesaing untuk beberapa jenis
+
+game seperti game online.
+
+Walaupun tidak sehebat
+
+game komputer atau konsol,
+
+tetapi dengan kemudahan
+
+dan jumlah peralatan yang
+
+banyak digunakan untuk alat
+
+komunikasi akan membuat
+
+platform ini menjadi pilihan
+
+sebagian
+
+pengembang.
+
+Umumnya menggunakan
+
+bahasa pemrograman java.
+
+Jadi dalam pembuatan game
+
+edukasi disini platform yang
+
+digunakan adalah jenis windows
+
+karena aplikasi game edukasi ini
+
+dibuat dalam sistem operasi
+
+windows 7.
+
+Game Edukasi
+
+Penerapan game edukasi
+
+bermula dari perkembangan video
+
+game yang sangat pesat dan
+
+menjadikannya sebagai media
+
+efektif yang interaktif dan banyak
+
+dikembangkan di perindustrian.
+
+Melihat kepopuleran game tersebut,
+
+para pendidik berpikir bahwa mereka
+
+mempunyai kesempatan yang baik
+
+untuk menggunakan komponen
+
+rancangan
+
+game
+
+dan
+
+menerapkannya pada kurikulum
+
+dengan penggunaan media
+
+pembelajaran berbasis game.
+
+Game edukasi adalah
+
+permainan yang telah dirancang
+
+khusus untuk mengajarkan siswa
+
+(user) suatu pembelajaran tertentu,
+
+pengembangan konsep dan
+
+pemahaman dan membimbing
+
+mereka dalam melatih kemampuan
+
+mereka, serta memotivasi mereka
+
+untuk memainkannya
+
+Menurut Hurd dan Jenuings
+
+(dalam Khairunnisa: 12-13),
+
+perancangan game edukasi yang
+
+baik haruslah memenuhi kriteria dari
+
+game edukasi itu sendiri. Berikut ini
+
+adalah beberapa kriteria dari sebuah
+
+game edukasi, yaitu:
+
+1. Nilai Keseluruhan (Overall
+
+Value)
+
+Nilai keseluruhan dari suatu
+
+game terpusat pada desain
+
+dan panjang durasi game.
+
+Aplikasi ini dibangun dengan
+
+desain yang menarik dan
+
+interaktif.
+
+2. Dapat Digunakan (Usability)
+
+Mudah digunakan dan diakses
+
+adalah poin penting bagi
+
+pembuat game. Apliksi ini
+
+merancang sistem dengan
+
+interface yang user friendly
+
+sehingga user dengan mudah
+
+dapat mengakses aplikasi
+
+3. Keakuratan (Accuracy)
+
+Keakuratan diartikan sebagai
+
+bagaimana kesuksesan model
+
+atau gambaran sebuah game
+
+dapat dituangkan ke dalam
+
+percobaan
+
+atau
+
+perancangannya.
+
+Perancangan aplikasi ini harus
+
+sesuai dengan model game
+
+pada tahap perencanaan.
+
+4. Kesesuaian (Appropriateness)
+
+Kesesuaian dapat diartikan
+
+bagaimana isi dan desain
+
+game dapat diadaptasikan
+
+terhadap keperluan user
+
+dengan baik. Aplikasi ini
+
+menyediakan menu dan fitur
+
+yang diperlukan user untuk
+
+membantu pemahaman user
+
+dalam menggunakan aplikasi.
+
+5. Relevan (Relevance)
+
+Relevan artinya dapat
+
+mengaplikasikan isi game ke
+
+target user. Agar dapat relevan
+
+terhadap user, sistem harus
+
+membimbing mereka dalam
+
+pencapaian
+
+tujuan
+
+pembelajaran. Karena aplikasi
+
+ini ditujukan untuk siswa maka
+
+desain antarmuka harus
+
+112
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+sesuai dengan nuansa siswa,
+
+yaitu menampilkan warna-
+
+warna yang ceria.
+
+6. Objektifitas (Objectives)
+
+Objektifitas menentukan tujuan
+
+user dan kriteria dari
+
+kesuksesan atau kegagalan.
+
+Dalam aplikas ini objektivitas
+
+adalah
+
+usaha
+
+untuk
+
+mempelajari hasil dari
+
+permainan.
+
+7. Umpan Balik (Feedback)
+
+Untuk membantu pemahaman
+
+user bahwa permainan
+
+(performance) mereka sesuai
+
+dengan objek game atau tidak,
+
+feedback harus disediakan.
+
+Aplikasi ini menyajikan animasi
+
+dan efek suara yang
+
+mengindikasikan kesuksesan
+
+atau kegagalan permainan.
+
+Menurut Samuel (2010: 53),
+
+dampak positif yang dihasilkan oleh
+
+game edukasi adalah.
+
+1. Memainkan game membuat
+
+anak mengenal teknologi
+
+komputer.
+
+2. Game dapat memberikan
+
+pelajaran dalam hal mengikuti
+
+pengajaran dan aturan.
+
+3. Beberapa game menyediakan
+
+latihan untuk pemecahan
+
+masalah dan logika.
+
+4. Game menyediakan latihan
+
+penggunaan syaraf motorik
+
+dan spatial skill.
+
+5. Game menjadi sarana
+
+keakraban dan interaksi akrab
+
+antara orangtua dan anak
+
+ketika bermain bersama.
+
+6. Game mengenalkan teknologi
+
+dan berbagai fiturnya.
+
+7. Beberapa game mampu
+
+menyediakan
+
+sarana
+
+penyembuhan untuk pasien
+
+tertentu.
+
+8. Game menghibur dan
+
+menyenangkan.
+
+Konsep multimedia dengan
+
+aplikasi game edukasi memiliki
+
+hubungan yang cukup erat.
+
+Multimedia merupakan kombinasi
+
+dari teks, gambar, seni grafik, suara,
+
+animasi dan elemen-elemen video yang dimanipulasi secara digital. Sedangkan game harus memiliki desain antarmuka yang interaktif dan mengandung unsur menyenangkan. Aplikasi game edukasi dapat dibangun berdasarkan unsur-unsur multimedia tadi. Oleh karena itu, aplikasi game edukasi tidak pernah terlepas dari konsep multimedia.
+Metode perancangan aplikasi Game Edukasi
+Metode perancangan aplikasi edukasi, merupakan tahapantahapan yang dilakukan dalam membuat aplikasi game edukasi, menurut Ariesto Hadi Sutopo (dalam Fahmi: 14-16), tahapan-tahapan yang dilakukan dalam perancangan aplikasi game edukasi ini adalah sebagai berikut:
+Gambar 1. Diagram tahap-tahap pembangunan aplikasi game edukasi
+1. Consept Menentukan siapa pengguna
+animasi game edukasi (identifikasi audience). Selain itu menentukan macam aplikasi (presentasi, interaktif) dan menentukan tujuan game edukasi pembelajaran kajian geografi regional. Game edukasi pembelajaran ini dimanfaatkan untuk siswa SMP N 1 Rao Kelas IX semester II.
+
+113
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+2. Design
+
+Pada tahap ini dibuat
+
+storyboard yang menggambarkan
+
+tampilan dari tiap scene serta
+
+membuat spesifikasi secara rinci
+
+mengenai
+
+struktur
+
+aplikasi
+
+multimedia yang akan dibuat, gaya
+
+dan kebutuhan bahan (material)
+
+untuk animasi game. Pada tahapan
+
+ini mulai dipikiran semua aktifitas,
+
+informasi dan penjelasan apa saja
+
+yang akan ditampilkan dalam
+
+animasi. Dalam tahap ini digunakan
+
+alat bantu seperti penggunaan
+
+flowchart untuk menggambarkan
+
+alur kegiatan, storyboard untuk
+
+memvisualisasikan semua aktifitas
+
+animasi game edukasi, struktur
+
+menu untuk menggambarkan opsi
+
+apa saja yang ada dalam game dan
+
+tidak lupa melakukan desain
+
+interface sebagai antarmuka yang
+
+berhubungan langsung dengan
+
+pengguna.
+
+3. Material Collecting
+
+Material
+
+Collecting
+
+(pengumpulan bahan) dapat
+
+dikerjakan bersamaan dengan tahap
+
+assembly. Pada tahap ini dilakukan pengumpulan bahan materi tentang kajian geografi regional seperti materi pelajaran, foto, animasi, audio, berikut pembuatan gambar grafik, foto, audio untuk membuat sistem yang telah didesain. 4. Assembly
+Tahap assembly (pembuatan) merupakan tahap dimana objek multimedia game edukasi dibuat. Pada tahap ini akan dipergunakan software Macromedia flash CS5.5, Adobe Photoshop CS2. 5. Testing
+Setelah selesai tahap pembuatan (assembly) maka dilakukan pengujian dengan cara menjalankan sistem dan dilihat apakah ada kesalahan atau tidak. Jika ada kesalahan maka dilakukan perbaikan.
+Metode Perancangan Metode perancangan dimulai
+dari perancangan blok diagram sistem dan perancangan flowchart sistem.
+
+114
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013 1. Blok Diagram Sistem
+
+ISSN : 2086 ­ 4981
+
+Gambar 2. Blok Diagram Sistem
+
+Perancangan sistem aplikasi game edukasi seperti yang terlihat pada gambar 2, dimulai dari aplikasi game, kemudian tampilan Intro, tampilan ini merupakan layar yang ditampilkan beberapa saat sebelum
+
+tampilan menu utama dikeluarkan. Dimana pada tampilan menu utama terdapat pilihan submenu dari menu utama tersebut yaitu, standar kompetensi, game, materi, bantuan, evaluasi dan keluar.
+
+115
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013 2. Flowchart Sistem
+
+ISSN : 2086 ­ 4981
+
+Gambar 3 Flowchart Sistem
+
+Pada flowchart, terdapat 6 pilihan submenu utama yaitu standar kompetensi, game, materi, bantuan, evaluasi dan keluar.
+HASIL DAN PEMBAHASAN Rancangan Tampilan Sistem
+
+Hasil rancangan tampilan merupakan rancangan aplikasi game edukasi. Tampilan rancangan inilah yang merealisasikan terjadinya interaksi antara manusia dengan komputer, hasil rancangan tampilan dapat dijelaskan di dalam poin-poin berikut ini :
+
+a. Halaman Intro Awal
+
+b. Halaman Intro Akhir
+
+116
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+c. Halaman Menu Utama Kompetensi
+
+d. Halaman Standar
+
+e. Halaman Game Level 1
+
+f. Halaman Game Level 2
+
+g. Halaman Game Level 3
+
+h. Halaman Materi
+
+i. Halaman Bantuan
+
+j. Halaman Evaluasi
+
+Gambar 3. Rancangan Tampilan Pada Game
+
+a. Halaman Intro awal
+
+merupakan
+
+halaman
+
+yang menggambarkan
+
+proses masuk halaman
+
+Main menu.
+
+b. Halaman Intro akhir
+
+merupakan
+
+tampilan
+
+setelah Intro awal setelah
+
+tombol Turn On di klik.
+
+c. Halaman menu utama
+
+merupakan halaman awal
+
+game edukasi. menu
+
+utama ini memiliki 6
+
+tombol submenu, yaitu
+
+tombol
+
+standar
+
+kompetensi,
+
+tombol
+
+game, tombol materi,
+
+tombol bantuan, tombol
+
+evaluasi, dan tombol
+
+keluar.
+
+d. Halaman
+
+standar
+
+kompetensi yang memiliki
+
+1 tombol submenu, yaitu
+
+tombol menu utama.
+
+e. Game level 1 berupa
+
+pengenalan peta dengan
+
+permainan mencocokkan
+
+negara pada peta buta.
+
+117
+
+JURNAL TEKNOLOGI INFORMASI & PENDIDIKAN VOL. 6 NO. 2 September 2013
+
+ISSN : 2086 ­ 4981
+
+f. Game level 2 berupa
+
+penyusunan
+
+gambar
+
+yang diacak menjadi
+
+sebuah gambar peta
+
+yang sempurna.
+
+g. Game level 3 berupa
+
+pengenalan
+
+bendera
+
+dengan permainan yang
+
+mencocokkan bendera
+
+dan negara.
+
+h. Tampilan materi, terdapat
+
+6 tombol navigasi serta
+
+tombol untuk kembali ke
+
+menu utama.
+
+i. Halaman
+
+Bantuan
+
+memiliki 6 tombol
+
+submenu, yaitu tombol
+
+Standar Kompetensi,
+
+tombol game, tombol
+
+Materi, tombol bantuan,
+
+tombol evaluasi, dan
+
+tombol keluar.
+
+j. Menu evaluasi materi
+
+dengan permainan kuis
+
+menjawab pertanyaan
+
+(objektif).
+
+KESIMPULAN 1. Perancangan game edukasi ini
+dilakukan untuk menunjang media pembelajaran di sekolah dengan cara belajar simulasi melalui game edukasi. 2. Game edukasi ini dirancang dengan dengan unsur media yang terdiri dari teks, grafis, animasi, dan suara yang disajikan secara interaktif. 3. Game edukasi ini merupakan alternatif dan inovasi baru untuk mempermudah proses belajar siswa pada mata pelajaran IPS bidang kajian Geografi Regional
+
+DAFTAR PUSTAKA [1] Azhar Arsyad. 2011.
+Pembelajaran. Jakarta Raja Grafindo Persada
+
+Media : PT.
+
+[2] Hendriyono Rachman. 2009.
+
+Pengembangan
+
+Rancang
+
+Bangun Game Edukasi Logistik
+
+Untuk Penataan Kontainer di Bay Kapal, (online). http://digilib.its.ac.id/ITSUndergraduate3100010038313/9035/gameedukasi (diakses tanggal 3 September 2012, 12.015 WIB).
+
+[3] M. Fahmi Fahrudin. 2012. Animasi Pembelajaran Rotasi Bumi dan Revolusi Bumi untuk Siswa SD. Pekalongan : STMIK Widya Pratama.
+
+[4] Munir. 2009. Pembelajaran Jarak Jauh Berbasis Teknologi Informasi dan Komunikasi. Bandung : Alfabeta.
+
+[5] Retno Ayu SP. 2011. Pengertian Game, (online). http://retno-ayusp.blogspot.com/2011/03/penge rtian-game_23.html (diakses tanggal 20 September 2011, 11.00 WIB).
+
+[6] Rusman. 2012. Belajar dan
+
+Pembelajaran
+
+Berbasis
+
+Komputer, Mengembangkan
+
+Profesionalisme Guru Abad 21.
+
+Bandung : Alfabeta
+
+[7] Samuel Hendri. 2010. Cerdas Dengan Game. Jakarta : PT Gramedia Pustaka Utama.
+
+[8] Sutrisno. 2011. Pengantar Pembelajaran Inovatif Berbasis Teknologi Informasi dan Komunikasi. Jakarta : GAUNG PERSADA (GP) Press.
+
+[9] Tim Abdi Guru. 2009. Mandiri IPS GEOGRAFI. Jakarta : Erlangga.
+
+118
+
+

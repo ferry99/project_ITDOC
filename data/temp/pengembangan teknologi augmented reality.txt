@@ -1,0 +1,600 @@
+PENGEMBANGAN TEKNOLOGI AUGMENTED REALITY SEBAGAI PENUNJANG INDUSTRI MUSIK INDONESIA
+Nama : Galih Rakacita Rachman Alamat : Jl. Gajah Mada No. 5 Cimanggu Permai, Bogor
+Email : galihrakacita@yahoo.com
+Nama : Dr-Ing Farid Thalib Email : farid@staff.gunadarma.ac.id
+ABSTRAK
+Tingginya tingkat pembajakan yang terjadi di Indonesia dan berbagai masalah yang ditimbulkan akibat pembajakan membuat penulis merasa perlu adanya suatu cara untuk mengatasi tingkat pembajakan yang terjadi saat ini. Salah satu caranya adalah dengan memberikan nilai tambah pada Compact Disk (CD) asli sehingga diharapkan dapat membangkitkan keinginan masyarakat untuk membeli Compact Disk (CD) asli. Untuk menambahkan nilai pada Compact Disk (CD) asli ini penulis melakukan pengembangan pada teknologi Augmented Reality. Nilai tambah yang dimaksud oleh penulis adalah dengan ditambahkannya video klip pada sampul Compact Disk (CD) yang dapat berjalan dengan menggunakan teknologi Augmented Reality. Dilakukan survey terhadap 30 koresponden, diketahui sebanyak 66,67% masyarakat belum mengetahui teknologi Augmented Reality. Kemudian dari data survey juga didapat bahwa setelah penulis menerangkan tentang teknologi Augmented Reality, 76,67% koresponden mengatakan bahwa teknologi Augmented Reality sangat menarik dan 80% mengatakan bahwa pengembangan yang dilakukan oleh penulis sangat menarik. 66,67% koresponden menyatakan tertarik untuk membeli Compact Disk (CD) asli setelah diberikan nilai tambah pada Compact Disk (CD) asli dan 80% koresponden memilih membeli Compat Disk (CD) asli setelah diberikan nilai tambah pada Compact Disk (CD) tersebut. Tetapi sebanyak 53,33% koresponden ragu-ragu apakah cara ini dapat membantu menurunkan tingkat pembajakan. Kata kunci : pembajakan, nilai tambah, Augmented Reality, sampul CD, video klip
+PENDAHULUAN
+Perkembangan industri musik yang sangat pesat saat ini yang ditandai dengan banyaknya penyanyi atau band baru bermunculan membuat banyak pihak ingin memanfaatkan keadaan. Ada pihak-pihak yang memberi keuntungkan tetapi banyak pula yang merugikan. Yang merugikan diantaranya adalah para pembajak. Pembajak disini yaitu pelaku pembajakan (yang memproduksi secara masal kaset, CD, ataupun CD MP3 dan memdistribusikannya ke agen). "Hasil karya" mereka untuk tahun lalu dibanding dengan produk legal adalah 95,7% dan 4,3% (data ASIRI). Dan menurut data dari ASIRI (Asosiasi Rekamaman Indonesia) juga peredaran bajakan karya
+
+rekaman suara berkembang pesat dari tahun ke tahun. Bayangkan, dari tahun 1996 jumlah peredarannya adalah 23.068.225. Fluktuasi tersebut terus menuju angka 385.701.129 pada tahun 2006. dan terakhir pada tahun 2007. angka tersebut naik lagi menjadi 443.556.298 atau naik sekitar 15% dari tahun 2006). Kenaikan tersebut juga berbanding terbalik dengan peredaran produk legalnya, yaitu 23.736.355 pada tahun 2006 dan 19.398.208 tahun 2007 [1]. Banyak faktor yang menyebabkan pesatnya perkembangan industri bajakan di Indonesia, antara lain :
+1. Faktor Ekonomi :
+· Keadaan ekonomi masyarakat Indonesia yang masih dibawah rata-rata sehingga daya beli masyarakat pun rendah
+· Mahalnya harga CD/DVD original membuat masyarakat Indonesia lebih memilih CD/DVD bajakan yang harganya jauh lebih murah
+2. Faktor Hukum :
+· Aparat penegak hukum yang kurang tegas dan kurang serius dalam menindak para pelaku pembajakan
+· Peraturan dan perundangan yang masih kurang dalam mengatasi pembajakan
+3. Faktor Sosial :
+· Kurangnya kesadaran dari masyarakat Indonesia akan Hak Cipta dan Karya.
+Berbagai masalah telah ditimbulkan akibat pembajakan ini. Dalam hal ini tentu saja yang menjadi pihak yang terugikan akibat pembajakan ini adalah pencipta dari produk atau barang yang dibajak, dengan pemerintah. Dengan adanya pembajakan, tentu saja keuntungan yang semestinya didapat oleh pencipta harus dibagi dengan para pembajak. Hal ini menyebabkan kerugian yang cukup besar bagi para pencipta barang atau produk yang dibajak oleh para pembajak. Sedangkan kerugian yang ditimbulkan pembajakan terhadap pemerintah yaitu datang dari sektor pajak. Pajak merupakan salah satu pemasukan yang memberikan andil cukup besar terhadap pembangunan negara. Apabila pajaknya berkurang maka secara tidak langsung juga akan menghambat pertumbuhan negara kita. Dengan adanya pembajakan ini maka pajak negara kita otomatis berkurang, karena produk bajakan tidak ada pajaknya, berbeda dengan produk aslinya. Selain itu dengan adanya produk bajakan ini maka secara tidak langsung akan menghambat kreatifitas dari orang-orang yang ingin menciptakan barang, produk ataupun karya baru karena mereka takut kalau-kalau nanti karya yang mereka ciptakan akan dibajak.
+Melihat pembajakan yang semakin mengkhawatirkan maka pada tesis kali ini penulis ingin mencoba untuk menawarkan suatu cara atau metode yang diharapkan dapat mengurangi tingkat pembajakan yang terjadi saat ini. Salah satu caranya adalah dengan memberikan nilai tambah pada CD asli, dengan adanya nilai tambah ini diharapkan dapat membangkitkan keinginan masyarakat untuk membeli CD asli. Untuk menambahkan nilai pada CD asli ini penulis melakukan pengembangan pada teknologi Augmented reality.
+
+Teknologi AR adalah sebuah teknologi visual yang menggabungkan objek atau dunia virtual ke dalam tampilan dunia nyata secara real time [2]. Teknologi AR telah dikembangkan dalam berbagai bidang seperti militer, kedokteran, pendidikan, teknik, industri hingga hiburan. Hal ini disebabkan oleh keunggulan teknologi AR yang memungkinkan user untuk melakukan interaksi menggunakan gerak tubuhnya secara alami. Kamera sebagai 'mata' dari teknologi AR mengambil gambar dari marker tersebut secara berkelanjutan, memproses dan kemudian menghasilkan interaksi virtual yang tampak pada tampilan dunia nyata baik pada layar maupun head mounted display (HMD).
+Tujuan yang ingin dicapai pada pengembangan ini adalah dengan penerapan teknologi AR ini, diharapkan dapat memberi nilai tambah suatu produk sehingga meningkatkan minat konsumen untuk membeli album asli (bukan bajakan). Dengan menggunakan teknologi AR ini konsumen akan mendapatkan dan melihat video klip suatu band dengan hanya mendekatkan sampul CD pada webcam, dimana pada sampul CD tersebut terdapat pattern/marker sebagai pemicu aplikasi Augmented Reality untuk berjalan. Pada tesis kali ini penulis melakukan perancangan dan pengembangan aplikasi Augmented Reality sehingga dapat menampilkan video klip dari sebuah band. Selain melakukan pengembangan, pada tesis ini juga penulis melakukan survey terhadap 30 koresponden untuk mengetahui tanggapan atau respon masyarakat terhadap pengembangan yang dilakukan oleh penulis. Survey dilakukan secara acak tanpa membatasi umur, pendidikan dan pekerjaan para responden dan sebelum menjawab keseluruhan survey, para koresponden tersebut diperlihatkan terlebih dahulu pengembangan yang dilakukan penulis sehingga mereka dapat menjawab survey secara objektif. Tetapi tak bisa dipungkiri, penulis juga melakukan batasan-batasan pada tesis ini diantaranya, aplikasi berjalan secara offline, hanya menampilkan video secara dua dimensi dan pengembangan yang dilakukan penulis masih merupakan prototype yang masih membutuhkan pengembangan lebih lanjut untuk implementasinya.
+TINJAUAN PUSTAKA
+AR adalah sebuah bidang penelitian komputer yang berhubungan dengan kombinasi antara dunia nyata dengan data hasil rekayasa computer. Istilah ini muncul pertama kali pada tahun 1990 ketika Tom Caudell dan David Mizell mendesain suatu head set display disebut HUDset (Heads-Up, see-through, head-mounted Display) yang dapat menampilkan skematik diagram wiring pesawat dan berbagai instruksinya untuk Boeing sehingga dalam proses manufacturing, teknisi Boeing tidak perlu lagi membawa instruction manual dan skematik diagram. Azuma mendifinisikan AR sebagai sistem yang menggabungkan nyata dan virtual, interaktif dalam real-time dan register dalam 3D [2]. Inti dari AR merujuk pada penjelasan Dorfmuller [3] dan Zlatanova [4] adalah melakukan interfacing untuk menempatkan objek virtual ke dalam dunia nyata
+Sistem AR memiliki tiga komponen utama. Tracking system menentukan posisi dan orientasi obyek-obyek dalam dunia nyata. Graphic system menggunakan informasi yang disediakan tracking system untuk menggambarkan gambar-gambar virtual pada
+
+tempat yang sesuai, sebagai contoh melalui obyek-obyek nyata. Tampilan sistem menggabungkan dunia nyata dengan gambar virtual dan mengirimkan hasilnya ke pengguna, misalkan dikirim ke HMD, tetapi tampilan biasa juga seperti monitor dapat digunakan [5].
+Gambar 1 Contoh Sistem AR
+Pendekatan populer untuk efek augmentasi pengguna adalah menggunakan seethrough HMD, yang terdiri dari dua jenis yaitu video see-through HMD dan opticalseethrough HMD. Optical see-through HMD menggunakan layar transparan dimana dunia nyata dapat dilihat. Sedangkan video see-through HMD menggabungkan closed-view HMD dengan satu atau dua head-mounted camera. Video dari kamera tersebut ditempatkan dengan material virtual dan dilihat pada tampilan. Pengguna melihat dunia nyata melalui video pada HMD.
+Beberapa sistem AR yang telah dikembangkan didasarkan pada kemudahan untuk men-track marker, biasanya tercetak pada kertas. Teknik computer vision dapat digunakan secara akurat untuk menentukan posisi dan orientasi kartu serta memungkinkan sistem AR untuk menempatkan obyek virtual pada kartu tersebut.
+Ada banyak keuntungan dengan marker yang didasarkan kertas. Keuntungannya antara lain sangat murah dan mudah untuk diproduksi. Dengan cara melakukan encoding ID ke dalam marker, memungkinkan untuk melakukan link dari suatu obyek fisik atau lokasi menjadi bentuk informasi digital. Jika marker ditempatkan pada kartu sehingga dengan mudah obyek-obyek dapat dimanipulasi, marker dapat digunakan sebagai devais masukan untuk antarmuka AR Tangible. Kegunaan lainnya adalah menempatkan tag ke dalam obyek untuk memberikan penampakan bahwa pengguna sedang berinteraksi dengan obyek selain dengan marker. Suatu contoh pengguna secara fisik melakukan drag and drop printer atau proyektor data dari devais wearable AR dikemukakan oleh Rekimoto dan Ayatsuka [7].
+Untuk merealisasikan teknologi Augemented Reality ini digunakan sebuah aplikasi bernama ARToolkit. ARToolkit adalah sebuah library tambahan untuk pemrograman dalam bahasa C dan C++ yang dikembangkan oleh HIT Lab dari University of Washington, digunakan untuk membuat aplikasi AR. Salah satu permasalahan yang dihadapi dalam membangun sebuah aplikasi AR ini adalah
+
+menghitung sudut pandang user secara real time dan akurat sehingga objek virtual dapat ditempatkan tepat pada objek nyata yang diinginkan. ARToolkit menggunakan teknik pencitraan komputer untuk menghitung posisi dan orientasi kamera relatif terhadap tracking device. Sehingga programer dapat menempatkan dengan tepat objek virtual yang dibuatnya pada tracking device tersebut. Detail cara kerja ARToolKit adalah sebagai berikut:
+1. Kamera akan menangkap video dari dunia nyata dan mengirimkannya ke PC 2. Software yang ada di komputer akan mencari bentuk kotak dari tracking
+device (atau marker), dan mengidentifikasi marker dari tiap frame video. 3. Setelah ditemukan, software akan menghitung posisi dari kamera relatif
+terhadap tracking device. 4. Setelah posisi kamera diketahui, objek grafis akan digambar menggunakan
+informasi tersebut. 5. Objek ini digambar diatas video yang didapat dan tampak menempel diatas
+marker 6. Output final akan ditampilkan pada display di monitor. Sehingga ketika user
+melihat display pada monitor objek akan tampak seolah berada di dunia nyata.
+Gambar 2 Skema Prinsip Kerja ARToolKit
+AR telah banyak digunakan di dunia hiburan, pelatihan militer, medis, desain rekayasa, robotik dan telerobotik, manufaktur, pendidikan, dan lain-lain. Fotis [6] telah mengembangkan lingkungan e-learning AR interaktif yang dinamakan Multimedia Augmented Reality Interface for E-Learning (MARIE)
+Dari segi teknis, AR merupakan teknologi transformatif. Salah satu karakteristik yang paling penting adalah cara dimana AR tersebut membuat suatu transformasi yang bersifat menghibur dalam proses interaksi pengguna. Sistem interaksi tidak terbatas pada tempat-tempat tertentu saja tetapi melingkupi keseluruhan lingkungan di luar tampilan layar.
+Dari segi strategi, salah satu aplikasi AR bagi para pendidik khususnya sangat bermanfaat dalam meningkatkan proses belajar mengajar. Karena AR lebih menyerupai
+
+hiburan, maka melalui AR diharapkan pengunjung museum, siswa, atau pengguna dapat tergugah untuk memahami nilai-nilai pedagogis dari fenomena ilmiah yang divisualisasikan. Meskipun demikian, para pendidik harus tetap berhati- hati juga dalam mengemas aktifitas pendidikan berbasis AR tersebut agar tidak membuat penggunanya bosan.
+Dari segi ekonomi, implementasi teknologi AR tidak memerlukan peralatan dengan biaya yang tinggi. Untuk dapat menjalankan sistem berbasis AR hanya diperlukan dukungan minimal komputer, program yang menjalankan AR, dan kamera. Tetapi yang paling penting di sini adalah upaya membangun kreatifitas dalam mengemas pesan yang akan divisualisasikan.
+Dari segi hiburan, teknologi Augmented Reality ini dapat digunakan sebagai sarana iklan, promosi ataupun dapat pula diimplementasikan menjadi sebuah game. Gambar maupun video dapat ditampilkan dengan menggunakan teknologi ini.
+PERANCANGAN SISTEM
+Ada beberapa tahapan yang dilakukan penulis dalam pengembangan aplikasi Augmented Reality ini, dimulai dari persiapan alat (hardware) maupun software yang digunakan, pengumpulan data dan referensi dan juga beberapa kali dilakukan trial and error test. Implementasi teknologi AR tidak memerlukan peralatan dengan biaya yang tinggi. Untuk dapat menjalankan sistem berbasis AR hanya diperlukan dukungan minimal komputer, program yang menjalankan AR, dan kamera. Tetapi yang paling penting di sini adalah upaya membangun kreatifitas dalam mengemas pesan yang akan divisualisasikan.
+Gambar 3 Perangkat yang Dibutuhkan Untuk Menjalankan Augmented Reality
+Hardware yang digunakan adalah : Komputer yang digunakan untuk mengolah data ; Webcam yang digunakan untuk membaca marker/pattern ; Printer digunakan untuk mencetak marker pada kertas ; Marker, pola yang dibuat dalam bentuk gambar yang telah dicetak dengan printer yang akan dikenali oleh kamera. Untuk bahasa pemograman yang digunakan dibagi menjadi 2 yaitu bahasa markup dan bahasa pemrograman. Bahasa markup yang digunakan adalah XML sedangkan bahasa Pemrograman yang digunakan adalah ActionScript 3.0. Extensible Markup Language atau disingkat XML adalah sebuah format teks sederhana dan sangat fleksibel yang berasal dari SGML (ISO 8879). ActionScript 3.0 adalah sebuah bahasa pemrograman berorientasi objek yang sangat kuat. AS3 merupakan langkah penting yang signigikan dalam evolusi kemampuan dalam Flash Player runtime.AS3 digunakan untuk
+
+membangun aplikasi rich internet dengan cepat yang mana menjadi bagian penting dari pengalaman mengunakan web AS3 berbasis pada ECMAScript, bahasa pemrograman berstandard internasional untuk scripting. Perangkat Lunak yang Digunakan :
+1. Sistem Operasi Windows XP Windows XP adalah jajaran sistem operasi berbasis grafis yang dibuat olehMicrosoft untuk digunakan pada komputer pribadi, yang mencakup komputer rumah dandesktop bisnis, laptop, dan pusat media (Media Center). Apliasi Augmented Reality yang dibuat kali ini menggunakan platform windows.
+2. Adobe AIR Adobe AIR adalah cross-platform runtime system yang memungkinkan web developer untuk mengembangkan dan menjalankan RIA (Rich Internet Application) layaknya aplikasi desktop. Istilah AIR sendiri merupakan singkatan dari Adobe Integrated Runtime. Dengan Adobe AIR web developer bisa membangun aplikasi desktop dengan HTML, JavaScript, Flex dan Flash. Berbeda dengan aplikasi web pada umumnya, aplikasi AIR ini di-install pada desktop dan bisa beroperasi secara offline. Karakteristiknya hampir sama dengan aplikasi desktop biasa. Aplikasi AIR memiliki kemampuan untuk mengakses data yang tersimpan pada komputer lokal. Jadi dengan kata lain AIR bisa menyimpan, membuka, dan mengedit data atau informasi pada komputer client. Ini yang membedakannya dengan aplikasi web biasa yang berjalan di browser.
+3. Adobe Flex Builder Adobe Flex merupakan sebuah perangkat untuk mengembangkan software (perangkat lunak) yang dirilis oleh Adobe Systems yang digunakan untuk menghasilkan rich Internet application berbasis Adobe Flash. Aplikasi Flex dapat ditulis menggunakan Adobe Flex Builder (komersil) atau menggunakan compiler yang disediakan gratis oleh Ado ARToolKit
+4. ARToolKit ARToolKit adalah salah satu pustaka (library) perangkat lunak berbasis C yang menggunakan metoda computer vision tracking untuk menghitung posisi kamera dan orientasinya yang relatif terhadap marker. ARTooKit dikembangkan oleh Dr. Hirokazu Kato dari Universitas Osaka Jepang dan Mark Billinghurst dari Human Interface Technology Laboratory (HIT Lab). ARToolKit banyak digunakan untuk mengembangkan aplikasi AR.
+5. FLARToolKit FLARToolKit adalah sebuah pustaka/ library untuk aplikasi Augmented Reality yang berbasiskan FLASH (Action Script 3). FLARToolKit merupakan turunan dari ARToolKit berbasiskan java yang diturunkan dari ARToolKit. FLARToolKit dibuat untuk menjembatani para web developer yang ingin menerapkan teknologi augmented reality. FLARToolKit dibuat oleh Saqoosha atau yang
+
+bernama asli Tomohiko Koyama, seorang developer Flash dan CTO dari perusahaan Katamari. Versi Rilisnya pertama kali diluncurkan pada Mei 2008.
+6. FLAR Manager FLARManager adalah framework ringan yang menjadikan membuat aplikasi Augmented Reality berbasis flash yang menggunakan library FLARToolKit menjadi lebih mudah. FLARManager dapat digunakan pula untuk beberapa 3D engine (Papervision3d, away3d,Alternativa3D, dan Sandy3D). FLARManager juga mendukung multiple marker dan pattern.
+7. Paper Vision 3D Papervision3D adalah sebuah mesin 3D open source untuk platform Flash.Papervision3D ditulis dan diperlihara oleh sekelompok tim inti kecil, dan komunitas. Papervision3D masuk versi Beta Publik pada tanggal 7 Juli 2007. Papervision3D dibawah lisensi MIT. Papervision3D dibuat menggunakan bahasa ActionScript 2 dan sekarang tersedia Papervision3D yang menggunakan Action Script 3.
+8. FLAjector Software yang digunakan untuk membuat program executeable (.exe) dari file format .swf.
+9. ARTisan dan One Zero Thrice ARTisan dan One Zero Thrice adalah sebuah library tambahan yang diperlukan pada scripting FLARToolKit untuk dapat menampilkan file video pada aplikasi Augmented Reality.
+Beberapa tahapan dalam pengembangan aplikasi Augmented Reality ini yang dilakukan oleh penulis :
+Gambar 4 Flowcart Pengembangan Augmented Reality yang Dilakukan Penulis
+1. Pemilihan Objek Objek/band yang akan penulis gunakan untuk penerapan teknologi Augmented
+Reality ini adalah sebuah band yang berasal dari kota Bogor yang bernama "MAGNA". Alasan penulis memilih objek ini karena penulis merupakan salah satu personel dalam band tersebut. Video klip yang akan digunakan sebagai objek pengembangan teknologi Augmented Reality diambil dari Single Hits kedua Band Magna yang berjudul
+
+"Haruskahku". Selain sebagai nilai tambah, teknologi ini pun dapat menjadi media promosi terutama untuk band-band yang baru muncul.
+2. Perancangan Sistem Untuk menjalankan aplikasi Augmented Reality digunakan action script ARTooKit,
+ARToolKit adalah sebuah library atau pustaka yang berisi scripting yang digunakan untuk mengembangkan Augmented Reality. Tetapi pada pembuatan aplikasi ini penulis menggunakan library FLARToolKit yang merupakan pengembangan dari ARToolKit yang berbasis Flash. Alasan digunakan FLARToolKit adalah karena output yang diinginkan penulis berupa video dan berbasis flash. FLARToolKit merupakan library open source yang penulis unduh melalui website : http://www.libspark.org/svn/as3/FLARToolKit/trunk [8] Hasil unduh dari FLARToolKit tadi berisi FLARTooKit Starter Kit, yang di dalamnya terdapat beberapa folder yang merupakan basic dari FLARToolKit dan terdapat pula contoh bagaimana cara membuat simple cube dengan menggunakan FLARToolKit.
+1. Folder data : berisi parameter kamera dan logo atau pattern 2. Folder org : berisi beberapa sub folder ascollada, libspark, papervision 3d yang
+dibutuhkan untuk membuat Augmented Reality berbasis Flash 3. Folder action script contoh untuk membuat simple cube
+Ada 4 tahapan yang harus dilakukan untuk membuat Augmented Reality menggunakan FLARToolKit : 1. Parameter kamera file
+2. Marker file 3. Deteksi marker 4. Library tambahan yang dibutuhkan untuk menjalan video
+Tahapan-tahapan tersebut akan dijelaskan dibawah ini :
+a. Parameter kamera file File parameter kamera adalah file biner yang dimuat (bawaan dari
+ARToolKit). Program yang menghasilkan file-file ini disebut "calib_camera2. Calib_camera2 menciptakan file biner dan data dari file biner digunakan untuk mengoreksi distorsi dari lensa webcam. Kaliberasi kamera merupakan bagian yang sangat penting dalam proses pengambilan masukan video. Hal ini disebabkan oleh distorsi pada lensa kamera yang tiap-tiap kamera berbeda karakteristiknya.
+Tujuan dari kalibrasi kamera adalah untuk menghitung tingkat distorsi dari sebuah lensa kamera yang digunakan agar image yang dihasilkan mendekati image ideal. Parameter ini nantinya digunakan dalam perhitungan pada proses Pose and Position Estimation agar model rumah dapat ditampilkan tepat diatas marker. Video yang diterima selanjutnya akan mengalami proses binarisasi (gray-scale), kemudian nilai threshold ditentukan sehingga mengasilkan gambar hitam-putih. Nilai threshold berada pada angka 0 ­ 255 dan secara default, threshold bernilai 100.
+Fungsi dari proses ini adalah untuk membantu sistem agar dapat mengenali bentuk segi empat dan pola di marker pada video yang diterima. Nilai threshold
+
+dapat dirubah dan disesuaikan dengan kondisi cahaya disekitar marker untuk tetap membuat marker terlihat sebagai segi empat, karena ketika cahaya disekitar marker berkurang ataupun berlebih pada saat proses thresholding, sistem tidak dapat mendeteksi marker. Hal ini penting mengingat aplikasi ini bekerja dengan cara mengenali marker.
+b. Desain Marker / Marker file Marker merupakan hal penting dalam teknologi Augmented Reality, karena
+marker ini sebagai trigger atau pemicu yang akan dikenali oleh kamera untuk menjalankan aplikasi Augmented Reality. Marker yang digunakan oleh penulis adalah marker yang terbuat dari bahan kertas, karena selain murah, marker dari kertas ini pun mudah diproduksi.
+Marker yang digunakan oleh penulis dibuat dengan menggunakan Corel Draw 12. Selain Corel Draw 12, ada beberapa software desain grafis dan multimedia lain yang dapat digunakan untuk membuat marker seperti, Adobe Photoshop, Free Hand, Paint, dll.
+Desain marker yang akan digunakan penulis diambil dari logo Magna Band itu sendiri. Pada dasarnya syarat utama dari desain marker adalah terdapat Outer Border dan Inner Border dengan gambar yang terdiri atas border outline (tepian kotak) berwarna hitam dan pattern image (gambar dalam marker) yang merupakan kombinasi warna hitam dan putih.
+Marker yang digunakan penulis adalah marker dengan ukuran 8 cm x 8 cm (outer border), dan 4 cm x 4 cm (inner border), karena untuk pengembangan yang dilakukan penulis nantinya marker tersebut akan ditempatkan pada sampul CD dari Magna Band.
+c. Deteksi Marker Setelah marker selesai dibuat dan di cetak maka kemudian tahap selanjutnya
+adalah pengenalan marker oleh kamera pada aplikasi Augmented Reality. Disini sistem akan mengenali bentuk dan pola yang ada pada marker. Sistem akan mencari bagian yang memiliki bentuk segi empat dan menandainya. Sistem juga akan menghilangkan area yang tidak berbentuk segi empat sehingga yang akan ditampilkan pada layar hanyalah area yang memiliki bentuk segi empat. Pengenalan marker ini dilakukan dengan menggunakan ARToolKit Marker Generator. ARToolKit Generator juga merupakan script open source yang dapat di unduh pada : http://saqoosha.net/lab/FLARToolKit/markergenerator/marker/generator.air [9] Tahapan-tahapan deteksi marker pada ARToolKit Marker Generator akan dijelaskan di bawah ini: 1. Setelah ARToolKit Marker Generator dibuka, maka tampilan yang akan muncul
+adalah tampilan web cam seperti pada umumnya 2. Letakan marker yang telah di print didepan web cam 3. Webcam akan mencari marker/kotak hitam pada marker untuk dikenali
+
+4. Setelah dikenali maka akan muncul kotak merah pada sisi-sisi marker, yang artinya ARToolKit Marker Generator telah membaca/mengenali marker
+5. Setelah dapat dikenali maka langkah selanjutnya adalah menyimpan marker/pattern pada ARToolKit Marker Generator. Klik kotak "Save Pattern" pada ARTooKit Generator.
+6. Pattern di save dengan ekstensi namafilepat.pattern (.pat) : logopat.pat
+d. Library Tambahan Library tambahan yang digunakan penulis dalam pengerjaan aplikasi ini
+diambil dari miliknya ARTisan dan One Zero Thrice. Library tambahan ini digunakan untuk menggabungkan video yang akan kita tampilkan ke dalam
+FLARToolKit.
+3. Scripting Sistem Pengembangan aplikasi Augmented Reality yang akan dilakukan penulis pada
+dasarnya merupakan aplikasi Flex (Rich Internet Apllication) yang berbasis flash dan platformnya secara visual menggunakan MXML dan Action Script oleh karena itu maka penulis menggunakan Adobe Flex Builder 3.
+Dalam pembuatan Augmented Reality dengan menggunakan Adobe Flex Builder, terdapat 3 komponen yang harus dipenuhi agar program dapat dijalankan.
+1. Main script (MXML) 2. Setting XML
+3. Scene Holder Main script yang digunakan oleh penulis pada pengembangan aplikasi ini diambil dari scripting FLARToolKit Simple Cube yang telah penulis rubah dan tambahkan, karena pada pengembangan ini output yang akan dihasilkan berupa video. Setelah memasukan main script maka langkah selanjutnya adalah memasukan action script untuk mengatur parameter kamera agar dapat membaca pattern. Parameter-parameter kamera yang dimasukan terdiri dari ; 1. Jarak kamera 2. Ukuran kamera 3. Pembacaan kamera per frame 4. Pattern yang digunakan 5. Langkah selanjutnya adalah script scene holder, atau meupakan penampang
+dimana video tersebut akan ditampilkan. Pada scene holder ini juga dimasukan parameter video yang akan dikeluarkan pada aplikasi Augmented Reality Setelah semua proses tersebut selesai maka dilakukan percobaan apakah aplikasi yang telah dibuat itu berjalan pada Adobe Flex Builder 3 (run aplikasi).
+4. Test Run/ Running Aplikasi Test Run dilakukan penulis untuk mengetahui apakah aplikasi yang dibuat dapat
+berjalan dan tidak terdapat error. Test run ini langung dapat dilakukan pada Adobe Flex Builder 3. Setelah proses scripting selesai maka kita tinggal menekan perintah run pada
+
+Adobe Flex Builder 3. Apabila terdapat kesalahan atau error maka apabila kita menekan perintah run proses tidak akan berjalan, tetapi apabila sudah benar maka Adobe Flex Builder 3 akan menghasilkan folder bin debug (ouput) yang di dalamnya terdapat file hasil compile dari action script yang Augmented Reality yang dibuat . Di dalam folder bin debug terdapat file akhir untuk menjalankan Augmented Reality. Ketika file ini dijalankan maka akan otomatis membuka link pada web sesuai dengan default browser yang kita gunakan Pada browser tersebut kemudian akan tampil kotak kecil yang berisi persetujuan apakah kita akan mengaktifkan webcam atau tidak (allow/deny). Kemudian kita pilih perintah allow. Perintah ini akan mengaktifkan webcam dan tampilan akan berubah menjadi tampilan webcam pada umumnya.
+Langkah selanjutnya adalah arahkan marker/pattern yang telah kita buat di awal ke hadapan web cam, sehingga web cam dapat membaca marker. Webcam akan mencoba membaca pattern/marker kemudian akan menampilkan video dalam bentuk 3 dimensi, yang dapat kita rubah posisi, jarak dll selama pattern masih terbaca oleh webcam.
+BAB 4 PEMBAHASAN
+Ada beberapa pengujian yang dilakukan penulis agar Augmented Reality dapat berjalan sesuai dengan yang diharapkan. Pengujian yang dilakukan penulis antara lain :
+1. Pengujian pada marker 2. Pengujian pada webcam 3. Pengujian terhadap video (output) 4. Perubahan ekstensi file 5. Penambahan tampilan awal dan petunjuk penggunaan 6. Survey pada 30 koresponden
+1. Pengujian pada marker Marker merupakan bagian yang penting dalam Augmented Reality, karena marker ini
+berperan sebagai pemicu agar aplikasi Augmented Reality dapat berjalan. Disini penulis melakukan beberapa pengujian dan perubahan pada marker, antara lain :
+a. Ukuran marker b. Bahan marker c. Pola marker/pattern
+a. Ukuran marker Setelah beberapa kali percobaan dengan menggunakan ukuran marker yang
+berbeda maka penulis memutuskan untuk menggunakan marker dengan ukuran 8 cm x 8 cm (outer border) dan 4 cm x 4 cm (inner border). Hal ini dilakukan karena ukuran marker sangat berpengaruh pada bacaan web cam dan ukuran video yang ditampilkan. Ukuran inilah yang dianggap paling cocok dan sesuai dengan hasil yang ingin dicapai oleh penulis.
+
+b. Bahan Marker Marker yang digunakan oleh penulis langsung dicetak pada sampul CD dan
+menggunakan kertas yang tebal dan keras. Hal ini dilakukan agar pada saat marker diarahkan pada webcam dapat terbaca dengan jelas dan mudah dipegang. c. Pola Marker/pattern
+Pola marker yang digunakan oleh penulis diambil dari logo Magna Band itu sendiri, dengan perpaduan warna putih hitam dan dikelilingi oleh kotak berwana hitam.
+Gambar 5 Desain Marker yang Digunakan
+2. Pengujian Pada Webcam Ada beberapa parameter yang diuji pada webcam, karena kemampuan webcam
+sangat berpengaruh pada bacaan dan tampilan video (output) Augmented Reality. Parameter-parameter yang diuji antara lain :
+a. Kemampuan webcam b. Penerimaan cahaya c. Pembacaan per frame
+a. Kemampuan Webcam Tiap webcam memiliki kemampuan dan spesifikasi masing-masing. Hal ini sangat berpengaruh terhadap kualitas dan pembacaan dari webcam itu sendiri. Webcam yang digunakan oleh penulis adalah webcam merk "Prolink" dengan resolusi kamera 5 megapixel. b. Penerimaan Cahaya Masing-masing webcam memiliki kemampuan untuk menerima cahaya dan kebutuhan cahaya sendiri. Untuk aplikasi teknogi Augmented Reality ini dibutuhkan webcam yang dapat menerima cahaya dengan baik, lebih baik lagi apabila webcam yang digunakan memiliki sumber cahaya sendiri. Karena apabila cahaya stabil maka pembacaan pun semakin baik. c. Pembacaan per frame Kemampuan webcam untuk membaca per frame juga sangat berpengaruh. Untuk aplikasi Augmented Reality ini dibutuhkan webcam yang memiliki bacaan per frame tinggi, hal ini diperlukan agar video yang dikeluarkan oleh webcam tidak
+
+patah-patah dan terputus-putus. Seperti web cam yang digunakan oleh penulis memiliki pembacaan per frame 30fps.
+3. Pengujian terhadap video (output) Pengujian ini sangat penting dilakukan, karena video merupakan output yang
+nantinya akan dilihat oleh konsumen. Agar video dapat berjalan dengan baik maka perlu adanya beberapa perubahan dan penyesuaian, antara lain :
+a. Ukuran File Video b. Ekstensi file video c. Pengaturan nilai Threshold d. Pengaturan Minimum Detector Confidence
+a. Ukuran File Video Ukuran file video yang digunakan pada aplikasi Augmented Reality tidak boleh terlalu besar, karena apabila terlalu besar Augmented Reality akan berat membacanya, harus diusahakan ukuran file dibawah 30Kb. Ukuran file video yang digunakan oleh penulis adalah 20Kb. b. Ektensi File Video Ektensi file video yang digunakan pada aplikasi Augmented Reality adalah .flv. karena hanya video ini yang dapat terbaca oleh aplikasi Augmented Reality. Apabila ada file video yang berekstensi lain maka harus di convert dulu ke .flv. c. Pengaturan Nilai Threshold Pengaturan nilai threshold ini dilakukan pada action script parameter video. Pengaturan ini dilakukan agar video yang terbaca tidak terputus-putus, dengan cara menurunkan nilai Threshold pada action script. d. Pengaturan Minimum detector confidence Pengaturan Minimum detector confidence ini dilakukan agar webcam dapat dengan mudah membaca marker.
+4. Perubahan Ekstensi File Setelah kita mendapatkan hasil dari proses scripting dalam folder bin-debug maka
+langkah selanjutnya adalah dengan merubah ekstensi file (swf) dan html menjadi exe. Hal ini dilakukan untuk memproteksi file yang ada dalam Augmented Reality tersebut.Untuk merubah ekstensi file menjadi .exe, maka penulis menggunakan FLAjector.
+5. Penambahan Tampilan Awal dan Petunjuk Penggunaan Tujuan ke depan pengembangan Augmented Reality yang dilakukan penulis ini
+adalah untuk mengurangi angka pembajakan, maka dari itu penulis menambahkan beberapa himbauan dan peringatan mengenai pembajakan pada tampilan awal aplikasi ini dalam bentuk flash. File Flash ini digabung ke dalam Augmented Reality dengan menggunakan FLAjector.
+
+Penulis juga menambahkan petunjuk penggunaan Augmented Reality pada tampilan awal dari aplikasi ini. Petunjuk ini berisi langkah-langkah yang harus dilakukan agar Augmented Reality dapat dijalankan.
+
+6. Survey pada 30 koresponden Untuk mengetahui apakah pengembangan teknologi Augmented Reality yang
+dilakukan oleh penulis dapat diterima oleh masyarakat, maka penulis melakukan survey terhadap 30 koresponden. Metode survey dilakukan secara sembarang/ random tanpa melihat umur, pendidikan dan perkerjaan dari koresponden, hal ini dilakukan untuk melihat respon dari masing-masing koresponden.
+Survey yang dilakukan berisi 26 pertanyaan pilihan dan 1 pertanyaan isian. Pertanyaan nomer 1 ­ 20, merupakan pertanyaan umum mengenai minat, perkembangan musik,dan pembajakan. Untuk pertanyaan nomer 21-27 berisi beberapa pertanyaan tentang Augmented Reality itu sendiri. Sebelum koresponden menjawab pertanyaan no 21 ­ 27, koresponden diperlihatkan terlebih dahulu tentang pengembangan Augmented Reality yang dilakukan oleh penulis, sehingga koresponden dapat menjawab pertanyaan secara objektif.
+Tabel 1
+Data Koresponden
+
+No Data Koresponden 1. Jumlah Koresponden 2 Jenis kelamin
+a. Laki-laki b. Wanita 3 Pendidikan a. SMP b. SMU c. D1 d. D3 e. S1 f. S2
+
+Keterangan 30 orang
+19 orang 11 orang
+4 orang 3 orang 1 orang 6 orang 13 orang 3 orang
+
+Tabel 2 Lembar Survey Koresponden
+
+NO  SOAL dan JAWABAN 
+
+NILAI   PERSENTASE
+
+1.  Apakah anda suka mendengarkan musik ?
+
+a. Ya  
+
+26  86,67%
+
+   b. Jarang 
+
+4  13,33%
+
+   c. Tidak 
+
+0  0,00%
+
+2.   Manakah yang lebih anda suka, musik lokal atau musik luar ?
+
+a. Musik Lokal 
+
+21  70,00%
+
+   b. Musik Luar 
+
+9  30,00%
+
+3.   Jenis musik apa yang paling sering anda dengar ?
+
+     
+
+a. Pop 
+
+23  76,67%
+
+   b. Rock 
+
+5  16,67%
+
+   c. Jazz 
+
+1  3,33%
+
+   d. Alternative 
+
+1  3,33%
+
+4.   Apakah anda mengikuti perkembangan musik Indonesia ?
+
+a. Iya 
+
+29  96,67%
+
+   b. Tidak 
+
+1 
+
+5.   Bagaimana menurut anda perkembangan musik di Indonesia ?
+
+3,33%
+
+a. Bagus 
+
+19  63,33%
+
+   b. Biasa saja 
+
+7  23,33%
+
+   c. Kurang 
+
+4  13,33%
+
+6.  Media apa yang paling sering anda gunakan untuk mendengarkan musik ?
+
+a. Radio 
+
+5  16,67%
+
+   b. CD 
+
+4  13,33%
+
+   c. MP3 Player 
+
+21  70,00%
+
+   d. Kaset 
+
+0  0,00%
+
+7.   Darimana biasanya anda mendapatkan lagu tersebut ?
+
+a. Download 
+
+20  66,67%
+
+   b. Beli CD 
+
+4  13,33%
+
+   c. Copy 
+
+6  20,00%
+
+8.   Apakah anda pernah membeli CD bajakan ?
+
+a. Pernah 
+
+23  76,67%
+
+   b. Kadangkadang 
+
+5  16,67%
+
+   c. Tidak 
+
+2  6,67%
+
+9.  Seberapa sering anda membeli CD bajakan ?
+
+a. Sering 
+
+5  16,67%
+
+   b. Kadangkadang 
+
+22  73,33%
+
+   c. Tidak  10.  Apa alasan anda untuk membeli CD bajakan ?
+
+3  10,00%
+
+a. Murah 
+
+16  53,33%
+
+   b. Mudah didapat 
+
+6  20,00%
+
+   c. Kualitas hampir  sama dengan asli 
+
+2  6,67%
+
+   d. Semua jawaban benar 
+
+6  20,00%
+
+11.  Dimana biasanya anda membeli CD bajakan ?
+
+a. Pinggir jalan 
+
+20  66,67%
+
+   b. Pusat perbelanjaan 
+
+8  26,67%
+
+   c. Terminal/tempat umum 
+
+2  6,67%
+
+12.   Apakah anda merasa bersalah membeli CD bajakan ?
+
+a. Iya 
+
+4  13,33%
+
+   b. Biasa saja 
+
+25  83,33%
+
+   c. Tidak 
+
+1  3,33%
+
+13.   Bagaimana menurut anda mengenai pembajakan di Indonesia ?
+
+a. Sangat parah 
+
+18  60,00%
+
+   b. Parah 
+
+11  36,67%
+
+   c. Biasa saja 
+
+1  3,33%
+
+14.   Faktor apa yang mendorong perkembangan pembajakan di Indonesia ?
+
+a. Kurang undangundang yang mengatur 
+
+2  6,67%
+
+   b. Kurang ketegasan petugas lapangan 
+
+7  23,33%
+
+   c. Daya beli masyarakat masih kurang 
+
+12  40,00%
+
+   d. Kurang kesadaran masyarakat akan pembajakan 
+
+9  30,00%
+
+15.   Apakah anda pernah membeli CD asli ?
+
+a. Iya 
+
+30  100,00%
+
+   b. Tidak 
+
+0  0,00%
+
+16.  Seberapa sering anda membeli CD asli ?
+
+a. Sering 
+
+5  16,67%
+
+   b. Jarang 
+
+25  83,33%
+
+   c. Tidak pernah 
+
+0  0,00%
+
+17.  Kapan terakhir anda membeli CD asli ?
+
+a. <1 bulan 
+
+9  30,00%
+
+   b. 15 bulan 
+
+7  23,33%
+
+   c. > 1 tahun 
+
+14  46,67%
+
+18.  Apakah pertimbangan anda untuk membeli CD bajakan dibandingkan CD asli ?
+
+a. Harga yang lebih murah 
+
+19  63,33%
+
+   b. Ketersediaan barang 
+
+1  3,33%
+
+   c. Kualitas hampir  sama dengan asli 
+
+4  13,33%
+
+   d. Lagu yang lebih variatif 
+
+6  20,00%
+
+19.   Apabila terdapat nilai lebih atau nilai tambah pada CD asli, apakah anda
+
+akan memilih CD asli dibanding CD bajakan ?
+
+a. iya 
+
+12  40,00%
+
+   b. Tergantung nilai tambahnya 
+
+18  60,00%
+
+   c. Tidak 
+
+0  0,00%
+
+20.  Apakah anda sebelumnya pernah mendengar tentang teknologi Augmented Reality ?
+
+a .pernah 
+
+10  33,33%
+
+   b. Tidak pernah 
+
+20  66,67%
+
+21.  Bagaimana menurut anda tentang teknologi Augmented Reality ?
+
+a. Menarik 
+
+23  76,67%
+
+   b. Biasa saja 
+
+6  20,00%
+
+   c. Kurang menarik 
+
+1  3,33%
+
+22.   Bagaimana menurut anda pengembangan yang dilakukan penulis tentang Teknologi Augmented Reality ?
+
+a. Menarik 
+
+24  80,00%
+
+   b. Biasa saja 
+
+5  16,67%
+
+   c. Kurang menarik 
+
+1 
+
+Apakah menurut anda teknologi yang dikembangkan penulis mudah
+
+23.   diaplikasikan ?
+
+3,33%
+
+a. Mudah 
+
+9  30,00%
+
+   b. Biasa saja 
+
+14  46,67%
+
+   c. Sulit 
+
+7  23,33%
+
+24.   Apakah dengan adanya pengembangan yang dilakukan penulis anda akan
+
+tertarik untuk membeli CD asli ?
+
+a. iya 
+
+20  66,67%
+
+   b. Tidak 
+
+3  10,00%
+
+   c. Pikirpikir 
+
+7  23,33%
+
+25.  Menurut anda apakah cara ini kedepannya dapat membantu untuk menurunkan    tingkat pembajakan ?
+
+a. iya 
+
+11  36,67%
+
+   b. Raguragu 
+
+16  53,33%
+
+   c. Tidak 
+
+3  10,00%
+
+26.   Dengan adanya nilai tambah pada CD asli ini apakah anda tetap akan lebih
+
+   memilih CD bajakan dibanding CD asli ?
+
+a. iya 
+
+6  20,00%
+
+   b. Tidak 
+
+24  80,00%
+
+Setelah dilakukan survey terhadap 30 koresponden, diketahui sebanyak 66,67% masyarakat belum mengetahui teknologi Augmented Reality. Kemudian dari data survey juga didapat bahwa setelah penulis menerangkan tentang teknologi Augmented Reality, 76,67% koresponden mengatakan bahwa teknologi Augmented Reality sangat menarik dan 80% mengatakan bahwa pengembangan yang dilakukan oleh penulis sangat menarik. 66,67% koresponden menyatakan tertarik untuk membeli CD asli setelah diberikan nilai tambah pada CD asli dan 80% koresponden memilih membeli CD asli
+
+setelah diberikan nilai tambah pada CD tersebut. Tetapi sebanyak 53,33% koresponden ragu-ragu apakah cara ini dapat membantu menurunkan tingkat pembajakan.
+Tabel 3 Persentase Jawaban Responden Mengenai Augmented Reality
+
+NO KETERANGAN
+
+PERSENTASE
+
+1 Responden yang belum mengetahui/mendengar 66,67%
+
+tentang teknologi Augmented Reality
+
+2 Responden yang menyatakan bahwa teknologi 76,67%
+
+Augmented Reality sangat menarik
+
+3 Responden yang menyatakan bahwa 80%
+
+pengembangan Augmented Reality yang dilakukan
+
+penulis sangat menarik
+
+4 Responden yang menyatakan tertarik untuk 66,67%
+
+membeli CD asli setelah diberikan nilai tambah
+
+pada CD asli
+
+5 Responden memilih membeli CD asli setelah 80%
+
+diberikan nilai tambah pada CD tersebut
+
+6 Responden yang ragu-ragu apakah cara ini dapat 53.33%
+
+membantu menurunkan tingkat pembajakan
+
+Dari hasil survey pada no.27, juga didapat bahwa banyak koresponden yang berfikir bahwa masih perlunya penyederhanaan dari aplikasi Augmented Reality yang dilakukan penulis dan perlunya promosi yang kuat agar teknologi Augmented Reality ini dapat menarik minat konsumen sehingga ke depannya dapat menurunkan tingkat pembajakan.objektif. Dari hasil jawaban para koresponden di nomer 21-26 dapat disimpulkan bahwa teknologi Augmented Reality layak untuk dikembangkan dan dapat dijadikan salah satu cara untuk menarik minat konsumen membeli CD asli.
+
+SIMPULAN 1. Augmented Reality merupakan teknologi baru yang dapat dikembangkan dan digunakan untuk banyak bidang, seperti militer, kedokteran, pendidikan, teknik, industri hingga hiburan. 2. Tujuan yang ingin dicapai penulis dengan penerapan teknologi AR ini adalah untuk memberi nilai tambah suatu produk sehingga diharapkan dapat meningkatkan minat konsumen untuk membeli CD/album asli bukan bajakan sehingga kedepannya akan menurunkan tingkat pembajakan di Indonesia 3. Pengembangan dilakukan pada Band Magna dengan Hits Single Haruskahku 4. Syarat utama yang dibutuhkan untuk menjalankan aplikasi ini adalah Web Cam, Pattern/Marker, komputer dan program Augmented Reality
+
+5. Dengan Augmented Reality ini konsumen akan mendapatkan video klip asli hanya dengan mengarahkan pattern pada webcam.
+6. Dari survey didapat 76,67% koresponden mengatakan bahwa teknologi Augmented Reality sangat menarik dan 80% mengatakan bahwa pengembangan yang dilakukan oleh penulis sangat menarik. 66,67% koresponden menyatakan tertarik untuk membeli CD asli setelah diberikan nilai tambah pada CD asli dan 80% koresponden memilih membeli CD asli setelah diberikan nilai tambah pada CD tersebut.
+7. Sebanyak 53,33% koresponden ragu-ragu apakah cara ini dapat membantu menurunkan tingkat pembajakan.
+8. Dari hasil jawaban para koresponden dapat disimpulkan bahwa teknologi Augmented Reality layak untuk dikembangkan dan dapat dijadikan salah satu cara untuk menarik minat konsumen membeli CD asli.
+SARAN
+1. Masih perlunya penyederhanaan dari aplikasi Augmented Reality yang dilakukan penulis dan perlunya promosi yang kuat agar teknologi Augmented Reality ini dapat menarik minat konsumen sehingga ke depannya dapat menurunkan tingkat pembajakan.
+2. Perlu dilakukan pengembangan dan penelitian lebih lanjut agar aplikasi ini dapat berjalan dan diterima oleh masyarakat
+DAFTAR PUSTAKA
+[1]. Majalah Rozlling Stone Indonesia, edisi bulan Maret 2008
+[2]. ________,AugmentedRealityhttp://en.wikipedia.org/wiki/Augmented_realty,28
+Agustus 2010, 11.30 WIB.
+[3]. Dorfmüller-Ulhaas, K. and Schmalstieg, D. (2001), Finger Tracking for
+Interaction in Augmented Environments, Proceedings ISAR'01, New York.
+[4]. Zlatanova, S. (2002), Augmented Reality Technology, GISt Report No. 17,
+TU Delft.
+[5]. Azuma, A. (1997), Survey of Augmented Reality, Presence: Teleoperators
+and Virtual Environments 6, 4, 355 ­ 385.
+
+[6]. Liarokapis, F., Petridis, P., Lister, P., White, M. (2002), Multimedia Augmented Reality Interface for E-Learning (MARIE), World Transactions on Engineering and Technology Education 2002 UICEE ,1, No.2,173.
+[7]. Rekimoto, J and Ayatsuka, Y. (2000), Cybercode: Designing Augmented Reality Environments with Visual Tags, Proceedings of Designing Augmented Reality Environments (DARE 2000).
+[8]. http://www.libspark.org/svn/as3/FLARToolKit/trunk [9]. http://saqoosha.net/lab/FLARToolKit/markergenerator/marker/generator.air
+
+

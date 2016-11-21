@@ -1,0 +1,152 @@
+GAME SIMULASI FINITE STATE MACHINE UNTUK PERTANIAN DAN PETERNAKAN
+Silvia Rostianingsih1, Gregorius Satia Budhi2, Hans Kristian Wijaya3
+1,2,3 Program Studi Teknik Informatika, Fakultas Teknologi Industri, Universitas Kristen Petra Jl Siwalankerto 121-131, Surabaya 60236 1 silvia@petra.ac.id, 2 greg@petra.ac.id
+Abstrak
+Perkembangan industri game pada saat ini sangat pesat dengan berbagai macam genre. Salah satu jenis game yang digemari adalah game ber-genre life simulation. Jenis game ini berusaha untuk mensimulasikan kehidupan sehari. Game ini dikembangkan dengan menggunakan bahasa pemrograman actionscript 2.0 dengan memanfaatkan local shared object Flash sebagai media penyimpanan. Game ini juga memanfaatkan kecerdasan buatan dengan mendesain finite state machine. Hasil akhir dari game ini adalah sebuah alur cerita permainan berbasis simulasi pertanian dan juga peternakan, yang dilengkapi dengan fitur penambahan tumbuhan oleh pemain, fasilitas save dan load game, dan juga dua saingan dari karakter utama yang dikendalikan oleh kecerdasan buatan.
+Kata kunci : finite state machine, flash, game, kecerdasan buatan
+
+1. Pendahuluan
+Perkembangan industri game pada saat ini sangat pesat dengan berbagai macam genre. Salah satu jenis game yang digemari adalah game bergenre life simulation. Jenis game ini bertujuan mensimulasikan kehidupan secara nyata dan detail. Game ber-genre life simulation menawarkan hal yang berbeda jika dibandingkan dengan game genre lainnya Game ber-genre lain seperti sport, action, puzzle, adventure menekankan bagaimana pemain menyelesaikan permainan, sedangkan game bergenre life simulation menekankan kebebasan pemain untuk melakukan sesuatu seperti pada kehidupan sehari-hari. Penggunaan Flash sebagai tools pembuatan game sangat diminati. Banyaknya portal game Flash dengan genre yang beragam di internet, serta dukungan dari 3rd party software untuk Adobe Flash. Flash merupakan salah satu aplikasi yang mampu menghadirkan kualitas gambar yang baik disertai kemampuan untuk menghasilkan interaksi terhadap pemakainya. Kemampuan kecerdasan buatan dalam mendukung sebuah game tidak dapat dipungkiri lagi [3]. Salah satunya adalah penggunaan finite state machine untuk mendukung interaksi dengan pemain [1], [6]. Pembuatan aplikasi ini dimulai dengan merancang finite state machine untuk karakter dalam game, selanjutnya dibuat animasi dengan menggunakan dua dimensi.
+
+2. Kecerdasan Buatan
+Kecerdasan buatan atau artificial intelligence (AI) adalah bagaimana membuat komputer mampu berpikir dan melakukan kegiatan seperti halnya manusia atau binatang [5]. Dalam pembuatan game, pembuatan AI lebih berfokus kepada bagaimana karakter dapat membuat serangkai keputusan yang dapat menyerupai manusia dan binatang pada umumnya, teknik yang umumnya digunakan dalam pengambilan keputusan yaitu state machine.
+2.1 Finite State Machine
+Finite State Machine (FSM) terdiri dari serangkaian state yang menentukan pengambilan keputusan. Setiap state dapat berpindah ke state lainnya jika memenuhi kondisi yang telah ditentukan sebelumnya [2].
+Gambar 1. Struktur Finite State Machine [2]
+
+Pada Gambar 1 terdapat 4 state {Si, S1, S2, S3} yang mungkin terjadi, setiap state-nya dapat berpindah state jika kondisi terpenuhi. Sebagai contoh state S1 dapat berpindah jika kondisi t5 terpenuhi.
+2.2 Production Rule Production rule merupakan sekumpulan rule
+yang digunakan untuk menentukan suatu aksi yang dilakukan. Production rule terdiri dari 2 bagian penting yaitu bagian kondisi dan bagian aksi [4]. Suatu aksi akan dilakukan/ dilaksanakan jika memenuhi kondisi yang ditentukan.
+Struktur dari suatu production rule: c1 --> a1 c2 --> a2 ... cn --> an
+c merupakan kondisi dan a merupakan aksi. Jika (IF) suatu kondisi c terpenuhi maka (THEN) aksi a akan dilakukan.
+3. Perancangan Aplikasi
+Judul game yang dibuat adalah "Farm Village: The Beginning", yang merupakan permainan berbasis simulasi dengan setting pedesaan. Cerita yang diangkat adalah mengenai bagaimana Nick Halden, seorang pemuda 18 tahun yang harus meneruskan pertanian kakeknya yang telah meninggal. Tujuan perancangan game ini adalah untuk menerapkan efek simulasi pertanian dan peternakan sehingga permainan berjalan tidak membosankan dan dapat dimainkan secara terus menerus. Pemain akan mengendalikan satu karakter utama yang dapat berinteraksi dengan penduduk di desa. Pemain dapat, menanam, beternak, serta membangun relasi dengan warga yang berada di desa.
+3.1 Fitur Game
+Fitur yang disediakan adalah sebagai berikut: 1. Mencangkul
+Karakter dapat mencangkul ketika berada di area pertanian, mencangkul dapat mengurangi stamina. Mencangkul yang dilakukan di luar area tanam tidak akan mengurangi stamina karakter utama. 2. b. Menyiram Karakter dapat menyiram ketika berada di area pertanian, menyiram dapat mengurangi jumlah energi karakter utama. Menyiram yang dilakukan sebelum tanah dicangkul, diluar area tanam dan dilakukan di tempat yang sama berulang ulang tidak mengurangi kapasitas air dan energi. 3. Menanam
+
+Karakter dapat menanam ketika berada di area pertanian, Menanam dapat dilakukan setelah karakter mencangkul tanah terlebih dahulu. 4. Memanen hasil pertanian Setelah memanen karakter akan mendapatkan uang. Memanen dapat dilakukan jika tumbuhan telah siap panen. 5. Memberi makan ternak Memberi makan ternak dapat dilakukan jika pemain sudah mempunyai ternak (ayam ataupun sapi). Makanan sapi didapatkan dari menyabit rumput, sedangkan makanan ayam didapat dari membeli di supermarket. 6. Mengumpulkan hasil ternak dan panen Setiap harinya sapi akan menghasilkan susu, ayam akan menghasilkan telur, karakter utama dapat mengumpulkan hasil dari ternak, dan juga memanen buah hasil dari bercocok tanam. 7. Upgrade Tools Tools dapat diupgrade untuk mengurangi besar tenaga yang diperlukan untuk menggunakan tools tersebut. Tools yang dapat diupgrade adalah cangkul dan penyiram air. 8. Membangun relasi dengan Zack Jika relasi semakin tinggi dengan Zack, maka diskon akan diberikan oleh Zack, sehingga uang yang diperlukan untuk membeli tools akan berkurang. Tingkat relasi dengan Zack terdiri dari 3 tingkatan. 9. Membangun relasi dengan Flop Jika relasi semakin tinggi dengan Flop, maka diskon akan diberikan oleh Flop, sehingga jika karakter utama meminta bantuan kepada Flop uang yang harus diberikan akan berkurang. Tingkat relasi dengan Flop terdiri dari 2 tingkatan. Kegiatan yang dapat dilakukan oleh Flop adalah menebar bibit dan memanen hasil pertanian. 10. Tumbuhan Pertumbuhan tanaman dibagi menjadi 3 fase, bibit, setengah tumbuh dan berbuah. Pada awal ditebar tanaman masih berupa bibit, setelah melewati beberapa hari bergantung pada jenis tanaman bibit akan bertumbuh menjati setengah tumbuh. Jika tumbuhan ditanam sesuai musim maka tumbuhan akan menuju fase berbuah yang kemudian dapat dipanen. Tanaman dapat mati jika tidak disiram selama 5 hari atau terkena hujan salju. 11. Hewan Karakter dapat membeli hewan ternak berupa ayam dan sapi. Ayam dan sapi akan menghasilkan telur dan susu setiap harinya jika diberi makan. Jika ayam tidak diberi makan selama 2 hari secara berturut-turut maka ayam akan mati, dan jika sapi tidak diberi makan selama 3 hari secara berturut-turut makan sapi akan mati. Jumlah ayam dan sapi maksimum yang dapat dibeli oleh karakter utama adalah sebanyak 5 ekor.
+
+12. Terdapat saingan di Farm Village Saingan karakter utama di dalam game ini akan dikendalikan oleh AI. Terdapat 2 saingan karakter utama, Barney dan Max.
+13. Save dan Load permainan Digunakan untuk menyimpan permainan, dan melanjutkan permainan yang sebelumnya telah disimpan.
+3.2 Karakter dalam Game
+1. Karakter Utama (Nick) Nick merupakan karakter utama dalam game ini, Nick adalah seorang pemuda yang mempunyai semangat dan keinginan belajar yang tinggi, dengan semangat yang dia miliki, Nick bertekad menyelamatkan pertanian kakeknya yang telah lama tidak terurus.
+2. Karakter Saingan Barney Barney adalah seorang penduduk senior di Farm Village, keahliannya dalam mengatur pertaniannya tidak perlu diragukan lagi. Barney lebih suka membeli ternak daripada membeli bibit secara terus menerus. Namun karena usianya yang cukup tua, aktivitas yang dilakukannya sedikit terbatas.
+3. Karakter Saingan Max Max adalah anak muda yang berasal dari desa lain, Max ingin mencari peruntungan di Farm Village. Max lebih suka menanam tumbuhan di kebunnya, terkadang Max akan membeli hewan ternak jika mempunyai uang.
+4. Karakter Lainnya Zack Zack adalah seorang pandai besi yang handal, secara turun temurun keluarganya merupakan pandai besi di Farm Village, kemampuan membuat peralatan menjadi lebih ringan dan mudah digunakan sudah tidak diragukan lagi. Meskipun dengan perawakan yang tinggi besar, namun Zack sebenarnya merupakan seseorang yang suka menolong temannya, Zack akan memberikan diskon besar jika ada yang berteman baik dengannya.
+5. Karakter Lainnya Patrick Patrick adalah kepala desa dari Farm Village, dengan pengalaman yang sudah berpuluhpuluh tahun memimpin Farm Village, pengetahuannya mengenai sifat dan karakter penduduk desa tak perlu diragukan lagi. Patrick memiliki pengetahuan yang luas mengenai penduduk desa dan tanaman.
+6. Karakter Lainnya Anna Anna adalah seorang wanita berusia 20 tahun, Anna merupakan penjaga sebuah toko yang berada di Farm Village, dengan kepribadian dan sikapnya yang sopan, toko yang dijaganya menjadi toko terlaris yang ada di Farm Village.
+7. Karakter Lainnya Flop Flop adalah satu dari tujuh kurcaci yang hilang (one of the seven lost dwarfs), Flop terpisah
+
+dari teman-teman kurcaci lainnya. Dikarenakan tak seorang pun mengerti bahasa yang diucapkan Flop, maka Flop lebih suka menyendiri, Flop membangun sebuah rumah di pinggiran Farm Village, berharap suatu saat dapat menemukan seseorang yang dapat mengerti bahasanya dan menjadi temannya di Farm Village. 3.3 Layout Area Area pedesaan (Gambar 2) merupakan area permainan keseluruhan yang terdiri dari area blacksmith, area pertanian, area market, area kepala desa, area rumah kurcaci, dan area pertanian musuh.
+Gambar 2. Layout Pedesaan 3.3.1 Area Blacksmith
+Terdapat Blacksmith yang dapat melakukan upgrade peralatan bertani karakter utama. Area Blacksmith bersebelahan dengan area pertanian dan area market. Area dalam blacksmith seperti pada Gambar 3. Jika karakter ingin membeli tools, karakter utama harus berbicara dengan Blacksmith dan mempunyai uang yang cukup. Tools yang dapat dibeli oleh karakter utama adalah penyiram dan cangkul. Terdapat pula menu untuk berbicara kepada Blacksmith, jika karakter utama berbicara setiap harinya maka akan terbangun relasi yang nantinya dapat mengurangi harga tools yang dapat dibeli. Deskripsi tools dapat dilihat pada Tabel 1.
+Gambar 3. Dalam Rumah Blacksmith
+
+Nama Cangkul
+Penyiram
+
+Tabel 1. Deskripsi Tools
+
+Lvl Efek
+
+Prasyarat
+
+0 Energi -30 Cangkul awal
+
+karakter
+
+1 Energi -15 Butuh 2000 gold
+
+2 Energi -10 Butuh 3000 gold
+
+3 Energi -5 Butuh 6000 gold
+
+0 Energi -10 Penyiram awal
+
+Kapasitas karakter
+
+= 10
+
+1 Energi -10 Butuh 2000 gold
+
+Kapasitas
+
+= 20
+
+2 Energi -5 Butuh 4000 gold
+
+Kapasitas
+
+= 25
+
+3 Energi -2 Butuh 6000 gold
+
+Kapasitas
+
+= 40
+
+3.3.2 Area Market
+
+Tempat membeli bibit tumbuh tumbuhan, hewan ternak, makanan ayam. Area market bersebelahan dengan area Blacksmith, area rumah kurcaci, dan area walikota. Jika karakter ingin membeli bibit dan hewan ternak karakter harus berbicara dengan penjaga market dan mempunyai uang yang cukup. Beberapa item yang dijual oleh market ini adalah bibit 4 musim, hewan ternak yang terdiri dari sapi dan ayam, makanan sapi maupun makanan ayam.
+
+3.3.3 Area Kepala Desa
+
+Tempat bertemu kepala desa, untuk dapat melihat latar belakang karakter-karakter yang ada di area pedesaan. Area kepala desa ini bersebelahan dengan rumah Max dan area market.
+
+3.3.4 Area Rumah Kurcaci
+
+Karakter utama dapat meminta bantuan kepada kurcaci yang nantinya dapat membantu karakter utama untuk menyelesaikan pekerjaan sehari hari. Aktivitas yang dapat dilakukan oleh kurcaci yaitu menebar bibit sesuai musim serta memanen tanaman yang telah siap panen.
+
+3.3.5 Area Pertanian Musuh
+
+Pergerakan musuh (Barney dan Max) dikendalikan oleh AI. Barney adalah penduduk senior Farm Village. FSM yang dirancang untuk Barney dapat dilihat pada Gambar 6. Aktivitas yang dilakukannya sehari-hari: 1. Menanam tidak lebih dari 3 tanaman sehari
+karena keterbatasan usia. 2. Memanen semua tanaman yang telah siap
+panen.
+
+3. Barney berpikir bahwa membeli ternak lebih menguntungkan daripada bercocok tanam di kebunnya, maka Barney akan membeli sapi dan ayam jika uang telah cukup dan masih ada tempat yang tersedia.
+Max adalah seorang anak muda yang mempunyai tenaga dan semangat yang besar. FSM yang dirancang untuk Max dapat dilihat pada Gambar 7. Aktivitas yang dilakukannya sehari-hari: 1. Menanam 5 tanaman setiap hari. 2. Memanen semua tanaman yang siap panen. 3. Max berpikir bercocok tanam lebih
+menguntungkan, namun Max terkadang akan membeli sapi dan ayam jika uangnya telah cukup.
+3.3.6 Area Pertanian
+Area pertanian (Gambar 4) adalah area karakter utama yang terdiri dari: 1. Rumah tempat karakter utama dapat tidur
+untuk mengisi tenaga serta menyimpan permainan dan dapat memasukkan bibit dan tools ke dalam tas. Jumlah kapasitas tas dari karakter utama adalah 3 slot. Masing-masing slot dari tas dapat diisi dengan bibit, ataupun tools yang berasal dari peti. 2. Kandang ayam berfungsi untuk berternak ayam yang nantinya menghasilkan telur. Karakter utama harus mempunyai makanan ayam untuk dapat memberi makan ayam. Ayam harus diberi makan yang cukup untuk dapat menghasilkan telur pada keesokan hari. Kandang ayam bersebelahan dengan kandang sapi yang letaknya di area pertanian. 3. Kandang sapi berfungsi untuk berternak sapi yang nantinya menghasilkan susu. Karakter utama harus mempunyai rumput untuk dapat memberi makan sapi. Sapi harus diberi makan yang cukup untuk dapat menghasilkan susu pada keesokan hari. Kandang sapi bersebelahan dengan kandang ayam yang letaknya di area pertanian. 4. Area bercocok tanam untuk menanam tanaman yang nantinya akan menghasilkan buah. Area bercocok tanam yang dapat ditanam terdiri dari 40 slot yang masing masing slot dapat ditanami bibit yang dapat dibeli dari market. Area bercocok tanam dapat ditumbuhi oleh rumput jika tidak ditanami bibit oleh karakter. Jika hujan datang maka karakter utama tidak perlu menyiram area bercocok tanam, karena area bercocok tanam akan basah oleh karena hujan. 5. Sungai kecil untuk mengambil air, air digunakan untuk menyiram tanaman di area bercocok tanam. Jumlah maksimal air yang dapat diambil oleh karakter utama bergantung pada level penyiram, semakin besar level
+
+penyiram yang dimiliki semakin besar jumlah air yang dapat diambil oleh karakter utama.
+
+Rumah
+
+S
+
+u n g a
+
+Area Bercocok
+Tanam
+
+i
+
+Kandang Sapi
+Kandang Ayam
+
+Gambar 4. Layout Area Pertanian
+4. Pengujian Sistem
+Area pertanian Barney kosong pada awal permainan. Tumbuhan tidak ada yang tertanam karena Barney belum melakukan aktifitas apapun. Jika karakter mengunjungi pertanian Barney, maka Barney akan mulai bergerak, sedangkan jika karakter mengunjungi tempat lain maka kegiatan Barney akan dilakukan secara otomatis.
+Sesuai dengan desain FSM barney, maka Barney akan membeli hewan ternak selama uang yang dimiliki oleh Barney cukup, dan akan menanam sehari 3 tanaman jika lahan tersedia dan mempunyai uang yang cukup untuk membeli bibit. Setelah melalui 2 hari, maka keadaan pertanian Barney akan berubah seperti Gambar 5. Bibit yang ada di petak berjumlah 6 buah, karena barney dalam sehari hanya dapat menanam sebanyak 3 tanaman. Selama Barney memiliki uang, maka Barney akan membeli hewan ternak, hewan ternak yang dibeli terlebih dahulu yaitu sapi, kemudian Barney akan membeli ayam. Jumlah sapi yang dapat dipelihara oleh Barney maksimal berjumlah 5 dan ayam yang dapat dipelihara maksimal berjumlah 3.
+
+5. Kesimpulan
+Kesimpulan yang dapat diambil dari penelitian ini adalah: 1. Aplikasi mampu mengambarkan model
+pertanian dan peternakan dalam bentuk game. 2. Aplikasi mampu menerapkan finite state
+machine untuk menunjang realitas game. 3. Aplikasi mampu melakukan proses save dan
+load game dengan memanfaatkan local shared object.
+Daftar Pustaka:
+[1] Arif, Yunifa M., 2011, Integrasi Hierarchy Finite State Machine dan Logika Fuzzy untuk Desain Strategi NPC Game, MATICS Volume 4 Nomor 3, Universitas Islam Negeri Maulana Malik Ibrahim.
+[2] Bourg, David M., 2009, AI for Games Developers, California, O'Reilly Media.
+[3] Chukwuchekwa Joy U., 2011, Learning Paradigms for Game Artificial Intelligence, Academic Research International Volume 1 Issue 2, SAVAP International.
+[4] Grimshaw, J., 2001, Optimality-Theoretic Syntax, MIT Press.
+[5] Millington, I., 2009, Artificial Intelligence for Games, Burlington, Morgan Kaufmann.
+[6] Rachman A., 2010, Agen Cerdas Animasi Wajah untuk Game Tebak Kata, Jurnal Teknologi Informasi Volume 6 Nomor 1, Universitas Dina Nuswantoro.
+
+Gambar 5. Keadaan Akhir Barney
+
+Gambar 6. Finite State Machine Barney Gambar 7. Finite State Machine Max
+
+

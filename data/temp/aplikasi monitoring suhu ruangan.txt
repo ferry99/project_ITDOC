@@ -1,0 +1,408 @@
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 3 September 2010 32
+
+Aplikasi Monitoring Suhu Ruangan Berbasis Komputer dan SMS Gateway
+
+Ahmad Rofiq Hakim, Arif Bramanto & Rajib Syahri
+Jurusan Teknologi Informasi Politeknik Negeri Samarinda
+
+Abstrak Penelitian ini bertujuan untuk membuat aplikasi untuk memonitoring dan mengontrol suhu ruangan yang dapat diplikasikan untuk ruanagan seperti laboratorium dan ruang server menggunakan perangkat keras komputer, mikrokontroller dan berbasis sms gateway. Untuk membangun aplikasi monitoring dan kontrol suhu ruangan dibutuhkan perangkat keras berupa perangkat input yaitu sensor suhu PTC dan LM35DZ, pemroses berupa Mikrokontroler AT89C51, Komputer dan perangkat pengirim data untuk sms yaitu handphone. Perangkat lunak yang digunakan untuk mikrokontroler AT89C51 adalah Assembler MCS-51 dan bahasa pemograman Borland Delphi 6,0 sebagai user interface monitoring dan control suhu ruangan. Hasil penelitian ini adalah aplikasi monitoring dan kontrol suhu ruangan dan diharapkan membantu pengelolaan suhu ruangan seperti ruang laboratorium komputer atau server .
+Kata Kunci : Monitoring, Kontrol, Komputer, Sms Gateway
+
+Pendahuluan Aplikasi Monitoring Suhu Ruangan Berbasis Komputer dan SMS Gateway adalah suatu aplikasi yang dapat digunakan untuk mengontrol dan memonitor suhu di dalam ruangan seperti laboratorium atau ruangan server komputer. Sensor suhu akan menangkap informasi suhu ruangan dan mengirimnya ke mikrokontroller melewati ADC.
+Mikrokontroller secara otomatis akan menyampaikan informasi dari sensor melalui port serial ke PC yang telah dilengkapi aplikasi tersebut, PC juga dihubungkan dengan handphone melalui port serial. Sehingga kita dapat memonitor suhu ruangan tidak hanya dengan PC, tapi kita juga dapat melakukannya dengan menggunakan handphone dengan cara mengirim SMS ke hanphone yang telah terhubung dengan PC. Suhu ruangan, dalam penggunaan ilmiah, dianggap kurang lebih antara 20 sampai 25 derajat Celsius (°C) walaupun nilai tersebut bukanlah suatu nilai yang ditentukan dengan persis. Untuk kemudahan penghitungan, sering digunakan angka 20 °C atau 300 K. Untuk kenyamanan manusia, rentang suhu dan kelembapan relatif dapat diterima. Komponen elektronika juga dapat terpengaruh oleh suhu sekitar, untuk kerja optimal dan agar tidak rusak suhu untuk komponen elektronika relatif antara 1925 oC tidak telalu lembab dan tidak terlalu panas. Sehingga bila suhu tersebut dianggap panas kita dapat melakukan tindakan yang diperlukan.
+
+Dengan Sistem Monitoring yang dibuat ini tidak hanya menggunakan komputer tetapi sistem ini telah didukung dengan sistem SMS gateaway artinya selain operator dapat mengoperasikannya melalui komputer, operator juga dapat menggunakan media handphone untuk mengoperasikannya dengan cara mengirim SMS, jadi operator dapat memonitor dari mana saja, tidak hanya menunggu didepan komputer dan mengamatinya terus menerus
+
+Ruang Lingkup Penelitian
+
+Dalam penelitian ini permasalahan meliputi :
+
+1. Konsep telemetri (monitoring), data collection
+
+dan SMS gateway
+
+2. Perangkat keras
+
+a. Sistem konversi pada sensor.
+
+b. Interface (baik dari RTU ke MTU dan HP ke
+
+MTU)
+
+3. Pada perangkat lunak
+
+a. Software di RTU.
+
+b. Software di MTU (OOP programming,
+
+Database
+
+programming,
+
+Socket
+
+programming).
+
+Gambaran Umum Sistem
+
+Biasanya sistem monitoring memerlukan operator yang secara langsung berinteraksi dengan komputer, sehingga bila ingin melakukan deteksi operator harus mengoperasikan komputer tersebut.
+
+Gambar 1. Gambaran Umum Sistem
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 3 September 2010 33
+
+Adapun prinsip kerja dari blok diagram adalah sebagai berikut:
+1. Yang bertugas sebagai RTU (Remote Terminal Unit )/sensor dalam sistem ini adalah sensor suhu yang nilainya diubah menjadi digital oleh ADC, kemudian data dikirimkan ke MTU (Master Terminal Unit)/ server. Digunakan 2 RTU karena yang diambil datanya ada 2 lokasi.
+2. Yang bertugas sebagai MTU dalam sistem ini adalah PCserver. pada Mikrokontroller At89S51 data yang diterima dari masingmasing RTU dikirimkan ke PC server untuk diolah.
+3. HP gateway berfungsi sebagai penjembatan agar HP client dapat meminta data ke PC server, HP client dapat request informasi nilai suhu dengan cara mengurimkan sms ke nomor HP gateway.
+4. PC SERVER, disini data yang diterima
+dari MTU diolah untuk dijadikan informasi suhu, pada PC server juga terjadi proses penyimpanan data suhu kedalam database, selai itu PC server juga memproses request sms yang masuk ke HP server.
+
+Mikrokontroler
+
+Secara umum pada dasarnya mikrokontroler ini
+
+adalah terdiri dari mikroprosesor, timer dan
+
+counter, perangkat I/O
+
+( Input / Output ) dan
+
+internal memori. Mikrokontroler termasuk
+
+perangkat yang sudah didesain dalam bentuk chip
+
+tunggal.
+
+Mikrokontroler
+
+AT89C51
+
+merupakan
+
+mikrokomputer CMOS 8 bit dengan 4 KB Flash
+
+Programmable and Erasable Read Only memory
+
+( PEROM ). Berteknologi memori non-volatile
+
+berkerapatan tinggi kompatibel dengan
+
+mikrokontroler MCS-51 yang telah menjadi
+
+standart industri, baik dalam jumlah pin maupun
+
+set instruksinya.
+
+Konfigurasi dan fungsi tiap-tiap Pin-pin AT89C51 adalah sebagai berikut :
+a). GND ­ Pin grounding sumber tegangan. b). VCC ­ Pin Positif sumber tegangan 5 Volt
+DC. c). Port 0 ( P0.0 ­ P0.7 ) ­ Port 0 merupakan
+port keluaran/masukan ( I/O). sebagai port keluaran masing ­ masing pin dapat menyerap arus sekitar 3,8 mA. d). Port 1 ( P1.0 ­ p1.7 ) ­ Port 1 merupakan port keluaran/ masukan I/O. sebagai port keluaran masing ­ masing pin dapat menyerap arus sekitar 1,6 mA. e). Port 2 ( P2.0 ­ P2.7 ) ­ Port 2 merupakan port keluaran/masukan I/O. sebagai port
+
+keluaran masing ­ masing pin dapat menyerap arus sekitar 1,6 mA. f). Port 3 ( P3.0 ­ P3.7 ) ­ Port 3 merupakan port keluaran/masukan I/O. sebagai port keluaran masing ­ masing pin dapat menyerap arus sekitar 1,6 mA. g). Reset ­ merupakan pin input aktif tinggi, jika pin ini aktif tinggi selama 2 siklus mesin maka peralatan akan diseret ketika osilator bekerja. h). EA/VPP ­ External Access. Pin EA harus dibari logika 0 ( rendah ) secara eksternal atau dihubungkan ke ground agar AT89C51 dapat mengakses kode mesin dari program memori eksternal dengan lokasi $0000H - $0FFFH. i). XTAL 1 ­ merupakan masukan ke penguat osilator berpenguat tinggi. Pin ini dihubungkan dengan kristal atau sumber osilator dari luar. j.) XTAL 2 ­ Merupakan Keluaran dari penguat osilator. Pin ini dihubungkan dengan kristal atau ground jika menggunakan sumber kristal internal.
+Gambar 2. Mikrokontroler AT89C51
+Memori AT89C51 Organisasi memori mikrokontroler AT89C51
+dapat dibagi atas dua bagian yang berbeda, yaitu : a). Memori Program merupakan tempat menyimpan data yang permanent. Memori program merupakan memori yang hanya dapat dibaca atau lebih dikenal dengan nama Read Only Memori ( ROM ). b). Memori data adalah tempat penyimpan data yang bersifat sementara sehingga pada memori data bersifat Volatile data yaitu data akan hilang bila tidak dicatu.Memori data lebih dikenal dengan nama RAM ( Random Acces memory ) yaitu dapat dilakukan pembacaan dan penulisan data pada alamat yang tersedia.
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 3 September 2010 34
+
+Interupsi Interupsi adalah suatu permintaan khusus kepada mikroprosesor untuk melakukan sesuatu. Bila terjadi interupsi, maka computer akan menghentikan dahulu apa yang sedang dikerjakannya dan melakukan apa yang diminta oleh yang menginterupsi.
+
+Bahasa Assembler MCS ­ 51 Bahasa assembler merupakan tata cara untuk mewakili operasi CPU dalam format bahasa symbol yang disusun berurutan dalam pernyataannya.
+Contoh : MOV A,R0 : memindahkan isi register
+R0 ke Accumulator. MOV A,@R0 : memindahkan isi memori
+yang alamatnya pada Register R0 ke Accumulator.
+
+Konfigurasi Port Serial Pada computer PC kompatibel biasanya dapat ditemukan dua konektor port serial DB ­ 9 yang biasa dinamai COM1.
+
+Tabel 1 Konfigurasi PIN dan nama sinyal konektor serial DB-9
+
+Nomor Pin
+
+Nama Sinyal
+
+Direction
+
+Keterangan
+
+1 DCD In Data Carrier Detect/Received
+
+Line Signal Detect
+
+2 RxD
+
+In
+
+Received Data
+
+3 TxD
+
+Out
+
+Transmit Data
+
+4 DTR
+
+Out
+
+Data Terminal Ready
+
+5 GND
+
+-
+
+Ground
+
+6 DSR
+
+In
+
+Dat Set ready
+
+7 RTS
+
+Out
+
+Request to send
+
+8 CTS
+
+In
+
+Clear to send
+
+9 RI
+
+in
+
+Ring indicator
+
+Biasanya tersedia dua Port serial pada CPU, yaitu COM1 dan COM2. Base address COM biasanya adalah 1016 ( 3F8h) dan COM2 760 ( 2F8h ). Alamat tersebut adalah alamat yang biasa digunakan.
+
+Dengan mengetahui base address-nya, maka dapat ditentukan alamat register-register yang digunakan untuk komunikasi serial.
+
+Tabel 2 Nama register yang digunakan beserta
+
+alamatnya.
+
+Nama Register
+
+COM1
+
+COM2
+
+TX Buffer RX Buffer Baud rate Division Latch LSB
+Baud rate Division Latch MSB Interrupt Enable Register Interrupt Identification register Line Control register Modem Control Register
+
+3F8h 3F8h 3F8h
+3F9h 3F9h 3FAh 3FBh 3FCh
+
+2F8h 2F8h 2F8h
+2F9h 2F9h 2FAh 2FBh 2FCh
+
+Line Status Register Modem Status Register
+
+3FDh 3FEh
+
+2FDh 2FEh
+
+Sensor PTC dan LM35DZ
+(a) (b)
+Gambar 3 (a) Rangkaian Sensor PTC dan (b) LM35DZ
+Pada blok PTC bila suhu naik maka nilai resistansi yang dimiliki oleh PTC akan ikut naik, nilai ini kemudian dipakai pada rangkaian pembagi tegangan tersebut dimana semakin tinggi nilai resistansi yang dihasilkan PTC maka tegangan yang dikeluarkan juga akan semakin tinggi.
+Pada blok sensor LM35DZ berfungsi sebagai pengindra suhu berkisar antara -550C sampai dengan 1500C,dimana sensor LM35DZ tidak perlu dikalibrasi terlebih dahulu seperti halnya sensorsensor suhu yang lain seperti LM335. LM35DZ pada umumnya akan naik sebeser 10mV setiap kenaikan 10C. pada sensor ini memiliki spesifikasi khusus tidak perlu mengubah dari 0K menjadi 0C, karena sensor ini sudah bisa digunakan dalam satuan 0C. pengujian dilakukan untuk dapat mengetahui apakah sensor yang digunakan dalam kondisi masih bisa digunakan. Pengujian dilakukan dengan cara memberikan tegangan sumber kepada sensor dan mengamati serta mencatat tegangan yang dikeluarkan oleh sensor. Hasil output dari sensor LM35DZ tidak langsung dimasukan dalam ADC tetapi dikuatkan terlebih dahulu dengan menggunakan rangkaian penguat non inverting agar dapat diproses oleh ADC
+Penguat Op-Amp Pada rangkaian pengkondisi signal ini digunakan IC lm324 yang memiliki 4 buah Op-Amp dan dapat bekerja dengan tegangan sumber sebesar 5 V. tegangan keluaran dari sensor sebelum masuk ke ADC perlu dikuatkan terlebih dahulu. Tegangan maksimal dari sensor LM 35DZ sekitar 1 V akan dikuatkan sebanyak 2 X. ini masih dapat dilakukan karena tegangan maksimal input dari ADC berada pada range 0V-2,5V, jadi hasil penguatan tidak akan merusak ADC.
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 3 September 2010 35
+
+Dibawahi ini adalah rangkaian penguat non inverting:
+
+Gambar 3.
+
+Gambar 4. Rangkaian Penguat Non Inverting
+Penguatan yang dapat dihasilkan dengan cara pengaturan R2 dan R1 dengan rumus:
+Misalnya menginginkan penguatan sebesar 2X dapat digunakan R2/R1=1 , dengan menggunakan R1=R2=10K. Apabila sumber tegangan op-amp adalah 5 volt, Op-Amp tidak akan mampu menghasilkan output sampai 5 volt juga (biasanya sekitar 4 volt), karena sudah karakteristik dari opamp, dimana tegangan output pasti dibawah tegangan supply. Untuk mencegah op-amp berosilasi, tambahkan kapasitor 100pF paralel dengan Resistor feedback (R2).
+Rangkaian ADC 0804 Pada rangkaian ADC 0804 ini digunakan sebagai pengkonversi data analog menjadi data digital sebelum data diterima oleh mikro untuk ditampilkan pada PC dengan menggunakan komunikasi serial RS 232.Pada sistem ini digunakan dia buah ADC yang masing-masing untuk sensor PTC dan LM35.
+ADC0804 dapat beroperasi dalam mode free running dan controlled. Mode free running seperti yang ditunjukkan pada Gambar 3.8 adalah mode kerja dimana ADC0804 akan mengeluarkan data hasil pembacaan input secara otomatis dan berkelanjutan setelah selesai mengkonversi. Pin 5 (INTR = interrupt, active low) yang berlogika rendah setelah ADC selesai mengkonversi dihubungkan ke pin 3 (WR = write enable, active low) untuk memerintahkan ADC memulai konversi kembali.
+Baik dalam mode free maupun controlled, ADC0804 memerlukan osilator pembangkit sinyal sekitar fCLK = 640 kHz untuk bekerja optimal. Frekuensi dapat dibangkitkan dengan memasang resistor dan kapasitor pada pin CLKR dan CLKIN (pin 19 dan pin 4 ) dengan besar frekuensi yang dihasilkan fCLK  1/(1,1RC).
+
+Out put
+Gambar 5. Rangkaian ADC0804 ADC0804 bekerja dengan metode successive approximation dimana nilai yang terdapat pada Vref/2 (= pin 9) kemudian menjadi dasar perhitungan untuk mencari besar tegangan masukan maupun bit-bit keluaran ADC. Pada rangkaian ini diberikan tegangan sebesar 2,5V ke pin Vref ADC sehingga tegangan input maksimal yang dapat diterima sebesar 2,5 V. Komunikasi Serial Komunikasi serial yang dirancang adalah komunikasi dengan mode half duplex. Dan rangkaian ini membutuhkan tegangan 5 Vdc.
+Gambar 6. Rangkaian Komunikasi Serial
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 3 September 2010 36
+
+Konversi Format TTL ke RS 232 Rangkaian konversi merupakan rangkaian yang berfungsi sebagai pengubah dari sinyal TTL kedalam bentuk sinyal RS232 dan sebaliknya, rangkaian ini dihubungkan ke DB 9 pada PC dan ke Mikrokontroler AT90C51.
+
+3. HP Admin dapat merequest data suhu yang ditampilkan aplikasi, jadi dapat memonitor dimana saja dan kapan saja
+Flowchart Program Aplikasi
+
+Gambar 7. Rangkaian Konversi
+Blok Diagram Aplikasi
+
+Gambar 8. Blok Diagram Aplikasi
+Prinsip kerja dari blok diagram diatas adalah sebagai berikut:
+1. Embedded Sistem mengirim data dari sensor ke PC
+2. Application Sistem bertugas menerima data dari embedded syitem kemudian ditampilkan menjadi informasi nilai suhu, mensimpan data suhu kedatabase, kemudian bila ada request nilai suhu melalui sms akan memberi balasan nilai saat suhu itu .HP Gateway sebagai jembatan untuk menerima atau mengirim sms dari application.
+
+Gambar 9. Flowchat Aplikasi
+Pada sistem aplikasi banyak proses yang dilakukan, aplikasi berfungsi menerima data dari mikrokontroller untuk diolah menjadi sebuah informasi yang dapat dipahami, kemudian menyimpannya kedalam database yang telah ada agar data tersebut disimpan untuk digunakan dikemudian waktu. Aplikasi juga melakukan komunikasi dengan HP, aplikasi menunggu apakah ada sms yang masuk, jika ada dan sms berisi text `suhu' maka aplikasi akan mengirimkan nilai suhu saat itu melalui HP yang terhubung dengan aplikasi, jika sms berisi text selain `suhu' maka aplikasi akan membalas dengan isi sms `kode salah' untuk memberitahukan bahwa kode yang dikirim untuk mengetahui nilai suhu salah
+Perangkat Lunak Pada Komputer Untuk menampilkan hasil pengukuran suhu pada komputer . Maka diperlukan suatu aplikasi yang dapat menunjang interfacing. Yang dibuat menggunakan Borland Delphi 7.0
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 3 September 2010 37
+
+Aplikasi membaca suhu suatu ruangan yang terpasang sensor dan terintegrasi dengan komputer, ketika komputer menerima data. Komputer kemudian mengolah data yang telah diterima tersebut sehingga dapat menampilkan dalam besaran derajat celcius ( 0C).
+Form Utama Ini merupakan form untuk mengendalikan operasional sistem. Pada form ini dapat dilihat nilai suhu yang telah diproses, form ini juga berfungsi sebagai setting dan melakukan koneksi ke perangkat yang terhubung serta untuk mengakses form yang lain.
+
+Form Help Ini merupakan form untuk petunjuk cara pemakaian aplikasi monitoring suhu ini. Berisi petunjukpetunjuk bagaimana cara melakukan konektivitas terhadap perangkat-perangkat yang terhubung dengan komputer seperti hardware dan handphone.
+
+Gambar 12 Form Help
+
+Gambar 10 Form Utama
+
+Sms Gateway Dalam pembuatan aplikasi SMS GATEWAY ini digunakan tools shareware yaitu OxygenSMS. Yang merupakan tool untuk komunikasi ke handset nokia. OxygenSMS hanya dapat digunakan untuk beberapa tipe handset nokia seperti 3330,8210,8250, dan masih ada lagi. Sebelum digunakan OxygenSMS ini harus di install terlebih dahulu agar dapat terintegrasi dengan Delphi 7.0. proses penginstallan dapat dibaca pada file yang disertakan didalamnya.
+
+Form Data Ini merupakan form untuk menampilkan data didalam tabel penyimpanan. Sebelumnya pembuatan tabel dibuat dengan menggunakan Ms.Acess. Di form ini dapat melihat data berdasarkan tanggal dimana data tersebut direcord. Form ini juga menghubungkan dengan form report.
+
+Gambar 13 Component OxygenSms
+Dengan menggunakan OxygenSMS kita dapat melakukan koneksi ke handphone yang terhubung dengan komputer. Instruksi berikut adalah untuk memilih di port berapa handphone terhubung dengan computer :
+
+procedure
+
+TForm1.Edit1Change(Sender:
+
+TObject);
+
+begin
+
+SMS.ComNumber := StrToInt(edit1.Text);
+
+end;
+
+Dengan menggunkan instruksi ini berarti aplikasi terhubung dengan handphone pada port yang ditulis di edit1
+
+Gambar 11 Form Data
+
+Berikut ini instruksi untuk melakukan koneksi ke
+
+handphone:
+
+procedure
+
+TForm1.BTCONHPClick(Sender:
+
+TObject);
+
+begin SMS .Open ; end
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 3 September 2010 38
+
+Berikut ini instruksi untuk mengakhiri koneksi ke handphone:
+
+procedure TObject);
+begin SMS.Close; end.
+
+TForm1.btdisconClick(Sender:
+
+Berikut adalah instruksi untuk membaca sms masuk dan membalas secara otomatis:
+
+procedure TForm1.SMSSMSMessageReceived(Index: Integer; Time: TDateTime; Text, String; Pict: TBitmap);
+
+Send:
+
+Var vls : TStringList; I : Integer;
+begin
+
+mmReceive.Lines.Add('Receive Query Data'+'
+
+- From ' + Send + ' At ' +
+
+FormatDateTime('dd/mm/yyyy
+
+hh:nn:ss',
+
+Time));
+
+mmReceive.Lines.Add(' - Request ' + Text);
+
+vls := ParseAll(Text);
+
+For I := 0 To vls.Count - 1 do
+
+Begin
+
+If vls.Strings[i]='suhu' Then
+
+Begin
+
+vls.Strings
+
+[i]:=
+
+(panel1.Caption )+' celcius ruang
+
+1'+'
+
+'+(PANEL10.Caption )+'
+
+celcius ruang 2'
+
+End
+
+else
+
+vls.Strings [i]:= ' Tidak
+
+Terdefinisi';
+
+end;
+
+SMS.SendSMSMessage(send,vls.Text,167,false, false,nil);
+vls.Free; end;
+
+instruksi ini membaca bila ada sms masuk dengan kode 'suhu' maka akan langsung membalas dengan mengirimkan nilai vls.string bila isi sms tidak sama dengan 'suhu' maka akan mengirimkan ' tidak terdefinisi'.
+
+Kesimpulan Dan saran Kesimpulan 1. Aplikasi monitoring dan kontrol suhu ruangan
+dengan menggunakan komputer dan berbasis sms gateway dapat dibekerja dengan baik 2. Aplikasi monitoring dan kontrol suhu ruangan dengan menggunakan komputer dan berbasis sms gateway dapat digunkan untuk ruang laboratorium komuter atau ruang server.
+.
+
+Saran 1. Parameter yang diukur dalam sistem ini
+hendaknya dikembangkan tidak hanya untuk suhu. Tetapi bias ditambah parameter yang lain seperti deteksi asap. 2. Untuk pengembangannya, dalam menggunakan 2 sensor sebaiknya tidak menggunakan 2 ADC. Tetapi dapat dihemat dengan menggunakan ADC yang memiliki inputan multichennal seperti ADC0808. Atau menggunakan mikrokontroller ATMEGA8535 yang sudah memiliki ADC multichennal didalamnya.
+Daftar Pustaka Budi, Widodo. 2005 . Perancangan Sistem Dan
+Aplikasi Mikrokontroller . Jakarta : PT Elex Media Komputindo.
+Rizal, Gemayel, Widodo Budiharto. 2006 . 12 Proyek Mikrokontroller Untuk Pemula . Jakarta : PT Elex Media Komputindo.
+Putra, Agfianto Eko . 2005 . Belajar Mikrokontroller AT89C51/52/55 ( Teori dan Aplikasi). Yogyakarta:Gava Media.
+Kadir, abdul. 2005 . Pemrograman Database dengan Delphi 7 Menggunakan Access ADO . Yogyakarta : Penerbit Andi.
+MADCOS . 2007 . Pemprograman Borland Delphi 7 Seri Panduan Pemprograman . Yogyakartta: Penerbit Andi
+Widiadhi, Tosef. Teddy Marcus Zakaria. 2006. Aplikasi SMS untuk Berbagai Keperluan . Bandung : Penerbit Informatika.
+Tim Lab.mikroprosessor . 2006 . Pemprograman Mikrokontroller AT89C51 Dengan C/C++ dan Assembler . Yogyakarta : Penerbit Andi.
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+

@@ -1,0 +1,303 @@
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 1 Februari 2010 27
+
+Optimalisasi Manajemen Bandwidth Pada Jaringan Intranet Universitas Mulawarman
+Fahrul Agus1 ,Addy Suyatno1 ,Supianto2
+Program Studi Ilmu Komputer, FMIPA Universitas Mulawarman Jl. Barong Tongkok no.5 Kampus Unmul Gn. Kelua Sempaja Samarinda 75119
+
+Abstrak
+Berkembangnya jaringan LAN dan jaringan internet di Universitas Mulawarman yang semakin membesar membutuhkan adanya suatu system manajemen jaringan yang mengatur dan mengidentifikasi kebutuhan akan system komputer. Tujuan dari analisa efektifitas penggunaan bandwidth jaringan komputer di Universitas Mulawarman adalah untuk mengidentifikasi performa dan jumlah traffic yang terjadi setiap harinya, baik pada jaringan LAN maupun pada jaringan koneksi internet.
+Metode penelitian yang digunakan adalah pengamatan terhadap backbone jaringan komputer Universitas Mulawarman. Identifikasi serta analisa mengenai performa dan total traffic. Dari hasil pengamatan didapat bahwa dari dua jaringan yang ada, yaitu jaringan akses internet dan jaringan intranet, jaringan intranet tidak dimanfatkan secara optimal sebagai jalur akses ke server Universitas Mulawarman yang seharusnya bisa diakses secara lokal.
+Pada penelitian ini menghasilkan beberapa topologi baru yang dapat mengatasi lambatnya koneksi akses ke server lokal Universitas Mulawarman serta pembatasan bandwidth yang terpusat. Topologi ini diharapkan bisa memenuhi kebutuhan akan akses intranet yang cepat.
+Keywords: Optimalisasi, Manajemen Bandwith, Intranet, LAN, Backbone
+
+1Dosen Program Studi Ilmu Komputer Universitas Mulawarman 2Administrator Jaringan Universitas Mulawarman
+
+Pendahuluan Universitas Mulawarman merupakan
+universitas negeri terbesar di Kalimantan Timur memiliki jaringan intranet dan internet yang cukup besar. Jaringan komputer yang cukup besar tersebut tersusun oleh jaringanjaringan komputer lain. Diantaranya jaringan intranetnya sendiri, jaringan INHERENT (Indonesian Higher Education Network), jaringan Internet. Sejak tahun 2008 bandwidth universitas Mulawarman yang awalnya 1Mbps di tambah menjadi 4Mbps, hal ini membuat kebutuhan pengguna juga meningkat. Karena banyaknya pengguna jaringan intranet yang ingin melakukan koneksi internet maka di ambil kebijakan pembatasan secara mutlak (hardlimit) dimasing-masing switch fakultas. Pada sisi lain Universitas Mulawarman memiliki server-server yang di publish di internet. Server-server lokal antara lain SIA (Sistem Informasi Akademik), mail server, mirror, web server, dan media server.
+Akan tetapi untuk jaringan intranet, melakukan hardlimit dimasing-masing switch
+
+fakultas bukanlah sebuah keputusan yang baik mengingat Universitas Mulawarman memiliki server-server yang berada pada area intranet Universitas Mulawarman sendiri. Saat ini bila para pengguna jaringan intranet ingin melakukan koneksi ke server-server lokal harus melewati router internet terlebih dahulu, itu juga yang membuat akses ke server lokal semakin berat. Sangatlah banyak data yang saling bertukar dan dapat dimanfaatkan oleh pengguna jaringan intranet tanpa harus ke internet lebih dahulu.
+Infrastruktur ICT (Information and communication technology) Universitas Mulawarman yang cukup, membuat Penulis mencoba untuk mengoptimalkan infrastruktur jaringan komputer yang ada agar dapat saling bertukar data antar jaringan komputer intranet Universitas Mulawarman yang lain tanpa ada batasan bandwidth yang menghabat kecepatan pertukaran data. Sehingga dalam proses pemanfaatan dan operasionalnya para pengguna intranet dapat dengan cepat
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 1 Februari 2010 28
+
+mengakses server-server yang ada pada Universitas Mulawarman.
+Tujuan Penelitian
+Penelitian ini bertujuan merubah topologi yang ada sekarang menjadi topologi yang lebih efisien dalam memanfaatkan suberdaya intranet sehingga membuka akses yang sebesar-besarnya bagi para penguna jaringan intranet pada Universitas Mulawarman dalam mengakses server­server lokal. Proses ini akan mempercepat pertukaran data antar pengguna jaringan intranet. Serta melakukan manajeman dan monitoring bandwidth secara terpusat sehingga memudahkan dalam pemeliharaan dan perbaikan jaringan.
+Hasil dan Pembahasan
+Jaringan Intranet
+Universitas Mulawarman sejak tahun 2006 telah memiliki infrastruktur berupa jaringan kabel serat optik (Fiber Optik) sepanjang 4000 meter yang menghubungkan gedung rektorat, 11 fakultas, dan 2 unit pelaksana yang ada di Universitas Mulawarman. Selain jaringan komputer dengan media kabel serat optik (Fiber Optik) tadi, Universitas Mulawarman juga mengembangkan perluasan jaringan komputernya ke sub-sub lokal dimasingmasing Fakultas dengan media kabel UTP (Unshielded twisted-pair) maupun kabel STP (Shielded Twisted Pair), seperti UP. Kesmas, gedung LPPM dan Lemlit yang bersimpul di lokal Perpustakaan dan sejak tahun 2009 Universitas Mulawarman memiliki backup jaringan melalui wireless. Dengan adanya wireless ini diharapkan dapat menjakau fakultas dan unit pelaksana yang belum terkoneksi ke jaringan intranet Universitas Mulawarman. Saat ini yang telah terkoneksi menggunakan wireless seperti fakultas farmasi dan gedung baru fakultas perikanan. Infrastruktur ini dibangun dengan menggunakan pendanaan yang bersumber dari kolaborasi APBD (Anggaran Pendapatan dan Belanja Daerah) Pemerintah Provinsi Kalimantan Timur dan PHK TIK (Program Hibah Kompetensi - Teknologi Informasi dan Komunikasi) DIKTI K2 tahun 2006.
+Jaringan INHERENT
+Universitas Mulawarman selain terhubung dengan jaringan global Internet juga
+
+memiliki sambungan ke jaringan INHERENT
+
+(Indonetion Higher Edication Network).
+
+Jaringan ini merupakan sarana akses informasi
+
+yang difasilitasi oleh Direktorat Jenderal
+
+Pendidikan Tinggi (DIKTI) dengan
+
+membangun jaringan pendidikan tinggi di
+
+Indonesia (INHERENT).
+
+Universitas
+
+Mulawarman sebagai salah satu simpul (node)
+
+dari 84 simpul lainnya, telah tersambung
+
+secara fisik dan logik dari Kota Sabang sampai
+
+Merauke.
+
+Infrastruktur INHERENT berupa
+
+jaringan fisik yang menghubungkan
+
+Universitas Mulawarman dengan Universitas
+
+Lambung Mangkurat (Unlam) Banjarmasin
+
+melalui kabel serat optik (Fiber Optik).
+
+Jaringan
+
+INHERENT
+
+Universitas
+
+Mulawarman juga memiliki link backup
+
+berupa VSAT (Very Small Aperture Terminal)
+
+ke ITB Bandung. Hal ini diperuntukkan jika
+
+jaringan utama kabel serat optik yang
+
+menghubungkan Universitas Mulawarman
+
+dengan Universitas Lambung Mangkurat
+
+mengalami gangguan.
+
+Adapun bentuk pemanfaatan fasilitas
+
+INHERENT antara lain berupa Video
+
+Conference (Teleconfenrence) antara anggota
+
+simpul, File Transfer Protokol (FTP), e-mail,
+
+millis dan chatting serta pemanfaatan sharing
+
+aplikasi dan konten lainnya. Sampai dengan
+
+saat ini pemanfaatan INHERENT sudah dapat
+
+dirasakan oleh kalangan mahasiswa dan dosen
+
+seperti kuliah umum untuk mahasiswa
+
+kedokteran, teknik, kalangan perguruan tinggi
+
+swasta di sekitar Unmul serta kegiatan coffee
+
+morning dengan Dirjen DIKTI untuk
+
+koordinasi menejemen pendidikan tinggi.
+
+Disamping itu juga terus diupayakan untuk
+
+penyebarluasan INHERENT di kalangan
+
+Perguruan Tinggi di sekitar Unmul dengan
+
+menggunakan Infrastuktur jaringan nirkabel.
+
+Pada akhir tahun 2009 ini Universitas Terbuka
+
+(UT) samarinda juga ikut bergabung dengan
+
+lokal node Universitas mulawarman. Setelah
+
+proyek pengembangan beralih dari penyedia
+
+layanan Telkom berganti menjadi Lintasarta
+
+Jaringan Internet
+Jaringan Internet sudah dimanfaatkan oleh Universitas Mulawarman sejak tahun 2005 dengan lebar jalur akses data (bandwidth) sebesar 256 Kbps yang pendanaan bersumber dari APBD Pemerintah Provinsi Kalimantan Timur. Pada tahun 2008 Universitas Mulawarman memiliki akses Internet sebesar 4 Mbps dengan ISP (Internet Service Provider) Astinet PT. Telkom. Saat ini besar bandwidth sudah mencapai 20 Mbps yang telah menggunakan jalur FO (fiber optic). Dengan
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 1 Februari 2010 29
+
+bandwidth sebesar itu diharapkan dapat di distribusikan ke masing-masing fakultas yang terkoneksi dengan jaringan intranet sehingga dapat memenuhi kebutuhan akan akses internet walaupun untuk ukuran sebuah Universitas sebesar Unmul 20 Mbps sangatlah kurang.
+Rancangan Optimalisasi Jaringan Intranet
+Untuk mendapatkan hasil yang maksikmal perlu diperhatikan tahapan-tahapan dalam melakukan optimalisasi bandwidth pada jaringan intranet. Hal ini dilakukan agar mengurangi kesalahan-kesalahan yang terjadi pada saat penelitian, langkah ­ langkahnya antara lain :
+1. Membangun PC DNS server sebagai DNS lokal.
+2. Mengubah topologi dengan menempatkan server-server pada DMZ.
+3. Membangun PC router mikrotik sebagai pembagi bandwidth internet.
+4. Mengubah IP publik server menjadi ip lokal.
+5. Melakukan pendataan ip address router fakultas, dengan data tersebut dibuat manajeman bandwidth internet pada PC router mikrotik.
+6. Melakukan monitoring dan pemeliharaan koneksi antar jaringan.
+Selama ini Universitas Mulawarman mengunakan topologi yang terlihat pada Pambar 3. Pada gambar tersebut terlihat bahwa akses ke server sia, server mail, server web dan server media mesti melalui router internet. Kondisi demikian membuat pengaksesan ke server Universitas Mulawarman menjadi terbatasi oleh bandwidth yang dimiliki oleh Universitas Mulawarman.
+Dalam topologi diatas juga masih menerapkan pembatasan secara keras (hardlimit) pada masing-masing switch fakultas. Pembatasan ini karena belum adanya manajeman bandwidth secara terpusat. Dalam rancangan optimalisai jaringan intranet dengan mendata unit-unit router yang ada di masingmasing fakultas serta merubah IP server yang semula menggunakan ip public sekarng menggunakan ip lokal yang sudah di definisikan pada DNS (Domain Name Server) sehingga pengaksesan server dari jaringan intranet dapat diakses tanpa harus terkoneksi dengan internet
+Pada Gambar 4 merupakan topologi dari bulan April sampai dengan bulan Oktober 2009 karena ada kerusakan alat pada Router Cisco 2621MX maka router internet sementara digantikan oleh router cisco 7606 yang selama ini menjadi router INHERENT selama kurang
+
+lebih tujuh bulan router 7606 mejalankan dua
+
+tugas koneksi berbeda yaitu sebagai router
+
+internet dan router INHERENT hal ini
+
+membuat CPU Usage pada cisco 7606 menjadi
+
+sangat tinggi sehingga koneksi terasa lebih
+
+lambat selainitu juga ada beberapa website
+
+yang sudah terintegrasi dengan jaringan
+
+INHERENT tidak bisa diakses. Website
+
+tersebut antara lain:
+
+http://dikti.go.id,
+
+http://e-
+
+journal.dikti.go.id,
+
+http://inherent-
+
+dikti.net, dan beberapa website Universitas
+
+seperti UI dan UGM.
+
+Topologi ini tidak berpengaruh pada
+
+jaringan intranet karena semua koneksi yang
+
+menuju server lokal Universitas Mulawarman
+
+akan langsung berada pada jaringan lokal.
+
+Topologi pada bulan November 2009
+
+sampai dengan sekarang menggunakan
+
+topologi seperti pada Gambar 5. Perbedaan
+
+antara Gambar 4 dengan 5 adalah pada router
+
+internet tidak lagi menggunakan cisco 7606
+
+setelah berkonsultasi dengan teknisi jaringan
+
+dari pihak TELKOM maka router cisco 7606
+
+digantikan oleh PC router dengan
+
+menggunakan sistim operasi ubuntu server
+
+9.10 dengan demikian beban pada router 7606
+
+telah berkurang. Walau belum maksimal
+
+karena keterbatasan kemampuan hardware
+
+namun PC router ini dapat menjaga koneksi
+
+internet sampai Router Cisco yang di pesan
+
+datang.
+
+Manajemen Bandwidth Manajemen bandwidth yang
+digunakan berdasarkan dari besarnya pemakaian masing-masing fakultas, adapun pembagian bandwidth per fakultas seperti yang dijelaskan pada Gambar 6.
+
+Hasil Pengujian Waktu Akses
+
+Pengujian pada jaringan Intranet dengan topologi lama
+
+Sebelum diadakan penelitian masing masing switch core di masing-masing fakultas telah delimit secara hard limit. Pada Fakutas MIPA limit bandwidth pada port 23 dengan besar inbound dan outbond sebesar 128 yang artinya besar bandwidth yang dibuka hanya sebesar 128 kb. Dengan asumsi seperti itu maka trafik yang melewati port Ethernet 23 baik menuju internet dan intranet tidak akan melebihi dari 128 kb.
+Sedangkan pengujian dengan menggunakan tes ping ke server SIA yang dilakukan dari masing-fakultas sebagai sample dengan dilakukan pengetesan ping dari client pada fakultas Kehutanan. Pada Gambar 7
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+menujukkan bahwa IP yang digunakan masih menggunakana IP public yaitu 203.130.214.108 ip tersebut adalah ip public yang apa bila ingin mengakses server SIA dibutuhkan koneksi internet sehingga perjalanan paket data yang kita kirim dan terima harus melalui jalur internet terlebih dahulu selain itu pula ada pembatasan di switch yang membuat koneksi yang seharusnya bisa cepat mejadi terasa sangat lambat yang ditunjukkan dengan besarnya Time Replay hasil dari PING.
+Pengujian pada jaringan Intranet mengunakan topologi baru
+Pengujian dilakukan pada jaringan intranet (jaringan lokal) Universitas Mulawarman. Pengujian jalur akses data dilakukan dengan melakukan ping untuk mengetahui data yang dikirim sampai ke tujuan atau tidak. Serta menentukan jalur mana yang dipakai dalam mengakses server local, apakah melalui internet atau tidak. Hal tersebut dapat di lihat dari traceroute yang dilakukan
+Pengujian pertama dilakukan dengan melakukan tes ping dari sistem operasi Windows ke server unmul.ac.id yang telah ditempatkan pada DMZ memiliki alamat IP yaitu 192.168.22.3. Jika pengujian berhasil dengan adanya jawaban reply dari server sia.unmul.ac.id. Dari hasil pengujian ping menunjukkan bahwa waktu yang di tempuh paket yang dikitim tidak lebih dari 1 detik, hal ini menunjukkan bahwa akses yang ditempuh sangatlah cepat ( Gambar 8).
+Kesimpulan
+1. Setelah dilakukan penelitian ini menghasilkan optimalisasi server lokal dengan akses koneksi yang lebih cepat.
+2. Optimalisasi Bandwidth pada jaringan komputer Universitas Mulawarman menghasilkan manajeman bandwidth dan monitoring yang terpusat.
+
+Vol 5 No. 1 Februari 2010 30
+3. Dengan di klasifikasikannya server local menjadi DMZ membuat server unmul yang awalnya diakses melalui jalur internet dapat diakses secara lokal tanpa harus terkoneksi internet.
+4. PC router mikrotik memudahkan dalam manajeman IP dan bandwidth selain itu dapat dijadikan sebagai firewall.membuat server unmul yang awalnya diakses melalui jalur internet dapat diakses secara lokal tanpa harus terkoneksi internet.
+5. PC router mikrotik memudahkan dalam manajeman IP dan bandwidth selain itu dapat dijadikan sebagai firewall.
+Daftar Pustaka
+Danu Prasetyo Rusli. 2006. Analisa efektifitas penggunaan bandwidth jaringan komputer di Universitas Kristen Petra. Universitas Kristen Petra, Jakarta.
+Abdullah, Lolly Amalia. 2007. Panduan Topologi & Keamanan. Direktorat Sistem Informasi Perangkat Lunak dan Konten, Jakarta.
+Daryanto. 2003. Pengetahuan Dasar Ilmu Komputer. YRAMA WIDYA, Bandung.
+Departemen Pendidikan dan Kebudayaan RI. 1991. Kamus Besar Bahasa Indonesia. Edisi II. Cet. I. Balai Pustaka, Jakarta.
+Pena, Tim Prima, 2007. Kamus Besar Bahasa Indonesia. Gitamedia Press, Jakarta.
+Rachman, Oscar & Gin Gin Yugianto. 2008. TCP/IP dalam dunia Informatika & Telekomunikasi. Informatika, Bandung.
+Widodo, Sugeng & A. Ismail Marjuki. 2006. STIKI Server Handbook. Laboraturium Komputer STIKI, Malang.
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman Lampiran
+
+Vol 5 No. 1 Februari 2010 31
+
+Gambar 1. Topologi Intranet Universitas Mulawarman
+Gambar 2. Jaringan INHERENT Tahun 2009
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 1 Februari 2010 32
+
+Gambar 3. Topologi Jaringan Tahun 2008
+Gambar 4. Topologi Jaringan dari bulan April sampai Oktober
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 1 Februari 2010 33
+
+Gambar 5. Topologi jaringan dari bulan November sampai sekarang
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 1 Februari 2010 34
+
+Gambar 6. Manageman Bandwidth pada Miktotik
+Gambar 7. Test Ping ke server SIA dengan Topologi Lama
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+Jurnal Informatika Mulawarman
+
+Vol 5 No. 1 Februari 2010 35
+
+Gambar 8. Hasil Test Ping ke Server Unmul dengan Topologi Baru
+
+Program Studi Ilmu Komputer Universitas Mulawarman
+
+

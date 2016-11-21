@@ -1,0 +1,390 @@
+SYSTEM ONLINE CBIR MENGGUNAKAN IDENTIFIKASI
+DOMINAN WARNA PADA FOREGROUND OBJEK
+Fitria Purnamasari1, Nana Ramadijanti2, Setiawardhana2 Mahasiswa1 , Dosen 2
+Politeknik Elektronika Negeri Surabaya Institut Teknologi Sepuluh Nopember Kampus PENS-ITS Keputih Sukolilo Surabaya 60111 Telp (+62)31-5947280, 5946114, Fax. (+62)31-5946114
+Email : v3a88@yahoo.com
+Abstrak
+Content Based Image Retrieval merupakan salah satu bentuk implementasi dari pengolahan citra digital. Aplikasi ini dibangun dengan memanfaatkan fitur utama dari citra yaitu fitur warna. Ekstraksi fitur warna yang umum dipakai adalah histogram warna,tetapi pada umumnya objek hadir dalam kondisi background yang sangat beragam,hal ini berpengaruh terhadap kebenaran hasil retrival. Untuk mengoptimalkan fitur warna dari objek gambar maka pada proyek akhir ini fitur warna yang dipakai hanya warna foreground objek gambar. Pada proyek akhir ini, proses pencarian dilakukan secara online dengan menggunakan kamera web cam.
+Untuk dapat melakukan proses pencarian, disini harus dilakukan pengambilan gambar kemudian dilakukan proses ekstraksi fitur sehingga dari hasil ekstraksi fitur tersebut dapat diketahui informasi dari gambar. Untuk proses ekstraksi fitur warna digunakan metode histogram HSV.
+Kata Kunci : Content Based Image Retrieval, Histogram HSV.
+
+1. Pendahuluan
+1.1 Latar Belakang Pada awal penelitian image retrieval dilakukan
+dengan menggunakan pendekatan pengindeksan dan informasi citra berbasis text. Teknik pencarian berbasis text menjadi tidak praktis karena dua alasan, yaitu: ukuran basis data gambar yang besar dan subyektif dalam mengartikan gambar dengan text. Kata kunci yang dikodekan terbatas pada beberapa istilah yang dihasilkan untuk masing-masing referensi gambar. Lebih lanjut beberapa gambar yang dihasilkan akan tampak sangat berbeda dibandingkan dengan keinginan user dari otomatisasi pencarian menggunakan kata kunci.
+Untuk menghindari teknik tersebut, maka image retrieval dikembangkan lagi menggunakan pendekatan alternative yaitu teknik mencari gambar hanya berdasarkan informasi yang ada pada gambar tersebut. Teknik image retrieval yang dipilih disamping dapat mencapai rata-rata kemampuan retrieval yang tinggi, seringkali memberikan konsekuensi waktu komputasi yang tinggi dikarenakan harus memproses dimensi data gambar yang besar
+Ekstraksi fitur warna yang umum dipakai adalah histogram warna,tetapi pada umumnya objek hadir dalam kondisi background yang sangat beragam,hal ini berpengaruh terhadap kebenaran hasil retrival. Untuk
+
+mengoptimalkan fitur warna dari objek gambar maka pada proyek akhir ini fitur warna yang dipakai hanya warna foreground objek gambar. Proses mendapatkan ekstraksi feature warna foreground menggunakan histogram interseksi dengan distribusi warna yang digunakan sebanyak 48 warna. Metode yang direncanakan diharapkan dapat meningkatkan kebenaran hasil retrieval dari input query gambar yang dimasukkan secara online.
+1.2 Rumusan Permasalahan
+Adapun permasalahan yang ada pada system ini yaitu sebagai berikut:
+1. Bagaimana cara melakukan pencarian gambar dengan menggunakan fitur warna
+2. Bagaimana cara mendapatkan fitur warna yang dominan pada gambar.
+3. Proses apa saja yang harus digunakan agar sistem yang dihasilkan memiliki performance dan kualitas yang baik
+1.3 Tujuan Proyek Tujuan proyek akhir ini adalah membangun
+sistem online CBIR menggunakan fitur warna dominan pada obyek gambar
+
+1.5 Kontribusi Proyek Hasil dari proyek akhir ini diharapkan dapat
+memberikan alternatif pada input query sistem CBIR dan mendapatkan metode untuk mencari fitur warna dominan pada objek gambar
+2. TEORI PENUJANG
+2.1 Model Warna HSV
+Model warna HSV mendefinisikan warna dalam terminologi Hue, Saturation dan Value. Hue menyatakan warna sebenarnya, seperti merah, violet, dan kuning. Hue digunakan untuk membedakan warna-warna dan menentukan kemerahan (redness), kehijauan (greeness), dsb, dari cahaya. Hue berasosiasi dengan panjang gelombang cahaya. Saturation menyatakan tingkat kemurnian suatu warna, yaitu mengindikasikan seberapa banyak warna putih diberikan pada warna. Value adalah atribut yang menyatakan banyaknya cahaya yang diterima oleh mata tanpa memperdulikan warna.
+
+n
+ min(h1i , h2i ) DH (h1, h2)  1  i1 n
+ h1i
+i 1
+
+Normalisasi diperlukan karena pada saat menggunakan image dengan ukuran yang berbeda, fungsi jarak ini bukanlah sebuah matrik yang seharusnya DH(g,h)DH(g,h). Supaya manjadi sebuah matrik yang valid, pada histogram diperlukan :
+
+h1n 
+
+h1
+n
+
+ h1i
+
+i 1
+
+Untuk histogram yang ternormalisasi (jumlah total sama dengan 1),interseksi histogram adalah :
+
+n
+DHn (h1n , h2n )  1  h1in  h2in i1
+Persamaan diatas adalah model matriks jarak Minkowski dengan k=1. Sifat interseksi histogram dapat menghilangkan bagian tertentu (occlusion), dimana apabila sebuah objek dalam suatu image dihilangkan pada bagian tersebut, bagian yang kelihatan masih mempunyai kontribusi untuk kesamaan atau similaritas.
+
+Gambar 1. Model Warna HSV
+Karena model warna HSV merupakan model warna yang diturunkan dari model warna RGB maka untuk mendapatkan warna HSV ini , kita harus melakukan proses konversi warna dari RGB ke HSV. HSV merupakan salah satu cara untuk mendefinisikan warna yang didasarkan pada roda warna. Hue mengukur sudut sekitar roda warna (merah pada 0 derajat, 120 derajat di hijau, biru, di 240 derajat). Saturation yang menunjukkan pada radius roda warna sehingga menunjukkan proporsi antara gelap (pusat) untuk warna ke putih murni (di luar).Value Menunjukkan nilai kecerahan. Hue memiliki nilai antara 0 hingga 360 (derajat), Saturation and Value berkisar dari 0 hingga 100%.
+2.2 Histogram Interseksi
+Histogram interseksi melakukan perhitungan jarak dengan membandingkan dua histogram h1 dan h2 dan terhadap n bin dengan mengambil nilai interseksi dari kedua histogram tersebut.
+
+3. RANCANGAN SISTEM
+3.1 Perancangan Perangkat Lunak .
+Gambar 2. Gambaran Umum Perancangan Sistem
+Gambar diatas menunjukkkan bahwa sistem ini bekerja dengan menggunakan kamera untuk menangkap gambar dan menggunakan komputer untuk memproses dan mengolah gambar tersebut 3.1.1 Perancangan System CBIR
+Berikut adalah penjelasan tentang perancangan perangkat lunak yang digunakan dalam pembuatan sistem ini :
+
+Gambar 3. Blok Diagram Sistem CBIR
+3.1.2 Preprocessing Raw image dari pencarian data ini bervariasi baik
+kualias maupun ukuran piksel gambarnya, dikarenakan sumber datanya juga bervariasi. Sehingga perlu dilakukan standarisasi perspektif agar algoritma yang dipakai dalam proses selanjutnya dapat bekerja secara optimal. Preprocessing yang akan dilakukan ada 3 proses yaitu : Normalisasi ukuran (resize 320 x 240), Normalisasi cahaya, Remove background. Berikut ini flowchart untuk proses normalisasi:
+Gambar 4.Proses Preprocessing 3.1.3 Distribusi Warna
+Distribusi warna yang digunakan pada program tugas akhir ini 48 warna crayon.
+Table 1 Warna 48 Crayon
+
+NO R G B
+
+0 188 138 33
+
+1 42 40
+
+113
+
+2 53 48
+
+55
+
+3 158 63
+
+131
+
+4 26 28
+
+41
+
+5 28 130 44
+
+6 91 48
+
+42
+
+72
+
+111 69
+
+8 170 189 193
+
+9 61 48
+
+42
+
+10 0
+
+155 96
+
+11 150 169 186
+
+12 24
+
+83
+
+87
+
+13 1
+
+93 134
+
+14 188 177 1
+
+15 42
+
+74
+
+87
+
+16 64
+
+46
+
+46
+
+17 40
+
+93
+
+68
+
+18 31
+
+127 100
+
+19 193 61
+
+110
+
+20 198 99
+
+145
+
+21 230 201 157
+
+22 209 74
+
+19
+
+23 96
+
+118 53
+
+24 95
+
+164 221
+
+25 33
+
+24
+
+141
+
+26 203 47
+
+22
+
+27 10
+
+88
+
+188
+
+28 76
+
+117 222
+
+29 123 227 216
+
+30 150 141 222
+
+31 62
+
+56
+
+154
+
+32 190 161 197
+
+33 230 143 14
+
+34 14
+
+98
+
+98
+
+35 227 246 252
+
+36 117 121 130
+
+37 179 161 111
+
+38 114 49
+
+47
+
+39 66
+
+34
+
+99
+
+40 171 28
+
+58
+
+41 117 28
+
+58
+
+42 21
+
+154 89
+
+43 149 91
+
+87
+
+44 255 201 101
+
+45 217 215 70
+
+46 145 124 41
+
+47 14 122 214
+
+Tabel diatas merupakan tabel nilai RGB pada 48 warna crayon (x1-x48). Dari tabel warna diatas maka dapat ditampilkan pada program akan seperti gambar dibawah ini
+
+Gambar 5 Distribusi Warna Crayon 48 warna
+
+3.1.4 Segmentasi Warna Segmentasi adalah suatu proses yang
+digunakan untuk mengelompokkan gambar sesuai dengan obyek gambarnya. Setelah menentukan berapa banyak distribusi warna yang digunakan maka tiap gambar yang ada dilakukan segmentasi warna.
+ ei  (ri  r)2  (gi  g)2  (bi  b)2
+
+jarak yang minimal adalah gambar yang paling mirip dengan gambar template
+d  V (db)  V (Q)
+Dimana V (db) dan V (Q) adalah vektor dari
+gambar database dan gambar query.
+3.2 Perancangan User Interface
+
+Gambar 5 Segmentasi 48 warna
+
+3.1.5 Histogram HSV HSV merupakan salah satu cara untuk
+mendefinisikan warna yang didasarkan pada roda warna. Hue mengukur sudut sekitar roda warna (merah pada 0 derajat, 120 derajat di hijau, biru, di 240 derajat). Saturation yang menunjukkan pada radius roda warna sehingga menunjukkan proporsi antara gelap (pusat) untuk warna ke putih murni (di luar).Value Menunjukkan nilai kecerahan. Hue memiliki nilai antara 0 hingga 360 (derajat), Saturation and Value berkisar dari 0 hingga 100%.
+3.1.6 Interseksi
+Histogram interseksi melakukan perhitungan jarak dengan membandingkan dua histogram h1 dan h2 dan terhadap n bin dengan mengambil nilai interseksi dari kedua histogram tersebut
+n
+ min(h1i , h2i ) DH (h1, h2)  1 i1 n
+ h1i
+i 1
+3.1.7 Image Matching
+Image matching adalah metode yang digunakan dalam Tugas Akhir ini yang bertujuan untuk mengetahui kemiripan dua buah gambar. Pertama, gambar query dan gambar database ditentukan. Gambar query disebut juga dengan gambar acuan atau gambar template adalah suatu gambar yang dijadikan acuan informasi (content) dalam proses pencarian. Sedangkan gambar database atau kumpulan gambar target adalah sekumpulan gambar yang akan digunakan sebagai database gambar.
+Kemudian kedua gambar tersebut dilakukan proses ekstraksi ciri warna. Gambar yang mempunyai
+
+Gambar 6. User Interface Form Utama
+Keterangan GUI :
+1 : Tampilan camera 2 : Hasil dari capture camera 3 : Button untuk menaktifkan camera 4 : Button untuk menonaktifkan camera 5 : Button untuk mengcapture gambar dar camera 6 : Button untuk melakukan settingan background terhadap gambar 7 : Button untuk menyimpan hasil background 8 : Button untuk melakukan proses identifikasi dari data tes 9 : Button untuk mencari gambar yang sama dengan data tes 10 : Button untuk melakukan training terhadapa data training 11 : Button untuk keluar dari program 12,13,14,15,16 : Hasil dari pencarian gambar 17,18,19,20,21 : Button untuk melihat histogram dari gambar hasil pencarian
+Untuk GUI pada proses pengolahan gambar seperti berikut ini :
+Gambar 7. Perancangan User interfaceProses
+
+Keterangan GUI : 1 : Gambar data tes hasil normalisasi (risize 320 x 240 ) 2 : Gambar data tes hasil normalisasi cahaya 3 : Gambar data tes setelah diremove backgroundnya 4 : Gambar data tes setelah di segmentasi ke 48 warna 5 : Gambar data tes setelah di koversi ke HSV
+Untuk membandingkan fitur data tes dengan data training menggunakan histogram :
+Gambar 8. a) Histogram data tes, (b) Histogram Data training
+Gambar 9. Perancangan User interface untuk setting background
+Keterangan GUI : 1 : Nilai red dari klik gambar 2 : Nilai green dari klik gambar 3 : Nilai blue dari klik gambar 4: Gambar yang akan di setting backgroundnya.
+
+Table 2 Jenis Data Training
+No. Jenis Gambar 1. Bunga Sepatu 2. Bunga Melati 3. Bunga Matahari 4 Bunga Mawar merah 5 Bunga Angrek Ungu 6. Buah Pear 7. Tomat 8. Harimau 9. Burung berwarna biru 10. Kuda 10. Bunga Anggrek
+4.1 Uji Coba Retreival pada Bunga Sepatu Uji coba dilakukan terhadap 5 gambar bunga
+Sepatu yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+Table 3 Hasil Uji Coba Bunga Sepatu
+
+4. HASIL PENGUJIAN DAN ANALISA
+Untuk spesifikasi pengujian diatas menggunakan 200 data training gambar. Terdiri dari 10 kategori gambar, masing-masing kategori ada 20 gambar ( 10 gambar asli dari internet dan 10 gambar hasil dari gambar yang diprint setelah itu di capture menggunakan webcam).
+Kategori jenis gambar yang digunakan dalam data training tersebut adalah :
+
+4.2 Uji Coba Retreival pada Bunga Melati
+Uji coba dilakukan terhadap 5 gambar bunga Melati yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+
+Table 4 Hasil Uji Coba Bunga Melati
+
+Table 6 Hasil Uji Coba Bunga Mawar
+
+4.3 Uji Coba Retreival pada Bunga Matahari Uji coba dilakukan terhadap 5 gambar bunga
+Matahari yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+Table 5 Hasil Uji Coba Bunga Matahari
+
+4.5 Uji Coba Retrieval pada Bunga Anggrek Ungu Uji coba dilakukan terhadap 5 bunga anggrek
+yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+Table 7 Hasil Uji Coba Bunga Anggrek Ungu
+
+4.4 Uji Coba Retreival pada Bunga Melati
+Uji coba dilakukan terhadap 5 gambar bunga Melati yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+
+4.6. Uji Coba Retreival pada Buah Pear
+Uji coba dilakukan terhadap 5 gambar buah pear yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+
+Table 8 Hasil Uji Coba Buah Pear
+
+prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+Table 10 Hasil Uji Coba Gambar Harimau
+
+4.7 Uji Coba Retreival pada Buah Tomat Uji coba dilakukan terhadap 5 gambar buah tomat
+yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+Table 9 Hasil Uji Coba Buah Tomat
+
+4.9 Uji Coba Retreival pada Gambar Burung Uji coba dilakukan terhadap 5 gambar gambar
+burung yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+Table 11 Hasil Uji Coba Gambar Burung
+
+4.8 Uji Coba Retreival pada gambar Harimau
+Uji coba dilakukan terhadap 5 gambar harimau yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai
+
+4.10 Uji Coba Retreival pada Gambar Kuda
+Uji coba dilakukan terhadap 5 gambar gambar kuda yang sama dengan data training,dan hasil yang ditampilkan adalah 5 gambar dengan urutan nilai
+
+prosentasi kemiripan dimulai dari yang terbesar sampai yang terkecil.
+Table 12 Hasil Uji Coba Gambar Kuda
+Dari uji coba pada 10 katergori gambar diatas dapat disimpulkan rata-rata persentase hasil retrieval adalah sebagai berikut :
+Tabel 13 Rata-rata presentase kemiripan
+Analisa : Pada Percobaan diatas ada beberapa gambar yang masih error,dikarenakan histogram pada data tes memilik kemiripan yang tinggi dengan objek yang lain. 5 KESIMPULAN DAN SARAN 5.1 Kesimpulan
+Berdasarkan hasil pengujian dan analisa pada sistem ini , maka dapat diambil beberapa kesimpulan sebagai berikut :
+
+1. Rata-rata presentase kemiripan gambar dengan uji coba gambar query dari data training sebesar 94.4%
+2. Rata-rata presentase kemiripan gambar dengan uji coba gambar query diluar data training sebesar 90%
+3. Rata-rata persentase kemiripan berdasarkan dominan warna pada foreground objek untuk sample diatas sebesar 92,2%. Hasil tersebut menunjukkan bahwa ciri warna dominan pada foreground objek sudah dapat membedakan gambar dengan baik.
+4. Intensitas cahaya mempengaruhi akurasi pada sistem image retrieval ini.
+5. Ukuran objek tidak mempengaruhi akurasi pada sistem image retrieval ini
+
+5.2 Saran
+
+Dari Proyek Akhir yang telah dilakukan kiranya
+
+masih diperlukan pembenahan-pembenahan sehingga
+
+didapatkan hasil yang lebih memuaskan. Saran-saran yang
+
+dapat diberikan diantaranya adalah:
+
+ Peningkatan keakuratan hasil identifikasi
+
+ Menerapkan
+
+metode
+
+pengelompokan
+
+menggunakan algoritma statistika atau kecerdasan
+
+buatan
+
+ Menggabungkannya dengan fitur yang lain,untuk
+
+mendapatkan hasil yang lebih optimal.
+
+Daftar Pustaka
+[ 1 ] Krishnan; Banu M.Sheerin ; Christtiyana ,C Callins." Content Based Image Retrieval using Dominant Color Identification Based on Foreground Objects"
+[ 2 ] G.Gordon ; T.Darrell ; M.Harville ; J.Woodfill ."Background Estimation and removal based on range and color "
+[ 3 ] Ramadijanti, Nana. "Modul Praktikum Color Histogram ", PENS -ITS
+[ 4 ] Setiawardhana. " Identifikasi Kematangan Buah Tomat ", PENS ­ITS
+[ 5 ] Susilo, Andriant. "Web Image Retrieval Untuk Identifikasi Bunga Dengan Pengelompokan Content Menggunakan Ciri Warna dan Bentuk " , 2006
+[ 6 ] http://www.google.com
+
+[CV Penulis]
+Fitria, menjalankan studi D4 bidang Teknik Informatika pada Politeknik Elektronika Negeri Surabaya ­ Institut Teknologi Sepuluh Nopember(PENS-ITS) semester 8.
+
+

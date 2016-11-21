@@ -1,0 +1,335 @@
+1
+TEMU KEMBALI CITRA UNTUK PENGENALAN BATIK PADA CITRA 2D MENGGUNAKAN FITUR TEKSTUR MATRIKS KOOKURENSI ARAS
+KEABUAN DAN FUNGSI JARAK CANBERRA
+Intan Putri Rakasiwi1, Ricardus Anggi Pramunendar2 Universitas Dian Nuswantoro, Ilmu Komputer, Teknik Informatika
+Jl.Imam Bonjol 205, Semarang, Jawa Tengah, 50131, (024) 3517261
+E-mail : intanputri1265@gmail.com1, ricardus.anggi@dsn.dinus.ac.id2
+
+Abstrak - Batik Indonesia merupakan warisan budaya yang memiliki sejarah yang cukup panjang. Sehingga berbagai macam jenis batik saling mempengaruhi satu sama lain, yang mengakibatkan beberapa jenis batik memiliki lebih dari satu motif. Oleh karena itu membuat masyarakat sulit membedakan jenis batik. Salah satu jenis batik yang digunakan dalam penelitian ini adalah batik pedalaman dan pesisir. Data batik diambil dari penelitian sebelumnya yang berupa data citra. Selanjutnya data diolah menggunakan metode Content Based Image Retrieval (CBIR) dengan melakukan ekstraksi fitur. Sistem CBIR secara umum dibangun dengan melihat karakteristik atau ciri suatu citra. Suatu citra memiliki ciri-ciri dasar yaitu warna, tekstur, dan bentuk. Tekstur adalah karakteristik yang penting untuk analisis ciri berbagai jenis citra. Proses ekstraksi fitur yang dilakukan pada penelitian ini menggunakan fitur tekstur GLCM dan pengukuran jarak canberra untuk menentukan ciri khusus dari citra gambar tersebut. Selanjutnya dilakukan akurasi untuk menentukan presentase tingkat akurasi pedalaman dan pesisir. Dalam penelitian ini didapatkan akurasi sebesar 46%.
+
+Kata Kunci: Batik, CBIR, GLCM, Canberra distance
+
+Abstract - Indonesia batik as form inheretance of culture who has long history. So many kind of batik who influence one and other, the several kind of batik has more than one motif. Because the communities is very difficult to do different that kind of batik. One of them to use this research, it is hinterland batik and edge of beach batik. The data of batik from this research shape of citra. And next it will be process used by method Content Based Image Retrieval (CBIR) it does extract to this fiture system. The way of CBIR system build to see the caracter of the citra. Abaout citra has specific or different caracters and shapes. The texture of caracteristic which important to analysis. Many kind caracter of citra extraction of process, that fitur which do to the research for use to fitur GLCM texture to measured of canberra distance for determined specific caracteristics from the citra of picture. Acuration hinterland batik and edge of beach batik, in this research get value of acuration 46%.
+.
+Keyword : Batik, CBIR, GLCM, Canberra distance
+
+I. PENDAHULUAN1
+Pengolahan citra digital merupakan pengolahan yang dilakukan pada citra untuk
+
+mendapatkan hasil tertentu sesuai kebutuhan. Seperti yang telah dikemukakan Gonzales dalam bukunya Digital Image Processing (2002, 147) bahwa tujuan dari teknik peningkatan mutu citra adalah untuk melakukan pemrosesan terhadap citra agar hasilnya mempunyai kualitas relatif lebih baik dari citra awal [1] [2].
+
+Pengolahan citra dapat dilakukan dengan menggunakan metode Content Based Image Retrieval (CBIR) dengan melakukan proses ekstraksi fitur. System CBIR merupakan aplikasi pencarian gambar berdasarkan gambar digital dari data gambar [3].
+Data sampel yang digunakan dalam penelitian kali ini adalah kain batik pedalaman dan pesisir yang merupakan karya seni tradisional khas Indonesia. Batik Indonesia, sebagai warisan budaya telah memiliki sejarah yang cukup panjang. Sehingga saat ini berbagai jenis batik saling mempengaruhi satu sama lain yang mengakibatkan adanya beberapa jenis batik yang memiliki lebih dari satu motif [4]. Hal tersebut membuat masyarakat sulit membedakan antara batik pedalaman dan pesisir. Melalui penelitian ini, diharapkan masyarakat mampu mengenali antara motif batik pedalaman dan pesisir.
+
+II. METODE YANG DIUSULKAN
+
+2.1 Tinjauan Studi
+Tabel 1. Penelitian terkait
+No Nama Peneliti Judul 1 Ricky Eka Implementing Content Based
+Putra, Nanik Image Retrieval For Batik Using Suciati, Arya Rotated Wavelet Transfor and Yudhi Wijaya Canberra Distance
+
+2 Agus Eko Batik Image Retrieval Based on
+
+Minarno,
+
+Color Difference Histogram and
+
+Nanik Suciati Gray Level Co-Occurence matrix.
+
+3 Nanik Suciati, Implementasi Temu Kembali
+
+Arya Yudhi Citra Tekstur Menggunakan
+
+Wijaya,
+
+Rotated Wavelet Filter
+
+M.Jamaluddin
+
+Dari penelitian diatas penulis berusaha mengembangkan dari penelitian yang sudah ada. Oleh karenanya penulis menggunakan metode GLCM dan perhitungan jarak untuk mencari tingkat kemiripan batik pedalaman dan batik pesisir
+
+2.2 Fitur Ekstraksi
+Langkah-langkah ekstraksi fitur tekstur menggunakan GLCM
+
+1. Membuat Area Kerja Matriks
+000 Matriks 1 = [1 0 1]
+212
+Tabel 2. Komposisi Piksel
+Nilai piksel asli 012
+
+Nilai piksel tetangga 0 1 2
+
+0,0 0,1 0,2 1,0 1,1 1,2 2,0 2,1 2,2
+
+2. Menetukan hubungan spasial antara piksel
+asli dengan piksel tetangga dengan sudut 00.
+
+Tabel 3. Piksel Asli
+00
+10 21
+
+1 1 2
+
+3. Menghitung jumlah pasangan piksel
+
+Tabel 4. Jumlah framework)
+12
+10 01
+
+pasangan
+0 1 0
+
+piksel
+
+(matrix
+
+4. Menjumlahkan
+
+matriks
+
+dengan
+
+transposnya untuk menjadikan simetris.
+
+Pasangan piksel (matrix framework)
+
+yang didapat perlu diolah menjadi matriks
+
+yang simetris dengan cara menambahkan
+
+dengan hasil transposnya.
+
+120 110 230 [1 0 1] + [2 0 1] = [3 0 2] 010 010 020
+5. Normalisasi matriks. Matriks yang telah simetris
+selanjutnya dinormalisasi untuk
+
+menghilangkan ketergantungan pada ukuran citra, nilai-nilai elemen GLCM perlu dinormalisasi sehingga jumlahnya bernilai 1. 6. Setelah hasil normalisasi didapatkan, dilanjutkan dengan menghitung fitur-fitur GLCM. Untuk mendapatkan fitur-fitur GLCM hanya menggunakan 5 besaran berupa ASM, Kontras, IDM, Entropi, Korelasi.
+
+ASM = =1 =1((, )2
+
+(1)
+
+Kontras =  2{|-|= (, )} (2)
+
+IDM
+
+=
+
+=1
+
+=1
+
+((,)2 1+(-)2
+
+(3)
+
+Entropi= - =1 =1((, ) log((, )
+(4)
+
+Korelasi
+
+=
+
+=1
+
+=1(,)((,)- 
+
+(5)
+
+Dengan:  = =1 =1   (, )
+ = =1 =1   (, )
+ = =1 =1 (, )( - )²
+ = =1 =1 (, )( - )2
+
+2.3 Pengukuran Jarak(Canberra Distance)
+Metode pengukuran jarak canberra dapat dilihat pada persamaan dengan v1 dan v2 adalah 2 fitur vektor, yang satu di dimensi d dari database citra dan yang lainnya adalah citra query. Pada persamaan tersebut pembilang menandakan perbedaan dan penyebut menormalkan perbedaan. Untuk setiap nilai 2 vektor yang dicocokan, canberra distance membagi absolute selisih 2 nilai dengan jumlah dari absolute 2 nilai tersebut. Hasil dari 2 nilai yang dicocokan lalu dijumlahkan untuk mendapatkan canberra distance.[6].
+
+(1,
+
+2)
+
+=
+
+=1
+
+|1()-2()| |1()|+|2()|
+
+(6)
+
+2.4 Confussion Matrix
+
+Nilai Prediksi
+
+True False
+
+3
+Nilai sebenarnya True False TP FP FN TN
+
+TP = True Positif FP = False Positif
++
+Akurasi = +++
+
+TN = True Negative FN = False Negative
+(7)
+
+3 HASIL DAN PEMBAHASAN
+3.1 Persiapan Data Pengumpulan data dalam penelitian ini
+menggunakan studi pustaka yang diambil dari jurnal, paper, dan lain-lain. Data yang digunakan dalam penelitian ini sebanyak 50 motif batik pedalaman dan 50 motif batik pesisir. Untuk eksperimen data dibagi sebagian untuk training dan sebagian untuk testing.
+
+Gambar1. Contoh batik pedalaman dan pesisir
+
+3.2 Ekstraksi Ciri Citra
+Dari langkah-langkah ekstraksi fitur tekstur yang telah dijelaskan sebelumnya, berikut ini hasil ekstraksi fitur dari citra batik pedalaman dan batik pesisir.
+
+Tabel 5. Hasil Ekstraksi
+
+No.
+
+AS M
+
+Kontr as
+
+1.
+
+0,00 5069,8 6151 2
+
+IDM
+0,1094 72
+
+Entrop i 9,9200 64
+
+Korela si 9,32E05
+
+2.
+
+0,02 4508,0 0,2051 8,4853 9,32E0222 03 58 98 05
+
+3.
+
+0,00 1546,0 0,1243 9,2119 0,0001 524 59 13 37 47
+
+4.
+
+0,00 1267,9 0,0731 9,8367 0,0002
+
+0413 28 54 1
+
+45
+
+5.
+
+0,00 210,66 0,1187 9,1814 0,0003
+
+0155 79
+
+1
+
+21 14
+
+.... ...... .... ..... .... ....
+
+100
+
+0,00 014
+
+1090,2 0,1279 9,7138 0,0002
+
+38 48 2
+
+46
+
+perhitungan confussion matriks untuk mendapatkan nilai akurasi.
+
+3.3 Pengukuran Jarak (Canberra Distance)
+Dari hasil ekstraksi fitur didapatkan data fiturfitur dari GLCM untuk selanjutnya dilakukan proses perhitungan jarak, berikut ini hasil perhitungan jarak canberra :
+
+Tabel 6. Hasil canberra distance
+
+No. Distance
+
+Distance
+
+Pedalaman
+
+Pesisir
+
+1. 0
+
+1,158180801
+
+2. 1,277941414 2,05515027
+
+3. 0,817868697 1,46240229
+
+4. 2,49297152 2,632188318
+
+5. 1,883374441 1,314209046
+
+... ....
+
+....
+
+100 .
+
+1,080610911
+
+1,393610605
+
+HCBIR
+PD PD PD PD PS
+....
+PD
+
+Label
+PD PD PD PD PD
+....
+PS
+
+Setelah didapatkan hasil perhitungan jarak kemudian dilakukan penamaan hasil CBIR (HCBIR) dengan rumus IF(distance pedalaman<distance pesisir;"PD";"PS"). Jika jarak pedalaman lebih kecil dari jarak pesisir maka pedalaman, kemudian dari hasil CBIR tersebut seluruh data diberi label penamaan sesuai keompok data dimana data 1-50 merupakan batik pedalaman dan data 51-100 batik pesisir.
+
+3.4 CONFUSSION MATRIX
+Setelah mendapatkan hasil CBIR dari peritungan jarak canberra kemudian dilakukan
+
+Gambar2. Pelabelan
+
+Akurasi
+
+=
+
++ +++
+
+=
+
+25+21 25+21+29+25
+
+=
+
+46 100
+
+=
+
+0.46
+
+Nilai akurasi didapat dari jumlah batik yang dipisahkan dengan benar ditambah jumlah batik bukan PD yang dipisahkan dengan benar dibagi jumlah batik keseluruhan menghasilkan nilai akurasi sebesar 46%
+
+4 PENUTUP
+4.1 Kesimpulan
+Semakin sulitnya orang dalam membedakan seni batik pedalaman dan pesisir karena banyak macam dan jenisnya. Oleh sebab itu dengan penerapan metode Content Based Image Retrieval (CBIR) berdasarkan fitur ekstraksi Gray Level Co-Ocurence Matriks (GLCM) dan perhitungan jarak canberra mampu membantu mempermudah dalam membedakan seni batik tradisional pedalaman dan pesisir, tetapi masih memiliki kekurangan hasil keakurasian yang didapat dari penelitian ini sebesar 46%, dikarenakan citra training pada database terlalu sedikit.
+
+REFERENCES
+[1] Diah Priyawati, "Teknik Pengolahan Citra Digital
+Berdomain Spasial Untuk Peningkatan Citra Sinar X," KomuniTi, vol. II, no. 2, Januari 2011.
+[2] Gonzales Rafael C. and Richard E. Woods, "Digital
+Image Processing".: Prentince Hall, 2002.
+[3] Nanik Suciati, Arya Yudhi Wijaya Ricky Eka Putra,
+"Implementing Content Based Image Retrieval For Batik Using Rotated Wavelet Transfor and Canberra Distance," ARTICLES BALI INTERNATIONAL SEMINAR ON SCIENCE AND TECHNOLOGY, 2011.
+[4] Nanik Suciati, Diana Purwitasari Alvian A. Pratama,
+"Implementasi Fuzzy C-Means untuk Pengelompokan Citra Batik Berdasarkan Motif dengan Fitur Tekstur," TEKNIK POMITS, vol. 1, no. 1, 2012.
+[5] Nanik Suciati Agus Eko Minarno, "Batik Image
+Retrieval Based on Color Difference Histogram and Gray Level Co-Occurrence Matrix," TELKOMNIKA, vol. 12, no. 3, September 2014.
+[6] Nanik Suciati, Arya Yudhi Wiajaya M.Jamaluddin,
+"Implementasi Temu Kembali Citra Tekstur Menggunakan Rotated Wavelet Filter," Institut Teknologi Sepuluh November, 2011.
+
+5
+
+

@@ -1,0 +1,131 @@
+Rumah Pintar Berbasis Pesan Singkat dengan Menggunakan Mikrokontroler Arduino
+SMS-Based Smart House Using Arduino Microcontroller
+MUHAMMAD BEBEN PRIANA ACHYAT*, KARLISA PRIANDANA
+ABSTRAK
+Kelengahan pemilik rumah ketika meninggalkan rumah seringkali menjadi pemicu tindak kriminalitas, kelengahan tersebut yakni lupa mengunci pintu dan meninggalkan rumah dalam keadaan lampu yang tidak menyala. Oleh karena itu, untuk mengatasi hal tersebut diperlukan suatu sistem yang terintegrasi dengan berbagai perangkat yang terdapat di dalam rumah. Sistem ini juga perlu untuk dapat dikontrol oleh pemilik rumah dari jarak jauh. Pesan singkat (sms) dapat menjadi solusi, karena hampir setiap pemilik rumah memiliki telepon seluler yang mendukung layanan sms. Sistem rumah pintar ini dikontrol oleh suatu mikrokontroler arduino sebagai pusat kendali yang terhubung dengan perangkat untuk menyalakan lampu dan mengunci pintu, selain itu mikrokontroler ini terhubung dengan GSM shield yang berfungsi sebagai perangkat yang menerima pesan singkat yang dikirimkan oleh pemilik rumah. Isi pesan yang diterima oleh GSM shield akan dibaca oleh mikrokontroler dan jika isi pesan tersebut match maka mikrokontroler dapat memberi instruksi pada perangkat untuk mengunci pintu atau menyalakan lampu.
+Kata kunci: arduino uno, mikrokontroler, smart home.
+Abstract Inadvertence homeowners when leaving the house is often the trigger for crime, such inadvertence forget to lock the door and leave the house lights are not on. Therefore, to overcome this we need a system that integrates with a variety of devices that are in the house. The system also needs to be controlled by the owner of the house from a distance. Short messages (SMS) can be a solution, because almost every homeowner has a cell phone that supports SMS. Smart home system is controlled by an arduino microcontroller as the control center connected to the device to turn on the lights and locked the door, other than that the microcontroller is connected to a GSM shield that functions as a device that receives a short message sent by the homeowner. The contents of the message received by the GSM shield will be read by the microcontroller and if the contents of the message match the microcontroller may instruct the device to lock the door or turn on the lights.
+Keywords: arduino uno, microcontrollers, smart home.
+PENDAHULUAN
+Latar Belakang Kelengahan pemilik rumah menjadi faktor utama banyaknya tindak kriminal, seperti
+lupa mengunci pintu atau meninggalkan rumah dalam keadaan lampu yang tidak menyala. Oleh karena itu, perlu dirancang suatu rumah pintar yang memungkinkan pemilik rumah untuk tetap mengontrol rumah mereka dari jarak jauh. Teknologi rumah pintar merupakan salah satu realisasi dari cita-cita otomatisasi rumah dengan menggunakan satu set spesifik teknologi (Hamed, 2012). Rumah pintar ini beroperasi dengan menggunakan perintah yang dikirimkan oleh pemilik rumah melalui pesan singkat (sms), sehingga rumah tetap dapat dikontrol meski dari jarak yang jauh. Rumah pintar menghubungkan semua perangkat dan peralatan di rumah dengan pemiliknya sehi1ngga dapat dikendalikan (Robles dan Kim, 2010). Untuk dapat melakukan pengontrolan berbasis perintah melalui pesan singkat diperlukan suatu perangkat
+Departemen Ilmu Komputer, Fakultas Matematika dan Ilmu Pengetahuan Alam, Institut Pertanian Bogor, Bogor 16680 *Penulis Korespondensi: Tel: 085722774481; Surel: bebenpriana@rocketmail.com
+
+yang mampu menerima perintah yang kemudian mengeksekusi perintah dalam bentuk aksi pada perangkat lain yang terhubung.
+Bierhoff et al (2007) melakukan penelitian mengenai rumah pintar dengan menghubungkan setiap perangkat dan peralatan di rumah dengan menggunakan jaringan nirkabel dan jaringan kabel. Tahun 2012, Levy et al mengembangkan rumah pintar dengan banyak fitur entertainment seperti menambahkan fitur cloud untuk dapat menyimpan berbagai macam dokumen elektronik. Kemudian Kyas O. (2013) mengembangkan rumah pintar dengan menambahkan fitur rumah dan smartphone pemiliknya yang saling terhubung.
+Penelitian ini bertujuan untuk membangun rumah pintar yang mampu melakukan dua hal yakni mengunci pintu dan menyalakan lampu dengan menggunakan mikrokontroler Arduino. Pengontrolan rumah yang akan dilakukan ini melalui pesan singkat yang dikirimkan dari ponsel sehingga untuk dapat melakukan pengontrolan hanya dibutuhkan telepon seluler yang memiliki fitur pesan singkat. Mikrokontroler Arduino merupakan suatu board elektronika bersifat open source. Arduino terdiri atas komponen utama yakni mikrokontroler ATMega328p, board ini berkerja sesuai alur program yang diunggah ke dalam board. Selain Arduino, sistem rumah pintar berbasis pesan singkat ini menggunakan perangkat lain yakni GSM shield akan digunakan sebagai perangkat yang dipasang di dalam rumah dan berfungsi untuk menerima pesan yang dikirimkan pemilik untuk mengontrol rumah mereka.
+Perumusan Masalah Berdasarkan latar belakang yang telah dipaparkan sebelumnya, masalah yang timbul
+adalah bagaimana merancang dan membangun suatu sistem yang terhubung dengan perangkat yang ada di dalam rumah, dan dapat dikontrol dari jarak jauh melalui pesan singkat (sms).
+Tujuan Penelitian Tujuan dari penelitian ini adalah:  Merancang dan membangun rumah pintar yang dapat menyalakan lampu dan mengunci
+pintu berbasis pesan singkat menggunakan mikrokontroller arduino.
+Manfaat Penelitian Penelitian ini diharapkan dapat membantu pengembangan rumah pintar dengan lebih
+banyak fitur untuk diterapkan dalam rumah nyata.
+Ruang Lingkup Penelitian Ruang lingkup penelitian ini yaitu :  Rumah pintar ini diterapkan dalam bentuk prototype rumah/miniatur rumah.  Perangkat dan peralatan dalam miniatur rumah menggunakan komponen-komponen arus
+lemah.  Rumah pintar ini hanya melakukan dua hal yakni mengunci pintu dan menyalakan lampu
+yang dikontrol melalui pesan singkat.
+
+METODE PENELITIAN
+Tahapan penelitian rumah pintar dapat dilihat pada gambar 1.
+Gambar 1 Tahapan dalam penelitian Analisis Kebutuhan dan Perancangan
+Pada tahap ini dilakukan analisis kebutuhan untuk membangun sistem rumah pintar yang mengacu pada perumusan masalah. Rumah pintar ini dapat melakukan dua hal yakni dapat mengunci pintu dari jarak jauh dengan perintah yang dikirimkan melalui pesan singkat, selain itu juga dapat menyalakan lampu yang dikontrol melalui pesan singkat. Persiapan Alat dan Bahan
+Tahap ini adalah pengumpulan alat-alat dan bahan-bahan yang telah ditentukan pada tahapan analisis. Berikut ini adalah perangkat yang digunakan: Mikrokontroler Arduino Uno
+Arduino Uno R3 (Gambar 2) adalah sebuah board mikrokontroler yang berbasis pada mikrokontroler ATmega328. Suatu mikrokontroler bekerja dengan mengeksekusi perintahperintah dalam suatu program yang diunggah ke dalam board. Arduino Uno memiliki 14 buah pin yang dapat difungsikan sebagai input/output digital, sehingga dapat dihubungkan dengan perangkat input seperti sensor untuk membaca kondisi dalam suatu radius tertentu, selain itu juga dapat dihubungkan dengan perangkat output lain seperti motor DC dan lampu LED. Selain itu juga Arduino Uno memiliki 6 pin analog, dan tombol reset. Mikrokontroler ini dapat beroperasi pada tegangan 5V yang dapat diaktifkan melalui kabel USB atau berasal dari tegangan catu daya eksternal seperti baterai. Berikut ini detail mengenai Arduino Uno.
+
+ Voltase Masukan (disarankan)  Voltase Masukan (batas)  Digital I/O
+digunakan sebagai PWM)  Analog Input  DC Current per pin I / O  Flash Memory 32 KB  SRAM  EEPROM  Clock Speed
+
+7-12V 6-20V 14 pin (6 pin di antaranya dapat
+6 Pin 40 mA 32 KB 2 KB 1 KB 16 MHz
+
+Gambar 2 Board mikrokontroler Arduino Uno GSM Shield
+GSM shield (Gambar 3) adalah salah satu perangkat atau modul yang dapat dihubungkan dengan Arduino. GSM shield merupakan perangkat yang memungkinkan untuk melakukan pengontrolan perangkat output lain yang terhubung dengan Arduino melalui internet dengan menggunakan jaringan GPRS. Jaringan GPRSini dapat digunakan sebagai pengirim/penerima pesan singkat (sms) atau panggilan telepon, selain itu shield ini juga dapat berkomunikasi dengan board Arduino dengan menggunakan AT command. Untuk dapat melakukan pengontrolan, pin RX yang terdapat pada shield dan Arduino perlu dihubungkan, kemudian hal yang sama perlu dilakukan pada pin TX. GSM shield dapat beroperasi dengan arus dan tegangan yang diberikan dari board Arduino.
+Gambar 3 GSM shield Icomsat V1.1 Motor Servo
+Servo merupakan sebuah actuator putar (motor) yang mana sudut dan arah (clockwise dan counter clockwise) pergerakan porosnya dapat diatur. Suatu motor servo terdiri atas motor
+
+DC, serangkaian gear, rangkaian kontrol, dan potensiometer. Rangkaian kontrol berfungsi untuk mengatur pergerakan poros apakah poros sudah berada pada posisi yang diperintahkan atau tidak. Motor servo memiliki tiga buah kabel, yaitu kabel VCC, kabel GND, dan kabel kontrol. Pergerakan motor servo ditentukan berdasarkan pulse width modulated (PWM) yang diberikan, Jika nilai sinyal yang diberikan kurang dari 1.5 ms atau 1500 µs maka servo akan bergerak ke arah berlawanan arah jarum jam, sedangkan jika pulsa yang diberikan lebih besar dari 1.5 ms maka servo akan bergerak searah jarum jam. Gambar 4 menunjukkan suatu motor servo.
+Gambar 4 Motor servo
+Implementasi Implementasi merupakan tahap di mana perangkat-perangkat yang telah disiapkan
+dirangkai sesuai arsitektur hasil proses perancangan. Selain itu, penulisan program yang akan diunggah ke dalam mikrokontroler pun dilakukan pada tahap ini.
+Pengujian Pengujian dilakukan pada GSM shield, mikrokontroler, motor servo dan lampu LED.
+Pengujian pada GSM shield adalah apakah GSM shield dapat menerima pesan yang dikirimkan dan meneruskannya ke mikrokontroler. Pengujian pada mikrokontroler yakni apakah mikrokontroler dapat menerjemahkan isi pesan dan memberi instruksi motor servo/lampu LED sesuai isi pesan tersebut.
+Evaluasi Hal yang akan dievaluasi adalah reaksi Arduino pada setiap pesan yang diterima oleh
+GSM shield, apakah Arduino dapat membaca isi dari suatu pesan sigkat yang diterima oleh GSM shield. Selain itu, hal yang dievaluasi yakni waktu respon mikrokontroler untuk menyalakan lampu atau mengunci pintu rumah terhitung sejak pesan singkat dikirimkan.
+HASIL DAN PEMBAHASAN
+Perancangan Rumah pintar ini dapat melakukan dua hal yaitu mengunci pintu dan menyalakan lampu
+yang dikontrol dengan perintah yang dikirimkan melalui pesan singkat. Rumah pintar juga akan memberikan konfirmasi berupa pesan singkat yang dikirimkan kepada nomor yang sebelumnya memberikan perintah jika telah melakukan aksi. Setelah proses analisis kebutuhan, dilakukan perancangan arsitektur dari prototype rumah pintar (Gambar 5).
+
+Gambar 5 Arsitektur rumah pintar
+Persiapan Alat dan Bahan
+Untuk membangun sistem rumah pintar, maka alat dan bahan yang diperlukan adalah sebagai berikut:
+ Mikrokontroler Arduino Uno R3  GSM shield Icomsat V1.1  Motor servo Tower Pro  Lampu LED  Kabel jumper  Adaptor 9V
+Implementasi
+Komunikasi Data
+Diagram komunikasi rumah pintar dapat dilihat pada Gambar 6. Komunikasi antara ponsel dengan mikrokontroler dilakukan dengan jaringan GSM. Untuk dapat menerima data dari GSM, maka mikrokontroler Arduino Uno dilengkapi dengan GSM shield. Komunikasi antara mikrokontroler dengan GSM shield menggunakan komunikasi serial. Komunikasi serial adalah komunikasi menggunakan pin RX dan TX baik pada board Arduino ataupun pada GSM shield untuk melakukan pengiriman atau penerimaan data antara kedua perangkat tersebut. Komunikasi serial dilakukan dengan cara menyesuaikan pin RX dan TX pada GSM shield dengan konfigurasi pin RX dan TX pada library yang digunakan. Pada penelitian ini, library yang digunakan untuk GSM shield yaitu library Marco Martines yang diunduh dari https://github.com/MarcoMartines/GSM-GPRS-GPS-Shield.
+Jaringan GSM digunakan sebagai media pengiriman dan penerimaan data dalam bentuk pesan singkat dari ponsel ke Arduino atau sebaliknya. Jika terdapat pesan yang diterima oleh GSM shield, maka isi dari pesan singkat yang diterima akan dibaca oleh Arduino apakah sesuai dengan perintah untuk mengontrol LED atau motor servo. Jika sesuai maka Arduino akan memberikan aksi berupa instruksi pada LED atau servo yang terpasang pada rumah untuk menyala atau bergerak.
+
+Gambar 6 Diagram komunikasi rumah pintar Alur Kerja Sistem
+Alur sistem secara keseluruhan dapat dilihat pada Gambar 7.
+Gambar 7 Diagram alur sistem rumah pintar berbasis pesan singkat
+
+Sistem rumah pintar ini bekerja dengan membaca setiap pesan singkat yang belum dibaca atau unread yang tersimpan pada simcard. Pesan singkat yang dibaca tersebut kemudian isinya dibandingkan dengan string perintah yang telah ditentukan di dalam program. Jika isi pesan cocok dengan string perintah, maka sistem akan menginstruksikan pada LED atau servo untuk beroperasi. Jika arduino telah melakukan aksi pada LED atau servo, maka arduino akan mengirimkan balasan berupa pesan singkat yang berisi konfirmasi bahwa aksi telah dilakukan ke ponsel pengguna. Karena memori penyimpanan pesan pada suatu simcard terbatas, maka setelah melakukan aksi dan mengirimkan balasan berupa konfirmasi, pesan yang sudah dibaca kemudian dihapus untuk memastikan ketersediaan memori penyimpanan pesan.
+Pengujian
+Pengujian Komunikasi Serial
+Fungsi setup untuk menguji komunikasi serial antara arduino dengan GSM shield adalah sebagai berikut:
+void setup() {
+Serial.begin(9600); Serial.println("GSM Shield testing."); if (gsm.begin(2400)) {
+Serial.println("\nstatus=READY"); started=true; } else Serial.println("\nstatus=IDLE"); }
+Jika pada serial monitor menunjukkan status ready maka komunikasi serial antara Arduino dengan GSM shield sudah dapat dilakukan. Namun jika pada serial monitor menunjukkan status idle, maka secara otomatis software Arduino akan menyesuaikan baut rate yang dapat digunakan untuk melakukan komunikasi serial.
+
+Pengujian untuk Menerima dan Membaca Pesan Singkat.
+Fungsi loop akan memanggil fungsi ceksms dan fungsi ceksms akan dijalankan secara berulang-ulang oleh mikrokontroler. Fungsi ceksms adalah sebagai berikut:
+Void ceksms() { posisi=sms.IsSMSPresent(SMS_UNREAD); if(posisi) { sms.GetSMS(posisi, nomor, isisms, 160); Serial.println("nomor pengirim: "); Serial.println(nomor); Serial.println("SMS text: "); Serial.println(isisms); }}
+Fungsi sms.IsSMSPresent(SMS_UNREAD) adalah fungsi Boolean yang memeriksa apakah ada pesan singkat pada memori simcard yang belum dibaca atau unread. Jika ada pesan yang belum dibaca (posisi=1), maka fungsi GetSMS dieksekusi, variabel nomor menyimpan informasi nomor pengirim pesan, dan variabel isisms merupakan variabel yang menyimpan informasi isi dari pesan yang dibaca, dan 160 merupakan panjang karakter dari isi pesan singkat yang dapat disimpan pada variabel isisms. Kemudian, informasi nomor pengirim da nisi pesan singkat ditampilkan pada serial monitor.
+Pengujian untuk Mengirim Pesan Singkat dari Arduino ke Ponsel
+Ketika Arduino selesai melakukan aksi berupa instruksi pada LED atau servo, maka Arduino akan memberikan umpan balik berupa konfirmasi dalam bentuk pesan singkat yang dikirimkan ke nomor yang sebelumnya memberikan perintah. Fungsi pengiriman pesan ini terdapat pada setiap fungsi yang berisi instruksi untuk pengontrolan LED dan servo yakni fungsi ledon, ledoff, bukapintu, dan kuncipintu. Fungsi ledon adalah sebagai berikut:
+void ledon() {
+digitalWrite(led, HIGH); sms.SendSMS(nomor, "Lampu sudah menyala"); Serial.println("\nSMS sent OK"); sms.DeleteSMS(posisi); Serial.println("SMS berhasil dihapus"); };
+Sms.SendSMS(nomor, "Lampu sudah menyala") merupakan syntax program yang berfungsi untuk mengirimkan pesan singkat yang berisi "Lampu sudah menyala" pada nomor tujuan yang tersimpan dalam variabel nomor. Pengujian yang dilakukan yakni apakah ada pesan konfirmasi yang diterima oleh ponsel setelah mengirim pesan pada Arduin
+
+Pengujian Rumah Pintar Secara Keseluruhan
+Pengujian rumah pintar dilakukan dengan cara mengirimkan pesan singkat yang berisi perintah untuk mengontrol LED atau servo. Pengujian untuk masing-masing fungsi dilakukan sebanyak 5 kali. Hasil pengujian dapat dilihat pada tabel 1.
+
+Tabel 1. Hasil pengujian setiap fungsi pengontrolan LED dan servo
+
+Fungsi
+Ledon() Ledoff() Bukapintu() Kuncipintu()
+
+Berhasil
+5 3 5 5
+
+Tidak
+0 0 0 0
+
+Waktu Respon LED/Servo Rata-
+rata 4.5 detik
+5.0 detik
+5.6 detik
+5.3 detik
+
+Waktu Konfirmasi SMS
+7.2 detik 6.3 detik 8.1 detik 6.6 detik
+
+Hasil berdasarkan tabel 1, dari 5 kali percobaan, dapat dilihat bahwa setiap pesan singkat yang berisi perintah yang cocok dapat memicu aksi pada LED dan servo. Pengujian dilakukan dengan menghitung waktu respon arduino sejak pesan dikirimkan hingga arduino melakukan aksi berdasarkan isi dari pesan. Selain itu, penghitungan juga dilakukan pada jumlah waktu sejak pesan yang berisi perintah dikirimkan hingga melakukan pengiriman pesan konfirmasi. Namun terdapat kekurangan pada sistem rumah pintar ini yaitu pergerakan servo yang tidak stabil yang disebabkan karena arus yang diberikan arduino pada motor servo terlalu besar mengakibatkan servo terus bergerak meski tidak ada pesan singkat untuk memicu aksi motor servo.
+
+Evaluasi
+Analisis Kelemahan Sistem
+Sistem ini memiliki kelemahan yakni membutuhkan arus listrik yang berfungsi untuk mengoperasikan sistem secara keseluruhan. Selain itu, untuk melakukan konfirmasi kepada nomor pengirim, sistem membutuhkan pulsa untuk mengirimkan pesan singkat kepada nomor pengirim.
+
+SIMPULAN DAN SARAN
+Simpulan Mikrokontroler Arduino dapat menjadi pusat pengontrol perangkat lain. Dengan
+penambahan GSM shield, arduino dapat menggunakan isi dari pesan singkat yang diterima oleh GSM shield sebagai pemicu aksi untuk mengontrol perangkat lain seperti LED dan servo sekaligus untuk mengirim pesan singkat dari GSM shield ke ponsel.
+Saran Penelitian selanjutnya diharapakan untuk mengembangkan rumah pintar dengan
+penambahan fitur yang lain.
+
+DAFTAR PUSTAKA
+Bierhoff I, ad van Berlo, Allen B, Civit A, Fellbaum K, Kemppainen E, Biiterman N, Freitas D, Kristiansson K. 2007. Towards an inclusive future. [Waktu pembaharuan tidak dikehatui]; [diunduh 2014 Mei 16]; 1:Bogor (ID). hlm 110-156. Tersedia pada: http://www.tiresias.org/cost219ter/inclusive_future/inclusive_future_book.pdf
+Hamed B. 2012. Design & implementation of smart house control using labview. IJSCE [Internet]. [Waktu pembaharuan tidak diketahui]; [diunduh 2014 April 4]; 1:Bogor (ID). hlm 98-106. Tersedia pada: http://www.researchgate.net/profile/Basil_Hamed/publication/ 257138572_Design__Implementation_of_Smart_House_Control_Using_LabVIEW/file/72 e7e524714b84baed.pdf
+Kyas O. c2013. How to smart home. [Waktu pembaharuan tidak diketahui]; [diunduh 2014 April 4]; 1:Bogor (ID). hlm 2-208. Tersedia pada: http://www.openremote.com/wpcontent/uploads/2013/12/How-To-Smart-Home-PDF-OR.pdf
+Levy D, Saadoun O, Taga K, Riegel L. c2012. Catching the smart home opportunity. [Waktu pembaharuan tidak diketahui]; [diunduh 2014 April 4]; 1:Bogor (ID). hlm 3-11. Tersedia pada: http://www.adlittle.com/downloads/tx_adlreports/ADL_TIME_2012_Smart_Home_Oppor tunity.pdf
+Robles RJ, Kim TH. 2010. A review on security in smart home development. International journal of soft computing and engineering. [Internet]. [Waktu pembaharuan tidak diketahui]; [diunduh 2014 April 4]; 14:Bogor (ID). hlm 13-22. Tersedia pada : http://www.sersc.org/journals/IJAST/vol15/2.pdf
+
+

@@ -1,0 +1,282 @@
+APLIKASI PENGENALAN SUARA SEBAGAI PENGENDALI PERALATAN LISTRIK BERBASIS ARDUINO UNO
+PUBLIKASI JURNAL SKRIPSI Diajukan Untuk Memenuhi Sebagian Persyaratan
+Memperoleh Gelar Sarjana Teknik
+Disusun Oleh:
+ZARATUL NISA SAPUTRI NIM. 105060300111052 ­ 63
+KEMENTERIAN PENDIDIKAN DAN KEBUDAYAAN NASIONAL UNIVERSITAS BRAWIJAYA FAKULTAS TEKNIK MALANG 2014
+
+KEMENTRIAN PENDIDIKAN DAN KEBUDAYAAN UNIVERSITAS BRAWIJAYA FAKULTAS TEKNIK
+JURUSAN TEKNIK ELEKTRO Jalan MT Haryono 167 Telp & Fax. 0341 554166 Malang 65145
+
+KODE PJ-01
+
+PENGESAHAN PUBLIKASI HASIL PENELITIAN SKRIPSI
+JURUSAN TEKNIK ELEKTRO FAKULTAS TEKNIK UNIVERSITAS BRAWIJAYA
+
+NAMA NIM PROGRAM STUDI JUDUL SKRIPSI
+
+: ZARATUL NISA SAPUTRI : 105060300111052 - 63 : TEKNIK ELEKTRONIKA : APLIKASI PENGENALAN SUARA SEBAGAI PENGENDALI
+PERALATAN LISTRIK BERBASIS ARDUINO UNO
+
+TELAH DI-REVIEW DAN DISETUJUI ISINYA OLEH:
+
+Pembimbing 1
+
+Pembimbing 2
+
+Mochammad Rif'an, ST., MT NIP. 19710301 200012 1 001
+
+Ir. Nurussa'adah, MT. NIP. 19680706 199203 2 001
+
+Aplikasi Pengenalan Suara Sebagai Pengendali
+
+Peralatan Listrik Berbasis ArduinoUNO
+Zaratul Nisa Saputri1, Mochammad Rif'an, ST., MT2, Nurussa'adah, Ir., MT3. 1Mahasiswa Teknik Elektro UB, 2,3Dosen Teknik Elektro UB
+zaratul_nisa@yahoo.co.id
+
+Abstrak-Perkembangan ilmu pengetahuan dan teknologi membawa dampak positif dalam kehidupan manusia yang pada saat ini telah sampai pada zaman perintah suara. Sistem kontrol rumah pintar memungkinkan manusia mengendalikan perangkat listrik rumah mereka seperti TV, kipas angin dan lampu hanya dengan menggunakan perintah suara tanpa perlu bergerak berpindah tempat untuk menyalakan atau mematikan suatu peralatan listrik. Pengolahan suara digital dikontrol dengan aplikasi untuk mengenali adanya perintah suara yang dideteksi. Oleh karena itu dalam skripsi ini akan dirancang Aplikasi Pengenalan Suara Sebagai Pengendali Peralatan Listrik Berbasis ArduinoUNO. Digunakan modul EasyVR sebagai modul pengenalan suara. Proses pengambilan sample suara pada EasyVR dilakukan sebanyak dua kali dengan variasi pengucapan relatif sama pada setiap kata. Hal ini dilakukan sesuai dengan kemampuan EasyVR yang tidak bisa menerima pengucapan variasi suara kedua jika berbeda dengan variasi pengucapan suara pertama. Penerapan aplikasi pengenalan suara pada peralatan listrik ini menggunakan Relay yang berfungsi sebagai saklar, digunakan michrophone wireless agar pengucapan dapat dilakukan dari jarak jauh.
+Kata Kunci: Pengenalan Suara, EasyVR, ArduinoUNO.
+I. PENDAHULUAN Perkembangan ilmu pengetahuan dan teknologi membawa dampak positif dalam kehidupan manusia yang pada saat ini telah sampai pada zaman perintah suara. Sistem kontrol rumah pintar memungkinkan orang mengendalikan perangkat rumah mereka dengan perintah suara dirumah. Pengolahan suara digital dapat dikembangkan untuk mempermudah kehidupan manusia. Dalam hal ini suara manusia dapat diolah untuk dikonversi agar dimengerti oleh suatu responden sehingga perintah yang terucap dapat direspon oleh alat yang dikendalikan. Salah satu yang dapat dibuat adalah aplikasi untuk pengendalian jarak jauh [1]. Pengolahan suara digital dikontrol dengan aplikasi untuk mengenali adanya perintah suara yang dideteksi, yang sering disebut dengan Speech Recognition. Teknologi ini bekerja dengan menangkap suara manusia yang diubah menjadi format digital sehingga dapat diterjemahkan dalam suatu sistem. Kemudian sistem tersebut akan membandingkan antara
+
+informasi masukkan yang sudah berupa format digital tersebut dengan database suara yang ada [2].
+Sistem suara nirkabel, mengontrol beberapa fasilitas di rumah seperti lampu, kipas angin dan televisi. Fungsi kontrol suara ini adalah sebagai pengendali peralatan listrik rumah untuk menyalakan, mematikan dan menggantikan fungsi tombol dengan suara. Perkembangan kontrol suara pengendali rumah dengan teknologi wireless ini bisa menjadi sebagai acuan rumah masa depan, dimana kita tidak perlu lagi berpindah tempat hanya untuk menyalakan dan mematikan suatu peralatan listrik yang ada di suatu tempat yang berbeda didalam rumah kita.
+II. TINJAUAN PUSTAKA
+A. Modul EasyVR
+EasyVR merupakan modul voice recognition multi-fungsi. Dapat digunakan pada banyak aplikasi pengontrolan yang membutuhkan pendeteksian bukan hanya suara melainkan percakapan .EasyVR merupakan generasi penerus setelah kesuksesan generasi pertamanya di pasaran yaitu VRBot. Modul ini dapat digunakan atau dihubungkan dengan board mikrokontroler Arduino. Sangat cocok digunakan untuk beragam aplikasi, seperti home automation (dimana kita dapat mengontrol nyala lampu, kunci pintu, televisi, atau perangkat lainnya) atau sebagai modul pelengkap sensor pendengaran robot yang Anda buat sebagaimana robot-robot canggih yang dijual di pasaran yang harganya luar biasa mahal [3].
+Secara umum, fitur dari EasyVR adalah sebagai berikut:  Mendukung beberapa bahasa, yaitu: English(US), Italian,
+German, French, Spanish, Japanese.  Mendukung hingga 32 custom Speaker Dependent
+(SD) trigger atau perintah, bahkan dapat digunakan pada bahasa apapun.  GUI yang mudah digunakan.  Mudah diaplikasikan dan didukung oleh dokumentasi yang sederhana.  3 x GPIO (IO1, IO2, IO3) dapat dikontrol dengan perintah protokol baru.  PWM audio output mendukung speaker 8 ohm.  Sound playback . Modul EasyVR dapat digunakan dengan antarmuka UART yang didukung pada rentang tegangan 3.3V - 5V, seperti PIC dan board Arduino. Beberapa contoh aplikasi termasuk otomatisasi rumah, seperti suara yang mengendalikan switch pada lampu, kunci, atau penambahan "pendengaran" untuk robot yang saat ini sedang berkembang. Bentuk fisik EasyVR ditunjukkan dalam Gambar 1.
+
+1
+
+III. PERANCANGAN DAN PEMBUATAN ALAT
+A. Perancangan Sistem
+Blok diagram keseluruhan sistem yang drancang dibagi menjadi dua bagian, yaitu blok mikrokontroler utama, dan blok EasyVR yang ditunjukkan dalam Gambar 3.
+
+Wireless Michrophone
+
+EasyVR Module
+
+Gambar 1. Bentuk fisik EasyVR [3]
+B. Arduino UNO
+Arduino UNO adalah board berbasis mikrokontroler pada ATmega328. Board ini memiliki 14 digital input / output pin (dimana 6 pin dapat digunakan sebagai output PWM), 6 input analog, 16 MHz osilator kristal, koneksi USB, jack listrik tombol reset. Pin-pin ini berisi semua yang diperlukan untuk mendukung mikrokontroler, hanya terhubung ke komputer dengan kabel USB atau sumber tegangan bisa didapat dari adaptor AC-DC atau baterai untuk menggunakannya [4].
+
+Relay Kipas Angin
+
+Arduino Uno - Pengenalan Suara - Pengontrol Relay
+
+Relay Televisi Relay Lampu
+
+Gambar 3. Diagram Blok Sistem.
+
+Gambar 2. Board Arduino UNO [4]
+Tabel 1.Karakteristik Arduino Uno
+
+Mikrokontroler Operasi Voltage Input Voltage Input Voltage I/O
+Arus Flash Memory Bootloader EEPROM Kecepatan
+
+ATMega328 5V 7 ­ 12 V (rekomendasi) 6 ­ 20 V (limit) 14 pin (6 pin untuk PWM) 50 mA 32 KB SRAM 2 KB 1 KB 16 MHz
+
+Fungsi masing-masing blok dalam gambar 3 adalah sebagai berikut: 1). Blok Wireless Microphone
+Terdapat microphone dan antenna sebagai pemancar, untuk menangkap sinyal suara, sehingga pengucapan dapat dilakukan dari jarak jauh, bekerja pada Frekuensi modulasi, dengan rentang broadcast antara 88 Mhz ­ 108 Mhz . 2). Blok Modul EasyVR Pengendalian dilakukan melalui suara yang dibantu dengan modul EasyVR yang berfungsi sebagai sensor suara. Data-data suara akan di sampling melalui computer menggunakan program EasyVR Commander. Data-data yang sudah disampling akan dimasukkan kembali ke database EasyVR. Mikrokontroler utama berupa Arduino UNO bekerja mengatur dan mengolah data dari modul EasyVR. 3). Blok Mikrokontroler Utama Mikrokontroler yang digunakan adalah Arduino UNO yang berfungsi untuk mengolah data dari modul EasyVR dan mengakses relay untuk mengendalikan peralatan listrik (lampu, kipas angin dan televisi). 4). Blok Relay sebagai saklar Dilakukan percobaan terhadap 3 jenis peralatan listrik rumah tangga, yaitu televisi lampu dan kipas angin. Relay digunakan sebagai saklar terhadap 3 jenis peralatan listrik tersebut.
+
+2
+
+B. Perancangan Desain Sistem Elektronik
+Diagram blok sistem elektronik terdiri dari bagian catu daya, masukan, bagian kendali, bagian keluaran. Pada bagian masukan berupa sebuah sensor microphone yang berfungsi untuk menerima masukan berupa suara manusia yang terhubung dengan EasyVR sebagai pengolah data sinyal suara. Pada bagian kendali menggunakan Arduino UNO sebagai mikrokontroler utama, pada bagian keluaran berupa relay sebagai saklar pengendali peralatan listrik.
+
+menghasilkan kesuksesan tinggi dalam pengambilan sample dengan tidak adanya error. Kegagalan menerima variasi suara kedua dengan variasi pengucapan suara pertama akan menimbulkan kegagalan seperti ditunjukkan dalam gambar 6. Oleh karena itu, agar EasyVR dapat berfungsi dengan baik, dibutuhkan variasi suara yang relatif sama dengan sample.
+
+Gambar 4. Desain Sistem Elektronik
+C. Perancangan Sistem Voice Recognition Menggunakan EasyVR Perancangan ini bertujuan untuk mengambil
+sample suara yang akan disimpan didalam modul EasyVR. Pengambilan sampel suara dilakukan melalui PC dengan software bawaan dari EasyVR yaitu EasyVR Commander. Sampel suara yang akan digunakan adalah sebanyak enam kata.
+
+Gambar 7. Sampling Suara Pada EasyVR Commander
+D. Perancangan Susunan Perangkat Lunak
+Tahapan proses yang terdapat pada sistem ini meliputi proses pengolahan data dari modul EasyVR ke Arduino dan proses pengontrolan relay. Semua proses tersebut dilakukan oleh perangkat lunak yang terdapat dalam mikrokontroler. Perangkat lunak ini tersusun dari instruksi-instruksi yang membentuk sebuah listing program atau source code.
+Semua instruksi program disusun secara terstruktur dalam beberapa subrutin yang secara khusus menangani fungsi tertentu. Software mikrokontroler dibuat menggunakan program Arduino. Menggunakan bahasa pemrograman yaitu bahasa pemrograman C.
+.
+
+Gambar 5. Diagram blok pemberian sampel suara
+
+Gambar 6. Tampilan kegagalan dalam pengambilan sampel suara
+Pengambilan sample suara dilakukan sebanyak dua kali dengan kondisi ideal atau tidak adanya noise, variasi kata dan intonasi disetiap pengucapan relatif sama
+3
+
+Mulai Inisialisasi Variabel dan
+Sistem
+Deteksi EasyVR
+
+Menunggu Perintah Suara
+
+Perintah Suara sesuai dengan Sampling
+
+T
+
+Lampu teras mati
+
+T
+
+Lampu teras menyala
+
+T
+
+Kipas angin mati
+
+T Kipas angin T menyala
+
+Televisi mati
+
+T
+
+Televisi menyala
+
+Y Relay tidak aktif
+
+Y Relay aktif
+
+Y Relay tidak aktif
+
+Y Relay aktif
+
+Y Relay tidak aktif
+
+Y Relay aktif
+
+Gambar 8. Diagram alir Keseluruhan sistem
+IV. PENGUJIAN DAN ANALISIS SISTEM
+A. Pengujian Hasil sampling Tujuan dari pengujian ini adalah untuk menguji
+apakah hasil sampling berupa suara manusia khusunya pengucapan yang telah di tuliskan dalam program EasyVR commander dapat digunakan dalam penerapan sistem. Pengujian ini dilakukan dengan cara menghubugkan EasyVR ke PC atau laptop menggunakan konektor berupa USB to TTL.
+
+4
+
+Tabel 3. Hasil pengujian pemberian perintah dengan menggunakan 2 kata dalam setiap kalimat
+
+Gambar 9. Hasil Pengujian Sampling
+Gambar 9. menunjukkan hasil pengujian sampling. Tanda berwarna hijau menunjukkan bahwa kata yang diucapkan sesuai dengan hasil sampling yang tersimpan dala modul EasyVR.
+B. Pengujian Tingkat Keberhasilan Pemberian Perintah dengan Variasi Pemberian Perintah dari Orang yang Sama.
+Tujuan dari pengujian ini adalah untuk membandingkan tingkat keberhasilan EasyVR dalam menerima perintah suara apabila diberikan variasi pemberian perintah. Pemberian perintah dilakukan oleh orang yang sama. Terdapat 3 variasi dalam pemberian perintah ini pertama variasi pengucapan sesuai dengan perancangan, kedua variasi pengucapan hanya dengan 2 kata dalam setiap kalimat dan yang ketiga variasi pengucapan dengan menggunakan kode Alphabet.
+
+Tabel 2. Hasil pengujian pemberian perintah sesuai dengan perancangan
+
+Variasi Perintah
+Nyalakan Lampu Teras
+Teras Padam Hidupkan Fan Matikan Kipas Angin
+TV ON OFFkan TV % Keberhasilan
+
+Tingkat Keberhasilan Pengucapan
+dilakukan sebanyak 10
+kali
+5 7 6 5
+8 8
+65%
+
+Variasi Perintah
+Lampu Nyala Padam Lampu
+Kipas ON Mati Kipas TV Hidup
+OFF TV %
+Keberhasilan
+
+Tingkat Keberhasilan Pengucapan dilakukan
+sebanyak 10 kali 8 7 9 9 9 9
+85%
+
+Tabel 4. Hasil pengujian pemberian perintah menggunakan kode Alphabet
+
+Variasi Perintah
+A B C D E F % Keberhasilan
+
+Tingkat Keberhasilan Pengucapan dilakukan
+sebanyak 10 kali 10 10 9 10 10 10
+98.30%
+
+Dilihat dari hasil pengujian yang terdapat pada tabel 2, tabel 3 dan tabel 4 dapat kita bandingkan bahwa, variasi pemberian perintah dengan menggunakan kode Alphabet memiliki tingkat keberhasilan yang sangat tinggi, hal ini dipengaruhi oleh EasyVR yang dalam setiap pemberian perintah harus sama dengan pengucapan intonasi pada saat suara disampling, perintah yang memiliki kalimat yang lebih dari satu kata, biasanya terdapat perbedaan tone pengucapan sehingga mengakibatkan kegagalan EasyVR dalam mengeksekusi perintah tersebut. Namun, pemberian perintah menggunakan kode Alphabet sangatlah tidak user friendly artinya pengguna harus menghafalkan setiap kode dan arti dari kode tersebut. Berikut merupakan arti dari kode Alphabet dari A hingga F pada kinerja alat yang telah disampling dan dilakukan pengujian. A : Lampu Teras Menyala B : Lampu Teras Padam C : Kipas Angin Menyala D : Kipas Angin Padam E : Televisi Menyala F : Televisi Padam
+
+5
+
+C. Pengujian Pemberian Perintah dari Orang yang Berbeda
+
+berupa satu suku kata, tingkat keberhasilan sebesar 98.30%.
+
+Tujuan dari pengujian ini adalah untuk mengetahui tingkat keberhasilan EasyVR dalam menerima perintah suara dari orang yang berbeda. Perintah diberikan oleh 5 orang berjenis kelamin laki-laki dan perempuan dengan berbagai etnis dengan rentang usia 19 hingga 25 tahun. Setiap pemberian perintah dilakukan 10 kali per perintah dengan jarak maksimal 30 meter dari antenna pemancar, dan 10 cm dari sensor microphone yang dipegang pada setiap orang. Pengujian dilakukan dengan kondisi ideal atau noise yang sangat kecil dengan ukuran luas rumah 45m2 satu lantai.
+Tabel 5. Hasil pengujian pemberian perintah dari orang yang berbeda
+
+4). Kesalahan yang sering terjadi pada proses pengucapan perintah adalah perbedaan intonasi suara yang pada saat pemberian perintah tidak sesuai dengan pada saat proses sampling suara, menyebabkan perintah tidak dikenali
+B. Saran
+Sistem pengenalan suara sangat bergantung kepada variasi sampel yang direkam. Oleh karena itu, pemberian perintah lebih baik hanya menggunakan satu kata atau berupa kode, sehingga variasi pengucapan perintah yang sesuai dengan sampel yang direkam dapat lebih mudah diingat dibandingkan apabila menggunakan pengucapan perintah yang lebih dari satu kata
+
+Orang ke-
+1 2 3 4 5
+
+Jumlah Keberhasilan Pemberian Perintah Suara
+
+Nyalakan
+
+Matikan
+
+Lampu Teras Hidupkan
+
+Kipas
+
+TV
+
+Teras Padam
+
+Fan
+
+Angin ON
+
+57
+
+8
+
+58
+
+48
+
+8
+
+57
+
+45
+
+6
+
+46
+
+46
+
+5
+
+57
+
+35
+
+5
+
+46
+
+% Rata-rata Keberhasilan 50%
+
+OFFkan TV
+7 8 5 5 6
+
+REFERENSI [1]Ardi, Jatra Kurnia. 2014. Implementasi SistemVoice
+Recognition Pada Robot Pemindah Objek Sebagai Sistem Navigasi. Malang: Skripsi Jurusan Teknik
+Elektro FT-UB.
+[2] Putra, Darma. 2009. Sistem Biometrika.Yogyakarta: Andi
+[3] Tigal, 2012. User Manual EasyVR.http://www.veear.eu/.
+Diunduh tanggal 3 Maret 2014. Austria: TIGAL KG
+[4] Arduino, 2011. Datasheet Arduino UNO. http://arduino.cc/en/Main/arduinoBoardUNO. Diakses tanggal 24 Februari 2014
+
+Tabel 5. menunjukkan berapa kali perintah harus diucapkan agar EasyVR mampu mengolah perintah yang diberikan agar sama dengan hasil samping. Hasil pengujian menunjukkan tingkat keberhasilan menerima perintah suara dari kondisi yang sudah ditentukan dan pengucapan perintah suara yang memiliki variasi sama dengan sample yang direkam mencapai 50% kegagalan dalam pengolahan perintah suara disebabkan oleh pengucapan tutur kata yang intonasinya berbeda dengan hasil sampling suara, terutama pada kalimat yang memiliki 3 kata, pengucapan dengan intonasi yang berbeda dengan hasil sampling suara menyebabkan EasyVR tidak dapat mendeteksi suara sehingga suara menjadi tidak dapat dikenali
+
+V. KESIMPULAN DAN SARAN
+A. Kesimpulan
+1). Metode pengambilan sample suara pada modul EasyVR dilakukan sebanyak 2 kali menggunakan EasyVR Commander dengan variasi pengucapan relatif sama pada setiap kata.
+2). Modul EasyVR memiliki tingkat keberhasilan sekitar 50% jika menerima perintah suara dari orang yang berbeda dengan variasi pemberian perintah 2 hingga 3 suku kata.
+3). Efektifitas penggunaan modul EasyVR dalam hal pengenalan suara pemberian perintah efektif jika perintah yang digunakan hanya
+
+6
+
+

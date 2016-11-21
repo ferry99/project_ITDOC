@@ -1,0 +1,250 @@
+Jurnal Ilmiah Komputer dan Informatika (KOMPUTA)
+Volume. I Nomor. 2, Bulan Oktober 2012 - ISSN :2089-9033
+
+79
+
+PEMBANGUNAN VIRTUAL MIRROR EYEGLASSES MENGGUNAKAN TEKNOLOGI AUGMENTED REALITY
+
+Zaid Arham1, Nelly Indriani W. 2
+
+1,2Jurusan Teknik Informatika Fakultas Teknik dan Ilmu Komputer - Universitas Komputer Indonesia
+Jl.Dipati Ukur No.114-116 Bandung 40132 Email : zaidarham04@gmail.com1, alifahth@yahoo.com2
+
+ABSTRAK
+Perkembangan teknologi augmented reality menjadi sangat populer saat ini. Hal ini dikarenakan penggunaan augmented reality sangat menarik dan telah banyak digunakan dalam kehidupan kita. Salah satu contohnya seperti pada strategi pemasaran dan pengenalan produk kepada konsumen melalui aplikasi virtual mirror eyeglasses yang berbasis web. Biasanya konsumen kesulitan jika ingin mencoba sebuah produk kacamata, mereka biasanya hanya bisa mencoba ketika akan membeli kacamata dengan mendatangi langsung toko optik yang ada, jadi dengan begitu akan sangat membuang waktu konsumen, tidak praktis, dan juga mengurangi minat konsumen terhadap produk yang ditawarkan. Dengan aplikasi kacamata virtual ini diharapkan dapat menarik minat konsumen dan mengenalkan produk-produk yang ditawarkan kepada konsumen.
+Virtual mirror eyeglasses adalah sebuah aplikasi dimana konsumen dapat memakai kacamata secara virtual menggunakan teknik face detection seperti sedang mencoba di depan cermin. Aplikasi ini mensimulasikan model kacamata sehingga pengguna seakan-akan sedang menggunakan kacamata secara real-time. Metode face detection yang digunakan adalah haar cascades classifier. Metode ini menggunakan haar feature yang banyak dan diorganisir dalam cascade classifier. Apabila tiap subcitra berhasil melewati seluruh filter yang ada maka citra tersebut terdeteksi sebagai wajah. Melalui proses inilah wajah pengguna dapat terdeteksi.
+Hasil uji dari aplikasi virtual mirror eyeglasses menunjukkan bahwa aplikasi yang berbasis web ini dapat menjadi sarana pendukung dalam menarik minat konsumen karena pemanfaatan teknologinya yang menggunakan augmented reality dan kemudahan yang disediakannya. Dengan aplikasi ini pengguna dimudahkan dalam mencoba kacamata dan juga dapat menghemat waktu karena penggunaan aplikasi ini dapat melalui web, sehingga dapat digunakan dimana dan kapan saja.
+Kata kunci : Augmented Reality, virtual mirror eyeglasses, haar cascade classifier
+
+1. PENDAHULUAN
+1.1 Latar Belakang Augmented Reality (AR) adalah suatu
+lingkungan yang memasukkan objek virtual 2D atau 3D ke dalam lingkungan nyata. AR mengizinkan penggunanya untuk berinteraksi secara real-time dengan sistem. Penggunaan AR saat ini telah melebar ke berbagai aspek dalam kehidupan kita dan diproyeksikan akan mengalami perkembangan yang sangat signifikan. Hal ini dikarenakan penggunaan AR sangat menarik dan memudahkan penggunaannya dalam mengerjakan sesuatu hal, seperti contohnya pada strategi pemasaran dan pengenalan produk kepada konsumen.
+Hero Optikal merupakan toko optik yang bergerak dibidang penjualan kacamata,dan lensa kontak berbagai merek. Dengan adanya aplikasi virtual mirror eyeglasses yang berbasis web ini maka konsumen dapat mencoba langsung kacamata yang disukai secara online dimana saja dan kapan saja, sehingga lebih praktis dan lebih memudahkan konsumen.
+Dikarenakan tingkat keseringan dan banyaknya konsumen yang ingin mencoba kacamata yang diminati sehingga tidak sedikit kacamata yang frame-nya lama-lama menjadi rusak atau cacat. Dengan aplikasi ini maka hal-hal yang merugikan seperti itu dapat diatasi.
+Dalam kegiatan bisnis penting sekali terciptanya suasana yang mampu menarik minat konsumen, sehingga dengan adanya virtual mirror eyeglasses yang disajikan dengan interaktif dan user friendly ini dapat memanjakan konsumen. Konsumen dapat dengan santai, lebih leluasa dan lebih meluangkan waktunya ketika mencoba kacamata dengan aplikasi ini secara online. Unsur privasi juga menjadi nilai lebih sehingga membuat konsumen bisa lebih berinteraksi dengan bebas.
+Virtual Mirror Eyeglasses adalah sebuah aplikasi dimana konsumen dapat memakai kacamata secara virtual menggunakan teknik face tracking seperti sedang mencoba di depan cermin. Aplikasi ini berbasis web sehingga target-target konsumen dapat menggunakan aplikasi ini di rumah atau di mana pun berada selama terkoneksi dengan internet.
+
+Jurnal Ilmiah Komputer dan Informatika (KOMPUTA)
+Volume. I Nomor. 2, Bulan Oktober 2012 - ISSN :2089-9033
+
+80
+
+1.2 Identifikasi Masalah
+Berdasarkan latar belakang masalah yang telah diuraikan di atas, yang menjadi permasalahan yaitu bagaimana cara merancang dan membangun aplikasi virtual mirror eyeglasses dengan teknologi augmented reality berbasis web yang mampu memudahkan para konsumen untuk mencoba kacamata secara online dan meningkatkan minat konsumen dengan media yang lebih interaktif dan juga sebagai sarana pendukung pemasaran pada toko optik tersebut.
+1.3 Maksud dan Tujuan Berdasarkan permasalahan yang diteliti,
+maka maksud dari penulisan skripsi ini adalah untuk membangun aplikasi Virtual Mirror Eyeglasses yang interaktif dengan menggunakan teknologi Augmented Reality pada Hero Optikal.
+Sedangkan tujuan yang akan dicapai dalam penulisan skripsi ini adalah :
+1. Untuk memudahkan konsumen yang ingin mencoba kacamata sebelum atau tanpa harus membeli.
+2. Untuk menghemat waktu konsumen karena aplikasi ini dapat digunakan dimana dan kapan saja tanpa harus datang langsung ke toko.
+3. Sebagai sarana pendukung dalam menarik minat konsumen.
+1.4 Batasan Masalah Agar identifikasi masalah yang dibahas ini
+lebih jelas dan mudah dipahami, maka dibuatlah batasan-batasan masalah diantaranya sebagai berikut :
+1. Penelitian menggunakan personal computer atau notebook yang memiliki fasilitas kamera webcam baik internal maupun eksternal.
+2. Aplikasi yang dibangun berbasis web 3. Menggunakan bahasa pemrograman
+Action Script 3.0 dengan software pembangun Adobe Flash CS5.5 Professional, Beyond Reality Face SDK sebagai library AR, untuk library 3D-nya menggunakan Flare3D, dan 3D modeling-nya menggunakan 3DS Max 2010. 4. Teknologi augmented reality yang digunakan adalah face tracking. 5. Input berupa wajah baik itu secara realtime maupun foto wajah menggunakan webcam. 6. Hanya dapat mendeteksi satu wajah yang tertangkap oleh webcam. 7. Analisis pembangunan perangkat lunak menggunakan pendekatan analisis berorientasi objek. 8. Tidak menyediakan proses transaksi.
+
+9. Jarak maksimal wajah terhadap kamera tidak boleh melebihi 1 (satu) meter dan harus tepat di depan dan tegak lurus dengan kamera.
+2. ANALISIS, PERANCANGAN, DAN IMPLEMENTASI
+2.1 Analisis Sistem Analisis sistem merupakan penguraian dari
+suatu sistem yang utuh ke dalam bagian-bagian komponen dengan maksud untuk mengidentifikasi dan mengevaluasi permasalahan, sehingga diperoleh solusi. Analisis merupakan tahapan yang paling penting, karena kesalahan dalam tahap ini akan menyebabkan kesalahan di tahap selanjutnya. Pada tahap analisis sistem ini dibagi menjadi beberapa bagian yaitu :
+1. Analisis Algoritma 2. Analisis Terhadap Tools AR Sejenis 3. Analisis Library Beyond Reality Face 4. Analisis Kebutuhan Non Fungsional
+5. Analisis Kebutuhan Fungsional
+2.1.1 Analisis Algoritma Webcam memegang peranan penting untuk
+mendapatkan video masukan. Kamera mengambil frame-frame video untuk dapat diterima oleh komputer. Komputer memproses citra digital yang diakuisisi oleh webcam frame demi frame. Komputer akan mendeteksi pola yang mirip dengan wajah dari setiap frame video tersebut, yang kemudian lokasi wajah dapat ditentukan. Dengan informasi tersebut, objek virtual digabungkan dengan video dari webcam dan merendernya sesuai dengan informasi posisi yang diperoleh dari face detector tersebut. Proses terjadi secara real-time sehingga model virtual yang tampil di media display akan mengikuti pergerakan wajah. Gambaran umum sistem ini dapat dilihat pada flowchart gambar 3.1.
+Gambar 1 Flowchart sistem virtual mirror eyeglasses
+
+Jurnal Ilmiah Komputer dan Informatika (KOMPUTA)
+Volume. I Nomor. 2, Bulan Oktober 2012 - ISSN :2089-9033
+
+81
+
+1. Pre-Processing Image Pada tahap pre-processing image dilakukan
+proses scaling, grayscaling, dan thresholding untuk menjadi inputan selanjutnya dalam metode Haar Cascade.
+1. Tahap Scaling Scaling merupakan proses mengubah
+ukuran citra digital, hal ini perlu dilakukan agar semua citra digital memiliki ukuran yang sama. Untuk melakukan scaling di sistem ini dapat memanfaatkan package display object. Citra digital tersebut diperkecil dengan menggunakan metode interpolasi. Metode ini menggunakan rata-rata suatu region untuk mewakili region tersebut.
+
+Gambar 3 Pengubahan citra RGB menjadi citra grayscale
+2. Pendeteksian Metode Haar Cascade Classifier Perangkat lunak ini mengadopsi metode
+Haar Cascade classifier sebagai pendeteksi pola wajah, berikut ini alur proses metode haar cascade classifier :
+Mulai
+
+Gambar 2 Penskalaan citra dengan metode Interpolasi
+2. Tahap Grayscaling Citra digital yang telah melalui proses
+penskalaan kemudian diubah menjadi citra dua warna dengan proses grayscaling. Proses pengubahan citra RGB menjadi citra grayscale adalah sebagai berikut :
+Misalkan suatu citra wajah memiliki nilai :
+R = 152 G = 132 B = 133 Maka nilai grayscale dari citra tersebut dapat dihitung seperti di bawah ini :
+W = 0,2989R + 0,5870G + 0,1140B....................(3.1) w =(0,2989 x 152)+(0,5870 x 132)+(0,1140 x 133) = 138,0788
+Gambar 3 adalah citra hasil grayscaling :
+
+Citra sub image
+Menentukan haar feature
+Menghitung integral image
+Membuat Cascade Cassifier
+
+tidak
+
+Terlacak sebagai wajah
+ya
+Citra wajah yang
+terlacak
+
+Selesai
+Gambar 4 Flowchart Metode Haar Cascades Classifier
+2.1.2 Analisis Library Beyond Reality Face Library ini merupakan library Augmented
+Reality pada Flash/Actionscript 3 dalam mendeteksi wajah. SDK ini memungkinkan untuk mendeteksi wajah, fitur-fitur, posisi, dan pose 3D-nya dalam Flash. Penggunaannya seperti berikut : masukkan sebuah objek BitmapData dan kelas
+
+Jurnal Ilmiah Komputer dan Informatika (KOMPUTA)
+Volume. I Nomor. 2, Bulan Oktober 2012 - ISSN :2089-9033
+
+82
+
+IBRFContentContainer ke dalam kelas BeyondRealityFaceManager, perbaharui objek BitmapData dan jika wajah telah ditemukan, wajah dideteksi dan pose nya di-estimasi-kan.
+Adapun kelas-kelas yang terdapat di dalam library ini yaitu :
+
+2.2 Perancangan Antarmuka Perancangan antarmuka bertujuan untuk
+memberikan gambaran sistem yang dibuat. 1. Perancangan Antarmuka Streaming Kamera
+
+1. Class Interface IBeyondRealityFace 2. Class BeyondRealityFaceManager 3. Class Interface IBRFContentContainer 4. Class BRFVars 5. Class FaceDetectionVars 6. Class FaceEstimationVars 7. Class PoseEstimationVars 8. Class ResultMatrix 9. Class Shape
+
+2.1.3 Analisis Kebutuhan Non Fungsional Analisis non-fungsional merupakan analisis
+yang dibutuhkan untuk menentukan spesifikasi kebutuhan sistem. Spesifikasi ini juga meliputi elemen atau komponen-komponen apa saja yang dibutuhkan untuk sistem yang akan dibangun sampai dengan sistem tersebut diimplementasikan. Pada analisis kebutuhan sistem non-fungsional ini dijelaskan analisis kebutuhan perangkat lunak, analisis kebutuhan perangkat keras, dan analisis pengguna.
+
+Gambar 6 Perancangan Antarmuka Streaming Kamera
+2. Perancangan Antarmuka Pilih Model Kacamata
+
+2.1.4 Analisis Kebutuhan Fungsional Berikut ini adalah perancangan proses-
+proses yang terdapat pada aplikasi AR virtual mirror eyeglasses, yang digambarkan dengan Use Case Diagram yang dapat dilihat pada gambar 5.
+
+Gambar 7 Perancangan Antarmuka Pilih Model Kacamata
+
+streaming kamera
+
+System
+
+3. Perancangan Antarmuka Capture Image
+
+Pengguna
+
+<<include>>
+
+pilih model <<include>> menampilkan
+
+kacamata
+
+model kacamata
+
+<<extend>>
+
+capture image <<extend>>
+
+simpan snapshot
+
+Kamera
+
+Gambar 8 Perancangan Antarmuka Capture Image
+
+4. Perancangan Snapshot
+
+Antarmuka
+
+Simpan
+
+Gambar 5 Use Case Diagram aplikasi Virtual Mirror Eyeglasses
+
+Jurnal Ilmiah Komputer dan Informatika (KOMPUTA)
+Volume. I Nomor. 2, Bulan Oktober 2012 - ISSN :2089-9033
+
+83
+
+web, sehingga dapat digunakan dimana dan kapan saja tanpa harus datang ke toko. c. Aplikasi ini dapat menjadi sarana pendukung dalam menarik minat konsumen karena pemanfaatan teknologinya yaitu augmented reality dan kemudahan yang disediakannya.
+
+Gambar 9 Perancangan Antarmuka Simpan Snapshot
+3. HASIL DAN DISKUSI
+3.1 Hasil Pengujian Alpha Berdasarkan hasil pengujian alpha
+(fungsional) dengan kasus uji di atas dapat ditarik kesimpulan bahwa pembangunan aplikasi virtual mirror eyeglasses tidak terdapat kesalahan proses dan secara fungsional mengeluarkan hasil yang sesuai dengan yang diharapkan.
+3.2 Pengujian Beta Berdasarkan hasil kuesioner (pengujian
+beta) yang dilakukan maka dapat disimpulkan bahwa :
+1. Aplikasi virtual mirror eyeglasses ini dapat memudahkan konsumen dalam mencoba kacamata tanpa harus membeli.
+2. Dengan adanya aplikasi ini konsumen tidak harus datang ke toko untuk hanya sekedar mencoba kacamata, sehingga sangat menghemat waktu konsumen.
+3. Model kacamata belum terlalu mirip dengan aslinya karena faktor hardware dan kemampuan desain modelnya yang terbatas.
+4. Tidak sedikit juga konsumen yang tertarik ingin membeli setelah menggunakan aplikasi ini.
+5. Pengguna tertarik menggunakan aplikasi ini karena kebanyakan pengguna masih belum mengetahui teknologi augmented reality.
+4. KESIMPULAN DAN SARAN
+1. Kesimpulan Kesimpulan yang dihasilkan adalah sebagai berikut :
+a. Pengguna akan sangat terbantu dengan adanya aplikasi ini karena dimudahkan dalam mencoba kacamata tanpa harus membeli atau sebelum membeli.
+b. Dengan aplikasi ini juga sangat menghemat waktu konsumen karena penggunaan aplikasi ini dapat melalui
+
+2. Saran Saran-saran terhadap aplikasi virtual mirror eyeglasses ini adalah sebagai berikut :
+a. Penambahan model kacamata diperbanyak untuk mewakili produk yang tersedia di toko.
+b. Model kacamata didesain dengan lebih bagus.
+c. Menggunakan library 3D yang benarbenar mendukung hasil desain model kacamata.
+d. Mempelajari lebih lanjut tentang algoritma deteksi wajah yang lebih efisien dan efektif sehingga dapat menghasilkan pendeteksian yang lebih halus.
+5. DAFTAR PUSTAKA
+[1] Sommerville Ian, 2003, Software Enginering (Rekayasa Perangkat Lunak) edisi 6 jilid 1, Erlangga, Jakarta.
+[2] Ahmad, Usman, 2005, Pengolahan Citra Digital & Teknik Pemrogramannya, Graha Ilmu, Yogyakarta.
+[3] Ronald T. Azuma, 1997, A Survey of Augmented Reality, Teleoperators and Virtual Environments 6 (4): 355-385.
+[4] Wikipedia, 2012, Augmented Reality, (http://en.wikipedia.org/wiki/Augmented_rea lity, diakses pada tanggal 27 November 2011).
+[5] Milgram, Paul; H. Takemura, A. Utsumi, F.Kishino, 1994. Augmented Reality: A class of displays on the reality-virtuality continuum. Proceeding of Telemanipulator and Telepresence Technologies. pp. 2351-34.
+[6] Burhanudin R, 2011, Augmented Reality, (http://www.scribd.com/doc/76758792/Augm ented-Reality/, diakses pada tanggal 04 Juni 2012).
+[7] D.W.F. Van Krevelen, R. Poelman, 2010. A Survey of Augmented Reality Technologies, Applications and Limitations. The International Journal of Virtual Reality 9, 119.
+[8] A. S. Rosa, Salahuddin M, 2011, Modul Pembelajaran Rekayasa Perangkat Lunak, Modula, Bandung.
+
+Jurnal Ilmiah Komputer dan Informatika (KOMPUTA)
+
+Volume. I Nomor. 2, Bulan Oktober 2012 - ISSN :2089-9033
+
+[9] Luo, Xinghan, 2006. Algorithms for Face and
+
+Facial Feature Detection. Master of Science Thesis. Master's Degree Programme in
+
+Information Technology, Tampere University
+
+of Technology.
+
+[10] Wikipedia, 2012, Viola-Jones Object
+
+Detection
+
+Framework,
+
+(http://en.wikipedia.org/wiki/Viola-
+
+Jones_object_detection_framework, diakses
+
+pada tanggal 12 Juni 2012).
+
+[11] Paul Viola and Michael Jones, 2004. Robust
+
+Real-Time Face Detection. International
+
+Journal of Computer Vision 57(2), 137-154.
+
+[12] Fowler Martin, 2004, UML Distilled 3th
+
+Edition. Panduan Singkat Bahasa Pemodelan
+
+Objek Standar, Andi, Yogyakarta.
+
+[13] Rina Dewi Indah Sari, Studi Permainan
+
+(game),
+
+(http://www.scribd.com/doc/58073963/ai-
+
+Studi-Permainan-Game, diakses pada tanggal
+
+1 Juli 2012).
+
+[14] Articles About UML , (online) ,
+
+(www.uml.org. diakses tanggal 15 Juli 2012).
+
+[15] Sugiyono, 2010, Metode Penelitian
+
+Kuantitatif Kualitatif dan R&D, Alfabeta,
+
+Bandung.
+
+84
+
+

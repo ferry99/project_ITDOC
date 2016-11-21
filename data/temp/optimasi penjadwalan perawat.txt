@@ -1,0 +1,174 @@
+OPTIMASI PENJADWALAN PERAWAT MENGGUNAKAN
+ALGORITMA GENETIKA
+Rifqy Rosyidah Ilmi1, Wayan Firdaus Mahmudy2, Dian Eka Ratnawati2 1Mahasiswa, 2Dosen Pembimbing
+Informatika, Fakultas Ilmu Komputer, Universitas Brawijaya, Malang 65145, Indonesia Email : rifqyrosyidahilmi@gmail.com1, wayanfm@ub.ac.id2, dian_ilkom@ub.ac.id2
+ABSTRAK
+Penjadwalan perawat merupakan suatu masalah kritis pada suatu rumah sakit terutama pada ruang ICU dengan pasien yang membutuhkan perawatan khusus. Dampak dari panjangnya jam kerja perawat serta tugas yang banyak dikhawatirkan akan mempengaruhi kualitas kinerja, kondisi fisik maupun kehidupan sosial. Dalam penelitian ini, diterapkan algoritma genetika untuk menyelesaikan permasalahan penjadwalan perawat. Digunakan representasi permutasi bilangan integer dengan panjang kromosom 360 yang setiap angka pada gennya merepresentasikan nomor id perawat. Metode crossover yang digunakan yaitu one cut-point crossover, metode mutasi reciprocal exchange mutation dan diseleksi dengan elitism selection. Dari hasil pengujian yang dilakukan diperoleh parameter optimal yaitu ukuran populasi sebesar 200 individu dengan rata-rata fitness sebesar 0,80094, 150 generasi dengan rata-rata fitness sebesar 2,13674 dan kombinasi cr = 0.5 dan mr 0.5 dengan rata-rata fitness sebesar 3,4266. Hasil akhir berupa jadwal jaga perawat pada ruang ICU selama 1 bulan.
+
+Kata kunci : Algoritma Genetika, Penjadwalan Perawat
+ABSTRACT Nurse scheduling is a critical issue in the management of ICU department.Under the intense work environment, it is imperative to make quality nurse schedules in a most costand time effective way. In this researche, genetetic algorithm applied to optimize the nurse scheduling problem (NSP). The length of chromosome is 360, each gen is represented by id number of nurse. The method of crossover is one cut-point crossover, mutation method is reciprocal exchange mutation and selection is using elitsm method. Optimal parameter of popsize is 200 with average fitness number is 0,80094, 150 generation with average fitness number is 2,13674 and combination of Cr = 0.5 and Mr = 0.5 with average fitness number is 3,4266. The final result from this research is a month of nusre scheduling in ICU department.
+Keywords: Genetic Algorithms, Nurse Scheduling
+
+1. PENDAHULUAN 1.1 Latar Belakang
+Penjadwalan daftar jaga perawat merupakan sebuah proses penjadwalan yang mengatur waktu kerja perawat di sebuah rumah sakit. Dalam proses penjadwalan daftar jaga perawat ada beberapa komponen yang digunakan yaitu perawat, ruang, hari, dan shift (Tjajo, 2008) . Permasalahan penjadwalan perawat atau dikenal dengan Nurse Scheduling Problem (NSP) menjadi hal yang menantang karena dengan jumlah perawat yang relatif terbatas dibanding banyaknya pasien dan shift kerja, penjadwal dituntut untuk mendapatkan jadwal dengan beban kerja seadil mungkin untuk setiap perawat serta memenuhi batasan-batasan penjadwalan yang ada. Pemenuhan semua batasan
+
+penjadwalan seringkali terhambat ketika satu batasan terpenuhi, namun ternyata batasan lain terlanggar. Misalnya batasan jumlah maksimal libur per perawat mungkin terlanggar ketika batasan jumlah minimal perawat dalam satu shift kerja terpenuhi.
+Berdasarkan permasalahan penjadwalan perawat di atas maka diperlukan suatu algoritma untuk memecahkan masalah penjadwalan yang ada. Algoritma merupakan kumpulan perintah untuk menyelesaikan suatu masalah. Untuk permasalahan penjadwalan perawat, algoritma genetika dapat digunakan sebagai metode pengembangan sistem yang dapat membantu mengoptimalkan daftar jaga perawat. Permasalahan dengan model matematika yang kompleks atau bahkan sulit dibangun dapat
+
+Ilmi, RR, Mahmudy, WF & Ratnawati, DE 2015, 'Optimasi penjadwalan perawat menggunakan algoritma genetika', DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 13.
+
+diselesaikan menggunakan algoritma genetika (Mahmudy, 2013).
+Beberapa penelitian telah berhasil menggunakan metode algoritma genetika untuk menyelesaikan permasalahan kompleks. Pada penelitian ini, algoritma genetika digunakan untuk mendapatkan hasil kombinasi kromosom yang optimal sebagai penentuan komposisi jadwal serta perawat yang tepat sehingga didapat hasil penjadwalan yang sesuai kriteria. 1.2 Rumusan Masalah
+Berdasarkan paparan latar belakang, beberapa permasalahan yang akan dibahas dalam penelitian ini yaitu :
+1. Bagaimana representasi kromosom dari solusi yang diinginkan. 2. Bagaimana mengimplementasikan metode Algoritma Genetika untuk menyelesaikan masalah penjadwalan perawat. 3. Bagaimana mengukur kebaikan solusi yang dihasilkan Algoritma Genetika. 1.3 Batasan Masalah Batasan masalah dalam penelitian ini dalah : 1. Penjadwalan dibuat untuk periode satu bulan. 2. Penjadwalan tidak memperhatikan variable biaya. 3. Data yang digunakan merupakan data pada Rumah Sakit Umum Daerah Ibnu Sina Gresik. 4. Jumlah shift kerja perawat adalah 3 shift kerja dalam sehari, yaitu shift pagi, sore dan malam. 1.4 Tujuan Tujuan dari penelitian ini adalah : 1. Merepresentasikan data-data penjadwalan ke dalam bentuk kromosom yang akan mewakili solusi permasalahan. 2. Mengimplementasikan metode Algoritma Genetika untuk mendapatkan solusi optimal dalam menyelesaikan permasalahan penjadwalan perawat. 3. Mengukur kebaikan solusi yang dihasilkan Algoritma Genetika. 2. TINJAUAN PUSTAKA 2.1 Algoritma Genetika Algoritma genetika merupakan salah satu bagian dari algoritma evolusi. Algoritma evolusi
+
+merupakan bentuk generik dari algoritma optimasi meta-heuristic berbasis populasi yang menjadi subset dari komputasi evolusi (Mahmudy, 2014). Algoritma genetika sendiri sudah sangat popular digunakan untuk menyelesaikan masalah-masalah optimasi yang bersifat kompleks di bidang fisika, biologi, ekonomi, sosiologi dan lain lain (Mahmudy, 2014). Salah satu penerapannya yaitu optimasi penjadwalan produksi dalam bidang industri manufaktur menggunakan algoritma genetika (Mahmudy, Marian & Luong dalam Mahmudy, 2014). 2.2 Struktur Algoritma Genetika
+Pada algoritma genetika, teknik pencarian dilakukan sekaligus atas sejumlah solusi yang mungkin dikenal dengan istilah populasi (Kusumadewi, 2003). Solusi dari suatu masalah harus direpresentasikan menjadi string kromosome. Kromosom ini merupakan suatu solusi yang masih berbentuk simbol. String kromosome ini tersusun atas sejumlah gen yang menggambarkan variabelvariabel keputusan yang digunakan dalam solusi. Proses dalam algoritma genetika diawali dengan inisialisasi, yaitu menciptakan individu-individu secara acak yang memiliki susunan gen kromosome tertentu. Populasi awal dibangun secara acak, sedangkan populasi berikutnya merupakan hasil evolusi kromosom-kromosom melalui iterasi yang disebut dengan istilah generasi. Pada setiap generasi, kromosom akan melalui tahap evaluasi dengan menggunakan alat ukur yang disebut dengan nilai fitness. Nilai fitness dari kromosom menunjukkan kualitas kromosom dalam populasi tersebut. Proses reproduksi menghasilkan generasi berikutnya yang dikenal dengan istilah anak (offspring) terbentuk dari gabungan 2 kromosom generasi sekarang yang bertindak sebagai induk (parent) dengan menggunakan operator penyilangan (crossover). Selain operator penyilangan, sutau kromosom juga dimodifikasi dengan menggunakan operator mutasi. Evaluasi digunakan untuk menghitung kebugaran (fitness) setiap kromosome. Semakin besar fitness maka semakin baik kromosome tersebut untuk dijadikan calon solusi. Seleksi dilakukan untuk memilih individu dari himpunan populasi dan offspring yang dipertahankan hidup pada generasi berikutnya. Fungsi probabilistis digunakan untuk memilih individu yang dipertahankan hidup. Individu yang lebih baik (mempunyai nilai kebugaran/fitness lebih besar) mempunyai peluang
+
+Ilmi, RR, Mahmudy, WF & Ratnawati, DE 2015, 'Optimasi penjadwalan perawat menggunakan algoritma genetika', DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 13.
+
+lebih besar untuk terpilih (Gen & Cheng dalam Mahmudy, 2013).
+Setelah melewati sekian iterasi (generasi) akan didapatkan individu terbaik. Individu terbaik ini mempunyai susunan kromosome yang bisa dikonversi menjadi solusi yang terbaik (paling tidak mendekati optimum). Dari sini bisa disimpulkan bahwa algoritma genetika menghasilkan suatu solusi optimum dengan melakukan pencarian di antara sejumlah alternatif titik optimum berdasarkan fungsi probabilistic (Michalewicz dalam Mahmudy,2013). 2.3 Penjadwalan Perawat
+Penjadwalan merupakan proses dalam menyusun jadwal atau urutan proses yang diperlukan dalam suatu permasalahan. Contoh permasalahan penjadwalan diantaranya adalah penjadwalan pelajaran, penjadwalan ujian, penjadwalan karyawan serta penjadwalan perawat. Penjadwalan daftar jaga perawat merupakan sebuah proses penjadwalan yang mengatur waktu kerja perawat di sebuah rumah sakit. Dalam proses penjadwalan daftar jaga perawat ada beberapa komponen yang digunakan yaitu perawat, ruang, hari, dan shift (Tjajo, 2008).
+Banyaknya jumlah pasien yang membutuhkan pelayanan kesehatan sangat kontras dengan jumlah perawat dan dokter yang ada pada rumah sakit. Hal ini mengakibatkan pihak rumah sakit perlu melakukan pengaturan jadwal yang efisien untuk setiap sumber daya manusia yang ada (termasuk perawat dan pasien) agar semua pasien dapat terlayani dengan baik (Atmasari, 2010).
+3. METODOLOGI PENELITIAN Pada bagian ini akan dibahas metode yang
+digunakan dalam penjadwalan perawat serta langkah- langkah dalam mengimplementasikan metode pada penjadwalan perawat. Langkah penelitian digambarkan melalui diagram pada Gambar 1.
+
+Gambar 1. Langkah Penelitian
+3.1 Data Penelitian Data yang digunakan dalam penelitian ini adalah : 1. Data perawat yang bertugas pada ruang ICU
+RSUD Ibnu Sina Gresik 3.2 Perancangan Sistem
+Proses implementasi algoritma genetika untuk optimasi penjadwalan perawat adalah sebagai berikut : 1. Inisialisasi parameter awal
+· Parameter Algoritma genetika, meliputi : Jumlah generasi, Ukuran populasi (popsize), Crossover Rate (cr) dan Mutation Rate (mr).
+2. Bangkitkan populasi awal secara random sebanyak jumlah populasi yang ditentukan.
+3. Membentuk populasi baru dengan langkahlangkah sebagai berikut : · Melakukan proses crossover pada induk yang terpilih berdasarkan cr untuk mendapatkan anak (offspring) dengan metode one cut point crossover. · Melakukan proses mutasi pada induk yang terpilih berdasarkan mr untuk mendapatkan anak (offspring) dengan cara memilih dua gen secara acak kemudian menukar informasi gen tersebut. · Menghitung nilai fitness untuk masingmasing kromosom atau individu. · Melakukan seleksi elitism untuk memilih individu sebanyak jumlah populasi awal dari gabungan individu induk dan anak untuk dijadikan populasi pada generasi selanjutnya.
+4. Jika kondisi akhir terpenuhi, maka iterasi berhenti dan solusi terbaik adalah populasi
+
+Ilmi, RR, Mahmudy, WF & Ratnawati, DE 2015, 'Optimasi penjadwalan perawat menggunakan algoritma genetika', DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 13.
+
+yang terpilih pada generasi tersebut, jika kondisi akhir tidak terpenuhi maka lanjut keiterasi generasi selanjutnya. 3.3 Alur Penyelesaian Masalah Menggunakan Algoritma Genetika Dilakukan proses penjadwalan terhadap 16 perawat yang berjaga pada ruang ICU. Jadwal dibuat untuk 30 hari, setiap hari terdapat 3 shift yaitu pagi, sore dan malam.. 3.3.1 Representasi Kromosom
+Kromosom dalam penelitian ini berupa representasi permutasi dengan jumlah gen sebanyak 360. Angka integer menunjukkan nomor perawat. Setiap 4 kolom menunjukkan shift , sehingga 4 kolom pertama menunjukkan shift 1, 4 kolom kedua menunjukkan shift 2, 4 kolom ketiga menunjukkan shift 3 dan sehingga 12 kolom menunjukkan kebutuhan perawat dalam satu hari seterusnya sampai hari ke 30 dan berjumlah 360 (Wong, 2014). Representasi kromosom digambarkan pada gambar 2 berikut :
+
+Gambar 2. Representasi Kromosom
+
+3.3.2 Perhitungan Penalti Penalti adalah nilai pelanggaran yang tidak
+
+sesuai dengan aturan. Nilai pelanggaran dihitung
+
+berdasaran kemunculan pelanggaran pada
+
+kromosom. Setiap kemunculan dihitung 1
+
+pelanggaran. Jenis pelanggaran beserta nilai
+
+pelanggaran dalam penelitian ini dapat dilihat pada
+
+Tabel 1 berikut :
+
+Tabel 1. Jenis Pelanggaran
+
+No. Pelanggara
+n P1 P2
+P3
+P4
+
+Keterangan
+Perawat tidak dapat berjaga pada shift yang berurutan Seorang perawat berjaga pada shift malam sesuai dengan porsi yang telah ditentukan Seorang perawat tidak boleh muncul 2x atau lebih dalam 1 shift Seorang perawat tidak boleh
+
+Jenis Pelanggara
+n soft constraint.
+soft constraint.
+hard constraint.
+hard constraint.
+
+Konstanta Pelanggara
+n 5
+5
+20
+20
+
+Nilai Pelanggara
+n 1
+1
+1
+1
+
+mendapat jadwal jaga pada saat sedang mengajuka n cuti
+
+3.3.3 Perhitungan Fitness Untuk mengetahui bobot dari masing masing
+individu dilakukan perhitungan nilai fitness. Nilai fitness ini menujukan kualitas dari masing-masing individu. Hasil perhitungan fitness ini kemudian digunakan untuk masukan pada proses seleksi dalam mencari individu terbaik yang akan menjadi solusi penyelesaian masalah. Untuk menghitung nilai fitness digunakan persamaan 1.
+
+Fitness =
+
+(1)
+
+3.3.4 Crossover Pada proses ini metode crossover yang
+digunakan yaitu single-point crossover. Langkahlangkah metode one cut-point crossover : 1. Memilih induk secara random 2. Memasangkan kromosom yang terpilih menjadi induk untuk melakukan proses crossover. 3. Menentukan titik potong crossover secara acak. 4. Setelah ditentukan titik crossover kemudian tukar gen-gen antar 2 induk kromosom untuk menghasikan offspring. Ilustrasi metode one cut-point crossover dapat dilihat pada gambar 3.
+
+Gambar 3. one cut-point crossover 3.3.5 Mutasi
+Metode mutasi yang digunakan yaitu reciprocal exchange mutation. Langkah-langkah dari metode mutasi adalah sebagai berikut : 1. Memilih induk secara random 2. Memilih dua gen secara acak pada kromosom kemudian menukar nilai gen tersebut. Ilustrasi reciprocal exchange mutation dapat dilihat pada gambar 4.
+
+Gambar 4. reciprocal exchange mutation
+
+Ilmi, RR, Mahmudy, WF & Ratnawati, DE 2015, 'Optimasi penjadwalan perawat menggunakan algoritma genetika', DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 13.
+
+3.3.6 Seleksi Proses seleksi dilakukan dengan
+menggunakan metode elitism. Proses seleksi dilakukan untuk menyaring semua indivisu hasil proses algoritma genetika untuk membentuk generasi baru. Proses seleksi menggunakan metode elitism selection yaitu dengan memilih kromosom dengan nilai fitness terbesar sebanyak popsize yang telah ditentukan sebelumnya. 4. IMPLEMENTASI
+Implementasi user interface ini terdiri dari 3 halaman yaitu halaman data perawat, halaman proses penjadwalan serta halaman hasil penjadwalan. 4.1 Halaman Data Perawat Halaman data perawat akan muncul pertama kali setelah program dijalankan. Halaman ini berisi data id perawat serta nama perawat. Implementasi halaman data perawat dapat dilihat pada Gambar 5.
+Gambar 5. Halaman Data Perawat 4.2 Halaman Proses Penjadwalan
+Halaman proses penjadwalan digunakan untuk input parameter algoritma genetika berupa popsize, generasi, cr dan mr. pada halaman ini juga terdapat tombol untuk memproses serta melihat hasil algoritma genetika berupa populasi awal, hasil crossover dan mutasi hingga hasil seleksi. Implementasi halaman proses penjadwalan dapat
+dilihat pada Gambar 6.
+
+4.3 Halaman Hasil Penjadwalan Halaman hasil penjadwalan berisi individu
+terbaik dan jadwal jaga perawat. Implementasi halaman hasil penjadwalan dapat dilihat pada Gambar 7.
+Gambar 7 Halaman Hasil Penjadwalan 5. PENGUJIAN DAN ANALISA 5.1 Hasil dan Analisa Pengujian Ukura Populasi
+Pengujian pertama yaitu pengujian ukuran populasi terhadap nilai fitness. Pengujian ukuran populasi digunakan untuk menentukan ukuran populasi yang terbaik agar menghasilkan solusi terbaik dalam kasus ini. Jumlah generasi yang digunakan adalah 100 generasi dengan ukuran populasi yang diuji adalah 10, 20, 50, 100, 150, dan 200 serta crossover rate 0.6 dan mutation rate 0.4. Pengujian ukuran populasi dilakukan sebanyak 10 kali. Grafik hasil pengujian dapat dilihat pada Gambar 10.
+
+Gambar 6 Halaman Proses Penjadwalan
+
+Gambar 10 Uji Coba Populasi Berdasarkan hasil pengujian pada gambar 10, semakin besar ukuran populasi atau popsize maka rata ­ rata fitness yang dihasilkan cenderung semakin besar. Pada ukuran populasi 10 individu memiliki nilai rata-rata fitness terkecil yaitu 0,23369 sedangkan pada ukuran populasi 200 individu, rata ­ rata nilai fitness mencapai nilai terbaik atau tertinggi yaitu 0,80094. Penambahan ukuran populasi akan memungkinkan algoritma genetika untuk mengeksplorasi area pencarian dan
+
+Ilmi, RR, Mahmudy, WF & Ratnawati, DE 2015, 'Optimasi penjadwalan perawat menggunakan algoritma genetika', DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 13.
+
+sekaligus mendapatkan solusi yang lebih baik. Tetapi pada batas tertentu ukuran populasi yang terlalu besar akan membebani waktu komputasi dan kenaikan fitness yang didapatkan tidak terlalu siginifikan(Mahmudy, Marian & Luong, 2013). Dari hasil uji coba populasi diperoleh ukuran populasi dengan hasil optimal yaitu 200 individu. 5.2 Hasil dan Analisa Pengujian Banyaknya Generasi
+Pengujian kedua yaitu pengujian ukuran generasi terhadap nilai fitness. Pengujian ukuran generasi digunakan untuk menentukan banyak generasi yang terbaik agar menghasilkan solusi terbaik dalam kasus ini. Pada uji coba generasi ini digunakan ukuran populasi 200 yang diperoleh dari hasil uji coba ukuran populasi yang telah dilakukan sebelumnya yang dianggap dapat menghasilkan rata ­ rata nilai fitness terbaik. Ukuran generasi yang diuji adalah 20, 50, 100, dan 150 dengan crossover rate 0.6 dan mutation rate 0.4. Pengujian ukuran generasi dilakukan sebanyak 10 kali. Grafik hasil pengujian dapat dilihat pada Gambar 11.
+
+waktu komputasinya dan belum tentu menghasilkan solusi yang lebih optimal (Mahmudy, 2013). Pola kenaikan fitness seperti ini juga didapatkan oleh Sundarningsih, Mahmudy dan Sutrisno yang menerapkan algoritma genetika untuk optimasi vehicle routing problemwith time window(VRPTW) serta penelitian yang dilakukan oleh Pitaloka, Mahmudy dan Sutrisno yang menerapkan hybrid algoritma genetika untuk permasalahan vehicle routing problemwith time window(VRPTW).
+5.3 Hasil dan Analisa Pengujian Kombinasi Nilai Cr dan Mr
+Uji coba berdasarkan crossover rate (cr) dan mutation rate (mr) dilakukan untuk mengetahi kombinasi cr dan mc yang paling baik untuk menghasilkan fitness terbaik. Nilai cr dan mr yang digunakan dalam uji coba ini antara 0 dan 1. Pengujian pada cr dan mr ini juga menggunakan hasil uji coba yang telah dilakukan sebelumnya yaitu hasil uji coba ukuran populasi dan uji coba banyaknya generasi. Ukuran populasi sebesar 200 dan generasi sebesar 150. Pengujian ukuran populasi ini dilakukan sebanyak 10 kali. Grafik hasil pengujian dapat dilihat pada Gambar 12.
+
+Gambar 11 Uji Coba Generasi Berdasarkan hasil pengujian pada tabel gambar 11, semakin besar ukuran generasi maka rata ­ rata fitness yang dihasilkan cenderung semakin besar. Pada ukuran populasi 20 individu memiliki nilai rata-rata fitness terkecil yaitu 0,20417 sedangkan pada ukuran populasi 150 individu, rata ­ rata nilai fitness mencapai nilai terbaik atau tertinggi yaitu 2,13674. Generasi maksimal pada pengujian ini adalah 150. Jika dilanjutkan ke generasi yang lebih besar maka perubahan rata-rata fitness tidak signifikan sehingga menghasilkan anak yang hampir sama dengan induknya dan waktu komputasi juga lebih lama. Hasil pengujian ini membuktikan jika jumlah generasi terlalu sedikit maka area pencarian algoritma semakin sempit, sehingga solusinya kurang optimal. Sebaliknya jika semakin banyak generasi maka semakin besar
+
+Gambar 12 Uji Coba cr dan mr Rata -rata fitness yang diperoleh sangat beragam karena tidak ada suatu ketetapan nilai cr dan mr yang digunakan untuk memperoleh solusi optimal. Dalam menentukan kombinasi parameter yang tepat dipengaruhinoleh permasalahan yang akan diselesaikan (Mahmudy, 2013). Pada uji coba ini didapatkan kombinasi cr = 0.5 dan mr 0.5 menghasilkan rata ­ rata fitness terbaik yaitu 3,4266, sedangkan pada kombinasi cr = 1 dan mr 0 menghasilkan rata ­ rata fitness terendah yaitu 0,50153. Nilai cr yang terlalu rendah dan mr terlalu besar mengakibatkan menurunnya kemampuan
+
+Ilmi, RR, Mahmudy, WF & Ratnawati, DE 2015, 'Optimasi penjadwalan perawat menggunakan algoritma genetika', DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 13.
+
+algoritma genetika untuk belajar ke generasi sebelumnya dan tidak mampu mengeksplorasi daerah optimum local (Mahmudy, 2013). Selain itu nilai mr yang terlalu rendah dan cr terlalu besar mengakibatkan konvergensi dini yaitu tidak adanya perubahan terlalu besar dalam mendapatkan solusi ketika di uji coba pada beberapa generasi saja (Mahmudy, 2013).
+6. PENUTUP 6.1 Kesimpulan
+Berdasarkan hasil implementasi dan pengujian dalam penerapan algoritma genetika untuk penjadwalan perawat, maka dapat diambil beberapa kesimpulan sebagai berikut :
+1. Pada kasus ini algoritma genetika direpresentasikan dengan representasi permutasi berbasis kode perawat. Bentuk representasi kromosom yang digunakan memiliki panjang kromosom pada interval [1...360] yang pembangkitan kromosomnya random. 2. Metode crossover yang digunakan yaitu one-cut point dan untuk proses mutasinya menggunakan metode reciprocal exchange mutation. Sedangkan metode seleksi yang digunakan yaitu elitism yang menghasilkan nilai fitness paling optimal dari generasi terakhir. Namun nilai fitness yang dihasilkan masih belum maksimum karena dengan panjang kromosom hingga 360 membutuhkan waktu komputasi yang lama dan hasil random dari proses algoritma genetika yang lebih bervariasi sehingga sulit untuk mendapatkan nilai fitness yang optimal. 3. Dalam menentukan parameter algoritma genetika yang digunakan pada penjadwalan mata pelajaran maka dilakukan pengujian parameter yang terdiri dari ukuran generasi, ukuran populasi (popsize) dan kombinasi crossover rate (cr) dan mutation rate (mr). Hasil dari pengujian merupakan parameter dengan nilai rata-rata fitness tertinggi dari percobaan yang dilakukan sebanyak 10 kali.
+
+Hasilnya didapatkan jumlah generasi 150, jumlah populasi 100 dan kombinasi crossover rate dan mutation rate 0.5:0.5 yang memiliki nilai rata-rata fitness tertinggi. 4. Berdasarkan hasil pengujian maka didapatkan kesimpulan bahwa nilai parameter algoritma genetika berpengaruh terhadap hasil optimasi. Ukuran parameter yang kecil akan menyebabkan area pencarian algoritma genetika semakin sempit sedangkan jika ukuran parameter terlalu besar maka akan membutuhkan waktu komputasi lebih lama dan tidak menjamin akan menghasilkan nilai yang optimal. 5. Untuk menentukan kualitas dari solusi penjadwalan yang dihasilkan diukur dari nilai fitnessnya. Perhitungan fitness didapat dari jumlah penalti yang telah dikalikan dengan konstanta dan selanjutnya dihitung menggunakan rumus fitness. Semakin besar nilai fitness yang dihasilkan maka solusi yang dihasilkan semakin baik sedangkan jika semakin kecil nilai fitnessnya maka semakin buruk solusi yang dihasilkan. 6.2 Saran Pada penelitian tentang penjadwalan selanjutnya, agar dihasilkan solusi jadwal yang lebih optimal pengujian parameter dapat dilakukan lebih banyak lagi. Pemilihan parameter yang tepat diharapkan dapat menghasilkan solusi jadwal yang lebih optimal. Kombinasi metode crossover, mutasi atau seleksi lainnya dapat digunakan dalam menerapkan algoritma genetika untuk mendapatkan solusi yang lebih bervariasi dan lebih optimal dalam kasus penjadwalan perawat.
+DAFTAR PUSTAKA
+Atmasari. 2010. Penjadwalan Perawat Unit Gawat Darurat Dengan Menggunakan Goal Programming. Jurusan Matematika. Fakultas Matematika dan Ilmu Pengetahuan Alam. Institut Teknologi Sepuluh Nopember. Surabaya.
+Faraji, Rasoul. 2014. An Efficient Crossover Architecture For Hardware Parallel. Department of Electrical and Computer Engineering, Graduate University of Advanced Technology, Haftbagh BLV, Kerman, Iran. Neurocomputing Journal 128 (2014) 316­327.
+
+Ilmi, RR, Mahmudy, WF & Ratnawati, DE 2015, 'Optimasi penjadwalan perawat menggunakan algoritma genetika', DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 13.
+
+Faris, Muhammad Zaini. 2013. Optimasi Penjadwalan Mata Pelajaran Menggunakan Genetic Algorithm. Program Teknologi Informasi dan Ilmu Komputer. Universitas Brawijaya. Malang.
+Kaya, Mustafa. 2008. The Effects Of Two New Crossover Operators On Genetic Algorithm Performance. Aksaray University, Faculty of Engineering, Adana Street, Aksaray, Turkey.
+Mahmudy, Wayan Firdaus. 2013. Algoritma Evolusi. Program Teknologi Informasi dan Ilmu Komputer. Universitas Brawijaya. Malang.
+Mahmudy, WF, Marian, RM & Luong, LHS 2013. Modeling And Optimization Of Part Type Selection And Loading Problems In Flexible Manufacturing System Using Real Coded Genetic Algorithms. International Journal of Electrical, Electronic Science and Engineering, vol. 7, no. 4, pp. 181-190.
+Mahmudy, WF, Marian, RM & Luong, LHS. 2014. Hybrid Genetic Algorithms For Part Type Selection And Machine Loading Problems With Alternative Production Plans In Flexible Manufacturing System. ECTI Transactions on Computer and Information Technology (ECTICIT), vol. 8, no. 1, pp. 80-93.
+Pitaloka, DA, Mahmudy, WF & Sutrisno. 2014. Penerapan hybrid algoritma genetika untuk permasalahan vehicle routing problem with time windows (VRPTW). DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 4, no. 11.
+Sabarulin, dkk. 2013. Faktor Yang Mempengaruhi Kinerja Perawat Dalam Mendokumentasikan Asuhan Keperawatan Di Rumah Sakit Woodward Palu. Jurnal AKK, Vol 2 No 3, September 2013, hal 29-34.
+Sbeity, Ilhab, dkk. 2014. Combining The Analytical HierarchyProcess And The Genetic Algorithm To Solve The Timetable Problem. International Journal of Software Engineering & Applications (IJSEA), Vol.5, No.4, July 2014.
+Sharma, Anshul, dkk. 2013. Review Paper of Various Selection Methods in Genetic Algorithm. International Journal of Advanced Research in Computer Science and Software Engineering, Volume 3, Issue 7, July 2013. ISSN: 2277 128X.
+
+Sundarningsih, D, Mahmudy, WF & Sutrisno. 2015. Penerapan Algoritma Genetika Untuk Optimasi Vehicle Routing Problem With Time Window (VRPTW) : Studi Kasus Air Minum Kemasan. DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 9.
+Tjatjo, R A. 2008. Optimasi Penjadwalan Daftar Jaga Perawat Menggunakan Algoritma Genetika Studi Kasus Pada Rumah Sakit Undata Palu. Program Studi Ilmu Komputer. Jurusan Matematika. Fakultas Matematika dan Ilmu Pengetahuan Alam. Universitas Brawijaya. Malang.
+Ulya, Anisa. 2010. "Penggunaan Algoritma Genetik Dengan Pemodelan Dua Tingkat Dalam Permasalahan Penjadwalan Perawat Pada Unit Gawat Darurat Rumah Sakit Umum Xyz Surabaya". Jurusan Sistem Informasi. Fakultas Teknologi Informasi. Institut Teknologi Sepuluh November. Surabaya.
+Wong, T.C. 2014. A Two Stage Heuristic Approach For Nurse Scheduling Problem: A Case Study In An Emergency Department. International Journal of Computers & Operations Research 51 (2014) 99­110.
+
+Ilmi, RR, Mahmudy, WF & Ratnawati, DE 2015, 'Optimasi penjadwalan perawat menggunakan algoritma genetika', DORO: Repository Jurnal Mahasiswa PTIIK Universitas Brawijaya, vol. 5, no. 13.
+
+

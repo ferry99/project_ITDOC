@@ -1,0 +1,79 @@
+MANAJEMEN BANDWIDTH DAN MANAJEMEN USER SEBAGAI OPTIMASI JARINGAN INTERNET DI MTs NEGERI GIRILOYO BANTUL BERBASIS MIKROTIK 5.18. DISUSUN OLEH ADIK WIJAYANTO
+Abstrak Teknologi komputer sudah merambah ke berbagai bidang termasuk pendidikan. Sebagian sekolah memiliki komputer untuk mempercepat proses kerja administrasi dan akademik. Bahkan sudah ada yang memanfaatkan tekonologi komputer untuk mendukung proses pembelajaran. Komputer dijadikan media untuk menyampaikan konsep keilmuan menjadi lebih menarik dan mudah. Penelitian ini bertujuan untuk memanajemen user dan bandwidth jaringan komputer yang sesuai kebutuhan pada MTs Negeri Giriloyo Bantul. Metode penelitian yang digunakan adalah metode SDLC (system development lyfe cycle). Metode SDLC yang digunakan meliputi beberapa fase, fase pertama yaitu analisa. Analisa yang dilakukan meliputi letak lokasi, kebutuhan dan hardware yang digunakan. Fase yang kedua adalah penentuan desain jaringan, setelah menentukan desain jaringan yang cocok dilanjutkan tahap perancangan dan instalasi serta konfigurasi. Setelah jaringan selesai dibuat maka dilakukan pengujian terhadap koneksi jaringan. Berdasarkan penelitian, hasil yang di dapatkan adalah manajemen jaringan internet meliputi manajemen bandwidth dan user serta membangun jaringan internet berbasis mikrotik yang baik baik dan dapat digunakan sebagai sarana pendidikan.
+Kata kunci : Manajement Bandwidth dan User , Mikrotik, Router
+
+LATAR BELAKANG Teknologi informasi sudah merambah ke berbagai bidang termasuk
+pendidikan. Semakin berkembang teknologi informasi sekarang ini, maka kebutuhan akan informasi saat ini semakin meningkat pula. Dimana setiap orang membutuhkan informasi dalam waktu yang cepat, singkat dan akurat oleh karena itu dibutuhkan suatu sarana yang dapat mendukung akan hal tersebut salah satunya adalah ketersediaan koneksi internet yang cepat dan stabil. Tidak terlepas dari hal itu layanan bandwidth internet memegang peran yang sangat penting. Akan tetapi kenyataan sekarang ini kapasitas bandwidth yang besar sangatlah mahal, sehingga suatu institusi harus dapat secara bijak menggunakan bandwidth yang tersedia dengan sebaik mungkin . Dengan adanya ketersediaan bandwidth tersebut diharapkan bisa melayani ratusan pengguna yang ingin menggunakan internet secara bersamaan khususnya dalam institusi sekolah yaitu guru dan murid. Oleh karena itu perlu dilakukan pengaturan baik kapasitas bandwidth maupun pengguna, karena jika tidak diatur kemungkinan besar traffic dan bandwidth akan penuh ketika digunakan oleh beberapa pengguna saja. Selain itu masalah yang sering muncul di institusi khususnya sekolah adalah siapa saja yang memiliki hak akses atas koneksi internet.
+Untuk memudahkan di dalam pengaturan bandwidth dan user perangkat yang sering digunakan adalah mikrotik. Karena salah satu paket yang terdapat di dalam mikrotik adalah bandwidth management dan user management. Hal tersebut dilakukan supaya semua pengguna internet bisa melakukan akses ke internet dan bisa merasa nyaman dalam menggunakan internet, nyaman dalam hal ini kelancaran di dalam menggunakan layanan internet. Dengan mikrotik, administrator dimudahkan dalam melakukan pengaturan bandwidth dan monitoring traffic melalui media grafik. Diharapkan dengan melakukan pengaturan dan pembagian bandwidth sesuai kebutuhan, dapat mengoptimalkan ketersediaan bandwidth internet yang ada serta mampu memonitoring pengguna (user).
+Menyadari hal ini, maka muncul gagasan untuk melakukan penelitian tentang manajemen bandwidth dan user menggunakan mikrotik 5.18 di MTs
+
+Negeri Giriloyo Bantul. Manajemen bandwidth dan user diharapkan dapat memberikan layanan koneksi internet yang lancar dan nyaman. Sehingga seseorang yang telah memiliki hak akses atas koneksi internet atau telah memiliki akun dapat menggunakan fasilitas layanan internet di sekolah tersebut dengan nyaman dan lancar.
+TUJUAN PENELITIAN Tujuan yang akan dicapai yaitu:
+a. Memberikan solusi atas masalah pemakaian bandwidth yang ada di MTsN Giriloyo, sehingga pemakaian bandwidth yang ada menjadi lebih efisien.
+b. Melakukan optimalisasi jaringan yang ada yaitu dengan cara membatasi hak akses pengguna layanan internet di MTs Negeri Giriloyo dalam hal ini melakukan manajemen user maupun pengguna layanan jaringan internet.
+c. Mengoptimalasasi fasilitas jaringan internet yang sudah ada yaitu laboraturiom komputer dan koneksi internet yang telah ada yaitu koneksi Speedy dari Telkom.
+d. Melihat traffic penggunaan bandwidth yang ada serta dapat memantau user yang terhubung ke dalam jaringan internet MTs Negeri Giriloyo.
+e. Menghasilkan produk router yang murah dan powerfull, mudah digunakan, mudah perawatannya serta cocok digunakan di instansi khususnya bagi perkantoran atau sekolah-sekolah.
+MANFAAT PENELITIAN Hasil penelitian ini nantinya akan dijadikan sebagai langkah untuk
+membangun jaringan internet yang nantinya dapat saling terintergrasi. Terintergrasi dalam hal ini adalah nantinya data user yang berada digunakan dalam melakukan login ke internet dapat saling berhubungan dengan sistem informasi sekolah dalam hal ini guru dan siswa, jadi nantinya apabila siswa maupun guru sudah memiliki username dan pasword dapat secara otomatis login
+
+ke internet maupun sistem informasi yang ada dalam sekolah tersebut tampa melakukan registrasi.
+Manfaat lain yang dapat dari penelitian tersebut antara lain: a. Bagi Instansi Terkait
+- Dapat menyediaakan layanan internet yang nantinya sebagai pendukung kegiatan belajar mengajar sekolah tersebut.
+- Mengoptimalkan koneksi internet yang ada khususnya masalah bandwidth yang ada dan keamanan sistem dilihat dari sisi pengguna (user). Selain itu juga mengoptimalkan sarana yang telah ada dalam hal ini jumlah komputer Lab Komputer yang cukup banyak, jumlah guru yang hampir semua memiliki komputer jinjing dan tentunya mengoptimalkan koneksi internet yang telah ada.
+b. Bagi Mahasiswa - Dapat memperoleh pengalaman tentang pemecahan permasalahan yang ada dalam institusi pendidikan yang berkaitan dengan perkembangan teknologi informatika. - Dapat menjadikan motifasi bagi mahasiswa supaya dapat termotifasi dan menjadi inovator dalam kemajuan teknologi informatika umumnya dalam hal ini dilingkungan sekolah. - Dapat membangun sistem maupun media yang berfungsi sebagai pendukung didalam dunia pendidikan khususnya.
+METODE PENELITIAN Metode yang digunakan dalam penelitian ini terdiri dari langkah-langkah
+sebagai berikut: a. Pengumpulan Data Metode yang penulis terapkan adalah dengan mengumpulkan semua data yang akan digunakan untuk menganalisa objek permasalahan yang sedang dibahas. b. Survey
+
+Melakukan peninjauan secara langsung pada MTs Negeri Giriloyo Bantul, mengumpulkan data serta informasi tentang kebutuhan akan pengaturan bandwidth dan user yang ingin dibangun yaitu meliputi ruang laboraturiom komputer dan jaringan wifi. Data yang diperoleh merupakan data yang digunakan untuk membahas masalah-masalah yang muncul dan untuk mendapatkan data-data tersebut, penulis melakukan pengumpulan data melalui peninjauan dan pengamatan pada semua bagian yang terkait melalui guru, pegawai dan siswa yang ada di MTs Negeri Giriloyo khususnya bagian pengelola laboraturium komputer. Pengumpulan data dilakukan dengan wawancara dan bimbingan dari staf yang telah ditunjuk dan kompeten dibidangnya, serta para pegawai yang memiliki pengalaman dibidang router mikrotik. Wawancara dilakukan untuk mendapatkan gambaran permalahan yang dialami khususnya masalah koneksi jaringan internet dan yang diinginkan dari pemanfaatan koneksi internet disekolah yang stabil dan lancar. c. Studi Literatur
+Melakukan studi kepustakaan terhadap berbagai referensi yang berkaitan dengan penelitian yang dilakukan. Topik-topik yang dikaji diantaranya meliputi: membangun jaringan laboraturim komputer yang terdiri dari 20 unit komputer agar dapat terkoneksi dengan internet serta melakukan konfigurasi mikrotik yang didalamnya mencakup manajement bandwith dan manajemen user, proxy serta setting perangkat wifi. d. Perancangan
+Pembahasan menguraikan tentang perancanagan topologi jaringan, serta melakukan konfigurasi wifi yang mencakup pemasangan beberapa titik akses point yang nantinya digunakan sebagai media maupun alat pembelajaran bagi para guru. e. Ujicoba Sistem
+Melakukan pengujian unjuk kerja sistem. Unjuk kerja pada penelitian ini melakukan koneksi dari beberapa komponen tersebut dan melakukan uji coba apakah konfigurasi yang telah kita buat dari router
+
+mikrotik tadi berhasil, serta melakukan uji coba login user dalam hal ini guru, siswa dan umum.
+HASIL PENELITIAN Penelitian dilakukan dari bulan maret sampai dengan bulan Juli yang
+berlokasi di MTs Negeri Giriloyo Bantul. Dari rentang waktu tersebut dapat diperoleh hasil yaitu dapat membangun jaringan komputer menggunakan Mikrotik sebagai PC Router, yang salah satu hasil yang diharapkan yaitu dapat memanajemen bandwidth dan manajemen user sebagai optimasi jaringan koneksi internet disekolah tersebut. Selain itu juga dibangaun jaringan hotspot yang dapat mencakup seluruh area sekolah yaitu seluruh ruang kelas yang kurang lebih memiliki luas tanah sekitar kurang lebih 5.000 m/2. Serta dapat membagi bandwith yang dimiliki sekolah yaitu 1 MGhz yang dibagi di dua titik yaitu laboraturium komputer (512 M) dan hotspot (512 M). Kemudian juga dilaikukan pembatasan akan hak akses internet yang kesemuanya guna keamanan dan kenyamanan pengguna.
+Pengujian dan pembagian bandwidth dapat dilikat dari tabel dibawah ini: Untuk melihat batasan bandwidth yang berhasil kita buat tadi disini penulis menggunakan winbox dan di interface terlihat icon hijau menandakan kurang dari batasan, icon berubah kuning berarti bandwidth mendekali full dan merah berarti full.
+Gambar Interface Queue List
+
+Gambar Informasi trafic dari user
+KESIMPULAN Dari penelitian dan praktek yang penulis lakukan, maka diperoleh hasil
+bahwa : a. Dengan menggunakan teknik Queue Tree kita dapat melakukan pengaturan bandwidth sesuai dengan kebutuhan intansi dalam hal ini sekolah, serta dapat negoptimalkan kapasitas bandwidth yang ada guna memperlancar dan mengoptimalkan koneksi internet. b. Dengan menggunakan teknik fail over pada router, tempat-tempat, instansi atau perkantoran yang memiliki dua buah koneksi internet atau lebih, dapat menggunakan koneksi tersebut secara optimal karena apabila salah satu sambungan mati maka koneksi yang lain akan membackup.
+
+c. Dengan DHCP server masalah pengaturan IP address bias dipermudah karena kita tidak perlu melakukan setting IP secara manual, karena secara otomatis setiap client akan mendapat IP address dari DHCP server.
+d. Dari hasil yang diperoleh dalam pengaturan melakukan manajemen bandwidth dan user khususnya pembuatan dengan router mikrotik ini tidak mengeluarkan banyak biaya karena hanya membutuhkan pc yang resource-nya tidak terlalu besar seauai dengan kemampuan sekolah.
+e. Penggunaanya juga cocok untuk MTs Negeri Giriloyo Bantul karena menggunakan router mikrotik yang mudah digunakan dan mudah perawatannya sehingga dapat memperlancar kegiatan yang lain.
+f. Kegiatan yang ada di MTs Negeri Giriloyo Bantul khususnya pengiriman data secara online juga lebih efektif dan efisien. Serta kegiatan belajar mengajar yang dilakukan oleh guru yang biasanya menggunakan fasilitas koneksi internet di ruang kelas dapat berjalan dengan baik dan lancar.
+g. Membatasi jumlah pengguna khusunya yang hanya memilikik username dan password saja yang dapat menggunakan fasilitas internet. Sehingga masalah keamanan khususnya dari pihak luar dapat diminimalisir.
+SARAN Dalam manajemen bandwidth dan user ini masih ada kelemahan-
+kelemahan beberapa saran dari penulis adalah : a. Sebaiknya PC yang digunakan untuk router memiliki spesifikasi yang cukup tinggi karena fungsinya memang penting dalam sebuah jaringan. Semakin tinggi spesifikasi sebuah PC tentunya akan memiliki akselerasi yang semakin baik. b. Masalah koneksi internet yang sering terganggu dikarenakan daerah yang digunakan penelitian oleh penulis merupakan daerah pinggiran
+
+dan dan dikelilingi oleh beberapa pegunungan atau dataran tinggi untuk itu kedepannya untuk sekolah yang menginginkan koneksi internet yang stabil disarankan memilki du koneksi ISP sehingga apabila koneksi ISP yang satu mengalami gangguan tentunya tidak akan menjadi masalah dikarenakan sudah terback up dengan koneksi ISP yang satunya. c. Penulis mengharapkan kepada pembaca supaya dapat memberikan saran yang membangun terhadap hasil tulisan ini agar lebih sempurna.
+DAFTAR PUSTAKA Kustanto, Saputro T Daniel. 2008. Membangun Server Internet dengan Mikrotik OS. Surakarta: Penerbit Gava Media.
+William Stalling. 2001. Data dan Computer Communications. Terjemahan. Jakarta, Indonesia: Penerbit Salemba Teknika.
+Abdul Kadir. 2003 Pengenalan Sistem Informasi. Yogyakarta, Indonesia: Penerbit ANDI.
+Ahmad Yani. 2007. Panduan Membangun Jaringan Komputer. Jakarta, Indonesia: Penerbit Kawan Pustaka.
+Wiharsono Kurniawan. 2007. Jaringan Komputer. Yogyakarta, Indonesia: Penerbit ANDI.
+Napoli. 2006. Membangun Jaringan Komputer Berbasis Kabel dan Wireless. Bandung, Indonesia Penerbit: Alfabeta.
+Budi Sutedjo Dharma Oetomo. 2004. Konsep dan Perancangan Jaringan Komputer. Yogyakarta, Indonesia: Penerbit ANDI.
+Arief Ramadhan. 2006. Pengenalan Jaringan Komputer. Jakarta, Indonesia Penerbit: Elex Media Komputindo.
+Abdullah Miftah Faridi. 2011. Analisa dan Perancangan Manajemen Bandwidth Menggunakan Mikrotik di Telencer Kertonegoro Ngawi. Skripsi Teknik Informatika STMIK AMIKOM Yogyakarta.
+
+Asoka Wardhana. 2006. Instalasi Mikrotik RouterOS. Tugas Ahir Teknik Informatika Fakultas Ilmu Komputer STIMIK AMIKOM Yogyakarta.
+Muhammad Ulinnaha. 2008. Membuat Router Mudah Dengan Menggunakan Mikrotik. Tugas Akhir Teknik Informatika. Fakultas Ilmu Komputer STIMIK AMIKOM Yogyakarta.
+Hazerio Dawitta, Ira Windarti. 2008. Instalasi Jaringan Komputer dengan Sistem Windows XP Menggunakan Topologi Star. Tugas Ahir Teknik Informatika. Fakultas Ilmu Komputer STIMIK AMIKOM Yogyakarta.
+Rikhanatul Hamidah.2010. Pemanfaatan Perangkat Lunak Mikrotik Sebagai Router Jaringan Komputer di SMP AL-Akhsan Palagan. Skripsi Teknik Informatika STIMIK AKAKOM Yogyakarta.
+Iwan Safara. 2009. Membangun Jaringan Komputer (Membuat Jaringan Komputer (Wire dan Wireless) Untuk Pengguna Windows dan Linuk. Penerbit Informatika.
+Winarno Sugeng, Jaringan Komputer dengan TCP/IP,Penerbit Informatika, Bandung 2006.
+http://mikrotikindo.blogspot.com/2013/02/kumpulan-perintah-perintah-dasarmikrotik-routeros.html tanggal akses 03 Juli 2013 jam 14:15.
+http://fadhly.web.id/posts/setup-captive-portal-di-mikrotik.html tanggal akses 03 Juli 2013 jam 09:40.
+Muhammad Setiawan, 2011, Perangkat Jaringan Komputer http://nopainsocounterpain.wordpress.com/2012/03/29/kenalan-denganperangkat-jaringan-komputer/ tanggal akses juli 2013
+Zaenal Akhmad Rifai, 2013, Kenalan Dengan perangkat Jaringan Komputer http://iiwann.blogspot.com/2013/01/jenis-jenis-kabel-jaringan-computer.html tanggal akses 08 Juni 2013 jam 13.45
+http://www.itl.nist.gov/div897/staff/barkley/titlehce/node5.html tanggal akses 07 juni 2013 jam 21.30
+
+http://www.ilmukomputer.org/wp-content/uploads/2006/09/ropik-mikrotik.pdf tanggal akses 27 Juli 2013 jam 21:15
+http://fadhly.web.id/posts/setup-radius-pada-mikrotik.html tanggal akses 03 Juli 2013 jam 21:40.
+http://qyystyle.blogspot.com/cara-setting-mikrotik-sebagai-gateway-danbandwidth-management tanggal akses 04 Agustus 2013 jam 14:02.
+http://id.wikipedia.org/wiki/Jaringan_komputer tanggal akses 27 Juli 2013 jam 11:25 http://192.168.10.254/graphs/iface/Hotspot/ mikrotik router mts tanggal akses 10 Agustus 2013 jam 14:15
+
+

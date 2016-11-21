@@ -1,0 +1,379 @@
+PENCARIAN JALAN PADA PERGERAKAN AGEN CERDAS MENGGUNAKAN ALGORITMA ANT SYSTEM
+Endah Damayanti1 Teknik Informatika, STT Atlas Nusantara Malang
+1end4h_damay@yahoo.com
+Abstrak Dalam game moderen berbasis artificial intelligence masih bergantung pada pendekatan behavior manusia dan kondisi dunia nyata. Game yang realistis didukung oleh implementasi human like behavior pada player / Non Player Character / agen cerdas dalam game. Untuk menghidupkan perilaku dari agen cerdas perlu diterapkan kecerdasan buatan. Pergerakan agen cerdas di suatu game sangat erat kaitannya dengan path finding (pencarian jalan). Path finding merupakan salah satu dasar algoritma dalam konsep menggerakkan karakter dalam game. Dengan algoritma pencarian jalan , agen cerdas dalam game bisa bergerak dan berperilaku human like behavior. Yang menjadi masalah adalah bagaimana memberi perilaku yang cerdas pada agen agar dapat mencari jarak terpendek dengan goal/target. Banyak hal yang dapat diamati dari manusia di mall, misalnya saja tentang pergerakan dan perilaku manusia . Dan hal ini dapat diimplementasi dalam sebuah game yang menarik. Pada penelitian kali ini menggunakan algoritma Rule Base System sebagai implemetasi perilaku agen cerdas dan Ant System sebagai algoritma pencarian jalur terpendek di mall.
+Kata kunci: pathfinding, perilaku, agen cedas, game, algoritma Ant System
+1. Pendahuluan
+Industri game komputer komersial merupakan perwujudan pengembangan industri kreatif. Perkembangan game juga didukung dengan kemajuan grafis yang membuat game environment dan jalannya permainan menjadi lebih realis. Namun grafis yang telah dibangun tidak akan menghasil sebuah game yang realistis jika tidak didukung oleh implementasi behaviors agen cerdas/ player/ NPC (Non Player Character) dalam game. Untuk menghidupkan perilaku dari agen cerdas pada gema simulasi perlu diterapkan AI (artificial intelligence) (Thurau, 2005).
+Pergerakan agen cerdas di suatu game sangat erat kaitannya dengan path finding (pencarian jalan). Path finding atau pencarian jalan adalah salah satu dasar algoritma dalam konsep menggerakkan karakter dalam game. Strategi Path finding biasanya digunakan sebagai inti dari setiap pergerakan AI (Graham, 2005). Dengan algoritma pencarian jalan terpendek , agen cerdas dalam game dapat berjalan dan bergerak seperti perilaku manusia di dunia nyata. Bila game tersebut tidak dilengkapi algoritma pencarian jarak maka agen bisa berjalan, namun belum tentu karakter tersebut bergerak sesuai perilaku manusia.
+Salah satu tantangan dalam desain realistis AI di komputer permainan agen adalah gerakan (Graham, 2005). AI merupakan teknologi yang mensimulasikan kecerdasan manusia dan mencoba menyelesaikan persoalan menggunakan komputer dengan meniru bagaimana manusia menyelesaikan dengan cepat. Yang menjadi masalah adalah bagaimana memberi
+41
+
+behavior yang cerdas pada agen cedas agar dapat mencari jarak terpendek dengan goal/target. Banyak hal yang dapat diamati dari perilaku manusia didalam mall atau pusat perbelanjaan misalnya saja tentang pergerakan dan behavior . Dan hal ini dapat diimplementasi dalam sebuah game yang menarik. Agar NPC selaku agen cerdas dapat bergerak sealami mungkin, maka pada agen cerdas tersebut diberi kecerdasaan untuk menemukan jalan di lorong-lorong mall agar bisa sampai ditempat yang diinginkannya. Penentuan jalan yang dipilih untuk agen cerdas adalah algoritma AS serta menggunakan RBS sebagai implementasi pemodelan behavior .
+2. Landasan Teori Feromon merupakan zat kimia berasal dari kelenjar endokrin yang digunakan makluk untuk mengenali sesama jenisnnya, individu lain, kelompok, dan untuk membantu proses reproduksi. Berikut ini cara semut untuk mendapatkan jalur yang paling optimal (wardy, 2006) :
+Gambar 1. Lintasan awal mencari sumber makanan
+1. Semut berjalan acak untuk menemukan makanan dan meninggalkan feremon pada jalan yang dilaluinya.
+2. Feromon konsentrasi tinggi menarik semut lain untuk berpindah jalur, menuju jalur paling optimal.
+Gambar 2. Jalur optimal
+Ant System atau sering disebuat Ant Colony Optimization (ACO) merupakan suatu metodologi yang dikemukakan pada tahun 1991 oleh Marco Dorigo. Tahun 1997, Dorigo dan Gambardella memperkenalkan Ant Colony System (ACS) (Refianti, 2005). Ant system telah diterapkan di banyak permasalahan optimisasi kombinatorial, sebagai contoh traveling salesman problem, quadratic assignment problem, jobscheduling, vehicle routing, graph coloring,network routing (Dorigo, 1999).
+42
+
+Pada ant system dikenal istilah random-propotional rule yang merupakan probabilitas dari semut k pada node r yang menuju node s, dan hal ini dapat dituliskan sebagai berikut (Dorigo, 1997) :
+
+ [ (r, s)][(r, s)]
+
+
+Pk (r, s)  
+
+[ (r,u)][(r,u)]
+
+uKk (r)
+
+0
+
+jikaS  Jk (r) sebaliknya
+
+Dimana :
+ = feromon
+ = 1 merupaka visiblity (invers dari jarak  (r, s))  (r, s) = kumpulan node yang dikunjungi oleh semut k
+ (r, s) = [( xr xs )2 ( yr  ys )2 ]1 2
+Jk(r) = kumpulan node yang akan dikunjungi oleh semut k yang sedang berada pada node r  = parameter yang mengontrol bobot relatif dari feremon terhada f eromon
+ = parameter yang mengontrol bobot relatif dari feremon terhadaf jarak relatif (  >0).
+
+Adapun update feromon global yang akan diberikan pada jalur adalah :
+
+ (r, s)  (1 ). (r, s) 
+
+m k 1
+
+
+
+k
+
+(r,
+
+s)
+
+dimana
+
+
+
+k
+
+(r,
+
+s)
+
+
+
+  
+
+1 Lk 0
+
+jika(r, s)  Tour dilakukan sebaliknya
+
+semut k
+
+ = parameter feremon decay (0<  <1)
+
+Lk = panj m = jumlah ants
+0<  <1 = sebuah parameter yang dibuat.
+
+RBS (RuleBbase System) RBS merupakan metode untuk pengambilan keputusan berdasarkan dari rule-rule yan sudah ditentukan/dibuat sebelumnya.RBS diterapkan di agen untuk melakukan suatu tindakan tertentu dengan berpikir mirip dengan manusia dalam bentuk kecerdasan buatan. Perilaku/tindakan yang dilakukan agen berdasarkan rule-rule yang telah dibuat mulai dari penyebab sampai pengambilan keputusan tindakan. RBS mempunyai sifat rule yang tetap maka pada RBS tidak mengizinkan variasi keputusan dari kasus yang sama. Rule yang dibuat untuk suatu perilaku mungkin tidak berlaku untuk perilaku yang lain. Untuk penambahan perilaku baru memerlukan rule baru sehingga kerumitan rule menjadi semakin kompleks dan hal ini menyebabkan adanya kemungkinan konflik antara rule-rule yang telah dibuat. Salah satu keunggulan RBS bila diterapkan pada jumlah rule yang tidak terlalu kompleks.
+
+43
+
+3. Perencanaan dana Pembahasan
+
+berfikir menoleh kanan/kiri
+
+Melanjutkan pencarian game center
+diam
+
+berkeliling toko baju
+
+berfikir
+
+Bosan di toko baju
+
+lapar
+
+Melanjutkan pencarian game center
+
+mengelilingi mall
+
+Jalan-jalan
+
+Haus Jalan-jalan
+
+pergi food court
+
+BuaJnaglaainr-jkaleacinl Bosan maen game
+
+berjalan ke stand minuman
+
+Menemukan game center
+
+Ingin beli buku
+
+Buang air kecil ke toilet
+
+masuk game center
+
+Bosan baca buku masuk ke toko buku
+lelah
+
+Jalan-jalan
+mencari tempat duduk
+
+Gambar 3. FSM Pemodelan Agen Cerdas
+
+Tujuan akhir dari penelitian membuat simulasi game kejadian yang sering terjadi dimall, misalnya saja seorang ibu (mom) sebagai player yang bingung mencari anaknya yang menghilang dari sisinya. Untuk perilaku dari agen diatur dalam tabel RBS yang sebelumnya perilaku tersebut telah didefinisikan dalam FSM. Pada pergerakan agen dibutuhkan pencarian jalur terpendek mencari jalan yang paling dekat dan cepat untuk mencapai goal tertentu didalam mall.
+
+3.1 Desain Enviroment Mall
+Berdasarkan data yang didapatkan dari "data arsitek" maka dapat dirancang sebuah environment mall dan dilanjutkan dengan pembuatan graph dari jalur yang akan dilalui oleh player maupun NPC.
+
+Gambar 4. Desain Enviroment Mall 44
+
+3.2 Perilaku Agen Cerdas Dengan RBS
+
+Berikut ini perilaku agen selama dimall:
+
+Tabel 1. RBS perilaku agen
+
+R IF
+
+U Bosan Bosan
+
+Buang
+
+L ditoko ditoko Lelah Haus Lapar air
+
+E baju buku
+
+kecil
+
+1X 2 3
+
+X X
+
+4
+5 6
+7
+8 9X 1 0
+
+X X
+XX XX X XX X
+
+X X
+
+THEN (GOAL)
+toko buku game center Tempat duduk Stand minuma
+n food court toilet food court food court pulang Toilet -tempat duduk
+
+3.3 Penerapan Algoritma Ant System
+Penerapan algoritma Ant System ke dalam pemodelan pergerakan agen cerdas di mall adalah sebagai berikut :
+1. Inisialisasi : a. Inisialisasi seluruh node yang ada di mall b. Inisialisasi lorong-lorong mall c. Inisialisasi jarak antar node d. Inisialisasi feromon
+2. menentukan posisi awal dan tujuan ant 3. membangun tour yang dilakukan ant (membangun tabu list). Tour dilakukan oleh
+sejumlah ant dengan mengunjungi node yang ada di mall. 4. Ambil lintasan terpendek (tour terbaik) dari ant  digunakan untuk updating
+global 5. Updating global pada sejumlah ant yang dilakukan ,menggunakan persamaan 6. Ambil lintasan terpendek antara posisi awal dengan tujuan dari beberapa tour yang
+dilakukan oleh sejumlah ant.
+
+45
+
+4. Hasil dan Pembahasan
+
+Pada percobaan terdapat 4 skenario yang didasarkanpada kondisi awal dari agen, yaitu haus, lapar, ingin buang air kecil dan lelah. Perilaku agen tergantung kebutuhan dari agen itu sendiri. Salah satu tabel perilaku agen berdasarkan kebutuhan .
+
+Tabel 2. perilaku brdasarkan kebutuhan agen
+
+Tujuan Toko baju Stand minum
+Toilet Food court Toko buku Tempat duduk Game center
+
+Lapar Haus Toilet Bosan Lelah 5 10 5 0 5 7 12 6 5 7
+829 68 930 79
+103 88 3 2 4 12 10
+4 3 5 13 0
+6 6 6 15 3
+
+Dari tabel diatas dapat dilihat urutan perilaku pergerakan yang dilakukan agen di mall. Kondisi awal agen adalah haus, hal ini ditandai dengan nilai haus sama dengan 10 sedangakan nilai kebutuhan lapar,ke toilet dan lelah diberi nilai 5 sebagai nilai awal. Nilai kebutuhan 10 merupakan angka kebutuhan kritis sedangkan 5 termasuk nilai kebutuhan normal, nilai kebutuhan kritis dimulai dengan 9. Untuk variabel bosan di mulai dengan angka 0 karena variabel bosan akan selalu bertambah, bila nilai bosan besarnya sama dengan 15 maka agen memutuskan untuk pulang melalui pintu samping.
+Pada saat agen berada di toko baju nilai kebutuhan yang paling tinggi adalah haus yaitu 12, maka agen memutuskan pergi ke stand minum. Setelah hausnya hilang nilai kebutuhan untuk buang air kecil memasuki nilai kritis sehingga agen memutuskan untuk pergi ke toilet. Begitu keluar dari toilet agen merasa lapar ( nilai kebutuhan lapar sebesar 9). Setelah kebutuhan makan terpenuhi maka agen tidak memiliki nilai kebutuhan yang kritis sehingga agen kembali ke tujuan semula agen pergi ke mall yaitu membeli komik favoritnya maka agen menuju toko buku sambil membaca-baca buku di toko buku. Karena cukup lama agen berada di toko baju dan toko buku maka agen merasa lelah (nilai lelahnya sebesar 10) dan agen mencari tempat duduk yang terletak diatrium mall tersebut. Setelah rasa lelah itu hilang (nilai kebutuhan menjadi 0), agen pergi ke game center yang berada didekat pintu keluar samping. Setelah puas bermain game dan nilai bosannya pun sudah penuh (nilai bosan sebesar 15) maka agen memutuskan untuk pulang melalui pintu samping.
+
+4.1 Pemodelan pergerakan agen menggunakan ant system
+Model pergerakan agen dalam mall menggunakan algoritma ant system. Pada ant system diperlukan beberapa parameter yang harus didefinisiskan dahulu besarannya, diantaranya ant sejumlah 20 ant. Dengan besaran =1, =5, =0.5 dan besarnya feromon awal 0.0001. Node yang harus dilalui oleh agen pada skenario 1 adalah node 14 (pintu masuk), node 21 (toko 46
+
+baju), node 13 (stand minuman), node 5 (toilet), node 4 (food court), node 19 (toko buku), node 6 (tempat duduk), node 3 (game center) dan node 1 untuk pintu pulang.
+Pergerakan agen di mall dimulai dari pintu masuk yang ada didepan mall dengan posisi adalah node 14. Dari percobaan pergerakan agen dari pintu utama ke toko baju didapatkan hasil seperti tertera pada tabel 4. Dari 10 kali siklus percobaan didapatkan 2 siklus yang mendapatkan jarak terpendek sebesar 27 m dan node-node yang dilalui adalah 14 ­ 7 ­ 22 ­ 21.
+Tabel 3.pergerakan agen dari pintu utama-toko baju
+
+Siklus
+
+Node terpendek
+
+Jarak (m)
+
+1. 14 -15 ­ 16 ­ 17 ­ 20 -21
+
+39.28
+
+2. 14 - 7- 22 -21
+
+27
+
+3. 14 - 7- 22 -21 14 ­ 15 -16 -17- 20 ­ 23 -22
+
+27 50.34
+
+4. -21
+
+5. 14 -15 ­ 16 ­ 17 ­ 20 -21
+
+39.28
+
+6. 14 -15 ­ 16 ­ 17 ­ 20 -21
+
+39.28
+
+7. 14 -15 ­ 16 ­ 17 ­ 20 -21
+
+39.28
+
+8. 14 -15 ­ 16 ­ 17 ­ 20 -21
+
+39.28
+
+9. 14 -15 ­ 16 ­ 17 ­ 20 -21
+
+39.28
+
+10 14 -15 ­ 16 ­ 17 ­ 20 -21
+
+39.28
+
+Jalur terpendek : 14 ­ 7 ­ 22 - 21 adalah :27 m
+
+Nilai feromon diupdate pada sejumlah path yang merupakan bagian tour terbaik dihasilkan
+dari pergerakan sejumlah ant. Semakin banyak ant yang melewati suatu path maka semakin
+besar pula nilai feromonnya. Perubahan nilai feromon hanya diberikan pada jalur yang
+terpendek saja. Pada pergerakan agen dari pintu utama ke toko baju didapat tour terpendek melewati node 14, 7, 22, 21 sehingga agen bergerak melalui node ­ node tersebut. Hal ini
+dapat digambarkan dari gambar berikut :
+
+Gambar 5. Rute agen dari pintu toko baju
+
+47
+
+Pada skenario 1 dimana kondisi awal haus agen merasa haus pada saat ditoko baju maka agen pergi ke stand minum yang ada dinode 13 dilanjutkan ke toilet, food court, toko buku, tempat duduk dan game center. Pada node yang letaknya berdekat ( node tetangga adalah node tujuan) dari 10 siklus yang dilakukan 100% menemukan jarak terpendeknya. Sedangkan untuk node tujuan yang letaknya jauh dari node asal dan melalui persimpangan node maka dari 10 siklus percobaan yang dilakukan terdapat 1 atau 2 siklus yang mendapatkan jalur terpendek sedangkan siklus yang lainnya masih berputar-putar dahulu untuk menemukan tujuannya. Begitu juga pada skenario 2, 3 dan 4 node yang dituju agen dapat ditemukan. Dan semua tempat yang menjadi tujuan agen berhasil ditemukan dengan melalui lorong-lorong yang terdekat.
+
+Jarak
+
+Jumlah ant
+80 70 60 50 40 30 20 10
+0 1 2 3 4 5 6 7 8 9 10 Siklus
+
+ant 20 ant 50 ant 100
+
+Gambar 6. Jumlah Ant
+
+Ant merupakan pelaku dari pencarian jalur dengan menggunakan algoritma ant
+
+system. Jumlah ant adalah salah variabel untuk menentukan seberapa besar feromon yang
+
+diberikan pada jalur tergantung dari jumlah ant yang melewati jalur tersebut. Salah satu
+
+kasus yang dapat melihat pengaruh ant pada pencarian jalur adalah pada saat agen bergerak
+
+dari toko baju dan tempat duduk ( node 21 ke node 6). Percobaan ini menggunakan parameter =1, =5, =0.5 0=0.0001. Terlihat pada gambar 6
+bahwa ant 20 mempunyai 2 siklus yang menemukan jarak terpendek, ant 50 terdapat 5 siklus
+
+terpendek dan ant 50 mempunyai 8 siklus terpendek. Hal ini dipengaruhi pada saat ada
+
+proses perbaikan feromon, jumlah semut mempengaruhi besarnya  rs (t) dimana
+
+ rs (t) 
+
+m k 1
+
+
+
+k
+
+rs
+
+(t)
+
+.
+
+m
+
+adalah
+
+sejumlah
+
+ant
+
+yang
+
+bekerja
+
+pada
+
+pencarian
+
+jalur,
+
+semakin besar jumlah ant akan berpengaruh terhadap  rs (t) dan hal ini mempengaruhi
+
+besarnya feromon yang yang di update jalur terbaiknya. Dari percobaan pencarian jalur agen
+
+dari toko ke tempat duduk buku didapatkan hasil dengan jumlah ant 20 mempunyai rata-rata
+
+jarak terdekat 49.377 m, 50 ant mempunyai rata-rata jarak terdekat yang ditempuh adalah
+
+36.22 sedangkan 100 ant sebesar 31.47 m sedangkan jarak terdekat yang sebenarnya antara
+
+toko buku ke tempat duduk adalah 27 m, semakin banyak jumlah ant yang bekerja ( 100 ant)
+
+rata-rata jarak terdekat semakin mendekati jarak terdekat sebenarnya.
+
+48
+
+5. Kesimpulan
+1. Pada ke empat skenario yang berisikan perilaku agen di mall semua berhasil mencapai tujuan sesuai dengan kondisi kebutuhan agen, meskipun kadang harus berputar-putar dahulu untuk menentukan jarak yang paling dekat ke tujuan ( node tujuan jauh dari node asal dan melalui banyak persimpangan node). Bila node tujuan adalah tetangga node asal , agen langsung dapat menemukan tempat tujuannya ( ant 100 % menemukan node tujuan).
+2. Pada saat semakin banyak jumlah ant yang bekerja (variasi ant yang digunakan 20, 50 dan 100) rata-rata jarak terdekat semakin mendekati jarak terdekat sebenarnya.
+Daftar Pustaka
+Adler, David. (1999), Metric Handbook Planning and Design Data, 2nd Edition, Architectural Press
+Boden, MA. (1996), Artificial Intelegence, Academic Press INC,USA
+Bjornsson, Yngvi., Halldorsson, Kari. (2006) Improved Heuristics for Optimall Path finding on Game Maps,Proceedings of the Elevent International in Computer Game Conference, pp 11-22
+Cai. Yundong,Miao. Chunyan, (2009), Creating an Immersive Game World with Evolutionary Fuzzy Cognitive Maps, IEEE Journal of Computer and Applications
+Cyberwoman. (2003), Mother and Baby, Tabloid Ibu dan Anak Edisi Agustus 2003.
+Dejaeger.D, Willems.P.A, Heglund.N.C, (2001), The Energy Cost of Walking in Children, Pflügers Arch - Eur J Physiol ,2001 no 44, hal 538­543
+Dorigo, Margo., Caro Gainni Di., Gambardella L.M. (1999), Ant Algorithms for Discrete Optimazation, Artificial Life, No 5(2), 1999, hal 137-172
+Dorigo, Margo., Caro Gainni Di., Gambardella L.M. (1997), Ant Colony System: A Cooperative Learning Approach to the Traveling Salesman Problem, IEEE Transactions on Evolutionary Computation, Vol.1, No.1
+Dorigo, M., Maniezzo, V., Coloni, A. (1996), Ant Colony Optimization Artificial Ants as a Computational Intelligence Technique, IEEE Transactions on Systems, Man, and Cybernetics-Part B, 26(1), hal 29-41
+Gasbaoui, Brahim., Allaoua*, B. (2009), Ant Colony Optimization Applied on Combinatorial Problem for Optimall Power Flow Solution, Leonardo Journal of Sciences, Issue 14, January-June 2009, hal.1-17.
+Gopi, E.S. (2007), Algorithm Collections for Digital Signal Processing Applications using Matlab, Springer, The Netherlands
+Graham, Ross., McCabe, Hugh., dan Sheridan Stephen. (2005), Realistic Agen Movement in Dynamic Game Environment, Procceding of Digra
+Graham, Ross., McCabe, Hugh., dan Sheridan Stephen. (2003) Path finding in Computer, ITB Journal Issue
+Kauko, Jarmo., Mattila, Ville Veikko.(2006), Mobile Games Path finding, Scandinavian AI Conference, P 176-182
+49
+
+Kapiudin. Maulani. (2007), Data Mining untuk Klasifikasi Pelanggan dengan Ant Colony optimization, Jurnal Informatika Vol.8 No.1, hal. 68-73
+Lanctot, Marc., Sun, NNM., dan Verbrugge. (2005) Path finding for Large Scale Multiplayer Computer Games, GameOn-NA, pp 23-32
+Lukas. Samuel, Ariwibowo.Arnold, Hadinata. (2007), Penerapan Ant Colony System untuk Penyelesaian Vehicle Routing Problem, SNATI 2007, Yogyakarta
+Mytakidis. Triantafyllos, Vlachos. Aristidis. (2008), Maintenance Scheduling by using the Bi-Criterion Algorithm of Preferential Anti-Pheromone, Leonardo Journal of Sciences, Issue 12, pp.143-164
+Niuewenhuisen*, D., Kamphuis, A., Overmars. (2007), High Quality Navigation in Computer Games, online at www.sciencedirect.com, Science of Computer Programing 67 (2007) 91-104
+Purwanto, Wawan Drs, SE. MM., Perilaku Konsumen, Pusat Pengembangan Bahan Ajar, UMB
+Rahmat. Basuki, Tjandrarini.A.B, Budianto. Dedy. (2005), Penerapan Multiple Ant Colony System(MACS) untuk Penyelesaian Vehicle Routing Problem with Time Windows (VRPTW), Seminar Nasional SIIT, Surabaya
+Refianti Rina., Mutiara., A Benny., (2005), Solusi Optimall Travelling Salesman Problem dengan Ant Colony System (ACS), Journal of Informatics and Computer, Gunadarma Univeristy
+Rekamatra Cartoon Studio, (2010), Game Development : Berawal dari Cinta, http://www.rekamatra.com.new.
+Reynolds Craig W , (1999) , Steering Behaviors for Autonomous Characters, proceedings of Game Developers Conference, Pages 763-782
+Schawab, Brian. (2004), AI Game Engine Programming,1st edition, Charles River Media, INC, New York.
+Setiawan. Rudy. (2005), Usulan Standar Dan Evaluasi Tingkat Pelayanan Selasar di Maspion Square Surabaya, Proceeding Seminar Nasional Teknologi II, Universitas Teknologi-Yogyakarta
+Sipahutar, Muara Parlindungan. (2007), Prediksi dan Simulasi Kebangkrutan Perusahaan, Undergraduate Theses from JBPTITBPP , ITB
+Subakti, Irfan. (2006), Sistem Berbasis Pengetahuan, Modul,FTI, ITS, Surabaya
+Thurau, Christian., Bauckhage, Christian., dan Sageger, gerhard,. (2005) Learning Human Like Movement Behavior for Computer Games, ACM International Conference Proceeding Series Vol 265.
+Trakulpipat. Chayanit, Sinthupinyo. Sukree. (2008), Designing market Stall Layout by Agent-Based Simulation, Proceeding of International MultiConferenece of Engineers and Computer Scientists Vol I pp 35-39
+Treuille, Adrien., Cooper, Seth., Popovic. (2006), Continuum Crowds, ACM SIGGRAPH 2006 Papers , pp. 1160-1168
+50
+
+

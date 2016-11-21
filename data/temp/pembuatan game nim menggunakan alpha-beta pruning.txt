@@ -1,0 +1,321 @@
+Pembuatan Game NIM menggunakan Alpha-beta Pruning
+Muhammad Arifin Teknik Informatika Politeknik Elekronika Negeri Surabaya Institut Teknologi Sepuluh Nopember Surabaya Email: kuplakseruru@gmail.com,
+ABSTRAK
+Nim merupakan jenis permainan game klasik, yang mengandalkan strategi sebagai elemen utamanya. Permainan ini dimainkan oleh dua orang pemain dengan dengan diawali serangkaian batang, dimana setiap pemain harus memecah serangkaian batang menjadi 2 kumpulan dimana jumlah batang di tiap kumpulan tidak boleh sama dan tidak boleh kosong.
+Permainan Nim yang dibuat dengan AI (Artificial Intelligence) tertentu. Pemanfaatan sistem kecerdasan buatan ini diantaranya adalah untuk pembuatan aplikasi permainan yang cerdas, contohnya adalah permainan Nim ini. Berbicara tentang Artificial Intelligence atau kecerdasan buatan, salah satu teknologi computer dan mesin yang terus berkembang ini merupakan salah satu bagian dari ilmu informatika yang mempunyai banyak sekali jenis algoritma. Terdapat banyak algoritma yang bisa digunakan dalam permainan Nim ini, namun yang akan dibahas dalam tugas akhir ini adalah algoritma Alpha-beta Pruning. Algoritma ini merupakan modifikasi dari algoritma Minimax.
+Untuk mengimplementasikan permainan Nim ini, akan menggunakan teknologi pemograman java Standart Edition (J2SE) yang diaplikasikan pada komputer dekstop.
+Kata Kunci: Game NIM, Artificial Intelegent, Alpha-beta Pruning, Minimax.
+ABSTRACT
+Nim is a classic type of game play, which rely on strategy as its main element. The game is played by two players with starting a series with the rod, where each player must break the series into two sets stems where the number of stems in each collection must not be the same and can not be empty.
+Nim game created with AI (Artificial Intelligence) specific. Utilization of these artificial intelligence systems for manufacturing applications include an intelligent game, this example is the game Nim. Talking about Artificial Intelligence or artificial intelligence, computer technology and the one evolving machine is one part of the science of informatics that has plenty of types of algorithms. There are many algorithms that can be used in the game of Nim, but that will be discussed in this thesis is the alpha-beta pruning algorithm. This algorithm is a modification of the Minimax algorithm.
+To implement this Nim game, will use the Java programming technology Standart Edition (J2SE), which was applied to the computer desktop.
+Keywords: Game NIM, Artificial Intelegent, Alpha-beta pruning, Minimax.
+
+1. PENDAHULUAN
+
+1.1 Latar Belakang
+
+Seiring dengan kemajuan
+
+globalisasi, nuansa kompetitif makin
+
+kental dalam keseharian manusia. Seiring
+
+dengan itu, kecenderungan kegiatan
+
+didominasi oleh kegiatan-kegiatan yang
+
+lebih banyak menkonsumsi stamina otak.
+
+Hal itu berbeda dengan kecenderungan
+
+kehidupan saja. Karena itu kebutuhan
+
+entertainment sangatlah vital saat ini.
+
+Seiring dengan majunya dunia
+
+entertainment, salah satu are entertainment
+
+yang cukup banyak melibatkan scientist
+
+dan artist adalah gaming industry. Dulunya
+
+game merupakan salah satu aspek
+
+entertainment yang minor, hanya sebagai
+
+selingan atau hiburan saja. Dan terkadang
+
+jika terdapat orang yang teramat sangat
+
+menggandrungi dunia game hal itu
+
+dianggap sesuatu yang tidak normal.
+
+Namun hal itu sedikit demi sedikit
+
+berubah. Ditandai dengan munculnya
+
+berbagai console yang cukup bervariasi
+
+menunjukkan bahwa dunia game tidak sedikitpun "mati", namun sedang
+
+berkembang dengan hebatnya.
+
+Permainan Game adalah sesuatu
+
+yang sangat menarik dan menjadi sub
+
+topik tersendiri di dalam Kecerdasan
+
+Buatan. Terdapat beberapa alasan kenapa
+
+permainan game menjadi menarik, yaitu :
+
+- Kriteria menang atau kalah jelas
+
+- Dapat mempelajari permasalahan
+
+- Alasan histori
+
+- Menyenangkan
+
+- Biasanya mempunyai search space
+
+yang besar (misalnya game catur
+
+mempunyai 35100 nodes dalam
+
+search tree dan 1040 legal states)
+
+Terdapat beberapa ciri umum pada
+
+permainan Game dalam Kecerdasan
+
+Buatan, yaitu :
+
+- Terdapat 2 pemain
+
+- Kesempatan pemain bergantian
+
+- Zero-sum : Kerugian seorang pemain
+
+adalah keuntungan pemain lain
+
+- Perfect Information: pemain
+
+mengetahui semua informasi state dari
+
+game.
+
+- Tidak mengandung probabilistik
+
+(seperti dadu).
+
+Salah satunya permainan Nim ini yang
+
+merupakan game strategi yang berbasis
+
+Artificial
+
+Intelligence
+
+dalam
+
+implementasinya. Dimana pemain akan
+
+melawan computer sebagai lawan mainnya.
+
+Permainan ini akan dibuat dalam
+
+pemograman java berbasis J2SE
+
+menggunakan Library game khusus yang
+
+bernama GTGE yang berguna untuk memudahkan dalam pembuatan game dalam pemograman Java, sehingga mudah dimainkan melalui komputer.
+1.2 TUJUAN
+Tujuan proyek akhir ini adalah untuk membuat komputer (CPU) dapat bermain dengan manusia dalam permainan Game NIM dengan menggunakan Alpha-beta Pruning.
+1.3 PERMASALAHAN
+Permasalahan dalam pengerjaan proyek akhir ini adalah bagaimana mengimplementasikan metode Alpha-beta Pruning ke dalam Game NIM.
+1.4 BATASAN MASALAH
+Pada pengerjaan proyek akhir ini digunakan batasan ­ batasan sebagai berikut :
+a. Pembuatan Game NIM menggunakan Alpha-beta Pruning dibangun dengan menggunakan bahasa pemrogramman JAVA.
+b. Game NIM hanya terdiri dari 2 pemain, yaitu pemain melawan computer AI atau pemain melawan pemain lainnya.
+Batang yang digunakan dalam game NIM antara 5 sampai 15 batang.
+2. TEORI PENUNJANG
+2.1 Teori Game
+Dalam dunia modern ini, penggunaan teknologi untuk menunjang kegiatan manusia semakin banyak dan sangat berkembang. Salah satu bentuk kebutuhan pokok manusia adalah hiburan dan sebagai salah satu wujudnya adalah berbagai macam permainan.
+Ada berbagai macam permainan yang dapat kita temukan dewasa ini. Namun pernahkah kita berfikir apakah sebenarnya yang dimaksud dengan permainan atau yang lazim kita sebut game itu. Sesuatu dapat dikatakan sebuah game jika memiliki ciri ­ ciri umum yang ada pada game, yaitu :  Memiliki 2 pemain.  Kesempatan bermain bergantian.  Kerugian seorang pemain adalah
+keuntungan bagi pemain lain.  Pemain mengetahui seluruh informasi state
+dari game.
+
+2
+
+ Tidak mengandung probabilistik seperti dadu.
+2.2 Game NIM
+Game NIM adalah sebuah game sederhana yang diawali dengan serangkaian batang dengan jumlah tertentu. Kemudian pemain harus memecah serangkaian batang tersebut menjadi dua kumpulan dimana jumlah batang di setiap kumpulan tidak boleh sama dan tidak boleh kosong. Contoh ilustrasi Game NIM dapat dilihat pada Gambar 2.1.
+Gambar 2.1 Ilustrasi Game NIM
+2.3 Artificial Intelligence (AI)
+Kecerdasan Buatan (dalam bahasa inggris: Artificial Intelligence atau AI) didefinisikan sebagai kecerdasan yang ditunjukkan oleh suatu entitas buatan. Sistem seperti ini umumnya dianggap komputer. Kecerdasan diciptakan dan dimasukkan ke dalam suatu mesin (komputer) agar dapat melakukan pekerjaan seperti yang dapat dilakukan manusia. Beberapa macam bidang yang menggunakan kecerdasan buatan antara lain sistem pakar, permainan komputer(games), logika fuzzy, jaringan saraf tiruan dan robotika.
+2.4 Minimax Sebelum kita mengetahui algoritma
+Alpha-beta Pruning, ada kalanya kalau kita juga mengetahui algoritma Minimax ini. Karena algoritma Alpha-beta Pruning merupakan improvisasi dari algoritma Minimax dalam pencarian, sehingga pencarian bisa dilakukan se-minimum mungkin tetapi tidak mengurangi kemampuan metode itu sendiri.
+Minimax adalah sebuah prosedur pencarian yang melihat kedepan, memperhatiakan apa yang akan terjadi kemudian ­ yang digunakan untuk memilih langkah berikutnya. Asumsikan bahwa kita telah memiliki sebuah Static Board Evaluator yang akan mengembalikan sebuah bilangan yang menunjukan "seberapa baiknya" sebuah konfigurasi permainan.
+John Von Neumann pada tahun 1944 menguraikan sebuah algoritma search pada game, yang dikenal dengan nama Minimax ini,
+
+yang memaksimalkan posisi pemain dan meminimalkan posisi lawan.
+2.5 Alpha-beta Pruning
+Telah kita ketahui sebelumnya bahwa algoritma ini merupakan improvisasi dari algoritma Minimax. Algoritma ini untuk meningkatkan efisiensi fungsi Minimax dalam hal pencarian. Mengurangi jumlah pencarian pada node-node Game NIM yang diexpand. Kemudian fungsi evaluasi ditambahkan sepasang nilai Alpha dan Beta .
+Dalam Game NIM, metode Alpha-beta Pruning akan diterapkan pohon n-ary yang telah terbentuk. Pada setiap cabang akan memiliki nilai yang bertujuan memaksimalkan pencarian dan meminimalkan waktu pencarian pada pohon n-ary. Sedangkan fungsi evaluasi sendiri adalah inialisasi pertama dalam metode ini sebelum melakukan permainan. Berikut nilai fungsi evaluasi dari metode Alpha-beta Pruning.
+- 0  MIN (player) menang
+- 1  MAX (komputer) menang
+Berikut merupakan aturan untuk Alphabeta Pruning:
+- Pemangkasan Alpha : Pencarian dapat dihentikan untuk simpul turunan selanjutnya jika setiap simpul MIN memiliki nilai beta kurang dari atau sama dengan nilai alpha apapun dari simpul MAX sebelumnya pada induk yang sama.
+- Pemangkasan Beta : Pencarian dapat dihentikan untuk simpul turunan selanjutnya jika setip simpul MAX memiliki nilai alpha lebih dari atau sama dengan nilai beta apapun dari simpul MIN sebelumnya pada induk yang sama.
+3. METODOLOGI
+Bab ini membahas perancangan dan pembuatan Game NIM with Alpha-beta Pruning yang pokok bahasan Artificial Intelligence pada Game NIM ini. Berikut Aliran proses Game NIM dengan Alpha-beta Pruning dilihat pada Gambar 3.1.
+
+3
+
+User mengaktifkan aplikasi Menu permainan
+
+Back to main menu
+
+User memilih jumlah batang NIM untuk dimainkan
+User memilih siapa yang bergerak pertama
+
+Permainan dimulai
+
+Komputer melakukan proses Alphabeta Pruning
+Permainan berakhir sampai jumlah batang tidak dapat dipisahkan
+
+Keluar
+
+Permainan dilakukan hingga 3 Ronde
+Gambar 3.1 Aliran Proses Game NIM with Alpha-beta Pruning
+Dari aliran proses di atas dapat dilihat bahwa sistem ini memiliki aliran proses permainan Game NIM itu sendiri pada saat bermain. Dalam perancangan aliran proses tersebut memiliki peran penting dalam permainan. Untuk mempermudah penjelasan, bab ini akan memiliki tiga sub bab, yaitu:
+1. Perancangan dan Pembuatan Metode Alpha-beta Pruning
+Pada proses ini akan dirancang sebuah sistem yang dapat mengimplementasikan algoritma metode untuk Game NIM yang telah penulis jelaskan pada Bab II, yakti teori pada Alpha-beta Pruning. Untuk menerapkan pencarian algoritma Alpha-beta Pruning dibutuhkan pohon (tree) n-ary dari jumlah batang yang diinput dari user. Untuk menjabarkan aliran proses Alpha-beta Pruning yang telah diterangkan penulis akan membagi sub bab ini menjadi beberapa bagian, yaitu:
+ Perancangan dan Pembuatan Pohon Game NIM.
+Dalam proses ini akan dibuat suatu pohon n-ary yang dalam artian lain pohon yang terbentuk memiliki jumlah turunan yang tidak pasti yang kemudian dilambangkan dengan nilai "n". Sebagaimana sebuah pohon maka suatu node dari pohon tersebut haruslah dapat mengenali cabang - cabangnya dan setiap cabang ­ cabang tersebut juga harus dapat mengenali cabang miliknya sendiri hingga berakhir pada cabang yang sudah tidak memiliki cabang lagi.
+
+ Proses Penerapan Metode Alpha-beta Pruning
+Dengan mengetahui pohon n-ary dari jumlah batang Game NIM, proses selanjutnya adalah dengan melakukan pencarian pada setiap childs sehingga menghasilkan nilai fungsi evaluasi 0 atau 1. Misal pada kondisi batang NIM sebanyak 7, kondisi batang ini memiliki memiliki turunan antara lain 6-1, 5-2, 4-2. Ini sesuai dengan ilustrasi dari Game NIM itu sendiri seperti pada Gambar 3.9.
+7
+
+6-1 5-2
+
+4-3
+
+Gambar 3.2 Ilustrasi Game NIM untuk jumlah batang tujuh
+Dari ilustrasi diatas, komputer dituntut untuk memisahkan batang tujuh itu sesuai dengan aturan Game NIM yang telah dijelaskan pada Bab II. Kemudian memilih salah satu turunan dari kondisi batang 7. Pemilihan ini dilakukan berdasarkan fungsi evaluasi, dikarenakan komputer berlaku sebagai MAX, maka turunan yang akan dipilih oleh komputer yakni turunan yang memiliki fungsi evaluasi 1.
+2. Perancangan dan Pembuatan Sistem Permainan NIM
+Pada proses ini akan dijelaskan bagaimana membuat permainan Game NIM dengan menggunakan metode Alpha-beta Pruning yang telah dilakukan sebagai Aritificial Intelligent (AI).
+Untuk memulai permainan NIM, sistem perlu mengetahui 3 attribut yakni jumlah batang, pemain yang bermain dulu, dan metode yang akan digunakan. Untuk metode Minimax pada project kali hanya untuk membuktikan bahwa metode Alpha-beta Pruning merupakan improvisasi dari metode Minimax.
+
+4. ANALISA
+Membandingkan Jumlah Node yang Dilewati Oleh Minimax dan Alpha-beta Pruning dengan Jumlah Batang Mulai dari 7 hingga 15.
+Analisis kali ini adalah membandingkan Jumlah Node yang dilewati oleh metode Minimax dan Alpha-beta Pruning
+
+4
+
+dengan jumlah batang mulai dari 7 hingga 15 batang. Hal ini untuk membuktikan bahwa metode Alpha-beta Pruning merupakan improvisai dari metode Minimax. Berikut hasil jumlah node yang dilewati oleh masing-masing metode.
+Tabel 4.1 Perbandingan jumlah Node yang dilewati metode Minimax dengan Alpha-beta Pruning.
+
+Jumlah Batang
+
+Jumlah Node
+
+Jumlah Node yang Di lewati
+
+Minimax
+
+Alpha-beta Pruning
+
+7 26
+
+22
+
+15
+
+8 58
+
+54
+
+36
+
+9 176
+
+171
+
+76
+
+10 470
+
+465
+
+112
+
+11 1.687
+
+1.681
+
+353
+
+12 5.595
+
+5.589
+
+635
+
+13 22.178 22.171
+
+1.389
+
+14 82.370 82.363
+
+3.427
+
+15
+
+372.074
+
+372.066
+
+10.671
+
+5. PENUTUP
+A. Kesimpulan
+Dari hasil analisa program dapat diambil beberapa kesimpulan sebagai berikut :
+1. Sistem yang dibuat memungkinkan manusia untuk bermain Game NIM dengan komputer.
+2. Dengan menggunakan Library Game GTGE, tampilan game lebih menarik, dan mudah untuk dimainkan.
+3. Game NIM yang dibuat bersifat dinamis, namun dikarnakan proses perhitungan yang sangat banyak jumlah batang game NIM terbatas oleh heap memory pada java.
+4. Kelemahan dari metode Minimax adalah waktu eksekusi yang dibutuhkan sebanding dengan jumlah leaf-nya. Sehingga jika #leaf lebih besar, maka permasalahan akan semakin kombinatorik. Hal ini diperbaiki dengan sebuah metode dinamakan Alpha-beta Pruning.
+
+5. Alpha-beta Pruning dapat mereduksi pencarian jumlah Node yang dilakukan Minimax sebanding dengan jumlah leafnya. Semakin besar #leaf maka semakin besar reduksi yang dilakukan oleh Alphabeta Pruning.
+B. Saran
+Dalam pembuatan Game NIM menggunakan Alpha-beta Pruning terdapat banyak sekali kekurangan yang karena keterbatasan waktu, biaya serta pikiran, tidak dapat dilakukan. Maka untuk tahap pengembangan selanjutnya, ada beberapa hal yang penulis inginkan untuk diperbaiki diantaranya:
+1. Penulis yakin masih banyak kekurangan disana-sini, oleh karenanya pengembangan selanjutnya sangatlah diperlukan.
+Daftar Pustaka
+[1] Entin Martiana, Tessy Badriyah, Riyanto Sigit, 2007, "Modul Ajar Kecerdasan Buatan", Jurusan Teknologi Informasi,
+Politeknik Elektronika Negeri Surabaya
+Institut Teknologi Sepuluh Nopember
+Surabaya
+[2] Artificial intelligence (Teori dan
+Aplikasinya), Sri Kusumadewe, cetakan
+pertama, Penerbit Graha Ilmu, 2003.
+[3] Rangsang Purnama, Pemrograman GUI
+menggunakan JAVA, Penerbit Prestasi
+Pustaka Publisher, Surabaya, 2007
+[4] Sri Hartati, Herry Suharto, Soesilo Wijono,
+Pemrograman GUI Swing Java, Penerbit
+ANDI , Yogyakarta, 2006
+[5] Ali Ridho Barakbah, Game Theory
+[6] Sri Kusumadewi, Artificial Intelligence
+(Teknik dan Aplikasinya), edisi I, penerbit
+Graha Ilmu, Yogya, 2003.
+[7] Game Playing, Graham Kendall.
+
+5
+
+

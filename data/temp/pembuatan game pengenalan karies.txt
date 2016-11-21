@@ -1,0 +1,279 @@
+Pembuatan Game Edukasi Pengenalan Karies Untuk Anak Usia 6 ­ 8 Tahun
+Muhamad Fauzi1, Rinda Cahyana2, Dewi Tresnawati3
+Jurnal Algoritma Sekolah Tinggi Teknologi Garut Jl. Mayor Syamsu No. 1 Jayaraga Garut 44151 Indonesia
+Email : jurnal@sttgarut.ac.id
+1fauzifau@gmail.com 2rinda_cahyana@yahoo.com 3tresnawatidewi@gmail.com
+Abstrak ­ Kesehatan adalah asset yang penting bagi kehidupan manusia, dengan hidup sehat maka seseorang dapat menjalani rutinitasnya secara normal. Ada berbagai penyakit yang bisa menggangu kesehatan manusia salah satu diantaranya adalah karies, karies / gigi berlubang merupakan penyakit yang dapat dijumpai pada manusia. Karies bisa menyebabkan penanggalan gigi, nyeri bahkan kematian. Dari sekian banyak penyebab karies salah satu diantaranya adalah bakteri stepcocorus mutans. Tingkat resiko karies di Indonesia khususnya pada anak masih terhitung tinggi sebesar 21 % pada anak usia 6 ­ 8 tahun. Resiko karies dapat dicegah dengan memberikan pendidikan tentang kesehatan gigi pada anak. Berdasarkan hal tersebut maka penelitian ini ditujukan untuk membuat media pendidikan kesehatan gigi dengan menggunakan game. Metode pengembangan game ini mengadopsi metodologi pengembangan game dengan Digital Game Based Learning (DGBL-ID). Game dibuat berdasarkan tujuan instruksional umum (TIU) dan tujuan instruksional khusus (TIK) dengan menerapakan metode bermain, demonstrasi dan bercerita. Game engine yang digunakan untuk membuat game ini menggunkan Unity 3D. Hasil akhir dari penelitian ini adalah sebuah game edukasi 3d yang memiliki tujuan pembelajaran pengenalan karies. Kata Kunci ­ DGBL-ID, Edukasi, Game, Karies, Pembuatan, Unity 3D.
+I. PENDAHULUAN
+Derajat kesehatan masyarakat dipengaruhi oleh 4 faktor yaitu; Environment atau lingkungan, Behaviour atau perilaku, heredity atau keturunan dan health care service, dari empat faktor tersebut, lingkungan dan perilaku merupakan faktor yang paling besar pengaruhnya terhadap tinggi rendahnya derajat kesehatan masyarakat [1]. Ada berbagai macam penyakit yang sering dijumpai pada tubuh manusia, salah satunya adalah karies gigi. Karies gigi adalah sebuah penyakit infeksi yang merusak struktur gigi, penyakit ini menyebabkan gigi berlubang, jika tidak ditangani penyakit ini dapat menyebabkan nyeri, penanggalan gigi, infeksi dan bahkan kematian [2]. Salah satu penyebab karies adalah bakteri streptococcus mutans [3]. Prevelansi masalah karies gigi masih sangat tinggi, menurut hasil penelitian yang dilakukan oleh Badan Penelitian dan Pengembangan Kesehatan RI, mengungkapkan bahwa 21% anak di Indonesia yang berusia 5 ­ 9 tahun mengalami karies [4]. Resiko karies gigi dapat dicegah dengan melakukan tindakan dini seperti menjaga kebersihan gigi, memperhatikan pola konsumsi makan terhadap gula, memeriksakan kesehatan gigi secara rutin dan mengenalkan pendidikan kesehatan gigi terhadap anak [5]. Jong et al., menungkapkan salah satu media pendidikan yang bisa digunakan sebagai media pembelajaran dengan menggunakan game edukasi [6]. Game Edukasi merupakan game yang tidak hanya bersifat menghibur tetapi didalamnya mengandung pengetahuan yang disampaikan kepada penggunanya [7]. Berdasarkan hal ­ hal tersebut, maka tema penelitian ini adalah " Pembuatan Game Edukasi Pengenalan Karies Untuk Anak Usia 6 - 8 Tahun ". Pembuatan game ini mengadopsi metodologi digital game based learning instructional design (DGBL ID) [8].
+
+ISSN : 2302-7339 Vol. 10 No. 15 2013
+
+II. LANDASAN TEORI
+Model pengembangan digital game based learning - instructional design (DGBL-ID) terdiri dari 5 fase yang harus diselesaikan sebelum dilanjutkan ke fase beriktuya, fase ­ fase tersebut yaitu analysis phase, design phase, development phase, quality assurance kemudian implementation and evaluation [8]. Rumate mengungkapkan desain instruksional terbagi kedalam beberapa tahap, yaitu tahap identifikasi, pengembangan dan evaluasi serta revisi [9]. Game design merupakan tahap yang menghasilkan game design document, game design document merupakan proses dari game design [10]. Game design document adalah document yang berguna untuk menjelaskan bagaimana game yang akan dirancang bisa berfungsi, bukan bagaimana fungsi tersebut akan diimplementasikan [11]. Ada berbagai pendapat mengenai konten dari game design document ini, selain itu, tidak ada standar formal tentang apa saja yang harus ada dalam game design document [10]. Terdapat beberapa aktifitas dalam pembuatan game design , tahapan tersebut diantaranya terdiri dari desain story setting and character, combat, controls, interface, AI, detailed level, cutscenes, scoring, game modes, asset list dan localization plans [12]. Dalam sebuah storyline game terdiri dari beberapa komponenen yaitu introduction, complication dan resolution [13]. Metode - metode pembelajaran yang dipergunakan untuk anak adalah metode yang sesuai dengan dimensi-dimensi perkembangan mereka, diantaranya adalah metode bermain, karyawisata, bercakap-cakap, bercerita, demonstrasi, metode proyek dan pemberian tugas [14]. Unity 3D merupakan game engine / authoring tools yang dapat mempermudah game designer dalam membuat game, bahasa pemerograman yang bisa digunakan pada unity 3d adalah java sciprt, c# script dan boo, pada pembuatan game dengan unity 3d, setiap level didefinisikan sebagai sebuah scene, dimana scene tersebut merupakan area yang bisa diakses oleh pemain ketika user memainkan game [15]. Pengujian game dapat diuji dengan menggunakan test case, test case dibuat berdasarkan use case yang dibuat sebelumnya pada tahap game design [10].
+
+III. KERANGKA KERJA KONSEPTUAL
+Kerangka kerja penelitian ini mengedopsi berbagai teori yang berhubungan dengan pembuatan game edukasi, diantaranya adalah ; mengadopsi metologi pengembangan game dengan DGBL-ID [8] untuk analisis, desain dan game development, membuat rancangan desain instruksional dengan model pengembangan desain instruksional [9], merancang desain game dengan menggunakan metodologi game design [12], merancang storyline game dengan menggunkan teknik storytelling [13], merancang detail level, pengembangan art game, coding, dan implementasi art dan code dengan mengadopsi kerangka kerja pembuatan game pada unity 3d [15].
+Membangun Game Edukasi Karies
+
+tahapan tujuan
+
+Zin et al., (2009)
+
+Analisis
+
+Design
+
+Development
+
+Problem analysis
+
+Tujuan Pembelajaran
+
+Target platform
+
+Menentukan karakteristik
+user
+
+Ide game
+
+Desain instruksional
+Rumate (2002)
+
+Game desain
+
+Zin et al., (2009)
+
+aktifitas
+
+Story setting dan karakter
+
+Combat and
+scoring
+
+Controller system
+
+Interface
+
+Level Detail
+
+Localization Asset
+
+plans
+
+List
+
+Art development
+
+Implementasi Art dan Code
+
+system
+
+Creighton (20C1o0d)ing
+
+Test
+
+Sheldon
+. (2004)
+
+Creighton (2010)
+
+Bates (2004)
+
+Bethke (2003)
+
+Gambar 1. Work breakdown structure pembuatan game edukasi karies.
+
+http://jurnal.sttgarut.ac.id
+
+2
+
+Jurnal Algoritma Sekolah Tinggi Teknologi Garut
+Gambar diatas merupakan kerangka kerja konseptual penelitian ini, dalam penerapan model DGBL ID, tahap pembuatan game hanya sebatas pada protype game, dimana game yang dibuat tidak diuji langsung kepada pengguna, tetapi sebatas pada pengujian fungsionalitas game dengan menggunkan metode pengujian test case [10].
+
+IV. HASIL DAN PEMBAHASAN
+Berdasarkan kerangka kerja konseptual yang dibuat sebelumnya maka diperoleh hasil ­ hasil penelitian sebagai berikut : 1. Analisis
+Berdasarkan tahap ­ tahap yang dilakukan pada fase analisis maka diperoleh hal ­ hal sebagai berikut : a. Analisa permasahalan
+Analisa permasalahan berdasarkan penelitian yang dilakukan oleh Badan Penelitian dan Pengembangan Kesehatan DEPKES RI yang mengungkapkan tentang permasalahan karies pada anak di Indonesia [4] b. Analisa karakteristik user Karakterisitk user berdasarkan pemaparan yang dikemukakan oleh sari dkk., tentang karakteristik anak pada usia 6 ­ 8 tahun yang mencakup karaktersistik fisik, emosional, sosial, mental dan rohani anak [16]. c. Tujuan pembelajaran Tujuan pembelajaran awal dari game ini adalah untuk memberikan pembelajaran tentang karies pada anak. d. Ide game Ide game ini adalah tentang karies dan kuman penyebab karies dimana user harus membersihkan kuman penyebab karies. e. Platform game Platform game yang akan digunakan untuk menjalankan game ini dibatasi pada hardware platform pc / laptop dan sistem operasi windows.
+
+2. Desain a. Desain instruksional Tujuan instruksional umum ; setelah memainkan game ini user akan dapat memahami tentang karies gigi dan menerapkan perilaku menjaga kebersihan gigi yang baik dan sesuai anjuran. Sedangkan tujuan instruksional khusus (TIK), materi pembelajaran dan metode pembelajaran adalah sebagai berikut :
+
+Tabel 1. TIK, materi pembelajaran dan metode pembelajaran dalam game.
+
+TIK, setelah memainkan game ini user akan dapat : 1. Menjelaskan tentang pentingnya menjaga kebersihan gigi. 2. Menjelaskan penyebab karies. 3. Menjelaskan cara mencegah karies. 4. Menyebutkan bakteri penyebab karies. 5. Menyebutkan waktu menggosok gigi yang baik dan benar. 6. Memperagakan cara menggosok gigi yang baik dan benar.
+
+Materi Pengenalan tentang karies serta akibat yang ditimbulkan dari karies , penyebab karies, pencegahan karies dan cara menggosok gigi yang baik dan benar
+
+Metode 1. Cerita 2. Demonstrasi 3. Bermain
+
+b. Desain game dan art development 1) Storyline, karakter dan Environment. Storyline dalam game ini terdiri dari 4 bagian yaitu introduction, crisis, climax dan resolution. Introduction merupakan tahap pengenalan tentang gigi, crisis merupakan
+
+3 © 2012 Jurnal STT-Garut All Right Reserved
+
+ISSN : 2302-7339 Vol. 10 No. 15 2013
+
+tahap pengenalan tentang masalah karies, climax merupakan tahap pengenalan tahap pengenalan terhadap masalah yang ditimbulkan akibat karies dan resolution merupakan tahap penyelesaian masalah berdasarkan crisis dan climax yang disisipkan kedalam game. Karakter dalam game dibagi menjadi 2 yaitu karakter musuh dan karakter user. Karakter musuh merepresentasikan kuman stepcocorus mutans sedangkan karakter user merepresentasikan sikat gigi. Environment setting pada game ini adalah pulau gigi yang merpresentasikan pentingnya keberadaan gigi manusia. 2) Sistem pertarungan dan penilaian dalam game. Sistem pertarungan game dirancang disesuaikan dengan karakteristik anak yaitu mudah dipahami dan dimainkan. Penilaian dalam game berdasarkan jumlah kuman yang berhasil dibersihkan, sedangkan kondisi menang dan kalah pada game ini berdasarkan akurasi yang dicapai setiap levelnya. Penghitungan nilai akurasi pemain berdasarkan :
+
+Akurasi
+
+=
+
+jumlah
+
+jumlah pukulan kuman yang berhasil
+
+dipukul
+
+
+
+100%
+
+Sedangkan percepatan kecepatan kuman dan percepatan loncatan kuman dihitung berdasarkan :
+
+= e epa an uman A al = e epa an n a umanA al
+
+e epa an uman n a an uman
+
+Keterangan :
+
+a. PK = Pergerakan kecepatan kuman.
+
+b. JS = Frekuensi loncatan kuman.
+
+c. Kecepatan kuman awal = 1
+
+d. Kecepatan loncat kuman awal = 2
+
+e. Increase rate Kecepatan Kuman = percepatan kecepatan kuman sesuai dengan nilai
+
+yang ditentukan.
+
+f. Increase rate Loncatan Kuman = percepatan loncat kuman sesuai dengan nilai yang
+
+ditentukan.
+
+3) Control
+
+Control yang digunakan untuk menjalankan game ini hanya menggunakan mouse untuk
+
+berinteraksi dengan objek yang ada dalam game.
+
+4) Interface
+
+Desain interface game dirancang mudah dimengerti oleh user, secara garis besar
+
+rancangan interface ini terdiri dari rancangan menu utama game, in game menu, tata
+
+letak interface dan interface game progression / Head Up Display (HUD) yang berisikan
+
+pencapaian yang telah diperoleh user selama memainkan game. rancangan menu utama
+
+game terdiri dari beberapa opsi menu yaitu menu untuk memainkan game, menu liha
+
+video, menu credits dan menu keluar game. Sedangkan untuk HUD desain terdiri dari
+
+interface point, interface level, interface akurasi, interface level progress.
+
+http://jurnal.sttgarut.ac.id
+
+4
+
+Jurnal Algoritma Sekolah Tinggi Teknologi Garut
+Interface sisa kuman GAME SCREEN
+
+Interface point
+X K
+R
+
+Interface Level Progress
+Gambar 2. Rancangan tata letak interface game.
+5) Level detail Perancangan desain level ini mengacu pada workflow unity 3d yang membagi setiap level menjadi sebuah scene [15]. Berdasarkan hal tersebut maka game ini terbagi menjadi beberapa scene diantaranya : scene intro, cutscene, menu utama, credits, video, petunjuk, map pagi, menang pagi, kalah pagi, map malam, menang malam dan kalah malam. Scene intro berfungsi sebagai informasi tentang developer game. Cutscene berfungsi sebagai media edukasi tentang karies yang dituangkan dalam film berdurasi pendek. Menu utama digunakan sebagai navigations tools untuk mengkases scene yang ada dalam game selain intro dan cutscene. Petunjuk, merupakan scene yang menginformasikan tentang apa saja yang harus dilakukan user untuk memenangkan permainan. Credits digunakan sebagai apresiasi untuk orang yang telah berjasa dalam proses pengembangan game ini. Map pagi merupakan gameplay dari game ini dimana user harus membersihkan kuman pada pagi hari. Menang pagi merpakan scene yang secara otomatis muncul ketika pemain berhasil memenangkan permainan, sedangkan kalah pagi merupakan scene yang berisikan tentang infromasi bahwa user telah kalah dalam permainan. Secara umum untuk scene malam, kalah malam dan menang malam dalam game ini sama halnya dengan scene pagi, kalah pagi dan menang pagi yang membedakan adalah Environment backgroundnya berupa malam hari dan tingkat kecepatan kuman serta loncatan kuman yang lebih cepat dari map pagi.
+
+5 © 2012 Jurnal STT-Garut All Right Reserved
+
+ISSN : 2302-7339 Vol. 10 No. 15 2013
+
+start
+Scene Intro
+Scene Cutscene
+Scene Main Menu
+
+Scene Video Scene Credits
+
+Scene Petunjuk
+
+Scene Map Pagi
+
+Scene Menang Siang
+
+Scene Map Malam
+
+Scene Menang Malam
+
+Level Selesai ?
+
+ya
+
+ya Menang ?
+tidak Scene Kalah
+
+tidak
+
+Level Selesai ?
+
+ya
+
+ya
+
+Menang ?
+
+tidak Scene Kalah
+
+Restart ? ya Restart ?
+
+tidak
+
+ya
+
+Kembali Ke Menu ?
+
+tidak
+
+end
+
+tidak
+
+Kembali Ke Menu ?
+
+ya
+
+Gambar 3. Scene flow diagram game edukasi karies.
+
+6) Localization plans Konten game menggunakan bahasa indonesia, sehingga tidak ada perencanaan penerjemahan bahasa yang digunakan dalam game, baik itu text maupun voice over pada game.
+
+3. Development Proses pengembangan source code game menggunakan IDE monodevelop dengan memakai java script. Script yang dibuat kemudian diimplementasikan kedalam game object berupa asset files yang telah dibuat sebelumnya.
+
+4. Test Pengujian game dilakukan dengan menggunakan use case sebagai acuan pengujian, berdasarkan hal tersebut maka diperoleh hasil pengujian game sebagai berikut :
+
+Gambar 4. Hasil pengujian pada cutscene.
+http://jurnal.sttgarut.ac.id
+
+6
+
+Jurnal Algoritma Sekolah Tinggi Teknologi Garut
+Gambar 5. Hasil pengujian pada main menu. Gambar 6. Hasil pengujian pada scene map siang.
+Gambar 7. Hasil pengujian pada scene map malam. 7 © 2012 Jurnal STT-Garut All Right Reserved
+
+ISSN : 2302-7339 Vol. 10 No. 15 2013
+VI. KESIMPULAN
+Berdasarkan penelitan yang dilakukan fungsionalitas game dapat berjalan sesuai dengan rancangan game yang telah dibuat. Selain hal tersebut, untuk mengetahui efektivitas game yang dibuat terhadap tujuan pembelajaran yang ingin dicapai hendaknya game ini diuji pada end user yang dituju. Dari segi audio, game ini masih memiliki kekurangan diantaranya suara rekaman pada voice over game yang dirasa kurang maksimal, berdasarkan hal tersebut perbaikan voice over game dirasa sangat penting untuk membantu dalam memperoleh tujuan pembelajaran yang diinginkan. Gameplay game ini hendaknya dikembangkan lebih lanjut sehingga user lebih menarik perhatian user untuk memainkannya lebih lama lagi.
+DAFTAR PUSTAKA
+[1]. Soejoeti, S. Z. (2004). Konsep Sehat, Sakit dan Penyakit dalam Konteks Sosial Budaya. Jakarta: Pusat Penelitian Ekologi Kesehatan, Badan Penelitian dan Pengembangan Kesehatan, Departemen Kesehatan Republik Indonesia.
+[2]. Anderson, T. (2004). Dental Treatment In England. British Dental Journal. [3]. Dhika. (2008). Perbandingan Efek Antibakterial Berbagai Konsentrasi Daun Sirih (Piper
+Betle Linn) Terhadap Streptococcus Mutans, Fakultas Kedokteran Universitas Diponegoro Semarang. Hal 5-17. [4]. Badan Penelitian dan Pengembangan Kesehatan. (2007). Laporan Riset Kesehatan Dasar 2007. Jakarta: Departemen Kesehatan Republik Indonesia. [5]. Angela, A. (2005). Pencegahan Primer Pada Anak Beresiko Karies Tinggi. 38 (3), halaman 130 - 134. [6]. Jong, M. S., Junji, S., Lee, F. L., & Lee, J. H. (2008). Harnessing computer Games in Education. Journal of Distance Education Technologies. 6(1), halaman 1-9. [7]. Mahdamy, U. M., Solikin, & Hanifa, A. (2011). Aplikasi Education Game Berbasis Flash Untuk Pembelajaran Bahasa Inggris Bagi Anak - Anak. Bandung: Program Studi Manajemen Informatika, POLITEKNIK Telkom Bandung. [8]. Zin, N. A., Jaafar, A., & Yue, W. S. (2009). Digital Game-based learning (DGBL) model and development methodology. Transaction On Computer , VIII (2), halaman 322 - 333. [9]. Rumate, F. A. (2002). Desain Instruksional. Modul Desain Instruksional. Mataram: Universitas Hasanudin. [10]. Bethke, E. (2003). Game Development and Production. Texas: Wordware Publishing, Inc. [11]. Rouse, R. (2001). Game Design Theory and Practice. Texas: Wordware Publishing, Inc. [12]. Bates, B. (2004). Game Design. Boston: Thomson Course Technology PTR. [13]. Sheldon, L. (2004). Character Development and Storytelling For Game. Boston: Thomson Course Technology PTR. [14]. Tarbiyah. (2009). Metode Pembelajaran Pada Anak Pra Sekolah. 7 (12), halaman 59-72. [15]. Creighton, R. H. (2010). Unity 3D Game Development by Example. Birmingham: Packt Publishing. [16]. Sari, R. Y., Pujianto, & Darmawan, D. (2010). Edutainment For Children. Yogyakarta: Lembaga Penelitian Universitas Yogyakarta.
+
+http://jurnal.sttgarut.ac.id
+
+8
+
+

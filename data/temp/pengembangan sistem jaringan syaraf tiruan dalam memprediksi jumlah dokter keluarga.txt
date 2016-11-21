@@ -1,0 +1,273 @@
+Seminar Nasional Teknologi Informasi dan Komunikasi 2012 (SENTIKA 2012) Yogyakarta, 10 Maret 2012
+
+ISSN: 2089-9815
+
+PENGEMBANGAN SISTEM JARINGAN SYARAF TIRUAN DALAM MEMPREDIKSI JUMLAH DOKTER KELUARGA MENGGUNAKAN BACKPROPAGATION (STUDI KASUS: REGIONAL X CABANG PALU)
+Marleni Anike1, Suyoto2, Ernawati3 1,2,3Program Studi Magister Teknik Informatika, Program Pascasarjana Universitas Atma Jaya Yogyakarta
+Jl. Babarsari 43 Yogyakarta 55281 Telp. (0274) 48758
+E-mail: rypy_leny@yahoo.com, suyoto@staff.uajy.ac.id, ernawati@mail.uajy.ac.id
+
+ABSTRAKS Ranah kesehatan selalu menjadi topik hangat untuk diperbincangkan dimana saja hal tersebut dipandang krusial bagi kehidupan manusia. Disiplin ilmu yang koheren, konsisten dan kompeten dengan dunia kesehatan adalah kedokteran. Namun, tidaklah cukup hanya menjadi dokter umum ataupun dokter spesialis karena itu dibentuklah dokter keluarga yang menangani upaya penyelenggaraan kesehatan perorangan di tingkat primer untuk memenuhi ketersediaan, ketercapaian, keterjangkauan, kesinambungan, dan mutu pelayananan kesehatan bagi masyarakat. Sistem kesehatan di Indonesia belumlah memadai untuk menyelenggarakan pemerataan tenaga medis dengan berbagai kendala yang ada. Oleh karena itu pada penelitian ini dirancang sistem prediksi dokter keluarga PT Askes (Persero) dengan menggunakan metode backpropagation. Arsitektur lapisan yang akan digunakan adalah tiga lapisan dengan satu lapisan input, satu lapisan tersembunyi, dan satu lapisan output. Tujuan dari penelitian ini agar pengambil keputusan dapat mempersiapkan kebutuhan jumlah dokter keluarga dikemudian hari.
+
+Kata Kunci: Prediksi, Backpropagation, Dokter Keluarga
+
+1. PENDAHULUAN
+1.1 Latar Belakang Ranah kesehatan selalu marak untuk
+diperbincangkan dimana saja karena hal tersebut dipandang krusial bagi kehidupan manusia. Baik Negara maju maupun Negara berkembang memiliki program untuk memajukan kesejahteraan penduduknya, dengan memberikan pelayanan kesehatan baik secara individu maupun kelompok. Disiplin ilmu yang koheren, konsisten dan kompoten dengan dunia kesehatan adalah kedokteran. Pada hakekatnya banyak pendekatan yang bisa dilakukan oleh para medis untuk melakukan penyembuhan atau mengantisipasi sebelum terjadi penyakit, pendekatan yang sekarang ini marak diperbincangkan adalah Kedokteran Keluarga.
+Sifat pelayanan kedokteran keluarga meliputi peningkatan derajat kesehatan, pencegahan, kuratif dan rehabilitas. Pelayanan dokter keluarga merupakan upaya penyelenggaraan kesehatan perorangan di tingkat primer untuk memenuhi ketersediaan, ketercapaian, keterjangkauan, kesinambungan dan mutu pelayanan kesehatan bagi masyarakat (Asmah et.al. 2008; Miller et.al. 2010). Dasar praktek kedokteran keluarga di Indonesia tertuang pada pembukaan UUD 1945 alinea ke-IV tentang tujuan Negera memajukan kesejahteraan umum dan secara rinci disebutkan pada pasal 28 H ayat 1 bahwa setiap orang berhak memperoleh pelayanan kesehatan. Namun, prakteknya terjadi kepincangan misalnya rasio jumlah dokter dan jumlah penduduk Papua sekitar 0.28% berbanding 5,9% dengan Jakarta. Salah satu penyebabnya adalah pendistribusian tenaga kerja yang tidak merata. Pendistribusian tenaga medis khususnya
+
+dokter keluarga secara kontinu akan mengalami kenaikan sejalan dengan Misi Kementerian Kesehatan RI yaitu akan menjamin ketersediaan dan pemerataan sumber daya kesehatan. Upaya pemerintah dalam pemerataan pelayanan kesehatan dilakukan melalui PT Askes (Persero).
+Perkembangan teknologi saat ini semakin pesat, menghantarkan semua aktifitas yang sulit untuk dilakukan oleh manusia dapat dikerjakan dengan mudah, efektif dan efisien. Peranan teknologi informasi dalam bidang komputasi sangat memberikan peluang untuk menyelesaikan permasalahan kompleks yang bersifat signifikan.
+Adapun metode problem solving yang digunakan dalam penelitian ini adalah jaringan syaraf tiruan (JST). JST merupakan metode yang dapat menemukan hubungan non-linear antara beban dan faktor-faktor ekonomi yang bervariasi serta faktorfaktor lainnya yang dapat melakukan penyesuaian terhadap perubahan-perubahan yang terjadi (Kuncoro dan Dalimi, 2005). Salah satu bidang dimana JST dapat diaplikasikan dengan baik adalah bidang peramalan (Setiawan, 2008). Teknik peramalan banyak digunakan untuk proses perencanaan dan pengambilan keputusan, suatu ramalan mencoba memperkirakan apa yang akan terjadi dan apa yang akan menjadi kebutuhan. Dalam JST terdapat teknik peramalan yang sering digunakan yaitu backpropagation. Teknik ini biasanya digunakan pada jaringan multi-layer dengan tujuan meminimalkan error pada keluaran yang dihasilkan oleh jaringan.
+Dengan adanya sistem prediksi dokter keluarga menggunakan metode backpropagation diharapkan dapat membantu pengambil keputusan untuk
+
+209
+
+Seminar Nasional Teknologi Informasi dan Komunikasi 2012 (SENTIKA 2012) Yogyakarta, 10 Maret 2012
+
+ISSN: 2089-9815
+
+melakukan pemerataan pelayanan kesehatan.
+1.2 Rumusan Masalah Berdasarkan latar belakang masalah yang telah
+diuraikan, maka dapat dirumuskan masalah yaitu bagaimana mengembangkan sistem jaringan syaraf tiruan dalam memprediksi jumlah dokter keluarga dengan menggunakan teknik backpropagation?
+1.3 Tinjuan Pustaka Jaringan syaraf tiruan (JST) merupakan salah
+satu representasi buatan otak manusia yang selalu mencoba untuk mensimulasikan proses pembelajaran pada otak manusia (Aprijani dan Sufandi, 2011; Lai, 2006) sedangkan Li dan Liu (2006); Warsito et.al (2008) memodelkan JST sebagai sistem yang memiliki input dan output berdasarkan saraf biologi. Beberapa penelitian di berbagai bidang menggunakan metode problem solving JST diantaranya Traveling Salesman (Puspitorini, 2008). Problem solving pengenalan pola (Hidayatno et.al.2008). Optimalisasi hasil deteksi pola pada gambar tertentu (EL-Bakry dan Hazem, 2006; Chickerur dan M Kumar, 2011; Jing He et.al. 2009). Mampu juga menyelesaikan permasalahan pada bidang elektro (Mismar dan AbuBaker, 2010; Frianto dan Rivai, 2008; Wang et.al. 2007). Qin dan Zimmermann (2007) menggunakan JST untuk menyelesaikan masalah bidang kesehatan dan sebagainya.
+Salah satu bidang dimana JST dapat diaplikasikan dengan baik adalah bidang peramalan (Setiawan, 2008) dan salah satu teknik peramalan yang sering digunakan dalam JST adalah backpropagation. Teknik peramalan atau prediksi banyak digunakan untuk proses perencanaan dan pengambilan keputusan. Prediksi menunjukkan perkiraan yang akan terjadi pada suatu keadaan tertentu sebaliknya perencanaan menggunakan prediksi untuk membantu para pengambil keputusan dalam memilih alternatif keputusan yang terbaik, dengan demikian suatu prediksi mencoba untuk memperkirakan apa yang akan terjadi di waktu yang akan datang.
+Beberapa penelitian sebelumnya telah membuktikan keakuratan backpropagation dalam membentuk sistem prediksi diantaranya Andrijasa dan Mistianingsih (2010) memprediksi jumlah penggangguran di Provinsi Kalimantan Timur untuk Tahun 2009, hasil yang diperoleh 133.104 sedangkan hasil prediksi BPS 139.830.
+Kuncoro dan Dalimi (2005) mengembangkan aplikasi prediksi beban tenaga listrik jangka panjang pada sistem kelistrikan Indonesia. Demikian halnya Ismail et.al. (2011) memprediksi jumlah listrik yang keluar dan masuk melalui pipa, penelitian yang dilakukan akan membantu untuk menghilangkan ketidakpastian pada meteran listrik dengan tujuan kestabilan dan keakuratan penagihan listrik. Adapun tujuan dari penelitiannya menganalisis kinerja model
+
+JST dan hasil yang diperoleh bahwa JST mampu menunjukkan kinerja yang memadai.
+Berdasarkan beberapa uraian penelitian tersebut, menekankan pada analisis pemodelan backpropagation untuk melakukan prediksi dengan objek penelitiannya masing-masing dan menghasilkan kesimpulan bahwa backpropagation dapat digunakan sebagai problem solving. Maka penulis mengambil topik dengan objek penelitian adalah dokter keluarga. Adapun data yang digunakan dalam penelitian ini bersumber dari PT Askes (Persero) Tahun 2010.
+1.4 Landasan Teori 1.4.1 Kecerdasan Buatan
+Kecerdasan buatan merupakan bagian ilmu pengetahuan yang digunakan untuk menyelesaikan masalah manusia dengan cara memahami, memprediksi dan memanipulasi (Russell dan Norvig, 2010), kecerdasan yang dibuat untuk sistem menggunakan algoritma tertentu sehingga sistem seolah-olah dapat berpikir seperti manusia (Coppin, 2004). Definisi lain mengatakan bahwa kecerdasan buatan merupakan cabang teknologi informasi yang berusaha mengimitasi kecerdasan atau cara berpikir manusia untuk diaplikasikan pada komputer (Fatta, 2007).
+1.4.2 Jaringan Syaraf Tiruan 1.4.2.1 Gambaran Umum JST
+JST merupakan bagian dari sistem kecerdasan buatan yang digunakan untuk memproses informasi yang didesain dengan menirukan cara kerja otak manusia dalam menyelesaikan masalah dengan melakukan proses belajara melalui perubahan bobot sinapsisnya.
+Pada Gambar 1 menunjukkan salah satu contoh syaraf biologis dimana sel syaraf (neuron) akan memiliki satu inti sel yang bertugas untuk melakukan pemrosesan informasi. Informasi yang datang akan diterima oleh dendrit. Selain menerima informasi, dendrit juga menyertai axon sebagai keluaran dari suatu pemrosesan informasi. Informasi hasil olahan ini akan menjadi masukkan bagi neuron lain dimana antar dendrit kedua sel tersebut dipertemukan dengan sinapsisnya. Informasi yang dikirimkan antar neuron ini berupa rangsangan yang dilewatkan melalui dendrit. Informasi yang datang dan diterima oleh dendrit akan dijumlahkan dan dikirim melalui axon lain. Informasi ini akan diterima oleh neuron lain jika memenuhi batasan tertentu dikenal dengan nilai ambang (threshold) yang dikatakan teraktivasi.
+Gambar 1. Syaraf Secara Biologi
+
+210
+
+Seminar Nasional Teknologi Informasi dan Komunikasi 2012 (SENTIKA 2012) Yogyakarta, 10 Maret 2012
+
+ISSN: 2089-9815
+
+Karakteristik jaringan syaraf ditentukan oleh beberapa hal yaitu: a. Pola hubungan antar neuron yang disebut dengan
+arsitektur jaringan b. Metode penentuan bobot-bobot sambungan yang
+disebut dengan pelatihan atau proses belajar jaringan c. Fungsi aktivasi.
+1.4.2.2 Komponen-komponen JST Seperti halnya otak manusia, jaringan syaraf juga
+terdiri dari beberapa neuron, dan terdapat hubungan antara neuron-neuron tersebut. Pada Gambar 2.2 menunjukkan struktur neuron yang mana Neuronneuron akan mentransformasikan informasi yang diterima melalui sambungan keluarnya menuju ke neuron-neuron yang lain. Pada jaringan syaraf hubungan ini dikenal dengan nama bobot. Informasi tersebut disimpan pada suatu nilai tertentu pada bobot tersebut.
+Gambar 2. Struktur Neuron JST
+Informasi yang disebut dengan masukkan dikirim ke neuron dengan bobot kedatangan tertentu. Masukkan ini diproses oleh suatu fungsi perambatan yang akan menjumlahkan nilai-nilai semua bobot yang akan datang. Hasil penjumlahan ini kemudian dibandingkan dengan suatu nilai ambang (threshold) tertentu melalui fungsi aktivasi setiap neuron. Apabila masukkan tersebut melewati suatu nilai ambang tertentu maka neuron tersebut akan diaktifkan. Apabila neuron diaktifkan, maka neuron tersebut akan mengirimkan keluaran melalui bobotbobot keluaran ke semua neuron yang berhubungan dengannya demikian selanjutnya.
+Pada jaringan syaraf, neuron-neuron akan dikumpulkan dalam lapisan-lapisan yang disebut dengan lapisan neuron. Biasanya neuron pada satu lapisan akan dihubungkan dengan lapisan sebelum atau sesudahnya terkecuali lapisan masukkan dan lapisan keluaran. Informasi yang diberikan pada jaringan syaraf akan dirambatkan dari lapisan ke lapisan, mulai dari lapisan masukkan sampai lapisan keluaran melalui lapisan tersembunyi. Algoritma pembelajaran menentukan informasi akan dirambatkan kearah mana (Kusumadewi, 2010), Gambar 3 menunjukkan neuron jaringan syaraf sederhana dengan fungsi aktivasi F.
+Pada Gambar 3 sebuah neuron akan mengolah N masukkan (X1, X2, X3,..., Xn) yang masing-masing memiliki bobot W1, W2, W3,..., Wn, dengan rumus:
+(1)
+
+Gambar 3. Model Neuron Sederhana
+Kemudian, fungsi aktivasi F akan mengaktivasi y_in menjadi keluaran jaringan y. Untuk. Jaringan syaraf dengan jumlah neuron pada lapisan keluaran sebanyak m buah maka proses pengolahan data pada neuron adalah:
+(2) Dengan Wij adalah bobot yang menghubungkan masukkan ke-i menuju neuron ke-j. Namun, terkadang jaringan syaraf tiruan tidak mampu mengakomodasi informasi yang ada melalui datadata masukkan maupun bobot-bobotnya. Untuk itu biasanya ditambahkan bias yang senantiasa bernilai 1 ditunjukkan pada Gambar 4. Pengaruh bias terhadap neuron ditunjukkan dengan bobot bias (b). Apabila pada jaringan syaraf dilengkapi dengan bias, maka proses komputasi pada neuron menjadi:
+(3)
+Jaringan syaraf dengan jumlah neuron pada lapisan keluaran sebanyak m buah, maka proses pengolahan data pada neuron ke-j adalah:
+(4)
+Wij adalah bobot yang menghubungkan masukkan ke-i menuju ke neuron ke-j, dan bj adalah bobot bias yang menuju ke neuron ke-j.
+Gambar 4. Model Neuron Sederhana Dengan Bias
+1.4.2.3 Arsitektur JST Hubungan antar neuron pada jaringan syaraf
+tiruan mengikuti pola tertentu, tergantung pada arsitektur jaringan syarafnya. Pada dasarnya terdapat tiga macam arsitektur yaitu (Kusumadewi, 2010): a. Jaringan Syaraf dengan Lapisan Tunggal
+Jaringan tipe ini hanya memiliki satu lapisan dengan bobot-bobot terhubung, menerima masukkan kemudian secara langsung mengolah menjadi keluaran tanpa harus melalui lapisan tersembunyi. Ciri-ciri arsitektur ini hanya terdiri atas satu lapisan masukkan dan satu lapisan keluaran tanpa adanya lapisan tersembunyi.
+
+211
+
+Seminar Nasional Teknologi Informasi dan Komunikasi 2012 (SENTIKA 2012) Yogyakarta, 10 Maret 2012
+
+ISSN: 2089-9815
+
+Gambar 3 dan Gambar 4 merupakan salah satu contoh model neuron dengan satu lapisan masukkan.
+b. Jaringan Syaraf dengan Banyak Lapisan Arsitektur tipe ini memiliki satu atau lebih lapisan yang terletak di antara lapisan masukkan dan lapisan keluaran, memiliki juga satu atau lebih lapisan tersembunyi. Umumnya, ada lapisan bobot-bobot yang terletak antara dua lapisan yang bersebelahan. Jaringan dengan banyak lapisan ini dapat menyelesaikan permasalahan yang lebih sulit daripada lapisan dengan lapisan tunggal, tentu saja dengan pembelajaran yang lebih rumit juga. Gambar 2.5 merupakan salah satu contoh model neuron dengan banyak lapisan dan hanya memiliki satu lapisan tersembunyi. Vij adalah bobot-bobot yang menghubungkan antara neuron-neuron pada lapisan masukkan dengan lapisan tersembunyi. Sedangkan Wjk adalah bobot-bobot yang menghubungkan antara neuron-neuron pada lapisan tersembunyi dengan lapisan keluaran. z_inj adalah hasil pengolahan data pada lapisan tersembunyi dengan fungsi aktivasi F1 untuk menghasilkan zj (j=1, ...,k);
+(5)
+
+Gambar 6. Model Neuron dengan Lapisan Kompetitf
+1.4.2.4 Fungsi Aktivasi Ada beberapa fungsi aktivasi yang sering
+digunakan dalam jaringan syaraf tiruan antara lain: a. Fungsi Sigmoid Biner
+Fungsi ini digunakan untuk jaringan syaraf yang dilatih menggunakan metode backpropagation. Fungsi sigmoid biner yang tampak pada Gambar 6 memiliki nilai antara 0 sampai 1. Karena itu, fungsi ini sering digunakan untuk jaringan syaraf yang membutuhkan nilai keluaran yang terletak pada interval 0 sampai 1. Fungsi sigmoid biner dirumuskan sebagai berikut:
+(10)
+(11)
+y
+1
+
+(6) Sedangkan y_ink adalah hasil pengolahan data pada lapisan keluaran dengan fungsi aktivasi F2 untuk menghasilkan keluaran jaringan.
+(7)
+(8)
+(9)
+
+Gambar 6. Fungsi Aoktivasi Sigxmoid Biner
+b. Fungsi Sigmoid Bipolar Fungsi ini hampir sama dengan fungsi sigmoid biner, hanya saja keluaran dari fungsi ini antara 1 sampai -1 terlihat pada Gambar 7. Sedangkan fungsi sigmoid bipolar dirumuskan seperti berikut ini:
+(12)
+(13)
+y
+1
+
+Gambar 5. Model Neuron dengan Banyak Lapisan
+c. Jaringan Syaraf dengan Lapisan Kompetitif Arsitektur tipe ini tampak pada Gambar 2.6 dimana memiliki pengaturan bobot yang telah ditetapkan dan tidak memiliki proses pelatihan. Digunakan untuk mengetahui neuron pemenang dari sejumlah neuron yang ada. Nilai bobot untuk diri sendiri dari setiap neuron adalah 1, dan neuron lain adalah bobot acak negatif dengan bobot -.
+
+ox
+Gambar 7. Fungsi Aktivasi Sigmoid Bipolar
+c. Fungsi Linear (Identitas) Fungsi linear memiliki nilai keluaran yang sama dengan nilai masukkannya terlihat pada Gambar 8. Fungsi linear dirumuskan sebagai berikut:
+(14)
+
+212
+
+Seminar Nasional Teknologi Informasi dan Komunikasi 2012 (SENTIKA 2012) Yogyakarta, 10 Maret 2012
+
+ISSN: 2089-9815
+
+Umpan Maju (Feedforward) 3. Setiap unit input
+
+menerima
+
+sinyal input dan menyebarkan sinyal
+
+tersebut ke seluruh unit tersembunyi. 4. Pada setiap unit tersembunyi
+
+Gambar 8. Fungsi Aktivasi Linear
+1.4.2.5 Algoritma Pembelajaran Tujuan utama proses pembelajaran adalah
+melakukan pengaturan terhadap bobot-bobot yang ada pada jaringan syaraf, sehingga diperoleh bobot akhir yang tepat sesuai dengan pola data yang dilatih. Selama proses pembelajaran akan terjadi perbaikan bobot-bobot berdasarkan algoritma tertentu. Nilai bobot akan bertambah jika informasi yang diberikan oleh neuron bersangkutan tersampaikan, sebaliknya jika informasi tidak tersampaikan maka bobot akan dikurangi. Pada dasarnya ada dua metode pembelajaran yaitu metode pembelajaran terawasi dan pembelajaran tidak terawasi. a. Pembelajaran Terawasi
+Metode pembelajaran disebut terawasi bila keluaran yang diharapkan telah diketahui sebelumnya. Misalkan dimiliki jaringan syaraf untuk mengenali pasangan pola dengan operasi AND, pada proses pembelajaran satu pola masukkan akan diberikan ke satu neuron pada lapisan masukkan. Pola dirambatkan di sepanjang jaringan syaraf sampai dengan neuron pada lapisan keluaran. Lapisan keluaran ini akan membangkitkan pola keluaran yang nantinya akan dicocokkan dengan pola keluaran targetnya. Apabila terjadi perbedaan antara pola keluaran hasil pembelajaran dengan pola target maka terjadi error, apabila nilai error masih cukup besar mengindikasikan masih perlu dilakukan pembelajaran lagi. b. Pembelajaran Tidak Terawasi Metode ini tidak memerlukan target keluaran karena tidak dapat ditentukan hasil yang seperti apakah yang diharapkan selama proses pembelajaran. Saat proses pembelajaran, nilai bobot disusun dalam suatu range tertentu tergantung pada nilai keluaran yang diberikan, apabila nilai error masih cukup besar mengindikasikan masih diperlukan proses pembelajaran.
+1.4.3 Algoritma Backpropagation
+Pelatihan Backpropagation dilakukan
+melalui langkah-langkah berikut ini :
+0. Inisialisasi bobot;
+1. Selama kondisi berhenti bernilai
+salah, kerjakan langkah 2-9;
+2. Untuk setiap data training,
+lakukan langkah 3-8.
+
+menjumlahkan sinyal-sinyal input yang sudah berbobot (termasuk biasnya)
+Lalu menghitung sinyal output dari unit tersembunyi dengan menggunakan fungsi aktivasi yang telah ditentukan
+Sinyal output ini selanjutnya dikirim ke seluruh unit pada unit atas (unit output). 5. Tiap-tiap output menjumlahkan bobot sinyal input :
+
+Lalu menghitung sinyal output dari unit output bersangkutan dengnan menggunakan fungsi aktivasi yang telah ditentukan
+
+Sinyal output ini selanjutnya dikirim ke seluruh unit pada output. Umpan mundur/propagasi error
+6. Setiap unit output menerima suatu pola target yang sesuai dengan pola input pelatihan, untuk menghitung kesalahan (error) antara target dengan output yang dihasilkan jaringan
+
+Faktor digunakan untuk menghitung
+
+koreksi error
+
+yang nantinya akan
+
+dipakai untuk memperbaiki dimana :
+
+Selain itu juga dihitung koreksi bias yang nantinya akan dipakai untuk
+memperbaiki dimana
+Faktor kemudian dikirimkan ke lapisan yang berada pada langkah 7 7. Setiap unit tersembunyi menerima input delat (dari langkah ke6) yang sudah berbobot
+
+Kemudian hasilnya dikalikan dengan turunan dari fungsi aktivasi yang
+
+213
+
+Seminar Nasional Teknologi Informasi dan Komunikasi 2012 (SENTIKA 2012) Yogyakarta, 10 Maret 2012
+
+ISSN: 2089-9815
+
+Digunakan jaringan untuk menghitung informasi kesalahan error dimana
+Kemudian hitunglah koreksi bobot dengan
+Setelah itu hitung koreksi bias
+Update Bobot dan Bias 8. Setiap unit output
+memperbaiki bobot dan bias dari setiap unit tersembunyi
+9. Tes kondisi berhenti apabila error ditemukan Jika kondisi berhenti terpenuhi, maka pelatihan jaringan dapat dihentikan. Untuk memeriksa kondisi berhenti, biasanya digunakan criteria MSE (Mean Square Error)
+
+menentukan prediksi jumlah dokter keluarga. Untuk proses data training terdiri dari 78 data sedangkan data testing terdiri dari 13 data.
+2.2 Arsitektur Aplikasi Arsitektur aplikasi sistem prediksi dokter
+keluarga dapat dilihat pada Gambar 9. Tampak bahwa pengguna dapat berinteraksi dengan sistem melalui antarmuka GUI (Graphical User Interface). Layanan yang disediakan berupa hasil komputasi sistem yaitu memprediksi jumlah dokter keluarga dengan studi kasus kota palu menggunakan metode backpropagation.
+
+Pengujian Backpropagation
+
+Pengujian
+
+dilakukan
+
+feedforward langkah-langkah
+
+berikut :
+
+melalui sebagai
+
+0. Inisialisasi bobot (hasil pelatihan) 1. Untuk setiap vektor input, kerjakan
+langkah 2-4
+
+2. Untuk i=1,...n: set aktivasi unit input X1
+3. Untuk j=1,...,p:
+
+4. Untuk k-1,...,m:
+
+Gambar 9. Arsitektur Aplikasi
+2.3 Fungsionalitas Aplikasi Fungsionalitas aplikasi sistem prediksi terbagi
+atas beberapa hal, yaitu: a. Fungsi Pengelolaan Data Training
+Merupakan fungsi yang digunakan untuk mengolah data primer menjadi data training. b. Fungsi Pengelolaan Data Testing Merupakan fungsi untuk menguji data yang telah di training dengan data primer testing.
+Adapun Use Case dari aplikasi ini dapat dilihat pada gambar 10 dibawah
+Use Case Aplikasi
+
+2. PEMBAHASAN
+2.1 Perancangan Sistem Arsitektur lapisan yang akan digunakan adalah
+tiga lapisan jaringan terdiri dari satu lapisan masukkan, satu lapisan tersembunyi dan satu lapisan keluaran. Dimana lapisan tersebut memiliki dua belas neuron yaitu:
+X1 = puskesmas perawatan X2 = puskesmas non perawatan X3 = klinik dan balai pengobatan X4 = RS pemerintah X5 = RS swasta X6 = RS TNI/POLRI X7 = RS khusus/jiwa X8 = apotik X9 = optik X10 = lab X11 = PMI X12 = PPK hemodialisa Memiliki satu keluaran berupa hasil akhir dalam
+
+U ser
+
+Mengolah Data Training
+Mengolah Data Testing
+Hasil Prediksi
+
+Gambar 10. Use Case Aplikasi Sistem Prediksi Dokter Keluarga
+Sedangkan ERD (Entity Relationship Diagram) aplikasi sistem prediksi tampak pada Gambar 11 dibawah ini:
+
+214
+
+Seminar Nasional Teknologi Informasi dan Komunikasi 2012 (SENTIKA 2012) Yogyakarta, 10 Maret 2012
+
+ISSN: 2089-9815
+
+diurutkan berdasarkan No, pada label input terdapat dua belas masukkan dengan satu output. Saat pengguna menekan label proses training maka akan tampil form testing seperti pada Gambar 13.
+
+Gambar 11. ERD Aplikasi Sistem Prediksi Dokter Keluarga
+2.4 Rancangan Antarmuka 2.4.1 Rancangan Antarmuka Menu
+Rancangan antarmuka bagian menu dari aplikasi sistem prediksi dapat dilihat pada Gambar 11 dibawah ini
+
+Gambar 13. Rancangan Antarmuka Proses Testing
+2.4.3 Rancangan Antarmuka Hasil Prediksi Setelah pengguna selesai melakukan proses
+testing. Selanjutnya pada Gambar 14 akan menghasilkan prediksi jumlah dokter keluarga.
+
+Gambar 11. Rancangan Antarmuka menu 2.4.2 Rancangan Antarmuka Proses Data
+Training dan Testing Ketika pengguna menekan label data training maka akan tampil antarmuka proses training yang dapat dilihat pada Gambar 12 dibawah ini.
+Gambar 12. Rancangan Antarmuka Proses Training Dari gambar tersebut terdapat Nama Kota yang
+
+Gambar 14. Rancangan Antarmuka Hasil Prediksi
+3. KESIMPULAN Aplikasi sistem prediksi jumlah dokter keluarga
+ini diharapkan dapat memberikan sumbangsi kepada pengguna dalam hal ini adalah pihak PT Askes (Persero) untuk memberikan dukungan kepada pemerintah dalam mensejahterakan masyarakat melalui pelayanan kesehatan yang merata.
+PUSTAKA Andrijasa, M.F., Mistianingsih. 2010. Penerapan
+Jaringan Syaraf Tiruan Untuk Memprediksi Jumlah Pengangguran di Provinsi Kalimantan Timur Dengan Menggunakan Algoritma Pembelajaran Backpropagation, Jurnal Informatika Mulawarman, 05 (01): 50-54. Aprijadi, Dwi Astuti., Sufandi, Unggul Utan. 2011. Aplikasi Jaringan Syaraf Tiruan Untuk Mengenali Tulisan Tangan Huruf A, B, C, dan D Pada Jawaban Soal Pilihan Ganda, Jurnal Matematika, Saint Dan Teknologi, 12 (01): 1117.
+
+215
+
+Seminar Nasional Teknologi Informasi dan Komunikasi 2012 (SENTIKA 2012) Yogyakarta, 10 Maret 2012
+
+ISSN: 2089-9815
+
+Asmah, Kristiani., Lazuardi, Lutfan. 2008. Dokter Keluarga: Implementasi Pelayanan Kesehatan Model Dokter Keluarga di Kota Bontang, Working Paper, (01): 01-19.
+Chickerur, Satyadhyan., M Kumar, Aswatha. 2011. Color Image Restoration Using Neural Network Model, Journal of Universal Computer Science, 17 (01): 107-125.
+Coppin, Ben. 2004. Artificial Intelligence Illuminated, London: Jones and Bartlett Publishers International
+EL-Bakry, Hazem M. 2006. New High Speed Normalized Neural Networks fas Fast Pattern Discovery on Web Pages, International Journal of Computer Science and Network Security, 06 (02): 142-152.
+Fatta, Hanif Al. 2007. Prospek Industri IT Berbasis Kecerdasan Buatan, Seminar Nasional Teknologi,: D-1 ­ D-3.
+Frianto, Herri Trisna., Rivai, Muhammad. 2008. Implementasi Jaringan Syaraf Tiruan Backpropagation Dan Self Organizing Map Menggunakan Sensor Gas Semikonduktor Sebagai Identifikasi Jenis Gas, Seminar Nasional Informatika,: 219-228.
+Hidayatno, Achmad., Isnanto, R Rizal., Buana, Dian Kurnia Widya. 2008. Identifikasi Tanda-Tangan Menggunakan Jaringan Saraf Tiruan Perambatan-Balik (Backpropagation), Jurnal Teknologi, 01 (02): 100-106.
+Ismail, Maryam Jamela., Ibrahim, Rosdiazli., Ismail, Idris., 2011, Development of Neural Network Prediction Model of Energy Consumption, World
+Academy of Science, Engineering and Technology, (58): 862-867. Jing He, Naixue Xiong., Park, Jong Hyuk., Cooley, Donald., Li, Yingshu. 2009. A Neural Network Based Vehicle Classification System for Pervasive Smart Road Security, Journal of Universal Computer Science, 15 (05): 119-1142. Kuncoro, Arief Heru., Dalimi, Rinaldy. 2005. Aplikasi Jaringan Syaraf Tiruan Untuk Peramalan Beban Listrik Jangka Panjang Pada Sistem Kelistrikan Di Indonesia, Jurnal Teknologi, (03): 211-217. Kusumadewi, Sri. 2010. Membangun Jaringan
+Syaraf Tiruan Menggunakan MATLAB & EXCEL LINK, Jogjakarta: GRAHA ILMU. Lai, Hsin-his. 2006. IDD: A Case Based Model of Learning In Design Using Artificial Neural Network-Based Approach, International Journal of Computer Science and Network Security, 06 (02B): 242-246. Li, Shouju., Liu, Yingxi. 2006. Parameter Indetification Approach to Vibration Loads Based on Regularizing Neural Network,
+International Journal of Computer Science and Network Security, 06 (02B): 29-34. Miller, William L., Crabtree, Benjamin F., Nutting, Paul A., Stange, Kurt C., Jaee, Carlos Roberto.
+
+2010. Primary Care Practice Development: A Relationship Centered Approach, Annals of Family Medicine¸ 08 (01): 568-579. Mismar, Doried., Baker, Ayman AbuBaker. 2010. Neural Network Based Algorithm of Soft Fault Diagnosis in Analog Electronic Circuits,
+International Journal of Computer Science and Network Security, 10 (01): 107-111. Puspitorini, Sukma. 2008. Penyelesaian Masalah Traveling Salesman Problem Dengan Jaringan Saraf Self Organizing, Media Informatika, 06 (01): 39-55. Russell, Stuart., Norvig, Peter. 2010. Artificial Intelligence a Modern Approach 3rd Edition, New Jersey: Pearson Education, Inc., Publishing: Prentice Hall. Qin, Min., Zimmermann, Roger. 2007. VCA: An Energy-Efficient Voting­Based Clustering Algorithm for Sensor Networks, Journal of Universal Computer Science, 13 (01): 87-109. Setiawan, Wahyudi. 2008. Prediksi Harga Saham Menggunakan Jaringan Syaraf Tiruan Multilayer Feedforward Network Dengan Algoritma Backpropagation, Konferensi Nasional Sistem dan Informatika,: 108-113. Wang, Youren., Zhang, Zhiqiang., Cui, Jiang. 2007. The Architecture and Circuital Implementation Scheme of a New Cell Neural Network for Analog Signal Processing, Journal of Universal Computer Science, 13 (09): 1344-1353. Warsito, Budi. 2006. Perbandingan Model Feed Forward Neural Network Dan Generalized Regression Neural Network Pada Data Nilai Tukar Yen Terhadap Dolar As, Prosiding SPMIPA,: 127-131.
+
+216
+
+

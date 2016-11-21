@@ -1,0 +1,220 @@
+Penerapan Hybrid Hierarchical Clustering melalui Mutual Cluster dalam Pengelompokan Kabupaten di Jawa Timur Berdasarkan Variabel Sektor Pertanian
+1 Dini Mariyani, 2Santi Wulan Purnami, dan 3 Wiwiek Setya Winahju
+1Mahasiswa Jurusan Statistika FMIPA ITS Surabaya 2,3 Dosen Jurusan Statistika FMIPA ITS Surabaya
+1dini.m.1365@gmail.com, 2santi.purnami@yahoo.com, 3 wiwiek.statistika@gmail.com
+Abstrak. Pengembangan wilayah berbasis komoditi akan memiliki arti penting bagi
+penyusunan sistem pangan di suatu daerah, khususnya dari aspek ketersediaan. potensi sumber daya di tiap daerah maka kebijakan pangan terkait dengan ketersediaan pangan tidak dapat dilihat secara umum tanpa melihat adanya potensi keragaman komoditas. Penelitian ini bertujuan untuk mengetahui pengelompokan kabupaten-kabupaten di Jawa Timur berdasarkan variabel sektor pertanian dengan menduplikasi penelitian metode hybrid hierarchical clustering via mutual cluster yang dilakukan oleh Chipman dan Tibshirani (2003). Pengetahuan tentang lokasi­lokasi (kabupaten) basis akan mempermudah kemungkinan pengembangan untuk memenuhi target kenaikan produksi dengan investasi yang lebih efisien. Hybrid hierarchical clustering disini ini mengkombinasikan kelebihan metode bottom-up clustering (agglomerative) dan top-down clustering (k-means). Sedangkan mutual cluster adalah suatu kelompok yang mempunyai jarak terbesar antara pasangan dalam kelompok yang lebih kecil dari jarak terpendek ke setiap titik di luar kelompok. Mutual cluster yang terbentuk diketahui hanya sebanyak 6 buah. Kelompok terbaik yang dipilih berdasarkan hasil pengelompokan secara hybrid hierarchical clustering via mutual cluster diketahui sebanyak 8 kelompok begitu juga pada hasil topdown clustering. Sementara bottom-up clustering terpilih kelompok terbaik sebanyak 7 kelompok. Namun, pada ketiga metode pengelompokan diketajui bahwa metode bottom-up clustering merupakan metode yang lebih baik dibandingkan hybrid hierarchical clustering via mutual cluster dan top-down clustering. Jumlah kelompok terbaik diperoleh dengan melihat nilai Sw seminimal mungkin dan nilai Sb semaksimal mungkin.
+Kata kunci : Hybrid clustering, mutual cluster, sektor pertanian
+1. Pendahuluan
+Sumber daya pertanian Jawa timur termasuk yang terbesar di antara sumber daya kewilayahan yang ada di setiap subsektornya. Flora dan faunanya sangat beragam dan dapat dimanfaatkan sebagai sumber daya genetik bagi pembangunna masa depan pertanian dunia.kondisi tropik, iklim, dan cuaca yang dimiliki Jawa Timur sangat cocok untuk mendukung pertumbuhan dan pengembangan pertanian. Selain sumber daya yang dimiliki, potenial perdagangan hasil pertanian Jawa Timur cukup besar pula dibandingkan sektor lainnya. Setiap daerah memiliki potensi sumber daya yang berbeda-beda. suatu kajian tentang potensi unggulan yang dimiliki tiap wilayah diperlukan agar dapat ditentukan metode pengembangan wilayah yang tepat. Pengembangan wilayah berbasis komoditi akan memiliki arti penting bagi penyusunan sistem ketahanan pangan di suatu daerah, khususnya dari aspek ketersediaan. Secara umum basis ekonomi wilayah dapat diartikan sebagai sektor ekonomi yang aktifitasnya menyebabkan suatu wilayah itu tetap hidup, tumbuh dan berkembang atau sektor ekonomi yang pokok disuatu wilayah yang dapat menghidupi wilayah tersebut beserta masyarakatnya.
+Adanya perbedaan-perbedaan permasalahan dan potensi sumber daya di tiap daerah maka kebijakan pangan terkait dengan ketersediaan pangan tidak dapat dilihat secara umum tanpa melihat adanya potensi keragaman komoditas, namun harus spesifik daerah agar program tersebut dapat dilaksanakan dengan baik, tepat sasaran dan nyata. Konsentrasi wilayah pengembangan komoditas utama di beberapa kecamatan sentra (basis) dengan kondisi agroekologi yang sesuai akan memper-
+1
+
+mudah pengembangan komoditi­komoditi tersebut. Penelitian ini bertujuan untuk mengetahui pengelompokan kabupaten-kabupaten di Jawa Timur berdasarkan variabel sektor pertanian dengan menduplikasi penelitian metode hybrid hierarchical clustering via mutual cluster yang dilakukan oleh Chipman dan Tibshirani (2003). Pengetahuan tentang lokasi­lokasi (kecamatan) basis akan mempermudah kemungkinan pengembangan untuk memenuhi target kenaikan produksi dengan investasi yang lebih efisien. Penelitian mengenai pengelompokan yang lain telah dilakukan Lailiya (2011) yang mengelompokkan kabupaten/kota di Jawa Timur berda-sarkan kesamaan nilai faktorfaktor yang mempengaruhi tingkat pengangguran terbuka dengan metode hirarki dan nonhirarki. Selain itu, Nugroho (2010) juga mengelompokkan kecamatan-kecamatan di kota Surabaya berdasarkan variabel sosial demografi dan ekonomi menggunakan hierarchical clustering dengan metode Ward dan ukuran jarak Euclidean. Hasil dari penelitian ini diharapkan dapat menjadi referensi bagi Pemerintah di masing-masing kabupaten di Jawa Timur mengenai kondisi dan potensi komoditas dalam sektor pertanian.
+2. Pengelompokan Hirarki dan Bukan Hirarki
+Analisis kelompok (Cluster Analysis) merupakan sebuah metode analisis untuk mengelompokkan obyek-obyek pengamatan menjadi beberapa kelompok sehingga akan diperoleh kelompok dimana obyek-obyek dalam satu kelompok mempunyai banyak persamaan sedangkan dengan anggota kelompok yang lain mempunyai banyak perbedaan. Pengelompokan metode hirarki dibagi dalam dua algoritma, yaitu agglomerative dan divisive (Johnson dan Wichern, 2002). Metode hirarki yang terbagi (divisive hierarchical methods) dimulai dari satu kelompok besar yang mencakup semua kelompok. Selanjutnya kelompok yang memiliki ketidakmiripan yang cukup besar akan dipisahkan sehingga membentuk kelompok yang lebih kecil. Pemisahan ini dilanjutkan sehingga mencapai sejumlah kelompok yang diinginkan. Pada algorithma agglomerative, proses pengelompokan berlangsung dengan menyusun satu seri penggabungan n obyek dalam kelompok-kelompok dan hasil akhirnya semua obyek bergabung menjadi satu kelompok besar. Agglomerative hierarchical clustering adalah suatu metode hierarchical clustering yang bersifat bottom-up yaitu menggabungkan n buah kelompok menjadi satu kelompok tunggal. Metode ini meletakkan setiap obyek data sebagai sebuah kelompok tersendiri (atomic cluster). Metode agglomerative ini dimulai dengan setiap n kelompok membentuk kelompok masing-masing. Kemudian dua kelompok dengan jarak terdekat bergabung. Selanjutnya, kelompok yang lama akan bergabung dengan kelompok yang sudah ada dan membentuk kelompok baru. Hal ini tetap memperhitungkan jarak kedekatan antar kelompok. Proses akan berlanjut hingga akhirnya terbentuk satu cluster yang terdiri dari keseluruhan kelompok. Algoritma pengelompokan dengan metode agglomerative yaitu :
+a. Menghitung jarak antar obyek b. Menentukan pasangan kelompok yang memiliki jarak terdekat c. Menghitung kembali jarak baik pada obyek yang sudah dan belum membentuk kelompok
+berdasarkan metode penggabungan yang dipakai d. Menentukan kembali pasangan kelompok yang memiliki jarak terdekat e. Mengulangi tahapan (b) - (d) sampai n-1 obyek
+Beberapa teknik pengelompokkan dalam metode agglomerative yaitu single linkage, complete linkage, average linkage, dan centroid linkage. Metode single linkage menggunakan aturan jarak minimum antar kelompok. Proses penggabungan diawali dengan menemukan 2 obyek yang mempunyai jarak minimum untuk selanjutnya menjadi satu kelompok. Sementara itu, metode complete linkage menggunakan aturan jarak maksimum antar kelompok. Proses pengelompokan sama seperti pada single linkage. Seperti dua metode sebelumnya, langkah awal metode average linkage
+2
+
+dimulai dengan menemukan 2 obyek yang mempunyai jarak terdekat menjadi satu kelompok.
+
+Langkah selanjutnya didasarkan aturan rata-rata jarak dua kelompok. Berbeda dengan 3 jenis link-
+
+age sebelumnya, metode centroid linkage didasarkan pada aturan centroid dari dua kelompok.
+
+Sementara itu, pada metode pengelompokan bukan hirarki telah diketahui informasi
+
+mengenai jumlah kelompok. Metode pengelompokan bukan hirarki bertujuan mengelompokan n
+
+obyek ke dalam k kelompok ( k < n ). Salah satu prosedur pengelompokan bukan hirarki adalah
+
+dengan menggunakan metode k-means. Dasar pengelompokan dalam metode ini adalah menempat-
+
+kan obyek berdasarkan means kelompok terdekat. K-means clustering merupakan salah satu algo-
+
+ritma top-down clustering. K-means dimulai dengan pemilihan secara acak k. K disini merupakan
+
+banyaknya kelompok yang ingin dibentuk. Kemudian nilai-nilai k ditetapkan secara random, untuk
+
+sementara nilai tersebut menjadi pusat dari kelompok atau biasa disebut means. Selanjutnya jarak
+
+setiap data yang ada terhadap masing-masing means dihitung menggunakan ukuran ketakmiripan
+
+hingga ditemukan jarak yang paling dekat dari setiap data dengan pusat dari kelompok. Setiap data
+
+diklasifikasikan berdasarkan kedekatannya dengan pusat dari kelompok. Langkah-langkah tersebut
+
+terus dilakukan hingga nilai pusat dari kelompok tidak berubah (stabil).
+
+Algoritma pengelompokan dengan metode k-means yaitu :
+
+a. Mempartisi obyek sebanyak k kelompok
+
+b. Menghitung pusat kelompok menggunakan persamaan berikut :
+
+c( A)i
+
+1 ni
+
+n
+yij
+j1
+
+dengan :
+
+c(A)i = pusat kelompok A pada variabel ke-i A = 1, 2, ..., k
+
+ni = jumlah obyek pada variabel ke-i yij = nilai dari obyek ke-j pada variabel ke-i i = 1, 2, ..., p
+
+p = banyak variabel
+
+c. Menghitung jarak masing-masing obyek dari pusat kelompok d. Menentukan obyek yang lebih dekat dengan pusat kelompok e. Jika obyek berpindah dari posisi awal (tahapan 1) maka pusat kelompok harus ditentukan
+kembali f. Mengulangi tahapan (2) - (4) sampai tidak ada lagi obyek yang berpindah posisi
+Pengelompokan terbaik dari suatu metode dapat dipilih dengan anggota dari setiap kelompok yang memiliki internal homo-geneity yang tinggi satu sama lain dan perbedaan yang tinggi dengan anggota dari kelompok yang lain. Internal homogeneity diukur dengan varian dalam kelompok sedangkan external homogeneity diukur dengan varians antar kelompok (Bunkers dkk, 1996).
+
+3. Hybrid Hierarchical Clustering melalui Mutual Cluster
+Hybrid hierarchical clustering ini merupakan metode hybrid yang menggunakan mutual cluster. Hybrid hierarchical disini ini mengkombinasikan kelebihan metode bottom-up clustering (agglomerative) dan top-down clustering (k-means). Algoritma bottom-up baik dalam mengidentifikasi kelompok kecil sedangkan algortima top-down baik dalam mengidentifikasi kelompok besar. Mutual cluster adalah suatu pengelompokan yang menggunakan jarak terbesar antara pasangan dalam kelompok yang lebih kecil dari jarak terpendek ke setiap titik di luar kelompok. Hal ini berarti bahwa jarak maksimal antar obyek dalam sebuah mutual cluster lebih kecil dibandingkan jarak
+3
+
+minimal beberapa obyek di luar mutual cluster. Data yang terkandung dalam sebuah mutual cluster tidak pernah dipisahkan (Chipman dan Tibshirani, 2006).
+Metode tersebut memiliki beberapa implikasi dalam sebuah mutual cluster. Implikasi yang paling jelas adalah untuk mendukung gagasan bahwa dalam sebuah mutual cluster berisi informasi pengelompokan yang kuat, tidak peduli pendekatan linkage mana yang digunakan. Hal ini dapat membantu dalam interpretasi metode bottom-up. Informasi tambahan tersebut dapat membantu dalam interpretasi dari mutual cluster, atau dalam menentukan keputusan untuk pembagian kelompok. Hybrid ini juga mempertahankan metode top-down yang akurat membagi data menjadi pengelompokan yang baik. Tahapan awal akan dilakukan pengelompokan secara bottom-up. Jarak obyek satu dengan obyek yang lain dihitung. Selanjutnya akan dicari jarak terdekat (minimal). Kelompok inilah yang menjadi mutual cluster pertama. Setelah itu, jarak antara kelompok yang terbentuk dengan obyek yang lain dihitung kembali. Lalu jarak terdekat (minimal) juga dicari kembali. Langkah tersebut terus dilakukan sampai semua obyek bergabung menjadi satu kelompok besar. Penentuan mutual cluster harus memiliki jarak minimal antar obyek dalam kelompok dimana jarak tersebut lebih besar dibandingkan jarak minimal beberapa obyek di luar mutual cluster. Hybrid clustering disini dilakukan dengan metode k-means dimana k=2 yang dikenal dengan sebutan tree structured vector quantization (tsvq). Pada tahapan ini mutual cluster yang telah terbentuk harus dipertahankan. Oleh karena itu, obyek-obyek tersebut akan dibagi 2 kelompok. Selanjutnya, koordinat dari pusat kelompok (means) masing-masing kelompok ditentukan. Kemudian jarak masingmasing obyek dari koordinat pusat dihitung dan kembali menentukan obyek ke kelompok terdekat. Jika obyek dipindahkan dari posisi awal, pusat kelompok harus diperbaharui sebelum diproses lebih lanjut.
+4. Sektor Pertanian
+Pertanian atau usahatani hakekatnya merupakan proses produksi di mana input alamiah berupa lahan dan unsur hara yang terkandung di dalamnya,sinar matahari serta faktor klimatologis (suhu,kelembaban udara,curah hujan,topografi, dsb) berinteraksi melalui proses tumbuh kembang tanaman dan ternak untuk menghasilkan output primer yaitu bahan pangan dan serat alam (Akhdaryani, 2003). Sektor pertanian mencakup sub sektor tanaman bahan makanan (tanaman pangan dan hortikultura), tanaman perkebunan, peternakan, kehutanan, dan perikanan (Widiastuti, 2011). Sub sektor tanaman bahan makanan mencakup komoditas bahan makanan seperti padi, jagung, ketela pohon, ketela rambat, umbi-umbian, kacang tanah, kacang kedele, kacang-kacangan lainnya, sayur-sayuran, buah-buahan, padi-padian serta bahan makanan lainnya. Sub sektor perkebunan mencakup semua jenis kegiatan tanaman perkebunan yang diusahakan baik oleh rakyat maupun oleh perusahaan perkebunan. Komoditas yang dicakup antara lain cengkeh, jahe, jambu mente, jarak, kakao, karet, kapas, kapok, kayu manis, kelapa, kelapa sawit, kemiri, kina, kopi, lada, pala, panili, serat karung, tebu, tembakau, teh, serta tanaman perkebunan lainnya.
+Sementara itu, sub sektor peternakan mencakup semua kegiatan pembibitan dan pembudidayaan segala jenis ternak dan unggas dengan tujuan untuk dikembangbiakkan, dibesarkan, dipotong dan di-ambil hasilnya, baik oleh rakyat maupun oleh perusahaan perternakan. Jenis ternak yang dicakup meliputi sapi, kerbau, kambing, babi, kuda, ayam, itik, telur ayam, telur itik, susu sapi, serta hewan peliharaan lainnya. Sub sektor kehutanan mencakup kegiatan penebangan segala jenis kayu serta pengambilan daun-daunan, getah-getahan, akar-akaran, termasuk juga kegiatan perburuan. Komoditas yang dicakup meliputi: kayu gelondongan (baik yang berasal dari rimba maupun hutan budidaya), kayu bakar, rotan, arang, bambu, terpentin, gondo-rukem, kopal, menjangan, babi hutan serta hasil hutan lainnya. Sedangkan sub sektor perikanan mencakup semua kegiatan penangkapan, pembenihan dan budidaya segala jenis ikan dan biota air lainnya, baik yang berada di
+4
+
+air tawar maupun di air asin. Komoditas hasil perikanan antara lain seperti ikan tuna dan jenis ikan laut lainnya; ikan mas dan jenis ikan darat lainnya; ikan bandeng dan jenis ikan payau lainnya; udang dan binatang berkulit keras lainnya; cumi-cumi dan binatang lunak lainnya; rumput laut serta tumbuhan laut lainnya.
+
+5. Metodologi Penelitian
+Sumber data yang digunakan dalam penelitian ini adalah data sekunder yang diperoleh dari buku publikasi BPS Jawa Timur dengan judul Provinsi Jawa Timur Dalam Angka 2010. Pada buku tersebut data yang tertera dalam periode 2009 saja. Unit pengamatan yang dipakai hanya 29 kabupaten di Jawa Timur. Data yang dipakai hanya mencakup variabel sektor pertanian. Variabel sebanyah 33 buah tersebut meliputi luas area panen padi (X1), produksi padi (X2), luas area panen jagung (X3), produksi jagung (X4), luas area panen ubi kayu (X5), produksi ubi kayu (X6), luas area panen kedelai (X7), produksi kedelai (X8), luas area panen kacang hijau (X9), dan produksi kacang hijau (X10), luas area panen jambu mente (X11), produksi jambu mente (X12), luas area panen kelapa (X13), produksi kelapa (X14), luas area panen kapuk randu (X15), produksi kapuk randu ( X16 ), populasi sapi (X17), populasi kambing (X18), populasi domba (X19), populasi ayam buras (X20), populasi ayam petelur (X21), populasi ayam pedaging (X22), populasi itik (X23), produksi daging sapi (X24), produksi daging kambing (X25), produksi daging domba (X26), produksi daging ayam buras (X27), produksi daging ayam pedaging (X28), produksi daging itik (X29), produksi telur ayam buras (X30), dan produksi telur itik (X31), populasi luas area pemeliharaan ikan (X32), dan populasi ikan (X33). Variabel tersebut digunakan karena ketersediaan data.
+Langkah-langkah analisis data dalam makalah ini dilaku-kan dalam beberapa tahapan yang dibantu dengan software yaitu Minitab, SPSS, dan R. Langkah kerja yang dilakukan untuk mengolah data pada penelitian ini adalah sebagai berikut : 1. Menganalisis karakteristik produksi komoditas sektor pertainan kabupaten-kabupaten di Jawa
+Timur. Langkah ini akan dilakukan dengan software Minitab. Analisis yang digunakan adalah ukuran pemusatan dan penyebaran. Ukuran pemusatan yang dipakai adalah rata-rata, nilai minimum dan maksimum. Sementara itu, ukuran penyebaran yang digunakan adalah deviasi standar. 2. Melakukan pengelompokan kabupaten-kabupaten di Jawa Timur berdasarkan variabel sektor pertanian di Jawa Timur. Langkah ini dilakukan dengan software SPSS dan R. Penelitian ini akan menerapkan hybrid hierarchical clustering via mutual cluster. Tahapan-tahapannya diuraikan sebagai berikut. a. Menghitung jarak antar obyek menggunakan fungsi jarak Pearson yaitu
+
+(xik x jk )2
+
+d ij
+
+k
+sk 2
+
+dengan : dij = jarak antara obyek ke-i dengan obyek ke-j xik = nilai dari obyek ke-i pada variabel ke-k xjk = nilai dari obyek ke-j pada variabel ke-k sk2 = varians pada variabel ke-k
+b. Menentukan mutual cluster pada pengelompokan secara agglomerative Jarak terdekat (minimal) dicari berdasarkan hasil perhitungan tahapan (a). Obyek yang memliiki jarak terkecil digabungkan membentuk kelompok. Kelompok inilah yang menjadi mutual cluster pertama. Hal itu dikarenakan jarak dalam mutual cluster tersebut lebih kecil
+
+5
+
+daripada jarak terdekat ke obyek di luar mutual cluster. Mutual cluster yang selanjutnya dipilih harus memiliki jarak minimal antar obyek dalam kelompok dimana jarak tersebut lebih besar dibandingkan jarak minimal beberapa obyek di luar mu-tual cluster. c. Melakukan hybrid clustering dari hasil mutual cluster berdasarkan algoritma k-means Hybrid clustering disini dilakukan dengan k=2 yang dikenal dengan sebutan tree structured vector quantization (tsvq) menggunakan jarak korelasi. Obyek-obyek tersebut akan dibagi menjadi 2 kelompok dengan mutual cluster yang telah terbentuk harus tetap ada dan dipertahankan. Selanjutnya, koordinat dari pusat kelompok (means) masing-masing kelompok ditentukan. Kemudian jarak masing-masing obyek dari koordinat pusat dihitung dan kembali menentukan obyek ke kelompok terdekat. Jika obyek dipindahkan dari posisi awal (pembagian 2 kelompok sebelumnya), pusat kelompok harus diperbaharui sebelum diproses lebih lanjut. Obyek yang terbetuk dalam satu mutual cluster tidak perlu dicari jaraknya karena obyek tersebut harus tetap tergabung. d. Menentukan jumlah pengelompokan terbaik yang akan dipilih berdasarkan deviasi standar within cluster yang terkecil dengan dan deviasi standar antar kelompok yang terbesar.
+6. Analisis dan Pembahasan
+Pada tahun 2009 di kabupaten-kabupaten Jawa Timur diketahui mempunyai luas area dan hasil panen padi, jagung, ubi kayu, kedelai, dan kacang hijau dengan deviasi standar yang cukup besar. Hal ini menunjukkan bahwa antar kabupaten di Jawa Timur terjadi kesenjangan pada sub sektor ta-naman bahan makanan. Kondisi serupa juga terjadi pada luas area dan hasil panen jambu mente, kelapa, dan kapuk randu. Begitu juga dengan populasi dan produksi daging sapi potong, kambing, domba, ayam buras, petelur, pedaging, dan itik, serta luas area pemeliharaan dan populasi ikan. Kondisi yang kurang produktif dalam beberapa variabel sub sektor tanaman bahan maka-nan terjadi pada ubi kayu dan kacang hijau yaitu masing-masing di kabupaten Sidoarjo dan Kediri. Sebaliknya, padi sangat produktif di wilayah Jawa Timur lebih tepatnya di kabupaten Jember. Sementara itu, pada beberapa variabel sub sektor perkebunan diketahui jambu mente kurang produktif di kabupaten Sidoarjo. Sedangkan pada beberapa variabel sub sektor perternakan diketahui populasi domba dan ayam petelur kurang dikembangkan masing-masing di kabupaten Bondowoso dan Sampang. Pengembangan sub sektor perikanan cukup berhasil dilakukan di Gresik dan Sumenep yang notabene wilayah tersebut berdekatan secara langsung laut yang didukung sistem perairaan yang cukup bagus. Setelah mengetahui karakteristik sektor pertanian pada masing-masing kabupaten di Jawa Timur maka akan dilakukan pengelompokan.
+Pengelompokan kabupaten-kabupaten di Jawa Timur berdasarkan variabel pertanian perlu diketahui untuk menentukan kelompok kabupaten yang memiliki kesamaan karakteristik. Pengelompokan dapat dijadikan tambahan informasi mengenai pengembangan sector pertanian yang tepat di tiap kabupaten. Ada 3 metode pengelompokan yang dipakai dalam penelitian ini, yaitu bottom-up clustering, top-down clustering, dan hybrid hierarchical clustering melalui mutual cluster. Metode bottom-up disini mengikuti aturan average linkage. Kriteria deviasi standar dalam kelompok (Sw) yang terkecil dan deviasi standar antar kelompok (Sb) yang terbesar juga digunakan untuk pemilihan kelompok terbaik. Jumlah kelompok yang terbaik diketahui sebanyak 7 kelompok yang lebih kecik daripada hasil pengelompokan dengan hybrid hierarchical clustering via mu-tual cluster. Sedangkan pada metode top-down , jumlah kelompok yang terbaik yang dipilih berdasarkan kriteria deviasi standar dalam kelompok (Sw) yang terkecil dan deviasi standar antar kelompok (Sb) yang terbesar diketahui sebanyak 8 kelompok yang lebih banyak daripada pengelompokan dengan bottom-up clustering.
+6
+
+Sementara itu, pengelompokan kabupaten-kabupaten di Jawa Timur dengan hybrid hierarchical clustering via mutual cluster dilakukan dalam beberapa tahapan. Pada tahapan awal akan dilakukan penentuan mutual cluster dengan algoritma bottom-up lustering. Mutual cluster yang terbentuk berdasarkan kesamaan beberapa variabel sektor pertanian hanya sebanyak 6 buah. Mutual cluster yang pertama terdiri atas Malang, Jombang, Nganjuk, dan Gresik. Mutual cluster yang kedua terdiri atas Ponorogo dan Blitar. Mutual cluster yang ketiga terdiri atas kabupaten Mojokerto dan Bojonegoro. Mutual cluster yang keempat terdiri atas kabupaten Kediri, Probolinggo dan Tuban. Mutual cluster yang kelima terdiri atas kabupaten Lumajang dan Jember. Mutual cluster yang keenam terdiri atas kabupaten Bondowoso dan Situbondo.
+Setelah mengetahui kabupaten-kabupaten yang membentuk mutual cluster, tahapan selanjutnya akan dilakukan pengelompokan mutual cluster kabupaten-kabupaten secara top-down clustering. Pada tahapan ini hasil pembentukan mutual cluster yang sebelumnya tidak terpecah akibat pengelompokan secara top-down. Mutual cluster yang terbentuk tetap terjaga sehingga kabupatenkabupaten yang tergabung dalam satu mutual cluster selalu bersama. Hal itu merupakan kelebihan hybrid hierarchical clustering. Kelompok terbaik yang dipilih adalah 8 kelompok. Pemilihan jumlah kelompok terbaik akan dianalisis dengan tingkat similaritas yang diukur dengan deviasi standar dalam kelompok dan perbedaan dengan anggota dari kelompok yang lain diukur dengan deviasi standar antar kelompok seperti yang ditunjukkan pada Tabel 1. Anggota dari tiap kelompok berbeda-beda seperti yang tertera pada Tabel 2.
+
+Tabel 1 Sw dan Sb untuk Kelompok Hasil Hybrid Hierarchical Clustering via Mutual Cluster
+
+Kelompok
+
+Sw
+
+Sb
+
+2 13713118 9917249
+
+3 12358532 9910264
+
+4 12387309 11312143
+
+5 10854491 10510966
+
+6 9573569 10535348
+
+7 10213098 11065289
+
+8 8948243 12854404
+
+Tabel 2 Kelompok Kabupaten-kabupaten di Jawa Timur dengan Hybrid Hierarchical Clustering via Mutual Cluster
+
+Kelompok 1 Kelompok 2 Kelompok 3 Kelompok 4
+
+Pacitan Ponorogo Tulungagung Malang
+
+Trenggalek Kediri
+
+Blitar
+
+Pasuruan
+
+Jombang
+
+Sidoarjo
+
+Tuban
+
+Mojokerto
+
+Lamongan
+
+Kelompok 5 Kelompok 6 Kelompok 7 Kelompok 8
+
+Lumajang Jember Banyuwangi Magetan
+
+Nganjuk Bojonegoro Bondowoso Pamekasan
+
+Madiun Sumenep Situbondo
+
+Bangkalan
+
+Probolinggo
+
+Ngawi
+
+Gresik
+
+Sampang
+
+Perbandingan ketiga metode pengelompokan tersebut berdasarkan nilai varians dalam kelompok yang terkecil dan varians antar kelompok yang terbesar (Tabel 3) diketahui bahwa metode bottom-up clustering merupakan metode yang lebih baik dibandingkan hybrid hierarchical clustering via mutual cluster dan top-down clustering. Hasil pengelompokan dengan ketiga metode tersebut hanya terdapat sedikit perbedaan. Seperti pada metode bottom-up clustering, kabupaten
+7
+
+Sumenep satu kelompok dengan Pacitan dan Bojonegoro. Namun hal itu tidak terjadi di metode hybrid hierarchical clustering via mutual cluster dan top-down clustering.
+
+Tabel 3 Sw dan Sb untuk Jumlah Kelompok Terbaik Hasil Hybrid Hierarchical Clustering via Mutual Cluster, Bottom-up Cluste-ring, dan Top-down Clustering
+
+Metode
+
+Sw Sb
+
+Hybrid hierarchical clustering via mutual cluster 8948243 12854404
+
+Bottom-up clustering
+
+3310109 23582238
+
+Top-down clustering
+
+7066164 13789331
+
+Setiap kelompok kabupaten yang terbentuk pada metode hybrid hierarchical clustering via mutual cluster memiliki karakteristik yang unik. Kelompok 1 mempunyai luas area panen padi, luas area panen dan produksi ubi kayu, populasi domba, produksi daging kambing, domba, dan ayam buras terbesar. Meski begitu, kelompok 1 merupakan kumpulan kabupaten-kabupaten yang populasi ayam petelur dan pedaging yang terkecil. Sedangkan kelompok 2 mempunyai produksi kapuk randu, daging ayam pedaging, dan sapi yang terbesar. Adapun kelompok 3 mempunyai populasi kambing dan luas area pemeliha-raan ikan yang terbesar. Namun, kelompok 3 merupakan kumpulan kabupaten-kabupaten yang po-pulasi sapi potong yang terkecil. Sementara itu, kelompok 4 mempunyai produksi kelapa dan kede-lai serta luas area panen padi dan kedelai terbesar. Kelompok 5 mempunyai produksi ubi kayu, lu-as area panen kelapa, populasi ayam buras dan petelur, populasi itik, produksi telur ayam buras dan itik, serta produksi daging itik yang terbesar. Kelompok 5 juga merupakan kumpulan kabupaten-kabupaten yang luas area panen dan produksi jambu mente,serta populasi domba yang terkecil.
+Berbeda halnya kelompok 6 yang mempunyai karakteristik yang dominan dalam populasi ayam pedaging. Kelompok 7 mempunyai luas area panen dan produksi jagung, luas area panen dan produksi kacang hijau, luas area panen dan produksi jambu mente, luas area panen kapuk randu, serta populasi sapi dan ikan yang terbesar. Namun, kelompok 7 merupakan kumpulan kabupatenkabupaten yang populasi dan produksi telur ayam buras serta produksi daging ayam pedaging yang terkecil. Kelompok 8 merupakan kumpulan kabupaten-kabupaten yang luas area panen dan produksi padi, luas area panen dan produksi jagung, luas area panen ubi kayu, luas area panen dan produksi kedelai, luas area panen dan produksi kacang hijau, luas area panen dan produksi kelapa, luas area panen dan produksi kapuk randu, populasi kambing, produksi sapi, kambing, domba, dan ayam buras, populasi, produksi daging dan telur itik, serta luas area pemeliharaan dan populasi ikan yang terkecil.
+Komoditi pertanian yang menjadi basis pada masing-masing kelompok yang bernilai ekonomi tinggi perlu dikembangkan melalui program peningkatan penguasaan teknologi oleh petani dan program perluasan areal perkebuan dan tanaman bahan makanan dengan memanfaatkan dan mengoptimalkan lahan yang tersedia dengan tetap menjaga kelestarian lingkungan tanpa mengabaikan komoditi perternakan yang lain. Percepatan inovasi dan adopsi teknologi juga hasrus dilakukan baik pada aspek pembibitan, teknologi budidaya spesifik lokasi, dan revitalisasi pada industri pengolahan hasil produksi. Kerjasama berbagai pihak antar Kabupaten di Jawa Timur perlu juga diupayakan untuk mengembangkan diri masing- masing kabupaten. Kerjasama itu harus didasari dengan kesukarelaan bukan ego kewilayahan didepankan sehingga kerjasama tersebut bisa terus berlanjut.
+
+7. Kesimpulan Kesimpulan berdasarkan hasil analisis dan pembahasan antara lain kabupaten-kabupaten di
+Jawa Timur pada tahun 2009 memiliki disparitas tinggi dalam luas area dan hasil panen padi,
+
+8
+
+jagung, ubi kayu, kedelai, dan kacang hijau. Hal ini juga terjadi pada luas area dan hasil panen jambu mente, kelapa, dan kapuk randu. Begitu juga pada populasi dan produksi daging sapi potong, kambing, domba, ayam buras, petelur, dan pedaging, serta itik antar kabupaten di Jawa Timur memiliki perbedaan yang besar. Kondisi sub sektor perikanan juga tidak jauh berbeda dengan subsektor tanaman bahan makanan, perkebunan, dan perternakan dimana antar kabupaten memiliki variasi yang besar dalam luas area pemeliharaan dan produksi ikan.
+Sementara itu, pada penentuan mutual cluster dengan algoritma bottom-up berdasarkan kesamaan kondisi beberapa variabel sektor pertanian hanya terbentuk sebanyak 6 buah. Sedangkan hasil pengelompokan secara hybrid hierarchical clustering via mutual cluster diketahui kelompok terbaik yang dipilih adalah 8 kelompok. Hal serupa terjadi pada hasil pengelompokan dengan metode top-down clustering yang juga terpilih 8 kelompok sebagai kelompok terbaik. Sementara bottom-up clustering terpilih 8 kelompok sebagai kelompok terbaik. Namun, pada ketiga metode pengelompokan berdasarkan nilai varians dalam kelompok (Sw) yang terkecil dan varians antar kelompok (Sb) yang terbesar tersebut dapat dinyatakan bahwa metode bottom-up clustering merupakan metode yang lebih baik dibandingkan hybrid hierarchical clustering via mutual cluster dan top-down clustering.
+Daftar Pustaka Akhdaryani, D. , Muslich, M. dan Ismail, M. Analisis Keunggulan Komparatif Komoditas Andalan
+Utama Sektor Pertanian Jawa Timur Menjelang Perdagangan Global. Jurnal Aplikasi Manajemen, Vol. 1/No. 1. April 2003. Anonim. 2010. Provinsi Jawa Timur Dalam Angka 2010. BPS Provinsi Jawa Timur, Surabaya. Anonim. 2011. Berita Resmi Statistik Provinsi Jawa Timur 2011. BPS Provinsi Jawa Timur, Surabaya. Anonim. Ekspor produk pertanian Jatim melesat 38,9%. Kabar Bisnis Surabaya, 1 September 2011. Bunkers, W.J., Miller, J.R., DeGaetano, A.T., 1996. Definition of Climate Regions in the Northern Plains Using an Objective Cluster Modification Technique. J.Climate 9:130-146. Chipman, R. dan Tibshirani, R. 2006. Hybrid Hierarchical Clustering With Applications To Microarray Data.Biostatistics Journal- Oxford England, Vol. 7, Hal. 286-301. Hair J.F., Rolph E. Anderson, Ronald L. Tatham, William C. Black. 2006. Multivariate Data Analysis. Sixth Edition, Pearson Education Prentice Hall, Inc. Johnson, N. And Wichern, D. 2002. Applied Multivariate Statistical Analysis, 5th Edition. New Jersey: Prentice Hall, Englewood Cliffs. Lailiya,A.R. 2011. Pengelompokkan Kabupaten/Kota Di Jawa Timur Berdasarkan Kesamaan Nilai Faktor-Faktor yang Mempengaruhi Tingkat Pengangguran Terbuka dengan Metode Hirarki dan Nonhirarki. Surabaya: Jurusan Statistika FMIPA-ITS. Lusminah, 2008. Analisis Potensi Wilayah Kecamatan Berbasis Komoditas Pertanian Dalam Pembangunan Daerah Di Kabupaten Cilacap. Surakarta: Jurusan Agrobisnis PertanianUniversitas Sebelas Maret. Malik, A., 2006. Keunggulan komparatif dan Kompetitif Tanaman Pangan di Sentra Produksi Papua (Studi Kasus Kabupaten Jayapura). SEPA Jurnal Sosial Ekonomi Pertanian Vol. 3 No. 1 September 2006 hal.: 1-9. Fakultas Pertanian UNS. Surakarta. Nugroho, M.A. 2010. Analisis Pengelompokkan dan Pemetaan Kecamatan Sebagai Dasar Program untuk Mengatasi Masalah-Masalah Sosial-Ekonomi di Kota Surabaya. Surabaya: Jurusan Statistika FMIPA-ITS.
+9
+
+Pranoto, E. 2008. Potensi Wilayah Komoditas Pertanian Dalam Mendukung Ketahanan Pangan Berbasis Agribisnis Kabupaten Banyumas. Semarang: Jurusan Agribisnis PertanianUniversitas Diponegoro.
+Gong X., Richman MB. 1995. On the Application of Cluster Analysis to Growing Season Precipitation Data in North America East of The Rockies. J.Climate 8: 897-931.
+Szymkawiak, A. , Larsen, J. dan Hansen, L.K. 2001. Hirarchical Clustering For Data Mining. KES-2001 Fifth International Conference on Knowledge-Based Intelligent Information Engineering Systems & Allied Hal 261-265.
+Widiastuti, A. Perekonomian Indonesia. http://www.scribd.com/doc/52731022/SEKTORPERTANIAN. 11 April 2011.
+10
+
+

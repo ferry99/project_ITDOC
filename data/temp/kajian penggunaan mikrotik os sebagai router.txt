@@ -1,0 +1,187 @@
+KAJIAN PENGGUNAAN MIKROTIK ROUTER OSTM SEBAGAI ROUTER PADA JARINGAN KOMPUTER
+JURNAL
+Dibuat sebagai tugas akhir semester mata kuliah Jaringan Komputer Pada Jurusan Teknik Informatika Fakultas Ilmu Komputer Universitas Sriwijaya
+Oleh Dwi Febrian Handriyanto
+NIM 09061002022
+JURUSAN TEKNIK INFORMATIKA FAKULTAS ILMU KOMPUTER UNIVERSITAS SRIWIJAYA 2009
+
+ABSTRAK
+Sejalan dengan perkembangan teknologi informasi, peralatan-peralatan pendukung jaringan komputer masih sangat diperlukan. Peralatan tersebut pun kini menjadi komponen penting dalam pembangunan jaringan komputer.
+Router adalah salah satu komponen pada jaringan komputer yang mampu melewatkan data melalui sebuah jaringan atau internet menuju sasarannya, melalui sebuah proses yang dikenal sebagai routing. Router berfungsi sebagai penghubung antar dua atu lebih jaringan untuk meneruskan data dari satu jaringan kejaringan lainnya.
+Router sendiri berharga tinggi dan masih sulit dijangkau oleh kalangan masyarakat kita. Router Mikrotik adalah solusi murah bagi mereka yang membutuhkan sebuah router handal dengan hanya bermodalkan standalone computer dengan sistem operasi Mikrotik. Oleh sebab itu, penulis merasa perlu membahas tugas akhir ini tentang " KAJIAN PENGGUNAAN MIKROTIK ROUTER OS SEBAGAI ROUTER PADA JARINGAN KOMPUTER ".
+Dalam pembahasan ini , penulis menitik beratkan pada penggunaan dan konfigurasi Mikrotik Router OS.
+
+BAB 1
+PENDAHULUAN
+1.1 Latar Belakang Jaringan komputer saat ini sangat dibutuhkan untuk menghubungkan berbagai instansi
+pemerintahan, kampus, dan bahkan untuk bisnis dimana banyak sekali perusahaan yang memerlukan informasi dan data-data dari kantor-kantor lainnya dan dari rekan kerja, afiliasi bisnis, dan konsumen.
+Sering kali terjadi permasalahan pada jaringan komputer antara lain data yang dikirimkan lambat, rusak dan bahkan tidak sampai ke tujuan. Komunikasi sering mengalami time-out, hingga masalah keamanan. Oleh sebab itu, jaringan komputer memerlukan sebuah router, yaitu alat yang berfungsi sebagai pengatur jalur lalu-lintas data sehingga tepat pada sasarannya. Router mampu menjawab tantangan daripada permasalahan jaringan komputer itu sendiri. Dengan berbagai fasilitas yang dimiliki router, maka komunikasi pada jaringan komputer dapat berjalan dengan baik.
+Namun, harga router tidak murah, hal ini sesuai dengan kinerja yang dihasilkan dari router itu sendiri. Hingga ditemukannya sebuah solusi yaitu Sistem Operasi yang dikhususkan untuk networking, yaitu MikroTik Router OS yang terbukti murah dan handal dalam melakukan kerjanya sebagai router. Banyak digunakan di ISP (Internet Service Provider) sebagai Limit bandwidth, router pada warnet, Gateway pada Kantor, hingga pada kafe sebagai hotspot.
+1.2 Tujuan Adapun tujuan dari pembahasan jurnal ini adalah mengenalkan dan memberikan langkah-
+langkah dalam penggunaan Mikrotik Router OS sehingga diperoleh suatu pengetahuan dasar tentang Mikrotik Router OS.
+1.3 Lingkup Permasalahan Dalam jurnal ini yang dibahas adalah menjadikan PC sebagai router dengan MikroTik OS.
+Pembahasan ini merupakan langkah-langkah umum dalam penggunaan Mikrotik Router OS pada komputer PC.
+1.4 Metode Penulisan Metode yang digunakan dalam penulisan tugas akhir semester ini adalah studi literatur
+dimana penulis mengumpulkan bahan-bahan acuan yang berkaitan dengan Mikrotik Router OS.
+
+BAB 2
+LANDASAN TEORI
+1.1 Pengertian Router
+Router adalah perangkat yang akan melewatkan paket IP dari suatu jaringan ke jaringan yang lain, menggunakan metode addressing dan protocol tertentu untuk melewatkan paket data tersebut.
+Router memiliki kemampuan melewatkan paket IP dari satu jaringan ke jaringan lain yang mungkin memiliki banyak jalur diantara keduanya. Router-router yang saling terhubung dalam jaringan internet turut serta dalam sebuah algoritma routing terdistribusi untuk menentukan jalur terbaik yang dilalui paket IP dari system ke system lain. Proses routing dilakukan secara hop by hop. IP tidak mengetahui jalur keseluruhan menuju tujuan setiap paket. IP routing hanya menyediakan IP address dari router berikutnya yang menurutnya lebih dekat ke host tujuan.
+Fungsi :
+­ Membaca alamat logika / ip address source & destination untuk menentukan routing dari suatu LAN ke LAN lainnya.
+­ Menyimpan routing table untuk menentukan rute terbaik antara LAN ke WAN.
+­ Perangkat di layer 3 OSI Layer.
+­ Bisa berupa "box" atau sebuah OS yang menjalankan sebuah daemon routing.
+­ Interfaces Ethernet, Serial, ISDN BRI.
+
+Sumber: perangkat LAN, Router (Deris Setiawan, materi kuliah)
+1.2 Pengertian Sistem Operasi Sistem operasi adalah sekumpulan rutin perangkat lunak yang berada diantara program
+aplikasi dan perangkat keras (Bambang Hariyanto,2006,hal 25). Sistem operasi memiliki tugas yaitu mengelola seluruh sumber daya sistem komputer dan sebagai penyedia layanan.
+Sistem operasi menyediakan System Call (berupa fungsi-fungsi atau API=Application Programming Interface). System Call ini memberikan abstraksi tingkat tinggi mesin untuk pemrograman. System Call berfungsi menghindarkan kompleksitas pemrograman dengan memberi sekumpulan instruksi yang lebih mudah dan nyaman, sistem operasi juga sebagai basis untuk program lain dimana program aplikasi dijalankan diatas sistem operasi, program-program itu memanfaatkan sumber daya sistem komputer dengan cara meminta layanan sistem operasi mengendalikan sumber daya untuk aplikasi sehingga penggunaan sumber daya sistem komputer dapat dilakukan secara benar dan efisien.
+Sistem operasi yang dikenal antara lain : Windows (95, 98, ME, 2000, XP, VISTA, SERVER, Windows7) Linux (Red Hat, Slackware, Ubuntu, Fedora, Mikrotik, Debian, OpenSUSE) UNIX FreeBSD (Berkeley Software Distribution) SUN (SOLARIS) DOS (MS-DOS) Machintosh (MAC OS, MAC OSX)
+
+1.3 Pengertian Jaringan Komputer Jaringan komputer merupakan sekelompok komputer otonom yang saling dihubungkan
+satu sama lainnya, menggunakan suatu media dan protocol komunikasi tertentu, sehingga dapat saling berbagi data dan informasi.(Deris Setiawan,2003,hal 1). Jaringan komputer memungkinkan terjadinya komunikasi yang lebih efisien antar pemakai (mail dan teleconference). Jaringan komputer adalah sekelompok komputer otonom yang saling menggunakan protokol komunikasi melalui media komunikasi (Dharma Oetomo(1),2003, hal 07) sehingga dapat berbagi data, informasi, program aplikasi dan perangkat keras seperti printer, scanner, CD-Drive maupun harddisk serta memungkinkan komunikasi secara elektronik.
+Sedangkan pada Aplikasi home user, memungkinkan komunikasi antar pengguna lebih efisien (chat), interaktif entertainment lebih multimedia (games, video,dan lain-lain).
+Klasifikasi Jaringan Komputer : LAN (Local Area Network) : Jaringan komputer yang saling terhubung ke suatu komputer server dengan menggunakan topologi tertentu, biasanya digunakan dalam kawasan satu gedung atau kawasan yang jaraknya tidak lebih dari 1 km.
+Sumber : www.cisco.com
+
+MAN (Metropolitan Area Network) : Jaringan komputer yang saling terkoneksi dalam satu kawasan kota yang jaraknya bisa lebih dari 1 km. Pilihan untuk membangun jaringan komputer antar kantor dalam suatu kota, kampus dalam satu kota.
+Sumber : www.cisco.com
+WAN (Wide Area Network) : Jaringan komputer yang menghubungkan banyak LAN ke dalam suatu jaringan terpadu, antara satu jaringan dengan jaringan lain dapat berjarak ribuan kilometer atau terpisahkan letak geografi dengan menggunakan metode komunikasi tertentu.
+Sumber : materi kuliah Teknik Informatika Universitas Bina Nusantara
+
+Secara garis besar ada beberapa tahapan dalam membangun jaringan LAN, diantaranya ; Menentukan teknologi tipe jaringannya (Ethernet, Fast Ethernet, Token Ring, FDDI) Memilih model perkabelan (Fiber, UTP, Coaxial) Menentukan bentuk topologi jaringan (Bus, Ring, dan Star) Menentukan teknologi Client/Server atau Peer to Peer Memilih Sistem Operasi Server (Windows NT, 2000, XP, atau Linux)
+1.3.1 Gateway Pintu gerbang sebagai keluar-masuknya paket data dari local network menuju outer
+network. Tujuannya agar client pada local network dapat berkomunikasi dengan internet. Router dapat disetting menjadi Gateway dimana ia menjadi penghubung antara jaringan local dengan jaringan luar.
+1.3.2 Proxy Server Sebuah fasilitas untuk menghubungkan diri ke internet secara bersama-sama.
+Memenuhi permintaan user untuk layanan Internet (http, FTP,Telnet) dan mengirimkannya sesuai dengan kebijakan. Bertindak sebagai gateway menuju layanan. Mewakili paket data dari dalam dan dari luar. Menangani semua komunikasi internet ­ ekternal. Bertindak sebagai gateway antara mesin internal dan eksternal. Proxy server mengevaluasi dan mengontrol permintaan dari client, jika sesuai policy dilewatkan jika tidak di deny/drop. Menggunakan metode NAT. Memeriksa isi paket.
+1.3.3 Firewall Sistem keamanan yang menggunakan device atau sistem yang diletakkan di dua
+jaringan dengan fungsi utama melakukan filtering terhadap akses yang akan masuk. Berupa seperangkat hardware atau software, bisa juga berupa seperangkat aturan
+dan prosedur yang ditetapkan oleh organisasi. Firewal juga dapat disebut sebagai sistem
+
+atau perangkat yang mengizinkan lalu lintas jaringan yang dianggapnya aman untuk melaluinya dan mencegah lalu lintas jaringan yang tidak aman. Umumnya firewall diimplementasikan dalam sebuah mesin terdedikasi, yang berjalan pada pintu gerbang (gateway) antara jaringan local dan jaringan lainnya. Firewall juga umumnya digunakan untuk mengontrol akses terhadap siapa saja yang memiliki akses terhadap jaringan pribadi dari hak luar. Saat ini, istilah firewall menjadi istilah generic yang merujuk pada sistem yang mengatur komunikasi antar dua jaringan yang berbeda. (PC MILD edisi 13/2008)
+Gambar Skema Firewall.
+1.3.4 Virtual LAN VLAN berupa suatu software dari device switch yang berfungsi untuk
+mengelompokan user berdasarkan fungsional, 1 broacast domain (1 VLAN) dan antar VLAN dapat terkoneksi dengan router.
+Teknologi VLAN adalah suatu cara yang memisahkan segmen-segmen pada switch dimana antara 1 segmen dengan segmen lain tidak dapat terkoneksi, koneksi dapat dilakukan dengan menggunakan router. Dalam satu switch akan berbeda network-id-nya dan berbeda broadcast domainnya.
+
+1.4 Pengertian MikroTik Router OS
+MikroTik RouterOSTM, merupakan sistem operasi Linux base yang diperuntukkan sebagai network router. Didesain untuk memberikan kemudahan bagi penggunanya. Administrasinya bisa dilakukan melalui Windows Application (WinBox). Selain itu instalasi dapat dilakukan pada Standard komputer PC (Personal Computer). PC yang akan dijadikan router mikrotik pun tidak memerlukan resource yang cukup besar untuk penggunaan standard, misalnya hanya sebagai gateway. Untuk keperluan beban yang besar (network yang kompleks, routing yang rumit) disarankan untuk mempertimbangkan pemilihan resource PC yang memadai.
+1.4.1 Sejarah MikroTik RouterOS
+MikroTik adalah sebuah perusahaan kecil berkantor pusat di Latvia, bersebelahan dengan Rusia. Pembentukannya diprakarsai oleh John Trully dan Arnis Riekstins. John Trully adalah seorang berkewarganegaraan Amerika yang berimigrasi ke Latvia. Di Latvia ia bejumpa dengan Arnis, Seorang darjana Fisika dan Mekanik sekitar tahun 1995.
+John dan Arnis mulai me-routing dunia pada tahun 1996 (misi MikroTik adalah merouting seluruh dunia). Mulai dengan sistem Linux dan MS-DOS yang dikombinasikan dengan teknologi Wireless-LAN (WLAN) Aeronet berkecepatan 2 Mbps di Moldova, negara tetangga Latvia, baru kemudian melayani lima pelanggannya di Latvia.
+Prinsip dasar mereka bukan membuat Wireless ISP (W-ISP), tetapi membuat program router yang handal dan dapat dijalankan diseluruh dunia. Latvia hanya merupakan tempat eksperimen John dan Arnis, karena saat ini mereka sudah membantu negara-negara lain termasuk Srilanka yang melayani sekitar 400 pengguna.
+Linux yang pertama kali digunakan adalah Kernel 2.2 yang dikembangkan secara bersama-sama denag bantuan 5-15 orang staff Research and Development (R&D) MikroTik yang sekarang menguasai dunia routing di negara-negara berkembang. Menurut Arnis, selain staf di lingkungan MikroTik, mereka juga merekrut tenega-tenaga lepas dan pihak ketiga yang dengan intensif mengembangkan MikroTik secara marathon.
+
+2.3.2 JENIS-JENIS MIKROTIK
+1. MikroTik RouterOS yang berbentuk software yang dapat di-download di www.mikrotik.com. Dapat diinstal pada kompuetr rumahan (PC).
+2. BUILT-IN Hardware MikroTik dalam bentuk perangkat keras yang khusus dikemas dalam board router yang didalamnya sudah terinstal MikroTik RouterOS.
+2.3.4 FITUR-FITUR MIKROTIK
+1. Address List : Pengelompokan IP Address berdasarkan nama
+2. Asynchronous : Mendukung serial PPP dial-in / dial-out, dengan otentikasi CHAP, PAP, MSCHAPv1 dan MSCHAPv2, Radius, dial on demand, modem pool hingga 128 ports.
+3. Bonding : Mendukung dalam pengkombinasian beberapa antarmuka ethernet ke dalam 1 pipa pada koneksi cepat.
+4. Bridge : Mendukung fungsi bridge spinning tree, multiple bridge interface, bridging firewalling.
+5. Data Rate Management : QoS berbasis HTB dengan penggunaan burst, PCQ, RED, SFQ, FIFO queue, CIR, MIR, limit antar peer to peer
+6. DHCP : Mendukung DHCP tiap antarmuka; DHCP Relay; DHCP Client, multiple network DHCP; static and dynamic DHCP leases.
+7. Firewall dan NAT : Mendukung pemfilteran koneksi peer to peer, source NAT dan destination NAT. Mampu memfilter berdasarkan MAC, IP address, range port, protokol IP, pemilihan opsi protokol seperti ICMP, TCP Flags dan MSS.
+8. Hotspot : Hotspot gateway dengan otentikasi RADIUS. Mendukung limit data rate, SSL ,HTTPS.
+9. IPSec : Protokol AH dan ESP untuk IPSec; MODP Diffie-Hellmann groups 1, 2, 5; MD5 dan algoritma SHA1 hashing; algoritma enkirpsi menggunakan DES, 3DES, AES-128, AES-192, AES-256; Perfect Forwarding Secresy (PFS) MODP groups 1, 2,5
+
+10. ISDN : mendukung ISDN dial-in/dial-out. Dengan otentikasi PAP, CHAP, MSCHAPv1 dan MSCHAPv2, Radius. Mendukung 128K bundle, Cisco HDLC, x751, x75ui, x75bui line protokol.
+11. M3P : MikroTik Protokol Paket Packer untuk wireless links dan ethernet.
+12. MNDP : MikroTik Discovery Neighbour Protokol, juga mendukung Cisco Discovery Protokol (CDP).
+13. Monitoring / Accounting : Laporan Traffic IP, log, statistik graph yang dapat diakses melalui HTTP.
+14. NTP : Network Time Protokol untuk server dan clients; sinkronisasi menggunakan system GPS.
+15. Poin to Point Tunneling Protocol : PPTP, PPPoE dan L2TP Access Consentrator; protokol otentikasi menggunakan PAP, CHAP, MSCHAPv1, MSCHAPv2; otentikasi dan laporan Radius; enkripsi MPPE; kompresi untuk PPoE; limit data rate.
+16. Proxy : Cache untuk FTP dan HTTP proxy server, HTTPS proxy; transparent proxy untuk DNS dan HTTP; mendukung protokol SOCKS; mendukung parent proxy; static DNS.
+17. Routing : Routing statik dan dinamik; RIP v1/v2, OSPF v2, BGP v4.
+18. SDSL : Mendukung Single Line DSL; mode pemutusan jalur koneksi dan jaringan.
+19. Simple Tunnel : Tunnel IPIP dan EoIP (Ethernet over IP).
+20. SNMP : Simple Network Monitoring Protocol mode akses read-only.
+21. Synchronous : V.35, V.24, E1/T1, X21, DS3 (T3) media ttypes; sync-PPP, Cisco HDLC; Frame Relay line protokol; ANSI-617d (ANDI atau annex D) dan Q933a (CCITT atau annex A); Frame Relay jenis LMI.
+22. Tool : Ping, Traceroute; bandwidth test; ping flood; telnet; SSH; packet sniffer; Dinamik DNS update.
+
+23. UPnP : Mendukung antarmuka Universal Plug and Play. 24. VLAN : Mendukung Virtual LAN IEEE 802.1q untuk jaringan ethernet dan wireless;
+multiple VLAN; VLAN bridging. 25. VoIP : Mendukung aplikasi voice over IP. 26. VRRP : Mendukung Virtual Router Redudant Protocol. 27. WinBox : Aplikasi mode GUI untuk meremote dan mengkonfigurasi MikroTik
+RouterOS.
+
+BAB 3
+PEMBAHASAN
+3.1 KEBUTUHAN PERANGKAT KERAS MikroTik ROuterOS sudah banyak mendukung berbagai macam driver hardware.
+Beberapa hal yang perlu diperhatikan dalam instalasi antara lain : 1. CPU dan MotherBoard : Intel, Cyrix 6X86, AMD K5 atau sekelasnya, tidak mendukung multiprosesor/hyperthreading, mendukung arsitektur keluarga i386 dengan PCI Local Bus. 2. RAM : Minimal 32 MB (untuk Proxy dianjurkan 1 GB). 3. HARRDISK : IDE 400 Mb Minimal 64 MB, tidak mendukung USB, SCSI, RAID, sedangkan type SATA (menunggu update Versi terbaru) hanya pada Legacy Access Mode. Mendukung Flash dan Microdrive dengan interface ATA 4. NIC (Network Inteface Card) : NIC 10/100 atau 100/1000. Router adalah sebuah device yang fungsinya untuk meneruskan paket-paket dari
+sebuah network ke network yang lain (baik LAN ke LAN atau ke WAN atau internet) sehingga host-host yang ada pada sebuah network bisa berkomunikasi dengan host-host yang ada di network yang lain. Tujuan routing adalah: Agar paket IP yang dikirim sampai pada target, begitu juga paket IP yang ditujukan untuk kita sampai pada kita dengan baik. Target atau destination ini bisa berada dalam 1 jaringan ataupun berbeda jaringan (baik secara topologis maupun geografis).
+
+3.2 Akses Mikrotik Ada 4 cara pengaksesan MikroTik Router, antara lain :
+1. Via Console/Command Mikrotik Jenis router board maupun PC bisa kita akses langsung via console/shell maupun remote akses menggunakan PUTTY (www.putty.nl)
+Tips Command : "Manfaatkan auto complete" (mirip bash auto complete di linux) Tekan Tombol TAB di keyboard untuk mengetahui/melengkapi daftar perintah selanjutnya. Jadi perintah yang panjang tidak perlu kita ketik lagi, cukup ketikkan awal perintah itu, lalu tekan TAB-TAB maka otomatis Shell akan menampilkan/melengkapi daftar perintah yang kita maksud. Contoh: Cukup ketikkan Ip Fir >>> lalu tekan TAB >>> maka otomatis shell akan melengkapi menjadi Ip Firewall. Lalu ketik ".." (titik dua) untuk kembali ke sub menu diatasnya, dan ketik "/" untuk kembali ke root menu. 2. Via Web Browser Mikrotik bisa juga diakses via web/port 80 pada browser. Contoh : ketik di browser IP mikrotik kita: 192.168.0.18.
+
+3. Via Winbox Mikrotik bisa juga diakses/remote menggunakan tool winbox (utility kecil di windows yang sangat praktis dan cukup mudah digunakan). Tampilan awal mengaktifkan winbox seperti ini : sumber : http://images.arrohwany.multiply.com/attachment/0/
+Winbox bisa mendeteksi mikrotik yang sudah di install asal masih dalam satu network, yaitu dengan mendeteksi MAC address dari ethernet yang terpasang di Mikrotik. 4. Via Telnet Kita dapat me-remote MikroTik menggunakan telnet melalui program aplikasi "command prompt" (cmd) yang ada pada windows. Namun, penggunaan telnet tidak dianjurkan dalam jaringan karena masalah keamanannya. Contoh : c:\>telnet 192.168.2.1
+
+3.3 TAHAP INSTALASI MIKROTIK
+Gambar : Menu utama instalasi MikroTik
+[x] Keterangan beberapa yang penting diantaranya: · System : Packet wajib install (inti system mikrotik/paket dasar), berisi Kernel Mikrotik. · PPP : Untuk membuat Point to Point Protocol Server,Point-to-Point tunneling protocols -
+PPTP, PPPoE and L2TP Access Concentrators and clients; PAP, CHAP, MSCHAPv1 and MSCHAPv2 authentication protocols; RADIUS authentication and accounting; MPPE encryption; compression for PPPoE; data rate limitation; differentiated firewall; PPPoE dial on demand. · Dhcp : Packet yang dibutuhkan apabila ingin membuat dhcp-server (agar client bisa mendapatkan ip address otomatis -dynamic IP) * DHCP - DHCP server per interface; DHCP relay; DHCP client; multiple DHCP networks; static and dynamic DHCP leases; RADIUS support. · Advanced tool : Tools tambahan untuk admnistrasi jaringan seperti ipscan, bandwidth test, Scanning, Nslookup dan lain lain.
+
+· Arlan : Packet untuk konfigurasi chipset wireless aironet arlan . · Gps : Packet untuk support GPS Device. · Hotspot : Packet untuk membuat hotspot gateway, seperti authentication , traffic quota dan
+SSL HotSpot Gateway with RADIUS authentication and accounting; true Plug-and-Play access for network users; data rate limitation; differentiated firewall; traffic quota; real-time status information; walled-garden; customized HTML login pages; iPass support; SSL secure authentication; advertisement support. · Hotspot ­fix: Tambahan packet hotspot. · Security : Berisi fasilitas yang mengutamakan Keamanan jaringan, seperti Remote Mesin dengan SSH, Remote via MAC Address. · Web-proxy : Untuk menjalankan service Web proxy yang akan menyimpan cache agar traffik ke Internet bisa di reduksi sehingga sensasi browsing lebih cepat FTP and HTTP caching proxy server; HTTPS proxy; transparent DNS and HTTP proxying; SOCKS protocol support; DNS static entries; support for caching on a separate drive; access control lists; caching lists; parent proxy support. · ISDN : Packet untuk isdn server dan isdn client membutuhkan packet PPP. · Lcd : Packet untuk customize port lcd dan lain lain.
+[x] Kita pilih service apa saja yang ingin kita install. [x] Tekan: 'a' = semua service akan terpilih. `n' = bila kita menginstall baru. `y' = bila kita hanya ingin menambah service baru (konfigurasi sebelumnya tidak akan hilang) [x] Lalu ketik " i " untuk memulai instalasi, maka proses berlanjut... "proses format dan pengkopian file-file yang dibutuhkan akan berjalan otomatis"
+
+Gambar : Menu utama Mikrotik setelah selesai instalasi.
+3.3.1 Mengubah Password Default (hal ini ditujukan demi keamanan) Command: [admin@Mikrotik] > password old password: (Enter) new password: ***** (ketikan password baru kita) retype new password: *****
+3.3.2 Mengganti Nama Sistem Via WinBox:
+sumber : http://images.arrohwany.multiply.com/attachment/0/
+
+3.3.3 Mengaktifkan kedua LAN-card (ethernet; jika belum aktif) dengan cara memeriksanya dengan command : [admin@ aan] > /interface print
+Keterangan : tanda "X" setelah nomor (0,1), maka status (disabled); "R" status (enabled) Ada 2 hal yang menyebabkan LAN-Card tidak terdeteksi : 1. LAN Card yang kita pasang rusak. 2. Driver LAN Card itu belum tersupport. Aktifkan dengan perintah : Command: [admin@aan] >interface ethernet enable ether1 Via winbox:
+Sumber :: http://images.arrohwany.multiply.com/attachment/0/
+Berikan nama Ethernet tersebut (untuk mudah menghafal & mendefinisikan) Via Command: [admin@aan] >interface Ethernet set ether1 name=public [admin@aan] >interface ethernet set ether2 name=local Keterangan : Misalkan Ethernet 1 yang akan connect ke internet (ISP) dan Ethernet 2 yang terhubung ke jaringan lokal kita (ke switch/Hub).
+
+Periksa dengan : [admin@ aan] > /interface print
+Via Winbox:
+
+3.3.4 Setting IP Address pada tiap Ethernet
+
+Via Command:
+
+[admin@aan]>ip address add interface= address=192.168.33.14/255.255.255.0 comment=ip-public
+
+public
+
+Keterangan : 192.168.33.212/255.255.255.0 = ini hanya contoh, ganti dengan IP address yang diberikan oleh ISP.
+
+[admin@aan] >ip address add interface=local address=192.168.0.18/255.255.255.0 comment=gateway-lokal
+
+Keterangan : 192.168.0.18/255.255.255.0 = IP address jaringan lokal (LAN) kita.
+
+[admin@aan] > /ip address print
+Via Winbox:
+Kemudian Klik tanda "+" :
+3.3.5 Memasukkan IP Gateway (Fungsi Router: Agar dapat connect ke internet lewat pintu gerbang IP Gateway yang diberi ISP) Via Command: [admin@aan] > ip route add gateway=192.168.33.1 Keterangan : 192.168.33.1 = disesesuaikan dengan IP Gateway yang diberikan ISP kita
+
+Periksa Tabel routing kita: [admin@aan] > ip route print
+Via winbox: Kemudian Klik tanda "+" :
+Keterangan : Bagian Destination diisi 0.0.0.0/0 artinya "Semua routing kemanapun tujuannya diarahkan menuju IP gatewaynya"
+3.4 DHCP Server (Dynamic Host Configuration Protocol) Server Jika kita ingin client mendapat IP address secara otomatis (pengaturan IP Address dilakukan terpusat di server), sehingga juga akan mempermudah administrator memberi pengalamatan IP untuk client (tidak perlu setting IP secara manual) Via Command: 1. Buat IP address pool (rentang jatah pengalamatan IP) /ip pool add name=dhcp-pool ranges=192.168.3.33-192.168.33.212
+
+2. Menambahkan DHCP Network dan gatewaynya yang akan kita distribusikan ke client (Pada contoh ini networknya adalah 192.168.33.0/24 dan gatewaynya 192.168.33.1) /ip dhcp-server network add address=192.168.33.0/24 gateway=192.168.33.1
+3. Tambahkan DHCP Server (pada contoh ini dhcp diterapkan pada interface local ) /ip dhcp-server add interface=local address-pool=dhcp-pool
+4. Check status DHCP server [admin@aan] ip dhcp-server print
+Keterangan : Tanda X = Disable; R=Running menyatakan status DHCP server. 5. Perintah meng-enable-kan DHCP server:
+/ip dhcp-server enable 0 Periksa kembali : [admin@aan] ip dhcp-server print
+6. Tes Ping Dari Client c:\>ping www.yahoo.com
+
+BAB 4
+KESIMPULAN
+Mikrotik RouterOS adalah sebuah mesin linux yang dirancang secara khusus untuk keperluan networking. Mikrotik ini begitu menarik saat ini, karena dengan fiturnya yang begitu lengkap serta kemudahan dalam penggunaanya dan juga harganya relatif lebih murah. Jika kita sudah memahami konsep jaringan dengan baik maka akan begitu mudah menerapkan di MikroTik dengan tool GUI-nya (winbox), sehingga kita tak perlu menghafal command untuk melakukan setting atau pengaturannya. Untuk negara berkembang, solusi MikroTik sangat membantu ISP atau perusahaan-perusahaan kecil yang ingin bergabung dengan internet. Walaupun sudah banyak tersedia perangkat router mini semacam NAT, MikroTik merupakan solusi terbaik dalam beberapa kondisi penggunaan komputer dan perangkat lunak. MIKROTIK bisa disebut juga adalah salah satu distro linux yang berguna untuk jaringan komputer karena mikrotik sangat tangguh dalam masalah jaringan. KELEBIHAN MIKROTIK yaitu : 1. tangguh dalam masalah jaringan. 2. Tools-tools-nya lebih banyak. 3. Sistem keamanan tingkat tinggi. 4. Tidak terlalu membutuhkan spesifikasi komputer yang besar.
+
+DAFTAR PUSTAKA
+Herlambang, Moch. Linto, Catur L, Azis. 2008. Panduan Lengkap Menguasai Router Masa Depan Menggunakan MikroTik RouterOSTM .ANDI Publisher : Yogyakarta
+Tanenbaum, Andrew S . 1996 . Jaringan Komputer Edisi Bahasa Indonesia Jilid 1.Prehallindo : Jakarta Saputro, Daniel T, Kustanto. 2008. Membangun Server Internet dengan Mikrotik OS. Gava Media:
+Yogyakarta http://www.mikrotik.com/testdocs/ros/2.9/refman2.9.pdf http://gilar1001.blogspot.com/2008/06/pengewrtian-mikrotik.html http://asef.wordpress.com/ http://www.ajaib.us/kuliah/mikrotik.pdf http://images.arrohwany.multiply.com/attachment/0/SE@AdAoKCEMAAB4kVVs1/%5BStep%20by%
+20Step%5D%20Buat%20Router%20Mudah%20Dengan%20MikroTik.pdf?nmid=100530525 http://kelasfmjc.files.wordpress.com/2008/03/file.pdf http://fajar.uii.net.id/ http://www.mikrotik.co.id
+
+

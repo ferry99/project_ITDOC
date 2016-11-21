@@ -1,0 +1,270 @@
+MONITORING DAN SISTEM KEAMANAN RUANG PENYIMPAN BARANG-BARANG BERHARGA
+BERBASIS MIKROKONTROLLER ATMEGA8535
+
+Nur Ocvian Nugraha, Drs. Subali ABSTRAK
+
+Sistem keamanan ruangan menggunakan IP cam , limit switch ,inframerah dan keypad ini bekerja apabila salah satu sensor yang ada terhalang tanpa melakukan prosedur memasuki ruang . IP camera mengambil gambar ruangan agar pencuri yang memasuki ruangan dan alarm akan aktif apabila terdapat penyusup masuk dan mengenai sensor yang ada dalam ruangan. Setiap gambar yang di-capture webcam akan dikirimkan ke web server yang bisa diakses melalui internet. Pada saat alarm aktif server sistem akan mengirim pesan ke petugas keamanan bahwa ada orang lain yang memasuki ruang secara paksa. Untuk mengontrol sistem ini menggunakan keypad sebagai autentikasi setiap anggota. Untuk anggota yang akan memasuki ruang diharuskan untuk mengakses keypad terlebih dahulu, sehingga apabila password yang dimasukkan cocok maka system keamanan mati dan menunjukkan bahwa yang memasuki ruangan adalah anggota. Apabila tidak memasukan password maka inframerah akan aktif dan bila inframerah terhalang maka alarm akan berbunyi. Dalam alat ini menggunakan Mikro ATmega8535 sebagai pengontrol system dan di dalamnya menggunakan program Bahasa C.
+
+Kata kunci : Limit Switch, Webcam, Keypad, Bahasa C dan Web Server.
+
+password sebelum memasuki ruangan dan
+
+juga untuk membuka kunci ruangan, kedua
+
+1.1 Latar Belakang
+
+Keamanan merupakan suatu hal
+
+yang sangat di inginkan oleh setiap orang.
+
+menggunakan magnetic switch, kemudian
+
+Terutama keamanan diri baik keamanan
+
+menggunakan sensor inframerah dan juga
+
+untuk ruangan ataupun keamanan untuk
+
+IP camera untuk menampilkan jika
+
+barang pribadi. Oleh karena itu sekarang
+
+terdapat orang yang masuk ruangan
+
+ini banyak di ciptakan berbagai macam
+
+Pengembangan
+
+teknologi
+
+alat keamanan ruangan sehingga jika
+
+mikrokontroler terdiri dari beberapa
+
+terdapat ruangan pribadi yang berisikan
+
+generasi. Peralatan yang memakai
+
+barang-barang pribadi dapat terjaga
+
+mikrokontroler diharapkan aplikasi yang
+
+keamanannya. Salah satu dari system
+
+dilakukan sesuai dengan kondisi
+
+keamanan ruang yang dipasarkan
+
+sesungguhnya, sehingga aplikasi
+
+menggunakan dua ataupun hanya satu
+
+selanjutnya dapat disesuaikan dengan
+
+element keamanan. Untuk itu kami coba
+
+kebutuhan dilapangan.
+
+untuk membuat sistem keamanan ruang
+
+Mempelajari mikrokontroler tidak
+
+yang menggunakan empat element untuk
+
+hanya membaca teorinya saja, tetapi perlu
+
+menjaga keamanan suatu ruangan yang
+
+adanya praktikum secara langsung dan
+
+berisi barang berharga. Elemen
+
+aplikasi yang sangat diperlukan untuk
+
+keamanannya yaitu dengan menggunakan
+
+menambah pemahaman mahasiswa tentang
+
+mikrokontroler termasuk berbagai macam aplikasinya. Pengembangan yang dimaksud akan direalisasikan dengan pembuatan peralatan dalam bentuk benda kerja (alat) yang dapat dipergunakan untuk usaha mempermudah mengetahui keberadaan penyusup dalam ruangan yang berisi benda berharga
+1.2. Tujuan Maksud dan tujuan dari penulisan tugas akhir ini adalah sebagai berikut : Untuk memenuhi salah satu syarat menyelesaikan pendidikan Program Diploma III Teknik Elektro Fakultas Teknik Universitas Diponegoro Semarang. Menambah pengetahuan dan kreatifitas mahasiswa dalam aplikasi mikrokontroler ATmega 8535.Mengetahui mikrokontroler ATmega 8535 sebagai pengatur sistem keamanan ruang. Memahami secara jelas cara kerja dalam sistem pemantau ruangan dan keamanan ruang penyimpanan barang-barang berharga.
+LED Infra Merah Beberapa ragam indicator status
+LED yang tampak (Visible) adalah merah, hijau, kuning. Selain itu juga terdapat LED dengan cahaya yang tidak tampak (Invisible) seperti LED infra merah. Infra merah adalah sinar dengan panjang gelombang () lebih besar dari 800 nm dan tidak dapat dilihat oleh mata.
+Gambar 1.1. Spektrum sinar
+LED dengan cahaya yang tidak tampak (Invisible) banyak digunakan dalam pemprosesan film dan dalam sistem keamanan. LED infra merah digunakan
+
+ketika diperlukan daya penekanan optis yang tinggi.
+LED ini mempunyai intensitas sinar lebih besar dibanding LED dengan cahaya tampakhal ini juga di pengaruhi dengan energi foton yang ada pada cahaya tampak dan tak nampak.
+LED infra merah merupakan padanan spectral terbaik untuk kebanyakan foto transistor sebagai elemen penerima sinar pengindera photoelektrik. Dalam receiver inframerah yang digunakan dalam alat ini menggunakan receiver fotodioda dengan tipe Tsop 1538. Gambar rangkaian receiver dapat di lihat pada gambar berikut :
+Gambar 1.2. Tsop 1538
+Magnet Switch Port paralel pada mikrokontroler
+dapat bersifat bi-direksional atau dua arah, karena dapat digunakan sebagai port masukan atau sebagai port keluaran. Dalam pemasangan port sebagai masukan ataupun sebagai keluaran tidak ada perbedaan, namun dalam pembuatan programnya ada sedikit perbedaan.
+Salah satu peralatan masukan paling sederhana adalah switch, karena merupakan peralatan masukan yang menyatakan kondisi logika dasar, yaitu tinggi (1) atau rendah (0)
+Solenoid Solenoid adalah alat yang
+digunakan untuk mengubah sinyal listrik atau arus listrik menjadi gerakan mekanis linear. Solenoid disusun dari kumparan dengan inti besi yang dapat bergerak.
+
+Apabila kumparan diberi tenaga, inti atau jangkar, akan ditarik ke dalam kumparan. Semakin besar arus yang mengalir di dalam suatu kumparan, semakin besar kuat medannya. Begitu juga semakin banyak lilitan kawatnya, semakin banyak dihasilkan garis gaya magnet. Perkalian antara kuat arus dan jumlah lilitan disebut dengan ampere-turns (ampere-lilitan), dikenal dengan istilah magnetomotive force (mmf) atau gaya gerak magnet (ggm)
+Keypad Keypad yang digunakan disini
+adalah sebuah keypad matrix 4 x 4 dengan susunan empat baris dan tiga kolom.
+
+Gambar 1.3. Konstruksi Keypad 4 x 4
+Seperti terlihat dalam gambar di atas, apabila saklar `1' ditekan, maka baris 1 dan kolom 1 akan terhubung. Apabila saklar `2' ditekan, maka baris 1 dan kolom 2 akan langsung terhubung dan seterusnya
+
+Gambar 1.4 Flowchart Program pengambilan keypad
+2. Blok Diagram Untuk mempermudah kita dalam
+memahami cara kerja dari pemantau ruangan dan sistem keamanan ruangan penyimpanan barang-barang berharga dengan menggunakan mikrokontroler ATmega 8535 sebagai pengontrol memori programnya, maka dibuatlah blok diagram yang merupakan garis besar rangkaian tersebut yang terdiri dari bagian-bagian seperti sensor inframerah, keypad, buzzer dan juga IP cam .
+
+motor induksi satu fasa melalui port D.7. 4. Sensor
+Digunakan untuk mendeteksi adanya orang yang memasuki ruangan. Inputan dari sensor akan di terima oleh Mikrokontroler ATmega 8535 dan kemudian akan diolah kembali. 5. IP cam IP cam digunakan untuk ,memantau keadaan ruangan. Dan mengambil gambar secara langsung dan dapat dilihat melalui jaringan internet.
+
+Gambar 2.1 Blok Diagram Pemantau
+
+Ruangan dan Sistem Keamanan Ruang
+
+Penyimpanan barang-barang berharga
+
+Sistem ini terdiri dari perangkat
+
+keras dan perangkat lunak, dimana
+
+perangkat lunak mengontrol semua kerja
+
+perangkat keras.
+
+1. Keypad 4x4
+
+Keypad 4x4 digulakan untuk
+
+menginput password untuk
+
+memasuki ruangan dan kemudian
+
+akan mematikan alarm ruangan
+
+serta mengaktifkan IP camera.
+
+2. LCD 16x2
+
+LCD
+
+digunakan
+
+untuk
+
+menampilkan password yang telah
+
+dimasukkan.
+
+3. Mikrokontroler ATmega 8535
+
+Berfungsi sebagai pengatur
+
+keseluruhan proses yang dikerjakan
+
+oleh sistem setelah mendapatkan
+
+input dari perangkat lain, serta
+
+digunakan untuk membaca
+
+tegangan sensor suhu dari internal
+
+ADC serta mengatur kecepatan
+
+Gambar 2.2. Flowchart program
+3. Pengukuran Pengukuran rangkaian catu daya
+pada dasarnya bertujuan untuk mengetahui tegangan keluaran akhir dari rangkaian catu daya agar tegangan keluaran dapat stabil yaitu 5 volt sebagai catu daya masing-masing modul. Titik pengujian yang dilakukan meliputi input-inputan trafo dari tegangan jala-jala PLN, out-put trafo yaitu tegangan PLN yang telah diturunkan, keluaran dioda bridge sebagai keluaran setelah tegangan disearahkan,
+
+input dan Output regulator 7805 serta tegangan keluaran akhir untuk tegangan 5 volt. Tabel 3.1. Pengukuran inframerah Jarak Jara Kon Kon Tega Tega trans k disi disi ngan ngan mitter anta rece rece recei recei denga ra iver iver ver 1 ver 2 n rece 1 2 volt volt receiv iver er 1
+dan 2
+50 cm 10 ON ON 4.8 4.7 cm
+20 ON OFF 4.8 0,2 cm
+1 m 20 ON ON 4.7 4.8 cm
+40 ON OFF 4.8 0,3 cm
+1,5 m 40 ON ON 4.7 4.9 cm
+60 ON OFF 4.8 0.2 cm
+2 m 60 ON ON 4.9 4.9 cm
+80 ON OFF 4.9 0.2 cm
+
+Pengukuran IP camera Pada Tugas Akhir ini pengaturan IP
+camera dilakukan berdasarkan IP addressnya. Jadi, apabila IP dari camera berubah maka untuk melihat hasil dari gambar harus memanggil sesuai dengan IP yang telah di seting dan tidak akan bisa di tampilkan dengan IP yang lain . Berikut tabel dari pengukuran tegangan IP camera
+
+Tabel 3.2. Pengukuran tegangan kamera
+
+Tegangan 8 volt 0 volt
+
+Kondisi kamera Aktif Non aktif
+
+Uji coba ini menunjukakan kerja alat setelah keypad di tekan dan hasil tampilannya di LCD.
+Gambar 3.1 Foto awal saat keypad belum di tekan
+Gambar 3.2 Foto setelah keypad di tekan Oleh karena adanya faktor-faktor di
+atas perlu merancang peletakan alat keamanan yang tepat dalam ruangan agar apabila terdapat orang asing yang memesuki ruangan dapat di ketahui. Berikut ini merupakan beberapa tipe rancangan peletakan sistem keamanan ruang
+
+Gambar 3.3. Peletakan sistem keamanan 1 tampak dari atas
+Gambar 3.4 Peletakan sistem keamanan 2 tampak dari atas
+Gambar 3.5 Peletakan sistem keamanan 3 tampak dari atas
+
+Gambar 3.6 Peletakan sistem keamanan 4 tampak dari atas
+Dari keempat model peletakan system keamanan di atas, yang dianggap tepat adalam model peletakan yang ke-3. Hal ini dikarenakan kamera di kondisikan tepat pada pintu masuk dan juga jendela sehingga soapa saja yang akan masuk akan dapat di ketahui dengan jelas, dan juga system keamanan lain seperti inframerah dan magnet switch akan berfungsi secara maksimal.
+4. Kesimpulan Pada sistem keamanan ruang peletakan kamera di posisikan sekitar 30 derajat dari plafon dan diarahkan ke pintu, hal ini dikarenakan agar seluruh ruangan dapat terpantau secara baik . Sistem keamanan ruangan menggunakan inframerah di letakkan di tempat yang strategis, dalam alat ini di misalkan pada kaca ataupun pada lokasi yang selalu terlewati oleh orang untuk keluar dan masuk ke ruangan. Dalam system keamanan yang sangat di perhatikan adalah respon yang cepat apabila terdapat penyusup yang masuk ke ruangan sehingga dapat secara cepat di respon oleh petugas keamanan yang pendengarkan peringatan yang terletak di luar ruangan yaitu dengan bunyi sirine .
+
+5. DAFTAR PUSTAKA
+
+1. Daryanto. 1994. Pengetahuan Teknik
+
+Elektronika. Jakarta: Bumi Aksara
+
+2. Malvino, Albert Paul. 1999. Prinsip-
+
+Prinsip Elektronika. Jakarta:
+
+Erlangga .
+
+3. Pratomo, Andi. 2005. Panduan
+
+Praktis Pemrograman AVR
+
+Microkontroler ATmega 8535.
+
+Yogyakarta: ANDI
+
+4. Sumisjokartono. 2006. Elektronika
+
+Prakti. Jakarta :Gramedia.
+
+5. Sutrisno. 1986. Elektronika Teori dan
+
+Penerapannya. Jilid 1, Edisi
+
+kedua. Bandung: ITB
+
+6. Tooley, Michael.1996. Rangkaian
+
+elektronik prinsip dan aplikasi.
+
+Jakarta: Erlangga Utomo,
+
+Kusno.1997.Lembar
+
+Ilmiah
+
+Telekomunikasi
+
+7. Woollard, Barry. 2003. Elektronika
+
+Praktis. Jakarta: Pradnya Paramita.
+
+8. Zuhal,
+
+1999.
+
+Dasar-Dasar
+
+Elektroteknik. Jakarta: PT.
+
+Gramedia Pusaka Utama.
+
+9. My-CamUSB Camera User's Manual
+
+10. www.My-CamUSB Camera.com
+
+

@@ -1,0 +1,106 @@
+#indexbd{
+  background: #666666;
+  color: #fff;
+  height :100%;
+}
+
+
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+header {
+    text-align: center;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+#center{
+  margin: 0 auto;
+  float: none;
+  text-align:center;
+  width :50%;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.navbar{
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color : #acacac;
+}
+
+footer {
+    background-color: #333333;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    overflow:hidden;
+    clear: both;
+    padding :5px;
+    color : #666;
+}
+
+/**********************************************/
+/*RESULT PAGE*/
+
+.result{
+  margin-left: 30px
+}
+
+.box{
+  margin-top: 20px;
+}
+
+
+.mb20 { margin-bottom: 20px; } 
+
+.mb20 { padding-left: 15px; border-bottom: 1px solid #ccc; }
+.mb20 h1 { font: 500 normal 1.625em "Roboto",Arial,Verdana,sans-serif; color: #2a3644; margin-top: 0; line-height: 1.15; }
+.mb20 h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #2a3644; margin: 0; padding-bottom: 10px; }
+
+
+
+
+/*All result of search*/
+.media-body > p.desc{
+    color : #545454;
+    word-wrap : break-word;
+}
+
