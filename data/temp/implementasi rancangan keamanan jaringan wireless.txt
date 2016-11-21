@@ -1,101 +1,0 @@
-IMPLEMENTASI RANCANGAN KEAMANAN JARINGAN WIRELESS DENGAN METODE SECURE SOCKET LAYER (SSL) PADA BAPPEDA KABUPATEN BANYUASIN
-Reza Aditya M. Ukhwarizman Jurusan Sistem Informasi STMIK PalComTech Palembang
-Abstrak
-Dalam merancang dan mengimplementasikan keamanan jaringan wireless internet hotspot berbasis mikrotik diperlukan perhatian khusus pada aspek-aspek pemilihan desain jaringan, perangkat keras jaringan , koneksi, media transmisi serta metode pengamanannya. Karena aspek-aspek tersebut sangat berpengaruh terhadap kinerja jaringan secara keseluruhan. Manfaat yang diharapkan dapat membantu kemudahan mengakses internet bagi staf dan karyawan dalam memperoleh informasi internet di Bappeda Kabupaten Banyuasin dengan menggunakan perangkat laptop, handphone, perangkat mobile lainnya menggunakan fasilitas wifi atau hotspot internet serta merancang dan mengimplementasikan sistem keamanan wireless internet hotspot di lingkungan Bappeda Kabupaten Banyuasin dengan menggunakan menggunakan metode pengamanan security Secure Socket Layer (SSL). Kata Kunci: mikrotik, wifi, hotspot, Secure Socket Layer (SSL)
-PENDAHULUAN
-Dunia Teknologi Informasi dan Komunikasi tidak bisa dipisahkan dengan kabel. Perkembangan dunia jaringan komputer sangat cepat,semua komputer diharapkan dapat berkomunikasi satu dengan yang lain dengan medium tertentu. Pada jaringan Local Area Network yang kita sebut dengan LAN masih menggunakan kabel sebagai media penghubung agar beberapa komputer dapat saling berkomunikasi. Namun, seiring dengan kemajuan waktu dan teknologi, juga kebutuhan manusia akan mobilitas (mudah berpindah-pindah) dan fleksibilitas yang tinggi menuntut sesuatu yang lebih praktis. Dan teknologi wireless memberikan jawaban untuk kebutuhan tersebut.Teknologi wireless menawarkan beragam kemudahan, kebebasan dan fleksibilitas yang tinggi. Teknologi wireless memiliki cukup banyak kelebihan dibandingkan teknologi kabel yang sudah ada. Teknologi wireless sangat nyaman untuk digunakan. Anda bisa mengakses internet di posisi manapun selama masih berada dalam jangkauan wireless.
-Bappeda Kabupaten Banyuasin terletak di Jalan Lingkaran No.5 Sekojo Telp.07117690007 Pangkalan Balai. Badan Perencanaan Pembangunan Daerah dan Penanaman Modal (BAPPEDA-PM) merupakan unsur Pelaksana Tugas tertentu Pemerintahan Daerah dibidang Perencanaan Pembangunan Daerah dan Penanaman Modal BAPPEDA-PM. Bappeda Banyuasin memiliki satu tugas penting yaitu tata ruang perencanaan pembangunan yang mengetahui salah satu titik koordinat pembangunan dan pengukuran suatu wilayah menggunakan GPS (Global Positioning System) yang mengambil koordinat langsung ke satelit citra nasional.
-Setiap data file informasi atau perencanaan yang dikumpulkan melalui satelit citra nasional untuk perencanaan yang vital, di Bappeda Banyuasin disimpan ke server Bappeda Provinsi Sumatera Selatan melalui internet, biasanya mudah ditembus oleh orang yang tidak bertanggung jawab (hacker) untuk kepentingan pribadi atau kelompok yang tidak ingin Kabupaten Banyuasin maju mandiri dan berdaya saing sesuai dengan visi misi Kabupaten Banyuasin. Sistem keamanan fasilitas internet hotspot Bappeda Banyuasin memakai sistem
-1
-
-koneksi keamanan. yang terdapat pada access point yaitu menggunakan metode WEP / WPA. Contoh peristiwa perencanaan pembangunan suatu pabrik textil dan karet di kecamatan Maryana Banyuasin 1 yang bertujuan untuk menunjang kemajuan ekonomi di Sumatera Selatan, file perencanaan itu pernah hilang dari data server Bappeda Banyuasin sebelum dikirim ke server Bappeda Provinsi Sumatera Selatan dan file perencanaan itu menyebar luas kemasyarakat melalui selebaran pembangunan pabrik textil di Kecamatan Maryana Banyuasin 1. Seharusnya informasi tersebut tidak boleh diketahui masyarakat sebelum perencanaan tersebut di khawatirkan adanya reaksi penolakan masyarakat sekitar daerah pembangunan. Kejadian seperti ini diharapkan tidak terulang lagi sehingga sistem yang ada ditingkatkan dengan mengganti metode WEP/WPA menggunakan metode SSL.
-Keamanan wireless hotspot dengan metode SSL dibangun dan dirancang di kantor Bappeda untuk memperkuat sistem keamanan wireless internet, hal ini dikarenakan selama ini Bappeda Kabupaten Banyuasin belum memiliki server gateway dan sistem keamanan fasilitas internet hotspot yang baik dimana metode WEP / WPA masih bisa ditembus oleh software hacking / penyusup seperti software backtrack. Merancang server gateway yang berfungsi sebagai router internet baik pada jaringan kabel maupun wireless merupakan solusi dimana dapat membantu komunikasi antar komputer serta sistem keamanan internet hotspot berbasis mikrotik dimana user akan melakukan proses login terlebih dahulu dengan memasukkan nama user dan password saat akan mengakses internet dengan menggunakan metode keamanan Secure Socket Layer (SSL).
-LANDASAN TEORI
-Perancangan Desain atau perancangan adalah penggambaran, perencanaan dan pembuatan sketsa
-atau pengaturan dari beberapa elemen yang terpisah ke dalam satu kesatuan yang utuh dan berfungsi. Proses desain pada umumnya memperhitungkan aspek fungsi dan esterik yang biasanya data didapatkan dari riset, pemikiran, maupun dari desain yang sudah ada sebelumnya. ( John G Burch, 2010).
-MikroTik Router Menurut Herlambang (2008:20) Mikrotik adalah sistem operasi independen
-berbasiskan Linux khusus untuk komputer yang difungsikan sebagai Router, Mikrotik didesain untuk memberikan kemudahan bagi penggunanya. Administrasinya bisa dilakukan melalui Windows application (WinBox). Selain itu instalasi dapat dilakukan pada Standard computer PC. PC yang akan dijadikan router mikrotik pun tidak memerlukan resource yang cukup besar untuk penggunaan standard, misalnya hanya sebagai gateway. Untuk keperluan beban yang besar ( network yang kompleks, routing yang rumit dll) disarankan untuk mempertimbangkan pemilihan resource PC yang memadai.
-Network Address Translation ( NAT) Menurut Herlambang (2008:76), Network Address Translation atau yang biasa
-disebut dengan NAT adalah suatu metode untuk menghubungkan lebih dari satu komputer ke jaringan internet dengan menggunakan satu alamat IP. Banyaknya penggunaan metode ini disebabkan karena ketersediaan alamat IP yang terbatas, kebutuhan akan keamanan (security), dan kemudahan serta fleksibilitas dalam administrasi jaringan.
-DHCP Server Menurut Towidjojo (2013:83), Dynamic Host Configuration Protocol adalah protokol
-jaringan yang memungkinkan sebuah perangkat jaringan membagi konfigurasi IP Address kepada komputer-komputer user yang membutuhkan. Konfigurasi IP Adddress ini meliputi
-2
-
-IP Address itu sendiri, subnetmask, default gateway dan DNS Server yang dibutuhkan untuk mengakases internet. MySQL
-Hotspot Gateway dan User Manager Menurut Towidjojo (2013:136), Router mikrotik memiliki fitur-fitur yang lengkap.
-Salah satu fitur nya adalah Hotspot Gateway. Dengan menggunakan fitur hotspot gateway ini, kita akan mendapatkan fasilitas tambahan. Kita dapat mengkonfigurasikan jaringan wireless yang hanya bisa digunakan dengan username dan password tertentu serta dapat melakukan manajemen user-user tesebut.
-Tool Wireshark Menurut Kurniawan (2012:15), Wireshark merupakan tool yang ditujukan untuk
-menganalisis paket data jaringan. Wireshark melakukan pengawasan paket secara waktu nyata (real time) dan kemudian menangkap data dan menampilkan selengkap mungkin. Wireshark bisa digunakan secara gratis karena aplikasi ini berbasis sumber terbuka. Aplikasi wireshark dapat berjalan di banyak platform seperti Linux, Windows dan Mac.
-HASIL DAN PEMBAHASAN
-Analisis Kebutuhan 1.Teknologi wireless menawarkan beragam kemudahan, kebebasan dan fleksibilitas yang
-tinggi. Teknologi wireless memiliki cukup banyak kelebihan dibandingkan teknologi kabel yang sudah ada. Teknologi wireless sangat nyaman untuk digunakan. Anda bisa mengakses internet di posisi manapun selama masih berada dalam jangkauan wireless.
-2.Dari hasil pengamatan yang dilakukan penulis di Bappeda Kabupaten Banyuasin belum memiliki sistem keamanan internet hotspot yang baik. Merancang server gateway yang berfungsi sebagai router internet pada jaringan wireless merupakan solusi dimana dapat membantu komunikasi antar komputer serta merancang sistem keamanan internet hotspot berbasis mikrotik dimana user akan melakukan proses login terlebih dahulu dengan memasukkan nama user dan password saat akan mengakses internet dengan menggunakan metode keamanan SSL (Secure Socket Layer).
-Analisis Permasalahan Keamanan wireless hotspot dengan metode SSL dibangun dan dirancang di kantor
-Bappeda untuk memperkuat sistem keamanan wireless internet, hal ini dikarenakan selama ini Bappeda Kabupaten Banyuasin belum memiliki server gateway dan sistem keamanan fasilitas internet hotspot yang baik dimana sistem koneksi keamanan internet hotspot masih menggunakan fasilitas keamanan yang terdapat pada access point yaitu menggunakan metode WEP / WPA yang bisa ditembus oleh software hacking / penyusup. merancang server gateway yang berfungsi sebagai router internet baik pada jaringan kabel maupun wireless merupakan solusi dimana dapat membantu komunikasi antar komputer serta sistem keamanan internet hotspot berbasis mikrotik dimana user akan melakukan proses login terlebih dahulu dengan memasukkan nama user dan password saat akan mengakses internet dengan menggunakan metode keamanan Secure Socket Layer (SSL).
-Implementasi Keamanan wireless internet hotspot yang di rancang lingkungan kantor Bappeda
-Kabupaten Banyuasin menggunakan sistem operasi Mikrotik Router Versi 2.9.27 . Berikut Langkah-langkah perancangan dan implementasi dari jaringan LAN dan keamanan Wireless
-3
-
-Internet Hotspot. Sistem Operasi mikrotik terlebih dahulu diinstall pada harddisk dengan mengubah urutan booting di Bios, First Boot: cdrom, kemudian masukan cd master mikrotik, ikuti petunjuk installasi.
-Gambar 1. Login awal Mikrotik Langkah berikutnya mengubah nama masing-masing interface ether1, ether2 dan ether3 menjadi internet, lan dan hotspot seperti pada gambar 2, 3 dan 4.
-Gambar 2. Setting nama pada interface ether 1
-Gambar 3. Setting nama pada interface ether 2
-4
-
-Gambar 4. Setting nama pada interface ether 3 Menampilan nama interface yang sudah disetting, dengan cara menggunakan perintah interface print seperti pada gambar 5
-Gambar 5. Hasil Interface Print Kemudian menghubungkan interface hotspot dengan profile yang sudah kita buat seperti pada gambar 6
-Gambar 6. Interface hotspot dengan profile Langkah selanjutnya kita mengaktifkan ip hotspot dengan perintah ip hotspot enable kemudian menampilkan ip hotspot yang telah di setting seperti pada gambar 7.
-Gambar 7. Hasil tampilan interface hotspot dengan profile Selanjutnya menggunakan fasilitas user manager dengan membuat user admin beserta password seperti pada gambar 8. Membuat user dan password admin pada userman kemudian menghubungkan user manager dengan ip server radius dengan menggunakan keamanan shared secret, seperti pada gambar 8
-5
-
-Gambar 8. Mengarahkan userman ke ip server radius Kemudian membuat user dan password hotspot dari console mikrotik seperti pada gambar 9.
-Gambar 9. Membuat user dan password user hotspot
-Gambar 10. Tampilan login Web User Manager Mikrotik
-Gambar 11. Tampilan user yang telah dibuat via console / terminal Langkah selanjutnya membuat user hotspot via web dengan menggunakan fasilitas web user manager seperti pada gambar 11.
-6
-
-Gambar 11. Membuat user baru via user manager mikrotik Gambar dibawah ini merupakan hasil penambahan user hotspot mikrotik seperti pada gambar 12
-Gambar 12. Tampilan hasil penambahan user Langkah selanjutnya kita bisa mengamati user hotspot mikrotik yang sedang aktif atau online dengan mengklik tombol show pada bagian active user seperti pada gambar 13.
-7
-
-Gambar 13. Tampilan status user yang aktif Kemudian pada bagian active session , bisa diamati user hotspor yang sedang login beserta ip address yang diperoleh oleh client hotspot dan lama waktu login atau durasi ke server hotspot seperti pada gambar 14.
-Gambar 14. Tampilan active session Langkah selanjutnya kita membuat file sertifikat dan file kunci di sistem operasi linux dengan menggunakan software openssl. Untuk dapat membuat sertifikat diperlukan aplikasi openSSL, maka apabila di OS Linux belum ada diperlukan instalasi openSSL dengan menggunakan perintah apt-get install , dan kemudian membuat kunci hotspot dengan nama hotspot.key seperti pada gambar 15 dan 16
-Gambar 15. Installasi Openssl
-8
-
-Gambar 16. Membuat file kunci Langkah berikutnya membuat request key dengan nama file hotspot.csr seperti pada gambar 17
-Gambar 17. Membuat kunci request Kemudian membuat sertifikat hotspot seperti pada gambar 18.
-Gambar 18. Membuat file sertifikat dan file kunci Langkah selanjut kita akan mengupload file sertifikat dan file kunci (key) yang telah kita buat dengan menggunakan software filezilla ke server mikrotik seperti pada gambar 19.
-Gambar 19. Mengupload certificate dan key security hotspot mikrotik 9
-
-Setelah proses upload selesai maka kita menggunakan perintah file print untuk melihat hasil upload file sertifikat dan file kunci (key) diserver mikrotik seperti pada gambar 20.
-Gambar 20. Tampilan certificate dan key security di terminal Kemudian installasi file sertifikat yang telah dibuat di mikrotik router dengan menggunakan perintah certificate import seperti pada gambar 21.
-Gambar 21. Mengimpor file certificate Kemudian installasi file kunci (key) yang telah dibuat di mikrotik router dengan menggunakan perintah certificate import seperti pada gambar 22.
-Gambar 22. Mengimpor file kunci Langkah berikutnya mengaktifkan service www-ssl agar server mikrotik support ssl setelah itu setting menggunakan file sertifikat yang telah kita buat sebelumnya seperti pada gambar 23.
-Gambar 23. Mengaktifkan service ssl menggunakan certificate 10
-
-Pada gambar dibawah ini merupakan konfigurasi service www-ssl pada software winbox. seperti pada gambar 24
-Gambar 24. Mengaktifkan service ssl menggunakan certificate via winbox
-Gambar 25. Mengaktifkan service ssl menggunakan certificate via winbox
-Gambar 26. Upload logo Login Hotspot Selanjutnya buka browser Mozilla atau Google chrome , secara otomatis akan muncul tampilan login hotspot mikrotik dengan menggunakan fasilitas secure socket layer, hal ini tampak pada url login yaitu https://192.168.4.1 kemudian isi user dan password hotspot seperti pada gambar 27.
-11
-
-Gambar 28. Tampilan login hotspot mikrotik Kemudian setelah user login maka user bias langsung terkoneksi ke internet melalui web browser seperti gambar 29
-Gambar 29. Tampilan koneksi internet User yang login bisa dilihat melaui url login yaitu https://192.168.4.1 yang ditunjukkan pada gambar 30
-Gambar 30. Hasil koneksi user ari
-12
-
-Gambar 31. Penolakan koneksi jika salah username atau password Ketika browser Mozila atau Google chrome dibuka dan user name atau password yang dimasukkan salah akan tampil seperti gambar 32.
-Evaluasi Hasil dan Pembahasan Hasil yang didapat dari Implementasi rancangan keamanan jaringan wireless dengan
-metode Secure Socket Layer (SSL) pada Bappeda Kabupaten Banyuasin bisa disimpulkan bahwa sistem keamanan ini dapat berjalan dengan baik. Sistem ini mampu menjawab kebutuhan pada jaringan wireless yang lebih aman dengan memanfaat security Socket Socket Layer (SSL), sehingga membuat user menggunakan fasiltas jaringan wireless menjadi lebih terkontrol dan sesuai dengan tujuan awal dari perancangan sistem keamanan ini serta memberi kemudahan administrator jaringan dalam melakukan penambahan user hotspot via browser melalui fasilitas user manager.
-Protokol SSL mengotentikasi server kepada client menggunakan kriptografi kunci publik dan sertifikat digital. Untuk mengaktifkan SSL pada halaman login mikrotik perlu memasang sertifikat SSL yang sesuai dengan server dan halaman web login mikrotik hotspot. Setelah SSL terpasang, maka URL login mikrotik hotspot yang sebelumnya http:// menjadi https://. Pada gambar 32 dan 33 merupakan hasil capture menggunakan software wireshark, hasil yang diperoleh adalah ip address yang didapat client hotspot yaitu 192.168.4.200 kemudian kita dapat melihat paket data yang bertipe SSL sedang melakukan handshake protocol yaitu client hello. Setelah melakukan handshake Client Hello, paket dilanjutkan dengan server Hello, kemudian sertifikat dikirim. Paket data jaringan yang telah menggunakan SSL berimplikasikan pada terenkripsinya seluruh data yang ditransfer antara server dan client.
-Gambar 33. Tampilan Wireshark
-13
-
-Gambar 34. Tampilan enkripsi SSL
-PENUTUP Keamanan wireless hotspot dengan metode SSL dibangun dan dirancang di kantor Bappeda untuk memperkuat sistem keamanan wireless internet, hal ini dikarenakan selama ini Bappeda Kabupaten Banyuasin belum memiliki server gateway dan sistem keamanan fasilitas internet hotspot yang baik dimana metode WEP / WPA masih bisa ditembus oleh software hacking / penyusup seperti software backtrack. Merancang server gateway yang berfungsi sebagai router internet baik pada jaringan kabel maupun wireless merupakan solusi dimana dapat membantu komunikasi antar komputer serta sistem keamanan internet hotspot berbasis mikrotik dimana user akan melakukan proses login terlebih dahulu dengan memasukkan nama user dan password saat akan mengakses internet dengan menggunakan metode keamanan Secure Socket Layer (SSL).
-DAFTAR PUSTAKA Herlambang. 2008. _______________________________. Gava Media : Yogyakarta John. G Burch. 2010. ___________________________. Andi offset : Yogyakarta Kurniawan. 2012. _____________________________________. Datakom Lintas Buana :
-Jakarta. Towidjojo. 2013. __________________________________. Mediakita : Jakarta.
-14
-
-

@@ -1,3 +1,0 @@
-D3 = "Shipment of gold arrived in a truck"
-
-
